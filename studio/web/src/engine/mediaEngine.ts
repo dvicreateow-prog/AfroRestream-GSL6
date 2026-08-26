@@ -26,6 +26,7 @@ export type CaptureKind = 'camera' | 'screen' | 'media'
 export interface CaptureHandle {
   id: string
   kind: CaptureKind
+  /** Mutable: a guest tile is named once the roster reports who they are. */
   label: string
   stream: MediaStream
   el: HTMLVideoElement
@@ -232,6 +233,31 @@ class MediaEngine {
     this.objectUrls.set(id, url)
     this.emit({ t: 'captures' })
     return handle
+  }
+
+  /**
+   * The host's own camera + mic, for publishing to guests over the mesh.
+   *
+   * Deliberately the raw camera rather than the composited programme: guests only
+   * need to see the host, and sending the programme back into the room would put
+   * their own tiles inside the frame they are watching.
+   */
+  hostPublishStream(): MediaStream | null {
+    const camera = [...this.captures.values()].find((c) => c.kind === 'camera')
+    const out = new MediaStream()
+    const videoTrack = camera?.stream.getVideoTracks()[0]
+    if (videoTrack) out.addTrack(videoTrack)
+    const micTrack = this.micStream?.getAudioTracks()[0]
+    if (micTrack) out.addTrack(micTrack)
+    return out.getTracks().length ? out : null
+  }
+
+  /** Update a capture's on-screen label, e.g. once a guest's name arrives. */
+  renameCapture(id: string, label: string) {
+    const h = this.captures.get(id)
+    if (!h || h.label === label) return
+    h.label = label
+    this.emit({ t: 'captures' })
   }
 
   /** Media playback controls for a clip already on stage. */

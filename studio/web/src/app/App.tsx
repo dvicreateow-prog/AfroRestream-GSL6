@@ -1,7 +1,9 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AppShell } from './AppShell'
+import { RequireAuth } from './RequireAuth'
 import { StudioPage } from '../studio/StudioPage'
 import { JoinPage } from '../pages/JoinPage'
+import { SignInPage } from '../pages/SignInPage'
 import { HomePage } from '../pages/HomePage'
 import { ToolsPage } from '../pages/ToolsPage'
 import { ToolDetailPage } from '../pages/ToolDetailPage'
@@ -21,14 +23,17 @@ export function App() {
     <BrowserRouter basename={BASENAME}>
       <Routes>
         {/* Studio renders full-bleed, outside the dashboard shell. */}
-        <Route path="/studio" element={<StudioPage />} />
-        <Route path="/studio/:roomId" element={<StudioPage />} />
+        <Route path="/studio" element={<RequireAuth><StudioPage /></RequireAuth>} />
+        <Route path="/studio/:roomId" element={<RequireAuth><StudioPage /></RequireAuth>} />
+
+        {/* Sign in stands alone - no shell, no auth required to reach it. */}
+        <Route path="/signin" element={<SignInPage />} />
 
         {/* Guests get their own light page, outside the dashboard shell. */}
         <Route path="/join" element={<JoinPage />} />
         <Route path="/join/:roomId" element={<JoinPage />} />
 
-        <Route element={<AppShell />}>
+        <Route element={<RequireAuth><AppShell /></RequireAuth>}>
           <Route path="/home" element={<HomePage />} />
           <Route path="/tools" element={<ToolsPage />} />
           <Route path="/tools/:slug" element={<ToolDetailPage />} />

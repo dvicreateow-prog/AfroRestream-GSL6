@@ -4,6 +4,7 @@
  */
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { Icon, type IconName } from '../components/Icon'
+import { useSession } from './RequireAuth'
 import './app-shell.css'
 
 interface NavItem {
@@ -53,6 +54,14 @@ function NavGroup({ title, items }: { title: string; items: NavItem[] }) {
 
 export function AppShell() {
   const { pathname } = useLocation()
+  const { user, signOut } = useSession()
+
+  const initials = (user?.name ?? user?.email ?? '?')
+    .split(/[\s@.]+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0]?.toUpperCase() ?? '')
+    .join('')
 
   return (
     <div className="shell">
@@ -67,6 +76,24 @@ export function AppShell() {
           <NavGroup title="Settings" items={SETTINGS} />
           <NavGroup title="Developers" items={DEVELOPERS} />
         </nav>
+
+        {user && (
+          <div className="shell-user">
+            <span className="shell-user__avatar">{initials}</span>
+            <div className="shell-user__text">
+              <div className="shell-user__name">{user.name}</div>
+              <div className="shell-user__email">{user.email}</div>
+            </div>
+            <button
+              className="shell-user__out"
+              onClick={() => void signOut()}
+              title="Sign out"
+              aria-label="Sign out"
+            >
+              <Icon name="close" size={14} />
+            </button>
+          </div>
+        )}
 
         <div className="shell-nav__foot">
           <NavLink to="/studio" className="shell-golive">

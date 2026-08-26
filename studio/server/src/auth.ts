@@ -110,6 +110,37 @@ function consumeState(state: string, provider: string) {
 }
 
 /* ------------------------------------------------------------------ */
+/* Single-user mode                                                    */
+/* ------------------------------------------------------------------ */
+
+/**
+ * This studio is operated by one person, so it runs without sign-in by default:
+ * every request is treated as the same local operator. All the per-user plumbing
+ * stays intact underneath, which keeps channels, stream keys and settings in the
+ * database rather than in process memory - and means turning accounts back on is
+ * a flag, not a rewrite.
+ *
+ * Set SINGLE_USER=false to require sign-in.
+ */
+export const singleUserMode = (): boolean =>
+  (process.env.SINGLE_USER ?? 'true').toLowerCase() !== 'false'
+
+const LOCAL_EMAIL = 'local@studio'
+
+let localUserCache: User | null = null
+
+function localUser(): User {
+  if (localUserCache) return localUserCache
+  localUserCache = users.upsertFromOAuth({
+    provider: 'local',
+    subject: LOCAL_EMAIL,
+    email: LOCAL_EMAIL,
+    name: 'Studio',
+  })
+  return localUserCache
+}
+
+/* ------------------------------------------------------------------ */
 /* Middleware                                                          */
 /* ------------------------------------------------------------------ */
 
@@ -121,7 +152,7 @@ function readToken(req: Request): string | null {
   return typeof q === 'string' && q ? q : null
 }
 
-/** Populates req.user when a valid token is present. Never rejects. */
+/** Populates req.user. Never rejects. */
 export function attachUser(req: Request, _res: Response, next: NextFunction) {
   const token = readToken(req)
   if (token) {
@@ -129,8 +160,12 @@ export function attachUser(req: Request, _res: Response, next: NextFunction) {
     if (user) {
       req.user = user
       req.sessionId = token
+      next()
+      return
     }
   }
+  /* No token: in single-user mode everything belongs to the local operator. */
+  if (singleUserMode()) req.user = localUser()
   next()
 }
 
@@ -145,7 +180,9 @@ export function requireAuth(req: Request, res: Response, next: NextFunction) {
 
 /** Resolve a session token outside Express, for WebSocket upgrades. */
 export function userFromToken(token: string | null | undefined): User | null {
-  return token ? sessions.resolve(token) : null
+  const viaToken = token ? sessions.resolve(token) : null
+  if (viaToken) return viaToken
+  return singleUserMode() ? localUser() : null
 }
 
 /* ------------------------------------------------------------------ */
@@ -227,6 +264,7 @@ export function authRouter() {
   /** Which sign-in buttons the client should show. */
   router.get('/auth/providers', (_req, res) => {
     res.json({
+      singleUser: singleUserMode(),
       providers: configuredProviders(),
       devLogin: process.env.NODE_ENV !== 'production',
     })

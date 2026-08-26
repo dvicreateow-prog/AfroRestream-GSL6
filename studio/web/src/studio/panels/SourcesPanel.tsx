@@ -107,7 +107,7 @@ function CaptureCard({ capture, onStage }: { capture: CaptureHandle; onStage: bo
 export function SourcesPanel() {
   const openModal = useStudio((s) => s.openModal)
   const scene = useActiveScene()
-  const { captures, addMedia, toggleCamera, toggleScreen, error, onStageIds } = useEngine()
+  const { captures, addMedia, toggleCamera, toggleScreen, error, onStageIds, room } = useEngine()
   const fileRef = useRef<HTMLInputElement>(null)
 
   const live = new Set(onStageIds)
@@ -121,8 +121,46 @@ export function SourcesPanel() {
         Copy Invite Link
       </button>
 
+      {room.waiting.length > 0 && (
+        <>
+          <div className="panel__sectionLabel">WAITING TO JOIN</div>
+          {room.waiting.map((p) => (
+            <div className="srcCard" key={p.id}>
+              <span className="srcCard__avatar" style={{ background: p.color }}>
+                {p.name.slice(0, 2).toUpperCase()}
+              </span>
+              <div className="srcCard__text">
+                <div className="srcCard__title">{p.name}</div>
+                <div className="srcCard__sub">Asking to join</div>
+              </div>
+              <button
+                className="srcCard__mini srcCard__mini--on"
+                onClick={() => room.admit(p.id)}
+                title="Let them in"
+                aria-label={`Admit ${p.name}`}
+              >
+                <Icon name="check" size={13} />
+              </button>
+              <button
+                className="srcCard__mini srcCard__mini--danger"
+                onClick={() => room.deny(p.id)}
+                title="Decline"
+                aria-label={`Decline ${p.name}`}
+              >
+                <Icon name="close" size={13} />
+              </button>
+            </div>
+          ))}
+        </>
+      )}
+
       <div className="panel__sectionLabel">
         ON STAGE &middot; {scene.title.toUpperCase()}
+        {room.connected && (
+          <span style={{ float: 'right', color: 'var(--c-green)' }}>
+            {room.participants.length} in room
+          </span>
+        )}
       </div>
       {onStage.length ? (
         onStage.map((c) => <CaptureCard key={c.id} capture={c} onStage />)

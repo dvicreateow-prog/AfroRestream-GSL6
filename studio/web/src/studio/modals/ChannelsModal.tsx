@@ -14,7 +14,7 @@ import {
   validateIngestUrl,
   type Destination,
 } from '../../lib/destinations'
-import { ApiError, getToken } from '../../lib/session'
+import { ApiError } from '../../lib/session'
 
 const PLATFORM_ICON: Record<string, IconName> = {
   youtube: 'youtube',
@@ -49,7 +49,6 @@ export function ChannelsModal({ onClose }: { onClose: () => void }) {
   const [formError, setFormError] = useState('')
   const [saving, setSaving] = useState(false)
 
-  const signedIn = !!getToken()
 
   const load = useCallback(async () => {
     setLoading(true)
@@ -153,16 +152,6 @@ export function ChannelsModal({ onClose }: { onClose: () => void }) {
         </>
       }
     >
-      {!signedIn && (
-        <div className="panel__error" style={{ marginTop: 0, marginBottom: 14 }}>
-          <Icon name="lock" size={14} />
-          <span>
-            Channels belong to your account. Sign in to add one — your stream keys are
-            stored against your account, never shared.
-          </span>
-        </div>
-      )}
-
       {error && (
         <div className="panel__error" style={{ marginTop: 0, marginBottom: 14 }}>
           <Icon name="warning" size={14} />
@@ -341,7 +330,6 @@ export function ChannelsModal({ onClose }: { onClose: () => void }) {
           className="panel__add"
           style={{ marginTop: 16 }}
           onClick={() => setAdding(true)}
-          disabled={!signedIn}
         >
           <Icon name="plus" size={14} />
           Add channel
