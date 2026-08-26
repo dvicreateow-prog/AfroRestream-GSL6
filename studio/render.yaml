@@ -13,13 +13,23 @@ services:
     rootDir: studio
     dockerfilePath: server/Dockerfile
     dockerContext: .
-    plan: starter          # free tier sleeps; ffmpeg needs a warm instance
+    plan: free             # see the free-tier limits noted below
     healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
         value: production
+      # Keep the database on the mounted disk. Without this it lands on the
+      # container filesystem and every redeploy silently wipes users,
+      # destinations and stream keys.
+      # No persistent disk on the free plan, so SQLite lives on the container
+      # filesystem and resets on redeploy. Set DATABASE_URL to a hosted database
+      # (see README) when you want state to survive.
+      - key: DATABASE_PATH
+        value: /tmp/studio.db
       - key: PORT
         value: 4000
+      - key: RECORDINGS_PATH
+        value: /tmp/recordings
       # Origins allowed to call the API. Set to your Pages URL.
       - key: CORS_ORIGIN
         sync: false
@@ -30,7 +40,3 @@ services:
         sync: false
       - key: TURN_PASS
         sync: false
-    disk:
-      name: recordings
-      mountPath: /app/server/recordings
-      sizeGB: 5

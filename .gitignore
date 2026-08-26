@@ -51,6 +51,12 @@ build/
 # Runtime output
 # ---------------------------------------------------------------------------
 studio/server/recordings/
+# SQLite lives here in local dev; the file is per-machine state, not source.
+studio/server/data/
+studio/server/server/
+**/*.db
+**/*.db-wal
+**/*.db-shm
 studio/test-ingest.mjs
 *.mp4
 *.mkv

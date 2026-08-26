@@ -95,7 +95,12 @@ export class Broadcaster extends EventEmitter {
 
     let recordPath: string | null = null
     if (this.recording) {
-      const dir = opts.recordDir ?? path.resolve(process.cwd(), 'recordings')
+      /* RECORDINGS_PATH points at the mounted disk in production; without it the
+       * files land on the container filesystem and vanish on every redeploy. */
+      const dir =
+        opts.recordDir ??
+        process.env.RECORDINGS_PATH ??
+        path.resolve(process.cwd(), 'recordings')
       mkdirSync(dir, { recursive: true })
       const stamp = new Date().toISOString().replace(/[:.]/g, '-')
       recordPath = path.join(dir, `studio-${stamp}.mp4`)

@@ -19,6 +19,8 @@ import type {
 import { Broadcaster, PROFILES } from './broadcaster.ts'
 import { RoomRegistry, ROOM_CAPACITY } from './rooms.ts'
 import { toolsRouter } from './tools.ts'
+import { attachUser, authRouter, requireAuth, userFromToken } from './auth.ts'
+import { destinations as destRepo, streamKeys, settings as settingsRepo } from './repos.ts'
 
 const PORT = Number(process.env.PORT ?? 4000)
 
@@ -43,8 +45,6 @@ app.use(express.json({ limit: '2mb' }))
 const rooms = new RoomRegistry()
 const broadcaster = new Broadcaster()
 
-/* In-memory destination store. Swap for a database when auth lands. */
-const destinations = new Map<string, Destination>()
 
 function iceServers(): IceServer[] {
   const list: IceServer[] = [{ urls: 'stun:stun.l.google.com:19302' }]
@@ -62,6 +62,9 @@ function iceServers(): IceServer[] {
 /* REST                                                                */
 /* ------------------------------------------------------------------ */
 
+/* Populates req.user from the Authorization header when present. */
+app.use(attachUser)
+app.use('/api', authRouter())
 app.use('/api', toolsRouter())
 
 /* ---- ingest / stream key ---- */
@@ -74,24 +77,25 @@ const INGEST_REGIONS = [
   { id: 'ap-south',  label: 'Asia Pacific (Singapore)', host: 'live-sin.local' },
 ]
 
-let streamKey = 're_' + randomUUID().replace(/-/g, '').slice(0, 24)
 
 app.get('/api/ingest-servers', (_req, res) => res.json(INGEST_REGIONS))
 
-app.get('/api/stream-key', (req, res) => {
-  const region = INGEST_REGIONS.find((r) => r.id === req.query.region) ?? INGEST_REGIONS[0]
+app.get('/api/stream-key', requireAuth, (req, res) => {
+  const region = typeof req.query.region === 'string' ? req.query.region : undefined
+  const sk = streamKeys.for(req.user!.id)
+  const target = INGEST_REGIONS.find((r) => r.id === (region ?? sk.region)) ?? INGEST_REGIONS[0]
   res.json({
-    region: region.id,
-    rtmpUrl: `rtmp://${region.host}/live`,
-    rtmpsUrl: `rtmps://${region.host}:443/live`,
-    srtUrl: `srt://${region.host}:9000?streamid=${streamKey}`,
-    streamKey,
+    region: target.id,
+    rtmpUrl: `rtmp://${target.host}/live`,
+    rtmpsUrl: `rtmps://${target.host}:443/live`,
+    srtUrl: `srt://${target.host}:9000?streamid=${sk.key}`,
+    streamKey: sk.key,
   })
 })
 
-app.post('/api/stream-key/reset', (_req, res) => {
-  streamKey = 're_' + randomUUID().replace(/-/g, '').slice(0, 24)
-  res.json({ streamKey })
+app.post('/api/stream-key/reset', requireAuth, (req, res) => {
+  const region = typeof req.body?.region === 'string' ? req.body.region : undefined
+  res.json({ streamKey: streamKeys.rotate(req.user!.id, region).key })
 })
 
 /* ---- speed test ----
@@ -106,11 +110,11 @@ app.get('/api/health', (_req, res) => {
   res.json({ ok: true, rooms: rooms.count, live: broadcaster.live })
 })
 
-app.get('/api/destinations', (_req, res) => {
-  res.json([...destinations.values()])
+app.get('/api/destinations', requireAuth, (req, res) => {
+  res.json(destRepo.listFor(req.user!.id))
 })
 
-app.post('/api/destinations', (req, res) => {
+app.post('/api/destinations', requireAuth, (req, res) => {
   const { platform, name, url, streamKey, enabled } = req.body ?? {}
   if (!url || typeof url !== 'string') {
     return res.status(400).json({ error: 'url is required' })
@@ -118,35 +122,37 @@ app.post('/api/destinations', (req, res) => {
   if (!/^rtmps?:\/\//i.test(url) && !/^srt:\/\//i.test(url)) {
     return res.status(400).json({ error: 'url must be rtmp://, rtmps:// or srt://' })
   }
-  const dest: Destination = {
-    id: randomUUID(),
-    platform: platform ?? 'custom',
-    name: name ?? 'Custom RTMP',
-    url,
-    streamKey: streamKey ?? '',
-    enabled: enabled ?? true,
-  }
-  destinations.set(dest.id, dest)
-  res.status(201).json(dest)
+  res.status(201).json(
+    destRepo.create(req.user!.id, { platform, name, url, streamKey, enabled }),
+  )
 })
 
-app.patch('/api/destinations/:id', (req, res) => {
-  const dest = destinations.get(req.params.id)
-  if (!dest) return res.status(404).json({ error: 'not found' })
-  Object.assign(dest, req.body ?? {}, { id: dest.id })
-  res.json(dest)
+app.patch('/api/destinations/:id', requireAuth, (req, res) => {
+  const updated = destRepo.update(req.user!.id, req.params.id, req.body ?? {})
+  if (!updated) return res.status(404).json({ error: 'not found' })
+  res.json(updated)
 })
 
-app.delete('/api/destinations/:id', (req, res) => {
-  if (!destinations.delete(req.params.id)) {
+app.delete('/api/destinations/:id', requireAuth, (req, res) => {
+  if (!destRepo.remove(req.user!.id, req.params.id)) {
     return res.status(404).json({ error: 'not found' })
   }
   res.status(204).end()
 })
 
+/* ---- per-user settings ---- */
+
+app.get('/api/settings', requireAuth, (req, res) => {
+  res.json(settingsRepo.get(req.user!.id))
+})
+
+app.patch('/api/settings', requireAuth, (req, res) => {
+  res.json(settingsRepo.merge(req.user!.id, req.body ?? {}))
+})
+
 app.get('/api/stream/stats', (_req, res) => res.json(broadcaster.stats()))
 
-app.post('/api/stream/start', (req, res) => {
+app.post('/api/stream/start', requireAuth, (req, res) => {
   if (broadcaster.live) return res.status(409).json({ error: 'already live' })
   const profile = req.body?.profile ?? '1080p30'
   if (!(profile in PROFILES)) {
@@ -154,7 +160,7 @@ app.post('/api/stream/start', (req, res) => {
   }
   try {
     const result = broadcaster.start({
-      destinations: [...destinations.values()],
+      destinations: destRepo.listFor(req.user!.id),
       profile,
       record: Boolean(req.body?.record),
     })
@@ -164,7 +170,7 @@ app.post('/api/stream/start', (req, res) => {
   }
 })
 
-app.post('/api/stream/stop', (_req, res) => {
+app.post('/api/stream/stop', requireAuth, (_req, res) => {
   broadcaster.stop()
   res.json({ ok: true })
 })
@@ -182,7 +188,19 @@ server.on('upgrade', (req, socket, head) => {
   if (pathname === '/ws') {
     signalWss.handleUpgrade(req, socket, head, (ws) => signalWss.emit('connection', ws, req))
   } else if (pathname === '/ws/ingest') {
-    ingestWss.handleUpgrade(req, socket, head, (ws) => ingestWss.emit('connection', ws, req))
+    /* The programme feed starts a broadcast, so it must prove who it is. The token
+     * travels in the query string because browsers cannot set headers on a
+     * WebSocket handshake. */
+    const token = new URL(req.url ?? '/', `http://${req.headers.host}`).searchParams.get(
+      'access_token',
+    )
+    const user = userFromToken(token)
+    if (!user) {
+      socket.write('HTTP/1.1 401 Unauthorized\r\n\r\n')
+      socket.destroy()
+      return
+    }
+    ingestWss.handleUpgrade(req, socket, head, (ws) => ingestWss.emit('connection', ws, req, user))
   } else {
     socket.destroy()
   }
@@ -319,7 +337,7 @@ signalWss.on('connection', (ws: WebSocket) => {
 
 /* ---- programme ingest ---- */
 
-ingestWss.on('connection', (ws: WebSocket) => {
+ingestWss.on('connection', (ws: WebSocket, _req: unknown, user: { id: string }) => {
   ws.binaryType = 'nodebuffer'
   let bytesIn = 0
   let framesIn = 0
@@ -342,7 +360,7 @@ ingestWss.on('connection', (ws: WebSocket) => {
       const msg = JSON.parse(String(data))
       if (msg.t === 'start') {
         broadcaster.start({
-          destinations: [...destinations.values()],
+          destinations: destRepo.listFor(user.id),
           profile: msg.profile ?? '1080p30',
           record: Boolean(msg.record),
         })

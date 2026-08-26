@@ -18,6 +18,7 @@ import {
 } from './chatOverlayRenderer'
 import { TransitionRunner, snapshot, type TransitionKind } from './transitions'
 import { wsUrl } from '../lib/api'
+import { getToken } from '../lib/session'
 import type { LayoutId } from '@studio/shared'
 
 export type CaptureKind = 'camera' | 'screen' | 'media'
@@ -424,13 +425,30 @@ class MediaEngine {
       throw new Error('Nothing is on stage yet — add a source before going live.')
     }
 
-    const socket = new WebSocket(wsUrl('/ws/ingest'))
+    /* The ingest socket starts a broadcast, so the server requires a session.
+     * Browsers cannot set headers on a WebSocket handshake, hence the query param. */
+    const token = getToken()
+    if (!token) {
+      throw new Error('Sign in before going live.')
+    }
+    const socket = new WebSocket(
+      `${wsUrl('/ws/ingest')}?access_token=${encodeURIComponent(token)}`,
+    )
     socket.binaryType = 'arraybuffer'
     this.socket = socket
 
     await new Promise<void>((resolve, reject) => {
       socket.addEventListener('open', () => resolve(), { once: true })
-      socket.addEventListener('error', () => reject(new Error('Could not reach the stream server')), { once: true })
+      socket.addEventListener(
+        'error',
+        () =>
+          reject(
+            new Error(
+              'Could not reach the stream server. Check it is running and that you are signed in.',
+            ),
+          ),
+        { once: true },
+      )
     })
 
     socket.addEventListener('message', (ev) => {

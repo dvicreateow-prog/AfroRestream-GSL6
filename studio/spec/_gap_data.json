@@ -1,0 +1,2435 @@
+{
+ "domains": [
+  {
+   "domain": "Widgets and on-stream graphics",
+   "headline": "Only a generic overlay-box layer (add/toggle/drag/resize, painted into the composited canvas) genuinely works; the entire user-created widget/browser-source system is absent, the brand/theme/QR/caption panels are local-state mockups, and the two real engine renderers (countdown, chat-on-stream) are never invoked by any UI.",
+   "specified": 30,
+   "built": 3,
+   "gapCount": 20
+  },
+  {
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)",
+   "headline": "The video effects pipeline does not exist at all: there is zero WebGL/WebGL2/GLSL/MediaPipe code anywhere in web/src \u2014 the compositor is a Canvas2D programme mixer, and every documented effect survives only as unread settings fields plus a Settings modal wired to local useState.",
+   "specified": 24,
+   "built": 3,
+   "gapCount": 20
+  },
+  {
+   "domain": "Audio",
+   "headline": "The engine layer has a credible mixer core (correct gain enum, per-source src-gain-dest graph, a real volumeMeter worklet at 24 Hz), but almost nothing above it is wired: the entire Audio settings panel is local useState over hardcoded fake device lists, no UI anywhere calls setGain/setMuted/setSolo, the whole music/SFX/player-service surface is absent, and the gUM constraints ignore the settings store that already persists them.",
+   "specified": 34,
+   "built": 5,
+   "gapCount": 20
+  },
+  {
+   "domain": "Destinations and multistreaming",
+   "headline": "Only the RTMP plumbing is real \u2014 an in-memory destinations CRUD API plus a genuine ffmpeg tee fan-out to N enabled targets \u2014 while the entire destinations product surface (58-platform catalogue, OAuth and manual connect forms, per-platform validation and payloads, scheduling, limits) is absent, and the ChannelsModal the user actually sees is pure local useState wired to nothing.",
+   "specified": 38,
+   "built": 6,
+   "gapCount": 20
+  },
+  {
+   "domain": "Sources, guests and media",
+   "headline": "Only the four local capture paths (camera, screen, local video file, image) genuinely reach the compositor; every one of AddSourceModal's 8 tiles is a no-op, and the host studio never joins a room at all, so no guest stream, approval flow or per-guest control exists on the host side.",
+   "specified": 30,
+   "built": 6,
+   "gapCount": 20
+  },
+  {
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)",
+   "headline": "Only the Sources panel (engine-wired) and the Graphics overlay list (store to compositor) do real work; the rail is 8 of 19 tabs with none of the slot/badge/deep-link behaviour, and QR, Captions, Theme, Chat, Notes and AI are local-useState mockups \u2014 Captions is additionally built as a speech-to-text panel the spec explicitly says does not exist.",
+   "specified": 34,
+   "built": 3,
+   "gapCount": 20
+  },
+  {
+   "domain": "Shortcuts, settings and persistence",
+   "headline": "Shortcuts and Settings are shells: SettingsModal is 100% local useState with zero connection to settingsStore (which has no importers anywhere in the app), nothing persists, nothing reaches the engine, and only 3 of 44 spec'd key bindings match the spec.",
+   "specified": 130,
+   "built": 12,
+   "gapCount": 20
+  },
+  {
+   "domain": "Layouts, scenes and the stage",
+   "headline": "The stage renders and scene switching with cross-fade genuinely works, but the layout system is a hand-rolled substitute sharing almost nothing with the spec's LayoutV2 model \u2014 the layout enum, per-layout option objects, tile shapes/radius/gravity and the Customize modal are absent or purely cosmetic, and scene reorder/duplicate/rename plus countdown-scene behaviour are unimplemented.",
+   "specified": 24,
+   "built": 8,
+   "gapCount": 20
+  },
+  {
+   "domain": "Server API, events and persistence",
+   "headline": "The server implements roughly six of ~32 documented capabilities \u2014 destination CRUD, an ffmpeg RTMP fan-out, mesh signaling, room roster, studio chat and a stream-key stub \u2014 while auth, persistence, events/scheduling, users, recordings, files, analytics, clips, pairs and the entire binary room-manager protocol are absent, and every surface that does exist is unauthenticated and process-global.",
+   "specified": 32,
+   "built": 6,
+   "gapCount": 20
+  },
+  {
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)",
+   "headline": "Essentially none of this domain exists: neither web/package.json nor server/package.json contains hls.js, @mediapipe/tasks-vision, aws-sdk, ai/@ai-sdk, Stripe, Intercom, Canny, Segment, Amplitude, Datadog, Turnstile or gapi, and no source file references any of them; the trim editor, the 28-theme chat embed kit and the ~72-tool AI agent are absent entirely, with only an honest no-provider AI stub, a partial original chat-overlay canvas renderer and unused captured assets (MediaPipe .tflite/wasm in web/public/mediapipe, theme fonts in web/public/fonts) standing in \u2014 and no repo document declares any of it intentionally out of scope.",
+   "specified": 27,
+   "built": 0,
+   "gapCount": 20
+  }
+ ],
+ "totals": {
+  "domainsAudited": 10,
+  "specified": 403,
+  "built": 52,
+  "gaps": 200,
+  "blockers": 57,
+  "major": 98,
+  "minor": 45,
+  "wrong": 36,
+  "stubbed": 30
+ },
+ "blockers": [
+  {
+   "item": "Generic widget system (user-created browser sources rendered as overlay iframes)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec sec 0/1 calls this the primary mechanism (polls, leaderboards, lower thirds, banners all come from it). grep for browserSource/Widget across web/src returns zero hits outside an unrelated comment at engine/mediaEngine.ts:75. No WidgetForm/WidgetOption/WidgetAsset/WidgetFavicon/WidgetMoreOptionsMenu/WidgetsContent/WidgetsTabTitle/WidgetUpgradePopover, no browserSources entity, no iframe layer, no 5-per-scene limit, no paid gate.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "AI widget generation (generate -> SSE stream -> preview -> apply)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec sec 1.1/1.7: 'AI widget', 'Generate widget', 'Designing widget...', WidgetAsset generating->ready->apply states, SSE errors, version restore. Nothing exists.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Chat-on-stream overlay control surface",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "engine/chatOverlayRenderer.ts is a complete renderer (397px reserved band, freemove mode, message lifetimes) and mediaEngine.ts:342-356 exposes showChatOverlay/hideChatOverlay/pushChat, but grep shows zero .tsx callers. No 'Show on stream' toggle, no positionMode picker, no scale/backgroundOpacity/messageOpacity sliders, no alignmentTop/hideMessages/padding/theme. The GraphicsPanel 'Chat' preset only adds an Overlay of kind 'chat', which compositor.drawOverlay has no case for, so it paints nothing.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Countdown control surface (duration, text color, background, scale, position, font)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "engine/countdownRenderer.ts implements config, the exact spec preset list (0/10s/30s/1/2/3/10/15 min) and drawing, and mediaEngine.ts:324-338 exposes showCountdown/startCountdown, but nothing in studio/ calls them. No CountdownToolbar/CountdownControls/CountdownColorPicker/CountdownBackgroundColorPicker/CountdownSceneOverlayControls. A countdown scene can be created in AddSceneModal but renders no timer. Note the spec's 'Auto' sentinel belongs to countdown TEXT color; the implementation applies 'Auto' to backgroundColor and has no text-color property.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Reserved-space layout maths (caption 216*c, ticker 48*(h/720), chat 397*c)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec sec 4.3 and cross-cutting rule 4 require this before layout. reservedChatWidth() is exported at chatOverlayRenderer.ts:93 but has no caller; compositor.ts:175 calls computeLayout(this.layout, this.tiles.length, this.primary) with no reserved-width argument, so sources never reflow. The constants 216 and 48 appear nowhere in the codebase.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Brand entity (per-brand ownership of all graphics assets, brand folders, active-brand switching)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec sec 6: a brand owns captions/tickers/QR/logos/overlays/backgrounds/browser sources/theme/primaryColor/font/layoutType via captionId/tickerId/qrCodeId/logoId/overlayId slots. studioStore.ts has no brand concept; overlays are one flat global array (line 150) scoped to neither brand nor scene.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "WebGL2 VideoPipeline host (offscreen video + canvas + WebGL2 context, effect chain, ping-pong RenderTargets)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "grep for webgl|shader|createShader|gl_FragColor across all of web/src returns zero hits. compositor.ts:100 is getContext('2d', { alpha: false }) - Canvas2D only. No VideoPipeline / CameraVideoPipeline / EffectReconciler exists; mediaEngine.ts never processes a camera track, it hands the raw MediaStream element to the 2D compositor. Spec WebGL2 context attributes (premultipliedAlpha, powerPreference high-performance, desynchronized, antialias false) are unimplemented.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "GreenScreenEffect chroma-key shader (UV-space keying, module 30668)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 4.3: RGBtoUV matrix, baseMask = chromaDistance - similarity, fullMask = pow(clamp(baseMask/smoothness,0,1),1.5), spill desaturation toward Rec.709 luma (0.2126/0.7152/0.0722), composite over backgroundImageTexture, default 1x1 black ImageData plate, RGB internalFormat. None of this exists in code.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "MediaPipe VideoSegmenter (ImageSegmenter.createFromOptions, GPU delegate, self-hosted /mediapipe WASM)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 3.1-3.2: selfie_segmenter.tflite (249537 B, maskTexelSize [1/256,1/256]) and selfie_segmenter_landscape.tflite (250177 B, [1/144,1/256]), SegmentationType General:0 / Landscape:1, FilesetResolver.forVisionTasks('/mediapipe'), runningMode VIDEO, mask.hasWebGLTexture(). All model files plus vision_wasm_internal.wasm sit in web/public/mediapipe at exactly the spec byte sizes but web/src references them only from the static manifest src/assets/assets.json. No @mediapipe/tasks-vision dependency in web/package.json; no import of ImageSegmenter anywhere.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "MediapipeRenderer blur path - fixed 9x9 gaussian, sigma 2.0, two passes at 0.5x drawing buffer",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 3.3 constants recorded but unimplemented: weights float[](0.882496903, 0.60653066, 0.324652467, 0.135335283), u_firstPass axis switch, per-pixel step scaled by (1 - mask) to prevent halo, blur radius deliberately non-adjustable. Impl offers only a 'Blur' background button (SettingsModal.tsx:487) that calls setBackground('blur') on local React state.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Background-replace path: joint bilateral mask filter + composite shader",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 3.3: 5x5 window, offsets [-2..2], spatial weights sigma 2.0, colorSigmaCoeff = 200.0 (colour sigma 0.05), totalMask = pow(totalMask, 1.5), 0.5x filter resolution; composite shader adds backgroundColor += 0.02 * mask * videoColor before mix(). No equivalent code exists.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "LutEffect - .cube parser, 8-bit quantisation, texImage3D 3-D texture, hardware trilinear",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "All five .cube files sit in web/public/luts at exactly the spec byte sizes (classic-film 918223, faded-memories 943621, icy-drama 831625, teal-orange 950134, warm-cinema 110607) and are never fetched by any source file. Missing: 15 s AbortSignal.timeout, CubeLutParseError, LUT_3D_SIZE >= 2 validation (33 for four files, 16 for warm-cinema), DOMAIN_MIN/MAX 0-1 check, 1D-LUT rejection, size^3 row-count check, Uint8Array(size^3*4) with Math.round(255*v), texImage3D(TEXTURE_3D, RGBA, UNSIGNED_BYTE), CLAMP_TO_EDGE + LINEAR sampler state.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "BeautifyEffect three-pass GPU implementation (downsample / 9-tap box blur x2 / edge-aware combine)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 5.2: downsample at 0.25x emitting vec4(color*mask, mask); blur module 99231 (for i=-4..4, /9.0) per axis; combine module 81285 with LUMA vec3(0.299,0.587,0.114), smoothstep(maskLow,maskHigh,mask), 3x3 binomial high-pass (0.25/0.125/0.0625), textureProtection grain guard smoothstep(0.02,0.08,grain), shared VAO at location 0, R8/RED mask texture with UNPACK_ALIGNMENT 1. Nothing built - only a beautifyEnabled boolean and beautifyIntensity number in the store.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "SkinMaskAnalyzer worker feeding beautify (selfie_multiclass_256x256, CPU delegate)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 5.3 constants recorded but unimplemented: 256 px resizeWidth ImageBitmap, 66 ms inference throttle (~15 fps), 3 s worker no-response timeout, 5 s backoff, max 3 create attempts, OffscreenCanvas(1,1) with delegate CPU, getLabels().indexOf('face-skin'/'body-skin'), round(255*min(faceSkin+bodySkin,1)), transferable ImageBitmap/Uint8Array. The 16371837-byte selfie_multiclass_256x256.tflite is on disk and unreferenced; no worker file exists in web/src.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Every effect setting is dead state - settingsStore.ts has no consumers anywhere in the app",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "grep -rn 'settingsStore|useSettings' across web/src excluding the file itself returns zero results. The store persists correct spec defaults (greenScreen.similarity 0.4, smoothness 0.08, spill 0.1, keyColor 'auto', customColor '#00ff00', beautifyIntensity 0.3, beautifyEnabled false, isMirrored true) to the right studio.settings.* keys, but no component or engine module ever reads or writes them.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "SettingsModal video/background controls are local useState, not wired to store or engine",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "SettingsModal.tsx imports only useState, Icon, Modal and useStudio - never settingsStore. Resolution (line 237), mirror (238), background (250) and colour filter are plain useState values; changing any of them repaints the modal and nothing else. Nothing reaches the compositor, the camera track, or localStorage.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Audio settings panel is entirely fake local state (SettingsModal.tsx:240)",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "MICS/SPEAKERS are hardcoded string arrays ('Shure MV7 (USB)', 'Studio Monitors'); mic/speaker/level/echo/noise/autoGain are all useState with no import of settingsStore or the engine. Toggling 'Echo cancellation' changes nothing anywhere. settingsStore.ts already defines and persists every one of these keys (studio.settings.shouldUseEchoCancellation etc.) but useAudioSettings/setAudio have zero call sites in the whole tree. Spec 2.5 also requires the 'Show advanced options' reveal and 7 labelled controls with tooltips.",
+   "domain": "Audio"
+  },
+  {
+   "item": "No per-source volume / mute / solo UI at all",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec 3.9/8 require VolumeControl (min 0 / max 150, aria-label 'Audio Gain'), VolumeMuteControl, SlidingLimiter and SourceControls (solo/spotlight/refresh-audio). AudioMixer.setGain/setMuted/setSolo exist in engine/audioMixer.ts but grep across web/src finds no caller outside the mixer itself. SourcesPanel.tsx contains no audio strings whatsoever. Levels exist only in the engine plus one mic-button animation.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Background music: catalogue, player service, custom upload, AI generation",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 5.2-5.5: /audio-backgrounds fetch, the 22-channel allow-list and display order, AudioPlayerKindIO (BACKGROUND|CustomTrack|CountdownScene), the 8 room-manager messages (PLAY_AUDIO, SET_AUDIO_VOLUME, SeekAudio, UpdateAudioLoop...), the 16-MIME upload set, Suno generate_music. grep for backgroundMusic|musicVolume|soundboard across web/src returns nothing.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Audio input/output device enumeration and setSinkId routing",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec 6.1: enumerate audiooutput devices, apply with the deliberate setSinkId('') then setSinkId(id) double-call behind a per-element PQueue, hide the output select when audioOutputDevices.length === 0, route notification sounds to the same sink. grep for enumerateDevices|setSinkId across web/src hits only pages/ToolDetailPage.tsx (unrelated). settingsStore persists micDeviceId/speakerDeviceId but nothing reads them; startMic's deviceId argument is never passed by any caller.",
+   "domain": "Audio"
+  },
+  {
+   "item": "\"Add new channels\" platform catalogue (PlatformsList) with ordered tiles and platform icons",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec 1.2/1.3. ChannelsModal's add flow is a single text input for a display name (draft) that appends a local row with icon 'rtmp' - it cannot capture a platform, an ingest URL, or a stream key at all.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "ChannelsModal wired to the server destinations API",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "ChannelsModal.tsx:61 useState<Channel[]>(INITIAL) with 6 hardcoded fake channels. No fetch/useEffect/api import in the whole file. toggle() and addChannel() only setState; Save is onClick={() => setSaved(true)}. Nothing reaches GET/POST/PATCH/DELETE /api/destinations - those endpoints have no web consumer except the docs page.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Per-platform manual connect forms: 30 ingest URL patterns, per-platform field sets, stream-server dropdown with Autodetect",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 2.3/2.4 tabulates fields (url/key/channelPageUrl/username/serverId) and verbatim placeholders for ~30 platforms, plus GET platforms/{id}/stream-servers + Autodetect for 9 platforms. Implementation has one generic POST body {platform,name,url,streamKey,enabled} and no connect form of any kind.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "AddSourceModal source picks do nothing - all 8 kinds are dead UI",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "AddSourceModal.tsx handlePick() only calls studioStore.addSource(), which writes a row into state.sources (a field no component reads) and pushes the fake id into scene.sourceIds. useStudioEngine passes those ids to engine.syncTiles(), which does `const h = this.captures.get(id); if (!h) continue` - the id is silently dropped. No getDisplayMedia, file picker, HLS player, iframe or RTMP key is triggered by any tile. Camera/screen/video/image only work via SourcesPanel's own file input and toggleCamera/toggleScreen, never via the modal.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Host side never joins the room - remote guest streams are never consumed into the compositor",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "RoomClient is instantiated only in web/src/pages/JoinPage.tsx (guest page). Nothing in web/src/studio/** or EngineProvider constructs one, and engine.addStream() (mediaEngine.ts:155, the only entry point for a remote MediaStream) has zero call sites. Guests mesh with each other but their video never becomes a CaptureHandle, so it can never be tiled, put on air, or streamed out.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Guest approval / waiting room has no host UI, and the server default contradicts the spec",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Server implements requireApproval plus waiting/admit/deny (server/src/index.ts:234, 256-265) and RoomClient exposes admit()/deny()/setStage()/remove(), but no host component calls any of them - a guest that hits 'waiting' can never be let in. Spec 2.3 is explicit that link guests have no approval gate; server/src/rooms.ts:24 sets requireApproval = true.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Backstage / on-air flow for guests",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Participant.state = 'backstage' exists in server/src/rooms.ts but there is no host 'Add to the stream' prompt (ParticipantJoinedPopover), no ON AIR badge or isOnAir toggle, and no backstage mic muting on the guest page.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Presentations - the whole of spec section 3 is absent",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "No PDF/PPTX/DOCX/KEY upload, no client-side hashing, no Google Drive import, no PresentationStatus polling, no urlTemplate slide rasterisation, no picker card, and no slide navigation (prev/next/select, activePage+1 over pages). Grep for activePage/urlTemplate/slide controls returns nothing outside icon names. The 'Presentation' tile falls into the dead-store path above.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Invite link is a client-side random code never registered with the server",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "InviteModal.makeCode() generates 8 random chars in component state and builds `${origin}/join/${code}`. It is never sent to the server and the host session is not bound to any roomId, so a guest following the link lands in a freshly getOrCreate()'d empty room with no host. 'Get a new invite link' only calls setCode - no invalidation of the previous link, no confirmation modal.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Per-guest host controls (mute, gain, show/hide, audio-only, blind, solo, spotlight, rename, kick, promote, replace, ordering)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "SourcesPanel renders only local engine captures (camera/screen/media) with play/pause/restart/toggle/remove. None of the spec 2.5 SourceMenu controls exist for a participant, and RoomClient.remove()/setStage() are never called from the studio shell.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Captions panel is built as a speech-to-text / translation settings screen, contradicting the spec outright",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "web/src/studio/panels/CaptionsPanel.tsx. Spec 2.0: 'this is NOT speech-to-text', exhaustive grep for Speechmatics/AssemblyAI/Deepgram/Whisper/captionsLanguage/Profanity returns zero hits; the real tool is a lower-third/ticker text manager. Code ships a LANGUAGES list (line 7), spoken/translate selects, profanity toggle, speakerName, boxed, position and size pickers (lines 194-201) - all invented, and all plain useState with no service behind them.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Captions 'Lower Third' section (info tooltip 'Static text on preview', Add button, caption list)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec 2.1. Grep for 'Lower Third' or 'Add' in CaptionsPanel.tsx returns nothing.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Captions 'Ticker' section (info tooltip 'Scroll text across bottom', Add, ticker list, TickerV2 payload)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec 2.2/2.6. engine/compositor.ts:341 already draws an OverlayKind 'ticker', but no panel ever feeds it.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "QR panel never generates or displays an actual QR code",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "small",
+   "note": "Spec 1.1: rows render <img class='QrCodeOption_image' src={qrCodeUrl}> from the backend qr.svg. web/src/studio/panels/QrPanel.tsx renders a generic Lucide <Icon name=\"qr\" size={15}/> placeholder instead. The `qrcode` package is in web/package.json (^1.5.4) but grep finds zero imports of it anywhere under web/src.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "QR codes live only in component useState - no store, no persistence, nothing on stage",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "QrPanel.tsx:97 useState<QrCode[]>(SEED); handleCreate and patch() only setCodes. studioStore has no qrCodes field, and although the compositor supports OverlayKind 'qr' (engine/compositor.ts:366) no panel calls addOverlay for it, so toggling 'visible' changes nothing rendered. Spec 1.9 requires RemoteQrCodesRepository persistence.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Chat panel receives no real messages and sends nowhere",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "ChatPanel.tsx:43 seeds messages from a hard-coded SEED array and send() (line 83) appends the draft to that local array. No socket/fetch/platform integration in the panel; the store exposes only `viewers`. Spec 0.4/0.8 also require the CHAT unread sonar dot and hasUnreadChatMessages clearing on tab open - neither exists.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "SettingsModal is not wired to settingsStore \u2014 every control is local component state",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "SettingsModal.tsx:1 imports only Icon/Modal/useStudio. Lines 218-256 declare 18 useState hooks (quality, camera, resolution, mirror, mic, speaker, echo, noise, autoGain, ...). No setVideo/setAudio/setStream call exists. The 'Save changes' button is onClick={onClose} \u2014 it saves nothing. The modal unmounts on close (StudioModals.tsx:26) so values reset even within one session.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "settingsStore.ts is dead code \u2014 no file in the app imports it",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "grep for settingsStore|useSettings|useVideoSettings|useAudioSettings|useStreamSettings|flushSettings across web/src returns zero hits outside the file itself. Its hydrate/persist/debounce machinery and all 27 studio.settings.* key mappings are real but never invoked, so 0 of the 27 documented keys persist end to end.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "No setting affects the engine (devices, resolution, mirror, audio processing)",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 3.2: mirror -> studio.settings.webcam.isMirrored applied to the camera. SettingsModal.tsx:392 applies transform: scaleX(-1) only to a decorative placeholder div inside the modal. Camera/mic/speaker selects, resolution, and echoCancellation/noiseSuppression/autoGain never reach getUserMedia constraints or setSinkId; grep 'mirror|isMirrored' in web/src/engine returns only unrelated comments.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Device lists are hardcoded fake strings instead of enumerateDevices()",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "SettingsModal.tsx:27-31: CAMERAS = ['FaceTime HD Camera','Logitech Brio 4K','Capture Card (HDMI)'], plus MICS and SPEAKERS. navigator.mediaDevices.enumerateDevices() appears nowhere in the studio tree (only pages/ToolDetailPage.tsx). Spec 3.2/3.3 require selects over real videoDevices/audioDevices persisted to videoInputDeviceId / audioInputDeviceId / audioOutputDeviceId.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "No Ctrl/Cmd shortcut can ever fire \u2014 the handler bails on any modifier",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "useShortcuts.ts:112 'if (e.ctrlKey || e.metaKey || e.altKey || e.repeat) return'. This kills every Ctrl row: Ctrl+G go-live/record, Ctrl+Shift+G restart recording, Ctrl+Shift+P pause/resume, Ctrl+. sidebar, Ctrl+C/V/D scene copy/paste/duplicate, Ctrl+Z undo \u2014 9 of 44 rows. Spec 1.2 requires ctrlKey||metaKey to map to the 'ctrl' token.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Only 3 of 44 spec'd bindings use the correct key; 9 letter keys are bound to the wrong action",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "useShortcuts.ts:19-42. Correct: M mic, V camera, N add scene. Wrong: S (spec: open Settings) unused while Shift+S is rebound to screen share though spec Shift+S = 'Show all sources'; R (spec: Add RTMP source) = toggleRecording; O (spec: Add local video) = sources panel; G (spec: Add image) = graphics panel; C (spec Shift+C = private chat) = chat panel; [ and ] used for prev/next scene where spec uses Up/Down; 1-9 select-scene and L cycle-layout are invented and appear nowhere in the spec.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "The spec's 10 `LayoutType` members",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "shared/src/index.ts:131. Spec 1.1: SPOTLIGHT, PADDED_SPOTLIGHT, AUTO_CONTAIN, AUTO_COVER, HALF_SCREEN, CINEMA, THUMBNAILS, PICTURE_IN_PICTURE, Showtime, TBPN. Code: LayoutId = 'solo'|'split'|'stacked'|'grid'|'pip'|'spotlight'|'screen'|'custom'. HALF_SCREEN, CINEMA, THUMBNAILS, Showtime, TBPN, PADDED_SPOTLIGHT have no implementation; solo/split/stacked/grid/screen/custom are invented.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "CustomizeLayoutModal writing back to scene or engine",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "web/src/studio/modals/CustomizeLayoutModal.tsx:100. All seven controls (fit, shape, size, radius, gap, gravity, show-names) are useState locals feeding a CSS-only preview. No useStudio setter and no engine/compositor call appears anywhere in the file, so closing the modal discards everything; reset() clears local state only.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Per-layout persisted option objects on the scene",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "web/src/state/studioStore.ts:53. Spec 1.4 defines a persisted options object per layout (Contain {shape:Rectangle,radius:1}; HalfScreen {radius:0,ratio:65,alignment:Right}; Spotlight {radius:1,scale:100,positionMode:Fixed,fixedPosition:CenterCenter,freemovePosition:[0,0]}; Pip/Thumbnails/Showtime/Tbpn). interface Scene carries only `layout: LayoutId` \u2014 no options field exists, so nothing is persistable per scene.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Authentication and authorization: no auth of any kind on any HTTP or WebSocket surface",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a71.2/\u00a71.3 documents v2/api/auth/getStatusServerFrontendToken, v2/public/auth/registration, /auth/google, and an httpClientWithRefreshToken wrapper on every call; \u00a72.2 documents close codes JwtVerifyError=4109 and InvalidJwtPayload=4110. server/src/index.ts registers zero middleware between cors/express.json and the routes \u2014 POST /api/stream/start, POST /api/stream-key/reset and DELETE /api/destinations/:id are all callable by any anonymous origin.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Room join role is self-declared; no client secret or access key is verified",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "small",
+   "note": "Spec \u00a72.2 documents join errors NoClientIdOrSecret=4105 and BadClientSecret=4106, plus /events/${id}/studio-access-key and /events/${id}/invite-access-key. server/src/rooms.ts join() does `const isHost = role === 'host' && this.hostId === null` using the role straight off the client's join frame \u2014 the first socket to claim 'host' gets admit/deny/kick/setRoom authority, and leave() silently promotes an arbitrary remaining guest to host.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "/ws/ingest accepts anonymous control frames that start, poison or kill a live broadcast",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "index.ts ingestWss handler parses {t:'start'} from any connected socket and calls broadcaster.start() with every stored destination; binary frames are written straight to ffmpeg stdin with no identity check; and ws.on('close') unconditionally calls broadcaster.stop(), so any third party who connects and disconnects terminates someone else's stream.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Stream key is a single module-level variable shared by every caller and readable unauthenticated",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec \u00a71.4 scopes keys per event: events/${id}/stream-key and /events/${id}/stream-key/reset. index.ts has `let streamKey = 're_' + randomUUID()...` at module scope; GET /api/stream-key returns it to anyone, and POST /api/stream-key/reset rotates the one key for all users mid-stream.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Persistence layer: everything lives in in-memory Maps and dies with the process",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "`const destinations = new Map<string, Destination>()` in index.ts, `private rooms = new Map<string, Room>()` in rooms.ts, `private chat: ChatMessage[]` in Room. The code comments admit it ('Swap for a database when auth lands'). No database driver appears in server/package.json \u2014 dependencies are cors, express, multer, nanoid, tsx, ws only.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Broadcaster and destination store are process-global singletons, not per-room or per-user",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "One `new Broadcaster()` and one destinations Map serve every room. Broadcaster.start throws 'Broadcast already running' if proc !== null, so the second concurrent room gets HTTP 409, and any room that does start streams to every other user's destinations.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Room wire protocol: plain JSON {t:...} instead of the documented binary category-prefixed {type, messageId, value} envelope, and no SFU",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a72.2 specifies byte[0]=category (Sfu=0, Client=1, Broadcast=2, RoomManager=3, OverlayBroadcast=4), a fixed 36-char clientId at bytes 1..37 for Client/Broadcast, and messageId request/response correlation; \u00a70 and \u00a77.1 specify a mediasoup SFU with server-side compositing. index.ts does JSON.parse(String(raw)) on text frames with a flat `msg.t` discriminant, relays SDP verbatim for a browser mesh, and there is no mediasoup dependency, no Produce/ConnectProducerTransport/GetIceServers action handling, and no Compositor participant.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Events resource and scheduling: no /events surface at all",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a71.4 documents ~25 paths \u2014 /events, /events/history, /events/${id}/start, /reschedule, /unschedule?delete_external=false, /check-overlap, /events/${id}/destinations/${dst}, /cover, /loops, events/last. server/src contains no route matching /events.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Users, accounts, organizations and teams",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a71.2 and \u00a71.8: v2/api/user, /account-settings, /feature-groups, /social-profile, /stream-presets/default, /streaming-time, /trial-features, /organizations/current, /teams, /team-invite. None exist; the server has no concept of a user, so nothing can be scoped or owned.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Room Manager does not own scene, layout, overlay or branding state",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a72.3 and \u00a77.3 make the Room Manager the authority broadcasting scene/layout/overlay deltas (AddScene, SCENE_SELECTED, UPDATE_LAYOUT_TYPE_V2, OVERLAY_STATE_UPDATED, UPDATE_TICKER, UPDATE_LOGO, UPDATE_BACKGROUND, PLAY_COUNTDOWN_SCENE, ...). RoomSnapshot in rooms.ts carries only id, title, hostId, participants, live, recording, startedAt, requireApproval, capacity.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Recordings management: no listing, metadata, playlist, trim or import endpoints",
+   "state": "partial",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a71.5: /recordings, /recordings/${id}, /recordings/${id}/playlist, /studio-recordings/${id}/metadata, /files/import-recording/${id}, /files/trim-recording/${id}. Implementation only writes one local MP4 via the ffmpeg tee target in broadcaster.ts and returns its path in the start response \u2014 it is never indexed, listed, fetched or deleted.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Files / video storage API and per-participant local-recording upload",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a71.5 and \u00a77.7: /files, /files/import, /files/${id}/trims, /files/upload/${uploadId}, /files/upload-credentials?s=${ts}, /files/upload-credentials/${id}/refresh, with MediaRecorder 5 MiB parts going to S3. No upload-credentials issuance and no file resource exist; server/src/tools.ts uploads are transient and rmSync'd after each response.",
+   "domain": "Server API, events and persistence"
+  }
+ ],
+ "wrong": [
+  {
+   "item": "Ticker scrolling animation and speed control (0.4-2.5, default 1)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec sec 5: GPU-accelerated horizontal scroll, TickerSpeedControl, 600 ms debounced undo. compositor.ts:340-350 case 'ticker' does a single ctx.fillText at rect.x+24 - static, never moves. The Overlay type has no speed field, and grep for tickerSpeed finds only an unused SVG icon export in assets/icons/index.ts.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "OverlayKind set contradicts the spec's built-in list",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec sec 0 states 'There is no LowerThird component and no overlay-Banner component' - lower thirds and banners must come from the generic widget system. studioStore.ts:72-82 makes them first-class kinds ('banner', 'lowerThird'), and they are the only two overlays that paint richly, while the genuinely built-in slots 'background', 'chat' and 'countdown' have no painter case in drawOverlay at all.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Background mode set contradicts the spec - a 'color' mode and four invented hex swatches replace the default background images",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 3.3/3.4 define FxType = { Blur:0, Background:1 } plus DISABLED/BLUR sentinels and an image grid; there is no solid-colour virtual background in Restream. Impl adds BackgroundMode 'color' with color: '#101828' (settingsStore.ts:139) and BG_COLORS = ['#1f6feb','#8b5cf6','#10b981','#f59e0b'] (SettingsModal.tsx:41) rendered as the background grid in place of st-vb-room / st-vb-wall.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "LUT filter ids do not match the spec registry values",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 1.2 LutFilter values are the kebab strings 'classic-film', 'teal-orange', 'warm-cinema', 'icy-drama', 'faded-memories' - the persisted value and the asset filename stem. Impl LutFilterId (settingsStore.ts:34) is 'ClassicFilm' | 'TealOrange' | 'WarmCinema' | 'IcyDrama' | 'FadedMemories' (the enum key, not the value), so no id maps to /luts/<id>.cube. UI label 'Teal and orange' also differs from the spec label 'Teal & orange'.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Auto-ducking is invented; the real /6 music normalisation is absent (audioMixer.ts:178)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 3.7 defines the 6 divisor as a fixed playback normalisation applied once at play time ((gain ?? preferredMusicVolume)/6), and documents no automatic speech-triggered ducking anywhere. audioMixer applies 'if (n.cfg.isMusic && speechLoud) g = g / DUCK_DIVISOR' - a dynamic level-gated duck the product does not have, re-evaluated 24x/sec - and never implements the static /6.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Screen-share audio constraint contradicts the spec literal (mediaEngine.ts:137)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 2.2 requires {echoCancellation:false, noiseSuppression:false, autoGainControl:false, channelCount:2, [restrictOwnAudio:true]} - stereo, completely unprocessed. Code passes 'audio: true', so the browser applies default AEC/NS/AGC mono to screen audio, gating and ducking shared music/game audio.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Mic gUM constraints hardcoded true instead of read from settings (mediaEngine.ts:296)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "startMic always sends echoCancellation:true, noiseSuppression:true, autoGainControl:true. Spec 2.1 sources all three from the settings model, omits autoGainControl entirely (undefined) when stereo input is on, and pins sampleRate only behind prefer-same-sample-rate. No stereo, no sampleRate, no settings read.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Mute is implemented as gain 0 / track teardown, not track.enabled (audioMixer.ts:160)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 3.3: mute sets audioTrack.enabled = !isMuted && !isSilenced on both output and input tracks, so the producer keeps running and the cloned meter track keeps metering. Here setMuted only zeroes the gain node, and the only mute path the UI actually uses (Stage toggleMic -> engine.stopMic) stops the MediaStreamTrack and removes the mixer source outright - device released, meter dead, no return to the same track. Also missing: isMutedByHost, the User/System mute-reason enum, isSelfMuted.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Neither documented meter widget exists (SettingsModal.tsx:181)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 4.4/4.5 specify a 10-bar SlidingLimiter (green 0-5, yellow #ffab00 at >=6, red #de350b at >=8, level clipped by Math.min(progress, limit), 98px slider, hover numeric output) and a 19-dot VolumeMeter (12x4px dots, lit when volume*19 > index, #36b37e). Implementation has one continuous rounded progress bar, and in the settings panel it is driven by the local 'level' slider value rather than any real signal.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Worklet release smoothing and the 0.5 dB message dead-band (audioMixer.ts:36)",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 1: release is 'smoothed = max(db, this.db + (db - this.db) * (1 - 0.85))' and the port posts only when 'Math.abs(smoothed - this.db) > 0.5'. Code uses 'this.db * 0.85 + db * 0.15', which weights the previous absolute value rather than the delta and gives a different time constant, and it posts unconditionally every tick so there is no dead-band. It also floors at -60 before smoothing instead of using the 1e-10 epsilon / -200 dB guard.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Custom SRT destination",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "medium",
+   "note": "POST /api/destinations accepts srt:// URLs, but broadcaster.ts:92 emits teeTarget('f=flv:onfail=ignore', joinRtmp(d)) for every destination - an SRT target is muxed as FLV and has its key path-appended like RTMP. Spec 3.2 defines a distinct SRT schema (streamId, passphrase, latency, required port).",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Timezone handling",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 5.3 resolves the zone client-side via Intl.DateTimeFormat().resolvedOptions().timeZone (with Europe/Kiev->Kyiv fix), persists epoch ms, 15-minute picker granularity. ChannelsModal.tsx:29 offers a hardcoded 7-item ZONES string list ('UTC - Coordinated Universal Time', ...) instead.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Invite link is a client-side random code never registered with the server",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "InviteModal.makeCode() generates 8 random chars in component state and builds `${origin}/join/${code}`. It is never sent to the server and the host session is not bound to any roomId, so a guest following the link lands in a freshly getOrCreate()'d empty room with no host. 'Get a new invite link' only calls setCode - no invalidation of the previous link, no confirmation modal.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Invite-by-email UI contradicts the spec",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 2.1: 'Invite-by-email: not present for Studio guests... Guest invitation is link-only.' InviteModal has an email field and an invited[] list that is pure local state and sends nothing anywhere.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Captions panel is built as a speech-to-text / translation settings screen, contradicting the spec outright",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "web/src/studio/panels/CaptionsPanel.tsx. Spec 2.0: 'this is NOT speech-to-text', exhaustive grep for Speechmatics/AssemblyAI/Deepgram/Whisper/captionsLanguage/Profanity returns zero hits; the real tool is a lower-third/ticker text manager. Code ships a LANGUAGES list (line 7), spoken/translate selects, profanity toggle, speakerName, boxed, position and size pickers (lines 194-201) - all invented, and all plain useState with no service behind them.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Per-code 'size' (Small/Medium/Large) and per-code Classic/Compact style are invented controls",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 1.5: 'There is no free-form X/Y placement and no size slider' for the small QR, and overlay mode is a single brand-level EcommerceOverlayMode ('default'=Classic / 'compact') persisted via brandsStore.mainBrand.update({commerce:{overlayMode}}). QrPanel.tsx:18-21 defines SIZE_ORDER ['sm','md','lg'] and stores style on each QR record.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "QR form validation does not match spec (title required + 18-char cap, link 1000-char cap, 'looks odd' warning)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 1.3/1.5: maxTitleLength 18, maxLinkLength 1000, isValid requires title.length > 0, plus the warning 'The link looks odd. Please make sure it's valid.' QrPanel.tsx:102 only tests /^https?:\\/\\/\\S+$/ on the URL and line 118 silently substitutes 'Untitled code' for an empty title, so an empty title submits.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "QR scan-alert setting is in the wrong place and drives nothing",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "Spec 1.7 puts 'Show QR code scan alerts on stream' (and the sibling 'Push product links to live chat') in the Studio Settings modal, driving EcommerceViewedAlert on stage with 8000 ms auto-dismiss and four message templates. QrPanel.tsx:103 has a local useState `alerts` toggle with no consumer anywhere.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Device lists are hardcoded fake strings instead of enumerateDevices()",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "SettingsModal.tsx:27-31: CAMERAS = ['FaceTime HD Camera','Logitech Brio 4K','Capture Card (HDMI)'], plus MICS and SPEAKERS. navigator.mediaDevices.enumerateDevices() appears nowhere in the studio tree (only pages/ToolDetailPage.tsx). Spec 3.2/3.3 require selects over real videoDevices/audioDevices persisted to videoInputDeviceId / audioInputDeviceId / audioOutputDeviceId.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Settings Shortcuts tab shows an invented 12-row table matching neither the spec nor the app's own handler",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "SettingsModal.tsx:44 SHORTCUTS advertises 'Go live / end stream: Ctrl+Shift+L' (spec: Ctrl+G), 'Mute microphone: Ctrl+D' (spec: M), 'Next scene: Alt+Right' (spec: Down), 'Open chat panel: Ctrl+1' (spec: Shift+C). None of these 12 combos is handled by useShortcuts.ts \u2014 every row is non-functional advertising. Spec 2 requires 44 registry-driven rows.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "No Ctrl/Cmd shortcut can ever fire \u2014 the handler bails on any modifier",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "useShortcuts.ts:112 'if (e.ctrlKey || e.metaKey || e.altKey || e.repeat) return'. This kills every Ctrl row: Ctrl+G go-live/record, Ctrl+Shift+G restart recording, Ctrl+Shift+P pause/resume, Ctrl+. sidebar, Ctrl+C/V/D scene copy/paste/duplicate, Ctrl+Z undo \u2014 9 of 44 rows. Spec 1.2 requires ctrlKey||metaKey to map to the 'ctrl' token.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Only 3 of 44 spec'd bindings use the correct key; 9 letter keys are bound to the wrong action",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "useShortcuts.ts:19-42. Correct: M mic, V camera, N add scene. Wrong: S (spec: open Settings) unused while Shift+S is rebound to screen share though spec Shift+S = 'Show all sources'; R (spec: Add RTMP source) = toggleRecording; O (spec: Add local video) = sources panel; G (spec: Add image) = graphics panel; C (spec Shift+C = private chat) = chat panel; [ and ] used for prev/next scene where spec uses Up/Down; 1-9 select-scene and L cycle-layout are invented and appear nowhere in the spec.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Recordings tab contradicts the spec and invents fake storage data",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 3.4 defines four mutually exclusive renderings driven by hasCloudRecordingsAccess/hasLocalRecordingsAccess: cloud-recordings copy with hr/stream upsell, localRecordingEnabled toggle, localRecording4kEnabled (ULTRA_HD to AUTO mapping), an AUDIO_VIDEO/AUDIO_ONLY radio group, and three analytics events. SettingsModal.tsx:455 instead shows a 'Record every broadcast' toggle, an invented MP4/MKV format select, and a hardcoded '34.2 GB of 100 GB used' meter.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "settingsStore key map diverges from the documented 27-key set",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "settingsStore.ts:214-260 invents keys the spec does not list \u2014 studio.settings.streamingProfile, shouldUseLowLatency, shouldRecordEveryBroadcast, virtualBackgroundMode, virtualBackgroundColor, greenScreenEnabled, lastPanel, isPanelOpen, shouldAutoOpenNotes \u2014 while eight documented keys (shouldUseVp9, greenScreenBrightness, greenScreenContrast, greenScreenGamma, shouldShowGreenScreenConfirm, webcam.isBlinded, webcam.isMuted, virtualBackgroundId) appear only in ALL_SETTINGS_KEYS for deletion and are never modelled or written.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "The spec's 10 `LayoutType` members",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "shared/src/index.ts:131. Spec 1.1: SPOTLIGHT, PADDED_SPOTLIGHT, AUTO_CONTAIN, AUTO_COVER, HALF_SCREEN, CINEMA, THUMBNAILS, PICTURE_IN_PICTURE, Showtime, TBPN. Code: LayoutId = 'solo'|'split'|'stacked'|'grid'|'pip'|'spotlight'|'screen'|'custom'. HALF_SCREEN, CINEMA, THUMBNAILS, Showtime, TBPN, PADDED_SPOTLIGHT have no implementation; solo/split/stacked/grid/screen/custom are invented.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Gravity applied to Contain fit",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "web/src/engine/layouts.ts:140. Spec 1.6 models fit as {type: ElementLayoutV2FitType, gravity: ElementLayoutV2Gravity} \u2014 gravity applies to Contain as well as Cover. containBox() hard-centres (dest.x + (dest.w - w)/2) and sourceCrop early-returns the full frame for 'contain' before gravity is read.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "SPOTLIGHT geometry",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "medium",
+   "note": "web/src/engine/layouts.ts:118. Spec 1.1/1.4: SPOTLIGHT is one source enlarged and freely positioned, with {scale:100, positionMode:Fixed|Freemove, fixedPosition:CenterCenter, freemovePosition:[0,0]}. Code places the featured tile at 72% width on the left with the others stacked in a right column \u2014 that is the thumbnails/sidebar arrangement \u2014 and supports no scale, positionMode or free-move.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "PICTURE_IN_PICTURE aside options",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "medium",
+   "note": "web/src/engine/layouts.ts:93. Spec 1.4 Pip defaults {asidePosition:BottomRight, asideShape:Rectangle, asideSize:17, asideRadius:3, mainScale:100, mainPositionMode:Fixed, mainFixedPosition:CenterCenter}; spec 1.7 gives 8 aside positions and 4 aside shapes. Code hard-codes `const pipW = W * 0.24` (24% vs spec 17%), bottom-right only, global radius 16 vs asideRadius 3, no shape or position choice.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Room join role is self-declared; no client secret or access key is verified",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "small",
+   "note": "Spec \u00a72.2 documents join errors NoClientIdOrSecret=4105 and BadClientSecret=4106, plus /events/${id}/studio-access-key and /events/${id}/invite-access-key. server/src/rooms.ts join() does `const isHost = role === 'host' && this.hostId === null` using the role straight off the client's join frame \u2014 the first socket to claim 'host' gets admit/deny/kick/setRoom authority, and leave() silently promotes an arbitrary remaining guest to host.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "/ws/ingest accepts anonymous control frames that start, poison or kill a live broadcast",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "index.ts ingestWss handler parses {t:'start'} from any connected socket and calls broadcaster.start() with every stored destination; binary frames are written straight to ffmpeg stdin with no identity check; and ws.on('close') unconditionally calls broadcaster.stop(), so any third party who connects and disconnects terminates someone else's stream.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Stream key is a single module-level variable shared by every caller and readable unauthenticated",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec \u00a71.4 scopes keys per event: events/${id}/stream-key and /events/${id}/stream-key/reset. index.ts has `let streamKey = 're_' + randomUUID()...` at module scope; GET /api/stream-key returns it to anyone, and POST /api/stream-key/reset rotates the one key for all users mid-stream.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Broadcaster and destination store are process-global singletons, not per-room or per-user",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "One `new Broadcaster()` and one destinations Map serve every room. Broadcaster.start throws 'Broadcast already running' if proc !== null, so the second concurrent room gets HTTP 409, and any room that does start streams to every other user's destinations.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Room wire protocol: plain JSON {t:...} instead of the documented binary category-prefixed {type, messageId, value} envelope, and no SFU",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a72.2 specifies byte[0]=category (Sfu=0, Client=1, Broadcast=2, RoomManager=3, OverlayBroadcast=4), a fixed 36-char clientId at bytes 1..37 for Client/Broadcast, and messageId request/response correlation; \u00a70 and \u00a77.1 specify a mediasoup SFU with server-side compositing. index.ts does JSON.parse(String(raw)) on text frames with a flat `msg.t` discriminant, relays SDP verbatim for a browser mesh, and there is no mediasoup dependency, no Produce/ConnectProducerTransport/GetIceServers action handling, and no Compositor participant.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Room.live and Room.recording are declared but never assigned, so the room snapshot always reports live:false",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "rooms.ts initialises `live = false`, `recording = false`, `startedAt: number|null = null` and no code path ever writes them; broadcaster state is tracked separately on the global Broadcaster, so every client's RoomSnapshot says the room is offline even while ffmpeg is streaming.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Platform catalogue and ingest server list are hardcoded placeholders in the wrong shape",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec \u00a71.3 defines v2/public/platforms, v2/public/platforms/${platformId}/stream-servers and v2/public/ingests, and \u00a77.5 says every host must be runtime-injected. index.ts hardcodes a five-entry INGEST_REGIONS array of non-resolving hosts ('live-ams.local', 'live-fra.local', ...) served at /api/ingest-servers, offers no platform catalogue, and compiles in 'stun:stun.l.google.com:19302' as the default ICE server.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Chat embed prop contract: theme, alignment (Top|Bottom), messageOpacity, hideMessages, touchesEdges, and the --scale / --messageBackgroundOpacity CSS variable parameterisation",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "web/src/engine/chatOverlayRenderer.ts is an original canvas-2D design with a different config surface (mode reserved|freemove, x/y/w/h, maxMessages, messageLifetimeMs, showPlatform, fontScale). Only backgroundOpacity and scale overlap; theme, alignment, messageOpacity, hideMessages and touchesEdges have no counterpart.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  }
+ ],
+ "allGaps": [
+  {
+   "item": "Generic widget system (user-created browser sources rendered as overlay iframes)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec sec 0/1 calls this the primary mechanism (polls, leaderboards, lower thirds, banners all come from it). grep for browserSource/Widget across web/src returns zero hits outside an unrelated comment at engine/mediaEngine.ts:75. No WidgetForm/WidgetOption/WidgetAsset/WidgetFavicon/WidgetMoreOptionsMenu/WidgetsContent/WidgetsTabTitle/WidgetUpgradePopover, no browserSources entity, no iframe layer, no 5-per-scene limit, no paid gate.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "AI widget generation (generate -> SSE stream -> preview -> apply)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec sec 1.1/1.7: 'AI widget', 'Generate widget', 'Designing widget...', WidgetAsset generating->ready->apply states, SSE errors, version restore. Nothing exists.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Chat-on-stream overlay control surface",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "engine/chatOverlayRenderer.ts is a complete renderer (397px reserved band, freemove mode, message lifetimes) and mediaEngine.ts:342-356 exposes showChatOverlay/hideChatOverlay/pushChat, but grep shows zero .tsx callers. No 'Show on stream' toggle, no positionMode picker, no scale/backgroundOpacity/messageOpacity sliders, no alignmentTop/hideMessages/padding/theme. The GraphicsPanel 'Chat' preset only adds an Overlay of kind 'chat', which compositor.drawOverlay has no case for, so it paints nothing.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Countdown control surface (duration, text color, background, scale, position, font)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "engine/countdownRenderer.ts implements config, the exact spec preset list (0/10s/30s/1/2/3/10/15 min) and drawing, and mediaEngine.ts:324-338 exposes showCountdown/startCountdown, but nothing in studio/ calls them. No CountdownToolbar/CountdownControls/CountdownColorPicker/CountdownBackgroundColorPicker/CountdownSceneOverlayControls. A countdown scene can be created in AddSceneModal but renders no timer. Note the spec's 'Auto' sentinel belongs to countdown TEXT color; the implementation applies 'Auto' to backgroundColor and has no text-color property.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Reserved-space layout maths (caption 216*c, ticker 48*(h/720), chat 397*c)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec sec 4.3 and cross-cutting rule 4 require this before layout. reservedChatWidth() is exported at chatOverlayRenderer.ts:93 but has no caller; compositor.ts:175 calls computeLayout(this.layout, this.tiles.length, this.primary) with no reserved-width argument, so sources never reflow. The constants 216 and 48 appear nowhere in the codebase.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Brand entity (per-brand ownership of all graphics assets, brand folders, active-brand switching)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec sec 6: a brand owns captions/tickers/QR/logos/overlays/backgrounds/browser sources/theme/primaryColor/font/layoutType via captionId/tickerId/qrCodeId/logoId/overlayId slots. studioStore.ts has no brand concept; overlays are one flat global array (line 150) scoped to neither brand nor scene.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Per-scene assignment of graphics slots - assign(sceneId, assetId | null)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Cross-cutting rule 1 covers caption, ticker, QR, logo, overlay and background. Scene in studioStore.ts:60-66 carries only an optional qrId; overlays have no sceneId, so every overlay shows on every scene.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Ticker scrolling animation and speed control (0.4-2.5, default 1)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec sec 5: GPU-accelerated horizontal scroll, TickerSpeedControl, 600 ms debounced undo. compositor.ts:340-350 case 'ticker' does a single ctx.fillText at rect.x+24 - static, never moves. The Overlay type has no speed field, and grep for tickerSpeed finds only an unused SVG icon export in assets/icons/index.ts.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "QR on-stream render (QR image generation, title, overlayMode)",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "medium",
+   "note": "compositor.ts:365-371 case 'qr' only does drawImage(ov.image), and nothing ever populates ov.image - the Overlay type has no image field, only url. No QR encoder, no title text, no overlayMode (qrcode_image vs qrcode_product), no small-QR align option. QrPanel.tsx keeps its whole library in useState (line 97) and never reaches the store or compositor.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "QR scan alert on stream / pushDataToChat",
+   "state": "stubbed",
+   "impact": "minor",
+   "effort": "small",
+   "note": "QrPanel.tsx:104 'Show scan alerts on stream' is a toggle over local useState(true) with no alert pipeline, no commerce.shouldShowAlertOnStream persistence, and no shouldPushDataToChat property anywhere.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Theme types DEFAULT / NEWS / ROUNDED / AIR applied to graphics",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "medium",
+   "note": "ThemePanel.tsx has the four correct presets but every control is local useState (lines 147-154) - preset/accent/plate/font/corner never reach useStudio or the compositor. drawOverlay hardcodes '#2864f0', roundRect(10) and the Inter font regardless of theme, so captions, ticker, QR and name plates are unthemed. No AirCaption variant.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Caption as name plate / lower third with secondary text and avatar",
+   "state": "partial",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec sec 4 defines Caption as a two-line name plate with optional avatar and platform badge, a per-brand library and per-scene assignment. CaptionsPanel.tsx is instead an auto-subtitles settings mockup (all useState, lines 194-201). compositor.ts:351-364 case 'caption' renders one centred line and ignores ov.subtext (subtext is used only by the non-spec 'lowerThird' case). No CaptionAvatar, no character counter, no CaptionSelect.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Brand primary color, logo upload and font wiring",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "medium",
+   "note": "The GraphicsPanel 'Brand' tab is entirely local (setColor/setFont/setLogoName, lines 146-150). pickLogo() at line 152 fabricates a filename string ('brand-mark-<timestamp>.png') instead of accepting a file - the drop handler discards e.dataTransfer. Nothing is persisted or composited; no logo position grid, no mp4 logo support, no paid gate.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "OverlayImage - full-frame image/mp4 overlay with in/out transitions and cover/contain fit",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec sec 8.2. There is no 'overlay' OverlayKind at all, no fit/shouldCover flag, no media element, no enter/exit transition classes, no mp4 handling, and no 'show graphics over video clips' toggle.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Scene background assignment and generated backgrounds (Solid / Linear / GradientCloud, 16:9 vs 9:16)",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "medium",
+   "note": "The GraphicsPanel 'Backgrounds' tab (line 300) is six hardcoded CSS gradients selected into local useState; the selection is never read by the compositor, which always fills this.background. The store has a 'background' OverlayKind but drawOverlay has no case for it. No BackgroundAsset generate/reveal/apply tile, no aspect ratio, no colors[] input.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "OverlayKind set contradicts the spec's built-in list",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec sec 0 states 'There is no LowerThird component and no overlay-Banner component' - lower thirds and banners must come from the generic widget system. studioStore.ts:72-82 makes them first-class kinds ('banner', 'lowerThird'), and they are the only two overlays that paint richly, while the genuinely built-in slots 'background', 'chat' and 'countdown' have no painter case in drawOverlay at all.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "OverlayMode / OverlayModePage - chrome-less output route for embedding in OBS/vMix",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec sec 8.3 describes a dedicated render route driven over a message channel. No such route in app/App.tsx, and Frame/OverlayEditor has no noChrome mode.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Countdown music, music volume and auto-switch to next scene",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec sec 2.2/2.4: countdownMusicId, musicVolume 0-1, 'Switch scene after countdown', plus CountdownAutoSwitchToast with progress bar and cancel. CountdownConfig declares autoSwitchOnEnd (countdownRenderer.ts:40) but nothing reads it; there are no music fields at all.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Frame snap alignment guides",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec sec 8.1 lists guideHorizontal / guideVertical. OverlayEditor.tsx implements all 8 resize handles plus move and writes through updateOverlay, but grep for snap/guide in the file returns nothing - no snapping and no guide rendering.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "Graphics-aware undo (RestoreOverlayElement, 600 ms debounced ticker speed)",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "Cross-cutting rule 5. studioStore.ts:419-437 mutates overlays directly with no history stack, so theme changes, hide actions and speed edits push no undo entry.",
+   "domain": "Widgets and on-stream graphics"
+  },
+  {
+   "item": "WebGL2 VideoPipeline host (offscreen video + canvas + WebGL2 context, effect chain, ping-pong RenderTargets)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "grep for webgl|shader|createShader|gl_FragColor across all of web/src returns zero hits. compositor.ts:100 is getContext('2d', { alpha: false }) - Canvas2D only. No VideoPipeline / CameraVideoPipeline / EffectReconciler exists; mediaEngine.ts never processes a camera track, it hands the raw MediaStream element to the 2D compositor. Spec WebGL2 context attributes (premultipliedAlpha, powerPreference high-performance, desynchronized, antialias false) are unimplemented.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "GreenScreenEffect chroma-key shader (UV-space keying, module 30668)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 4.3: RGBtoUV matrix, baseMask = chromaDistance - similarity, fullMask = pow(clamp(baseMask/smoothness,0,1),1.5), spill desaturation toward Rec.709 luma (0.2126/0.7152/0.0722), composite over backgroundImageTexture, default 1x1 black ImageData plate, RGB internalFormat. None of this exists in code.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "MediaPipe VideoSegmenter (ImageSegmenter.createFromOptions, GPU delegate, self-hosted /mediapipe WASM)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 3.1-3.2: selfie_segmenter.tflite (249537 B, maskTexelSize [1/256,1/256]) and selfie_segmenter_landscape.tflite (250177 B, [1/144,1/256]), SegmentationType General:0 / Landscape:1, FilesetResolver.forVisionTasks('/mediapipe'), runningMode VIDEO, mask.hasWebGLTexture(). All model files plus vision_wasm_internal.wasm sit in web/public/mediapipe at exactly the spec byte sizes but web/src references them only from the static manifest src/assets/assets.json. No @mediapipe/tasks-vision dependency in web/package.json; no import of ImageSegmenter anywhere.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "MediapipeRenderer blur path - fixed 9x9 gaussian, sigma 2.0, two passes at 0.5x drawing buffer",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 3.3 constants recorded but unimplemented: weights float[](0.882496903, 0.60653066, 0.324652467, 0.135335283), u_firstPass axis switch, per-pixel step scaled by (1 - mask) to prevent halo, blur radius deliberately non-adjustable. Impl offers only a 'Blur' background button (SettingsModal.tsx:487) that calls setBackground('blur') on local React state.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Background-replace path: joint bilateral mask filter + composite shader",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 3.3: 5x5 window, offsets [-2..2], spatial weights sigma 2.0, colorSigmaCoeff = 200.0 (colour sigma 0.05), totalMask = pow(totalMask, 1.5), 0.5x filter resolution; composite shader adds backgroundColor += 0.02 * mask * videoColor before mix(). No equivalent code exists.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "LutEffect - .cube parser, 8-bit quantisation, texImage3D 3-D texture, hardware trilinear",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "All five .cube files sit in web/public/luts at exactly the spec byte sizes (classic-film 918223, faded-memories 943621, icy-drama 831625, teal-orange 950134, warm-cinema 110607) and are never fetched by any source file. Missing: 15 s AbortSignal.timeout, CubeLutParseError, LUT_3D_SIZE >= 2 validation (33 for four files, 16 for warm-cinema), DOMAIN_MIN/MAX 0-1 check, 1D-LUT rejection, size^3 row-count check, Uint8Array(size^3*4) with Math.round(255*v), texImage3D(TEXTURE_3D, RGBA, UNSIGNED_BYTE), CLAMP_TO_EDGE + LINEAR sampler state.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "BeautifyEffect three-pass GPU implementation (downsample / 9-tap box blur x2 / edge-aware combine)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 5.2: downsample at 0.25x emitting vec4(color*mask, mask); blur module 99231 (for i=-4..4, /9.0) per axis; combine module 81285 with LUMA vec3(0.299,0.587,0.114), smoothstep(maskLow,maskHigh,mask), 3x3 binomial high-pass (0.25/0.125/0.0625), textureProtection grain guard smoothstep(0.02,0.08,grain), shared VAO at location 0, R8/RED mask texture with UNPACK_ALIGNMENT 1. Nothing built - only a beautifyEnabled boolean and beautifyIntensity number in the store.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "SkinMaskAnalyzer worker feeding beautify (selfie_multiclass_256x256, CPU delegate)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 5.3 constants recorded but unimplemented: 256 px resizeWidth ImageBitmap, 66 ms inference throttle (~15 fps), 3 s worker no-response timeout, 5 s backoff, max 3 create attempts, OffscreenCanvas(1,1) with delegate CPU, getLabels().indexOf('face-skin'/'body-skin'), round(255*min(faceSkin+bodySkin,1)), transferable ImageBitmap/Uint8Array. The 16371837-byte selfie_multiclass_256x256.tflite is on disk and unreferenced; no worker file exists in web/src.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Every effect setting is dead state - settingsStore.ts has no consumers anywhere in the app",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "grep -rn 'settingsStore|useSettings' across web/src excluding the file itself returns zero results. The store persists correct spec defaults (greenScreen.similarity 0.4, smoothness 0.08, spill 0.1, keyColor 'auto', customColor '#00ff00', beautifyIntensity 0.3, beautifyEnabled false, isMirrored true) to the right studio.settings.* keys, but no component or engine module ever reads or writes them.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "SettingsModal video/background controls are local useState, not wired to store or engine",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "SettingsModal.tsx imports only useState, Icon, Modal and useStudio - never settingsStore. Resolution (line 237), mirror (238), background (250) and colour filter are plain useState values; changing any of them repaints the modal and nothing else. Nothing reaches the compositor, the camera track, or localStorage.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Green-screen UI: Key color select, custom colour picker, Similarity / Smoothness / Spill sliders",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 4.1-4.2 and 7 put these in the GREEN_SCREEN ('Virtual background') tab as GreenScreenForm: select id liveStudioGreenScreenKeyColorTypeInput with Auto/Green(#00FF00)/Blue(#0099FF)/Magenta(#FF00FF)/Custom, plus liveStudioGreenScreenSimilarity/Smoothness/Spill (0-1, step 0.001) inside a 'Show advanced options' disclosure. The impl's background tab renders only a swatch grid and a colour-filter select - no key-colour control and no chroma sliders at all.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "greenScreenContrast / greenScreenBrightness / greenScreenGamma parameters and their remapping",
+   "state": "partial",
+   "impact": "major",
+   "effort": "small",
+   "note": "The three storage keys are listed in settingsStore.ts's persisted-key array (lines 284-287) but GreenScreenSettings (line 75) has no contrast/brightness/gamma fields, no -1..1 range with step 0.01 default 0, no ?advanced-green-screen gate, and none of the spec 2.1 remapping: c = contrast<0 ? 1/(1-contrast) : contrast+1; b = brightness/2; g = gamma<0 ? 1-gamma : 1/(gamma+1).",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "VirtualBackgroundsStore: default backgrounds, custom uploads, limits and error handling",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 3.4: maxWidth/maxHeight 1920x1080, maxCustomVirtualBackgrounds 10, image/* multi-select picker, PNG re-encode at imageQuality 0.9, default entries st-vb-room and st-vb-wall (both PNGs and their @76w thumbs exist in web/public/img, unreferenced), sentinel ids DISABLED and BLUR, 15 s AbortSignal.timeout on image load, and TooManyBackgroundsError / FileSizeLimitExceededBackgroundStoreError / UnsupportedFileTypeError / VirtualBackgroundRequestTimeoutError with their toasts. None implemented; there is no upload control in the background tab.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Background mode set contradicts the spec - a 'color' mode and four invented hex swatches replace the default background images",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 3.3/3.4 define FxType = { Blur:0, Background:1 } plus DISABLED/BLUR sentinels and an image grid; there is no solid-colour virtual background in Restream. Impl adds BackgroundMode 'color' with color: '#101828' (settingsStore.ts:139) and BG_COLORS = ['#1f6feb','#8b5cf6','#10b981','#f59e0b'] (SettingsModal.tsx:41) rendered as the background grid in place of st-vb-room / st-vb-wall.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "LUT filter ids do not match the spec registry values",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 1.2 LutFilter values are the kebab strings 'classic-film', 'teal-orange', 'warm-cinema', 'icy-drama', 'faded-memories' - the persisted value and the asset filename stem. Impl LutFilterId (settingsStore.ts:34) is 'ClassicFilm' | 'TealOrange' | 'WarmCinema' | 'IcyDrama' | 'FadedMemories' (the enum key, not the value), so no id maps to /luts/<id>.cube. UI label 'Teal and orange' also differs from the spec label 'Teal & orange'.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Capability gates, effect routing rule, and fallback warning copy",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 3.5: getDesiredVirtualBackground() returns null unless isVirtualBackgroundEnabled; AUTO key colour routes to MediaPipe only when supportsWebGlVirtualBackground && supportsWebAssembly, any explicit key colour routes to the chroma-key effect. supportsWebGl false skips startVideoPipeline entirely. Also missing all spec 4.4 copy: 'Virtual Background is not supported', 'This feature requires a GPU...', 'I understand. Turn it on anyway.', 'A solid green background works best.', 'Not supported in the current browser'.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Beautify tuning - 7 of the 8 documented parameters absent, no toggle or slider in the Video tab",
+   "state": "partial",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Only intensity exists and its bounds are correct (BEAUTIFY_MIN 0.2 / MAX 0.6 / STEP 0.1, default 0.3). Missing radius 0.2-2 default 0.6, detail 0-1 default 0.4, edgeThreshold 0-0.1 default 0.015, edgeSoftness 0.01-0.5 default 0.15, textureProtection 0-1 default 0.6, maskThreshold 0-0.9 default 0.4, maskFeather 0.05-0.6 default 0.25, the in-memory beautifyFilterTuning object, the derived uniform mapping (edgeHigh, maskHigh, texelStep = radius/statsWidth), and the 'Reset to defaults' button. SettingsModal's Video tab has no 'Touch up appearance' toggle at all.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Mirror camera never reaches the output or the wire protocol",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 6.1: isMirrored default true, applied to the local preview as transform: rotateY(180deg), broadcast as isMirrored inside MediaStreamStateIO, and applied by the placeholder renderer as scale(-1,1); translate(-width,0). Impl applies transform: mirror ? 'scaleX(-1)' : 'none' to a static placeholder div inside the modal only (SettingsModal.tsx:398) - compositor.ts drawTile has no mirror handling and mediaEngine sends no isMirrored flag.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "WebGL context-loss recovery (ContextRecovery, 10 s restore timeout)",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 3.6: webglcontextlost / webglcontextrestored listeners, 10 s Duration timeout then fatal WebGlContextLostError, effects disposed and rebuilt behind a loss-count guard, WEBGL_lose_context diagnostics hooks. Zero occurrences of 'contextlost' in web/src (moot until a GL context exists, but recorded as unimplemented).",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Capture-resolution list and per-effect FPS telemetry",
+   "state": "partial",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 8 ScreenResolution has five entries with fullName labels and default LandscapeHd30 (1280x720@30fps). SettingsModal RESOLUTIONS (line 29) = ['1920 x 1080','1280 x 720','854 x 480'] - drops Auto and 720p60 and uses non-spec labels; settingsStore RESOLUTIONS uses yet a third id spelling ('1280x720@60'). Also missing: the 'Virtual Background Average FPS Updated' event with kind Mediapipe / Green Screen / None, its 15 s-then-x4-backoff-to-1200 s reporter, and renderMsByEffect per-effect timings.",
+   "domain": "Video effects pipeline (colour filters / LUTs / virtual backgrounds / segmentation / beautify)"
+  },
+  {
+   "item": "Audio settings panel is entirely fake local state (SettingsModal.tsx:240)",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "MICS/SPEAKERS are hardcoded string arrays ('Shure MV7 (USB)', 'Studio Monitors'); mic/speaker/level/echo/noise/autoGain are all useState with no import of settingsStore or the engine. Toggling 'Echo cancellation' changes nothing anywhere. settingsStore.ts already defines and persists every one of these keys (studio.settings.shouldUseEchoCancellation etc.) but useAudioSettings/setAudio have zero call sites in the whole tree. Spec 2.5 also requires the 'Show advanced options' reveal and 7 labelled controls with tooltips.",
+   "domain": "Audio"
+  },
+  {
+   "item": "No per-source volume / mute / solo UI at all",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec 3.9/8 require VolumeControl (min 0 / max 150, aria-label 'Audio Gain'), VolumeMuteControl, SlidingLimiter and SourceControls (solo/spotlight/refresh-audio). AudioMixer.setGain/setMuted/setSolo exist in engine/audioMixer.ts but grep across web/src finds no caller outside the mixer itself. SourcesPanel.tsx contains no audio strings whatsoever. Levels exist only in the engine plus one mic-button animation.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Background music: catalogue, player service, custom upload, AI generation",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 5.2-5.5: /audio-backgrounds fetch, the 22-channel allow-list and display order, AudioPlayerKindIO (BACKGROUND|CustomTrack|CountdownScene), the 8 room-manager messages (PLAY_AUDIO, SET_AUDIO_VOLUME, SeekAudio, UpdateAudioLoop...), the 16-MIME upload set, Suno generate_music. grep for backgroundMusic|musicVolume|soundboard across web/src returns nothing.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Auto-ducking is invented; the real /6 music normalisation is absent (audioMixer.ts:178)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 3.7 defines the 6 divisor as a fixed playback normalisation applied once at play time ((gain ?? preferredMusicVolume)/6), and documents no automatic speech-triggered ducking anywhere. audioMixer applies 'if (n.cfg.isMusic && speechLoud) g = g / DUCK_DIVISOR' - a dynamic level-gated duck the product does not have, re-evaluated 24x/sec - and never implements the static /6.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Screen-share audio constraint contradicts the spec literal (mediaEngine.ts:137)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 2.2 requires {echoCancellation:false, noiseSuppression:false, autoGainControl:false, channelCount:2, [restrictOwnAudio:true]} - stereo, completely unprocessed. Code passes 'audio: true', so the browser applies default AEC/NS/AGC mono to screen audio, gating and ducking shared music/game audio.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Mic gUM constraints hardcoded true instead of read from settings (mediaEngine.ts:296)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "startMic always sends echoCancellation:true, noiseSuppression:true, autoGainControl:true. Spec 2.1 sources all three from the settings model, omits autoGainControl entirely (undefined) when stereo input is on, and pins sampleRate only behind prefer-same-sample-rate. No stereo, no sampleRate, no settings read.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Audio input/output device enumeration and setSinkId routing",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec 6.1: enumerate audiooutput devices, apply with the deliberate setSinkId('') then setSinkId(id) double-call behind a per-element PQueue, hide the output select when audioOutputDevices.length === 0, route notification sounds to the same sink. grep for enumerateDevices|setSinkId across web/src hits only pages/ToolDetailPage.tsx (unrelated). settingsStore persists micDeviceId/speakerDeviceId but nothing reads them; startMic's deviceId argument is never passed by any caller.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Mute is implemented as gain 0 / track teardown, not track.enabled (audioMixer.ts:160)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 3.3: mute sets audioTrack.enabled = !isMuted && !isSilenced on both output and input tracks, so the producer keeps running and the cloned meter track keeps metering. Here setMuted only zeroes the gain node, and the only mute path the UI actually uses (Stage toggleMic -> engine.stopMic) stops the MediaStreamTrack and removes the mixer source outright - device released, meter dead, no return to the same track. Also missing: isMutedByHost, the User/System mute-reason enum, isSelfMuted.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Neither documented meter widget exists (SettingsModal.tsx:181)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 4.4/4.5 specify a 10-bar SlidingLimiter (green 0-5, yellow #ffab00 at >=6, red #de350b at >=8, level clipped by Math.min(progress, limit), 98px slider, hover numeric output) and a 19-dot VolumeMeter (12x4px dots, lit when volume*19 > index, #36b37e). Implementation has one continuous rounded progress bar, and in the settings panel it is driven by the local 'level' slider value rather than any real signal.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Stereo input, high-resolution audio, and the Opus producer constants",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 2.3/7.1: shouldUseStereoAudioInput and shouldUseHighResolutionAudio drive opusStereo and opusMaxAverageBitrate:256000, plus opusNack:true, dtx:true, priority/networkPriority 'high', adaptivePtime:true, zeroRtpOnPause. settingsStore persists the stereo/highRes keys but no code consumes them, and mediaEngine has no WebRTC audio producer path or codec options.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Countdown music volume (separate 0-2 range, default 1)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 3.8: CountdownMusicVolume NumberRange(0, 2) default 1, wire messages UpdateCountdownSceneMusicVolume / UPDATE_COUNTDOWN_SCENE_MUSIC, strings 'Countdown volume' / 'Countdown music'. A countdown scene kind and countdownRenderer.ts exist, but nothing audio-related.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Mute-all / unmute-all fan-out and its Shift+Y / Shift+U hotkeys (useShortcuts.ts:24)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 3.6: onMuteAllSources/onUnmuteAllSources -> updateMediaStreamsIsMutedState(true/false), bound to Shift+Y and Shift+U with the two toast strings. The binding table has only M for toggleMic; no all-sources action exists in the store or the engine.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Auto-silence chain (isSilenced / isHeardOnLayout / RoomAudioProducerSuspender)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 3.3: the compositor's remoteAudioLayout decides audibility, driving setIsSilenced and producer.pause()/resume(), surfaced by six documented toast strings ('Your mic is muted during the countdown', 'Your mic is muted while you are backstage.', ...). No isSilenced concept anywhere in the mixer or engine.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Remote participant levels from SFU ProducerVolumes",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 4.7: onProducerVolumes maps producerId to dB with the MAX=0 / MIN=-127 enum and a three-branch resolution order for RoomMediaStream.volume. AudioMixer meters only local AudioContext sources; roomClient.ts carries no volume message handling, so remote guests have no levels at all.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Spotlight (isSpotlighted) alongside solo",
+   "state": "missing",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 3.4/3.5 pair roomSoloMediaStream with roomSpotlightedMediaStream and render both in SourceControls with the tooltip 'Solo puts a participant as the sole active speaker'. Only solo exists (engine-only, no UI); 'solo' in studioStore is a layout name, not the audio concept.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Worklet release smoothing and the 0.5 dB message dead-band (audioMixer.ts:36)",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 1: release is 'smoothed = max(db, this.db + (db - this.db) * (1 - 0.85))' and the port posts only when 'Math.abs(smoothed - this.db) > 0.5'. Code uses 'this.db * 0.85 + db * 0.15', which weights the previous absolute value rather than the delta and gives a different time constant, and it posts unconditionally every tick so there is no dead-band. It also floors at -60 before smoothing instead of using the 1e-10 epsilon / -200 dB guard.",
+   "domain": "Audio"
+  },
+  {
+   "item": "AudioContext auto-resume and worklet-load recovery (audioMixer.ts:75)",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 1 AudioContextService: a statechange listener that resumes on suspended/interrupted and falls back to a one-shot document.body click handler ('Resumed on click'), plus a memoised addModule promise and the diagnostic init log. The constructor here creates the context and only resumes when someone explicitly calls mixer.resume().",
+   "domain": "Audio"
+  },
+  {
+   "item": "UI notification sounds (guest-joined / host-joined)",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 5.1: the two bundled .aac assets played through a singleton <audio> routed to the selected output sink. No audio assets or playback helper exist in web/src.",
+   "domain": "Audio"
+  },
+  {
+   "item": "Speaking-ring level colour on scene source previews (Hn)",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 4.3 / widget 11: borderColor transparent at volume <= 0.01, #36B37E normal, #FF5630 at >= 0.9. The only level-driven visual in the build is a scaleY transform on the Stage mic button (Stage.tsx:99); source tiles show no level. Also missing the Zy dB-to-linear helper and the CameraPlaceholder level ring (spec widgets 8-10).",
+   "domain": "Audio"
+  },
+  {
+   "item": "Platform lock rules for noise suppression and stereo",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 2.3: shouldLockNoiseSuppression = isSafari (NS forced off, disabledTip 'Noise suppression is not supported in Safari.'), shouldLockStereoAudioInput = isChrome && (EC || NS). Neither the store nor the stubbed settings UI models locked/disabled state.",
+   "domain": "Audio"
+  },
+  {
+   "item": "58-member platform enum with display names and icons",
+   "state": "partial",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 1.1 lists 58 enum members (47 with UI names). shared/src/index.ts:38 has DestinationPlatform = 'youtube'|'twitch'|'facebook'|'linkedin'|'x'|'kick'|'custom' - 7 values. Dailymotion/Trovo/TikTok/Rumble/Telegram/Instagram appear nowhere in web/src or server/src.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "\"Add new channels\" platform catalogue (PlatformsList) with ordered tiles and platform icons",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec 1.2/1.3. ChannelsModal's add flow is a single text input for a display name (draft) that appends a local row with icon 'rtmp' - it cannot capture a platform, an ingest URL, or a stream key at all.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "ChannelsModal wired to the server destinations API",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "ChannelsModal.tsx:61 useState<Channel[]>(INITIAL) with 6 hardcoded fake channels. No fetch/useEffect/api import in the whole file. toggle() and addChannel() only setState; Save is onClick={() => setSaved(true)}. Nothing reaches GET/POST/PATCH/DELETE /api/destinations - those endpoints have no web consumer except the docs page.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Destination persistence",
+   "state": "partial",
+   "impact": "major",
+   "effort": "small",
+   "note": "server/src/index.ts:47 const destinations = new Map<string, Destination>() with comment \"Swap for a database when auth lands.\" All destinations lost on restart; no per-user scoping.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "OAuth connect flow (popup, OAUTH_CHANNEL_MESSAGE, channel-connect-state, CHOICE_OF_TARGETS, channel targets, connected Instagram accounts)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "large",
+   "note": "Spec 2.1/2.5 documents OAuth for 14 platforms, a 19-step connect state machine and 4 decoders. No OAuth code, popup handler, or target-type enum exists.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Per-platform manual connect forms: 30 ingest URL patterns, per-platform field sets, stream-server dropdown with Autodetect",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 2.3/2.4 tabulates fields (url/key/channelPageUrl/username/serverId) and verbatim placeholders for ~30 platforms, plus GET platforms/{id}/stream-servers + Autodetect for 9 platforms. Implementation has one generic POST body {platform,name,url,streamKey,enabled} and no connect form of any kind.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Stream-key and URL validation regexes (13 documented)",
+   "state": "partial",
+   "impact": "major",
+   "effort": "medium",
+   "note": "server/src/index.ts:118 validates only /^rtmps?:\\/\\//i OR /^srt:\\/\\//i on url. Spec 6 requires channelPageUrl http(s)-only + rtmp-rejection, telegram, tiktok, instagram (2 forms), kick RTMP + kick channel URL + slug extractor, rumble channel URL, instagram username, SRT port-required, WHIP, HLS, and the rtmp-instead-of-key error. None exist client- or server-side.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Custom SRT destination",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "medium",
+   "note": "POST /api/destinations accepts srt:// URLs, but broadcaster.ts:92 emits teeTarget('f=flv:onfail=ignore', joinRtmp(d)) for every destination - an SRT target is muxed as FLV and has its key path-appended like RTMP. Spec 3.2 defines a distinct SRT schema (streamId, passphrase, latency, required port).",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Custom WHIP and Custom HLS destinations",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "Spec 3.3/3.4. POST /api/destinations rejects http(s):// outright, so these destination types cannot even be created.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Embed Player destination (id 83) with settings and image-crop steps",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "large",
+   "note": "Spec 3.5, plus EMBED_PLAYER_SETTINGS / EMBED_PLAYER_IMAGE_CROP connect steps and maxConcurrentEmbedPlayerViewers gating.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Per-platform title / description length limits and validation errors",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 4.9 documents 17 platform rows (TWITCH 140 bytes trimmed/required, YOUTUBE 100 chars rejecting < and >, LINKEDIN 75 chars, FACEBOOK 255 bytes + required 9950-byte description) plus 9 error strings and the ChannelsTitlesModal bulk 'Update All'. Destinations in the implementation have no title or description field at all.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Per-destination override capability matrix",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 4.7: 13 predicate lists (title editable on 16 platforms, description 8, cover 4, details-locked-when-live 4, live viewer count 11, portrait-default TIKTOK/INSTAGRAM, pre-created event binding 3, Facebook-group exclusion). Nothing equivalent exists.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Per-destination platform settings payloads (YouTube privacy/latency/captions/ads, LinkedIn auto-captions, Dailymotion autorecord/kids, Patreon tierIds, X chatAccess, streamingOrientation)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "large",
+   "note": "Spec 4.8 and 4.10. The Destination interface is {id, platform, name, url, streamKey, enabled} - no per-platform settings object anywhere.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "YouTube category list (32 fixed entries) and platform game/category lookup",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 4.11.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Event/scheduling model and constraints",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "large",
+   "note": "ChannelsModal keeps mode 'now'|'later' plus date/time/zone strings in local useState and shows the caption \"Broadcast will start automatically at the scheduled time.\" Nothing is posted or stored and no scheduler exists server-side. Spec 5.1/5.2 requires the eventDecoder record, the 1-hour-to-7-day window with its literal message, LinkedIn's own window, the 300s start-soon threshold, auto-nudge of past times, and reschedule detection.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Timezone handling",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 5.3 resolves the zone client-side via Intl.DateTimeFormat().resolvedOptions().timeZone (with Europe/Kiev->Kyiv fix), persists epoch ms, 15-minute picker granularity. ChannelsModal.tsx:29 offers a hardcoded 7-item ZONES string list ('UTC - Coordinated Universal Time', ...) instead.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Overlap / concurrency detection before going live",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "Spec 5.4: POST /destinations/check-overlap, checkOverlapDecoder / checkDestinationsOverlapDecoder, ConcurrentEventsCallout, user_already_streaming blocking error.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Channel ordering, activate-all / deactivate-all, per-event enable/disable, pre-go-live channel validation",
+   "state": "missing",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 4.6 lists 10 endpoints (activate/deactivate, activate_all/deactivate_all, channels/order mirrored into event.meta.channelsOrdered, per-event enable/disable, channels-validate, delete blocked by not-finished-events). Server exposes only generic PATCH and DELETE; Destination has no order field and the UI has no toggle-all.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Paid-feature flags, destination caps and ActivateChannelError taxonomy",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 10 lists ~25 flags (destinationsAvailable, extraDestinationsAvailable, customRtmpAvailable, customSrtChannelAvailable, paidFacebookAvailable, studioDualOutputAvailable, maxConcurrentEventsStreams...) and 4.6's cause enum LIMIT_EXCEED/CUSTOM_RTMP/PAID_FACEBOOK/LINKEDIN/EMBED_PLAYER/SLACK with upgrade copy. Destinations can be added without limit and nothing gates them.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "Ingest server selection backed by real data, per-channel ingest override, proxy",
+   "state": "partial",
+   "impact": "minor",
+   "effort": "small",
+   "note": "server/src/index.ts:69 INGEST_REGIONS is 5 hardcoded entries with non-routable hosts ('live-ams.local'). Spec 3.7 wants GET ingests -> {id,name,icon,url,hostname}, a synthetic {id:0,name:'Disabled'} option, user selectedIngestId/isProxyAvailable, the per-channel channels/{id}/ingest override and ChannelProxyStep. StreamingSetupPage does correctly fetch /api/stream-key and /api/ingest-servers.",
+   "domain": "Destinations and multistreaming"
+  },
+  {
+   "item": "AddSourceModal source picks do nothing - all 8 kinds are dead UI",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "AddSourceModal.tsx handlePick() only calls studioStore.addSource(), which writes a row into state.sources (a field no component reads) and pushes the fake id into scene.sourceIds. useStudioEngine passes those ids to engine.syncTiles(), which does `const h = this.captures.get(id); if (!h) continue` - the id is silently dropped. No getDisplayMedia, file picker, HLS player, iframe or RTMP key is triggered by any tile. Camera/screen/video/image only work via SourcesPanel's own file input and toggleCamera/toggleScreen, never via the modal.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Host side never joins the room - remote guest streams are never consumed into the compositor",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "RoomClient is instantiated only in web/src/pages/JoinPage.tsx (guest page). Nothing in web/src/studio/** or EngineProvider constructs one, and engine.addStream() (mediaEngine.ts:155, the only entry point for a remote MediaStream) has zero call sites. Guests mesh with each other but their video never becomes a CaptureHandle, so it can never be tiled, put on air, or streamed out.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Guest approval / waiting room has no host UI, and the server default contradicts the spec",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Server implements requireApproval plus waiting/admit/deny (server/src/index.ts:234, 256-265) and RoomClient exposes admit()/deny()/setStage()/remove(), but no host component calls any of them - a guest that hits 'waiting' can never be let in. Spec 2.3 is explicit that link guests have no approval gate; server/src/rooms.ts:24 sets requireApproval = true.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Backstage / on-air flow for guests",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Participant.state = 'backstage' exists in server/src/rooms.ts but there is no host 'Add to the stream' prompt (ParticipantJoinedPopover), no ON AIR badge or isOnAir toggle, and no backstage mic muting on the guest page.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Presentations - the whole of spec section 3 is absent",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "No PDF/PPTX/DOCX/KEY upload, no client-side hashing, no Google Drive import, no PresentationStatus polling, no urlTemplate slide rasterisation, no picker card, and no slide navigation (prev/next/select, activePage+1 over pages). Grep for activePage/urlTemplate/slide controls returns nothing outside icon names. The 'Presentation' tile falls into the dead-store path above.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Browser source not implemented",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "No iframe anywhere in web/src/**/*.tsx. None of the BrowserSourceStateElementIO fields exist (sourceUrl, position default [0,0], widthScale/heightScale default 1 step 0.01, contentViewport, zIndex, isVisible, name max 100 chars), and no max-5-visible-per-scene cap.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "RTMP source (pull) not implemented",
+   "state": "missing",
+   "impact": "major",
+   "effort": "large",
+   "note": "No rtmp://live.restream.io/studio ingest URL surfaced, no rtmpSourcePullKey, no refresh/invalidate flow, no connected/disconnected status. The only 'rtmp' hits in web/src are outbound destination pages (PullLinksPage, StreamingSetupPage) - the opposite direction from an RTMP source pull.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Video Storage / HLS video source not implemented",
+   "state": "missing",
+   "impact": "major",
+   "effort": "large",
+   "note": "Spec 1.3 requires uploads with slot/size/duration validators, the HlsVideoFileStatus lifecycle, playlistUrl/lqPlaylistUrl and an hls.js player. mediaEngine only has addVideoFile(File) from a local blob URL. The VIDEO_STORAGE_VIDEO_PUBLIC_URL import step and IMPORT_YOUTUBE_VIDEOS step are absent too.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Extra camera flow (EXTRA_CAMERA to EXTRA_CAMERA_SETTINGS) missing",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "medium",
+   "note": "AddSourceModal tile exists but there is no device picker, no 'Add Camera' step chain, no extra-camera audio settings (echo cancellation, noise suppression, stereo input, 256 kbps, AGC) and no studioMaxExtraCameras limit.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Invite link is a client-side random code never registered with the server",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "InviteModal.makeCode() generates 8 random chars in component state and builds `${origin}/join/${code}`. It is never sent to the server and the host session is not bound to any roomId, so a guest following the link lands in a freshly getOrCreate()'d empty room with no host. 'Get a new invite link' only calls setCode - no invalidation of the previous link, no confirmation modal.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Invite modal permission toggles are local component state only",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "small",
+   "note": "allowScreen and autoAdmit in InviteModal.tsx are useState only; neither is sent over the socket. The server owns room.requireApproval and index.ts:277 accepts a requireApproval patch, but the client never sends it, so the auto-admit toggle changes nothing.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Invite-by-email UI contradicts the spec",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 2.1: 'Invite-by-email: not present for Studio guests... Guest invitation is link-only.' InviteModal has an email field and an invited[] list that is pure local state and sends nothing anywhere.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Per-guest host controls (mute, gain, show/hide, audio-only, blind, solo, spotlight, rename, kick, promote, replace, ordering)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "SourcesPanel renders only local engine captures (camera/screen/media) with play/pause/restart/toggle/remove. None of the spec 2.5 SourceMenu controls exist for a participant, and RoomClient.remove()/setStage() are never called from the studio shell.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Co-host promotion (promote-to-host)",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "Role is only 'host' | 'guest'; there is no PromoteToHost / PromotionToHostOffer path. Room.leave() auto-promotes the earliest remaining member, which is invented behaviour not in the spec.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Guest-side source sharing (screen share, local video, presentation, extra camera from the guest page)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "JoinPage offers only mic and cam enable/disable on a single getUserMedia({video:true,audio:true}) stream. No getDisplayMedia, so the GuestAddedSourceToast flow and the 'guests can add sources' permission (spec 2.6) have nothing to hang on.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Video playback transport is incomplete",
+   "state": "partial",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 4.1 lists play, pause, resume, stop, seek, loop, autoplay, mute, volume, position, preload. mediaEngine.mediaControl() implements play/pause/restart/toggleLoop only, and SourcesPanel wires just play/pause/restart - no seek scrubber, no stop, no per-source volume/audioGainLevel, no autoplay and no persisted position.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "'Switch to next scene when finished' (shouldAutoswitchToNextScene) not implemented",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "No 'ended' listener on the media element, no per-scene autoswitch field, no switching countdown toast, and none of the loop / auto-switch mutual exclusion the spec calls out.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Camera capture configuration missing (resolution presets, mirror, VP9, touch up, green screen, blur, LUT)",
+   "state": "partial",
+   "impact": "major",
+   "effort": "large",
+   "note": "mediaEngine.startCamera() hardcodes { width: 1280, height: 720 }. The spec's VideoResolutionsStore presets (Auto, 854x480@30, 1280x720@30, 1280x720@60, 1920x1080@30) and every camera treatment in spec 1.3 are absent.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Screen-share limits and flags",
+   "state": "partial",
+   "impact": "minor",
+   "effort": "small",
+   "note": "getDisplayMedia works, but there is no max-screen-shares cap (spec default 3) with the 'Maximum number of screen shares reached' path, no shouldAutoAddScreenShare room flag, no captured-surface control (zoom levels / CaptureController), and no second-share warning modal.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Room capacity is a hardcoded constant, not an entitlement, and the host is never told the room is full",
+   "state": "partial",
+   "impact": "minor",
+   "effort": "small",
+   "note": "`export const ROOM_CAPACITY = 10` in server/src/rooms.ts plus a duplicate `const ROOM_CAPACITY = 10` in InviteModal.tsx:18. Spec drives the cap from studioMaxParticipants / SfuTokenPayload.participantsLimit with staff override and the participants-20 flag. index.ts:217 rejects the joiner but there is no host-side 'Room is full' / 'Guest is trying to join.' toast and no 'count/max people on the stream' copy.",
+   "domain": "Sources, guests and media"
+  },
+  {
+   "item": "Captions panel is built as a speech-to-text / translation settings screen, contradicting the spec outright",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "web/src/studio/panels/CaptionsPanel.tsx. Spec 2.0: 'this is NOT speech-to-text', exhaustive grep for Speechmatics/AssemblyAI/Deepgram/Whisper/captionsLanguage/Profanity returns zero hits; the real tool is a lower-third/ticker text manager. Code ships a LANGUAGES list (line 7), spoken/translate selects, profanity toggle, speakerName, boxed, position and size pickers (lines 194-201) - all invented, and all plain useState with no service behind them.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Captions 'Lower Third' section (info tooltip 'Static text on preview', Add button, caption list)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec 2.1. Grep for 'Lower Third' or 'Add' in CaptionsPanel.tsx returns nothing.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Captions 'Ticker' section (info tooltip 'Scroll text across bottom', Add, ticker list, TickerV2 payload)",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec 2.2/2.6. engine/compositor.ts:341 already draws an OverlayKind 'ticker', but no panel ever feeds it.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "CaptionForm add/edit (primary + secondary text inputs, ticker textarea with {length}/{maxChars} counter, Cancel/Add/Save, disabled-until-valid)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 2.3. No add/edit form of any kind exists in CaptionsPanel.tsx.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Ticker speed control (slider min 0.4, max 2.5, step 0.1, '1.4x' label, disabled tooltip 'Not available while editing a scene')",
+   "state": "missing",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 2.5.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Caption/ticker limits and validation strings",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 2.4/2.8: captions limit 300 / maxChars 240, tickers 300 / 1000 / limitBytes 500000, error 'Maximum text length is %s characters'. Nothing comparable in code.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "CHAT caption type - pinning a chat message onto the stage as a lower third",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 2.6 makes ChatCaptionIO the bridge between the Chat panel and the captions renderer. web/src/studio/panels/ChatPanel.tsx:81 toggleOnStream only calls setOnStreamId(prev === id ? null : id): no store write, no overlay, nothing reaches the compositor.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "QR panel never generates or displays an actual QR code",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "small",
+   "note": "Spec 1.1: rows render <img class='QrCodeOption_image' src={qrCodeUrl}> from the backend qr.svg. web/src/studio/panels/QrPanel.tsx renders a generic Lucide <Icon name=\"qr\" size={15}/> placeholder instead. The `qrcode` package is in web/package.json (^1.5.4) but grep finds zero imports of it anywhere under web/src.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "QR codes live only in component useState - no store, no persistence, nothing on stage",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "QrPanel.tsx:97 useState<QrCode[]>(SEED); handleCreate and patch() only setCodes. studioStore has no qrCodes field, and although the compositor supports OverlayKind 'qr' (engine/compositor.ts:366) no panel calls addOverlay for it, so toggling 'visible' changes nothing rendered. Spec 1.9 requires RemoteQrCodesRepository persistence.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Per-scene QR assignment / brand-global selection",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 1.6: writeTarget Scene|Brand|Blocked, roomGraphicsService.setQrCodeById(id, sceneId), undo entry. QrPanel.tsx:198 is a <select> whose onChange calls patch(code.id, { sceneId }) on local state; scenes are only read from the store, never written.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Per-code 'size' (Small/Medium/Large) and per-code Classic/Compact style are invented controls",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 1.5: 'There is no free-form X/Y placement and no size slider' for the small QR, and overlay mode is a single brand-level EcommerceOverlayMode ('default'=Classic / 'compact') persisted via brandsStore.mainBrand.update({commerce:{overlayMode}}). QrPanel.tsx:18-21 defines SIZE_ORDER ['sm','md','lg'] and stores style on each QR record.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "QR form validation does not match spec (title required + 18-char cap, link 1000-char cap, 'looks odd' warning)",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 1.3/1.5: maxTitleLength 18, maxLinkLength 1000, isValid requires title.length > 0, plus the warning 'The link looks odd. Please make sure it's valid.' QrPanel.tsx:102 only tests /^https?:\\/\\/\\S+$/ on the URL and line 118 silently substitutes 'Untitled code' for an empty title, so an empty title submits.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "'Show title' toggle (default true on add) and the shouldShowTitle field",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 1.5 control #3 defaults to true; the QrCode type in QrPanel.tsx:8 has no shouldShowTitle at all.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "QR quota (6 per brand) and the toast/error string set",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 1.3/1.8: studioMaxQrCodesPerBrand default 6; toasts QR_CODE_ADD_TOO_MANY_ERROR \"You've exceeded the maximum number of QR codes\", QR_CODE_ADD_ALREADY_EXISTS_ERROR, 'Failed to delete QR code.', and the thrown 'Failed to add QR code: No active brand'. None present - unlimited codes can be added.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Drag-and-drop reorder for the QR list and the caption list",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "Spec 1.5 (DraggableQrCodeList, droppableId 'qr-codes') and 2.7 (droppableId 'captions'), each firing a re-order analytics event and an updateIdsOrder call. No drag library in web/package.json and no reorder handler in either panel.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "QR stage placement rule - two positions only, pinned opposite the logo",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 1.5: qrPosition = logoPosition === TopRight ? TopLeft : TopRight, and moving the QR moves the logo. No placement control or coupling exists.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "QR scan-alert setting is in the wrong place and drives nothing",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "Spec 1.7 puts 'Show QR code scan alerts on stream' (and the sibling 'Push product links to live chat') in the Studio Settings modal, driving EcommerceViewedAlert on stage with 8000 ms auto-dismiss and four message templates. QrPanel.tsx:103 has a local useState `alerts` toggle with no consumer anywhere.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Theme panel controls change nothing that is rendered",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "medium",
+   "note": "web/src/studio/panels/ThemePanel.tsx:148-166 - accent, plate, font, corner, preset and the toggle map are all useState; pickAccent(hex) just setAccent + touch(). Grep across web/src finds zero setProperty/documentElement/CSS-custom-property writes and studioStore has no theme fields, so the accent never reaches the stage. Spec 1.5 expects the stream --primaryColor from Theme to colour the QR title bar.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Chat panel receives no real messages and sends nowhere",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "ChatPanel.tsx:43 seeds messages from a hard-coded SEED array and send() (line 83) appends the draft to that local array. No socket/fetch/platform integration in the panel; the store exposes only `viewers`. Spec 0.4/0.8 also require the CHAT unread sonar dot and hasUnreadChatMessages clearing on tab open - neither exists.",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "Tool rail implements 8 tabs with none of the slot, badge, deep-link, default-tab or side-effect behaviour",
+   "state": "partial",
+   "impact": "major",
+   "effort": "large",
+   "note": "web/src/studio/ToolRail.tsx:9 lists 8 tabs (sources, chat, graphics, theme, captions, qr, notes, ai) plus a dead Help button; spec 0.1 lists 19 SidebarTabIds. Missing: People/Guests top slot with '$1 sources' pill, Music+Theme pinned bottom (Theme sits inline), Settings extra bottom button, W4 sort order (0.2), NEW badges and unread sonar dots (0.4), ?openSideBar= deep links (0.6), changeSidebarTabId side effects (0.8), analytics (0.9) and HOST_GRAPHICS_UPDATED cross-host sync (0.10). Default tab is 'sources' (state/studioStore.ts:240) where spec 0.7 requires GRAPHICS on desktop, MobileSources otherwise. Notes and AI panels are likewise local-state only (NotesPanel.tsx:46 keeps notes in a component Record with a fake 1.5s 'Saved' timer and no store/server write; AiPanel.tsx:37 replies from a fixed REPLY array and implements none of the spec 1.12 QR assistant tools).",
+   "domain": "Studio side panels (tool rail + QR Codes + Captions per TOOLS-06; plus reality check on Sources/Chat/Graphics/Theme/Notes/AI)"
+  },
+  {
+   "item": "SettingsModal is not wired to settingsStore \u2014 every control is local component state",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "SettingsModal.tsx:1 imports only Icon/Modal/useStudio. Lines 218-256 declare 18 useState hooks (quality, camera, resolution, mirror, mic, speaker, echo, noise, autoGain, ...). No setVideo/setAudio/setStream call exists. The 'Save changes' button is onClick={onClose} \u2014 it saves nothing. The modal unmounts on close (StudioModals.tsx:26) so values reset even within one session.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "settingsStore.ts is dead code \u2014 no file in the app imports it",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "grep for settingsStore|useSettings|useVideoSettings|useAudioSettings|useStreamSettings|flushSettings across web/src returns zero hits outside the file itself. Its hydrate/persist/debounce machinery and all 27 studio.settings.* key mappings are real but never invoked, so 0 of the 27 documented keys persist end to end.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "No setting affects the engine (devices, resolution, mirror, audio processing)",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec 3.2: mirror -> studio.settings.webcam.isMirrored applied to the camera. SettingsModal.tsx:392 applies transform: scaleX(-1) only to a decorative placeholder div inside the modal. Camera/mic/speaker selects, resolution, and echoCancellation/noiseSuppression/autoGain never reach getUserMedia constraints or setSinkId; grep 'mirror|isMirrored' in web/src/engine returns only unrelated comments.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Device lists are hardcoded fake strings instead of enumerateDevices()",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "SettingsModal.tsx:27-31: CAMERAS = ['FaceTime HD Camera','Logitech Brio 4K','Capture Card (HDMI)'], plus MICS and SPEAKERS. navigator.mediaDevices.enumerateDevices() appears nowhere in the studio tree (only pages/ToolDetailPage.tsx). Spec 3.2/3.3 require selects over real videoDevices/audioDevices persisted to videoInputDeviceId / audioInputDeviceId / audioOutputDeviceId.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Settings Shortcuts tab shows an invented 12-row table matching neither the spec nor the app's own handler",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "SettingsModal.tsx:44 SHORTCUTS advertises 'Go live / end stream: Ctrl+Shift+L' (spec: Ctrl+G), 'Mute microphone: Ctrl+D' (spec: M), 'Next scene: Alt+Right' (spec: Down), 'Open chat panel: Ctrl+1' (spec: Shift+C). None of these 12 combos is handled by useShortcuts.ts \u2014 every row is non-functional advertising. Spec 2 requires 44 registry-driven rows.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "No Ctrl/Cmd shortcut can ever fire \u2014 the handler bails on any modifier",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "useShortcuts.ts:112 'if (e.ctrlKey || e.metaKey || e.altKey || e.repeat) return'. This kills every Ctrl row: Ctrl+G go-live/record, Ctrl+Shift+G restart recording, Ctrl+Shift+P pause/resume, Ctrl+. sidebar, Ctrl+C/V/D scene copy/paste/duplicate, Ctrl+Z undo \u2014 9 of 44 rows. Spec 1.2 requires ctrlKey||metaKey to map to the 'ctrl' token.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Only 3 of 44 spec'd bindings use the correct key; 9 letter keys are bound to the wrong action",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "useShortcuts.ts:19-42. Correct: M mic, V camera, N add scene. Wrong: S (spec: open Settings) unused while Shift+S is rebound to screen share though spec Shift+S = 'Show all sources'; R (spec: Add RTMP source) = toggleRecording; O (spec: Add local video) = sources panel; G (spec: Add image) = graphics panel; C (spec Shift+C = private chat) = chat panel; [ and ] used for prev/next scene where spec uses Up/Down; 1-9 select-scene and L cycle-layout are invented and appear nowhere in the spec.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Shift+1..7 layout shortcuts absent",
+   "state": "missing",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 2 Layout section: Shift+1..Shift+7 select layouts 1-7 (Contain/Cover/Half Screen/PiP/Cinema/Thumbnails labels), plus layoutTypeToHotkeyMap / getHotkeyByLayoutType feeding layout-button tooltips. useShortcuts.ts:121 explicitly discards shifted digits ('if (shift) return'). No layoutTypeToHotkeyMap exists.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Sources shortcut group entirely missing (Shift+S/H/Y/U/N)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec 2 Sources: show all sources, hide all sources, mute all, unmute all, toggle participant names. useShortcuts.ts handles no Shift-modified letters except Shift+S (rebound to screen share) and Shift+Slash for the help sheet.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "No HotkeyId registry, hz() display formatter, or Vk reverse map",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 1.1: a 48-member HotkeyId enum plus a HOTKEYS record of {id, key, code, withCtrl, withMeta, withShift, asString, ignoreOnAnotherHotkey}. useShortcuts.ts:19 has a flat 14-entry Binding[] whose 'keys' field is a display-only string ('Shift + S'), with the real codes duplicated by hand in a switch \u2014 table and handler can silently diverge, and already do.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "No per-row hotkey gating (checkShouldEnableHotkey and its mode flags)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 2: every row is gated by checkShouldEnableHotkey(id) with isScenesMode, isPlaylistsMode, shouldShowAddSourceShortcuts, shouldShowLocalVideoShortcut, shouldShowImageShortcut, plus section flags (shouldShowScenesShortcuts, shouldShowLayoutsShortcuts, ...). useShortcuts.ts fires every binding unconditionally regardless of mode.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "No conflict suppression (ignoreOnAnotherHotkey / onAnotherHotkey) and no EVENT_CAPTURING_SPACE",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "Spec 1.2 pre-hashes every ignoreOnAnotherHotkey entry into a Set and fires onAnotherHotkey(id) when a foreign hook owns the combo. useShortcuts.ts has a single switch with no such concept, and the Space/EVENT_CAPTURING_SPACE entry used by countdown/event capture is absent.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "No Go Live hold-state hotkey hook",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "Spec 1.2 final bullet: a separate window keydown/keyup/blur hook matching event.code plus ctrl/meta and shift, ignoring event.repeat and releasing on key === 'Meta'|'Control', used with GO_LIVE_OR_END / RECORD_ONLY. Nothing equivalent exists in web/src.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Shortcut rows lack aria-keyshortcuts and macOS token substitution",
+   "state": "partial",
+   "impact": "minor",
+   "effort": "small",
+   "note": "Spec 1.3: aria-keyshortcuts={hz(shortcut,isMacOS)} with one span per token in order command/ctrl/shift/key, and Delete|Backspace -> the erase glyph, command -> the command glyph, ctrl -> command glyph on macOS else CTRL. ShortcutsHelp.tsx:9 splits the display string on '+' with no isMacOS detection, no symbol substitution, and no aria-keyshortcuts attribute.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Settings modal store API missing: tabId targeting, GENERAL reset, highlight flags, analytics",
+   "state": "missing",
+   "impact": "major",
+   "effort": "small",
+   "note": "studioStore.ts:278 exposes only openModal(m: ModalId)/closeModal(). Spec 3 requires openSettingsModal({analyticsSource, tabId}), selectedSettingsTabId defaulting to GENERAL and resetting to GENERAL on close, and three transient flags (shouldHighlightStreamingResolutionsSelect, shouldHighlightNonVideoParticipantToggle, shouldFocusParticipantNameInput). Tab state is local useState<TabId>('general'). Analytics 'Settings Modal Shown/Closed' and 'Hotkey Pressed' are absent app-wide, as is the Embed Stream footer button.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Recordings tab contradicts the spec and invents fake storage data",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 3.4 defines four mutually exclusive renderings driven by hasCloudRecordingsAccess/hasLocalRecordingsAccess: cloud-recordings copy with hr/stream upsell, localRecordingEnabled toggle, localRecording4kEnabled (ULTRA_HD to AUTO mapping), an AUDIO_VIDEO/AUDIO_ONLY radio group, and three analytics events. SettingsModal.tsx:455 instead shows a 'Record every broadcast' toggle, an invented MP4/MKV format select, and a hardcoded '34.2 GB of 100 GB used' meter.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Virtual Background tab missing all green-screen keying controls",
+   "state": "partial",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec 3.5 requires a greenScreenKeyColorTypeV2 select (AUTO/GREEN/BLUE/MAGENTA/CUSTOM plus custom colour) and six sliders \u2014 Similarity, Smoothness, Spill, Brightness, Contrast, Gamma \u2014 plus the shouldShowGreenScreenConfirm first-use gate and virtualBackgroundIdV2 selection. SettingsModal.tsx:501 has six colour swatches and a LUT select whose value lands in local useState only. No SettingsSliderField primitive (thumbSizePx 16) exists anywhere.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "General, Video, Audio and Profile tabs each omit most spec'd controls",
+   "state": "partial",
+   "impact": "major",
+   "effort": "large",
+   "note": "General (SettingsModal.tsx:320) lacks hostName/hostTitle inputs (restream.liveStudio.participantName/Title), Participants names toggle, Automatically share screen, the 60fps and x1080 warnings, the Full HD Upgrade Now link, and the Try Studio 2.0 buttons. Video lacks the beautify toggle, beautify intensity slider with reset, and the VP9 toggle. Audio lacks stereo and high-resolution-audio toggles and adds an invented 'Input gain' slider. Profile lacks the avatar list with the fewer-than-5 upload cap, UPLOAD_LIMIT/INVALID_FORMAT handling, and the participant title input.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "Persistence covers only studio.settings.* \u2014 the 42 other documented keys and IndexedDB are absent",
+   "state": "missing",
+   "impact": "major",
+   "effort": "large",
+   "note": "Spec 4.2/4.3/4.4: 16 onboarding/popover keys, 11 'new badge' dismissals, modal throttles, misc keys (studio.dualOutput.previewPreferences, studio.shouldCameraBeOnAirOnConnect), identity keys (studio.guestId, studio.user.*), the restream.liveStudio.* and restream-scenes-list keys, and indexedDB.open('RestreamDb', 1). localStorage appears in exactly one file app-wide (state/settingsStore.ts); no IndexedDB usage exists. The typed Repository(key, codec, default) wrapper with .get/.set/.delete is also missing.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "settingsStore key map diverges from the documented 27-key set",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "settingsStore.ts:214-260 invents keys the spec does not list \u2014 studio.settings.streamingProfile, shouldUseLowLatency, shouldRecordEveryBroadcast, virtualBackgroundMode, virtualBackgroundColor, greenScreenEnabled, lastPanel, isPanelOpen, shouldAutoOpenNotes \u2014 while eight documented keys (shouldUseVp9, greenScreenBrightness, greenScreenContrast, greenScreenGamma, shouldShowGreenScreenConfirm, webcam.isBlinded, webcam.isMuted, virtualBackgroundId) appear only in ALL_SETTINGS_KEYS for deletion and are never modelled or written.",
+   "domain": "Shortcuts, settings and persistence"
+  },
+  {
+   "item": "The spec's 10 `LayoutType` members",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "shared/src/index.ts:131. Spec 1.1: SPOTLIGHT, PADDED_SPOTLIGHT, AUTO_CONTAIN, AUTO_COVER, HALF_SCREEN, CINEMA, THUMBNAILS, PICTURE_IN_PICTURE, Showtime, TBPN. Code: LayoutId = 'solo'|'split'|'stacked'|'grid'|'pip'|'spotlight'|'screen'|'custom'. HALF_SCREEN, CINEMA, THUMBNAILS, Showtime, TBPN, PADDED_SPOTLIGHT have no implementation; solo/split/stacked/grid/screen/custom are invented.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "CustomizeLayoutModal writing back to scene or engine",
+   "state": "stubbed",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "web/src/studio/modals/CustomizeLayoutModal.tsx:100. All seven controls (fit, shape, size, radius, gap, gravity, show-names) are useState locals feeding a CSS-only preview. No useStudio setter and no engine/compositor call appears anywhere in the file, so closing the modal discards everything; reset() clears local state only.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Per-layout persisted option objects on the scene",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "web/src/state/studioStore.ts:53. Spec 1.4 defines a persisted options object per layout (Contain {shape:Rectangle,radius:1}; HalfScreen {radius:0,ratio:65,alignment:Right}; Spotlight {radius:1,scale:100,positionMode:Fixed,fixedPosition:CenterCenter,freemovePosition:[0,0]}; Pip/Thumbnails/Showtime/Tbpn). interface Scene carries only `layout: LayoutId` \u2014 no options field exists, so nothing is persistable per scene.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Tile shape enums (Auto/Circle/Square/Vertical/Rectangle)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "web/src/engine/compositor.ts:68. Spec 1.7 lists CoverLayoutShape, ContainLayoutShape (5 members), HalfScreen main/aside shape, PiPLayoutAsideShape, ThumbnailsLayoutAsideShape, ShowtimeLayout*Shape. drawTile always clips with roundRect(rect, RADIUS) where `const RADIUS = 16`; circle/square/vertical tiles cannot be produced. The modal's Rectangle/Rounded/Circle segmented control is preview-only.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "9-way gravity reachable at runtime",
+   "state": "partial",
+   "impact": "major",
+   "effort": "small",
+   "note": "web/src/engine/mediaEngine.ts:379. sourceCrop() implements all 9 gravities correctly, but syncTiles builds each Tile as {id, el, label, color, fit, muted} \u2014 gravity is never set, so drawTile always falls back to tile.gravity ?? 'center'. No UI path sets it either.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Gravity applied to Contain fit",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "web/src/engine/layouts.ts:140. Spec 1.6 models fit as {type: ElementLayoutV2FitType, gravity: ElementLayoutV2Gravity} \u2014 gravity applies to Contain as well as Cover. containBox() hard-centres (dest.x + (dest.w - w)/2) and sourceCrop early-returns the full frame for 'contain' before gravity is read.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Per-element opacity, zOrder, borderRadius, shouldShowShadow",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "web/src/engine/compositor.ts:175. Spec 1.6 ElementLayoutV2IO carries opacity, zOrder, borderRadius per element plus meta.shouldShowShadow / shouldRoundCorners. The compositor draws tiles in array order (with one pip-primary swap), full opacity, a single global radius, no shadow.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Overlay reserved zones fed into layout geometry",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "web/src/engine/layouts.ts:63. Spec 1.6: every layout constructor takes tickerZoneHeightPx, captionZoneHeightPx, rightOverlayZoneWidthPx (literal 42) and bottomOverlayZoneHeightPx, and Cover/Contain/HalfScreen default shouldCaptionPush:true. computeLayout(layout, n, primary) has no zone parameters; overlays are painted over tiles rather than shrinking them.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "SPOTLIGHT geometry",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "medium",
+   "note": "web/src/engine/layouts.ts:118. Spec 1.1/1.4: SPOTLIGHT is one source enlarged and freely positioned, with {scale:100, positionMode:Fixed|Freemove, fixedPosition:CenterCenter, freemovePosition:[0,0]}. Code places the featured tile at 72% width on the left with the others stacked in a right column \u2014 that is the thumbnails/sidebar arrangement \u2014 and supports no scale, positionMode or free-move.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "PICTURE_IN_PICTURE aside options",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "medium",
+   "note": "web/src/engine/layouts.ts:93. Spec 1.4 Pip defaults {asidePosition:BottomRight, asideShape:Rectangle, asideSize:17, asideRadius:3, mainScale:100, mainPositionMode:Fixed, mainFixedPosition:CenterCenter}; spec 1.7 gives 8 aside positions and 4 aside shapes. Code hard-codes `const pipW = W * 0.24` (24% vs spec 17%), bottom-right only, global radius 16 vs asideRadius 3, no shape or position choice.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Featured/primary tile selection",
+   "state": "partial",
+   "impact": "major",
+   "effort": "small",
+   "note": "web/src/engine/useStudioEngine.ts:69. computeLayout and Compositor.setLayout accept `primary`, but the only caller is engine.setLayout(scene.layout), leaving primary = 0. No store field and no UI exist, so PiP/Spotlight always feature whichever capture happens to be first in the scene's sourceIds.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Portrait layout variants",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "web/src/engine/layouts.ts:63. Spec 1.2 lists CoverPortraitLayoutV2, ContainPortraitLayoutV2, HalfScreenPortraitLayoutV2, SpotlightPortraitLayoutV2, PipPortraitLayoutV2 (Thumbnails has no portrait sibling), and stage spec 3.6/window 21 shows the 9:16 portrait preview. computeLayout only ever uses W = CANVAS_W / H = CANVAS_H (1920x1080); there is no portrait branch.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Countdown scenes doing anything on the stage",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "small",
+   "note": "web/src/engine/useStudioEngine.ts. CountdownRenderer and MediaEngine.showCountdown/startCountdown/hideCountdown exist and look correct, but a grep for callers finds none outside mediaEngine.ts. Selecting the seeded kind:'countdown' scene composites tiles exactly like any other scene \u2014 the countdown painter is never registered.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Countdown scene payload fields",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "web/src/state/studioStore.ts:53. Spec 2.6: countdown payload adds durationMs, musicId, fontId, color (default literal \"Auto\") and size, with CountdownSceneSize = Small|Medium|Large default Large, plus CountdownSceneStatusV2 = Playing|Ended|ReplayReady. None are fields on Scene; the engine's CountdownConfig is a single global, not scene-scoped.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Countdown scenes restricted to HALF_SCREEN layout",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "web/src/studio/Stage.tsx:8. Spec 1.3 layoutPositionMap returns R6 (HALF_SCREEN only) for a countdown scene, vb/DM for media scenes and QA/y6 for default scenes, mapped to Shift+1..Shift+7. `const LAYOUTS` is one fixed array of 7 buttons rendered identically for every scene kind.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Scene reordering",
+   "state": "missing",
+   "impact": "major",
+   "effort": "small",
+   "note": "web/src/studio/SceneRail.tsx:47. No reorder/move action exists in the store (grep for reorderScene/moveScene/draggable finds only an unrelated CSS token), and SceneRail renders scenes.map(...) with no drag handles or drop targets. Scene order is fixed at creation order.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Scene duplication",
+   "state": "missing",
+   "impact": "major",
+   "effort": "small",
+   "note": "web/src/state/studioStore.ts:180. The store exposes selectScene/addScene/removeScene/renameScene/setLayout only \u2014 there is no duplicateScene action, and the scene card offers no duplicate affordance.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Scene rename UI",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "small",
+   "note": "web/src/studio/SceneRail.tsx:32. renameScene is implemented in the store (studioStore.ts:312) but has zero callers. The scene card's only control is a `more` icon button whose onClick is removeScene(scene.id); the overflow menu that would carry Rename/Duplicate does not exist.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Common scene fields from ClientSceneCreatePayload",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "web/src/state/studioStore.ts:53. Spec 2.7: {name, shouldShowChatOverlay, shouldAutoswitchToNextScene(=false), layoutType, captionId, tickerId, qrCodeId, browserSourceId, overlayId, logoId(=null), logo(=null), background, commerce}. interface Scene implements only title (name), layout and qrId \u2014 the other nine per-scene bindings are absent, so overlays/captions/tickers/logo/background are global rather than per-scene.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Layout mutation commands and scoped reset",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "web/src/studio/modals/CustomizeLayoutModal.tsx:133. Spec 1.8: Update*LayoutOptions commands each with a TempOptions twin, ResetLayoutOptions scoped to {all, main, aside} (+secondary for Showtime, {all, main} for Tbpn), and ...OptionsWithStatusesIO {isModified, isMainModified, isAsideModified, isSecondaryModified}. The modal has one reset() clearing local React state; no scoped reset and no modified-status tracking exists.",
+   "domain": "Layouts, scenes and the stage"
+  },
+  {
+   "item": "Authentication and authorization: no auth of any kind on any HTTP or WebSocket surface",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a71.2/\u00a71.3 documents v2/api/auth/getStatusServerFrontendToken, v2/public/auth/registration, /auth/google, and an httpClientWithRefreshToken wrapper on every call; \u00a72.2 documents close codes JwtVerifyError=4109 and InvalidJwtPayload=4110. server/src/index.ts registers zero middleware between cors/express.json and the routes \u2014 POST /api/stream/start, POST /api/stream-key/reset and DELETE /api/destinations/:id are all callable by any anonymous origin.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Room join role is self-declared; no client secret or access key is verified",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "small",
+   "note": "Spec \u00a72.2 documents join errors NoClientIdOrSecret=4105 and BadClientSecret=4106, plus /events/${id}/studio-access-key and /events/${id}/invite-access-key. server/src/rooms.ts join() does `const isHost = role === 'host' && this.hostId === null` using the role straight off the client's join frame \u2014 the first socket to claim 'host' gets admit/deny/kick/setRoom authority, and leave() silently promotes an arbitrary remaining guest to host.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "/ws/ingest accepts anonymous control frames that start, poison or kill a live broadcast",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "index.ts ingestWss handler parses {t:'start'} from any connected socket and calls broadcaster.start() with every stored destination; binary frames are written straight to ffmpeg stdin with no identity check; and ws.on('close') unconditionally calls broadcaster.stop(), so any third party who connects and disconnects terminates someone else's stream.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Stream key is a single module-level variable shared by every caller and readable unauthenticated",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "medium",
+   "note": "Spec \u00a71.4 scopes keys per event: events/${id}/stream-key and /events/${id}/stream-key/reset. index.ts has `let streamKey = 're_' + randomUUID()...` at module scope; GET /api/stream-key returns it to anyone, and POST /api/stream-key/reset rotates the one key for all users mid-stream.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Persistence layer: everything lives in in-memory Maps and dies with the process",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "`const destinations = new Map<string, Destination>()` in index.ts, `private rooms = new Map<string, Room>()` in rooms.ts, `private chat: ChatMessage[]` in Room. The code comments admit it ('Swap for a database when auth lands'). No database driver appears in server/package.json \u2014 dependencies are cors, express, multer, nanoid, tsx, ws only.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Broadcaster and destination store are process-global singletons, not per-room or per-user",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "One `new Broadcaster()` and one destinations Map serve every room. Broadcaster.start throws 'Broadcast already running' if proc !== null, so the second concurrent room gets HTTP 409, and any room that does start streams to every other user's destinations.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Room wire protocol: plain JSON {t:...} instead of the documented binary category-prefixed {type, messageId, value} envelope, and no SFU",
+   "state": "wrong",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a72.2 specifies byte[0]=category (Sfu=0, Client=1, Broadcast=2, RoomManager=3, OverlayBroadcast=4), a fixed 36-char clientId at bytes 1..37 for Client/Broadcast, and messageId request/response correlation; \u00a70 and \u00a77.1 specify a mediasoup SFU with server-side compositing. index.ts does JSON.parse(String(raw)) on text frames with a flat `msg.t` discriminant, relays SDP verbatim for a browser mesh, and there is no mediasoup dependency, no Produce/ConnectProducerTransport/GetIceServers action handling, and no Compositor participant.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Events resource and scheduling: no /events surface at all",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a71.4 documents ~25 paths \u2014 /events, /events/history, /events/${id}/start, /reschedule, /unschedule?delete_external=false, /check-overlap, /events/${id}/destinations/${dst}, /cover, /loops, events/last. server/src contains no route matching /events.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Users, accounts, organizations and teams",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a71.2 and \u00a71.8: v2/api/user, /account-settings, /feature-groups, /social-profile, /stream-presets/default, /streaming-time, /trial-features, /organizations/current, /teams, /team-invite. None exist; the server has no concept of a user, so nothing can be scoped or owned.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Room Manager does not own scene, layout, overlay or branding state",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a72.3 and \u00a77.3 make the Room Manager the authority broadcasting scene/layout/overlay deltas (AddScene, SCENE_SELECTED, UPDATE_LAYOUT_TYPE_V2, OVERLAY_STATE_UPDATED, UPDATE_TICKER, UPDATE_LOGO, UPDATE_BACKGROUND, PLAY_COUNTDOWN_SCENE, ...). RoomSnapshot in rooms.ts carries only id, title, hostId, participants, live, recording, startedAt, requireApproval, capacity.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Recordings management: no listing, metadata, playlist, trim or import endpoints",
+   "state": "partial",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a71.5: /recordings, /recordings/${id}, /recordings/${id}/playlist, /studio-recordings/${id}/metadata, /files/import-recording/${id}, /files/trim-recording/${id}. Implementation only writes one local MP4 via the ffmpeg tee target in broadcaster.ts and returns its path in the start response \u2014 it is never indexed, listed, fetched or deleted.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Files / video storage API and per-participant local-recording upload",
+   "state": "missing",
+   "impact": "blocker",
+   "effort": "large",
+   "note": "Spec \u00a71.5 and \u00a77.7: /files, /files/import, /files/${id}/trims, /files/upload/${uploadId}, /files/upload-credentials?s=${ts}, /files/upload-credentials/${id}/refresh, with MediaRecorder 5 MiB parts going to S3. No upload-credentials issuance and no file resource exist; server/src/tools.ts uploads are transient and rmSync'd after each response.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Analytics and viewer counts",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec \u00a71.2 v2/api/stream/${id}/analytics and v2/api/stream-analytics/streaming-sessions?userId=&page=&perPage=; \u00a72.1 REQUEST_STREAMING_STATUSES_VIEWERS_JWT; \u00a72.3 WebinarViewersCountUpdated. Nothing in server/src records or reports viewers \u2014 /api/stream/stats returns only broadcaster-local bitrate, fps and dropped frames.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Chat is studio-local only; platform aggregation absent and stored history is never delivered",
+   "state": "partial",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec \u00a78 documents chat arriving via the room protocol (REQUEST_CHAT_HISTORY, ADD_PRIVATE_CHAT_MESSAGE, CHAT_TOKEN_UPDATED, UPDATE_VIRTUAL_EVENTS_CHAT_CREDENTIALS) plus ADD_PINNED_MESSAGE / ADD_SHOWN_MESSAGE overlay flow. index.ts hardcodes `source: 'studio'` on every message, ingests nothing from destinations, and Room.addChat stores up to 500 messages in a `get history` accessor that no code path ever reads \u2014 a joining client gets no backlog.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Streaming Statuses WebSocket subsystem",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec \u00a72.1: a second socket at `${streamingStatusesHost}/ws?source=sdk` authenticated by the subprotocol array ['restream-status-token', jwt], with 1000*(5*Math.random()) reconnect backoff over 10 attempts. index.ts's upgrade handler accepts only /ws and /ws/ingest and destroys every other path.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Clips backend",
+   "state": "missing",
+   "impact": "major",
+   "effort": "large",
+   "note": "Spec \u00a71.1 lists clipsBackendHost as an injected service. No clip creation, storage or retrieval route exists anywhere in server/src.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "WebSocket close codes are never sent; clients cannot distinguish why they were disconnected",
+   "state": "missing",
+   "impact": "major",
+   "effort": "small",
+   "note": "Spec \u00a72.2 enumerates ~30 codes (Eviction=4002, HostDisconnected=4003, KickedOut=4005, RoomIsFull=4102, DemotedToViewer=4016, ...). Every close in index.ts and rooms.ts is a bare ws.close() / socketOf(id)?.close() with no code or reason \u2014 including the room-full path, which sends {t:'denied'} then closes with the default 1005 instead of 4102.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Room.live and Room.recording are declared but never assigned, so the room snapshot always reports live:false",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "small",
+   "note": "rooms.ts initialises `live = false`, `recording = false`, `startedAt: number|null = null` and no code path ever writes them; broadcaster state is tracked separately on the global Broadcaster, so every client's RoomSnapshot says the room is offline even while ffmpeg is streaming.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Pairs, ecommerce and billing APIs",
+   "state": "missing",
+   "impact": "major",
+   "effort": "large",
+   "note": "Spec \u00a71.6 documents 11 /pairs/* paths for host/guest channel pairing with domain errors (HostActivePairedChannelsPairsDisabledForRoomError, 'guest_not_found'); \u00a71.7 documents ~25 ecommerce paths; \u00a71.2 documents 7 billing paths. None of the three surfaces has any route.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Platform catalogue and ingest server list are hardcoded placeholders in the wrong shape",
+   "state": "wrong",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec \u00a71.3 defines v2/public/platforms, v2/public/platforms/${platformId}/stream-servers and v2/public/ingests, and \u00a77.5 says every host must be runtime-injected. index.ts hardcodes a five-entry INGEST_REGIONS array of non-resolving hosts ('live-ams.local', 'live-fra.local', ...) served at /api/ingest-servers, offers no platform catalogue, and compiles in 'stun:stun.l.google.com:19302' as the default ICE server.",
+   "domain": "Server API, events and persistence"
+  },
+  {
+   "item": "Multi-segment trim video editor (timeline slices, split S, delete D, undo/redo, 1x-10x zoom, trimmer/compact modes, 6 active + 5 reserved hotkeys)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "large",
+   "note": "TOOLS-04 \u00a71.2-1.5 documents 12 bespoke components and a full hotkey map. Nothing in web/src has a timeline, slice model, or editor modal; no VideoEditor equivalent exists anywhere.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "Trim save pipeline plus the Video Storage / Recordings API (19 + 6 methods, inputClippings merge, Choppity /integrations endpoints)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "large",
+   "note": "Spec \u00a71.7-1.8: trimByFileId / trimByRecordingSuid / saveRecordingToVideoStorage / getPlaylistByFileId etc. server/src/index.ts exposes only 11 routes (ingest-servers, stream-key, speed-test, health, destinations, stream stats/start/stop) - zero /files, /recordings or /integrations routes.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "AI Clips / Choppity 3500 ms polling with status set {Ready, AnalyseFail, UploadFail, TranscodingError}",
+   "state": "stubbed",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "web/src/pages/settings/ClipsPage.tsx renders a hardcoded SEED_CLIPS array of 6 fake clips with 'ready'/'processing' badges and no fetch, no polling provider, no backend.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "28-theme embeddable chat theme kit (default, default-compact, default-rounded, comic, 8-bit, fortnite/pubg/lol/r6/overwatch/bo4/ac-odyssey/minecraft/wot/wow variants)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "large",
+   "note": "Zero themes implemented: grep for the theme ids finds only two captured sprite files (web/src/assets/icons/0066baec2d8c98bd.svg, 460fa4f99cb296ef.svg) and unused theme fonts in web/public/fonts (luckiestguy, burbank, exo2, philosopher, oswald, bangers...). No restream-embed-themes-chat-container CSS and no theme selector exist.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "Chat embed prop contract: theme, alignment (Top|Bottom), messageOpacity, hideMessages, touchesEdges, and the --scale / --messageBackgroundOpacity CSS variable parameterisation",
+   "state": "wrong",
+   "impact": "minor",
+   "effort": "small",
+   "note": "web/src/engine/chatOverlayRenderer.ts is an original canvas-2D design with a different config surface (mode reserved|freemove, x/y/w/h, maxMessages, messageLifetimeMs, showPlatform, fontScale). Only backgroundOpacity and scale overlap; theme, alignment, messageOpacity, hideMessages and touchesEdges have no counterpart.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "Agentic AI assistant with a real model provider and streaming transport",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "large",
+   "note": "web/src/studio/panels/AiPanel.tsx send() only does setState, appending a constant REPLY string ('No model provider is connected yet, so I cannot actually run that.'). Honest and self-declared, but the capability is absent.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "~72-tool agent registry across 13 groups (scenes, scene content, graphics, theming, AI generation, browser sources, QR, countdown, audio, participants, chat overlay, chat read, meta) plus the @// mention composer, ResourcePicker/AudioOptionsPicker and per-part metrics HUD",
+   "state": "missing",
+   "impact": "major",
+   "effort": "large",
+   "note": "TOOLS-04 \u00a73.3-3.9. No tool definitions, no tool-call plumbing, no suggestion sets bound to studio state; AiPanel's only structure is 4 decorative CAPABILITIES chips and 4 STARTERS strings.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "AI runtime stack: Vercel AI SDK v5 / AI Gateway (or equivalent) with server-side key proxying and the 7 routed model ids",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "Spec \u00a73.8 and TOOLS-07 \u00a74.13 note AI_GATEWAY_API_KEY is stripped in production so the chat must proxy through a backend. No ai/@ai-sdk dependency and no server AI route exists.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "hls.js in-scene HLS playback (HlsVideoPlayer, canvas-captured into the broadcast, position-synced across the room)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "No hls.js dependency and no .m3u8 playback code. web/src/pages/settings/PullLinksPage.tsx advertises HLS pull URLs, and AddSourceModal offers 'Local video', but mediaEngine.ts only does URL.createObjectURL(file) on a local File - no adaptive-streaming source can actually play.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "S3 upload path (multipart ManagedUpload, Transfer Acceleration, refreshable STS credentials, clock-skew retry)",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "TOOLS-04 \u00a76.2. No aws-sdk or @aws-sdk/client-s3 anywhere. server/src/tools.ts only accepts a 512 MB multer upload into mkdtempSync() and deletes it after the ffmpeg job - there is no persistent asset storage or upload-credential endpoint.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "MediaPipe ImageSegmenter virtual background (GPU selfie segmenter) and the CPU multiclass skin-mask worker for skin smoothing",
+   "state": "stubbed",
+   "impact": "major",
+   "effort": "large",
+   "note": "Settings exist and persist (web/src/state/settingsStore.ts BackgroundMode 'none'|'blur'|'image'|'color', keys studio.settings.virtualBackgroundMode/IdV2/Color) but nothing consumes them: no segmenter, no worker, no blur in web/src/engine. The models are already on disk and unreferenced by code - assets.json lists /mediapipe/selfie_segmenter.tflite, selfie_segmenter_landscape.tflite, selfie_multiclass_256x256.tflite, vision_wasm_internal.js.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "Agentation in-page DOM-annotation feedback tool (4 output formats: compact/standard/detailed/forensic, webhooks, VS Code deep links)",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "large",
+   "note": "TOOLS-04 \u00a74. Spec itself records it as staff-gated and shipped disabled (IS_ENABLED_AGENTATION 'false', AGENTATION_HOST localhost:4747), so lowest priority - but nothing in the repo says it was deliberately dropped.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "Stripe billing (Stripe.js v3 + @stripe/react-stripe-js) - the only service the spec marks 'Required for a clone: Yes'",
+   "state": "missing",
+   "impact": "major",
+   "effort": "medium",
+   "note": "TOOLS-07 \u00a73.1 row 1 and \u00a74.1. No Stripe dependency, no checkout/subscription surface, no STRIPE_PUBLIC_KEY slot in any env handling.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "Analytics, experimentation and RUM layer: Segment analytics.js 5.2.0, Amplitude destination, Amplitude Experiment 1.15.5 feature flags, Datadog Browser RUM + Logs",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "TOOLS-07 \u00a74.4-4.6. Four services, none present - no event emission, no flag store, no error/RUM reporting anywhere in web/src. Spec marks all four 'Required: No' with OSS replacements (PostHog, Unleash, GlitchTip).",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "Support and feedback widgets: Intercom messenger (app wvwee5xi) and Canny SDK",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "TOOLS-07 \u00a74.2-4.3. Neither snippet is in web/index.html and no in-app equivalent (help launcher, feature-request board) exists. Spec marks both 'Required: No'.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "Bot protection on public entry points (Cloudflare Turnstile, with reCAPTCHA as the legacy path)",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "TOOLS-07 \u00a74.12; the clone matrix calls Turnstile 'Recommended for public signup'. web/src/pages/JoinPage.tsx takes a name and joins with no challenge and no site-key configuration.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "Google APIs client (gapi) + Google Picker for Drive/Slides import",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "TOOLS-07 \u00a74.11. AddSourceModal offers only local-file and built-in sources; there is no cloud-import path, OAuth client id slot, or Picker integration.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "WebRTC quality telemetry: watchRTC SDK getStats collection and the qualityRTC pre-call network test battery",
+   "state": "partial",
+   "impact": "minor",
+   "effort": "medium",
+   "note": "TOOLS-07 \u00a74.7. A substitute pre-call test exists (web/src/pages/settings/SpeedTestPage.tsx + POST /api/speed-test in server/src/index.ts), but there is no per-call getStats collector, no session-tagged telemetry, and no quality history.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "Typography: 12 Google Fonts families and 31 self-hosted @font-face families (incl. the licence-flagged Graphik / Burbank / Expressway / Rainbow)",
+   "state": "partial",
+   "impact": "minor",
+   "effort": "small",
+   "note": "TOOLS-07 \u00a75. The binaries were captured into web/public/fonts (graphik 400/400i/500/600/700, burbank, expressway, philosopher, teko, vt323...) but grep finds 0 @font-face rules in web/src/styles - nothing loads them. The built CSS imports only Inter + IBM Plex Mono from fonts.googleapis.com, so the licence-restricted files sit unused in the served public directory.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  },
+  {
+   "item": "App shell inventory: PWA manifest (site.webmanifest) and the 10 documented <meta> tags",
+   "state": "missing",
+   "impact": "minor",
+   "effort": "small",
+   "note": "TOOLS-07 \u00a71.1 and \u00a72. web/index.html carries 3 metas (charset, viewport, theme-color) and a <title>; there is no manifest link, no icon set, no apple-touch/PWA metadata.",
+   "domain": "Sub-applications and third-party integrations (TOOLS-04, TOOLS-07)"
+  }
+ ]
+}
