@@ -1,0 +1,587 @@
+{
+  "generated_utc": "2026-08-24T00:05:43.7522766Z",
+  "captured_date": "2026-08-24",
+  "page": "https://studio.restream.io/[redacted-room]",
+  "scope": "Sanitized public functional static browser resources only; no APIs, payloads, telemetry, dynamic iframes, browser instrumentation, UUID/avatar media, cookies, storage, or authentication data.",
+  "observed_total_resources": 161,
+  "observed_by_kind": {
+    "font": 8,
+    "image": 24,
+    "other": 76,
+    "script": 42,
+    "stylesheet": 11,
+    "video": 0
+  },
+  "selected_public_functional_static": 39,
+  "exact_url_matches_in_package": 39,
+  "unmatched_selected_urls": 0,
+  "inline_svg": {
+    "observed_instances": 12,
+    "unique_sha256": 11,
+    "exact_hash_matches_in_package": 11,
+    "text_nodes": 0,
+    "image_nodes": 0,
+    "script_or_event_handlers": 0,
+    "external_references": 0
+  },
+  "assets": [
+    {
+      "name": "api.js",
+      "kind": "script",
+      "url": "https://apis.google.com/js/api.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "02-prejoin-observed/static/apis.google.com/js/api.js",
+          "bytes": 14576,
+          "sha256": "cd74472112978d7bafee49927769110f6f619373105d7f408add04b4098861cd",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "sdk.js",
+      "kind": "script",
+      "url": "https://canny.io/sdk.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "02-prejoin-observed/static/canny.io/sdk.js",
+          "bytes": 80861,
+          "sha256": "8fbde62a2fbb6fea2c2a89cfbb7465ad7a17e00096c312c37d000d5748f68520",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "css2",
+      "kind": "stylesheet",
+      "url": "https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap&family=Hind+Madurai:wght@400;500;700&family=Hind+Siliguri:wght@400;500;700&family=Mali:wght@400;500;700&family=Noto+Sans+HK:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Rubik:wght@400;500;700",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "02-prejoin-observed/static/fonts.googleapis.com/css2-query-2fe4e43056c8.css",
+          "bytes": 1772629,
+          "sha256": "addfebb4a20fc86d55e25170f1d1d10d42069b4c597e26f335fee89c8dbbb82f",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "css2",
+      "kind": "stylesheet",
+      "url": "https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "02-prejoin-observed/static/fonts.googleapis.com/css2-query-57d1558eb5a7.css",
+          "bytes": 1891,
+          "sha256": "d446bd3f34efa9c92f12bcddcb50ee541518bdc0373bb43937efd555636740ac",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "css2",
+      "kind": "stylesheet",
+      "url": "https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "02-prejoin-observed/static/fonts.googleapis.com/css2-query-1835a9cba875.css",
+          "bytes": 1957,
+          "sha256": "91c657248e5c5e294ab055833cb094bbc7a174b1765156c77bbdd87b76273e6e",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "v3",
+      "kind": "script",
+      "url": "https://js.stripe.com/v3",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "02-prejoin-observed/static/js.stripe.com/v3.js",
+          "bytes": 1077507,
+          "sha256": "65b0080902d02f7e53e459f7e05785c19daf651b16ae1273f643d3442ab8a2fa",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "Graphik-Bold-Cy-Web.woff2",
+      "kind": "font",
+      "url": "https://studio-assets.restream.io/defaults/fonts/graphik/Graphik-Bold-Cy-Web.woff2",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "02-prejoin-observed/static/studio-assets.restream.io/defaults/fonts/graphik/Graphik-Bold-Cy-Web.woff2",
+          "bytes": 48457,
+          "sha256": "8c0281ccfe4212444d759b31da7daafe7563ce0f265da9986f545bdfcf55bf1c",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "Graphik-Medium-Cy-Web.woff2",
+      "kind": "font",
+      "url": "https://studio-assets.restream.io/defaults/fonts/graphik/Graphik-Medium-Cy-Web.woff2",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "02-prejoin-observed/static/studio-assets.restream.io/defaults/fonts/graphik/Graphik-Medium-Cy-Web.woff2",
+          "bytes": 47393,
+          "sha256": "2bb35939a047f4f35189d85ad047aebc3348f2d21a655023a8626ca5a53699a4",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "Graphik-Regular-Cy-Web.woff2",
+      "kind": "font",
+      "url": "https://studio-assets.restream.io/defaults/fonts/graphik/Graphik-Regular-Cy-Web.woff2",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "02-prejoin-observed/static/studio-assets.restream.io/defaults/fonts/graphik/Graphik-Regular-Cy-Web.woff2",
+          "bytes": 43329,
+          "sha256": "64b238d706a2b880360e117c436f63439e010aca8fbe02f61b0289f093877380",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "Graphik-Semibold-Cy-Web.woff2",
+      "kind": "font",
+      "url": "https://studio-assets.restream.io/defaults/fonts/graphik/Graphik-Semibold-Cy-Web.woff2",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "02-prejoin-observed/static/studio-assets.restream.io/defaults/fonts/graphik/Graphik-Semibold-Cy-Web.woff2",
+          "bytes": 48237,
+          "sha256": "b8a12fb648eef01e8090eff26f53f8806e0f7bc1f63249b0eabdd43438c2b419",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "114.15f34f2a5005b32d.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/114.15f34f2a5005b32d.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/114.15f34f2a5005b32d.js",
+          "bytes": 395068,
+          "sha256": "b6f72d80a234a6358b426ac61d07dc8993c93fc1b75f4e2869bb70624630a575",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "131.8f878df5d7c38b5a.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/131.8f878df5d7c38b5a.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/131.8f878df5d7c38b5a.js",
+          "bytes": 2168479,
+          "sha256": "1b4a98f47cbdfb7860e841c9c4da535020fba1958163fd1416858161e6d859f6",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "33bd017510f0dead2abc12d29b2ffd5e.svg",
+      "kind": "image",
+      "url": "https://studio.restream.io/33bd017510f0dead2abc12d29b2ffd5e.svg",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/referenced-static/studio.restream.io/33bd017510f0dead2abc12d29b2ffd5e.svg",
+          "bytes": 597,
+          "sha256": "f31481864ae5c5f8f25237928279bf675792c989532101fb40491e78fe23ed9c",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "575.434695f973e2e774.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/575.434695f973e2e774.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/575.434695f973e2e774.js",
+          "bytes": 1198027,
+          "sha256": "76b3aa460833894ac299307fa7e3bcb23a3a11b72d2120d57e8884a0959b61cd",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "593.47f82f224fb8c169.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/593.47f82f224fb8c169.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/593.47f82f224fb8c169.js",
+          "bytes": 1170915,
+          "sha256": "deace49ddfd43898a0928e8f9859de82eb59b39d244d8bbf0962719b6d3d6f72",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "798.5aeee236e1d9228a.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/798.5aeee236e1d9228a.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/798.5aeee236e1d9228a.js",
+          "bytes": 8285,
+          "sha256": "7524565b2efbb10632aa2ccad70bce5f7aa42867664c3bd5731cbf04b7629a49",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "953.29f1e57f8e568b77.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/953.29f1e57f8e568b77.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/953.29f1e57f8e568b77.js",
+          "bytes": 14445,
+          "sha256": "815af26602120b9d3e932292277e49c967d959987e818a8adca1f8f98c70493d",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "Graphik-Bold-Cy-Web.b11e71232e4e7f45.woff2",
+      "kind": "font",
+      "url": "https://studio.restream.io/assets/Graphik-Bold-Cy-Web.b11e71232e4e7f45.woff2",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/referenced-static/studio.restream.io/assets/Graphik-Bold-Cy-Web.b11e71232e4e7f45.woff2",
+          "bytes": 48457,
+          "sha256": "8c0281ccfe4212444d759b31da7daafe7563ce0f265da9986f545bdfcf55bf1c",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "Graphik-Medium-Cy-Web.265489e221c946cd.woff2",
+      "kind": "font",
+      "url": "https://studio.restream.io/assets/Graphik-Medium-Cy-Web.265489e221c946cd.woff2",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/referenced-static/studio.restream.io/assets/Graphik-Medium-Cy-Web.265489e221c946cd.woff2",
+          "bytes": 47393,
+          "sha256": "2bb35939a047f4f35189d85ad047aebc3348f2d21a655023a8626ca5a53699a4",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "Graphik-Regular-Cy-Web.d7f438acf9cad997.woff2",
+      "kind": "font",
+      "url": "https://studio.restream.io/assets/Graphik-Regular-Cy-Web.d7f438acf9cad997.woff2",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/referenced-static/studio.restream.io/assets/Graphik-Regular-Cy-Web.d7f438acf9cad997.woff2",
+          "bytes": 43329,
+          "sha256": "64b238d706a2b880360e117c436f63439e010aca8fbe02f61b0289f093877380",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "Graphik-Semibold-Cy-Web.6f4e5b8d01cdd6b7.woff2",
+      "kind": "font",
+      "url": "https://studio.restream.io/assets/Graphik-Semibold-Cy-Web.6f4e5b8d01cdd6b7.woff2",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/referenced-static/studio.restream.io/assets/Graphik-Semibold-Cy-Web.6f4e5b8d01cdd6b7.woff2",
+          "bytes": 48237,
+          "sha256": "b8a12fb648eef01e8090eff26f53f8806e0f7bc1f63249b0eabdd43438c2b419",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "114.04f1c5972789cfd9.css",
+      "kind": "stylesheet",
+      "url": "https://studio.restream.io/assets/styles/114.04f1c5972789cfd9.css",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/observed-assets/18ef3f525378ffb0.css",
+          "bytes": 289383,
+          "sha256": "a86c50c0ead8ae81b6a1e112fb28c9fafb263ed8a0b1c13cf602034aa5113e87",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "131.3055c017c9fa437e.css",
+      "kind": "stylesheet",
+      "url": "https://studio.restream.io/assets/styles/131.3055c017c9fa437e.css",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/observed-assets/f91fcfff01ec4b41.css",
+          "bytes": 630421,
+          "sha256": "541ea903d03c6b38e6efd8a80d108b3f5491cf0dfd1f8d41d1d09b8806bc3bfe",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "575.e1ef7107da9191b7.css",
+      "kind": "stylesheet",
+      "url": "https://studio.restream.io/assets/styles/575.e1ef7107da9191b7.css",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/observed-assets/9a4011d3bbe41795.css",
+          "bytes": 376359,
+          "sha256": "41d3fcfd6bccac70e9140a649d77e277535089c0daec1046bd698e4a7cd9d968",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "593.9eb17db9e701b6bc.css",
+      "kind": "stylesheet",
+      "url": "https://studio.restream.io/assets/styles/593.9eb17db9e701b6bc.css",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/observed-assets/bc624526d0b9e7b4.css",
+          "bytes": 43264,
+          "sha256": "903b0d674f55717cc749b5c5243ba29c5edf65b843db15cb5bd3608bbc79259c",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "externals.3524860ca3dc5abb.css",
+      "kind": "stylesheet",
+      "url": "https://studio.restream.io/assets/styles/externals.3524860ca3dc5abb.css",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/observed-assets/f77221e341d96c08.css",
+          "bytes": 28620,
+          "sha256": "12774884e2ac2339b0e99177605afe2591b7da042e6f90b951ca8603e4d87da2",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "Index.0a0f0df00de93ef5.css",
+      "kind": "stylesheet",
+      "url": "https://studio.restream.io/assets/styles/Index.0a0f0df00de93ef5.css",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/observed-assets/f3c6590e4507e7cb.css",
+          "bytes": 21185,
+          "sha256": "23b5dc083205e9b23af080b54c08c0a480a1c7d25b7845f2f70110e1011139dd",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "restream.85b89da606457891.css",
+      "kind": "stylesheet",
+      "url": "https://studio.restream.io/assets/styles/restream.85b89da606457891.css",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/observed-assets/11e97277be45997c.css",
+          "bytes": 1106416,
+          "sha256": "5f98074b50f7cc9d6aa5ca6a7bf9dffba77cfd086b67abd6372ad88ff168374a",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "restreamchatembedthemes.80c3d45ee11ec039.css",
+      "kind": "stylesheet",
+      "url": "https://studio.restream.io/assets/styles/restreamchatembedthemes.80c3d45ee11ec039.css",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/css/restreamchatembedthemes.80c3d45ee11ec039.css",
+          "bytes": 99719,
+          "sha256": "4bc9822848a603d076536b301523e6e32c14f8d094256ad16672f24036d2fef5",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "dda951d7bcd74671a55fc1cfdf6faba9.svg",
+      "kind": "image",
+      "url": "https://studio.restream.io/dda951d7bcd74671a55fc1cfdf6faba9.svg",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/referenced-static/studio.restream.io/dda951d7bcd74671a55fc1cfdf6faba9.svg",
+          "bytes": 707,
+          "sha256": "ca6e4cb444d12eb530a0629ccf9536148939bc9d158dcb2f3a49ca144184b5db",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "externals.b634d3e8690cf1f3.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/externals.b634d3e8690cf1f3.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/externals.b634d3e8690cf1f3.js",
+          "bytes": 5156644,
+          "sha256": "3446abbccf1ef827745043653240d44ff697f73b44e274e40e45f501ef6a27a2",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "hlsjs.3e5d0a83ecd57757.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/hlsjs.3e5d0a83ecd57757.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/hlsjs.3e5d0a83ecd57757.js",
+          "bytes": 399879,
+          "sha256": "c5d8c2f575f297f65d3b476f57e136c673b569f9ecb691a9e63b1fb8f19acec5",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "Index.312bd7238c465fa2.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/Index.312bd7238c465fa2.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/Index.312bd7238c465fa2.js",
+          "bytes": 325346,
+          "sha256": "f87f6667ad43fb7703bec7a9176077c4deb036da85b6b7d112bfa6f9a3b2a26b",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "en-US.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/locale/en-US.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/locale-en-US.js",
+          "bytes": 135701,
+          "sha256": "560494377d859115811f4f48afa232e9f32e02ee95f1b901aca78d98d09a6945",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "restream.887ca3d5bcd09a3a.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/restream.887ca3d5bcd09a3a.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/restream.887ca3d5bcd09a3a.js",
+          "bytes": 12262642,
+          "sha256": "7e1fb86a959630df9e049d277aff93b89a278f14d52ec91580c6c055c58a011c",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "restreamchatembedthemes.d79062a9951586dd.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/restreamchatembedthemes.d79062a9951586dd.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/restreamchatembedthemes.d79062a9951586dd.js",
+          "bytes": 20339,
+          "sha256": "883aec40649f52a12f968508e5b36e298b092ba74b2865c1485e9c7996667263",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "restreamvideoeditor.d22611927fb1ae5c.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/restreamvideoeditor.d22611927fb1ae5c.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/restreamvideoeditor.d22611927fb1ae5c.js",
+          "bytes": 1109598,
+          "sha256": "d54b23cd7e7550d384712c1a2df2ca15576163132685176c6322a1a2cb03bbd7",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "runtime.b1c203db08a4f823.js",
+      "kind": "script",
+      "url": "https://studio.restream.io/runtime.b1c203db08a4f823.js",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "01-inside-studio-verified/client-static/js/runtime.b1c203db08a4f823.js",
+          "bytes": 6548,
+          "sha256": "bcfaae2ce1ef80ef99fa73973e8601b36138c378444630a48965cf1b90f26e62",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        }
+      ]
+    },
+    {
+      "name": "wvwee5xi",
+      "kind": "script",
+      "url": "https://widget.intercom.io/widget/wvwee5xi",
+      "exact_package_match": true,
+      "package_matches": [
+        {
+          "file": "02-prejoin-observed/static/widget.intercom.io/widget/wvwee5xi.js",
+          "bytes": 3163,
+          "sha256": "e9c7b345643e951a96696d10e7541f60fc41df18b4a0a2ea6f6e7ef61d3a7161",
+          "manifest": "02-prejoin-observed/MANIFEST-downloaded-static.csv"
+        },
+        {
+          "file": "02-prejoin-observed/static/widget.intercom.io/widget/wvwee5xi.js",
+          "bytes": 3163,
+          "sha256": "e9c7b345643e951a96696d10e7541f60fc41df18b4a0a2ea6f6e7ef61d3a7161",
+          "manifest": "04-third-party-functional/intercom/MANIFEST-root-downloads.csv"
+        },
+        {
+          "file": "04-third-party-functional/intercom/decoded/widget-loader.js",
+          "bytes": 7614,
+          "sha256": "1c7d733e374a8533b1e4f5462703c2a01b4fe26a9853cc724163aad7df4426f9",
+          "manifest": "04-third-party-functional/intercom/MANIFEST-root-downloads.csv"
+        }
+      ]
+    }
+  ]
+}

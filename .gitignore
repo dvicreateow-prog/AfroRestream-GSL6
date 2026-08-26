@@ -1,0 +1,71 @@
+# ---------------------------------------------------------------------------
+# Reference capture - NOT redistributable
+#
+# These directories hold third-party compiled bundles, branding and vendor SDKs
+# captured for analysis. They are reference material for building this project,
+# not ours to publish. Everything derived from them that IS ours (the written
+# specs under studio/spec) is committed.
+# ---------------------------------------------------------------------------
+01-inside-studio-verified/
+02-prejoin-observed/
+03-deep-static/
+04-third-party-functional/
+MANIFEST*.csv
+VERIFICATION-REPORT.json
+*.LICENSE.txt
+CHECKSUMS-SHA256.txt
+
+# Third-party bundles pulled during the 2026-08-25 refresh. These are the vendor's
+# compiled JS/CSS, not our code - the written REFRESH-REPORT.md analysis stays.
+studio/spec/refresh-2026-08-25/**/*.js
+studio/spec/refresh-2026-08-25/**/*.css
+studio/spec/refresh-2026-08-25/**/*.map
+studio/spec/.logical_map.json
+
+# ---------------------------------------------------------------------------
+# Assets imported from the capture by scripts/import-assets.mjs
+#
+# Regenerate locally with:  node scripts/import-assets.mjs
+# Graphik in particular is commercially licensed and must not be published.
+# ---------------------------------------------------------------------------
+studio/web/public/fonts/
+studio/web/public/img/
+studio/web/public/video/
+studio/web/public/audio/
+studio/web/public/luts/
+studio/web/public/mediapipe/
+studio/web/public/icon-sheet.html
+studio/web/src/assets/icons/
+studio/web/src/assets/assets.json
+studio/web/src/styles/fonts.graphik.css
+
+# ---------------------------------------------------------------------------
+# Dependencies & build output
+# ---------------------------------------------------------------------------
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# ---------------------------------------------------------------------------
+# Runtime output
+# ---------------------------------------------------------------------------
+studio/server/recordings/
+studio/test-ingest.mjs
+*.mp4
+*.mkv
+*.webm
+*.flv
+
+# ---------------------------------------------------------------------------
+# Local env & editor
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+npm-debug.log*

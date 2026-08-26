@@ -1,0 +1,12 @@
+/*
+ * Web fonts.
+ *
+ * Inter is the shipped typeface: it is openly licensed, so it can live in a public
+ * repo and on a static host. The captured Studio uses Graphik, which is licensed
+ * commercially by Commercial Type and is deliberately NOT committed here.
+ *
+ * If you hold a Graphik licence, run `node scripts/import-assets.mjs` to generate
+ * `fonts.graphik.css` (gitignored) and add `import './styles/fonts.graphik.css'`
+ * to main.tsx. The token stack in tokens.css already prefers Graphik when present.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');

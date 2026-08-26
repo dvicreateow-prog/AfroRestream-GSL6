@@ -1,0 +1,36 @@
+# Render blueprint for the Studio backend.
+#
+# Deploy: Render dashboard -> New -> Blueprint -> pick this repo.
+# Render reads this file and provisions the service; no manual config needed.
+#
+# Afterwards, point the front end at the service URL:
+#   gh variable set VITE_API_BASE --repo <owner>/<repo> --body "https://<service>.onrender.com"
+
+services:
+  - type: web
+    name: afrorestream-studio-api
+    runtime: docker
+    rootDir: studio
+    dockerfilePath: server/Dockerfile
+    dockerContext: .
+    plan: starter          # free tier sleeps; ffmpeg needs a warm instance
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000
+      # Origins allowed to call the API. Set to your Pages URL.
+      - key: CORS_ORIGIN
+        sync: false
+      # Optional TURN for guests behind strict NAT.
+      - key: TURN_URL
+        sync: false
+      - key: TURN_USER
+        sync: false
+      - key: TURN_PASS
+        sync: false
+    disk:
+      name: recordings
+      mountPath: /app/server/recordings
+      sizeGB: 5

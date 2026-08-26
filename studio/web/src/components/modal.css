@@ -1,0 +1,187 @@
+/* Modal shell. Sizes follow the captured dialog widths. */
+
+.modal__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-dialog-mask);
+  background: rgba(0, 0, 0, 0.62);
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  animation: modal-fade var(--d-fast) var(--e-standard);
+}
+
+@keyframes modal-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal {
+  width: 100%;
+  max-height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: column;
+  background: var(--c-panel);
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-2xl);
+  box-shadow: var(--sh-modal);
+  outline: none;
+  animation: modal-rise var(--d-base) var(--e-standard);
+}
+
+@keyframes modal-rise {
+  from { opacity: 0; transform: translateY(8px) scale(0.99); }
+  to { opacity: 1; transform: none; }
+}
+
+.modal--sm { max-width: 400px; }
+.modal--md { max-width: 520px; }
+.modal--lg { max-width: 660px; }
+.modal--xl { max-width: 860px; }
+
+.modal__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 22px 0;
+  flex: none;
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: var(--fw-semibold);
+}
+
+.modal__desc {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: var(--c-text-dim);
+  line-height: 1.55;
+  max-width: 58ch;
+}
+
+.modal__close {
+  width: 28px;
+  height: 28px;
+  flex: none;
+  border-radius: var(--r-sm);
+  color: var(--c-text-dim);
+  display: grid;
+  place-items: center;
+  transition: background var(--d-fast) var(--e-standard);
+}
+
+.modal__close:hover { background: var(--c-surface); color: var(--c-text); }
+
+.modal__body {
+  padding: 18px 22px 22px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.modal__foot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+  padding: 14px 22px;
+  border-top: 1px solid var(--c-line-soft);
+  flex: none;
+}
+
+/* ---- option grid ---- */
+
+.modal__grid {
+  display: grid;
+  gap: 10px;
+}
+
+.modal__option {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px;
+  border-radius: var(--r-lg);
+  background: var(--c-surface);
+  border: 1px solid transparent;
+  text-align: left;
+  transition: background var(--d-fast) var(--e-standard),
+    border-color var(--d-fast) var(--e-standard);
+}
+
+.modal__option:hover {
+  background: var(--c-elevated);
+  border-color: var(--c-line);
+}
+
+.modal__optionIcon {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: var(--r-md);
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.modal__optionText { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+
+.modal__optionName {
+  font-size: 13px;
+  font-weight: var(--fw-medium);
+  color: var(--c-text);
+}
+
+.modal__optionDesc {
+  font-size: 11px;
+  color: var(--c-text-dim);
+  line-height: 1.45;
+}
+
+.modal__optionArrow { color: var(--c-text-mute); flex: none; }
+
+/* ---- shared bits used by dialog bodies ---- */
+
+.modal__section { margin-bottom: 20px; }
+.modal__section:last-child { margin-bottom: 0; }
+
+.modal__sectionTitle {
+  font-size: 10px;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-text-mute);
+  margin: 0 0 9px;
+}
+
+/* Settings dialogs use a left tab column, per the captured layout. */
+.modal__split { display: flex; gap: 20px; min-height: 320px; }
+
+.modal__tabs {
+  width: 132px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.modal__tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: var(--r-md);
+  font-size: 12px;
+  color: var(--c-text-dim);
+  text-align: left;
+  transition: background var(--d-fast) var(--e-standard);
+}
+
+.modal__tab:hover { background: var(--c-surface); color: var(--c-text); }
+.modal__tab--active { background: var(--c-elevated); color: var(--c-text); }
+
+.modal__pane { flex: 1; min-width: 0; }

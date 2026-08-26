@@ -1,0 +1,18 @@
+{
+  "name": "studio-clone",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": ["web", "server", "shared"],
+  "scripts": {
+    "dev": "concurrently -n server,web -c magenta,cyan \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:web": "npm --workspace web run dev",
+    "dev:server": "npm --workspace server run dev",
+    "build": "npm --workspace web run build",
+    "start": "npm --workspace server run start",
+    "typecheck": "npm --workspace web run typecheck && npm --workspace server run typecheck"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

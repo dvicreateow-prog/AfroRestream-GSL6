@@ -1,0 +1,786 @@
+/*
+ * Studio shell layout.
+ *
+ * Every metric below is transcribed from the captured Studio window
+ * (studio/spec/SPEC-stage-geometry.md, slide-02, 1280x720 reference frame).
+ * Comments carry the source bbox as [x, y, w, h] so this stays auditable.
+ *
+ *   header        [0, 0, 1280, 58]
+ *   scene rail    [0, 58, 182, 662]
+ *   stage area    [182, 58, 788, 662]
+ *   right panel   [970, 58, 266, 662]
+ *   tool rail     [1236, 58, 44, 662]
+ */
+
+.studio {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--c-bg);
+}
+
+.studio__body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+/* ================================================================
+   Header  [0,0,1280,58]
+   ================================================================ */
+
+.hdr {
+  display: flex;
+  align-items: center;
+  height: 58px;
+  flex: none;
+  padding: 0 22px 0 20px;          /* logo x=20 ; go-live ends 1258 -> 22 */
+  background: var(--c-header);
+}
+
+.hdr__brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;                         /* word ends 124, tag starts 125 */
+  user-select: none;
+}
+
+.hdr__mark {
+  font-size: 16px;                  /* [20,17,104,24] sz=16 */
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.02em;
+}
+
+.hdr__tag {
+  display: grid;
+  place-items: center;
+  height: 22px;                     /* [125,18,61,22] */
+  padding: 0 10px;
+  border-radius: var(--r-md);
+  background: var(--c-elevated);
+  font-size: 11px;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.06em;
+}
+
+.hdr__title {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 14px;                /* tag ends 186, title starts 200 */
+  min-width: 0;
+}
+
+.hdr__titleInput {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--r-md);
+  height: 26px;
+  padding: 0 6px;
+  font-size: 14px;                  /* [200,11,235,23] sz=14 */
+  font-weight: var(--fw-semibold);
+  max-width: 235px;
+  min-width: 60px;
+}
+
+.hdr__titleInput:hover { border-color: var(--c-line); }
+.hdr__titleInput:focus {
+  border-color: var(--brand-primary);
+  outline: none;
+  background: var(--c-panel);
+}
+
+.hdr__pencil { color: var(--c-text-dim); }
+
+/* Channels [476,14,86,30] / Schedule [570,14,88,30] - 8px apart */
+.hdr__pill {
+  height: 30px;
+  padding: 0 14px;
+  margin-left: 8px;
+  border-radius: var(--r-md);
+  background: var(--c-elevated);
+  font-size: 12px;
+  font-weight: var(--fw-medium);
+  color: var(--c-text);
+  white-space: nowrap;
+  transition: background var(--d-fast) var(--e-standard);
+}
+.hdr__pill:hover { background: var(--c-line); }
+
+/* status-summary [675,18,330,22] sz=11 */
+.hdr__status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 auto;
+  padding: 0 16px;
+  color: var(--c-text-dim);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.hdr__dot { color: var(--c-line); }
+
+.hdr__live {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--state-on-air);
+  font-weight: var(--fw-semibold);
+}
+
+.hdr__liveDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: hdr-pulse 1.6s var(--e-standard) infinite;
+}
+
+@keyframes hdr-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+/* Record [1010,14,75,30] */
+.hdr__record {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: var(--r-md);
+  background: var(--c-elevated);
+  font-size: 12px;
+  font-weight: var(--fw-medium);
+  white-space: nowrap;
+  transition: background var(--d-fast) var(--e-standard);
+}
+.hdr__record:hover { background: var(--c-line); }
+.hdr__record--on {
+  background: color-mix(in srgb, var(--c-red) 22%, var(--c-elevated));
+  color: var(--c-red);
+}
+
+/* Settings [1095,10,38,38] */
+.hdr__icon {
+  width: 38px;
+  height: 38px;
+  margin-left: 10px;
+  border-radius: var(--r-md);
+  background: var(--c-elevated);
+  color: var(--c-text);
+  display: grid;
+  place-items: center;
+  transition: background var(--d-fast) var(--e-standard);
+}
+.hdr__icon:hover { background: var(--c-line); }
+
+/* Go Live [1144,10,114,38] */
+.hdr__golive {
+  height: 38px;
+  min-width: 114px;
+  margin-left: 11px;
+  padding: 0 18px;
+  border-radius: var(--r-md);
+  background: var(--brand-primary);
+  color: #fff;
+  font-size: 13px;
+  font-weight: var(--fw-semibold);
+  white-space: nowrap;
+  transition: background var(--d-fast) var(--e-standard);
+}
+.hdr__golive:hover { background: var(--brand-primary-hover); }
+.hdr__golive--live { background: var(--c-red); }
+.hdr__golive--live:hover { filter: brightness(1.08); }
+
+/* ================================================================
+   Scene rail  [0,58,182,662]
+   ================================================================ */
+
+.rail {
+  display: flex;
+  flex-direction: column;
+  width: 182px;
+  flex: none;
+  background: var(--c-rail);
+}
+
+/* add-scene [16,76,150,38] -> 18px above, 16px each side */
+.rail__head { padding: 18px 16px 0; }
+
+.rail__add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 150px;
+  height: 38px;
+  border-radius: var(--r-md);
+  background: var(--c-elevated);
+  font-size: 13px;
+  font-weight: var(--fw-medium);
+  color: var(--c-text);
+  transition: background var(--d-fast) var(--e-standard);
+}
+.rail__add:hover { background: var(--c-line); }
+
+/* first card y=126; button ends 114 -> 12px */
+.rail__list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;                        /* 231 - 126 - 94 */
+  /* The 12px side padding also gives the selection ring room to draw outside
+   * the card - do not clip it with overflow-x. */
+}
+
+/* scene-N-selection [12,*,158,94] */
+.scene {
+  width: 158px;
+  height: 94px;
+  flex: none;
+  border-radius: var(--r-lg);
+  padding: 8px;                     /* thumb inset: 20-12, 134-126 */
+  cursor: pointer;
+  background: transparent;
+  transition: background var(--d-fast) var(--e-standard);
+}
+
+.scene:hover { background: var(--c-surface); }
+
+/* Selection is a ring, not a fill.
+ * Exact values from the published SCSS (SceneItem.module.scss):
+ *   ring width 2px, hover ring 1.5px, outset 5px. */
+.scene--active {
+  background: var(--c-elevated);
+  box-shadow: 0 0 0 2px var(--brand-primary);
+}
+
+.scene:not(.scene--active):hover {
+  box-shadow: 0 0 0 1.5px var(--c-line);
+}
+
+/* scene-N-thumb [20,*,142,62] */
+.scene__thumb {
+  position: relative;
+  width: 142px;
+  height: 62px;
+  border-radius: var(--r-md);
+  background: var(--c-panel);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;                  /* accent x=30 -> 10 from thumb */
+}
+
+.scene--active .scene__thumb { background: var(--c-surface); }
+
+/* scene-N-accent [30,*,32,32] */
+.scene__badge {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: var(--r-sm);
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: var(--fw-semibold);
+  color: #fff;
+}
+
+.scene__text { min-width: 0; flex: 1; }
+
+/* title [70,*,82,19] sz=12 ; subtitle [70,*,82,20] sz=10 */
+.scene__title {
+  font-size: 12px;
+  font-weight: var(--fw-medium);
+  line-height: 19px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scene__sub {
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--c-text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* scene-N-more [145,*,18,18] - below the thumb, right aligned */
+.scene__foot {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1px;
+}
+
+.scene__more {
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-xs);
+  color: var(--c-text-dim);
+  opacity: 0;
+  transition: opacity var(--d-fast) var(--e-standard);
+}
+
+.scene:hover .scene__more,
+.scene--active .scene__more { opacity: 1; }
+.scene__more:hover { background: var(--c-line); color: var(--c-text); }
+
+/* ================================================================
+   Stage  [182,58,788,662]
+   ================================================================ */
+
+.stage {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 23px 0;             /* canvas at x=205,y=86 */
+  background: var(--c-bg);
+  overflow-y: auto;
+}
+
+/* canvas-frame [205,86,742,418] = 16:9 */
+.stage__canvasWrap {
+  width: 100%;
+  max-width: 742px;
+  aspect-ratio: 742 / 418;
+  border-radius: var(--r-xl);
+  background: var(--c-panel);
+  overflow: hidden;
+  position: relative;
+  flex: none;
+}
+
+.stage__canvas { width: 100%; height: 100%; display: block; }
+
+.stage__empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: var(--c-text-mute);
+  text-align: center;
+  padding: 24px;
+}
+
+.stage__emptyTitle {
+  font-size: 14px;
+  font-weight: var(--fw-medium);
+  color: var(--c-text-dim);
+}
+
+.stage__empty p { margin: 0; font-size: 12px; max-width: 42ch; line-height: 1.55; }
+
+/* canvas-watermark [842,474,84,18] sz=10 */
+.stage__watermark {
+  position: absolute;
+  right: 21px;
+  bottom: 12px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--c-text-dim);
+  opacity: 0.55;
+  user-select: none;
+}
+
+/* ---- layout row : label x=210 y=525 ; buttons y=518 pitch 48 ---- */
+
+.layouts {
+  display: flex;
+  align-items: center;
+  gap: 10px;                        /* 48 pitch - 38 button */
+  width: 100%;
+  max-width: 742px;
+  padding: 14px 0 0;                /* canvas ends 504, row at 518 */
+  flex: none;
+}
+
+.layouts__label {
+  font-size: 11px;
+  color: var(--c-text-dim);
+  margin-right: 52px;               /* label x=210, first button x=272 */
+  white-space: nowrap;
+}
+
+.layouts__btn {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  border-radius: var(--r-md);
+  background: var(--c-elevated);
+  color: var(--c-text);
+  display: grid;
+  place-items: center;
+  transition: background var(--d-fast) var(--e-standard);
+}
+.layouts__btn:hover { background: var(--c-line); }
+.layouts__btn--active { background: var(--brand-primary); }
+
+.layouts__spacer { width: 20px; flex: none; }   /* 560+38=598 -> 628 */
+
+/* ---- controls : circles y=590, 50px, pitch 82 ---- */
+
+.controls {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 32px;                        /* 82 pitch - 50 circle */
+  padding: 34px 0 0;                /* layout row ends 556, controls 590 */
+  flex: none;
+}
+
+.ctl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;                         /* circle ends 640, label 646 */
+  width: 64px;
+}
+
+.ctl__btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--c-elevated);
+  color: var(--c-text);
+  display: grid;
+  place-items: center;
+  transition: background var(--d-fast) var(--e-standard),
+    color var(--d-fast) var(--e-standard);
+}
+.ctl__btn:hover { background: var(--c-line); }
+
+.ctl__btn--off { background: var(--c-red); color: #fff; }
+.ctl__btn--off:hover { filter: brightness(1.08); }
+
+.ctl__btn--muted { background: var(--c-surface); color: var(--c-text-dim); }
+.ctl__btn--muted:hover { background: var(--c-line); color: var(--c-text); }
+
+.ctl__label {
+  font-size: 10px;
+  color: var(--c-text-dim);
+  white-space: nowrap;
+}
+
+/* device-status [248,682,636,22] sz=10 */
+.stage__deviceNote {
+  font-size: 10px;
+  color: var(--c-text-mute);
+  padding: 22px 0 16px;
+  text-align: center;
+  flex: none;
+}
+
+/* ================================================================
+   Right panel  [970,58,266,662]
+   ================================================================ */
+
+.panel {
+  width: 266px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  background: var(--c-header);
+}
+
+/* title [990,78,210,30] sz=20 */
+.panel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 0;
+  flex: none;
+}
+
+.panel__title { font-size: 20px; font-weight: var(--fw-semibold); }
+
+.panel__close {
+  width: 26px;
+  height: 26px;
+  border-radius: var(--r-sm);
+  color: var(--c-text-dim);
+  display: grid;
+  place-items: center;
+}
+.panel__close:hover { background: var(--c-surface); color: var(--c-text); }
+
+/* divider [986,118,234,1] */
+.panel__divider {
+  height: 1px;
+  background: var(--c-line);
+  margin: 12px 16px 0;
+  flex: none;
+}
+
+.panel__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 20px 20px;          /* copy-invite at y=134 */
+}
+
+/* copy-invite [990,134,224,36] */
+.panel__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  height: 36px;
+  border-radius: var(--r-md);
+  background: var(--brand-primary);
+  color: #fff;
+  font-size: 13px;
+  font-weight: var(--fw-medium);
+  transition: background var(--d-fast) var(--e-standard);
+}
+.panel__cta:hover { background: var(--brand-primary-hover); }
+
+/* section label y=186 sz=10 */
+.panel__sectionLabel {
+  font-size: 10px;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.08em;
+  color: var(--c-text-mute);
+  margin: 20px 0 8px;
+}
+
+.panel__empty {
+  padding: 18px 4px;
+  text-align: center;
+  color: var(--c-text-mute);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* source card [990,212,224,66] */
+.srcCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 66px;
+  padding: 0 12px;
+  border-radius: var(--r-md);
+  background: var(--c-panel);
+  margin-bottom: 10px;              /* 288 - 212 - 66 */
+}
+
+/* avatar [1002,225,34,34] */
+.srcCard__avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  font-weight: var(--fw-semibold);
+  color: #fff;
+  flex: none;
+}
+
+.srcCard__text { flex: 1; min-width: 0; }
+
+/* title sz=12 / subtitle sz=10 */
+.srcCard__title {
+  font-size: 12px;
+  font-weight: var(--fw-medium);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.srcCard__sub {
+  font-size: 10px;
+  color: var(--c-text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* action [1158,232,44,30] */
+.srcCard__toggle {
+  width: 44px;
+  height: 30px;
+  flex: none;
+  border-radius: var(--r-sm);
+  background: var(--c-elevated);
+  font-size: 12px;
+  font-weight: var(--fw-medium);
+  color: var(--c-text);
+}
+.srcCard__toggle--on { color: var(--c-green); }
+.srcCard__toggle:hover { background: var(--c-line); }
+
+/* add-source [990,558,224,36] */
+.panel__add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  height: 36px;
+  margin-top: 14px;
+  border-radius: var(--r-md);
+  background: var(--c-elevated);
+  font-size: 13px;
+  font-weight: var(--fw-medium);
+  color: var(--c-text);
+  transition: background var(--d-fast) var(--e-standard);
+}
+.panel__add:hover { background: var(--c-line); }
+
+/* ================================================================
+   Tool rail  [1236,58,44,662] - buttons [1243,84,30,30] pitch 58
+   ================================================================ */
+
+.tools {
+  width: 44px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;                        /* 58 pitch - 30 button */
+  padding: 26px 0 22px;             /* first button y=84 */
+  background: var(--c-rail);
+  overflow-y: auto;
+}
+
+.tools__btn {
+  width: 30px;
+  height: 30px;
+  flex: none;
+  border-radius: var(--r-md);
+  background: var(--c-surface);
+  color: var(--c-text-dim);
+  display: grid;
+  place-items: center;
+  transition: background var(--d-fast) var(--e-standard),
+    color var(--d-fast) var(--e-standard);
+}
+
+.tools__btn:hover { background: var(--c-line); color: var(--c-text); }
+.tools__btn--active { background: var(--brand-primary); color: #fff; }
+
+.tools__spacer { flex: 1; min-height: 20px; }
+
+/* ================================================================
+   Live capture additions
+   ================================================================ */
+
+/* Host for the compositor canvas; hidden until something is on stage. */
+.stage__canvasHost {
+  position: absolute;
+  inset: 0;
+}
+
+.stage__canvasHost[data-empty='true'] {
+  visibility: hidden;
+}
+
+/* Inline device / broadcast errors, directly under the canvas. */
+.stage__error {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  max-width: 742px;
+  margin-top: 12px;
+  padding: 9px 12px;
+  border-radius: var(--r-md);
+  background: color-mix(in srgb, var(--c-red) 14%, var(--c-panel));
+  border: 1px solid color-mix(in srgb, var(--c-red) 45%, transparent);
+  color: var(--c-text);
+  font-size: 11px;
+  flex: none;
+}
+
+.stage__error span { flex: 1; min-width: 0; }
+
+.stage__error button {
+  color: var(--c-text-dim);
+  display: grid;
+  place-items: center;
+  padding: 2px;
+  border-radius: var(--r-xs);
+}
+
+.stage__error button:hover { color: var(--c-text); background: var(--scrim-white-thin); }
+
+/* Live input level ring around the mic control. */
+.ctl__btn { position: relative; overflow: hidden; }
+
+.ctl__level {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 100%;
+  background: color-mix(in srgb, var(--c-green) 30%, transparent);
+  transform-origin: bottom;
+  transition: transform 70ms linear;
+  pointer-events: none;
+}
+
+.ctl__btn > svg { position: relative; z-index: 1; }
+
+/* ---- source card transport + inline actions ---- */
+
+.srcCard__mini {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  border-radius: var(--r-sm);
+  background: var(--c-elevated);
+  color: var(--c-text-dim);
+  display: grid;
+  place-items: center;
+  transition: background var(--d-fast) var(--e-standard),
+    color var(--d-fast) var(--e-standard);
+}
+
+.srcCard__mini:hover { background: var(--c-line); color: var(--c-text); }
+
+.srcCard__mini--danger:hover {
+  background: color-mix(in srgb, var(--c-red) 26%, var(--c-elevated));
+  color: var(--c-red);
+}
+
+.panel__inlineLink {
+  color: var(--brand-primary);
+  font-size: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.panel__inlineLink:hover { color: var(--brand-primary-hover); }
+
+.panel__error {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin-top: 12px;
+  padding: 8px 10px;
+  border-radius: var(--r-md);
+  background: color-mix(in srgb, var(--c-red) 14%, var(--c-panel));
+  border: 1px solid color-mix(in srgb, var(--c-red) 40%, transparent);
+  color: var(--c-text);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.srcCard__mini--on {
+  background: color-mix(in srgb, var(--c-green) 24%, var(--c-elevated));
+  color: var(--c-green);
+}

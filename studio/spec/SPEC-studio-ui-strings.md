@@ -1,0 +1,15204 @@
+# Studio UI Strings — Deterministic Extraction
+
+Every human-readable string literal parsed out of **all 37 JavaScript bundles** in the
+capture, then filtered to UI copy. This is a mechanical extraction — no sampling, no grep
+guessing — so it is the complete set of copy shipped in the client.
+
+**11130 unique UI strings.**
+
+## Strings per bundle
+
+| bundle | UI strings |
+|---|---:|
+| `131.8f878df5d7c38b5a.js` | 2384 |
+| `restream.887ca3d5bcd09a3a.js` | 1885 |
+| `awssdk.06c9eae97cc86f8d.js` | 1507 |
+| `593.47f82f224fb8c169.js` | 1323 |
+| `575.434695f973e2e774.js` | 1269 |
+| `locale-en-US.js` | 1189 |
+| `externals.b634d3e8690cf1f3.js` | 1130 |
+| `577.61b0a7bbb0dbc94a.js` | 333 |
+| `114.15f34f2a5005b32d.js` | 287 |
+| `Index.312bd7238c465fa2.js` | 272 |
+| `hlsjs.3e5d0a83ecd57757.js` | 223 |
+| `699.99dc77a286044d3c.js` | 166 |
+| `restreamvideoeditor.d22611927fb1ae5c.js` | 162 |
+| `mediapipetasksvision.a54ec1e1b0502c02.js` | 155 |
+| `agentation.6e2fe827872bef18.js` | 106 |
+| `onboarding-chat.2a0e5f8a2643f258.js` | 106 |
+| `897.ae37fa9d0cd73351.js` | 102 |
+| `953.29f1e57f8e568b77.js` | 23 |
+| `83.fa3cb3b8c4c6cda7.js` | 17 |
+| `798.5aeee236e1d9228a.js` | 10 |
+| `917.6c1516d88fcb69f8.js` | 10 |
+| `288.e5852046176082ad.js` | 9 |
+| `961.b94dfbda80e37412.js` | 7 |
+| `227.95dc4c59f9533483.js` | 6 |
+| `944.28c29231900f6984.js` | 6 |
+| `290.30aa446e78966053.js` | 5 |
+| `446.9c38229d9364cb92.js` | 5 |
+| `564.876c63991b72a2c8.js` | 5 |
+| `590.89d7eea8bdaab669.js` | 5 |
+| `restreamchatembedthemes.d79062a9951586dd.js` | 5 |
+| `runtime.b1c203db08a4f823.js` | 4 |
+| `107.a781cc056e60f535.js` | 1 |
+| `370.50d83db35207af8a.js` | 1 |
+
+## By feature area
+
+### Go live / stream state (1081)
+
+-  ⏎   Press space bar to start a drag. ⏎   When dragging you can use the arrow keys to move the item around and escape to cancel. ⏎   Some screen readers may require you to be in focus mode or to use y
+-  ⏎   The item has returned to its starting position ⏎   of 
+-   • Starting Soon / Countdown intros — "epic cinematic build, hype synth riser", "warm orchestral opening, 90s build".
+-   • Use-case unclear ("generate music for my stream") → ask: intro / countdown / background / transition / outro / multi-track soundtrack.
+-  enter the <b>#sponsored</b> and correct game title (<b>%s</b>) in the stream description.
+-  live stream from Restream Studio.
+-  Max viewers watching the stream 
+-  or use Upload & Stream to expand your reach.
+-  the best way to multi-stream!
+-  TS packet/s that do not start with 0x47
+-  will stop working.
+- ;return s===TO.CREATE_SUBSCRIPTION?D?`Start ${D}-day Free Trial`:`Subscribe ${e}`:s===TO.UPGRADE_SUBSCRIPTION&&q?.trial?
+- ');if(void 0!==t.liveMaxLatencyDuration&&(void 0===t.liveSyncDuration||t.liveMaxLatencyDuration<=t.liveSyncDuration))throw new Error('Illegal hls.js config: 
+- ) for portrait streams.
+- {names} has joined.<br></br>Do you want to add them to the stream?
+- {names} have joined.<br></br>Do you want to add them to the stream?
+- <b>Studio 2.0<b>: Prepare your stream with scenes, try new layouts, and much more. You can always switch back if needed.
+- ⏱Connecting... Your stream will start in a moment.
+- ⚠️Ready to stream? Toggle on at least one channel and try again.
+- 🤩 Upgrade to make the most of Upload and Stream!
+- 🤩 Upgrade to stream all of your pre-recorded videos!
+- 1 Extra destination ⏎ Streaming to Facebook groups and public pages ⏎ Toggling channels on/off while streaming
+- 15-channel streaming
+- 2-channel streaming
+- 20-channel streaming
+- 250 Clips + Live Clipping
+- 30+ platforms. 1 channel per platform ⏎ 1 Custom/Extra destination ⏎ Recording - 6 hrs/stream, stored for 15 days ⏎ Streaming to Facebook public pages/groups ⏎ 10 on-screen participants in Studio
+- 30+ streaming platforms 
+- 5-channel streaming
+- 8-channel streaming
+- A connection issue in our streaming service stopped your stream. Please try again, or contact support.
+- A live video platform for gamers that breaks the wall between streamers and viewers with interactive controls. The platform focuses on small-to-medium-sized communities that care deeply about viewer e
+- AAC PES did not start with ADTS header,offset:
+- Abort Stream Start Button Clicked
+- Aborted live stream start
+- Aborting live stream start
+- Account access expired. Please reconnect your account.
+- Account is not verified for the live streaming
+- Add a dynamic on-stream visual like a poll, leaderboard, ticker, or scoreboard.
+- Add a new stream key and new link each time you start streaming.
+- Add a realistic, photo-style scene for your stream.
+- Add a second camera to your stream.
+- Add a smooth looping video backdrop for your stream.
+- Add an extra channel to stream 
+- Add at least 1 video to start preview
+- Add channels and start streaming.
+- Add dynamic web content onto your stream.
+- Add streams from 3rd-party
+- Add streams from 3rd-party tools (Zoom, OBS) to Studio
+- Add to stream
+- Add to the stream
+- Add to your stream
+- Add your favorite music to personalize your streams.<br></br>Your music list will be saved in the active folder.<br></br>Supported formats: MP3, AAC, FLAC, WAV, M4A, WMA.
+- Add Yourself to a Stream
+- Added new take ${e.id} to stream ${this.logId}
+- Added pending live call request
+- ADTS AAC with AES-128-CBC frame encryption found in unencrypted stream
+- AfreecaTV is a social media platform that anyone from anywhere can use to broadcast live. AfreecaTV has expanded into North America, Japan, Taiwan, and Thailand with plans to enter other regions aroun
+- After adding all your channels, be sure to update your titles before going live
+- After you've set up your destinations, and reviewed your streaming info, you can then go live using your webcam or streaming software.
+- After your first purchase you have 7 days to request a refund, no questions asked. Please contact our live support for details.
+- AI Widget Generation Started
+- All your streams are auto-recorded to the cloud.
+- All your streams are auto-recorded to the cloud. Up to $hours hr/stream.
+- Allow guests to re-broadcast
+- Allows you to add extra channel of the services from the 30+ list or Custom RTMP for streaming to own server or any platform which is not supported by Restream yet.
+- Alt audio track ahead of main track, seek to start of alt audio track
+- Amazon DynamoDB Streams
+- Amazon Kinesis Video Streams
+- Amazon Kinesis Video Streams Archived Media
+- Amazon Kinesis Video Streams Media
+- Amazon live
+- Amazon Live
+- Amazon Live is a streaming platform that allows to broadcast live videos to Amazon customers. Interact with viewers, create shopping experiences, and sell in real time. Works on web and mobile.
+- and reconnect your channel.
+- Another stream is already live
+- Any streamer can stream games and videos to Youtube, Twitch, Facebook, Mixer, Periscope and many other platforms at the same time.
+- Apply for Live Video Broadcasting
+- Are you sure you want to finish this stream?
+- Are you sure you want to promote <b>$name</b> to co-host of this Studio stream, limited to 3 hours? This cannot be undone.
+- Are you sure you want to promote guest to co-host of this Studio stream, limited to 3 hours? This cannot be undone.
+- Are you sure you want to start a new recording? The video you just created won’t be saved.
+- Are you sure you want to stop recording?
+- as live sources for the broadcast.
+- as live sources for the broadcast. 
+- Ask AI to create scenes, tune graphics, write captions, and prep your stream.
+- Attempt to get event right before starting stream failed
+- Attempt to go live with active channel with an error
+- Attempt to start playlist preview failed
+- Attempt to stop playlist preview failed
+- Attempting to start camera audio and video separately: Failed to start camera audio and video attempt
+- Automated system in switching between 2 streams if anything goes wrong.
+- Automatically add shared screens to stream
+- Automatically add shared screens to stream. Disable this if you want to turn it manually.
+- Automatically crop your streams to highlight key moments
+- Automatically generate and post short-form clips during your livestream. Your stream is processed in real-time and posted while you're still on air.
+- Automatically record live event
+- Automatically records live event into a video viewable later
+- Automatically saves your broadcasts on OK after stream ends
+- Back again for another stream
+- Background music has been stopped due to inactivity
+- Background Music Stop Clicked
+- Backoff already started
+- Backup stream
+- Bilibili is a Chinese video sharing and live streaming website themed around anime, manga, and game fandoms. Users can submit, view, and add commentary subtitles to videos.
+- Breakers.TV, from the makers of Vaughn Live, is an emerging live streaming platform for "box & case" breakers in the US.
+- Bring a live stream from 3rd-party tools like OBS or Zoom into Restream Studio. <link>Learn more<link>
+- Bring a stream from 3rd-party tool like Webex or OBS into Studio.
+- Bring a stream from 3rd-party tool like Zoom or OBS into Studio.
+- Bring a stream from tools like Webex into Studio.
+- Bring a stream from tools like Zoom or OBS.
+- Bring RTMP streams from Zoom, OBS, 
+- Broadcast
+- Build your playlist and schedule it to go live
+- Camera streaming is not supported in your browser.
+- Campaign Started
+- Can't access no longer available camera and microphone. Please reconnect them or select another device.
+- Can't access no longer available camera. Please reconnect it or select another device.
+- Can't access no longer available microphone. Please reconnect it or select another device.
+- Can't edit live event
+- Can't enable live stream mode. Please try again later.
+- Can't select browser source. It's possible to use only StreamElements overlays.
+- Can't start camera effects. Another application may be using your GPU resources or your device may not be supported.
+- Can't start camera effects. It appears your device doesn’t support them.
+- Can't start PCAP recording playback. Please try again later.
+- Can't start playlist preview. Please try again later.
+- Can't startRecording for new take
+- Can't stop participant's local recording. Please, try again
+- Can't stop PCAP recording playback. Please try again later.
+- Can't stop playlist preview. Please try again later.
+- Can’t stream due to YouTube policy violation. Review at https://youtube.com/livestreaming/dashboard.
+- Can’t stream outside of scheduled LinkedIn time. <button>Edit</button>
+- Can’t stream to a cancelled event.
+- Can't stream to connected event. Select a different LinkedIn event or change the option to
+- Can’t stream to event. To create a new one, toggle off and edit.
+- Can't stream to selected event.
+- Can't update while live.
+- Cannot add inner stream: outer stream is closed
+- Cannot stop audio: no playing audio
+- Cannot stop custom music track: no playing track
+- Capturing media stream
+- Capturing stream
+- Channels won't go live
+- Checkout Started
+- Chew.TV is a live streaming community for music lovers and DJs. The platform is great for discovering and contributing to music in various genres, including deep house, tech house, hip hop, EDM, and m
+- Cleared ${e} takes from stream ${this.logId}
+- Clearing active take ${this.activeTake.id} after recorder stopped
+- Clips are not ready for this stream yet.
+- Combine several streams 
+- Compatible with third-party streaming software: Zoom, OBS, XSplit, etc.
+- Complete upload stream
+- Complete upload stream, no data items
+- Completed active take ${e} before starting new recording
+- Congrats! Your 7-day trial applied. Enjoy Dual Streaming!
+- Connect <bold>YouTube</bold>, <bold>Facebook</bold>, <bold>Twitch</bold>, and 30 other channels to share this live stream with your audience.
+- Connect your channels in the Dashboard, setup your encoder, and go live.
+- Connected to streaming statuses
+- Connecting to streaming statuses
+- controls.start() should only be called after a component has mounted. Consider calling within a useEffect hook.
+- Could not start local video
+- Couldn't start this event
+- Countdown For Disabling Switch To Old Experience Started
+- Countdown For Disabling Switch To Old Experience Stopped
+- Create a Restream account to re-broadcast this stream
+- create a separate streaming session for <b>%s</b> stream (won't count if you stream it as part of another stream with a different game title). 
+- Create an event page on social pages to gather the audience before the stream. 
+- Create without broadcasting
+- Created new take ${t.id} for recording and set as active with start reason ${e}
+- Creators may receive copyright strikes if their streams include unlicensed audio.
+- Current invite link will stop working. Are you sure?
+- Current webinar link will stop working. Are you sure?
+- Custom Music Files Started Processing
+- Customize your setup and stream when ready.
+- CyberGame is an emergent Russian platform dedicated to game streaming. 
+- Days to start
+- Dedicated broadcast required
+- Default stream title
+- Defaults to `instrumental: true` because vocals over a livestream clash with the host's voice. Set `instrumental: false` only after the disambiguation step above resolves to a song with lyrics.
+- Destroying room media stream without tracks
+- Device unexpectedly stopped
+- Disconnected from streaming statuses
+- Display media streams are not supported
+- DLive is the largest live streaming community on blockchain and is powered by Lino blockchain. Share amazing streams and earn massive rewards on DLive now.
+- Do you want to start live streaming anyway?
+- Doubling allows you to get one extra stream channel within the same platform.  ⏎ %s ⏎ Two different %s or %s channels at once, etc.
+- Draft Event Go Live Button Clicked
+- DynamoDB Streams
+- Easily embed our chat into your stream, then make it yours by choosing and customizing one of our overlays.
+- Ecommerce Store Reconnect Attempt Client
+- Ecommerce Store Reconnect Error Client
+- Ecommerce Store Reconnected Client
+- Edit before recording starts
+- Embed in stream
+- Embed Stream
+- Enable only if participants use devices with powerful CPUs. Otherwise, app and stream performance may drop.
+- Enable or disable live clipping for the current event. Only available when the feature is enabled (check liveClippingAvailable in state).
+- Enable or disable the chat overlay ("Show on stream") for a specific scene.
+- Enable transcoding to automatically optimize settings without changing the quality of your incoming stream.
+- Enables a secured playable RTMP link of your stream feed which can be used as a live source for the broadcasts.
+- End Stream
+- End Stream Button Clicked
+- End Stream Confirmation Modal Confirmed
+- End Stream Confirmation Modal Dismissed
+- End Stream Confirmation Modal Shown
+- End Stream Trigger Shown
+- End Stream Trigger Skip Button Clicked
+- End Stream Trigger Upgrade Button Clicked
+- End stream?
+- Ending stream...
+- Enter a stream title
+- Enter stream description...
+- Errored on stopping local recording shot with reason ${e} ${this.logId}
+- Event is starting
+- Event posts on YouTube, Facebook, and LinkedIn will show this thumbnail before your stream starts.
+- Every streamer can stream games and videos on YouTube, Twitch, Periscope, Facebook, Mixer, Smashcast, and 30+ platforms at the same time.
+- Examples: "Your Hoogly.ai launch stream is ready." or "Your gaming stream is all set." or "Ready to go live with NightOwl."
+- Execute multiple tool calls sequentially in a single turn. Use this to batch independent operations (e.g., creating several scenes, adding captions to each). Each call runs in order; a failure in one 
+- Facebook Live
+- Failed camera audio start attempt
+- Failed camera video start attempt
+- Failed to abort live stream start
+- Failed to abort live stream start. No connection or active client
+- Failed to accept webinar live call-in request
+- Failed to cancel stream start
+- Failed to cancel webinar live call-in
+- Failed to cancel webinar start
+- Failed to change stream quality to Full HD on upgrade
+- Failed to check for overlapping events on go live attempt
+- Failed to connect to streaming statuses
+- Failed to create local recording shot: No tracks in the stream
+- Failed to decode streaming status event
+- Failed to end live stream
+- Failed to fetch live chat history from the room
+- Failed to get camera audio track when starting audio and video: received ${n.readyState} track
+- Failed to get camera audio track when starting audio: received ${i.readyState} track
+- Failed to get camera video track when starting audio and video: received ${r.readyState} track
+- Failed to get camera video track when starting video: received ${i.readyState} track
+- Failed to get event stream key: Event id not found
+- Failed to get streaming statuses token
+- Failed to get user media stream
+- Failed to get video stream track
+- Failed to go live
+- Failed to go live: can not go live with the current status
+- Failed to go offline
+- Failed to handle local recording shot stop on stop event
+- Failed to leave the live call
+- Failed to leave webinar live call-in
+- Failed to make outgoing stream profile from id ${e}: no match
+- Failed to make outgoing stream profile from id ${e}: no meta
+- Failed to play layout audio media stream
+- Failed to play layout video media stream
+- Failed to prepare live call-in preview
+- Failed to read event stream key: retrying
+- Failed to reconnect WebRTC ${t} transport to SFU after 3 consecutive ICE restarts (using ${this.useDataChannels?"DataChannels":"WebSocket"})
+- Failed to refresh event on live stream start error ${e.name}
+- Failed to refresh stream key. Please try again, or contact support for help.
+- Failed to request deep-linked webinar live call-in
+- Failed to request webinar live call-in
+- Failed to save event recording name before going live
+- Failed to send broadcast message ${t.type}: No connection
+- Failed to set on air ${this.stream.kind}: Source state not found
+- Failed to set outgoing stream profile: no profile found
+- Failed to set sinkId on starting video
+- Failed to set solo ${this.stream.kind}: Source state not found
+- Failed to set source on air
+- Failed to set spotlighted for ${this.stream.kind}: Source state not found
+- Failed to set streaming profile
+- Failed to set streaming profile: profile with such id not found
+- Failed to start audio on audio input settings change
+- Failed to start audio on unmute
+- Failed to start camera after promotion
+- Failed to start camera audio
+- Failed to start camera video
+- Failed to start camera video pipeline
+- Failed to start effects-only pipeline: no effect is ready
+- Failed to start live stream
+- Failed to start live stream: No connection or active client
+- Failed to start live stream: stream is not stopped
+- Failed to start local recording in reaction for ${this.makeSourceName(t)}
+- Failed to start new shot for local recording ${this.fullId}: Recording is destroyed
+- Failed to start playlist preview
+- Failed to start playlist preview: can not start playlist preview with the current status
+- Failed to start playlist preview: stream or preview is not stopped
+- Failed to start playlist preview. No connection or active client
+- Failed to start polling statuses on get videos
+- Failed to start polling statuses on upload video file
+- Failed to start polling statuses on upload video file by public link
+- Failed to start polling video uploads statuses
+- Failed to start screen share source
+- Failed to start screen share source in a new scene: stateKey await timed out
+- Failed to start screen share: exceeded maximum number of screen shares
+- Failed to start screen sharing on player controls button click
+- Failed to start screen sharing on preview button click
+- Failed to start video on unmute
+- Failed to start video on video input settings change
+- Failed to start video playback: ${o?.message}, code ${o?.code}
+- Failed to stop all screen share streams
+- Failed to stop hls video
+- Failed to stop HLS video: Room Manager commands not allowed
+- Failed to stop local recording in reaction for ${this.makeSourceName(e)}
+- Failed to stop playlist preview
+- Failed to stop playlist preview. No connection or active client
+- Failed to stop screen share media stream
+- Failed to stop stream. No connection or active client
+- Failed to toggle live clipping
+- Failed to toggle on air for ${this.stream.kind}: Source state not found
+- Failed to toggle webinar live call-ins
+- Failed to update audio gain for ${this.stream.kind}: Source state not found
+- Failed to update audio only for ${this.stream.kind}: Source state not found
+- Failed to update HLS video on air on button click: Not allowed
+- Failed to update HLS video on air on button click: State not found
+- Failed to update live clipping for event, continuing with other operations
+- Failed to update mute for ${this.stream.kind}: Source state not found
+- Failed to update outgoing stream orientation on brand change
+- Failed to update permissions after starting audio
+- Failed to update permissions after starting video
+- Failsafe stream backup 
+- Fallback - is an automated system that switches between two of your incoming streams (ingests) in case of any troubles with your main stream source without interrupting stream for your viewers.
+- FC2 Live
+- FC2 Live is popular and fast-growing streaming platform where you can stream your own content or connect with one-to-one chat.
+- Find the nearest server for your broadcast.
+- Finish Stream
+- For example: Two different %s or %s channels, Custom RTMP for streaming to your own server, Vimeo,  Wowza, Akamai, or any unsupported platform.
+- For individual streamers
+- For personal content streaming only
+- For the webinar to start, please end the other stream first.
+- For well-versed streamers
+- Found display media stream
+- Found user media stream
+- Free plan is limited to streaming 
+- from your channels list to continue streaming with Restream.io.
+- Full HD (1080p) streams
+- Generate a short music track for your stream — instrumental or with lyrics.
+- Get $2 as credits for a verified user who streamed more than 3 hours and 20% from each first purchase on every paid function of your referral!
+- Get a monthly streaming report with statistics and insights about your live stream performance.
+- Get a new stream key
+- Get a New Stream Key
+- Get all available streaming profiles (resolution/framerate options) and the currently selected one
+- Get all custom browser sources. Browser sources are web pages rendered as overlay iframes on the stream.
+- Get clips while you're still live to share in the moment.
+- Get insights on your live stream performance across multiple platforms – on a single screen.
+- Get Started
+- Get started by allowing Studio to use your camera and mic.
+- Go Live
+- Go Live Again
+- Go Live Anyway
+- Go Live Button Clicked
+- Go live from your webcam
+- Go live in Full HD 1080p – 
+- Go live in portrait and landscape format at once
+- Go live instantly through Live Studio, or set up your encoder using RTMP Settings
+- Go live now
+- Go Live Now
+- Go live on your channels
+- Go live or end stream
+- Go Live With Channel Errors Modal Dismissed
+- Go Live With Channel Errors Modal Go Live Anyway Clicked
+- Go Live With Channel Errors Modal Resolve Issues Clicked
+- Go Live With Channel Errors Modal Shown
+- Go Live With Events Overlap Modal Confirm Clicked
+- Go Live With Events Overlap Modal Reject Clicked
+- Go Live With Events Overlap Modal Shown
+- Go live without channels
+- Go Live Without Channels Modal Confirm Clicked
+- Go Live Without Channels Modal Reject Clicked
+- Go Live Without Channels Modal Shown
+- Go to stream analytics
+- Going Live on Restream
+- GoodGame is a popular and fast-growing game streaming platform in Eastern Europe with +4 million monthly visitors.
+- Grab your new stream key here
+- Great Broadcast!
+- Great job with this stream!
+- Great stream! 🔥
+- Guests can add channels to this stream
+- Guests can re-broadcast on their channels
+- H.264 with AES-128-CBC slice encryption found in unencrypted stream
+- HD (720p) streams
+- Head over to %syour Mixer Dashboard%s. ⏎ Follow steps and request new Stream key. ⏎ In 24 hours, new stream key will be available. ⏎ Finish verification and start streaming.
+- Helps to stream reliably and eliminate poor quality and frame drops, caused by streaming to distant platforms outside your region.
+- Host Aborted Stream Start
+- Host End Stream Error
+- Host Ended Stream
+- Host Go Live Error
+- Host Gone Live
+- How can I stream to two or more Facebook pages?
+- Hybrid streaming
+- If you have a non-gaming stream, please delete all text from the game field.
+- If you proceed, the stream will end on all channels.
+- If you want to play a video on the stream, please try to do so on a %sdesktop Google Chrome%s browser.
+- Ignoring setting source on air: Scene not found
+- Illegal hls.js config: "liveMaxLatencyDuration" must be greater than "liveSyncDuration"
+- Illegal hls.js config: "liveMaxLatencyDurationCount" must be greater than "liveSyncDurationCount"
+- Illegal hls.js config: don't mix up liveSyncDurationCount/liveMaxLatencyDurationCount and liveSyncDuration/liveMaxLatencyDuration
+- In OBS Settings, set the stream
+- In order to continue streaming, change Facebook settings or upgrade your account.
+- in stream descriptions automatically.
+- in the stream to entertain your audience.
+- Incoming stream
+- Increase your team to help you with streams.
+- Increases capture and output audio bitrate to 256kbps, suitable for streaming high-quality audio performance.
+- Initialize media stream track
+- Initialized preview media stream
+- iNSTAGIB is an emerging game streaming platform in the US and Europe built by the same team that runs Vaughn Live, Breakers.tv, and Vapers.tv.
+- Instagram StreamKey Expires Soon
+- Instant streaming report
+- Invalid input: must start with "${e.validation.startsWith}"
+- Invalid planned start time. Please update the time of the event.
+- Invalid RTMP URL or stream key
+- Invalid stream key
+- Invite 10 people to join your stream with a link.
+- Invite 6 people to join your stream with a link.
+- Invite guests, mute/unmute yourself or share your screen while live.
+- Invite others to stream your event on their channels
+- Invite people to link their social media accounts to your live event. Reach more people and make your event a success.
+- It seems you're currently streaming.
+- It's possible to upload only StreamElements overlays.
+- Join thousands of tech startups, marketing agencies, and media companies.
+- Kick is one the most rewarding gaming livestreaming platforms. Sign-up for the beta and join the growing streaming community
+- Landscape + Portrait streaming
+- Layout Preview Audio Media Stream Play Error
+- Layout Preview Video Media Stream Play Error
+- Layout Streams Swapped
+- Learn how easy it is to stream a live video series.
+- Let viewers request to join the stream
+- LinkedIn — the social network for the working world with close to 600 million users globally. LinkedIn Live focus on streaming things like Q&As, events, conferences, earnings calls, awards ceremonies,
+- LinkedIn Live video must be scheduled for at least 1 hour to 7 days from now. ⏎ Please edit the start time
+- Linkedin streaming not enabled
+- LinkedIn streaming requirements
+- Live
+- Live analytics
+- Live chat is unavailable: the room is not connected
+- Live chat read
+- Live clipping
+- Live Clipping
+- Live Clipping + Autoposting
+- Live clipping is not available
+- Live playlist sliding: 
+- Live playlist, switching playlist, load frag with next SN: 
+- Live playlist, switching playlist, load frag with same CC: 
+- Live playlist, switching playlist, load frag with same PDT: 
+- Live sales
+- Live stream
+- Live Stream
+- Live stream ${e}
+- Live Stream Orientation Selected
+- Live stream quality
+- Live Stream Quality Changed On Upgrade
+- Live Stream Quality Selected
+- Live stream started
+- Live stream stopped
+- Live stream stopped ${o.type}
+- Live stream stopped ${o.type}${t?" (will restart)":""}
+- Live stream stopped unexpectedly
+- Live Stream suid
+- Live streaming
+- Live streaming is not allowed.
+- Live streaming is not enabled on this channel.
+- Live Studio – Restream
+- Live with Restream
+- Live with Restream, ${(0,c.A)(new Date,"LLLL dd")}
+- LiveEdu(Education Ecosystem)
+- LiveEdu(Education Ecosystem) 
+- Local recording may slightly lower your stream quality. 
+- Local Recording Participant Stopped
+- Local Recording Started
+- Log into your Restream account to re-broadcast this stream
+- Looking to enhance your stream? <action1>Try Studio 2.0<action1>
+- Looks like streaming is disabled on your Periscope account. This may be caused by violation of Periscope rules. Please contact the Periscope support team for details.
+- Loots is a full-blown live-streaming network that enables broadcasters to stream everything from chatting to gaming. It's easy to create your community on Loots!
+- Major League Gaming (MLG) is a global leader in eSports. MLG.tv is the #1 online broadcast network for professional-level, competitive gaming. Their MLG Pro Circuit is the longest-running eSports leag
+- Max available resolution based on Live stream quality settings
+- Max viewers watching the stream 
+- Mixer streamer review is required. %sGet started%s
+- Mobcrush is a live streaming app and community for gamers, ⏎ powered by one-touch mobile broadcasting.
+- Monitor stream quality
+- Monthly streaming reports
+- More than 1,000,000 streamers use Restream
+- MSE detaching and video ended, reset startPosition
+- Multiply streams with different quality settings to stream to various end platforms.
+- Music stopped
+- Mute or unmute a participant source. Only works on media stream sources.
+- Need a new stream key?
+- New stream key copied to clipboard
+- Next: Set up a stream
+- Nimo TV is a global game live streaming platform that provides live streaming of PUBG, PUBG Mobile, Fortnite, and other hottest PC and mobile games online.
+- No fragments in live playlist
+- No output generated. Check the stream for errors.
+- No output generated. The model stream ended without a finish chunk.
+- Non-file stream objects are not supported with SigV4
+- Nonolive is a global live broadcast platform that brings together many high-quality contracted anchors, amateur beauty artists, and gamers to share their passion.
+- Not enough fragments to start playback (have: 
+- of every stream participant.
+- Offline
+- ON AIR
+- One channel cannot go live
+- Only the host can see you. The host may add you to the broadcast at any time. Be ready!
+- Oops, connection lost! Reconnecting
+- Oops! Mixer streamer review is required.
+- Oops! YouTube live streaming isn't enabled.
+- Optional override for the primary button label. Defaults to "Finish setup". Use sparingly - only when a different verb fits the moment better (e.g. "Open Studio", "Go live"). Keep it under ~40 chars s
+- Or add a custom destination to stream 
+- or previous recordings into streams. 
+- Orientation selection not available while live
+- Ouch! Our Live Shopping got a technical hiccup. Please try again later.
+- Our customers stick with us because they know — Restream delivers their streams to all destinations. Find out what our customers are saying!
+- Outgoing stream
+- Outgoing Stream
+- Outgoing Stream Mode Switch Option Clicked
+- Output aspect ratio. Defaults to 16:9 for stream backgrounds; pick 9:16 for portrait scenes.
+- Override startPosition with lastCurrentTime @
+- Pairs are OFF. Your host disabled pairing channels for this stream.
+- Parallel streams
+- Participant Gone Live
+- Pattern cannot start with "?" at ${i}
+- Perfect for stream sections that play on their own — no clicks needed.
+- Periscope enables you to go live with your mobile device—anytime and anywhere. The app helps you become your own “on-the-go” broadcasting station. 
+- Periscope streaming disabled
+- Personalize your live streams by removing the Restream branding starting from Standard plan.
+- Picarto is the world's first live streaming platform especially for broadcasting creative work. It allows artists to live stream their art curation process. Most artwork shown on the website now is vi
+- Pick the category of content you’re most interested to stream:
+- Playlist Start Stream Event Button Clicked
+- Please add a stream description
+- Please add a stream title
+- Please add a title for your Kick stream.
+- Please add a title for your Twitch stream.
+- Please name your Live Event.
+- Please restart your broadcast to apply the changes.
+- Please specify the video start time. It must be in the future and close enough to the current date.
+- Please try going live again, or contact support.
+- Pre-recorded streaming
+- Pre-recorded streaming - 1hr
+- Pre-recorded streaming - 2hr
+- Pre-recorded streaming - 30mins
+- Pre-recorded streaming - 4hr
+- Pre-recorded streaming — 1hr
+- Pre-recorded streaming — 2hr
+- Pre-recorded streaming — 30min
+- Pre-signed URL expired at ${i.expiresAt} before download started
+- Presentation File Started Processing
+- Presentation Import Google Started Processing
+- Presentation In Live
+- Presentation Stop Clicked
+- Previously selected device unexpectedly stopped
+- Processing live stream recording name update
+- Processing live stream recording status update
+- Provided message too short to accommodate event stream message overhead
+- Proxy helps to eliminate issues, such as poor quality and frame drops, caused by streaming to distant platforms outside of your region.
+- Purchase transcoding to automatically optimize the perfect settings without changing the quality of your incoming stream.
+- Push product links to live chat
+- Quality selection disabled while live
+- Re-broadcast on your channels
+- Re-broadcast this stream to get more views.
+- Reach both desktop and mobile audiences in one broadcast
+- Read live chat
+- Reading live chat…
+- Received reasoning-delta for missing reasoning part with ID "${e.id}". Ensure a "reasoning-start" chunk is sent before any "reasoning-delta" chunks.
+- Received reasoning-end for missing reasoning part with ID "${e.id}". Ensure a "reasoning-start" chunk is sent before any "reasoning-end" chunks.
+- Received text-delta for missing text part with ID "${e.id}". Ensure a "text-start" chunk is sent before any "text-delta" chunks.
+- Received text-end for missing text part with ID "${e.id}". Ensure a "text-start" chunk is sent before any "text-end" chunks.
+- Received tool-input-delta for missing tool call with ID "${e.toolCallId}". Ensure a "tool-input-start" chunk is sent before any "tool-input-delta" chunks.
+- Reconnect
+- Reconnect account
+- Reconnect Account
+- Reconnect channel error
+- Reconnects
+- Record all your streams
+- Record streams up to 10 hrs
+- Record streams up to 20 hrs
+- Record streams up to 20 hrs 
+- Record streams up to 6 hrs
+- Record up to 10 hours. Reuse live streams 
+- Record up to 20 hours. Reuse live streams 
+- Record up to 6 hours. Reuse live streams 
+- Record your streams
+- Recording - 20hrs/stream, stored for 30 days 
+- Recording Trial Warning Start Recording Button Clicked
+- Recordings Trial Live Stream End Triggered
+- Recoverable connection error: reconnecting
+- Reduce background noises during the stream. We recommend keeping it enabled unless you have an isolated environment for capturing audio.
+- Rejected event go live attempt: ${e}
+- Rejected go live attempt: ${e}
+- Remove file used in streams error
+- Remove from the stream
+- Removed pending live call request
+- Removed take ${e} from stream ${this.logId}
+- Removing produced media stream without producers
+- Repurpose your stream
+- Request to join on air
+- Reset stream key
+- Restream allows you to stream live to 30+ social platforms at once.
+- Restream helps you grow an audience of the streamers and share broadcasts through different platforms. Forgot your password? Recover your Restream account here.
+- Restream is the #1 multistreaming solution delivering over 2.5M broadcasts monthly. Trusted by more than 1,000,000 streamers worldwide.
+- Restream is the #1 multistreaming solution. Start multistreaming for free today or upgrade your plan to access more powerful features.
+- Restream is the best way to live stream to YouTube, Twitch, Facebook, and 30+ streaming sites at once. Expand your audience with multistreaming — get started today.
+- Restream is the best way to stream to YouTube, Twitch, Facebook, and 30+ other streaming services at once. Get started for free!
+- Restream is the best way to stream to YouTube, Twitch, Facebook, and 30+ other streaming services at once. Log in to your Restream account!
+- Restream Monitor is a tool that allows you to keep an eye on streams as well as incoming and outgoing data for all of connected platforms.
+- Restream uses a link shortening service and mentions Amazon with your affiliate links in Live Chat to utterly follow Amazon Policies.
+- Restream watermark on your streams
+- Restream.io Upload & Stream Subscription
+- Restricted access to Facebook streaming. Only personal profiles allowed
+- Review an instant streaming report including in-depth analytics after each stream.
+- RTMP source is restarting because of the new incoming stream
+- RTMP Source Stream Key Copied
+- Save past broadcasts
+- Save stream recording
+- Save your streams as video files and their audio-only versions for repurposing and podcasting
+- Schedule a Live Video
+- Schedule uploaded videos as live streams
+- Scheduled live videos
+- Scheduled start time
+- Scheduling events helps you alert your audience in advance by promoting your stream before going live!
+- Screen share (on air)
+- Screen share source was stopped before stateKey was attached
+- Select destination to go live
+- Sending broadcast message ${t.type}
+- Sent broadcast message ${t.type}
+- Separate stream session required
+- Set the audio gain level (volume) of a participant source. Only works on media stream sources that support audio gain (webcam, screen share, video).
+- Set the outgoing streaming profile (resolution and framerate). Use get_streaming_profiles first to see available options.
+- Set the stream's theme type. Each theme has different visual behavior:
+- Set the stream`s global font family
+- Set the stream`s primary color for captions, qr codes, participant names, tickers
+- Set up a stream
+- Set up streaming
+- Set up your social channels and their stream titles.
+- Setup stream settings 📽
+- Sharing multiple screens may affect your machine performance and stream quality.
+- Show a caption on the stream, or hide the current caption by passing null
+- Show alerts on stream
+- Show ON AIR
+- Show on stream
+- Show or hide a participant source (camera, screen share, etc.) on the stream. Use stateKey from the participants state to identify the source.
+- Show QR Code Scan Alert On Stream Toggle Clicked
+- Show QR code scan alerts on stream
+- Skipping audio start: no audio constraints provided
+- Skipping loading of default show event: Not a Stream Now
+- Skipping streaming statuses connection: browser offline
+- Skipping streaming statuses: feature disabled
+- Skipping viewers connection: browser offline
+- Slack Streaming Banner Clicked
+- Slack Streaming Banner Shown
+- Smashcast is a service where you can watch live broadcasts of video games in high quality with near-to-no delay. Watch, chat, and interact with people passionate about gaming.
+- Social comments display here. Click on them to showcase on stream.
+- Some platforms might downgrade stream quality to HD
+- Some platforms might not support streaming at 60 fps
+- Some stream details for <eventTitle>title</eventTitle> failed to be updated. <button>Try again</button>
+- Something went wrong during the streaming connection
+- Something went wrong during the streaming connection.  ⏎ Please try again or contact support.
+- Soon you’ll be able to export stream session data into CSV and PDF.
+- Sorry, you can't switch modes while live.
+- Sorry, you can’t switch modes while live.
+- Source Image File Started Processing
+- Source On Air Button Clicked
+- SSE stream ended without a complete event
+- SSE stream ended without a data event
+- Start
+- Start %d-day Free Trial
+- Start a broadcast
+- Start adding channels to your Restream account. Visit our %sHelp Center%s for detailed setup tutorials.
+- Start drawing
+- Start feedback mode
+- Start Free Trial
+- Start importing
+- Start Now
+- Start of audio media stream skipped in playlist mode
+- Start of video media stream skipped in playlist mode
+- Start of webcam media stream skipped
+- Start or end recording
+- Start Recording
+- Start Screen Sharing
+- Start Stream
+- Start streaming your content today!
+- Start time offset 
+- Start trial
+- Start typing geographical location
+- Start typing notes for the scene...
+- Start Webinar
+- Start Webinar Confirmation Modal Confirmed
+- Start Webinar Confirmation Modal Dismissed
+- Start Webinar Confirmation Modal Shown
+- Start webinar?
+- Start with:
+- Start without camera
+- Start Without Camera Clicked
+- Started
+- Started at
+- Started camera audio media stream ${i.label}
+- Started camera media stream ${r.label} / ${n?.label??"None"}
+- Started camera on main store initialization
+- Started camera on main store load
+- Started camera on main store preloading
+- Started camera video media stream ${i.label}
+- Started live stream
+- Started local recording shot ${this.logId}
+- Started screen sharing source
+- Started shot for local recording ${this.fullId}
+- Started video pipeline
+- Starting
+- Starting heartbeat
+- Starting live stream
+- Starting local recordings
+- Starting login with Google flow
+- Starting new screen share
+- Starting on June 17, 2019, this parameter will be deprecated for log streams, and will be reported as zero. This change applies only to log streams. The storedBytes parameter for log groups is not aff
+- Starting on June 17, 2019, this parameter will be ignored and the value will be assumed to be true. The response from this operation will always interleave events from multiple log streams within a lo
+- Starting recursive polling for recording counts
+- Starting screen share source
+- Starting session for key 
+- Starting soon
+- Starting upload process
+- Starting video track
+- Starting with v2.0.0-beta.1 date-fns doesn't accept strings as date arguments. Please use `parseISO` to parse strings. See: https://git.io/fjule
+- Starts at 2 team seats
+- Starts at 3 team seats
+- Steam is a digital distribution platform for purchasing and playing video games. Steam offers digital rights management, matchmaking servers, video streaming, and social networking services.
+- Stop
+- Stop an existing screen share to add a new one.
+- Stop generating
+- Stop live streaming to record
+- Stop live streaming to start
+- Stop local recording for $name
+- Stop music
+- Stop recording
+- Stop Recording
+- Stop Recording Confirmation Modal Confirmed
+- Stop Recording Confirmation Modal Dismissed
+- Stop Recording Confirmation Modal Shown
+- Stop screen sharing
+- Stop Screen Sharing Button Clicked
+- Stop streaming to edit channel settings
+- Stop the current stream to go live
+- Stop the currently playing background music
+- Stop the stream to change orientation.
+- Stopped
+- Stopped live stream
+- Stopped reconnecting to streaming statuses: unauthorized
+- Stopped reconnecting to viewers: decode error
+- Stopped reconnecting to viewers: invalid live stream state
+- Stopped screen share stream with reason ${e}
+- Stopped shot for local recording with reason ${e} ${this.fullId}
+- Stopped trying to reconnect to the streaming statuses
+- Stopped trying to reconnect to the viewers statuses
+- Stopping
+- Stopping camera source with reason ${e}
+- Stopping current audio input track with reason ${e}
+- Stopping current video input track with reason ${e}
+- Stopping local recording shot with reason ${e} ${this.logId}
+- Stopping local recording shot with reason ${e} and error ${this.logId}
+- Stopping local recordings with reason ${e}
+- Stopping local video source with reason ${e}
+- Stopping media stream tracks
+- Stopping music…
+- Stopping recursive polling for recording counts
+- Stopping screen share stream with reason ${e}
+- Stopping video playback
+- Stream
+- Stream and record in Full HD
+- Stream at the perfect time without actually being there.
+- Stream backup
+- Stream backup (RTMP, SRT)
+- Stream content length mismatch. Received 
+- Stream controls are here
+- Stream Details AI Generate Clicked
+- Stream Details AI Generate Completed
+- Stream disconnect protection
+- Stream duration
+- Stream finished
+- Stream from 3rd-party tools (OBS, Zoom) in Studio
+- Stream health monitor
+- Stream in 1080p, Full HD
+- Stream Info
+- Stream key
+- Stream key copied to clipboard
+- Stream key is %sunique for each event%s. Copy it before going live.
+- Stream key is unique for each event
+- Stream live to Facebook, YouTube, X, LinkedIn, and others — at the same time.
+- Stream on guests’ channels
+- Stream on guests’ channels 
+- Stream orientation
+- Stream pre-recorded videos
+- Stream reliably and 
+- Stream settings
+- Stream simultaneously in Dual output
+- Stream simultaneously to 
+- Stream simultaneously to YouTube, 
+- Stream simultaniously to Youtube, Facebook, 
+- Stream Spotlight Button Clicked
+- Stream start has been canceled
+- Stream stopped remotely
+- Stream time limit reached
+- Stream title
+- Stream title copied to clipboard
+- Stream title must include
+- Stream to
+- Stream to 15 channels
+- Stream to 2 channels
+- Stream to 30 channels
+- Stream to 8 channels
+- Stream to guest channels
+- Stream to multiple platforms at once, 
+- Stream to your own website
+- Stream to your own website.
+- Stream up to 2 hours of any pre-recorded video live.
+- Stream up to 4 hours of any pre-recorded video live.
+- Stream URL
+- StreamCraft is a popular and fast-growing streaming platform.
+- Streaming
+- Streaming Amplifier
+- Streaming back to personal page needs additional permission. Please, connect your account again. ⏎ %sConnect LinkedIn%s
+- Streaming disabled
+- Streaming disabled. Facebook group or public page is selected.
+- Streaming disabled. Your payment expired.
+- Streaming disabled. Your webinar subscription has expired. <upgradeButton>Upgrade</upgradeButton> to start your webinar.
+- Streaming is disabled. Follow the instructions in the warning banner.
+- Streaming is not allowed on your Patreon.
+- Streaming issues
+- Streaming limit 
+- Streaming monitor
+- Streaming not enabled. Go to your 
+- Streaming profile not found
+- Streaming settings (RTMP)
+- Streaming setup
+- Streaming software
+- Streaming Statuses Connection Closed
+- Streaming Statuses Connection Opened
+- Streaming statuses disabled
+- Streaming statuses token received
+- Streaming statuses WebSocket has not connected within 10s
+- Streaming the camera and microphone is not supported in your browser.
+- Streaming the microphone is not supported on your device.
+- Streaming to 
+- Streaming to organization needs additional permission. Please, connect your account again. ⏎ %sConnect LinkedIn%s
+- Streaming to public pages and groups is a paid feature. %sUpgrade now%s
+- Streaming was interrupted
+- Streams
+- Streams from 3rd-party tools (Zoom, OBS) in Studio, 
+- Studio Live Clipping Clips Ready Clicked
+- Studio Live Clipping Toast Clicked
+- Studio Live Clipping Toggle Clicked
+- Studio needs a microphone to join on air. Connect one, then retry.
+- Studio needs your microphone to join on air. Allow access in your browser settings, then retry. Learn more in our %sHelp Center%s.
+- Studio streams with your own logo and overlays
+- Studio will show an alert on the live stream whenever someone scans the QR code.
+- Subscribe to a periodic newsletter with valuable tips on all things streaming.
+- Subscribing to streaming statuses
+- Subtitle track details are defined on idle subtitle stream controller tick
+- Successful starts
+- Switch to Studio 2.0 and stream custom music
+- Syncing consumers with consumed media streams
+- Tele2 Esport is a Russian platform from one of the biggest cellular providers with free internet traffic for viewing high quality streams.
+- Tell your followers when you go live! Add your message, and Restream will send it automatically whenever you start streaming.
+- The best way to stream live video to 30+ platforms simultaneously
+- The best way to stream live video to 30+ platforms simultaneously for free
+- The best way to stream to 30+ platforms simultaneously for free.
+- The channel will be removed as a destination of scheduled streams.
+- The current status of the live broadcast does not allow it to be deleted.
+- The Dailymotion user is not allowed to create lives
+- The ID of the streaming profile to set
+- The id property specified in the liveBroadcast resource did not identify a broadcast.
+- The request is not authorized to create the live broadcast.
+- The stream preview will show up when you start streaming.
+- The stream will automatically go live on all <bold>enabled</bold> channels. <linkButton>Learn more</linkButton>
+- The streaming started earlier than scheduled time
+- The type of scene to create: "Default" for live camera, "Media" for media/video, "Countdown" for countdown timer
+- The webhook URL will receive live annotation changes and annotation data.
+- There are issues that prevent some enabled channels from receiving your stream.
+- These plans are for personal streaming only. Businesses should use our <a href="#company" aria-controls="company" role="tab" data-toggle="tab" role="presentation">company plans</a>.
+- This channel is not in good standing. Streaming may be unavailable.
+- This channel was added manually. Reconnect it with the API.
+- This feature delivers your stream to 2 different channels on the same platform.
+- This is a popular game streaming platform in Japan with 1 million+ monthly visitors.
+- This is China's fastest-growing streaming website with interactive comment display functionality. Known for its superior viewer experience, the website covers gaming, sports, music, and a wide range o
+- This Japanese video sharing and streaming platform is great for a variety of live content, including gaming, music, entertainment, political content, and more.
+- This local and growing streaming platform is a community for—you guessed it—vapers. The platform allows multiple broadcasters to live stream simultaneously.
+- This popular streaming platform from Microsoft is geared toward enterprises and influencers. Popular users have included NASA, Sony, Intuit, TechCrunch, Barack Obama, and Hillary Clinton.
+- This RTMP URL doesn't look right. It should start with rtmp://
+- This switch adds you to the stream, or removes from it.
+- This URL doesn't look right. The stream URL is a direct link to your stream on the end platform. Please get the correct URL from the end platform.
+- This will immediately invalidate your current stream key. Are you sure you want to generate a new one?
+- TikTok user has no live permissions
+- TikTok user is already live
+- Time from the first observed output until this part finished streaming. While streaming, this uses the current time.
+- Time from the latest user message or tool-result submission until this tool call appeared in the stream.
+- Time spent writing the tool input arguments before execution could start.
+- Time to go live!
+- Time to start
+- Time to wrap up! Your live stream will end in <b>$timeLeft minute</b>.
+- Time to wrap up! Your live stream will end in <b>$timeLeft minutes</b>.
+- Time to wrap up! Your live stream will end in <b>$timeLeft second</b>.
+- Time to wrap up! Your live stream will end in <b>$timeLeft seconds</b>.
+- To connect a pre-created LinkedIn event, stop streaming.
+- To connect your channel properly for streaming with Restream, please grant access to your Dailymotion account.
+- To connect your channel properly for streaming with Restream, please grant access to your DLive account.
+- To connect your channel properly for streaming with Restream, please grant access to your Facebook account.
+- To connect your channel properly for streaming with Restream, please grant access to your GoodGame account.
+- To connect your channel properly for streaming with Restream, please grant access to your LinkedIn account.
+- To connect your channel properly for streaming with Restream, please grant access to your Mixer account. In case you didn't already, make sure to apply for %schannel Review%s on Mixer before you're al
+- To connect your channel properly for streaming with Restream, please grant access to your OK.ru account.
+- To connect your channel properly for streaming with Restream, please grant access to your Picarto account.
+- To connect your channel properly for streaming with Restream, please grant access to your Smashcast account.
+- To connect your channel properly for streaming with Restream, please grant access to your Trovo account.
+- To connect your channel properly for streaming with Restream, please grant access to your Twitch account.
+- To connect your channel properly for streaming with Restream, please grant access to your VK account.
+- To connect your channel properly for streaming with Restream, please grant access to your YouTube account.
+- To continue streaming, remove Extra destinations from your Dashboard or upgrade your account.
+- To continue streaming, remove the extra destinations from your Dashboard or upgrade your account.
+- To create a live broadcast, make sure your camera and microphone are turned on and Restream Studio is allowed to use them. ⏎ You can always turn these off later.
+- To go live, please end the other stream first.
+- To record, please end your stream first.
+- To remove the watermark from all event posts, update thumbnails individually per channel or in the stream details.
+- To switch to RTMP, you'll first have to stop streaming
+- To switch to Webcam, you'll first have to stop streaming
+- Toggle live clipping
+- Too many start attempts
+- Too many streams running
+- Total time from this tool call appearing in the stream until it reached a final state.
+- Transcoding live
+- Trouble getting started
+- Trovo is an interactive live streaming platform, you can check out the hottest games live, share your own gaming experiences, and join an amazing community.
+- Turn recording into a live stream
+- Turn videos into live streams. 
+- Turn your uploaded video files into live streams.
+- Turn your uploaded video files into live streams. 
+- Twitch directory cards truncate around 60 characters — front-load the key words. Write a punchy, action- or keyword-led title that says what makes this stream worth watching; emoji are optional.
+- Twitch no stream key error
+- Twitch requires that two-factor authentication be enabled in order to stream. <a href="https://help.twitch.tv/s/article/two-factor-authentication-with-authy ">Click here to learn how!</a>
+- Type must start with "data-"
+- Unable to infer media type from URL. Defaulting to 'application/octet-stream'.
+- Unable to remove your live video on Facebook..
+- Unable to stop the Facebook event.
+- Unfortunately, LinkedIn doesn't allow streaming to multiple LinkedIn destinations at once.
+- Unlimited streaming
+- Unlock FB pages, groups, and custom RTMP streaming
+- Unmatched start-group tag: stream EOF
+- Unsupported HEVC stream type found
+- Untitled Stream
+- Update any scene while you're live. Swap guests, add screen shares, apply graphics, and adjust the layout — without changing what's on air. When you're ready, show the updated scene to your audience.
+- Update stream details
+- Update stream title and description.
+- Update title to Live with Restream and Description to Office hours livestream
+- Updating live clipping for event
+- Updating source state on air ${this.state.type}
+- Updating YouTube broadcast ID after reschedule
+- Upgrade to record all streams
+- Upgrade to stream Dual orientations
+- Upgrade to stream in Full HD
+- Upgrade to stream longer playlist
+- Upgrade to stream the recording
+- Upgrade to stream this video
+- Upgrade to unlock <strong>automatic stream recordings</strong> and <strong>Record Only mode in Studio</strong> — perfect for podcasts and repurposing content via our AI-powered clips.
+- Upgrade your plan to support this option or choose a different stream quality in your settings.
+- Upload & Stream
+- Upload & Stream ${Xk(e)}
+- Upload & Stream ${Xk(He)}, ${UIe}
+- Upload & Stream Basic
+- Upload & Stream Plus
+- Upload & Stream Premium
+- Upload and play your music on the stream
+- Upload and Stream Checkout Started
+- Upload and Stream Subscribed Client
+- Upload and Stream Subscription Attempt
+- Upload and Stream Subscription Error
+- Upload and stream your own custom music in the Studio 2.0
+- Use overlays to add images and videos on top of your streams.
+- use Restream Chat (even if you only stream to one platform). No Restream Chat — no payment.
+- Use the device and browser you used to join this stream.
+- User media streams are not supported
+- V LIVE
+- V LIVE, Star Live Broadcasting
+- Valid hex colors for the background. Solid uses the first color. Linear uses all colors as evenly distributed stops. GradientCloud uses the first four colors as two blended color pairs; if fewer than 
+- Vaughn Live
+- Video broadcast wasnt found
+- Video is not on air: pause
+- Video is on air: resume
+- Viewers status server enabled, waiting for live stream
+- VK Live
+- Wait until a streaming distribution is deployed.
+- Wait until OpsWorks instance is stopped.
+- Waiting for the event to start
+- Want more people on your stream? Unlock %upgradeParticipantsCount screen participants with one of our paid plans. %sUpgrade now%s
+- Want to keep recording? Recording is a paid feature. Upgrade to remove limits and unlock automatic stream recordings as well.
+- We are live with Restream.io
+- We couldn't start your stream
+- We couldn't start your stream. One is already live. Please reload the page, or contact support.
+- We couldn't start your stream. Our servers are overloaded right now. Please try again in 5 minutes.
+- We couldn't start your stream. Please try again in 30 seconds, or contact support.
+- We couldn't start your stream. Stop one of your streams, then try again.
+- We couldn't start your stream. Upgrade your plan or turn off unsupported features, then try again.
+- We couldn’t verify your ability to stream
+- We don't have permission to stream to your account. Please remove and reconnect your Facebook channel.
+- We will apply this new VK.com title to your next stream.
+- Webinar Live Call Allow Webcam Clicked
+- Webinar Live Call Deep Link Availability Checked
+- Webinar Live Call Deep Link Opened
+- Webinar Live Call Retry Permissions Clicked
+- Webinar Live Call-In Request Dismiss Clicked
+- Webinar Live Call-In Request Let In Clicked
+- Webinar Live Call-In Request Review Clicked
+- Webinar Live Call-In Requests Accept All Clicked
+- Webinar start has been canceled
+- Website broadcasting
+- When everything is set up, hit this orange button to go live.
+- Whether live clipping should be enabled
+- Whether the source should be on air (visible on stream)
+- Whether to display the title on stream
+- Whether to generate instrumental tracks (no vocals). Default true — the right choice for livestream backgrounds.
+- Whether to show the chat overlay on stream
+- Write a short, scroll-stopping, keyword-rich hook.
+- X is the place to see what's happening in the world—from breaking news to major live events. You can easily create live videos to share what's happening live.
+- Xplatform user is not allowed to stream
+- Yes, go live
+- You already have an active live stream running
+- You are hosting this stream
+- You are invited to re-broadcast
+- You are not enabled to stream live video on YouTube. Details at https://www.youtube.com/features.
+- You can go live 15 min early & up to 2 hours after scheduled time.
+- You can hide users with a disabled camera from the stream, while they can still be heard.
+- You can NOT advertise other services while doing a sponsored stream.  ⏎ NO gameplay, loots, logos or other marketing materials.
+- You can't add new scenes during a live stream
+- You can't add new videos during a live stream
+- You can't add new videos during a live stream.
+- You can't change timer during a live stream
+- You can't change videos during a live stream.
+- You can't edit YouTube stream settings during a livestream.
+- You can't go live on Facebook yet.
+- You can't go live on Facebook yet. Please chat with our Support.
+- You can’t go live with the selected stream quality
+- You can't stream to this channel yet. Please chat with our Support.
+- You do not have permission to stream to DailyMotion.Please contact DailyMotion for more information.
+- You do not have permissions to create Facebook live video.
+- You do not have permissions to go live to this Facebook group.
+- You don't have any streams yet!
+- You don't have live streaming enabled on your Smashcast account.<br> ⏎ Please visit the channel and activate it.
+- You don't have live streaming enabled on your VK account. Please visit the link and activate it.
+- You don't have live streaming enabled on your YouTube account. Please click the link and activate it.
+- You have blocked camera access. To go live, please update your browser settings to allow access. ⏎ Learn more how to setup camera properly in our %sHelp Center%s.
+- You have no permissions for live streaming
+- You have no permissions to modify this broadcast
+- You have no permissions to stream to this broadcast
+- You missed your chance to stream during this campaign. This might affect your future offers.  ⏎ Please make sure you only sign up for the campaigns you can participate in.
+- You must start within 15 min early or up to 2 hr late.
+- You need to be an Editor or Owner of the page to go live.
+- You need to enable Live Streaming on YouTube. Here's how:
+- You need to pass streamer review on Mixer. Lean more about streamer review system at Mixer %sblog post%s.
+- You should enter your stream key in this field, not the RTMP URL.
+- You were allowed to join the live stream
+- You will need to purchase one Extra destination per Facebook Page you wish to stream to. 
+- You'll get full video and audio, separate feeds of all sources and participants, up to ${o} hr/stream. Need more? 
+- You’ll need at least 300 people for the stream to publish
+- You're backstage. The host may add you to the broadcast at any time. Be ready!
+- You’ve been offered to become a co-host. Do you want to experience what it feels like to edit and co-produce this stream?
+- You've reached daily limit for live stream thumbnails on YouTube. Please try again in 24 hours.
+- You've reached your daily limit for creating live streams on YouTube. You can try again in 24 hours.
+- YouNow is a live broadcasting service where users stream their own live video content or interact with the video streams of other users in real time. The service is available on its website, Android, 
+- Your camera and audio are recorded locally. Please stay after the stream until uploads finish.
+- Your Clips add-on subscription has started
+- Your Clips free trial has started
+- Your current plan doesn't support streaming a mix of portrait and landscape channels.
+- Your event is streaming now. Please edit directly on
+- Your Kick stream title is empty, please add a title and try again.
+- Your LinkedIn Live approval is under review.
+- Your new stream key 👉
+- Your new title for YouTube Events will be applied only on upcoming streams.
+- Your request to join the live stream was declined
+- Your room session reached the maximum duration and ended. Start a new session to continue.
+- Your stream didn't go live. Please try again, or contact support.
+- Your stream didn`t meet the requirement of  %s minimum CCV and offer value was reduced proportionally. ⏎ You can try again, and if you meet the requirements the value will be recalculated automaticall
+- Your stream is finished.
+- Your stream is no longer live.
+- Your stream reached the maximum duration and ended. You can start a new stream right away.
+- Your stream stopped unexpectedly
+- Your stream was stopped from the dashboard or API.
+- Your stream will go live without you.
+- Your title has been updated for broadcast and active hosting.
+- Your Twitch stream title is empty, please add a title and try again.
+- YouTube live permission blocked
+- YouTube Stream Now
+- Youtube streaming not enabled
+- Youtube streaming on hold
+- Zhanqi.tv is one of the biggest streaming platforms focused on gaming.
+
+### Scenes (336)
+
+- <b>Studio 2.0<b>: Prepare your stream with scenes, try new layouts, and much more. You can always switch back if needed.
+- 1 scene
+- Activate up to 5 widgets on one scene with Restream Standard.
+- Add a camera placeholder to a scene. Does not work on Countdown scenes.
+- Add a media placeholder to a scene. Does not work on Countdown scenes.
+- Add a realistic, photo-style scene for your stream.
+- Add a source image to a scene from a URL. Fetches the image, uploads it, and assigns it to the specified scene. Does not work on Countdown scenes.
+- Add camera scene
+- Add countdown scene
+- Add media scene
+- Add More Widgets to Your Scene
+- Add new scene
+- Add new widget to show it on a scene
+- Add Scene
+- Add to scene
+- Add video scene
+- Adding RTMP source to scene ${this.id}
+- Adding Showtime demo scene
+- Adding source image by url on new scene ${e}
+- All scenes
+- Animated dark 3D scene with metallic structures, neon pink and white light beams, and chromatic aberration.
+- Apply to scene
+- Array of scenes to create
+- Aside thumbnail size (% of scene height, 0–100). For: THUMBNAILS, PICTURE_IN_PICTURE
+- Ask AI to create scenes, tune graphics, write captions, and prep your stream.
+- Assign a background to a specific scene. Supports both static (image) and animated (video) backgrounds. Pass null to remove background from the scene.
+- Assign a caption to a specific scene. Can be used with all scene types.
+- Assign a logo to a specific scene. Pass null to remove logo from the scene.
+- Assign a QR code to a specific scene. Applies the QR code to the specified scene.
+- Assign a ticker to a specific scene. Pass null to remove ticker from the scene. Optionally set scroll speed.
+- Assign an overlay to a specific scene. Pass null to remove overlay from the scene.
+- Assign to scenes
+- Auto switch is not available for this scene. Media scenes require an attached video.
+- Auto-switch scene was enabled, so video loop is off
+- Auto-switch to next scene
+- Background ID to assign, or null to remove background from the scene
+- Browser source not found on this scene
+- Can't disable scene auto-switch. Please try again later.
+- Caption ID to assign, or null to remove caption from the scene
+- Copy scene
+- Could not add images. Please remove some scenes and try again.
+- Could not add the widget to the scene.
+- Create a Cascais vibe scene.
+- Create a countdown scene.
+- Create a new scene with optional assets attached
+- Create multiple scenes at once with optional assets attached. Scenes are created sequentially in the order provided.
+- Create scene
+- Create scenes
+- Creating a scene…
+- Creating new scene for screen share source
+- Creating scenes…
+- Current scene
+- Default scene name
+- Delete a scene
+- Delete scene
+- Delete Scene
+- Demo Showtime Scene Added
+- Demo Showtime Scene Adding Failed
+- Detach a browser source from a scene. The browser source itself is not deleted and remains available to attach to other scenes. Use delete_browser_source to delete the source entirely.
+- Disabled mp4 logo on scene
+- Disabled mp4 overlay on scene
+- Draggable #${o+1} scene widget
+- Dragging #${o+1} scene widget
+- Dramatic space scene with bright light rays bursting through glowing clouds against a dark starry sky.
+- Duplicate scene
+- Duplicate Scene
+- Edit scene
+- Edit scene name
+- Enable or disable the chat overlay ("Show on stream") for a specific scene.
+- Enabled sources don't show on Countdown scenes
+- Enter scene name to continue
+- Execute multiple tool calls sequentially in a single turn. Use this to batch independent operations (e.g., creating several scenes, adding captions to each). Each call runs in order; a failure in one 
+- Existing Demo Showtime Scene Selected
+- Explore Scenes, add a Countdown, try a new Layout, %sand more%s.
+- Failed to activate scene from scene menu
+- Failed to activate this scene. Try again.
+- Failed to adapt edited-scene layout identifier: ${t}
+- Failed to add browser source to scene
+- Failed to add camera placeholder: scene not found
+- Failed to add camera placeholder: Wrong scene type
+- Failed to add media placeholder: scene not found
+- Failed to add media placeholder: Wrong scene type
+- Failed to add playlist scenes batch: No videos
+- Failed to add RTMP source to scene
+- Failed to add scene
+- Failed to add scene browser source
+- Failed to add screen share to the edited scene
+- Failed to add Showtime demo scene
+- Failed to add source image by url on new scene ${e}
+- Failed to assign scene camera
+- Failed to assign scene source
+- Failed to create scene
+- Failed to delete scene
+- Failed to delete scene on button click
+- Failed to delete scene on hotkey press
+- Failed to disable scene auto-switch on ${e} disable click
+- Failed to duplicate scene on button click
+- Failed to duplicate scene on hotkey press
+- Failed to force scene switch: Not authorized
+- Failed to hide the ${e.kind} on the edited scene
+- Failed to hide the HLS video on the edited scene
+- Failed to hide the RTMP source on the edited scene
+- Failed to hide the source on the edited scene
+- Failed to init scenes notes store
+- Failed to paste on scene menu click
+- Failed to preload scene media for editing
+- Failed to remove browser source from scene
+- Failed to remove browser source from scene before deleting widget
+- Failed to remove camera placeholder: scene not found
+- Failed to remove camera placeholder: Wrong scene type
+- Failed to remove RTMP source from scene
+- Failed to remove scene browser source
+- Failed to reorder scenes
+- Failed to reorder sources on the edited scene
+- Failed to save scene note
+- Failed to select scene
+- Failed to select scene assignment option
+- Failed to set browser source: no permission to use paid features and a browser source is already visible on the scene
+- Failed to start screen share source in a new scene: stateKey await timed out
+- Failed to swap scene sources
+- Failed to toggle presentation on the edited scene
+- Failed to toggle RTMP source on the edited scene
+- Failed to toggle screen share on the edited scene
+- Failed to toggle source on the edited scene
+- Failed to unassign presentation from the edited scene
+- Failed to unassign scene camera
+- Failed to unassign scene source
+- Failed to update browser source on scene
+- Failed to update chat overlay options: No active scene
+- Failed to update contain layout options: No active scene id
+- Failed to update cover layout options: No active scene id
+- Failed to update half screen layout options: No active scene id
+- Failed to update pip layout options: No active scene id
+- Failed to update scene browser source
+- Failed to update scene logo position
+- Failed to update scene shouldShowParticipantNames
+- Failed to update scene shouldShowParticipantScreenShareNames
+- Failed to update showtime layout options: No active scene id
+- Failed to update spotlight layout options: No active scene id
+- Failed to update TBPN layout options: No active scene id
+- Failed to update thumbnails layout options: No active scene id
+- Forcing switch to scenes mode
+- Get available countdown music tracks that can be assigned to a countdown scene.
+- Get notes for all scenes
+- Get scenes
+- Get the chat overlay state for a specific scene, including whether it is enabled and its options. Note: in portrait orientation, chat overlay uses default settings and customization options have no ef
+- Get the list of scenes
+- Get the note for a specific scene
+- Height as a fraction of the scene height (0–1)
+- Ignoring setting source on air: Scene not found
+- Loading scenes…
+- Logo ID to assign, or null to remove logo from the scene
+- Main source scale (% of scene height, 0–100). For: PICTURE_IN_PICTURE
+- Max scenes reached. Remove a scene to screenshare
+- Maximize is not available on countdown scene
+- Media source can't be added on countdown scene
+- Minimalist dark scene with a subtle particle-dust mountain ridge against a black starry sky.
+- Name the scene
+- Natural-language description of the overlay subject (object, character, sticker, prop). Describe only the subject — do not describe a background or scene.
+- New <bold>RTMP source</bold> added. <actionButton>Add to the scene</actionButton>
+- Next scene
+- No scenes
+- No scenes or widgets available
+- Not a media scene
+- Not available while editing a scene
+- Optional layout type for the scene. If not provided, a sensible default is used based on scene type. ${h.HV}
+- Optional name for the scene
+- Ordered array of all scene IDs in the desired order
+- Output aspect ratio. Defaults to 16:9 for stream backgrounds; pick 9:16 for portrait scenes.
+- Overlay ID to assign, or null to remove overlay from the scene
+- Paste scene
+- People assignment mode - all scenes
+- People assignment mode - scene specific
+- Plays countdown only and automatically switches to the next scene when it ends
+- Plays video only and automatically switches to the next scene when it ends
+- Plays video only and automatically switches to the next scene when it ends.
+- Position in the scene list (0-based). If omitted, scenes are placed after the current scene.
+- Prefer Studio without Scenes? <action1>Back to Old Experience<action1>
+- Previous scene
+- Provided scene IDs do not match existing scenes. All scene IDs must be included exactly once.
+- QR code ID to assign, or null to remove QR code from the scene
+- Remove a camera placeholder from a scene. Does not work on Countdown scenes.
+- Removing RTMP source from scene ${this.id}
+- Removing scene…
+- Rename a scene
+- Rename scene
+- Renaming scene…
+- Reorder scenes
+- Reorder scenes by providing the full ordered list of scene IDs. All existing scene IDs must be included.
+- Reordering scenes…
+- Reset a scene's layout options to their default values. The scene must already have the specified layout type set.
+- Scale (% of scene height, 0–100). For: SPOTLIGHT
+- Scene
+- Scene ${n+1}: Failed to create
+- Scene ${n+1}: Scenes limit reached, skipping remaining
+- Scene Activate Clicked
+- Scene Add Button Clicked
+- Scene background
+- Scene background set
+- Scene cannot be removed: at least one scene must remain
+- Scene caption
+- Scene caption set
+- Scene Copy Clicked
+- Scene Create Clicked
+- Scene created
+- Scene Delete Clicked
+- Scene Duplicate Clicked
+- Scene Edit Mode Entered
+- Scene Edit Mode Exited
+- Scene Edit Mode Onboarding Modal Closed
+- Scene Edit Mode Onboarding Modal Shown
+- Scene Edit Mode Onboarding Modal Try Edit Mode Clicked
+- Scene Edit Mode Pip Toggled
+- Scene Edit Mode Target Switched
+- Scene editing presence
+- Scene has notes
+- Scene is not a countdown scene
+- Scene logo
+- Scene logo set
+- Scene New Popup Shown
+- Scene not found
+- Scene Note Added
+- Scene Note Edited
+- Scene Note Focused
+- Scene Note Max Symbols Reached Error
+- Scene Note Removed
+- Scene overlay
+- Scene overlay set
+- Scene Paste Clicked
+- Scene Placeholder Add Media Button Clicked
+- Scene Placeholder Add Source Modal Button Clicked
+- Scene QR code
+- Scene QR code set
+- Scene removed
+- Scene Rename Clicked
+- Scene renamed
+- Scene Reordered
+- Scene specific
+- Scene switched
+- Scene ticker
+- Scene ticker set
+- Scene with Cascais vibes
+- Scenes
+- Scenes created
+- Scenes Expanded Sources
+- Scenes limit reached
+- Scenes loaded
+- Scenes Mobile Placeholder Shown
+- Scenes Quantity Exceeded Limit
+- Scenes reordered
+- Scenes Sources Popover
+- Scopes your message to $count selected scenes.
+- Scopes your message to every scene in the show.
+- Scopes your message to the "$name" scene.
+- Scopes your message to the selected scene.
+- Screenshare on a new scene
+- Select (switch to) a scene by its ID
+- Select scene
+- Select scenes
+- Set or remove background music for a countdown scene. Pass musicId to set a track, or null to remove music.
+- Set scenes to auto-switch
+- Set the layout type for a specific scene. Applies the layout type to the specified scene.
+- Set the logo position for a specific scene. Works for Default, Media and Countdown scenes.
+- Set the volume of countdown scene music. Volume is 0 to 1, where 0 is muted and 1 is full volume.
+- Setting scene background…
+- Setting scene caption…
+- Setting scene logo…
+- Setting scene overlay…
+- Setting scene QR code…
+- Setting scene ticker…
+- Show/hide participant names (name + title image tag in bottom right corner of source) for a specific scene. Does not work on Countdown scenes.
+- Show/hide screen share participant names (name + title image tag in bottom right corner of source) for a specific scene. Does not work on Countdown scenes.
+- Skip questions when context makes the answer obvious (editing the Outro scene → outro placement; explicit "instrumental ambient" → no song-vs-music question).
+- Source Scene Assignment Mode Clicked
+- Source Scene Assignment Mode Selected
+- Source Scene Assignment Scene Clicked
+- Source Scene Assignment Scene Selected
+- Start typing notes for the scene...
+- Switch scene after countdown
+- Switch scene when video ends
+- Switch to New Experience with pre-set scenes
+- Switch to next scene
+- Switching scene…
+- Switching to the next scene in {{countdown}} sec.
+- Switching to the next scene in {{countdown}} sec. <action1>Cancel<action1>
+- That scene is gone, so there's nothing to undo.
+- The ID of the browser source on the scene
+- The ID of the browser source to add to the scene
+- The ID of the browser source to detach from the scene
+- The ID of the countdown scene
+- The ID of the scene
+- The ID of the scene to delete
+- The ID of the scene to rename
+- The ID of the scene to select
+- The layout type currently set on the scene
+- The new name for the scene
+- The scene you were editing is no longer available
+- The specified layout type does not match the scene's current layout type
+- The type of scene to create: "Default" for live camera, "Media" for media/video, "Countdown" for countdown timer
+- This operation is only supported on Media scenes, not on Countdown scenes
+- This source is on all scenes — switch it to per-scene first
+- This source is on all scenes — switch it to per-scene in Sources first
+- Ticker ID to assign, or null to remove ticker from the scene
+- To add source, go to a different scene than countdown
+- To use auto-switch, add a video from storage or set up a countdown scene
+- Toggle auto switch for a scene. When enabled, the scene will automatically switch to the next scene when its content finishes. Works on any Countdown scene, or on Media scenes that have video attached
+- Too add placeholder, go to a different scene than countdown
+- Tried setup showtime demo scene on preview initialization
+- Unable to execute undo command ${e.type}: Not allowed for Countdown scene
+- Unable to select next scene: no current item with specific index
+- Unable to select previous scene: no current item with specific index
+- Unassigning scene camera ${e} ${t}
+- Unassigning scene source ${e} ${t}
+- Unexpected scene resource type ${s}
+- Unsupported edited-scene layout source
+- Update a browser source that is already added to a scene. Can change visibility, z-index, position, and size.
+- Update any scene while you're live. Swap guests, add screen shares, apply graphics, and adjust the layout — without changing what's on air. When you're ready, show the updated scene to your audience.
+- Update the note for a specific scene
+- Updated scene
+- Updating source state ${this.state.type} scene assignment mode
+- Video '%fileName' has been deleted and removed from %scenesCount scene
+- Video '%fileName' has been deleted and removed from %scenesCount scenes
+- Video has been deleted and removed from %scenesCount scene
+- Video has been deleted and removed from %scenesCount scenes
+- Video looping was enabled, so auto-switch scene is off
+- When a <bold>video</bold> or <bold>countdown</bold> ends, the scene switches to the next one.
+- When true, return detailed scene info; when false, return only id, name, type and layout type
+- Whether to auto-switch to the next scene when content finishes
+- Whether to show participant names on the scene
+- Width as a fraction of the scene width (0–1)
+- You can't add new scenes during a live stream
+- You can't add new scenes into the finished event.
+- You have reached maximum amount of browser sources per scene
+- You’ve reached the maximum of $count scene
+- You’ve reached the maximum of $count scenes
+- You’ve reached the maximum of 20 scenes.
+
+### Sources & inputs (745)
+
+-  ⏎   Press space bar to start a drag. ⏎   When dragging you can use the arrow keys to move the item around and escape to cancel. ⏎   Some screen readers may require you to be in focus mode or to use y
+-  SourceBuffer error
+-  SourceBuffer type
+-  SourceBuffer, but it does not exist
+- :return c=e,new RegExp(c.source,c.flags?c.flags:(c.global?
+- :return o=e,new RegExp(o.source,(o.global?
+- ' from shared ini file.
+- 10 on-screen guests
+- 10 on-screen participants
+- 10 on-screen participants in Studio
+- 10 on-screen participants in Studio, 
+- 30+ platforms. 1 channel per platform ⏎ 1 Custom/Extra destination ⏎ Recording - 6 hrs/stream, stored for 15 days ⏎ Streaming to Facebook public pages/groups ⏎ 10 on-screen participants in Studio
+- 6 on-screen guests
+- 6 on-screen participants
+- Accessing your camera
+- Add a camera placeholder to a scene. Does not work on Countdown scenes.
+- Add a second camera to your stream.
+- Add a source image to a scene from a URL. Fetches the image, uploads it, and assigns it to the specified scene. Does not work on Countdown scenes.
+- Add browser source
+- Add Camera
+- Add camera scene
+- Add camera slot
+- Add extra camera
+- Add RTMP source
+- Add RTMP Source
+- Add screen share
+- Add screen sharing
+- Add source
+- Add Source
+- Add Source Menu
+- Add source modal triggered
+- Add Source Opened
+- Add Source Option Clicked
+- Added camera
+- Added screen share
+- Added source images batch
+- Adding browser source…
+- Adding camera slot…
+- Adding RTMP source to scene ${this.id}
+- Adding source image by url ${e}
+- Adding source image by url on new scene ${e}
+- Adding source image file
+- Adding source images batch
+- After scanning the barcode image or inputting your secret code, the app will display a 6-digit number. Enter the number generated from the app below.
+- After you've set up your destinations, and reviewed your streaming info, you can then go live using your webcam or streaming software.
+- All files were uploaded and shared with the host.
+- All participants have powerful devices
+- All sources are hidden. Press %s to show
+- All sources are muted. Press %s to unmute
+- All sources are shown. Press %s to hide
+- All sources are unmuted. Press %s to mute
+- Allow camera
+- Allow camera access to join
+- Allow Mic/Webcam
+- Allow Mic/Webcam Clicked
+- An unexpected error caused camera effects to shut down. Please, try again.
+- Animated dark screen with glowing ASCII-art characters forming shifting patterns in a retro pixel style.
+- Applied camera video track constraint
+- Applied screen sharing video track constraint
+- Applying camera video track constraint
+- Applying screen sharing video track constraint
+- as live sources for the broadcast.
+- as live sources for the broadcast. 
+- Attempting to start camera audio and video separately: Failed to start camera audio and video attempt
+- Attempting to use configureAudio without support for input audio. Is build dep ":gl_graph_runner_audio" missing?
+- Audio device
+- Audio input
+- Audio Input Device Changed: ${e}
+- Audio Input Selected
+- Audio on, camera hidden
+- Audio only — camera is blocked. %sHow to fix%s
+- Audio only — no camera found.
+- Audio only enabled. <changeAudioOnlyButton>Show camera</changeAudioOnlyButton>
+- Audio-only is ON for everyone. You can turn it off in <openSourcesButton>Sources</openSourcesButton>
+- Audio-only mode is only available on webcam sources
+- Auto Add Screen Sharing Toggle Clicked
+- Automatically add shared screens to stream
+- Automatically add shared screens to stream. Disable this if you want to turn it manually.
+- Automatically share screen
+- AWS Device Farm
+- Backup input/output lines 
+- Blind or unblind a participant webcam source. When blinded, the camera video track is disabled and a placeholder/avatar is shown instead. Only works on the host own webcam sources.
+- Blinding video input: Failed to restart unexpectedly ended video track ${e.label}
+- Both input and output ranges must be the same length
+- Browser source
+- Browser Source Add Button Clicked
+- Browser source added
+- Browser source already exists
+- Browser Source Content Viewport Changed
+- Browser source created
+- Browser Source Hide Clicked
+- Browser source ID
+- Browser source ID (from get_browser_sources)
+- Browser Source Layering Order Changed
+- Browser source limit reached
+- Browser source not found
+- Browser source not found on this scene
+- Browser Source Position Changed
+- Browser source removed
+- Browser Source Removed
+- Browser Source Show Clicked
+- Browser Source Size Changed
+- Browser Source Submit Button Clicked
+- Browser source updated
+- Browser Source Updated
+- Browser source with given URL already exists
+- Browser source with this URL already exists
+- Browser sources are not available
+- Browser sources loaded
+- Browser sources require a paid subscription
+- Browser Sources Widgets Button Clicked
+- Camera
+- Camera %s
+- Camera access not granted. <cameraPermissionsButton>How to fix it?</cameraPermissionsButton>
+- Camera blind
+- Camera blinding is only supported on own webcam sources
+- Camera effects shut down. Another application may be using your GPU resources. Please try re-enabling them.
+- Camera mirrored
+- Camera permission denied
+- Camera Permission query API not supported
+- Camera permission state change detected
+- Camera Placeholder
+- Camera slot added
+- Camera slot removed
+- Camera streaming is not supported in your browser.
+- Camera video toggled
+- Can't access camera and microphone with select settings. Please try changing settings or select another device.
+- Can't access camera with select settings. Please try changing settings or select another device.
+- Can't access microphone with select settings. Please try changing settings or select another device.
+- Can't access no longer available camera and microphone. Please reconnect them or select another device.
+- Can't access no longer available camera. Please reconnect it or select another device.
+- Can't access no longer available microphone. Please reconnect it or select another device.
+- Can't maximize browser source. Please try again or contact support
+- Can't reset browser source size. Please try again or contact support
+- Can't select browser source. It's possible to use only StreamElements overlays.
+- Can't select browser source. Please try again or contact support
+- Can't select browser source. That feature not available in your plan.
+- Can't select device. Please try again later.
+- Can't share the screen
+- Can't share the screen. Unexpected error has happened.
+- Can't start camera effects. Another application may be using your GPU resources or your device may not be supported.
+- Can't start camera effects. It appears your device doesn’t support them.
+- Can't update browser source visibility. Please try again or contact support
+- Can't upload video. Check if the link is public and directs to a shared video file.'
+- Cannot edit widget: source does not exist
+- Cannot edit widget: source was not generated by the widget tool
+- Cannot get screen sharing processed audio track
+- Cannot update media devices: client with ID ${e.value.clientId} not found
+- Caption pushes up 4+ sources
+- Capture flawless audio and video, no matter your connection. Record all participants on the local device — perfect for podcasts and polished edits.
+- Change main source radius
+- Change main source scale
+- Change main source width
+- Check your camera and mic
+- Connect <bold>YouTube</bold>, <bold>Facebook</bold>, <bold>Twitch</bold>, and 30 other channels to share this live stream with your audience.
+- Copy source and target message should have the same type.
+- Corner radius (% of source height, 0–100). For: AUTO_CONTAIN, AUTO_COVER, SPOTLIGHT, HALF_SCREEN
+- Could not convert regex pattern at ${t.currentPath.join("/")} to a flag-independent form! Falling back to the flag-ignorant source
+- Create a new browser source from a URL. Only available for users with a paid plan (check browserSourcesAvailable in state).
+- Create browser source
+- Creating browser source…
+- Creating new scene for screen share source
+- Delete a browser source
+- Delete browser source
+- Detach a browser source from a scene. The browser source itself is not deleted and remains available to attach to other scenes. Use delete_browser_source to delete the source entirely.
+- Device
+- Device change detected
+- Device change detection not supported
+- Device Farm
+- Device unexpectedly stopped
+- Device verification code is required
+- Device verification code not verified yet
+- Device verification failed. Please try logging in again.
+- Device verification is not available. Please try again later.
+- Device verification link token is required
+- Devices
+- Disable camera
+- Disable camera video (currently enabled)
+- Disabling Extra Camera audio input: Unexpectedly ended non-restartable audio track ${e.label}
+- Disabling Extra Camera video input: Unexpectedly ended non-restartable video track ${e.label}
+- Disposed screen share source with reason ${t}
+- Disposing screen share source with reason ${t}
+- DLive is the largest live streaming community on blockchain and is powered by Lino blockchain. Share amazing streams and earn massive rewards on DLive now.
+- Don't keep it a secret - share
+- Don't keep it a secret - share 
+- Done uploading source image
+- Dual Output Not Supported Screen Manage Channels Clicked
+- Dual Output Not Supported Screen Shown
+- Dual Output Not Supported Screen Upgrade Clicked
+- Echo cancellation and noise suppression must be disabled to use stereo audio input in Chrome.
+- Echo cancellation and noise suppression must be disabled to use stereo audio input.
+- Edit browser source
+- Editing browser source…
+- Enable camera
+- Enable camera video (currently disabled)
+- Enable only if participants use devices with powerful CPUs. Otherwise, app and stream performance may drop.
+- Enable or disable audio-only mode on a participant camera source. When enabled, video is hidden and only audio is transmitted. Only works on main webcam sources.
+- Enabled sources don't show on Countdown scenes
+- Enables a secured playable RTMP link of your stream feed which can be used as a live source for the broadcasts.
+- Enter Studio Without Camera
+- Enumerated devices
+- Error happened on playing SourceAdded sound
+- Event fired ${e.type} ${e.reason} ${e.deviceKind}
+- Event source edit error
+- Event source edit network error
+- Expected the input to be `string | string[]`
+- Extra camera
+- Extra Camera
+- Extra Camera Add Camera Clicked
+- Extra Camera Allow Camera Clicked
+- Extra Camera Allow Camera Permission Modal Step Opened
+- Extra camera audio settings
+- Extra Camera Connect Devices Retry Clicked
+- Extra Camera Connect More Devices Modal Step Opened
+- Extra Camera Denied Camera Permission Modal Step Opened
+- Extra Camera Denied Camera Retry Clicked
+- Extra Camera Max Extra Cameras Limit Exceeded Modal Step Opened
+- Extra Camera Settings
+- Failed camera audio start attempt
+- Failed camera video start attempt
+- Failed init camera placeholder service: no initial video track
+- Failed to acquire devices
+- Failed to acquire screen wake lock on connection
+- Failed to add browser source
+- Failed to add browser source to scene
+- Failed to add browser source: no active brand
+- Failed to add browser source. Please try again or contact support
+- Failed to add camera
+- Failed to add camera on undo click
+- Failed to add camera placeholder
+- Failed to add camera placeholder on button click
+- Failed to add camera placeholder: scene not found
+- Failed to add camera placeholder: Wrong scene type
+- Failed to add camera: exceeded maximum number of cameras
+- Failed to add camera: video device and resolution must be selected
+- Failed to add producer for track ${r.sourceKind} ${t.kind} ${t.constructor.name} ${t.label}
+- Failed to add RTMP source to scene
+- Failed to add scene browser source
+- Failed to add screen share
+- Failed to add screen share to the edited scene
+- Failed to add source image
+- Failed to add source image by url ${e}
+- Failed to add source image by url on new scene ${e}
+- Failed to add source image files on click
+- Failed to add source image files on click: No files selected
+- Failed to add source image files on drop
+- Failed to add source image files on drop: No files selected
+- Failed to add source images batch
+- Failed to assign scene camera
+- Failed to assign scene source
+- Failed to change browser source layer
+- Failed to connect RTMP source
+- Failed to connect RTMP source.
+- Failed to convert client media device kind: Unsupported kind: ${e}
+- Failed to convert MediaDeviceInfo to ClientMediaDevice: Unsupported device kind ${e}
+- Failed to create 2D context for camera placeholder image
+- Failed to create 2D context for camera placeholder text
+- Failed to create browser source
+- Failed to create browser source: retrying
+- Failed to create CameraPlaceholderServiceV2
+- Failed to create media placeholder layout source
+- Failed to create source state model: Unknown state type ${t}
+- Failed to decode \`${e.name}\` input
+- Failed to delete browser source
+- Failed to delete browser source: retrying
+- Failed to edit ${this.internalSource?.kind??"undefined"} source properties on click: Not allowed
+- Failed to focus layout source ${this.id}: No state model found
+- Failed to get audioGain ${this.internalSource?.kind??"undefined"} source
+- Failed to get camera audio track
+- Failed to get camera audio track when starting audio and video: received ${n.readyState} track
+- Failed to get camera audio track when starting audio: received ${i.readyState} track
+- Failed to get camera video track
+- Failed to get camera video track when starting audio and video: received ${r.readyState} track
+- Failed to get camera video track when starting video: received ${i.readyState} track
+- Failed to get muted ${this.internalSource?.kind??"undefined"} source
+- Failed to get processed camera audio track: received ${n.readyState} track
+- Failed to get source kind: Unknown source type ${t}
+- Failed to get volume ${this.internalSource?.kind??"undefined"} source
+- Failed to hide ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to hide source. Please try again.
+- Failed to hide the RTMP source on the edited scene
+- Failed to hide the source on the edited scene
+- Failed to load camera placeholder avatar
+- Failed to load camera placeholder default avatar
+- Failed to load camera placeholder font
+- Failed to load green screen background image
+- Failed to log out user on join screen
+- Failed to maximize browser source
+- Failed to onChangeAudioGain ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to onMuteChange ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to onPlaceholderAddSourceClick ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to onPlaceholderImageClick ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to onPlaceholderPresentationClick ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to onPlaceholderScreenSharingClick ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to onPlaceholderVideoFileClick ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to put off air local video: Source state not found
+- Failed to read all browser source overlays: retrying
+- Failed to read source image by url: Failed to detect image type ${e}
+- Failed to read source image by url: Failed to fetch image blob ${e}
+- Failed to refetch browser sources after remove error
+- Failed to refresh RTMP Source Pull key
+- Failed to remove browser source from scene
+- Failed to remove browser source from scene before deleting widget
+- Failed to remove camera on hide click
+- Failed to remove camera placeholder
+- Failed to remove camera placeholder: scene not found
+- Failed to remove camera placeholder: Wrong scene type
+- Failed to remove RTMP source from scene
+- Failed to remove scene browser source
+- Failed to reorder sources on the edited scene
+- Failed to reorder sources. Please try again.
+- Failed to replace ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to replace screen sharing from per-share popover
+- Failed to reset browser source size
+- Failed to reset half screen layout options
+- Failed to reset half screen layout options for target ${e}
+- Failed to run camera video pipeline
+- Failed to select source media device
+- Failed to send media devices
+- Failed to set audio input device: device with such id not found
+- Failed to set audio output device
+- Failed to set audio output device: device with such id not found
+- Failed to set browser source by id: not found
+- Failed to set browser source: no permission to use paid features and a browser source is already visible on the scene
+- Failed to set on air ${this.stream.kind}: Source state not found
+- Failed to set sinkId on audio device chang
+- Failed to set solo ${this.stream.kind}: Source state not found
+- Failed to set source on air
+- Failed to set spotlighted for ${this.stream.kind}: Source state not found
+- Failed to set video input device: device with such id not found
+- Failed to start audio on audio input settings change
+- Failed to start camera after promotion
+- Failed to start camera audio
+- Failed to start camera video
+- Failed to start camera video pipeline
+- Failed to start screen share source
+- Failed to start screen share source in a new scene: stateKey await timed out
+- Failed to start screen share: exceeded maximum number of screen shares
+- Failed to start screen sharing on player controls button click
+- Failed to start screen sharing on preview button click
+- Failed to start video on video input settings change
+- Failed to stop all screen share streams
+- Failed to stop screen share media stream
+- Failed to swap scene sources
+- Failed to toggle on air for ${this.stream.kind}: Source state not found
+- Failed to toggle participant source
+- Failed to toggle RTMP source on the edited scene
+- Failed to toggle screen share on the edited scene
+- Failed to toggle source on the edited scene
+- Failed to unassign scene camera
+- Failed to unassign scene source
+- Failed to update audio gain for ${this.stream.kind}: Source state not found
+- Failed to update audio only for ${this.stream.kind}: Source state not found
+- Failed to update browser source
+- Failed to update browser source on scene
+- Failed to update browser source visibility
+- Failed to update browser source: retrying
+- Failed to update browser source. Please try again or contact support
+- Failed to update contain layout main source radius
+- Failed to update cover layout sources radius
+- Failed to update half screen layout main source radius
+- Failed to update half screen layout options
+- Failed to update half screen layout options: No active scene id
+- Failed to update half screen layout previews position
+- Failed to update half screen layout temp options
+- Failed to update mute for ${this.stream.kind}: Source state not found
+- Failed to update pip layout main source fixed position
+- Failed to update pip layout main source radius
+- Failed to update pip layout main source scale
+- Failed to update pip layout single main source position
+- Failed to update pip layout single main source position mode
+- Failed to update scene browser source
+- Failed to update showtime layout main source radius
+- Failed to update showtime layout secondary source radius
+- Failed to update source for event, continuing with other operations
+- Failed to update spotlight layout main source fixed position
+- Failed to update spotlight layout main source position mode
+- Failed to update spotlight layout main source radius
+- Failed to update spotlight layout main source scale
+- Failed to update spotlight layout single main source position
+- Failed to update tbpn layout main source radius
+- Failed to update thumbnails layout main source radius
+- Failed to update widget browser source
+- Failed to upload Video Storage file by public link: unsupported source
+- Fallback - is an automated system that switches between two of your incoming streams (ingests) in case of any troubles with your main stream source without interrupting stream for your viewers.
+- For best results, use an external camera and mic with the latest version of 
+- Free-text answer the user typed into the "Other..." input. Only present when "${Vi}" appears in \`optionIds\`.
+- Get all custom browser sources. Browser sources are web pages rendered as overlay iframes on the stream.
+- Get browser sources
+- Get clips while you're still live to share in the moment.
+- Get high-quality video and audio tracks, no matter your internet connection. Record all participants on the local device — perfect for podcasts and polished edits. 
+- Get insights on your live stream performance across multiple platforms – on a single screen.
+- Get started by allowing Studio to use your camera and mic.
+- Go live from your webcam
+- Got screen share source
+- Green Screen
+- Green Screen brightness
+- Green Screen contrast
+- Green Screen gamma
+- Green Screen similarity
+- Green Screen smoothness
+- Green Screen spill
+- Guest Join Screen Allow Webcam Clicked
+- Guest Join Screen Button Clicked
+- Guest Join Screen Edit Avatar Clicked
+- Guest Join Screen Skip Allow Webcam Clicked
+- Half Screen
+- Have several on-screen participants 
+- Hide all sources from the layout
+- Hide camera, keep audio
+- Host changed your camera to <bold>{deviceLabel}</bold>
+- Host changed your microphone to <bold>{deviceLabel}</bold>
+- Host Sources Deck Instant Pairs Click
+- Host wants to change your camera to <bold>{deviceLabel}</bold>
+- Host wants to change your microphone to <bold>{deviceLabel}</bold>
+- I'm sure my device can handle it
+- If you can’t use the barcode, type your secret code manually into the mobile app. Make sure that nobody can see your screen while you type the code.
+- Ignoring media device change offer with null: Not implemented
+- Ignoring media device change offer: Device not found
+- Ignoring media device change offer: Source not found
+- Ignoring media device change offers: Denied by user
+- Ignoring media device change offers: Devices not found
+- Ignoring setting source on air: Scene not found
+- Input
+- Input '${JSON.stringify(t)}' is not a string
+- Input '${JSON.stringify(t)}' is not JSON string
+- Input ARN object is invalid
+- Input validation error: 
+- Inputs
+- Instagram is a free photo and video sharing app available on iPhone and Android. People can upload photos or videos to our service and share them with their followers or with a selected group of frien
+- Invalid ${e.toolName} payload: ${t}. The FE schema rejected this input; please re-emit with a schema-valid payload.
+- Invalid browser source url
+- Invalid browser source URL
+- Invalid input
+- Invalid input for tool ${t}: ${(0,i.u1)(n)}
+- Invalid input: must end with "${e.validation.endsWith}"
+- Invalid input: must include "${e.validation.includes}"
+- Invalid input: must start with "${e.validation.startsWith}"
+- Invalid Source Image file mime type
+- Invite guests, mute/unmute yourself or share your screen while live.
+- Join Screen Allow Mic/Webcam Clicked
+- Join Screen Edit Avatar Clicked
+- Join Screen Enter Studio Button Clicked
+- Learn more in our %sGreen Screen guide%s.
+- Loading browser sources…
+- Local video requires a capable device to play. <br> See our <link>support article<link> for details.
+- Login verified device required error
+- Long single camera
+- Main Source
+- Main source [x, y] position for PICTURE_IN_PICTURE (when mainPositionMode=Freemove)
+- Main source corner radius (% of item height, 0–100). For: THUMBNAILS, PICTURE_IN_PICTURE, Showtime
+- Main source fixed grid position for PICTURE_IN_PICTURE (when mainPositionMode=Fixed). Values: TopLeft, TopCenter, TopRight, LeftCenter, CenterCenter, RightCenter, BottomLeft, BottomCenter, BottomRight
+- Main source position mode for PICTURE_IN_PICTURE. Values: Freemove, Fixed
+- Main source scale (% of scene height, 0–100). For: PICTURE_IN_PICTURE
+- Max scenes reached. Remove a scene to screenshare
+- Maximum number of screen shares reached
+- Maximum screen shares reached
+- Media Device Change Request Allowed
+- Media Device Change Request Received
+- Media Device Change Request Rejected
+- Media source can't be added on countdown scene
+- Min sources per column
+- Mirror camera
+- Mirror Camera Toggled
+- Multiple sources
+- Mute all sources
+- Mute or unmute a participant source. Only works on media stream sources.
+- Mute source
+- Muting audio input: Failed to restart unexpectedly ended audio track ${e.label}
+- Natural-language description of the web research goal, including source or freshness guidance and broader context from the task. Maximum 5000 characters.
+- New <bold>RTMP source</bold> added. <actionButton>Add to the scene</actionButton>
+- New display name for the browser source
+- New Source Toast
+- New URL for the browser source. Not allowed for AI-generated widgets.
+- No devices available
+- No devices detected
+- No need to upgrade your bandwidth or device capacity, 
+- No recording files found on this device.
+- Nonolive is a global live broadcast platform that brings together many high-quality contracted anchors, amateur beauty artists, and gamers to share their passion.
+- Not a camera source
+- Off-stage screen shares continue capturing your screen and using your system resources.
+- One source is spotlighted; other sources positioned beneath as a row of thumbnails; used to represent THUMBNAILS, Showtime & TBPN in portrait orientation. Main (spotlighted) source position: 0.
+- Open sources sidebar
+- Optional display name for the browser source
+- Own Camera Blind Toggled
+- Participant Screen Share Names Toggled
+- Participant source not found
+- Participant source toggled
+- Participants need powerful devices to avoid performance issues. Only UHD cameras or screens will be recorded in 4K.
+- Participants screen share names hidden
+- Periscope enables you to go live with your mobile device—anytime and anywhere. The app helps you become your own “on-the-go” broadcasting station. 
+- Please connect more video input devices
+- Please update system permissions to allow screen recording for the browser.
+- Please, accept webcam / mic permissions.
+- Position of the countdown on screen, where {x: 0, y: 0} is centered
+- Previously selected device unexpectedly stopped
+- Primary camera
+- Received RTMP Source Pull failed status: ${e.reason}
+- Received tool-input-delta for missing tool call with ID "${e.toolCallId}". Ensure a "tool-input-start" chunk is sent before any "tool-input-delta" chunks.
+- Record 4K sources in full resolution
+- Remove a camera placeholder from a scene. Does not work on Countdown scenes.
+- Remove camera slot
+- Remove source
+- Removing browser source…
+- Removing camera slot…
+- Removing RTMP source from scene ${this.id}
+- Requested guest to change camera to <bold>{deviceLabel}</bold>
+- Requested guest to change microphone to <bold>{deviceLabel}</bold>
+- Requested host to change camera to <bold>{deviceLabel}</bold>
+- Requested host to change microphone to <bold>{deviceLabel}</bold>
+- Requesting media device selection ${this.label}
+- Restream Chat lets users manage all communication on one screen, connect cross-platform audiences via message mirroring, integrate with Discord, and more.
+- Restream helps you grow an audience of the streamers and share broadcasts through different platforms. Forgot your password? Recover your Restream account here.
+- Restream Studio requires Safari to work on this device. Tap the share icon
+- RTMP as a source
+- RTMP source
+- RTMP Source
+- RTMP source is restarting because of the new incoming stream
+- RTMP Source Pull Status Updated
+- RTMP Source RTMP URL Copied
+- RTMP Source Stream Key Copied
+- RTMP Source Upgrade Clicked
+- Scene Placeholder Add Source Modal Button Clicked
+- Scenes Expanded Sources
+- Scenes Sources Popover
+- Screen
+- Screen share
+- Screen Share
+- Screen share (off air)
+- Screen share (on air)
+- Screen share labels
+- Screen share names
+- Screen share source was stopped before stateKey was attached
+- Screen sharing
+- Screen sharing active
+- Screen sharing is not allowed.
+- Screen sharing is not supported on your device.
+- Screenshare on a new scene
+- Screenshare Scroll Triggered
+- Screenshare Zoom And Scroll Enable Clicked
+- Screenshare Zoom And Scroll Enabled
+- Screenshare Zoom In Clicked
+- Screenshare Zoom Out Clicked
+- Screenshare Zoom Reset Clicked
+- Second Screen Share Warning Modal Confirmed
+- Second Screen Share Warning Modal Dismissed
+- Second Screen Share Warning Modal Shown
+- Secondary source corner radius (% of item height, 0–100). For: Showtime
+- See and share the world in motion. Watch and share the world of videos. See and share the world through videos. Watch and share the Internet's best videos.
+- Selected audio output device not found. Make sure it's connected and try again.
+- Selected audio output device resulted in an unexpected error.
+- Set ${this.isPrimaryCamera?"primary":"extra"} audio input device
+- Set default output audio device
+- Set output audio device
+- Set the audio gain level (volume) of a participant source. Only works on media stream sources that support audio gain (webcam, screen share, video).
+- Set the base style for your on-screen captions, chat messages, and name-plates.
+- Set video device
+- Setting default input audio device
+- Setting default video device
+- Share a video file from your computer.
+- Share an image from your computer.
+- Share clips on TikTok, YouTube Shorts, and Reels
+- Share directly or paste into <b>Lu.ma</b>, <b>Cal.com</b>, or any <b>calendar invite</b>.
+- Share on Facebook
+- Share on TikTok, YouTube Shorts, and Reels
+- Share on X
+- Share screen
+- Share Screen Button Clicked
+- Share the recording with anyone who missed it
+- Share Your Link
+- Share your screen or invite guests to explore layouts.
+- Shared workspace assets
+- Sharing multiple screens may affect your machine performance and stream quality.
+- Show all sources on the layout
+- Show or hide a participant source (camera, screen share, etc.) on the stream. Use stateKey from the participants state to identify the source.
+- Show/hide participant names (name + title image tag in bottom right corner of source) for a specific scene. Does not work on Countdown scenes.
+- Show/hide screen share participant names (name + title image tag in bottom right corner of source) for a specific scene. Does not work on Countdown scenes.
+- Single source
+- Something went wrong while adding extra camera. Please try again
+- Source
+- Source A
+- Source Audio Gain Changed
+- Source Audio Only Button Clicked
+- Source Autoswitch Toggle Clicked
+- Source B
+- Source Deck
+- Source hidden. <disableSceneAutoSwitchButton>Disable auto-switch</disableSceneAutoSwitchButton> to show it.
+- Source hidden. To show, change <settingsLinkButton>non-video settings</settingsLinkButton>
+- Source Image File Started Processing
+- Source Loop Button Clicked
+- Source Media Device Clicked
+- Source Menu Shown
+- Source Mute Button Clicked
+- Source name
+- Source not shown in Spotlight. Try another layout.
+- Source not shown. Hide other sources to display it.
+- Source not visible when another is maximized.
+- Source On Air Button Clicked
+- Source policy for controlling which domains to include/exclude and freshness.
+- Source Remove Button Clicked
+- Source Replace With Placeholder Clicked
+- Source Scene Assignment Mode Clicked
+- Source Scene Assignment Mode Selected
+- Source Scene Assignment Scene Clicked
+- Source Scene Assignment Scene Selected
+- Source shape for AUTO_CONTAIN. Values: Rectangle (16:9), Square (1:1), Circle
+- Source Toggle
+- Source URL
+- Source Video Settings Button Clicked
+- Source volume
+- Sources
+- Sources Deck
+- Sources Deck Max Participants Upgrade Clicked
+- Sources On Layout Changed
+- Sources Tab Opened
+- Start of webcam media stream skipped
+- Start Screen Sharing
+- Start without camera
+- Start Without Camera Clicked
+- Started camera audio media stream ${i.label}
+- Started camera media stream ${r.label} / ${n?.label??"None"}
+- Started camera on main store initialization
+- Started camera on main store load
+- Started camera on main store preloading
+- Started camera video media stream ${i.label}
+- Started screen sharing source
+- Starting new screen share
+- Starting screen share source
+- Stereo audio input
+- Stop an existing screen share to add a new one.
+- Stop screen sharing
+- Stop Screen Sharing Button Clicked
+- Stopped screen share stream with reason ${e}
+- Stopping camera source with reason ${e}
+- Stopping current audio input track with reason ${e}
+- Stopping current video input track with reason ${e}
+- Stopping local video source with reason ${e}
+- Stopping screen share stream with reason ${e}
+- Store default output audio device
+- Stored default audio input device
+- Stored default video device
+- Streaming the camera and microphone is not supported in your browser.
+- Streaming the microphone is not supported on your device.
+- Studio needs access to your camera
+- Studio needs access to your camera and microphone.
+- Switching audio input: Unexpectedly ended non-restartable audio track ${e.label}
+- Switching video input: Unexpectedly ended non-restartable video track ${e.label}
+- The host muted your screen share
+- The host unmuted your screen share
+- The ID of the browser source on the scene
+- The ID of the browser source to add to the scene
+- The ID of the browser source to detach from the scene
+- The inputTranscript field is deprecated, use the encodedInputTranscript field instead. The inputTranscript field is available only in the de-DE, en-AU, en-GB, en-US, es-419, es-ES, es-US, fr-CA, fr-FR
+- The presentation source has been added and is waiting for the host to enable it.
+- The stateKey of the camera source
+- The stateKey of the source
+- The stateKey of the source to toggle
+- The stateKey of the webcam source
+- The type of scene to create: "Default" for live camera, "Media" for media/video, "Countdown" for countdown timer
+- There's nothing to share. Make sure the browser has a permission to record the screen.
+- This is your recovery code. It can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes
+- This source is on all scenes — switch it to per-scene first
+- This source is on all scenes — switch it to per-scene in Sources first
+- TikTok is a mobile-first, short-form video sharing app where users create lip-syncing and comedic content to share with their followers.
+- Time spent writing the tool input arguments before execution could start.
+- To add source, go to a different scene than countdown
+- To create a live broadcast, make sure your camera and microphone are turned on and Restream Studio is allowed to use them. ⏎ You can always turn these off later.
+- To switch to Webcam, you'll first have to stop streaming
+- Toggle source
+- Toggle sources tab
+- Toggling camera video…
+- Toggling participant source…
+- Too many browser source overlays
+- Trovo is an interactive live streaming platform, you can check out the hottest games live, share your own gaming experiences, and join an amazing community.
+- Turn screen share names off
+- Turn screen share names on
+- Unable to access camera and microphone
+- Unable to access the camera
+- Unassigning scene camera ${e} ${t}
+- Unassigning scene source ${e} ${t}
+- Unexpected media device event ${o} reason ${s}
+- Unexpected media device event kind ${e}
+- Unexpected media device event type ${o}
+- Unmute all sources
+- Unplugged device audio track ended ${e.label} - doing nothing
+- Unplugged device video track ended ${e.label} - doing nothing
+- Unsupported edited-scene layout source
+- Up to 10 on-screen guests
+- Update a browser source that is already added to a scene. Can change visibility, z-index, position, and size.
+- Update any scene while you're live. Swap guests, add screen shares, apply graphics, and adjust the layout — without changing what's on air. When you're ready, show the updated scene to your audience.
+- Update browser source
+- Updated camera audio input track to ${e?.label??"none"}
+- Updated camera video input track to ${e?.label??"none"}
+- Updated producer encodings ${this.sourceKind} ${m}
+- Updating browser source…
+- Updating source for event
+- Updating source state ${this.state.type} scene assignment mode
+- Updating source state audio gain ${this.state.type}
+- Updating source state audio gain ${this.state.type} with unmute
+- Updating source state audio only ${this.state.type}
+- Updating source state muted ${this.state.type}
+- Updating source state on air ${this.state.type}
+- Updating source state solo ${this.state.type}
+- Updating source state spotlighted ${this.state.type}
+- Upgrade to unlock RTMP source
+- Upload by public link unsupported source error
+- Upload inputs validated
+- Use the device and browser you used to join this stream.
+- User ID is required for device verification
+- User not found for device verification
+- Verified device required
+- Video device
+- Video input
+- Video Input Device Changed: ${e}
+- Virtual Background requires a capable device to run. See our %ssupport article%s for details.
+- Want more people on your stream? Unlock %upgradeParticipantsCount screen participants with one of our paid plans. %sUpgrade now%s
+- Webcam
+- WebGLRenderer: Can't change size while VR device is presenting.
+- WebGLRenderer: Unable to use linear filtering with floating point textures. OES_texture_float_linear not supported on this device.
+- WebGLRenderer.render: camera is not an instance of THREE.Camera.
+- Webinar Live Call Allow Webcam Clicked
+- When the user wants their brand color to be visible on screen, prefer DEFAULT, NEWS, or ROUNDED. Use Air only for explicit "minimal" / "no chrome" / "clean" requests.
+- Whether screen share participant names should be visible
+- Whether the browser source is visible
+- Whether the source should be on air (visible on stream)
+- Whether to blind (hide video) or unblind (show video) the camera
+- Whether to mute the source
+- Widget regenerated but updating the browser source failed
+- X is the place to see what's happening in the world—from breaking news to major live events. You can easily create live videos to share what's happening live.
+- You can hide users with a disabled camera from the stream, while they can still be heard.
+- You can switch it off from <openSourcesButton>Sources</openSourcesButton>
+- You have blocked camera access. Please update your browser settings to allow access.
+- You have blocked camera access. Please update your browser settings to allow access. Learn more in our %sHelp Center%s.
+- You have blocked camera access. To go live, please update your browser settings to allow access. ⏎ Learn more how to setup camera properly in our %sHelp Center%s.
+- You have blocked camera and microphone access.
+- You have reached maximum amount of browser sources per scene
+- You will be disconnected shortly due to inactivity. Tap anywhere on the screen or press any key to stay connected.
+- You'll get full video and audio, separate feeds of all sources and participants, up to ${o} hr/stream. Need more? 
+- You've exceeded the maximum number of browser sources
+- You’ve reached the limit of %cameras extra camera
+- You’ve reached the limit of %cameras extra cameras
+- You’ve reached the maximum of %s RTMP source
+- Your avatar will be visible when you turn off your camera
+- Your browser has blocked your screen. Click the screen icon in your address bar to allow access. ⏎ 
+- Your camera and audio are recorded locally. Please stay after the stream until uploads finish.
+
+### Layouts (187)
+
+-  Found in ${(0,f.$X)(e.stack)}
+- ". Here is a stacktrace:
+- <b>Studio 2.0<b>: Prepare your stream with scenes, try new layouts, and much more. You can always switch back if needed.
+- Add a simple color or gradient fill behind your layout.
+- Changing layout…
+- Corner radius (% of source height, 0–100). For: AUTO_CONTAIN, AUTO_COVER, SPOTLIGHT, HALF_SCREEN
+- Custom Layouts (soon)
+- Destroying video pipeline
+- Destroying video pipeline with error
+- Explore Scenes, add a Countdown, try a new Layout, %sand more%s.
+- Failed to adapt edited-scene layout identifier: ${t}
+- Failed to create media placeholder layout source
+- Failed to create video pipeline: no video track
+- Failed to focus layout source ${this.id}: No state model found
+- Failed to play layout audio media stream
+- Failed to play layout video media stream
+- Failed to reset contain layout options
+- Failed to reset cover layout options
+- Failed to reset half screen layout options
+- Failed to reset half screen layout options for target ${e}
+- Failed to reset layout options
+- Failed to reset pip layout options
+- Failed to reset pip layout options for target ${e}
+- Failed to reset showtime layout options
+- Failed to reset showtime layout options for target ${e}
+- Failed to reset spotlight layout options
+- Failed to reset tbpn layout options
+- Failed to reset thumbnails layout options
+- Failed to reset thumbnails layout options for target ${e}
+- Failed to run camera video pipeline
+- Failed to set layout type
+- Failed to set solo ${this.stream.kind}: Source state not found
+- Failed to set spotlighted for ${this.stream.kind}: Source state not found
+- Failed to start camera video pipeline
+- Failed to start effects-only pipeline: no effect is ready
+- Failed to update contain layout main source radius
+- Failed to update contain layout options
+- Failed to update contain layout options: No active scene id
+- Failed to update contain layout shape
+- Failed to update contain layout temp options
+- Failed to update cover layout options
+- Failed to update cover layout options: No active scene id
+- Failed to update cover layout sources radius
+- Failed to update cover layout temp options
+- Failed to update half screen layout main source radius
+- Failed to update half screen layout options
+- Failed to update half screen layout options: No active scene id
+- Failed to update half screen layout previews position
+- Failed to update half screen layout temp options
+- Failed to update HLS video spotlighted on button click: Not allowed
+- Failed to update HLS video spotlighted on button click: State not found
+- Failed to update layout options
+- Failed to update pip layout main source fixed position
+- Failed to update pip layout main source radius
+- Failed to update pip layout main source scale
+- Failed to update pip layout options
+- Failed to update pip layout options: No active scene id
+- Failed to update pip layout previews position
+- Failed to update pip layout previews radius
+- Failed to update pip layout previews shape
+- Failed to update pip layout previews size
+- Failed to update pip layout single main source position
+- Failed to update pip layout single main source position mode
+- Failed to update pip layout temp options
+- Failed to update presentation spotlighted on button click: Not allowed
+- Failed to update showtime layout main source radius
+- Failed to update showtime layout options
+- Failed to update showtime layout options: No active scene id
+- Failed to update showtime layout previews radius
+- Failed to update showtime layout secondary alignment
+- Failed to update showtime layout secondary source radius
+- Failed to update showtime layout temp options
+- Failed to update spotlight layout main source fixed position
+- Failed to update spotlight layout main source position mode
+- Failed to update spotlight layout main source radius
+- Failed to update spotlight layout main source scale
+- Failed to update spotlight layout options
+- Failed to update spotlight layout options: No active scene id
+- Failed to update spotlight layout single main source position
+- Failed to update spotlight layout temp options
+- Failed to update tbpn layout main source radius
+- Failed to update tbpn layout options
+- Failed to update TBPN layout options: No active scene id
+- Failed to update tbpn layout temp options
+- Failed to update thumbnails layout main source radius
+- Failed to update thumbnails layout options
+- Failed to update thumbnails layout options: No active scene id
+- Failed to update thumbnails layout previews position
+- Failed to update thumbnails layout previews radius
+- Failed to update thumbnails layout previews shape
+- Failed to update thumbnails layout previews size
+- Fifth Layout
+- First Layout
+- Fixed grid position for SPOTLIGHT (when positionMode=Fixed). Values: TopLeft, TopCenter, TopRight, LeftCenter, CenterCenter, RightCenter, BottomLeft, BottomCenter, BottomRight
+- For now, try it on the Picture-in-Picture and Thumbnails layouts.
+- Fourth Layout
+- Free-move [x, y] position for SPOTLIGHT (when positionMode=Freemove)
+- Guests and layouts adjust automatically
+- Hide all sources from the layout
+- Hide picture in picture
+- Layout
+- Layout changed
+- Layout customization available only in <button>Landscape</button>
+- Layout customization available only in Landscape
+- Layout Customization Button Clicked
+- Layout mode
+- Layout Options Changed
+- Layout options reset
+- Layout Options Reset Button Clicked
+- Layout options updated
+- Layout Preview Audio Media Stream Play Error
+- Layout Preview Video Media Stream Play Error
+- Layout Streams Swapped
+- Layout Type Changed
+- Layout Type Selected
+- Layouts
+- Main source fixed grid position for PICTURE_IN_PICTURE (when mainPositionMode=Fixed). Values: TopLeft, TopCenter, TopRight, LeftCenter, CenterCenter, RightCenter, BottomLeft, BottomCenter, BottomRight
+- news-strip layout with a primary-color stripe. Good for professional or news-style content.
+- No stack, consider using an instance of Error
+- Not on layout or transparent: setting optimal spatial layer
+- Not on layout: pausing
+- On layout or disable pausing: resuming
+- One source is spotlighted; other sources positioned beneath as a row of thumbnails; used to represent THUMBNAILS, Showtime & TBPN in portrait orientation. Main (spotlighted) source position: 0.
+- Optional layout type for the scene. If not provided, a sensible default is used based on scene type. ${h.HV}
+- Padded Spotlight
+- Picture in Picture
+- Pipeline
+- Pipelines
+- Pipes
+- Position mode for SPOTLIGHT. Values: Freemove (x,y coords), Fixed (pre-defined grid)
+- Position mode: "ReservedSpace" (chat stays in a fixed area that shifts the video layout) or "Freemove" (chat can be placed anywhere over the video)
+- Reset a scene's layout options to their default values. The scene must already have the specified layout type set.
+- Reset layout options
+- Resetting layout options…
+- Scale (% of scene height, 0–100). For: SPOTLIGHT
+- Scene Edit Mode Pip Toggled
+- Second Layout
+- Set layout
+- Set the layout type for a specific scene. Applies the layout type to the specified scene.
+- Setting up upload pipeline
+- Seventh Layout
+- Share your screen or invite guests to explore layouts.
+- Show all sources on the layout
+- Show picture in picture
+- Sixth Layout
+- Solo puts a participant as the sole active speaker
+- Solomon Islands
+- Source not shown in Spotlight. Try another layout.
+- Sources On Layout Changed
+- Split
+- Split Audio Recording Popover Upgrade Closed
+- Split Audio Recording Popover Upgrade Shown
+- Split audio recordings
+- Split audio recordings 
+- Split audio track recording
+- Split audio track recording, 
+- Split audio tracks
+- Split audio/video downloads
+- Split audio/video recordings
+- Split video tracks
+- Spotlight
+- Stack More Codes
+- Stack more promo codes to get additional Facebook channels and Doublings
+- Stack more promo codes to get more years of Restream Standard plan.
+- Stack previews vertically
+- Stack trace not available. Enable "THREE.Node.captureStackTrace" to capture stack traces.
+- Stacks
+- Started video pipeline
+- Stream Spotlight Button Clicked
+- The layout type currently set on the scene
+- The layout type. ${Ke.HV}
+- The specified layout type does not match the scene's current layout type
+- Third Layout
+- Track on layout status changed
+- Unsupported edited-scene layout source
+- Update any scene while you're live. Swap guests, add screen shares, apply graphics, and adjust the layout — without changing what's on air. When you're ready, show the updated scene to your audience.
+- Update layout options
+- Updating layout options…
+- Updating source state solo ${this.state.type}
+- Updating source state spotlighted ${this.state.type}
+- Upload pipeline setup complete
+- Wait until stack status is CREATE_COMPLETE.
+- Wait until stack status is DELETE_COMPLETE.
+- Wait until stack status is IMPORT_COMPLETE.
+- Wait until stack status is UPDATE_COMPLETE.
+- Wait until stack status is UPDATE_ROLLBACK_COMPLETE.
+- When true, return detailed scene info; when false, return only id, name, type and layout type
+
+### Guests & invites (505)
+
+-  is not hostname compatible.
+- "+(i?", __e = _.escape":"")+(a?", __j = Array.prototype.join; ⏎ function print() { __p += __j.call(arguments, 
+- "+(l.length>0?", expected one of type ["+l.join(", ")+"]":"")+".")}))},shape:function(e){return m((function(t,r,n,a,o){var s=t[r],l=v(s);if("object"!==l)return new p("Invalid "+a+" 
+- {names} has joined.<br></br>Do you want to add them to the stream?
+- {names} have joined.<br></br>Do you want to add them to the stream?
+- %count attendee requesting to join...
+- %count attendees requesting to join...
+- <b>$count attendee</b> is here and waiting.
+- <b>$count attendees</b> are here and waiting.
+- 10 co-producers
+- 10 on-screen guests
+- 10 on-screen participants
+- 10 on-screen participants in Studio
+- 10 on-screen participants in Studio, 
+- 30+ platforms. 1 channel per platform ⏎ 1 Custom/Extra destination ⏎ Recording - 6 hrs/stream, stored for 15 days ⏎ Streaming to Facebook public pages/groups ⏎ 10 on-screen participants in Studio
+- 4 co-producers
+- 6 on-screen guests
+- 6 on-screen participants
+- Add a specific participant
+- Add Participant
+- Add up to %count guest. (Max limit: %max)
+- Add up to %count guests. (Max limit: %max)
+- Added audio producer
+- Added pending webinar viewer invite
+- Added producer
+- Added video producer
+- All files were uploaded and shared with the host.
+- All participants have powerful devices
+- All recorded tracks will be uploaded and accessible only to the Host. Works on desktop, Google Chrome. 
+- Allow camera access to join
+- Allow guests to re-broadcast
+- Already in the room:
+- Are you sure you want to promote <b>$name</b> to co-host of this Studio stream, limited to 3 hours? This cannot be undone.
+- Are you sure you want to promote guest to co-host of this Studio stream, limited to 3 hours? This cannot be undone.
+- Asked {name} to join as a guest
+- Asked the attendee to join as a guest
+- Audio-only is OFF for {participantName} - everyone can see and hear them
+- Audio-only is ON for {participantName} - everyone can hear them
+- Backstage
+- Backstage Button
+- Bad Room Manager message received
+- Become a co-host
+- Blind or unblind a participant webcam source. When blinded, the camera video track is disabled and a placeholder/avatar is shown instead. Only works on the host own webcam sources.
+- Brand your captions and participants names by selecting theme.
+- Can not join the room
+- Can't promote <b>$name</b> to co-host. Please try again later.
+- Can't promote guest to co-host. Please try again later.
+- Can't resume participant's local recording. Please, try again
+- Can't stop participant's local recording. Please, try again
+- Cancel Invite
+- Cannot add channels to the event. Host does not have access to Pairs.
+- Cannot add channels to the event. Please ask host to enable Pairs.
+- Cannot create pairs child event: Join token not found
+- Cannot join
+- Cannot join the room
+- Capture flawless audio and video, no matter your connection. Record all participants on the local device — perfect for podcasts and polished edits.
+- Change the display name and/or title of a participant. To change the host own name, omit participantId. To change a guest name, provide their id from the participants state.
+- Client Failed To Join Full Room
+- Client Joined The Host
+- Client Left The Host
+- Co-host is trying to join.
+- Co-host muted themselves
+- Co-host with guests and let viewers call in
+- Connected to the room
+- Connected to the room on main store initialization
+- Connected to the room on preview initialization
+- Connecting to the room
+- Continuing to use current active brand: Failed to set brand from room state
+- Copy Invite
+- Copy invite link
+- Copy Invite Link
+- Could not add producer when is not connected
+- Could not convert regex pattern at ${t.currentPath.join("/")} to a flag-independent form! Falling back to the flag-ignorant source
+- Could not remove producer when is not connected
+- Creating send and receive WebRTC transports and waiting for DataConsumerAdded message from SFU
+- Current invite link will stop working. Are you sure?
+- Custom and guest channels
+- DataConsumer or DataProducer closed while waiting for readiness
+- Defaults to `instrumental: true` because vocals over a livestream clash with the host's voice. Set `instrumental: false` only after the disambiguation step above resolves to a song with lyrics.
+- Destroying room media stream without tracks
+- Disconnecting viewer: joined while webinar mode is off
+- Enable only if participants use devices with powerful CPUs. Otherwise, app and stream performance may drop.
+- Enable or disable audio-only mode on a participant camera source. When enabled, video is hidden and only audio is transmitted. Only works on main webcam sources.
+- Enable or disable local recording for all participants. Only available for users with a paid plan that includes local recordings (check localRecordingAvailable in state).
+- Error happened on playing GuestJoinedAudio sound
+- Error happened on playing HostJoined sound
+- Event invite token pairs disabled
+- Event not found by join token
+- Failed connect to the room
+- Failed to accept webinar studio invite
+- Failed to add presentation while waiting for the host
+- Failed to add producer
+- Failed to add producer for track ${r.sourceKind} ${t.kind} ${t.constructor.name} ${t.label}
+- Failed to add producer: No connection or active client
+- Failed to add producer: producer for that track already exists
+- Failed to await an in-progress deep-linked webinar join
+- Failed to cancel invite. Please try again.
+- Failed to cancel webinar attendee invite
+- Failed to cancel webinar viewer invite to studio
+- Failed to capture room media preview for ${this.kind}
+- Failed to decline webinar studio invite
+- Failed to decode room producer app data
+- Failed to disable simulcasting: not found encodings for the producer
+- Failed to fetch guest id token
+- Failed to fetch guest presentations
+- Failed to fetch image: the remote host may not allow browser access (CORS)
+- Failed to fetch live chat history from the room
+- Failed to fetch room participants
+- Failed to get event invite token
+- Failed to get invite URL join token: No event id
+- Failed to get participant name on init
+- Failed to get participant title on init
+- Failed to get room info: bad request
+- Failed to get room info: connection aborted
+- Failed to get room info: event finished
+- Failed to get room info: room no longer available
+- Failed to get room info: room not available yet
+- Failed to get room info: room not available, retrying
+- Failed to handle join: Init status await timed out
+- Failed to handle joining
+- Failed to init Guest store
+- Failed to init Guest store for login
+- Failed to init Guest store for upload
+- Failed to init guest virtual backgrounds
+- Failed to init Host store
+- Failed to init participant name store
+- Failed to invite webinar attendee to studio
+- Failed to invite webinar viewer to studio
+- Failed to join
+- Failed to join on Enter Studio button click
+- Failed to join: token not found
+- Failed to join. Can not join with the current status
+- Failed to kick guest: No connection
+- Failed to log out user on join screen
+- Failed to loop HLS video: Room Manager commands not allowed
+- Failed to pause HLS video on host click: HLS video not found
+- Failed to pause HLS video: Room Manager commands not allowed
+- Failed to play webinar invite to studio sound
+- Failed to promote guest ${e} to host on onPromoteToHostClick
+- Failed to read event invite token: retrying
+- Failed to refresh event invite token: retrying
+- Failed to refresh invite URL join token: No event id
+- Failed to rejoin webinar on room closure
+- Failed to replace producer track ${i} ${s} ${r}
+- Failed to replace producer track to ${e?.label??"none"}
+- Failed to resolve skin categories: model labels are [${i.join(", ")}]
+- Failed to resume HLS video on host click: HLS video not found
+- Failed to resume HLS video: Room Manager commands not allowed
+- Failed to save participant name
+- Failed to save participant title
+- Failed to seek HLS video on host click: HLS video not found
+- Failed to seek HLS video: Room Manager commands not allowed
+- Failed to send invite. Please try again.
+- Failed to send Room Manager message ${d.type}: Received error response
+- Failed to send Room Manager message ${d.type}: Received unknown response
+- Failed to send Room Manager message ${d.type}: Response timed out
+- Failed to send Room Manager message ${t.type}: No connection
+- Failed to send Room Manager message ${t.type}: Send errored
+- Failed to set state: unsupported room connection state
+- Failed to stop HLS video: Room Manager commands not allowed
+- Failed to toggle participant names visibility
+- Failed to toggle participant source
+- Failed to update active channels: no room id
+- Failed to update invite URL join token: No event id
+- Failed to update participant name
+- Failed to update producer encodings: not a single encoding provided
+- Failed to update producer encodings: producer has no RTP sender
+- Failed to update producer encodings: sender encodings and new encodings have different length
+- Failed to update producer stats. Unknown id
+- Failed with room connection error
+- Fetch approved for {{title}}.
+- Fetching guest id token
+- For the host to see and hear you, allow mic and cam permissions.
+- Get a color palette from a remote image URL in the browser. The image host must allow CORS so pixels can be read from canvas. Returns success=false with an error when the image cannot be fetched or an
+- Get a new invite link
+- Get high-quality video and audio tracks, no matter your internet connection. Record all participants on the local device — perfect for podcasts and polished edits. 
+- Got event invite token
+- Got join token data for ${t}
+- Guest
+- Guest can add channels
+- Guest can control all presentations
+- Guest client already connected
+- Guest client already in connecting state
+- Guest Connected
+- Guest Connection Attempt
+- Guest Connection Attempt Error
+- Guest Connection Lost
+- Guest Destinations Summary Pairs Button Clicked
+- Guest Feedback Submitted
+- Guest is trying to join.
+- Guest Join Button Clicked
+- Guest Join Error
+- Guest Join Screen Allow Webcam Clicked
+- Guest Join Screen Button Clicked
+- Guest Join Screen Edit Avatar Clicked
+- Guest Join Screen Skip Allow Webcam Clicked
+- Guest Joined
+- Guest Leave Button Clicked
+- Guest muted themselves
+- Guest Pairs Onboarding Popover Shown
+- Guest route loaded
+- Guest Trigger Clicked
+- Guests
+- Guests (even when backstage) can navigate all presentation slides.
+- Guests and layouts adjust automatically
+- Guests can add channels to this stream
+- Guests can re-broadcast on their channels
+- has invited you to use Restream.
+- Have several on-screen participants 
+- Host
+- Host Aborted Stream Start
+- Host changed your camera to <bold>{deviceLabel}</bold>
+- Host changed your microphone to <bold>{deviceLabel}</bold>
+- Host Connected
+- Host Connection Attempt
+- Host Connection Attempt Error
+- Host Connection Error
+- Host Connection Lost
+- Host End Stream Error
+- Host Ended Stream
+- Host Feedback Submitted
+- Host Go Live Error
+- Host Gone Live
+- Host route loaded
+- Host Sources Deck Instant Pairs Click
+- Host wants to change your camera to <bold>{deviceLabel}</bold>
+- Host wants to change your microphone to <bold>{deviceLabel}</bold>
+- HostClipboardService constructed
+- Hostname
+- Hostname label length should be between 1 to 63 characters, inclusive.
+- Hosts
+- HostUndoService constructed
+- How will your audience join?
+- Ignoring viewer invite: client is not in viewer mode
+- Inaccessible host: `
+- Initialized invite URL
+- Invalid discriminator value. Expected ${r.joinValues(e.options)}
+- Invalid enum value. Expected ${r.joinValues(e.options)}, received '${e.received}'
+- Invalid hostname '${e}'
+- Invalid IPv6 hostname '${e}'
+- Invite 10 people to join your stream with a link.
+- Invite 6 people to join your stream with a link.
+- Invite Guest Link Refresh Clicked
+- Invite Guest Link Refresh Confirmation Modal Confirm Clicked
+- Invite Guest Link Refresh Confirmation Modal Dismissed
+- Invite Guest Link Refresh Confirmation Modal Shown
+- Invite Guest Popover Instant Pairs Toggle Upgrade Clicked
+- Invite Guest Popover Pairs URL Toggled
+- Invite Guest Popover Shown
+- Invite Guest Popover Toggle Instant Pairs Toggle Upgrade Clicked
+- Invite Guest Popover Upgrade Clicked
+- Invite Guest Popover Upgrade Closed
+- Invite Guest Popover Upgrade Shown
+- Invite Guest Popover URL Copied
+- Invite guests
+- Invite Guests
+- Invite Guests Popover
+- Invite guests, mute/unmute yourself or share your screen while live.
+- Invite others to stream your event on their channels
+- Invite people to link their social media accounts to your live event. Reach more people and make your event a success.
+- Invite to Studio
+- Invite up to %quantity guests
+- Invite up to %quantity guests to join
+- Invite up to %quantity guests.
+- Invite up to 10 team members to your account.
+- Invite up to 4 team members to your account.
+- Invited
+- Join
+- Join a campaign and you’ll see it here.
+- Join as Guest
+- Join as Viewer
+- Join beta
+- Join Campaign
+- Join millions of gamers, artists and podcasters.
+- Join or leave
+- Join Screen Allow Mic/Webcam Clicked
+- Join Screen Edit Avatar Clicked
+- Join Screen Enter Studio Button Clicked
+- Join the conversation
+- Join thousands of tech startups, marketing agencies, and media companies.
+- Join world's leading companies
+- Joined
+- Joining
+- Kick is one the most rewarding gaming livestreaming platforms. Sign-up for the beta and join the growing streaming community
+- Let viewers request to join the stream
+- Live chat is unavailable: the room is not connected
+- Loading route as a guest
+- Loading route as a guest: Not own event
+- Local Recording Participant Resumed
+- Local Recording Participant Stopped
+- Local recordings are isolated individual tracks of each participant, ideal for post-production.
+- Lost connection to the host
+- Marked active take ${this.activeTake.id} as completed, waiting for final chunk
+- Mute or unmute a participant source. Only works on media stream sources.
+- Muted by host
+- New display name for the participant
+- New invite failed to be sent. Try again in a few minutes.
+- New title/subtitle for the participant
+- No producer and no track: doing nothing
+- Not paired guest yet
+- Number of guest destinations exceeded
+- of every stream participant.
+- Off-stage screen shares continue capturing your screen and using your system resources.
+- Once more participants join, <br></br> they will appear here.
+- Only the host can see you. The host may add you to the broadcast at any time. Be ready!
+- Open invite guests popover
+- Pairing disabled for this room
+- Pairs are OFF. Your host disabled pairing channels for this stream.
+- Participant
+- Participant Gone Live
+- Participant hidden
+- Participant Joined Popover
+- Participant Joined Popover Add Clicked
+- Participant Joined Popover Dismissed
+- Participant Joined Popover Menu Opened
+- Participant Joined Popover Shown
+- Participant Names Toggled
+- Participant not found
+- Participant placeholder
+- Participant renamed
+- Participant Screen Share Names Toggled
+- Participant source not found
+- Participant source toggled
+- Participant Title Changed
+- Participants
+- Participants names
+- Participants names are hidden. Press %s to show
+- Participants names are shown. Press %s to hide
+- Participants names hidden
+- Participants Names Intro Popover Shown
+- Participants need powerful devices to avoid performance issues. Only UHD cameras or screens will be recorded in 4K.
+- Participants screen share names hidden
+- Please check back later or contact the host
+- Please wait for the host to join the room, and you'll be able to add your slides shortly.
+- Privately talk with the host and other guests
+- Processing show guest event change
+- Producer Added
+- Producer and track exits: replacing
+- Producer encodings do not match after update
+- Producer exists and no track: removing producer
+- Producer exits: replacing
+- Producer feature seems to be disabled for your account, contact Periscope support
+- Promote guest to co-host
+- Promote to co-host
+- Promote To Co-Host Clicked
+- Promotion To Host Confirmation Modal Confirm Clicked
+- Promotion To Host Confirmation Modal Dismissed
+- Promotion To Host Confirmation Modal Shown
+- Promotion To Host Offer Modal Confirm Clicked
+- Promotion To Host Offer Modal Dismissed
+- Promotion To Host Offer Modal Shown
+- Question for host
+- Read recent messages from the private (backstage) chat — visible only to room participants (host and guests), never to the audience. Returns the latest messages (up to ${T.h}) in chronological order.
+- Ready to join?
+- Received Room Manager message before connection initialized ${e.type}
+- Record each participant locally
+- Record participants in up to 4K
+- Recursive reference detected at ${t.currentPath.join("/")}! Defaulting to any
+- Reloading page: Logged in guest is event owner
+- Remove guest
+- Remove host
+- Removed pending webinar viewer invite
+- Removed producer
+- Removing produced media stream without producers
+- Removing producer
+- Rename participant
+- Renaming participant…
+- Replacing producer track to ${e?.label??"none"}
+- Request to join on air
+- Requested guest to change camera to <bold>{deviceLabel}</bold>
+- Requested guest to change microphone to <bold>{deviceLabel}</bold>
+- Requested host to change camera to <bold>{deviceLabel}</bold>
+- Requested host to change microphone to <bold>{deviceLabel}</bold>
+- Restart Room
+- Room closed while requesting ICE restart for ${t} transport via HTTP (using ${this.useDataChannels?"DataChannels":"WebSocket"})
+- Room is full
+- Room is full. Cannot let in more participants.
+- Room session ended
+- Routing to bad join token page
+- Routing to cannot join page
+- Select participant
+- Sending other hosts messages ${t.type}
+- Sending Room Manager message ${t.type}
+- Sensitive operation already in progress. Waiting for finish.
+- Sent Room Manager message ${t.type}
+- Set the audio gain level (volume) of a participant source. Only works on media stream sources that support audio gain (webcam, screen share, video).
+- Set the stream`s primary color for captions, qr codes, participant names, tickers
+- Share directly or paste into <b>Lu.ma</b>, <b>Cal.com</b>, or any <b>calendar invite</b>.
+- Share your screen or invite guests to explore layouts.
+- Should Allow Guest Control All Presentations Toggle Clicked
+- Show non-video participants
+- Show or hide a participant source (camera, screen share, etc.) on the stream. Use stateKey from the participants state to identify the source.
+- Show participants names on the overlay.
+- Show/hide participant names (name + title image tag in bottom right corner of source) for a specific scene. Does not work on Countdown scenes.
+- Show/hide screen share participant names (name + title image tag in bottom right corner of source) for a specific scene. Does not work on Countdown scenes.
+- solid filled background. Primary color is visible on captions, QR codes, ticker, and participant names.
+- Solo puts a participant as the sole active speaker
+- Sorry, you can’t switch modes while having guests.
+- Sources Deck Max Participants Upgrade Clicked
+- Stage
+- Stream on guests’ channels
+- Stream on guests’ channels 
+- Stream to guest channels
+- Studio needs a microphone to join on air. Connect one, then retry.
+- Studio needs your microphone to join on air. Allow access in your browser settings, then retry. Learn more in our %sHelp Center%s.
+- System-provided studio context for this turn. Use it to understand the current room state; it is not part of the user request.
+- The host muted $audioInputName
+- The host muted your local video
+- The host muted your mic
+- The host muted your mic.
+- The host muted your screen share
+- The host removed you from the room.
+- The host unmuted $audioInputName
+- The host unmuted your local video
+- The host unmuted your mic
+- The host unmuted your screen share
+- The id of the participant to rename. Omit to change the host own name.
+- The presentation source has been added and is waiting for the host to enable it.
+- The room is no longer available
+- The room is no longer available.
+- The webinar room is no longer available.
+- This email has been already invited.
+- This room was closed by Restream support. If you have questions, please contact our support team.
+- This will immediately invalidate your current invite link. Are you sure you want to generate a new one?
+- TikTok hasn't approved your account.
+- Time to wrap up! Your room session will end in <b>$timeLeft minute</b>.
+- Time to wrap up! Your room session will end in <b>$timeLeft minutes</b>.
+- Time to wrap up! Your room session will end in <b>$timeLeft second</b>.
+- Time to wrap up! Your room session will end in <b>$timeLeft seconds</b>.
+- Timed out waiting for Amplitude Analytics SDK to initialize.
+- Title update for active hosting failed
+- To invite more members,
+- To invite team member,
+- Toggle participants names
+- Toggling participant source…
+- Tool result${e.length>1?"s are":" is"} missing for tool call${e.length>1?"s":""} ${e.join(", ")}.
+- Tried to add producer in wrong connection state
+- Tried to Initialize invite URL for a finished or bad event
+- Tried to remove producer in wrong connection state
+- Trovo is an interactive live streaming platform, you can check out the hottest games live, share your own gaming experiences, and join an amazing community.
+- Unable to connect to the room
+- Unable to get latest event: No Join token provided
+- Unable to refresh pairs event invite token in non-pairs or non-event mode
+- Undefined encoding for producer: not found
+- Up to 10 on-screen guests
+- Update any scene while you're live. Swap guests, add screen shares, apply graphics, and adjust the layout — without changing what's on air. When you're ready, show the updated scene to your audience.
+- Updated producer encodings ${this.sourceKind} ${m}
+- Upgrade to invite more people
+- Upgrade to invite webinar attendees
+- Use the device and browser you used to join this stream.
+- Video Producers Changed
+- Viewers status server enabled, waiting for live stream
+- Waiting
+- Waiting for approval to {{toolName}}.
+- Waiting for approval to fetch {{title}}.
+- Waiting for approval to use {{toolName}}.
+- Waiting for DataChannels readiness
+- Waiting for permission
+- Waiting for permissions
+- Waiting for the event to start
+- Waiting for the host...
+- Waiting for the next chunk...
+- Waiting for video PTS in continuity counter 
+- Waiting for WebRTCSetupReady message from SFU
+- Waiting fragment cc (
+- Waiting Google script to load
+- Waiting host...
+- Want more people on your stream? Unlock %upgradeParticipantsCount screen participants with one of our paid plans. %sUpgrade now%s
+- We have joined!
+- Webinar Audience Join Modal Connect Slack Clicked
+- Webinar Audience Join Modal Dismissed
+- Webinar Audience Join Modal Link Copied
+- Webinar Audience Join Modal Shown
+- Webinar Audience Join Modal Upgrade Clicked
+- Webinar Viewer Invite Cancelled
+- Webinar Viewer Invite Decline Clicked
+- Webinar Viewer Invite Join Clicked
+- Webinar Viewer Invite Received
+- Webinar Viewer Invite Sent
+- WebRTC ${t} transport disconnected, waiting 10 seconds for it to recover before acting
+- Whether local recording should be enabled for all participants
+- Whether participant names should be visible
+- Whether screen share participant names should be visible
+- Whether to show participant names on the scene
+- Wrong event join token
+- You are hosting this stream
+- You are invited to join
+- You are invited to re-broadcast
+- You can not be heard. The host muted your mic.
+- You don’t meet the requirements to host a LinkedIn Event.
+- You invited <b>$name</b> to be the co-host 🎉
+- You invited guest to be the co-host 🎉
+- You were allowed to join the live stream
+- You were invited to join the organization via different email.
+- You'll get full video and audio, separate feeds of all sources and participants, up to ${o} hr/stream. Need more? 
+- You're backstage
+- You're backstage. The host may add you to the broadcast at any time. Be ready!
+- You’ve been offered to become a co-host. Do you want to experience what it feels like to edit and co-produce this stream?
+- You've reached the max of %max guests.
+- You've reached the maximum number of active access tokens. Revoke some tokens from the Periscope Producer page in the Periscope App.
+- Your mic is muted while you are backstage.
+- Your request to join the live stream was declined
+- Your room session reached the maximum duration and ended.
+- Your room session reached the maximum duration and ended. Start a new session to continue.
+- Your title has been updated for broadcast and active hosting.
+
+### Chat (381)
+
+-   1. Call `present_audio_options({ tracks })` and pass EVERY track from the `generate_music` response. The chat renders an in-line picker so the user can audition each take and choose.
+-  for the full message or use the non-minified dev environment for full errors. 
+- ,{errorMessage:s??i?.message,clientId:o,allowed:n,state:a,responseType:r,authSource:l,...c?{hasCodeChallenge:!0}:{}},e instanceof Error?e:new Error(String(e))),new AuthorizeError(s??
+- " message event for session "
+- " message size: 
+- );if(t.toUpperCase()in goog.html.SafeHtml.NOT_ALLOWED_TAG_NAMES_)throw Error(goog.html.SafeHtml.ENABLE_ERROR_MESSAGES?
+- }}catch(e){throw t.error(`generateEventMetadata: ${e instanceof Error?e.message:String(e)}`,{error:e}),e}};return{generateEventMeta:async({topic:e,context:t})=>{Ba();const r=await n(((e,t)=>[`Rewrite 
+- ${o} error #${e}; visit ${n} for the full message.
+- ${q} ⏎  ⏎ No studio state changes since the previous user message.
+- 24/7 Support Chat 
+- 250 Clips + Live Clipping
+- A product link will be pushed to the chat on the product select.
+- Abstract layered mountain silhouettes in deep blue and purple with a bright pink glow on the upper right.
+- Add a smooth looping video backdrop for your stream.
+- Add Pinned Message Clicked
+- AdditionalDeploymentStatusInfo is deprecated, use DeploymentStatusMessageList instead.
+- AI chat metrics
+- AI chat suggestions
+- AI chat tool failed
+- AI Chat Tool Search Completed
+- AI Chat Tool Used
+- AI Widget See In Chat Clicked
+- All available seats are currently in use. Please contact your organization's admin or chat with our support team to increase your team's capacity.
+- All comments
+- Amazon Live is a streaming platform that allows to broadcast live videos to Amazon customers. Interact with viewers, create shopping experiences, and sell in real time. Works on web and mobile.
+- Analytics & chat export
+- Animated dark 3D scene with metallic structures, neon pink and white light beams, and chromatic aberration.
+- Attempt to send a DataChannel message larger than max allowed length will fail
+- Audience messages will appear here
+- Bad message category ${n}
+- Bad overlay message received
+- Bad Room Manager message received
+- Bad SFU message received
+- Before composing the `prompt`, harvest signal from the studio context in your system message:
+- Bilibili is a Chinese video sharing and live streaming website themed around anime, manga, and game fandoms. Users can submit, view, and add commentary subtitles to videos.
+- Brand your chat messages and captions by selecting a custom color.
+- Buffering DataChannel sending message because the native buffer exceeded the high-watermark
+- Can not send queued messages for ${this.label} WS connection. No active connection
+- Cannot connect DataChannels, iceServers not present in ServerInitialization message
+- Cannot drain DataProducer buffered messages because the native buffer exceeded the high-watermark
+- Cannot send ClosedClient message to SFU through DataChannels because the DataProducer is not connected
+- Chat
+- Chat app
+- Chat background opacity (0 to 100)
+- Chat message
+- Chat overlay
+- Chat Overlay
+- Chat overlay hidden
+- Chat overlay loaded
+- Chat overlay options
+- Chat Overlay Options Changed
+- Chat overlay toggled
+- Chat overlay updated
+- Chat settings
+- Client closed while connecting DataChannels [reason:${l[e]}, message:"${t}"]
+- ClientClosed message received
+- ClientClosed message received from sfu
+- Close pinned messages
+- Closing connection: DataChannel sending buffer exceeded max allowed length when sending a critical message
+- Closing connection: Failed to send buffered critical message over DataChannel
+- Closing connection: Failed to send critical message over DataChannel
+- Closing connection: Failed to send critical message over WebSocket
+- Closing connection: When using DataChannels we shouldn't have received any unknown/unexpected WebSocket message, but we received ${b.length} messages
+- Comment
+- Comments
+- Copy source and target message should have the same type.
+- Couldn't load the chat. Check your connection and try again.
+- Creating send and receive WebRTC transports and waiting for DataConsumerAdded message from SFU
+- Cross-platform chat
+- DataChannel sending buffer exceeded max allowed length (${this.dataProducerSendingBufferedMessagesLength} bytes)
+- DataChannel sending buffer exceeded max allowed length when sending a non-critical message
+- DataProducer emitted error: ${d.message}
+- DEMO CHAT
+- Discarded a message whose size was bigger than the maximum allowed size ${c}KB. ${r.xG} ${r.Xs}/#technical-limitations
+- Display captions, messages, logos, and overlays while video clip is playing
+- Display name of the message author, shown on the caption
+- Displays browser-measured timing below AI messages and tools.
+- Draggable pinned message #${o+1}
+- Dragging pinned message #${o+1}
+- Dropping fragment 
+- Easily embed our chat into your stream, then make it yours by choosing and customizing one of our overlays.
+- Empty message
+- Enable or disable live clipping for the current event. Only available when the feature is enabled (check liveClippingAvailable in state).
+- Enable or disable the chat overlay ("Show on stream") for a specific scene.
+- Enqueued message
+- Error fetching the remote configuration.
+- Error Message: %s
+- Errored on stopping local recording shot with reason ${e} ${this.logId}
+- Event looping
+- Event schedule has not changed, skipping reschedule
+- Expected first message to be from SFU
+- Expected first message to be ServerInitialization
+- Failed handling received message through DataChannels
+- Failed handling received message through WebSocket
+- Failed to apply animated background from chat
+- Failed to apply logo from chat
+- Failed to apply static background from chat
+- Failed to check for overlapping events on go live attempt
+- Failed to connect virtual events chat
+- Failed to connect virtual events chat on init
+- Failed to connect virtual events chat on initV2
+- Failed to construct 'URLPattern': ${e.message}
+- Failed to fetch image: the remote host may not allow browser access (CORS)
+- Failed to fetch live chat history from the room
+- Failed to fetch the chat response.
+- Failed to parse sinf "encrypted" event message initData
+- Failed to post optimistic webinar message to embed
+- Failed to process event ${t}: ${e.message}
+- Failed to refresh AI spend credits after chat turn
+- Failed to remove animated background from chat
+- Failed to remove logo from chat
+- Failed to remove static background from chat
+- Failed to request chat history
+- Failed to revert widget URL from chat
+- Failed to select widget from chat
+- Failed to send ${this.label} WS connection queued message
+- Failed to send broadcast message ${t.type}: No connection
+- Failed to send buffered critical message over DataChannel (message length: ${n.byteLength} bytes): ${e}
+- Failed to send buffered non-critical message over DataChannel
+- Failed to send client message ${o.type}: No connection
+- Failed to send message over DataChannel (message length: ${e.byteLength} bytes): ${n}
+- Failed to send message over WebSocket: ${n}
+- Failed to send message: No connection
+- Failed to send message. Please try again or contact support.
+- Failed to send non-critical message over DataChannel
+- Failed to send non-critical message over WebSocket
+- Failed to send private chat message
+- Failed to send private chat message: No connection
+- Failed to send raw message for ${this.label} WS connection: Socket is not connected
+- Failed to send Room Manager message ${d.type}: Received error response
+- Failed to send Room Manager message ${d.type}: Received unknown response
+- Failed to send Room Manager message ${d.type}: Response timed out
+- Failed to send Room Manager message ${t.type}: No connection
+- Failed to send Room Manager message ${t.type}: Send errored
+- Failed to send viewer chat message
+- Failed to show Intercom message: instance not found
+- Failed to start video playback: ${o?.message}, code ${o?.code}
+- Failed to submit viewer chat message
+- Failed to toggle live clipping
+- Failed to transform stored message data
+- Failed to update chat overlay options
+- Failed to update chat overlay options: No active scene
+- Failed to update live clipping for event, continuing with other operations
+- Failed to update pinned message order
+- Failed to update user feature on ${e.type} message
+- FC2 Live is popular and fast-growing streaming platform where you can stream your own content or connect with one-to-one chat.
+- Gateway request failed: ${e.message}
+- Get a color palette from a remote image URL in the browser. The image host must allow CORS so pixels can be read from canvas. Returns success=false with an error when the image cannot be fetched or an
+- Get every custom music track the user has uploaded for the current brand. Returns all tracks regardless of status (Uploading / Processing / Ready / Failed). The `errorMessage` field is populated when 
+- Get the chat overlay state for a specific scene, including whether it is enabled and its options. Note: in portrait orientation, chat overlay uses default settings and customization options have no ef
+- Group submessage did not end with an END_GROUP tag
+- Groupings
+- Hide chat overlay
+- Hide message
+- Hide messages
+- Highlighting chat messages in edit mode is coming soon.
+- Ignoring chat message on select
+- Ignoring showing Intercom feedback message: Feedback does not meet criteria
+- Incoming private chat message
+- Invalid comment detected - ignoring comment but sending rating
+- Invalid message role: '${e}'. Must be one of: "system", "user", "assistant", "tool".
+- Invalid messages: 
+- JSON parsing failed: Text: ${e}. ⏎ Error message: ${_(t)}
+- Keep only the most recent N messages. Omit to return all (up to ${T.h}).
+- Keep only the N most recent messages (pinned and shown are always included regardless). Omit to return all.
+- Launch Chat App
+- LinkedIn destination already has the same scheduled asset ID, skipping edit
+- Live chat is unavailable: the room is not connected
+- Live chat read
+- Live clipping
+- Live Clipping
+- Live Clipping + Autoposting
+- Live clipping is not available
+- Loading chat overlay…
+- Loading chat…
+- Local video playback received error event: ${o?.message}, code ${o?.code}
+- Loots is a full-blown live-streaming network that enables broadcasters to stream everything from chatting to gaming. It's easy to create your community on Loots!
+- Mantle Chat
+- Mappings
+- Message
+- Message alignment
+- Message alignment: "Top" (messages flow from top) or "Bottom" (messages flow from bottom)
+- Message extension present holding submessage without binary support enabled, and message is being serialized to binary format
+- Message extension present that was generated without binary serialization support
+- Message field type not supported in readAny()
+- Message field type not supported in writeAny()
+- Message hidden
+- Message must contain at least one part
+- Message opacity
+- Message received
+- Message scale
+- Message text
+- Message text is too long.
+- Message text opacity (0 to 100)
+- Message text scale multiplier (e.g. 1 for default)
+- Messages
+- Messages array must not be empty
+- Messages from audience will display here.
+- Messages have different types.
+- Minified Lexical error #${e}; visit ${n.toString()} for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+- Minified Lexical warning #${e}; visit ${n.toString()} for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+- New comments will display here
+- No destinations to enable, skipping canEnableChannels check
+- No invalidation function registered, skipping
+- No pinned messages yet
+- No shown messages yet
+- Non-binary first message
+- Non-binary message received through DataChannels
+- Non-binary message received through WebSocket
+- Normalized [x, y] position (0 to 1). Sets where the top-left corner of the chat overlay is placed. Setting this automatically switches position mode to Freemove.
+- Number of characters observed in this message part.
+- Onboarding chat error surfaced to UI
+- Open chat
+- Open pinned messages
+- Open private chat
+- Ouch! Our Live Shopping got a technical hiccup. Please try again later.
+- Overlay Chat All Settings Clicked
+- Overlay Chat Demo Toggled
+- Overlay Chat Toggle Clicked
+- Padding in pixels around the chat overlay (e.g. 24)
+- Painted-style mountain peak lit by warm orange-pink sunset light, with green grassy slopes in the foreground.
+- Part already completed, skipping upload
+- Philippines
+- Pin message
+- Pinned
+- Pinned %s
+- Pinpoint
+- Please ask your question in the chat
+- Please enter a valid Indian PIN code (6 digits)
+- Please enter the message first.
+- Please enter your Indian PIN code (6 digits).
+- Position mode: "ReservedSpace" (chat stays in a fixed area that shifts the video layout) or "Freemove" (chat can be placed anywhere over the video)
+- Private Chat
+- Private Chat Closed
+- Private Chat Opened
+- Private chat read
+- Provided message too short to accommodate event stream message overhead
+- Push Product Links To Chat Toggle Clicked
+- Push product links to live chat
+- Read live chat
+- Read private chat
+- Read recent messages from the private (backstage) chat — visible only to room participants (host and guests), never to the audience. Returns the latest messages (up to ${T.h}) in chronological order.
+- Reading live chat…
+- Reading private chat…
+- Received invalid SFU message
+- Received message
+- Received message has unexpected format
+- Received overlay message before connection initialized ${e.type}
+- Received Room Manager message before connection initialized ${e.type}
+- Received ServerInitialization message from SFU
+- Received unknown message
+- Reduce background noises during the stream. We recommend keeping it enabled unless you have an isolated environment for capturing audio.
+- Reference id of an image the user pasted into the chat (format `@image:<id>`, or the bare `<id>`). You cannot see the image — pass the reference to condition the first frame on it.
+- Reference id of an image the user pasted into the chat (format `@image:<id>`, or the bare `<id>`). You cannot see the image — pass the reference to use it as a visual reference for composition, subjec
+- Reference id of an image the user pasted into the chat (format `@image:<id>`, or the bare `<id>`). You cannot see the image — pass the reference to use it as a visual reference for the subject, compos
+- Remote
+- Remote logo/image URL to analyze
+- Remove Pinned Message Clicked
+- Reply
+- Reported message length does not match received message length
+- Reset chat
+- Restream Chat – Cross-Platform Chat & Communication
+- Restream Chat lets users manage all communication on one screen, connect cross-platform audiences via message mirroring, integrate with Discord, and more.
+- Restream Chat required
+- Restream uses a link shortening service and mentions Amazon with your affiliate links in Live Chat to utterly follow Amazon Policies.
+- Restream.io: create professional videos and chat with viewers in real-time.
+- Running messages queue for ${this.label} WS connection
+- Save chat JSON
+- Scene ${n+1}: Scenes limit reached, skipping remaining
+- Scopes your message to $count selected scenes.
+- Scopes your message to $count selected widgets.
+- Scopes your message to every scene in the show.
+- Scopes your message to the "$name" scene.
+- Scopes your message to the "$name" widget.
+- Scopes your message to the selected scene.
+- Scopes your message to the selected widget.
+- Scroll to latest messages
+- Seconds before messages fade out (0 to keep them visible)
+- Sending broadcast message ${t.type}
+- Sending ClosedClient message to SFU through DataChannels
+- Sending other hosts messages ${t.type}
+- Sending Room Manager message ${t.type}
+- Sending WebRTCSetupReady message to SFU via WebSockets
+- Sent ${this.label} WS connection message
+- Sent broadcast message ${t.type}
+- Sent Room Manager message ${t.type}
+- Set remote profile
+- Set the base style for your on-screen captions, chat messages, and name-plates.
+- Should not receive unexpected WebSocket messages during WebRTC setup but received:
+- Show AI chat metrics
+- Showed Intercom message
+- Sign in to enable onboarding chat.
+- Skipping audio start: no audio constraints provided
+- Skipping child event get on init
+- Skipping cover processing for unsupported destination ${wbe[e.platform]||""}
+- Skipping expiration check
+- Skipping initialization: no credentials provided
+- Skipping Intercom event subscription: instance not found
+- Skipping key-session request for "
+- Skipping loading of default show event: Not a Stream Now
+- Skipping loading of default show event: Virtual event does not have access to that feature
+- Skipping streaming statuses connection: browser offline
+- Skipping streaming statuses: feature disabled
+- Skipping upload
+- Skipping viewers connection: browser offline
+- Smashcast is a service where you can watch live broadcasts of video games in high quality with near-to-no delay. Watch, chat, and interact with people passionate about gaming.
+- Smooth skin while keeping its natural texture.
+- Social comments display here. Click on them to showcase on stream.
+- Something went wrong while canceling the subscription.<br> ⏎ If this error persists, please <a class="link" onclick="Intercom('showNewMessage', 'Cancel Subscribe: ')">contact support</a>.
+- Something went wrong while editing your subscription.<br> ⏎ If this error persists, please <a class="link" onclick="Intercom('showNewMessage', 'Error Edit Plan: ')">contact support</a>.
+- Start typing geographical location
+- Start typing notes for the scene...
+- Stopping
+- Stopping camera source with reason ${e}
+- Stopping current audio input track with reason ${e}
+- Stopping current video input track with reason ${e}
+- Stopping local recording shot with reason ${e} ${this.logId}
+- Stopping local recording shot with reason ${e} and error ${this.logId}
+- Stopping local recordings with reason ${e}
+- Stopping local video source with reason ${e}
+- Stopping media stream tracks
+- Stopping music…
+- Stopping recursive polling for recording counts
+- Stopping screen share stream with reason ${e}
+- Stopping video playback
+- Stream stopped remotely
+- String value disallows comments, got: 
+- Studio Live Clipping Clips Ready Clicked
+- Studio Live Clipping Toast Clicked
+- Studio Live Clipping Toggle Clicked
+- Swapping audio codec
+- Swapping manifest audio codec "
+- System messages are not allowed in the prompt or messages fields. Use the instructions option instead.
+- Take and respond to comments in real time
+- Tell your followers when you go live! Add your message, and Restream will send it automatically whenever you start streaming.
+- The message checksum did not match the expected value of 
+- The message field is deprecated, use the encodedMessage field instead. The message field is available only in the de-DE, en-AU, en-GB, en-US, es-419, es-ES, es-US, fr-CA, fr-FR and it-IT locales.
+- The message text to display
+- The messages do not match the ModelMessage[] schema.
+- The PIN entered is incorrect.
+- The prelude checksum specified in the message (
+- This is China's fastest-growing streaming website with interactive comment display functionality. Known for its superior viewer experience, the website covers gaming, sports, music, and a wide range o
+- THREE.WebGLRenderer: OutputPass is not needed in setEffects(). Tone mapping and color space conversion are applied automatically.
+- Time from the latest user message or tool-result submission until this message part first appeared in the chat.
+- Time from the latest user message or tool-result submission until this tool call appeared in the stream.
+- To increase the engagement and impact of your message, you may want to target a subset of your followers.
+- Toggle chat overlay
+- Toggle live clipping
+- Toggling chat overlay…
+- ToneMapping( color ); }
+- Tool approval response references unknown approvalId: "${e}". No matching tool-approval-request found in message history.
+- Type a message...
+- Unexpected system message in prompt: ${content}
+- Unknown message received
+- Unknown/unexpected WebSocket messages received when DataChannels are enabled
+- Unread messages
+- Update Pinned Message Order
+- Update social networks message
+- Updating chat overlay…
+- Updating live clipping for event
+- URL of the author's avatar. Pass the `avatarUrl` from the message as returned by get_live_chat_messages / get_private_chat_messages; omit or null when the message has none. Do not invent a URL.
+- use Restream Chat (even if you only stream to one platform). No Restream Chat — no payment.
+- Video looping
+- Video Looping
+- Video looping was enabled, so auto-switch scene is off
+- Virtual Events Chat Connection Closed
+- Virtual Events Chat Connection Opened
+- Visual theme for the chat overlay
+- Waiting for WebRTCSetupReady message from SFU
+- WebGLProgram: Unsupported toneMapping:
+- WebRTCSetupReady message from SFU arrived
+- WebSocket connection closed during setup [wsCloseCode:${r}, wsCloseMessage:"${o}"]
+- What is Restream Chat — %sLearn more%s
+- Whether live clipping should be enabled
+- Whether to show the chat overlay on stream
+- Widget SSE error: ${i.data.error??i.data.message??"unknown"}
+- Write a short, scroll-stopping, keyword-rich hook.
+- You can't go live on Facebook yet. Please chat with our Support.
+- You can't stream to this channel yet. Please chat with our Support.
+- You've exceeded the allowable number of PIN code attempts.
+- Your social network message was successfully updated.
+
+### Overlays & graphics (690)
+
+-   • Use-case unclear ("generate music for my stream") → ask: intro / countdown / background / transition / outro / multi-track soundtrack.
+- A solid green background works best.
+- Ability to remove Restream watermark 
+- Ability to remove Restream's branding
+- Add a dynamic on-stream visual like a poll, leaderboard, ticker, or scoreboard.
+- Add Generic Caption Clicked
+- Add Ticker Clicked
+- Add watermark
+- Added animated background
+- Added background
+- Added caption
+- Added logo
+- Added overlay
+- Added ticker
+- Added virtual background
+- Allow backgrounds
+- and behind them (backgrounds).
+- Animated background
+- Animated background generated
+- Animated clean white background with subtle moving geometric light-grey shapes and lines.
+- Animated dark purple-blue blurred light orbs slowly shifting on a black background.
+- Animated glowing blue-purple wave of light flowing across a dark black background.
+- Animated long-exposure light trails in white, red, and teal swirling across a dark teal-green background.
+- Animated mostly black background with a subtle dark blue glow drifting in the corner.
+- Apply custom fonts to your overlay elements, including lower thirds, tickers, QR codes, and names.
+- Ask AI to create scenes, tune graphics, write captions, and prep your stream.
+- Assign a background to a specific scene. Supports both static (image) and animated (video) backgrounds. Pass null to remove background from the scene.
+- Assign a caption to a specific scene. Can be used with all scene types.
+- Assign a logo to a specific scene. Pass null to remove logo from the scene.
+- Assign a ticker to a specific scene. Pass null to remove ticker from the scene. Optionally set scroll speed.
+- Assign an overlay to a specific scene. Pass null to remove overlay from the scene.
+- Audio background not found
+- Background
+- Background added
+- Background audio loading timeout: Did not receive playingAudioBackground from RM
+- Background Color
+- Background generated
+- Background ID to assign, or null to remove background from the scene
+- Background limit reached for this brand
+- Background Music Exclusive Track Upgrade Icon Clicked
+- Background music has been stopped due to inactivity
+- Background Music Pause Clicked
+- Background Music Refresh Clicked
+- Background Music Resume Clicked
+- Background Music Selected
+- Background Music Stop Clicked
+- Background not found
+- Background opacity
+- Background removed
+- Background Selected
+- Background style. Use "Solid" for a single-color background, "Linear" for a clean gradient, or "GradientCloud" for a shader-based cloudy abstract gradient.
+- Background uploaded
+- Background Uploaded
+- Backgrounds
+- Backgrounds loaded
+- Bad brand creation payload
+- Bad brand update payload
+- Bad overlay message received
+- Basic graphics
+- Bilibili is a Chinese video sharing and live streaming website themed around anime, manga, and game fandoms. Users can submit, view, and add commentary subtitles to videos.
+- Blur background
+- Brand
+- Brand delete operations locked
+- Brand folder
+- Brand Folder
+- Brand Folder Edited
+- Brand Folder Removed
+- Brand Folder Selected
+- Brand Folder Submitted
+- Brand Folders
+- Brand Marketing
+- Brand name must not exceed %s characters long.
+- Brand name should be at least 1 character long.
+- Brand not found error
+- Brand with such name already exists
+- Brand your captions and participants names by selecting theme.
+- Brand your chat messages and captions by selecting a custom color.
+- Branding
+- Brands
+- Brands limit exceeded
+- Buffering DataChannel sending message because the native buffer exceeded the high-watermark
+- Can’t add brand. Make sure to add a brand name that’s less than %s characters.
+- Can’t add brand. This brand name already exists.
+- Can’t add brand. You’ve already reached the maximum of %s brands!
+- Can't apply selected background. Please try again or contact support.
+- Can't delete brand. You need to have at least one brand.
+- Can’t edit brand. Make sure to add a brand name that’s less than %s characters.
+- Can't edit brand. This brand name already exists.
+- Can't play selected video background. Please try again or contact support.
+- Can't select browser source. It's possible to use only StreamElements overlays.
+- Can't update ticker speed. Please try again later.
+- Can't update ticker: content is not changed
+- Cannot drain DataProducer buffered messages because the native buffer exceeded the high-watermark
+- Caption already exists
+- Caption created
+- Caption edited
+- Caption hidden
+- Caption ID
+- Caption ID to assign, or null to remove caption from the scene
+- Caption ID to show, or null to hide
+- Caption limit reached
+- Caption not found
+- Caption pushes up 4+ sources
+- Caption removed
+- Caption selected
+- Caption with given title and description already exists
+- Captions
+- Captions loaded
+- Change Product Overlay Type Clicked
+- Change ticker speed
+- Chat background opacity (0 to 100)
+- Chat overlay
+- Chat Overlay
+- Chat overlay hidden
+- Chat overlay loaded
+- Chat overlay options
+- Chat Overlay Options Changed
+- Chat overlay toggled
+- Chat overlay updated
+- Close ticker speed control
+- Continuing to use current active brand: Failed to set brand from room state
+- Countdown Background Color Selected
+- Countdown Background Opacity Selected
+- Create a new caption
+- Create a new ticker (scrolling text)
+- Create caption
+- Create ticker
+- Creating caption…
+- Creating ticker…
+- Custom backgrounds require a paid subscription
+- Custom graphics
+- Custom Graphics Popover Upgrade Clicked
+- Custom Graphics Popover Upgrade Closed
+- Custom Graphics Popover Upgrade Shown
+- Custom logos require a paid subscription
+- Custom overlays require a paid subscription
+- Customize background
+- Customize logo
+- Customize overlay
+- Customize your graphics
+- Dark background with a large glowing blue-purple arc rising from the bottom, like a planet horizon.
+- Default graphics
+- Delete a caption
+- Delete a custom background by ID. Default backgrounds cannot be deleted.
+- Delete a custom logo by ID. Default logos cannot be deleted.
+- Delete a custom overlay by ID. Default overlays cannot be deleted.
+- Delete a ticker
+- Delete background
+- Delete caption
+- Delete logo
+- Delete overlay
+- Delete ticker
+- Deselect background
+- Didn't update caption: content didn't change
+- Disabled mp4 logo on scene
+- Disabled mp4 overlay on scene
+- Display captions, messages, logos, and overlays while video clip is playing
+- Display name of the message author, shown on the caption
+- Dramatic black-and-white sand dunes with soft light catching the ridges, on a pure black background.
+- Easily embed our chat into your stream, then make it yours by choosing and customizing one of our overlays.
+- Edit an existing caption
+- Edit an existing ticker
+- Edit caption
+- Edit Generic Caption Clicked
+- Edit ticker
+- Edit Ticker Clicked
+- Editing caption…
+- Editing ticker…
+- Empty subtitle payload
+- Enable auto captions (English)
+- Enable or disable the chat overlay ("Show on stream") for a specific scene.
+- Engage your followers with captions and subtitles
+- Exceeded upload bytes limit, tickers upload limited
+- Exceeded upload count limit, captions upload limited
+- Exceeded upload count limit, logos upload limited
+- Exceeded upload count limit, tickers upload limited
+- Execute multiple tool calls sequentially in a single turn. Use this to batch independent operations (e.g., creating several scenes, adding captions to each). Each call runs in order; a failure in one 
+- Failed get all virtual backgrounds metadata: getAll errored
+- Failed to add animated background
+- Failed to add animated background: no permission to use paid features
+- Failed to add animated background: Too many backgrounds (on the server)
+- Failed to add animated background: video file exceeds maximum supported file size
+- Failed to add background
+- Failed to add background: limit exceeded
+- Failed to add browser source: no active brand
+- Failed to add caption: no active brand
+- Failed to add caption.
+- Failed to add caption. Secondary text is too long
+- Failed to add caption. Text is too long
+- Failed to add logo
+- Failed to add logo. No permission to use paid features
+- Failed to add logo. Wrong file type
+- Failed to add logos images: no active brand
+- Failed to add overlay
+- Failed to add overlay images: no active brand
+- Failed to add overlay: no permission
+- Failed to add overlay: no permission to use paid features
+- Failed to add overlay: wrong file type
+- Failed to add QR code: No active brand
+- Failed to add static background
+- Failed to add ticker: no active brand
+- Failed to add ticker.
+- Failed to add ticker. Text is too long
+- Failed to add virtual background
+- Failed to apply animated background from chat
+- Failed to apply logo from chat
+- Failed to apply static background from chat
+- Failed to create blurred background for avatar
+- Failed to create blurred background for avatar.
+- Failed to create blurred background: No 2D canvas context available
+- Failed to create blurred background: No WebGL2 context available, retrying...
+- Failed to create brand: retrying
+- Failed to create brands
+- Failed to create generic caption: retrying
+- Failed to create logo: retrying
+- Failed to create overlay: retrying
+- Failed to create static background: retrying
+- Failed to create ticker: retrying
+- Failed to create virtual background: retrying
+- Failed to delete animated backgrounds: retrying
+- Failed to delete background
+- Failed to delete brand
+- Failed to delete brand: retrying
+- Failed to delete caption
+- Failed to delete caption.
+- Failed to delete caption. Refetch after error failed
+- Failed to delete caption. Refetching captions.
+- Failed to delete generic caption: retrying
+- Failed to delete logo
+- Failed to delete logo: retrying
+- Failed to delete overlay
+- Failed to delete overlay: retrying
+- Failed to delete static background: retrying
+- Failed to delete ticker
+- Failed to delete ticker: retrying
+- Failed to delete ticker.
+- Failed to delete virtual background
+- Failed to delete virtual background image blob: delete errored
+- Failed to delete virtual background metadata: delete errored
+- Failed to delete virtual background: retrying
+- Failed to delete virtual background: transaction errored
+- Failed to destroy brand while removing: brand does not exist
+- Failed to edit caption
+- Failed to edit caption.
+- Failed to edit caption. Reset previous caption data.
+- Failed to edit caption. Secondary text is too long
+- Failed to edit caption. Text is too long
+- Failed to edit ticker
+- Failed to edit ticker.
+- Failed to edit ticker. Reset previous ticker data.
+- Failed to edit ticker. Text is too long
+- Failed to fetch audio backgrounds
+- Failed to generate animated background
+- Failed to generate animated background: empty response body
+- Failed to generate background
+- Failed to generate background image from shader
+- Failed to generate overlay
+- Failed to generate photorealistic background
+- Failed to generate photorealistic background: empty response body
+- Failed to generate transparent overlay
+- Failed to generate transparent overlay: empty response body
+- Failed to get all logos v2. Feature is not enabled
+- Failed to get all virtual backgrounds
+- Failed to get all virtual backgrounds entries: transaction errored
+- Failed to get background blob: canvas returned null
+- Failed to get backgrounds
+- Failed to get static backgrounds v2. Feature is not enabled
+- Failed to get virtual background blob for metadata: get errored
+- Failed to init guest virtual backgrounds
+- Failed to init overlay store: no active brand
+- Failed to init OverlayMode store
+- Failed to load green screen background image
+- Failed to load Mediapipe virtual background image
+- Failed to logout user: retrying
+- Failed to play animated background: Connection await timed out
+- Failed to play audio background
+- Failed to preprocess logo: image has no dimensions
+- Failed to preprocess logo: no canvas context
+- Failed to put virtual background
+- Failed to put virtual background blob: put errored
+- Failed to put virtual background metadata: put errored
+- Failed to put virtual background: transaction errored
+- Failed to read all backgrounds: retrying
+- Failed to read all browser source overlays: retrying
+- Failed to read all generic captions: retrying
+- Failed to read all logos: retrying
+- Failed to read all overlays: retrying
+- Failed to read all tickers: retrying
+- Failed to read all virtual backgrounds: retrying
+- Failed to read brands
+- Failed to read caption. It seems to be non-text one
+- Failed to read ticker. It seems to be non-text one
+- Failed to refresh AI spend credits after animated background generation
+- Failed to refresh AI spend credits after photorealistic background generation
+- Failed to remove animated background from chat
+- Failed to remove logo from chat
+- Failed to remove static background from chat
+- Failed to remove: animated background is default
+- Failed to remove: animated background not found
+- Failed to restore active brand: active brand not found
+- Failed to select background: no permission to use paid features and selected id is not default
+- Failed to select overlay: no permission to use paid features and selected id is not default
+- Failed to select virtual background
+- Failed to select virtual background: background with such id does not exist
+- Failed to select: background with such id does not exist
+- Failed to select: logo with such id does not exist
+- Failed to select: overlay with such id does not exist
+- Failed to select. Caption with such id does not exist
+- Failed to select. Ticker with such id does not exist
+- Failed to set animated background: no background found
+- Failed to set background on brand change
+- Failed to set background: no background found
+- Failed to set brand: brand with such id not found
+- Failed to set caption: no caption found
+- Failed to set default graphics: no active brand
+- Failed to set logo: no logo found
+- Failed to set overlay: no overlay found
+- Failed to set ticker speed
+- Failed to set ticker: no ticker found
+- Failed to show logo
+- Failed to show logo: mp4 video logos cannot be played
+- Failed to show overlay
+- Failed to show overlay: mp4 video overlays cannot be played
+- Failed to switch virtual background effect
+- Failed to sync state: missing initial brand
+- Failed to undo caption hide
+- Failed to undo logo hide
+- Failed to undo ticker hide
+- Failed to update brand
+- Failed to update brand background on change
+- Failed to update brand on brand id updated
+- Failed to update brand partial
+- Failed to update brand partial: retrying
+- Failed to update brand with event settings on init as brandId is not equal
+- Failed to update brand: retrying
+- Failed to update chat overlay options
+- Failed to update chat overlay options: No active scene
+- Failed to update commerce state on brand change
+- Failed to update countdown background color
+- Failed to update countdown background opacity
+- Failed to update generic caption: retrying
+- Failed to update generic captions ids order: retrying
+- Failed to update logo position
+- Failed to update outgoing stream orientation on brand change
+- Failed to update scene logo position
+- Failed to update ticker: retrying
+- Failed to update tickers ids order: retrying
+- Failed to upload background
+- Failed to upload backgrounds: no active brand
+- Failed to upload caption
+- Failed to upload logo
+- Failed to upload logo image
+- Failed to upload logo images
+- Failed to upload overlay
+- Failed to upload overlay image
+- Failed to upload overlay images
+- Failed to upload static background: no permission for using paid features
+- Failed to upload static background: unsupported file type
+- Failed to upload the background
+- Failed to upload the logo.
+- Failed to upload the overlay.
+- Failed to upload ticker
+- Failed to upload video clips: no active brand
+- Failed to upload virtual background
+- Failed to upload virtual background: unsupported file type
+- Failed to upload virtual background.
+- Filename for the generated PNG background. Use a short descriptive name. The .png extension is added if omitted.
+- Generate a static 1080p background and upload it as a custom background. Supports solid colors, simple linear gradients, and a shader-based GradientCloud style.
+- Generate a static 1080p solid color background and upload it as a custom background.
+- Generate animated background
+- Generate background
+- Generate overlay
+- Generate photorealistic background
+- Generated animated background is too large
+- Generating animated background…
+- Generating background…
+- Generating overlay…
+- Generating photorealistic background…
+- Generic Caption Re-ordered
+- Get all available background music tracks. Exclusive tracks require a paid plan (check hasBackgroundMusic in state).
+- Get all available backgrounds (static and animated)
+- Get all available logos (default and custom). Each logo has a status: "Ready" (can be selected), "Uploading"/"Processing" (still being processed, wait and retry), or "Failed" (upload failed). Only "Re
+- Get all available overlays (default and custom). Each overlay has a status: "Ready" (can be selected), "Uploading"/"Processing" (still being processed, wait and retry), or "Failed" (upload failed). On
+- Get all captions
+- Get all custom browser sources. Browser sources are web pages rendered as overlay iframes on the stream.
+- Get all tickers
+- Get backgrounds
+- Get captions
+- Get every custom music track the user has uploaded for the current brand. Returns all tracks regardless of status (Uploading / Processing / Ready / Failed). The `errorMessage` field is populated when 
+- Get logos
+- Get overlays
+- Get the chat overlay state for a specific scene, including whether it is enabled and its options. Note: in portrait orientation, chat overlay uses default settings and customization options have no ef
+- Get tickers
+- Got captions
+- Got custom logos
+- Got custom logos v2
+- Got custom overlays
+- Got custom overlays v2
+- Got custom virtual backgrounds
+- Got default logos
+- Got default overlays
+- Got default static backgrounds
+- Got static backgrounds v2
+- Got tickers
+- Got union backgrounds
+- Graphics
+- Graphics Files Uploaded With Drag And Drop
+- Hex color (e.g. "#FFFFFF") or "Auto" for automatic detection based on background
+- Hide chat overlay
+- Hide main background
+- Hide portrait overlay
+- ID of an existing background to attach
+- ID of an existing caption to attach
+- ID of an existing logo to attach
+- ID of an existing overlay to attach
+- ID of an existing ticker to attach
+- In this guide, you’ll find general rules around using our brand assets and showcasing Restream content. The rules apply to all media.
+- Invalid background color. Provide valid hex colors.
+- Invalid generated background color: ${e}
+- Invalid generated background color: expected at least one color
+- Invalid Logo Image file mime type
+- Invalid Overlay Image file mime type
+- Invalid Static Background Image file mime type
+- Invalid subtitle track id 
+- It's free for all. Your graphics will be saved.
+- It's possible to upload only StreamElements overlays.
+- Last brand can not be removed
+- Loading backgrounds…
+- Loading captions…
+- Loading chat overlay…
+- Loading logos…
+- Loading overlays…
+- Loading route as a overlay
+- Loading route as a overlay: Not own event
+- Loading subtitle playlist for id 
+- Loading tickers…
+- Logo
+- Logo added
+- Logo Align Option Clicked
+- Logo hidden
+- Logo ID to assign, or null to remove logo from the scene
+- Logo limit reached
+- Logo moved
+- Logo not found
+- Logo position
+- Logo position (default: TopRight)
+- Logo position: "TopLeft" (top-left corner) or "TopRight" (top-right corner, default)
+- Logo removed
+- Logo Selected
+- Logo uploaded
+- Logo Uploaded
+- Logos
+- Logos loaded
+- Logout request failed
+- Love the background music
+- Lower Third
+- Missing initial subtitle PTS
+- Moving logo…
+- Name your brand
+- Natural-language description of the overlay subject (object, character, sticker, prop). Describe only the subject — do not describe a background or scene.
+- Nearly solid dark navy background with faint scattered stars, very minimal and clean.
+- New brand
+- New title/subtitle for the participant
+- No active brand
+- No background music is currently playing
+- No Restream branding
+- No Restream branding 
+- No Restream watermark
+- No Restream Watermark
+- No Restream Watermark 
+- No Restream watermark, 
+- Normalized [x, y] position (0 to 1). Sets where the top-left corner of the chat overlay is placed. Setting this automatically switches position mode to Freemove.
+- Oops, that seems to be not an image! To make it work for the overlay, it should be an image file like PNG, JPG, GIF or SVG.
+- Oops, unable to delete brand. Please try again, or contact support for help.
+- Oops, unable to save your brand edits. Please try again, or contact support for help.
+- Open the graphics tab
+- Optimistic caption delete
+- Optimistic caption edit
+- Optimistic ticker edit
+- Output aspect ratio. Defaults to 16:9 for stream backgrounds; pick 9:16 for portrait scenes.
+- Overlay
+- Overlay Chat All Settings Clicked
+- Overlay Chat Demo Toggled
+- Overlay Chat Toggle Clicked
+- Overlay generated
+- Overlay ID to assign, or null to remove overlay from the scene
+- Overlay image
+- Overlay not found
+- Overlay removed
+- Overlay route loaded
+- Overlay Selected
+- Overlay settings
+- Overlay uploaded
+- Overlay Uploaded
+- Overlays
+- Overlays loaded
+- Padding in pixels around the chat overlay (e.g. 24)
+- Personal logos and graphics
+- Personalize your content with a custom logo.
+- Personalize your live streams by removing the Restream branding starting from Standard plan.
+- Photorealistic background
+- Photorealistic background generated
+- Pick background color ${t}
+- Primary caption text
+- QR Overlay Mode Selected
+- Received overlay message before connection initialized ${e.type}
+- Reduce background noises during the stream. We recommend keeping it enabled unless you have an isolated environment for capturing audio.
+- Remote logo/image URL to analyze
+- Remove a Restream watermark 
+- Remove Generic Caption Clicked
+- Remove overlay
+- Remove Ticker Clicked
+- Removed animated background
+- Removed background
+- Removed custom overlay
+- Removed logo
+- Removed ticker
+- Removed virtual background
+- Removing background…
+- Removing caption…
+- Removing logo…
+- Removing overlay…
+- Removing ticker…
+- Reset background to transparent
+- Restream branding
+- Restream watermark
+- Restream Watermark
+- Restream watermark on your streams
+- rounded-corners variant of DEFAULT. Primary color is visible on the same branded elements.
+- Scene background
+- Scene background set
+- Scene caption
+- Scene caption set
+- Scene logo
+- Scene logo set
+- Scene overlay
+- Scene overlay set
+- Scene ticker
+- Scene ticker set
+- Secondary caption text
+- Select caption
+- Selected audio backgrounds
+- Selecting caption…
+- Set background music volume and/or mute state. Volume is 0-100 (before internal normalization). Set isMuted to true to mute without changing the volume level.
+- Set caption
+- Set countdown text color. Use "Auto" to auto-detect based on background.
+- Set empty overlay
+- Set or remove background music for a countdown scene. Pass musicId to set a track, or null to remove music.
+- Set the base style for your on-screen captions, chat messages, and name-plates.
+- Set the logo position for a specific scene. Works for Default, Media and Countdown scenes.
+- Set the stream`s primary color for captions, qr codes, participant names, tickers
+- Set the ticker scroll speed. Affects all tickers globally.
+- Set ticker
+- Setting scene background…
+- Setting scene caption…
+- Setting scene logo…
+- Setting scene overlay…
+- Setting scene ticker…
+- Setting ticker speed…
+- Show a caption on the stream, or hide the current caption by passing null
+- Show default Restream graphics like overlays, videos, and backgrounds.
+- Show graphics and captions on top of video clips
+- Show Overlay Over Video Clip Toggle Clicked
+- Show participants names on the overlay.
+- Show portrait overlay
+- Show Restream watermark.
+- Single valid hex color for the solid background.
+- Slack Streaming Banner Clicked
+- Slack Streaming Banner Shown
+- Soft blurred blue light orbs on a dark navy-black background, creating a smooth bokeh-like abstract effect.
+- Solid color background
+- solid filled background. Primary color is visible on captions, QR codes, ticker, and participant names.
+- Stop the currently playing background music
+- Streaming is disabled. Follow the instructions in the warning banner.
+- Studio streams with your own logo and overlays
+- Subtitle playlist not aligned with playback
+- Subtitle track details are defined on idle subtitle stream controller tick
+- Successful caption delete
+- Successful caption edit
+- Successful ticker edit
+- such as overlays, logos and backgrounds.
+- Switching to subtitle track 
+- Sync captions order
+- Sync tickers order
+- That file is too large. The size limit for video backgrounds is ${e}MB.
+- The background will appear behind your video.
+- The editable caption no longer exists
+- The editable ticker no longer exists
+- The ID of the audio background to play
+- The ID of the custom background to delete
+- The ID of the custom logo to delete
+- The ID of the custom overlay to delete
+- The URL of the image to upload as a background
+- The URL of the image to upload as a logo
+- The URL of the image to upload as an overlay
+- This brand name already exists.
+- Ticker
+- Ticker already exists
+- Ticker created
+- Ticker edited
+- Ticker hidden
+- Ticker ID
+- Ticker ID to assign, or null to remove ticker from the scene
+- Ticker limit reached
+- Ticker not found
+- Ticker Re-ordered
+- Ticker removed
+- Ticker scroll speed multiplier (0.4-2.5, default 1). Lower is slower, higher is faster.
+- Ticker speed
+- Ticker Speed Selected
+- Ticker speed set
+- Ticker text
+- Ticker with given text already exists
+- Tickers loaded
+- To remove the watermark from all event posts, update thumbnails individually per channel or in the stream details.
+- To replace or remove the watermark, please upgrade your plan to Professional.
+- To upload background, please upgrade your plan
+- Toggle chat overlay
+- Toggling chat overlay…
+- Too many browser source overlays
+- Too many captions
+- Too many tickers
+- TRANSPARENT background; primary color is NOT visible behind elements. Choose only when the user explicitly wants a minimalist overlay with no chrome.
+- Uh oh, unable to add brand. Please try again, or contact support for help.
+- Unable to add custom music track without brand
+- Unable to add custom music tracks batch without brand
+- Unable to change caption order: failed to find index in complete list
+- Unable to change caption order: no item with specific indexes
+- Unable to change ticker order: no item with specific indexes
+- Unable to change tickers order: failed to find index in complete list
+- Unable to delete custom music track without brandId
+- Unable to edit caption: does not exist
+- Unable to edit ticker: does not exist
+- Unable to remove caption: does not exist
+- Unable to rename custom music track without brandId
+- Unable to reorder custom music track, brand is not selected
+- Unable to show logo
+- Unable to show overlay
+- Unsupported file type for background. Only image files are supported.
+- Unsupported file type for overlay. Only image files are supported.
+- Update any scene while you're live. Swap guests, add screen shares, apply graphics, and adjust the layout — without changing what's on air. When you're ready, show the updated scene to your audience.
+- Updating chat overlay…
+- Updating subtitle tracks, 
+- Upgrade to customize graphics
+- Upgrade your plan to replace watermark.
+- Upgrade your plan to upload image or video backgrounds.
+- Upgrade your plan to upload overlay.
+- Upload a logo from a URL. Fetches the image and uploads it as a custom logo. By default, image logos are preprocessed to fit inside a 64x64 PNG with 16px rounded corners and transparent padding/corner
+- Upload a static background image from a URL. Fetches the image and uploads it as a custom background.
+- Upload an overlay image from a URL. Fetches the image and uploads it as a custom overlay.
+- Upload background
+- Upload logo
+- Upload overlay
+- Upload you own branded assets,
+- Uploading background…
+- Uploading logo…
+- Uploading overlay…
+- Use overlays to add images and videos on top of your streams.
+- Valid hex colors for the background. Solid uses the first color. Linear uses all colors as evenly distributed stops. GradientCloud uses the first four colors as two blended color pairs; if fewer than 
+- Video background playback failed. Please try again or contact support.
+- Virtual Background
+- Virtual Background Average FPS Updated
+- Virtual Background Blur Clicked
+- Virtual Background Disable Clicked
+- Virtual Background Image Selected
+- Virtual Background Image Uploaded
+- Virtual Background is not supported
+- Virtual Background Key Color Changed
+- Virtual Background requires a capable device to run. See our %ssupport article%s for details.
+- Visual theme for the chat overlay
+- Watermarks
+- Webinar Expired Banner Upgrade Clicked
+- When the user wants their brand color to be visible on screen, prefer DEFAULT, NEWS, or ROUNDED. Use Air only for explicit "minimal" / "no chrome" / "clean" requests.
+- Whether to generate instrumental tracks (no vocals). Default true — the right choice for livestream backgrounds.
+- Whether to mute the background music
+- Whether to preprocess image logos into a 64x64 rounded PNG before upload. Set to false to upload the original file.
+- Whether to show the chat overlay on stream
+- Widget overlay
+- You already deleted this brand, so it can’t be edited.
+- You can NOT advertise other services while doing a sponsored stream.  ⏎ NO gameplay, loots, logos or other marketing materials.
+- You cannot upload animated backgrounds longer than 5 minutes
+- You're logged in as <b>$user</b>. <logOutButton>Log out</logOutButton>
+- You're logged in. <logOutButton>Log out</logOutButton>
+- You've exceeded the maximum number of backgrounds. You can upload maximum ${e.data.maxBackgrounds} video backgrounds.
+- You've exceeded the maximum number of captions
+- You've exceeded the maximum number of tickers
+- Your overlays, logos, videos & backgrounds in Studio
+- Your overlays, logos, videos & backgrounds in Studio 
+- Your overlays, logos, videos,
+- Your overlays, logos, videos, and backgrounds in Studio, 
+
+### Countdown & timers (105)
+
+-   • Starting Soon / Countdown intros — "epic cinematic build, hype synth riser", "warm orchestral opening, 90s build".
+-   • Use-case unclear ("generate music for my stream") → ask: intro / countdown / background / transition / outro / multi-track soundtrack.
+- ' on 'TimeRanges': The index provided (
+- Add a camera placeholder to a scene. Does not work on Countdown scenes.
+- Add a media placeholder to a scene. Does not work on Countdown scenes.
+- Add a source image to a scene from a URL. Fetches the image, uploads it, and assigns it to the specified scene. Does not work on Countdown scenes.
+- Add countdown scene
+- Adjusting countdown volume…
+- Apply fonts to the countdown timer.
+- Cancelling timer
+- Change systemClockOffset and retry request
+- Changing countdown color…
+- Changing countdown font…
+- Clearing existing debounce timer for event ${e}
+- Countdown
+- Countdown Background Color Selected
+- Countdown Background Opacity Selected
+- Countdown color
+- Countdown color changed
+- Countdown Color Selected
+- Countdown Custom Music Selected
+- Countdown Custom Music Unselected
+- Countdown duration
+- Countdown duration in milliseconds
+- Countdown font
+- Countdown font changed
+- Countdown Font Selected
+- Countdown For Disabling Switch To Old Experience Started
+- Countdown For Disabling Switch To Old Experience Stopped
+- Countdown moved
+- Countdown music
+- Countdown music loaded
+- Countdown music set
+- Countdown music track not found
+- Countdown position
+- Countdown scale
+- Countdown scaled
+- Countdown set
+- Countdown Timer Position Changed
+- Countdown Timer Selected
+- Countdown Timer Size Changed
+- Countdown volume
+- Countdown volume adjusted
+- Create a countdown scene.
+- Create countdown
+- Enabled sources don't show on Countdown scenes
+- Explore Scenes, add a Countdown, try a new Layout, %sand more%s.
+- Failed to get countdown music
+- Failed to restart countdown
+- Failed to set countdown music
+- Failed to set countdown music volume
+- Failed to update countdown auto switch property
+- Failed to update countdown background color
+- Failed to update countdown background opacity
+- Failed to update countdown duration
+- Failed to update countdown freemove position
+- Failed to update countdown music
+- Failed to update countdown music volume
+- Failed to update countdown scale
+- Failed to update countdown size
+- Failed to update countdown volume
+- Get available countdown music tracks that can be assigned to a countdown scene.
+- Get countdown music
+- Loading countdown music…
+- Maximize is not available on countdown scene
+- Media source can't be added on countdown scene
+- Moving countdown…
+- Plays countdown only and automatically switches to the next scene when it ends
+- Position of the countdown on screen, where {x: 0, y: 0} is centered
+- Remove a camera placeholder from a scene. Does not work on Countdown scenes.
+- Run Countdown
+- Scaling countdown…
+- Scene is not a countdown scene
+- Scheduling timer
+- Set countdown duration in milliseconds
+- Set countdown font
+- Set countdown scale/zoom level
+- Set countdown text color. Use "Auto" to auto-detect based on background.
+- Set countdown x,y position (freemove)
+- Set or remove background music for a countdown scene. Pass musicId to set a track, or null to remove music.
+- Set the logo position for a specific scene. Works for Default, Media and Countdown scenes.
+- Set the volume of countdown scene music. Volume is 0 to 1, where 0 is muted and 1 is full volume.
+- Setting countdown music…
+- Setting countdown…
+- Show/hide participant names (name + title image tag in bottom right corner of source) for a specific scene. Does not work on Countdown scenes.
+- Show/hide screen share participant names (name + title image tag in bottom right corner of source) for a specific scene. Does not work on Countdown scenes.
+- Starting soon
+- Switch scene after countdown
+- Switching to the next scene in {{countdown}} sec.
+- Switching to the next scene in {{countdown}} sec. <action1>Cancel<action1>
+- The ID of the countdown scene
+- The type of scene to create: "Default" for live camera, "Media" for media/video, "Countdown" for countdown timer
+- This operation is only supported on Media scenes, not on Countdown scenes
+- Timer
+- To add source, go to a different scene than countdown
+- To use auto-switch, add a video from storage or set up a countdown scene
+- Toggle auto switch for a scene. When enabled, the scene will automatically switch to the next scene when its content finishes. Works on any Countdown scene, or on Media scenes that have video attached
+- Too add placeholder, go to a different scene than countdown
+- Unable to execute undo command ${e.type}: Not allowed for Countdown scene
+- When a <bold>video</bold> or <bold>countdown</bold> ends, the scene switches to the next one.
+- While the countdown music plays, this music is paused
+- You can't change timer during a live stream
+- You can't change timer in a finished event
+- You can't change timer in Preview mode
+- Your mic is muted during the countdown
+
+### QR codes (89)
+
+- Added QR code
+- After scanning the barcode image or inputting your secret code, the app will display a 6-digit number. Enter the number generated from the app below.
+- Apply custom fonts to your overlay elements, including lower thirds, tickers, QR codes, and names.
+- Assign a QR code to a specific scene. Applies the QR code to the specified scene.
+- Create a new QR code
+- Create QR code
+- Create QR code + image
+- Creating QR code…
+- Delete a QR code
+- Delete QR code
+- Didn't update QR Code: content didn't change
+- Edit an existing QR code
+- Edit QR code
+- Edited QR code no longer exists
+- Editing QR code…
+- Engage with QR codes
+- Failed to add Qr code: Link is too long
+- Failed to add QR code: No active brand
+- Failed to add Qr code: Title is too long
+- Failed to add QR code. Please try again or contact support
+- Failed to delete QR code.
+- Failed to edit QR code: Link is too long
+- Failed to edit QR code: Title is too long
+- Failed to edit QR code. Reset previous QR code data
+- Failed to refetch QR codes after delete failure
+- Failed to select QR Code. Id does not exist
+- Failed to set Qr Code: Not found
+- Failed to sync QR code order after delete
+- Failed to toggle show QR Code scans alert toggle
+- Failed to undo QR code hide
+- Get all QR codes
+- Get QR codes
+- Got QR codes
+- ID of an existing QR code to attach
+- Loading QR codes…
+- Nice! To create a product QR code manually: 
+- Optimistic QR code delete
+- Optimistic QR Code edit
+- Qr code
+- QR code
+- QR code + image
+- QR Code Add Clicked
+- QR code already exists
+- QR code created
+- QR Code Edit Clicked
+- QR code edited
+- QR code hidden
+- QR code ID
+- QR code ID to assign, or null to remove QR code from the scene
+- QR code limit reached
+- QR code not found
+- QR Code Re-ordered
+- QR Code Remove Clicked
+- QR code removed
+- QR code title
+- QR code with given title and link already exists
+- QR Codes
+- QR codes loaded
+- QR Overlay Mode Selected
+- Refetching QR codes: Failed to delete QR code
+- Removing QR code…
+- Scan
+- Scan the barcode below with the two-factor authentication app on your phone, for example with 
+- Scene QR code
+- Scene QR code set
+- Set QR code
+- Set QR Code
+- Set the stream`s primary color for captions, qr codes, participant names, tickers
+- Setting scene QR code…
+- Show QR Code Scan Alert On Stream Toggle Clicked
+- Show QR code scan alerts on stream
+- Small QR Code Align Option Clicked
+- solid filled background. Primary color is visible on captions, QR codes, ticker, and participant names.
+- Someone scanned the QR code
+- Sorry, we can not scan this store.
+- Sorry, we can’t scan this website.
+- Studio will show an alert on the live stream whenever someone scans the QR code.
+- Successful QR code delete
+- Successful QR Code edit
+- Synced QR codes order
+- Too many QR codes
+- Unable to change QR code order: No item with specific indexes
+- Unable to change QR codes order: failed to find index in complete list
+- Unable to edit QR Code: Not found
+- Unable to remove QR code: does not exist
+- URL the QR code points to
+- Wait until an image scan is complete and findings can be accessed
+- We can’t scan this store as it’s not public.
+- You've exceeded the maximum number of QR codes
+
+### Notes / teleprompter (168)
+
+-  enter the <b>#sponsored</b> and correct game title (<b>%s</b>) in the stream description.
+- , as a separate subscription.
+- ;return s===TO.CREATE_SUBSCRIPTION?D?`Start ${D}-day Free Trial`:`Subscribe ${e}`:s===TO.UPGRADE_SUBSCRIPTION&&q?.trial?
+- A description contains invalid characters '<' or '>'
+- A description is now required on this platform
+- Add Restream's link to the platform description
+- Browser sources require a paid subscription
+- Can't upload video. The Descript project is not ready yet. Please wait a couple of minutes and try again.'
+- Cancel my subscription
+- Cancel subscription
+- Cancel Subscription
+- Caption with given title and description already exists
+- Clips add-on subscription updated
+- Close notes
+- Cloud recordings + Transcription
+- Cloud recordings require a paid subscription
+- Congratulations! Your subscription is successfully reactivated.
+- Could not save the note. Please try again or contact support.
+- Custom backgrounds require a paid subscription
+- Custom logos require a paid subscription
+- Custom overlays require a paid subscription
+- Description
+- Description (BETA)
+- Description text
+- Edit subscription
+- Edit Subscription
+- Enable or disable cloud recording. Only available for users with an active subscription (check cloudRecordingAvailable in state).
+- Enhance title and description
+- Enter a product description (optional)
+- Enter stream description...
+- Facebook event description can't be empty. Please provide a description.
+- Failed to cancel subscription
+- Failed to fetch notes
+- Failed to init scenes notes store
+- Failed to save scene note
+- Failed to sync note
+- Failed to upload Video Storage file by public link: Descript not ready
+- Failed too save note
+- Filename for the generated PNG background. Use a short descriptive name. The .png extension is added if omitted.
+- Generate a unique title and description
+- Generate title and description
+- Generate title and description with AI
+- Get a %s%% discount on a monthly subscription!
+- Get a %s%% discount on a yearly subscription!
+- Get current event details including title, description, and status
+- Get note
+- Get notes
+- Get notes for all scenes
+- Get the chat overlay state for a specific scene, including whether it is enabled and its options. Note: in portrait orientation, chat overlay uses default settings and customization options have no ef
+- Get the note for a specific scene
+- How can I cancel my subscription?
+- Import from Descript, Dropbox or Google Drive
+- in stream descriptions automatically.
+- Invalid file for transcription
+- Loading note…
+- Loading notes…
+- Local recordings require a paid subscription
+- Missing required data: subscription plan type, quantity or interval.
+- Natural-language description of the image (subject, mood, style, lighting). Be specific.
+- Natural-language description of the overlay subject (object, character, sticker, prop). Describe only the subject — do not describe a background or scene.
+- Natural-language description of the video (subject, motion, mood, style, lighting). Be specific about motion.
+- Natural-language description of the web research goal, including source or freshness guidance and broader context from the task. Maximum 5000 characters.
+- New event description
+- No active subscription found
+- No description provided for this tool.
+- Note
+- Note loaded
+- Note saved
+- Note synced
+- Note updated
+- Note: We always prorate charges depending on the cost of your new plan.
+- Note: Your purchase includes enrollment in our automatic renewal service. You may cancel this service at any time in your Restream account.
+- Notes
+- Notes fetched
+- Notes loaded
+- Open notes
+- Paste a public link to Descript, Dropbox or Google Drive
+- Please add a stream description
+- Please enter description
+- Please limit your description to ${e} characters
+- Please migrate your code to use AWS SDK for JavaScript (v3).
+- Please specify the video description. It can contain up to 5000 characters.
+- Renew subscription
+- Renew Subscription
+- Restream.io Upload & Stream Subscription
+- Saving note…
+- Scene has notes
+- Scene Note Added
+- Scene Note Edited
+- Scene Note Focused
+- Scene Note Max Symbols Reached Error
+- Scene Note Removed
+- Script
+- Script is not loaded.
+- Scripts
+- Simply cancel the next payment in the subscription settings. Your current subscription will last until the end of the paid period.
+- Skipping Intercom event subscription: instance not found
+- Something went wrong while canceling the subscription. If this error persists, please contact support.
+- Something went wrong while canceling the subscription.<br> ⏎ If this error persists, please <a class="link" onclick="Intercom('showNewMessage', 'Cancel Subscribe: ')">contact support</a>.
+- Something went wrong while editing your subscription.<br> ⏎ If this error persists, please <a class="link" onclick="Intercom('showNewMessage', 'Error Edit Plan: ')">contact support</a>.
+- Something went wrong while updating the subscription. If this error persists, please contact support.
+- Start typing notes for the scene...
+- Streaming disabled. Your webinar subscription has expired. <upgradeButton>Upgrade</upgradeButton> to start your webinar.
+- Subscription
+- Subscription 3DSecure Error
+- Subscription Attempt
+- Subscription Changed 3D Secure Check Displayed Client
+- Subscription Changed 3D Secure Success Client
+- Subscription Changed Client
+- Subscription Error
+- Subscription for this organization has been cancelled. Contact your admin to unlock your access
+- Subscription Reactivated 3D Secure Check Displayed Client
+- Subscription Reactivated 3D Secure Success Client
+- Subscription Reactivated Client
+- Subscriptions
+- Terse, evocative description of the desired vibe (style, mood, instrumentation, tempo). 1-500 chars.
+- The event description exceeds the maximum length
+- The following text will be added to your description: 'Powered by Restream https://restream.io/'
+- The inputTranscript field is deprecated, use the encodedInputTranscript field instead. The inputTranscript field is available only in the de-DE, en-AU, en-GB, en-US, es-419, es-ES, es-US, fr-CA, fr-FR
+- The note content. Supports multi-line text. Pass empty string to clear the note
+- This account can't be deleted while you have active subscriptions.
+- This posts as an internal team notification — use a plain, clear, informative title and description. No hashtags or clickbait.
+- This property is deprecated and returns the Id and Description of the Provisioning Artifact. Use ProvisioningArtifactOutputKeys instead to get the Keys and Descriptions of the outputs.
+- This track requires a paid subscription
+- Transcription failed
+- Unable to renew Stripe customer subscription.
+- Unable to renew subscription.
+- Unique titles and descriptions per channel
+- Unknown subscription plan type
+- Unknown subscription plan type.
+- Update note
+- Update stream title and description.
+- Update the event title and/or description
+- Update the note for a specific scene
+- Update title to Live with Restream and Description to Office hours livestream
+- Upload and Stream Subscription Attempt
+- Upload and Stream Subscription Error
+- Upload by public link descript not ready error
+- Use a professional, value-driven tone — no clickbait or excessive emoji. Open the description with a strong hook and end with a clear CTA; the first ~150 characters matter most.
+- User does not have a subscription to renew
+- Waiting Google script to load
+- Warning: Missing \`Description\` or \`aria-describedby={undefined}\` for {${DF("DialogDescriptionWarning").contentName}}.
+- Warning: Missing \`Description\` or \`aria-describedby={undefined}\` for {${DI("DialogDescriptionWarning").contentName}}.
+- Warning: Missing \`Description\` or \`aria-describedby={undefined}\` for {${Jo("DialogDescriptionWarning").contentName}}.
+- Warning: Missing \`Description\` or \`aria-describedby={undefined}\` for {${Yl("DialogDescriptionWarning").contentName}}.
+- We are formalizing our plans to enter AWS SDK for JavaScript (v2) into maintenance mode in 2023. ⏎ 
+- Write a catchy, keyword-rich title. The description should hook viewers in the first line and may use 3–5 relevant hashtags.
+- Write a clear, keyword-rich title and description that aid search discovery.
+- Write a clear, member-facing title and a description that tells patrons what to expect.
+- Yes, we offer a 17% discount if you choose an annual subscription.
+- You are trying to add a channel that exceeds the number of available Extra Destinations with your current plan.  ⏎  ⏎ Please upgrade your subscription
+- You are using all your available Extra destinations. If you need more, please upgrade your subscription.
+- You can change a plan anytime in your subscription settings. We always prorate charges depending on the cost of your new plan.
+- You can manage your subscriptions
+- You can't delete your account while you have active scheduler subscriptions.
+- You can't delete your account while you have active subscriptions.
+- You can't remove your card while some of your subscriptions are still active. You can cancel them at
+- You subscription downgrades in {{count}} day
+- You subscription downgrades in {{count}} days
+- You're purchasing an add-on that will be billed separately from your current subscription. It will renew on 
+- Your Clips add-on subscription has started
+- Your discount is applied. The discount is valid for the first payment only. You can cancel your subscription at any time to avoid future charges. You also agree to our
+- Your subscription downgrades in less than 24 hours
+- Your subscription expires in {{count}} day
+- Your subscription expires in {{count}} days
+- Your subscription expires in less than 24 hours
+- Your subscription has been successfully renewed.
+- Your subscription will be changed immediately. Credit for unused features will be added to your account.
+
+### Media & presentations (1172)
+
+-   3. On `skipped`, do NOT upload anything. Acknowledge to the user and ask whether they want a different style / mood, or to move on without picking.
+-  exists, but is not available. Please file an issue!
+-  ms for the last video frame.
+-  or use Upload & Stream to expand your reach.
+- ' from shared ini file.
+- "image" content part
+- "tool-result" content of type "file-data"
+- "tool-result" content of type "file-id"
+- "tool-result" content of type "file-reference"
+- "tool-result" content of type "file-url"
+- "tool-result" content of type "image-data"
+- "tool-result" content of type "image-file-id"
+- "tool-result" content of type "image-file-reference"
+- "tool-result" content of type "image-url"
+- };return void on(n,t.clipsAddonChecked,t.clipsAddonQuantity,t.uploadAndStreamAddonChecked,t.uploadAndStreamAddonProductKey,r)}if(PO(s)||(e=>4===e)(s)){const n={quantity:Number(e.plan),interval:e.billY
+- • Images: JPG, JPEG, PNG, GIF, WEBP, HEIC, TIFF, AVIF, SVG.
+- 🤩 Upgrade to make the most of Upload and Stream!
+- 🤩 Upgrade to stream all of your pre-recorded videos!
+- ${fBe} Simultaneous upload supports only three files.
+- ${fBe} This video is over the duration limit of your plan.
+- ${fBe} This video is over the size limit of your plan.
+- ${fBe} You've reached the limit of video uploads on your plan.
+- ${fBe}This video is over the video upload limit of your plan.
+- 1 new clip ready
+- 10 files
+- 10 GB per video
+- 10 video slots
+- 10 videos
+- 10 videos, 1hr/2GB
+- 10 videos, 1hr/2GB each
+- 100 videos, 8hr/20GB each
+- 1080p videos
+- 10GB per video
+- 12hr upload library
+- 15 minute videos
+- 2 hour upload
+- 25 files
+- 25 video slots
+- 25 videos
+- 25 videos, 2hr/5GB each
+- 25 videos, 2hr/5GB per each
+- 250 Clips + Live Clipping
+- 2GB per video
+- 2hr upload library
+- 3. Upload an Image
+- 4 hour upload
+- 4hr upload library
+- 4K videos
+- 5 GB per video
+- 5 video slots
+- 5 videos
+- 5 videos, 30min/500MB each
+- 50 files
+- 50 video slots
+- 50 videos
+- 50 videos, 4hr/10GB each
+- 500MB per video
+- 5GB per video
+- A live video platform for gamers that breaks the wall between streamers and viewers with interactive controls. The platform focuses on small-to-medium-sized communities that care deeply about viewer e
+- Aborting new HLS video player: HLS Video was destroyed before player was created
+- Add a media placeholder to a scene. Does not work on Countdown scenes.
+- Add a realistic, photo-style scene for your stream.
+- Add a smooth looping video backdrop for your stream.
+- Add a source image to a scene from a URL. Fetches the image, uploads it, and assigns it to the specified scene. Does not work on Countdown scenes.
+- Add a Video File
+- Add at least 1 video to start preview
+- Add at least one video
+- Add custom images 
+- Add image
+- Add local video
+- Add media
+- Add Media
+- Add media scene
+- Add presentation
+- Add video
+- Add Video
+- Add video clips
+- Add video from Video Storage
+- Add video scene
+- Added source images batch
+- Added video producer
+- Adding custom music track file
+- Adding image without initial dimensions: Failed to read image dimensions
+- Adding image…
+- Adding media…
+- Adding source image by url ${e}
+- Adding source image by url on new scene ${e}
+- Adding source image file
+- Adding source images batch
+- AfreecaTV is a social media platform that anyone from anywhere can use to broadcast live. AfreecaTV has expanded into North America, Japan, Taiwan, and Thailand with plans to enter other regions aroun
+- After scanning the barcode image or inputting your secret code, the app will display a 6-digit number. Enter the number generated from the app below.
+- All chunks uploaded for completed take, finalizing
+- All files were uploaded and shared with the host.
+- All recorded tracks will be uploaded and accessible only to the Host. Works on desktop, Google Chrome. 
+- Amazon Elastic File System
+- Amazon Kinesis Video Signaling Channels
+- Amazon Kinesis Video Streams
+- Amazon Kinesis Video Streams Archived Media
+- Amazon Kinesis Video Streams Media
+- Amazon Live is a streaming platform that allows to broadcast live videos to Amazon customers. Interact with viewers, create shopping experiences, and sell in real time. Works on web and mobile.
+- An unexpected error happened during local video playback. Please, try again.
+- And last but not least, we encourage you to checkout our new feature %sVideo from Storage%s to play videos in high quality at high speed.
+- Any streamer can stream games and videos to Youtube, Twitch, Facebook, Mixer, Periscope and many other platforms at the same time.
+- Applied camera video track constraint
+- Applied screen sharing video track constraint
+- Apply for Live Video Broadcasting
+- Applying camera video track constraint
+- Applying screen sharing video track constraint
+- Are you sure you want to start a new recording? The video you just created won’t be saved.
+- Aside corner radius (% of item height, 0–100). For: THUMBNAILS, PICTURE_IN_PICTURE, Showtime
+- Aside thumbnail size (% of scene height, 0–100). For: THUMBNAILS, PICTURE_IN_PICTURE
+- Assign a background to a specific scene. Supports both static (image) and animated (video) backgrounds. Pass null to remove background from the scene.
+- Attach image
+- Attached image
+- Attempt to start playlist preview failed
+- Attempt to stop playlist preview failed
+- Attempted to remove non-existing video file
+- Attempted to set mediaKeys without media element attached
+- Attempting to start camera audio and video separately: Failed to start camera audio and video attempt
+- Audio options to present, typically the two tracks from `generate_music`. Minimum two — if the upstream returns only one track, persist it directly via `upload_custom_music` instead of calling this to
+- Auto switch is not available for this scene. Media scenes require an attached video.
+- Auto-switch scene was enabled, so video loop is off
+- Automatically generate and post short-form clips during your livestream. Your stream is processed in real-time and posted while you're still on air.
+- Automatically records live event into a video viewable later
+- Avatar image
+- Avatar image for ${e}
+- Avatar image for $name
+- Avatar Uploaded
+- AWS Elemental MediaStore Data Plane
+- Background uploaded
+- Background Uploaded
+- Bilibili is a Chinese video sharing and live streaming website themed around anime, manga, and game fandoms. Users can submit, view, and add commentary subtitles to videos.
+- Blind or unblind a participant webcam source. When blinded, the camera video track is disabled and a placeholder/avatar is shown instead. Only works on the host own webcam sources.
+- Blinding video input: Failed to restart unexpectedly ended video track ${e.label}
+- Bring presentations into Studio.
+- Buffer full error also media.currentTime is not buffered, flush audio buffer
+- Build your playlist and schedule it to go live
+- Camera video toggled
+- Can't add media placeholder. Please try again later.
+- Can't import video files. Please try again or contact support.
+- Can't loop video. Please try again, or contact support for help
+- Can't pause video from storage playback. Please try again, or contact support for help
+- Can't play selected video background. Please try again or contact support.
+- Can't play selected video clip. Please try again or contact support.
+- Can't play video from storage. Please try again, or contact support for help
+- Can't remove video from storage. Please try again, or contact support for help
+- Can't resume video from storage playback. Please try again, or contact support for help
+- Can't seek video from storage. Please try again, or contact support for help
+- Can't start PCAP recording playback. Please try again later.
+- Can't start playlist preview. Please try again later.
+- Can't stop PCAP recording playback. Please try again later.
+- Can't stop playlist preview. Please try again later.
+- Can't upload {{filename}} Please try again or contact support.
+- Can't upload video due to an unexpected error. Please, try again.
+- Can't upload video file. Please try again or contact support.
+- Can't upload video. Check if the link is public and directs to a shared video file.'
+- Can't upload video. File is too large!'
+- Can't upload video. The Descript project is not ready yet. Please wait a couple of minutes and try again.'
+- Can't upload video. We can’t read your file. Please make sure that it has public access and is a valid video file.'
+- Can't upload video. You’ve already reached the maximum of videos!'
+- Cannot convert string fileId to provider reference without a provider ID. Use a Record<string, string> fileId or switch to the file-reference type.
+- Cannot update media devices: client with ID ${e.value.clientId} not found
+- Capture flawless audio and video, no matter your connection. Record all participants on the local device — perfect for podcasts and polished edits.
+- Capture from video element is not supported
+- Capturing media stream
+- Change Image
+- Choose Video
+- Cleaning up after upload
+- Clips
+- Clips add-on subscription updated
+- Clips are not ready for this stream yet.
+- Clips Conversion Modal Button Clicked
+- Clips Conversion Modal Shown
+- ClipsBackendAPIClient is not provided
+- Complete upload stream
+- Complete upload stream, no data items
+- Conversion to different image formats require that a canvas is passed when iniitializing the image.
+- Conversion to different image formats require that a canvas is passed when initializing the image.
+- Conversion to ImageBitmap requires that the MediaPipe Tasks is initialized with an OffscreenCanvas
+- Copied To Clipboard
+- Copy to clipboard
+- Could not add image. Please try again or contact support.
+- Could not add images. Please remove some scenes and try again.
+- Could not clear media keys: 
+- Could not close sessions and clear media keys: 
+- Could not play local video audio
+- Could not start local video
+- Create file original name is missing error
+- Create file s3 not found error
+- Create file upload not found error
+- Create media-keys for "
+- Create playlist event
+- Create QR code + image
+- Created playlist draft event
+- Creating playlist draft event on page load
+- Creating recording upload
+- Creating video element
+- Crop your image
+- Custom Music File Delete Clicked
+- Custom Music File Delete Confirmed
+- Custom music file format is not supported
+- Custom Music File Rename Clicked
+- Custom Music File Rename Confirmed
+- Custom Music Files Started Processing
+- Custom Music Files Uploaded
+- Custom Music Upload Button Clicked
+- Custom music upload took too long to become ready
+- Demo file
+- Demo video
+- Destination ${wbe[e.platform]||""} is in DRAFTED status, using uploadDestinationTemplateCover endpoint
+- Destroying room media stream without tracks
+- Destroying video pipeline
+- Destroying video pipeline with error
+- Disable camera video (currently enabled)
+- Disabling Extra Camera video input: Unexpectedly ended non-restartable video track ${e.label}
+- Display captions, messages, logos, and overlays while video clip is playing
+- Display media is not supported
+- Display Media Request Error
+- Display media streams are not supported
+- Done uploading custom music file
+- Done uploading custom music files
+- Done uploading source image
+- Download an audio file from a URL and add it to the user's custom music library. Blocks until the track reaches status `Ready` or returns a timeout error after ~90s.
+- Downloading mp4 video recording
+- Drag a region to crop the image. Use mouse wheel to zoom.
+- Drag image here
+- Drop files here to upload
+- Drop here to upload
+- Drop image here
+- Drop presentation here to upload
+- Drop to upload your image
+- During playback, only the video is shown — everything else is hidden.
+- Edit video name
+- Embed link is copied to the clipboard.
+- Enable camera video (currently disabled)
+- Enable or disable audio-only mode on a participant camera source. When enabled, video is hidden and only audio is transmitted. Only works on main webcam sources.
+- Enable or disable live clipping for the current event. Only available when the feature is enabled (check liveClippingAvailable in state).
+- Enable widget image generations
+- Enter video name to continue
+- Error occurred on image fetch: ${e.statusText}
+- Error processing thumbnail for destination ${wbe[e.platform]||""}, continuing with toggle operation
+- Event cover upload cover error
+- Event posts on YouTube, Facebook, and LinkedIn will show this thumbnail before your stream starts.
+- Every streamer can stream games and videos on YouTube, Twitch, Periscope, Facebook, Mixer, Smashcast, and 30+ platforms at the same time.
+- Exceeded $time-hour limit! Please reduce the playlist duration
+- Exceeded playlist limit.
+- Exceeded upload bytes limit, tickers upload limited
+- Exceeded upload count limit, captions upload limited
+- Exceeded upload count limit, logos upload limited
+- Exceeded upload count limit, tickers upload limited
+- Expected tool result file content to convert to file.
+- Failed camera video start attempt
+- Failed HLS video playback: failed to load manifest
+- Failed HLS video playback: unexpected error
+- Failed init camera placeholder service: no initial video track
+- Failed to add animated background: video file exceeds maximum supported file size
+- Failed to add camera: video device and resolution must be selected
+- Failed to add image: no image id received
+- Failed to add image: no response received
+- Failed to add image: Response await timed out
+- Failed to add logo. Wrong file type
+- Failed to add logos images: no active brand
+- Failed to add media placeholder
+- Failed to add media placeholder on button click
+- Failed to add media placeholder: scene not found
+- Failed to add media placeholder: Wrong scene type
+- Failed to add overlay images: no active brand
+- Failed to add overlay: wrong file type
+- Failed to add playlist scenes batch: No videos
+- Failed to add presentation
+- Failed to add presentation while waiting for the host
+- Failed to add source image
+- Failed to add source image by url ${e}
+- Failed to add source image by url on new scene ${e}
+- Failed to add source image files on click
+- Failed to add source image files on click: No files selected
+- Failed to add source image files on drop
+- Failed to add source image files on drop: No files selected
+- Failed to add source images batch
+- Failed to add stinger: number of video clips exceeded
+- Failed to add upload part due to server error
+- Failed to add video clip: video file exceeds maximum supported file size.
+- Failed to add video clip. No permission to use paid features
+- Failed to add video clips: limit exceeded
+- Failed to analyze image colors
+- Failed to analyze image colors: image has no dimensions
+- Failed to analyze image colors: no canvas context
+- Failed to analyze image colors: no visible pixels found
+- Failed to browse file: not found file
+- Failed to capture room media preview for ${this.kind}
+- Failed to change hls video loop state
+- Failed to change loop on user click: HLS Video not found
+- Failed to change video status, please try again later.
+- Failed to complete recording upload due to server error
+- Failed to complete upload part due to server error
+- Failed to complete upload part: recordedBytes missing for take ${e.id}
+- Failed to compute video storage file status: unknown status ${e}
+- Failed to convert client media device kind: Unsupported kind: ${e}
+- Failed to convert MediaDeviceInfo to ClientMediaDevice: Unsupported device kind ${e}
+- Failed to copy requestId to clipboard
+- Failed to create 2D context for camera placeholder image
+- Failed to create client: cannot produce audio or video supported by the server
+- Failed to create custom music file upload
+- Failed to create image thumbnail: Blob creation failed
+- Failed to create image thumbnail: Failed to create canvas
+- Failed to create image thumbnail: Timed out
+- Failed to create media placeholder layout source
+- Failed to create media-keys for "
+- Failed to create playlist draft event
+- Failed to create recording upload
+- Failed to create video pipeline: no video track
+- Failed to create Video Storage file: file size exceeded
+- Failed to create Video Storage file: files limit exceeded
+- Failed to create Video Storage file: original name is missing
+- Failed to create Video Storage file: S3 not found
+- Failed to create Video Storage file: upload not found
+- Failed to create video track thumbnail: Blob creation failed
+- Failed to create video track thumbnail: Expected video track, received ${e.kind}
+- Failed to create video track thumbnail: Failed to create canvas
+- Failed to create video track thumbnail: Timed out
+- Failed to create video track thumbnail: Video element errored with ${l.error}
+- Failed to decode image
+- Failed to delete presentation
+- Failed to delete virtual background image blob: delete errored
+- Failed to dispose video analyzer
+- Failed to fetch AI clips usage limit
+- Failed to fetch clips conversion eligibility data
+- Failed to fetch clips settings for automatic conversion modal type
+- Failed to fetch file from URL
+- Failed to fetch file from URL: ${e}
+- Failed to fetch file metadata
+- Failed to fetch guest presentations
+- Failed to fetch image: HTTP ${i.status}
+- Failed to fetch image: request timed out
+- Failed to fetch image: the remote host may not allow browser access (CORS)
+- Failed to fetch presentations
+- Failed to generate background image from shader
+- Failed to generate photorealistic background
+- Failed to generate photorealistic background: empty response body
+- Failed to generate upload URL due to server error
+- Failed to get camera audio track when starting audio and video: received ${n.readyState} track
+- Failed to get camera video track
+- Failed to get camera video track when starting audio and video: received ${r.readyState} track
+- Failed to get camera video track when starting video: received ${i.readyState} track
+- Failed to get display media
+- Failed to get display media. Detected invalid state, most likely it is not supported
+- Failed to get local video processed audio track
+- Failed to get processed local video audio track: received ${r.readyState} track
+- Failed to get upload URL
+- Failed to get user media stream
+- Failed to get video clips
+- Failed to get video storage demo file
+- Failed to get video storage demo file: demo file not found
+- Failed to get video storage files
+- Failed to get Video Storage upload credentials
+- Failed to get Video Storage upload credentials: files limit exceeded
+- Failed to get video stream track
+- Failed to get videos on document visibility change
+- Failed to get videos on video storage shown
+- Failed to hide the HLS video on the edited scene
+- Failed to hydrate recorded bytes: uploadedBytes missing for upload ${e.uploadId}
+- Failed to import file from google drive
+- Failed to import presentation: token does not exist
+- Failed to import presentation. Please try again or contact support
+- Failed to init Guest store for upload
+- Failed to load green screen background image
+- Failed to load image
+- Failed to load Mediapipe virtual background image
+- Failed to loop HLS playback: player not found
+- Failed to loop HLS video: Room Manager commands not allowed
+- Failed to open HLS video: not supported
+- Failed to open local video file
+- Failed to parse video SSE event
+- Failed to paste from clipboard on paste event
+- Failed to pause HLS playback: player not found
+- Failed to pause hls video
+- Failed to pause HLS video on host click: HLS video not found
+- Failed to pause HLS video: Room Manager commands not allowed
+- Failed to play HLS video
+- Failed to play layout audio media stream
+- Failed to play layout video media stream
+- Failed to play video from video storage
+- Failed to play video storage file: id not found
+- Failed to preload scene media for editing
+- Failed to preprocess logo: image has no dimensions
+- Failed to process {{filename}}…
+- Failed to process attached images
+- Failed to process uploading of local recording part: No etag
+- Failed to provide HLS video player
+- Failed to put off air local video: Source state not found
+- Failed to read attached image
+- Failed to read file, please try again.
+- Failed to read source image by url: Failed to detect image type ${e}
+- Failed to read source image by url: Failed to fetch image blob ${e}
+- Failed to refetch mp4 video recording while trying do download it. Fallback to the default download option
+- Failed to refetch recording for vertical video download
+- Failed to refresh AI spend credits after photorealistic background generation
+- Failed to remove demo Video Storage file
+- Failed to remove demo Video Storage file: used in event
+- Failed to remove hls video
+- Failed to remove HLS video state
+- Failed to remove image: no response received
+- Failed to remove image: Response await timed out
+- Failed to remove video clip: is default
+- Failed to remove video clip: not found
+- Failed to remove Video Storage file
+- Failed to remove Video Storage file: file not found
+- Failed to remove Video Storage file: used in event
+- Failed to reset thumbnails layout options
+- Failed to reset thumbnails layout options for target ${e}
+- Failed to reset video analyzer
+- Failed to resume HLS playback: player not found
+- Failed to resume hls video
+- Failed to resume HLS video on host click: HLS video not found
+- Failed to resume HLS video: Room Manager commands not allowed
+- Failed to run camera video pipeline
+- Failed to seek HLS playback: player not found
+- Failed to seek hls video
+- Failed to seek HLS video on host click: HLS video not found
+- Failed to seek HLS video: Room Manager commands not allowed
+- Failed to select source media device
+- Failed to select: not found presentation in store
+- Failed to send media devices
+- Failed to set sinkId on starting video
+- Failed to set video input device: device with such id not found
+- Failed to show logo: mp4 video logos cannot be played
+- Failed to show overlay: mp4 video overlays cannot be played
+- Failed to start camera video
+- Failed to start camera video pipeline
+- Failed to start playlist preview
+- Failed to start playlist preview: can not start playlist preview with the current status
+- Failed to start playlist preview: stream or preview is not stopped
+- Failed to start playlist preview. No connection or active client
+- Failed to start polling statuses on get videos
+- Failed to start polling statuses on upload video file
+- Failed to start polling statuses on upload video file by public link
+- Failed to start polling video uploads statuses
+- Failed to start video on unmute
+- Failed to start video on video input settings change
+- Failed to start video playback: ${o?.message}, code ${o?.code}
+- Failed to stop hls video
+- Failed to stop HLS video: Room Manager commands not allowed
+- Failed to stop playlist preview
+- Failed to stop playlist preview. No connection or active client
+- Failed to stop screen share media stream
+- Failed to toggle live clipping
+- Failed to toggle presentation on the edited scene
+- Failed to unassign presentation from the edited scene
+- Failed to update HLS video audio gain on button click: Not allowed
+- Failed to update HLS video audio gain on button click: State not found
+- Failed to update HLS video mute on button click: Not allowed
+- Failed to update HLS video mute on button click: State not found
+- Failed to update HLS video on air on button click: Not allowed
+- Failed to update HLS video on air on button click: State not found
+- Failed to update HLS video spotlighted on button click: Not allowed
+- Failed to update HLS video spotlighted on button click: State not found
+- Failed to update live clipping for event, continuing with other operations
+- Failed to update permissions after starting video
+- Failed to update presentation on-air on button click: Not allowed
+- Failed to update presentation spotlighted on button click: Not allowed
+- Failed to update thumbnails layout main source radius
+- Failed to update thumbnails layout options
+- Failed to update thumbnails layout options: No active scene id
+- Failed to update thumbnails layout previews position
+- Failed to update thumbnails layout previews radius
+- Failed to update thumbnails layout previews shape
+- Failed to update thumbnails layout previews size
+- Failed to update video analyzer
+- Failed to update video resolution: no available resolution with such id
+- Failed to upload
+- Failed to upload {{filename}}…
+- Failed to upload background
+- Failed to upload backgrounds: no active brand
+- Failed to upload caption
+- Failed to upload custom music
+- Failed to upload custom music file
+- Failed to upload custom music track
+- Failed to upload custom music track on drag-n-drop
+- Failed to upload file
+- Failed to upload logo
+- Failed to upload logo image
+- Failed to upload logo images
+- Failed to upload overlay
+- Failed to upload overlay image
+- Failed to upload overlay images
+- Failed to upload static background: no permission for using paid features
+- Failed to upload static background: unsupported file type
+- Failed to upload the avatar: unsupported format.
+- Failed to upload the background
+- Failed to upload the logo.
+- Failed to upload the overlay.
+- Failed to upload the video clip
+- Failed to upload ticker
+- Failed to upload video clip
+- Failed to upload video clips: no active brand
+- Failed to upload video storage file
+- Failed to upload video storage file by public link
+- Failed to upload Video Storage file by public link
+- Failed to upload Video Storage file by public link: backend internal error
+- Failed to upload Video Storage file by public link: Descript not ready
+- Failed to upload Video Storage file by public link: file corrupt
+- Failed to upload Video Storage file by public link: file size exceeded
+- Failed to upload Video Storage file by public link: files limit exceeded
+- Failed to upload Video Storage file by public link: original url is missing
+- Failed to upload Video Storage file by public link: unsupported source
+- Failed to upload Video Storage file: file size limit exceeded
+- Failed to upload Video Storage file: files limit exceeded
+- Failed to upload virtual background
+- Failed to upload virtual background: unsupported file type
+- Failed to upload virtual background.
+- Fetched resource is not an image: ${r.type}
+- Fetched resource is not an image: ${s}
+- Fetched resource is not image: ${t||"No Content Type"}
+- Fetching downloadUrl from google drive file metadata
+- File
+- File format is not supported.
+- File too large, thumbnails should be smaller than 10MB.
+- FileList is not supported in the current environment
+- Filename for the generated PNG background. Use a short descriptive name. The .png extension is added if omitted.
+- Files
+- Flip the video horizontally
+- For media and entertainment
+- For now, try it on the Picture-in-Picture and Thumbnails layouts.
+- Found display media stream
+- Found no media in fragment 
+- Found user media stream
+- from the event thumbnail.
+- Full video
+- Game key copied to clipboard
+- Gateway request timed out: ${e} ⏎  ⏎     This is a client-side timeout. To resolve this, increase your timeout configuration: https://vercel.com/docs/ai-gateway/capabilities/video-generation#extending
+- Gb max video size
+- Generate a static 1080p background and upload it as a custom background. Supports solid colors, simple linear gradients, and a shader-based GradientCloud style.
+- Generate a static 1080p solid color background and upload it as a custom background.
+- Generate clips
+- Generate media
+- Generate photorealistic background
+- Generating clips
+- Generating photorealistic background…
+- Generation takes 30 s – 3 min. The audio URLs returned are valid for ~15 days on Suno's CDN, so the picked track must be handed to `upload_custom_music` to get a permanent track id.
+- Get a color palette from a remote image URL in the browser. The image host must allow CORS so pixels can be read from canvas. Returns success=false with an error when the image cannot be fetched or an
+- Get AI Clips Button Clicked
+- Get all available logos (default and custom). Each logo has a status: "Ready" (can be selected), "Uploading"/"Processing" (still being processed, wait and retry), or "Failed" (upload failed). Only "Re
+- Get all available overlays (default and custom). Each overlay has a status: "Ready" (can be selected), "Uploading"/"Processing" (still being processed, wait and retry), or "Failed" (upload failed). On
+- Get backup file not found error
+- Get clips
+- Get Clips
+- Get clips while you're still live to share in the moment.
+- Get demo file not found error
+- Get every custom music track the user has uploaded for the current brand. Returns all tracks regardless of status (Uploading / Processing / Ready / Failed). The `errorMessage` field is populated when 
+- Get file not found error
+- Get high-quality video and audio tracks
+- Get high-quality video and audio tracks, no matter your internet connection. Record all participants on the local device — perfect for podcasts and polished edits. 
+- Getting next part upload URL
+- goog.dom.safe.createImageFromBlob only accepts MIME type image/.*.
+- Got upload URL successfully
+- Graphics Files Uploaded With Drag And Drop
+- Guest can control all presentations
+- Guests (even when backstage) can navigate all presentation slides.
+- Handle encrypted media sn: 
+- High definition video at 720p, 
+- Hls Video seeked timeout awaiting
+- HTTPS URL of the audio file to download. Must be reachable from the browser (CORS-friendly).
+- I own or have licensed all my uploaded audio
+- If you want to play a video on the stream, please try to do so on a %sdesktop Google Chrome%s browser.
+- Ignoring invalid Playlist Delta Update DATERANGE tag: "
+- Ignoring media device change offer with null: Not implemented
+- Ignoring media device change offer: Device not found
+- Ignoring media device change offer: Source not found
+- Ignoring media device change offers: Denied by user
+- Ignoring media device change offers: Devices not found
+- Image
+- Image added
+- Image blob URL.
+- Image Functionality Promo Modal Clicked
+- Image Functionality Promo Modal Shown
+- Image is too large to analyze
+- Image removed
+- Imagebuilder
+- Images
+- ImageUtils.sRGBToLinear(): Unsupported image type. No color space conversion applied.
+- Import video
+- In this guide, you’ll find general rules around using our brand assets and showcasing Restream content. The rules apply to all media.
+- Inferred media type '${t}' from URL.
+- Init video buffer, container:
+- Initialize media stream track
+- Initialized preview media stream
+- Instagram is a free photo and video sharing app available on iPhone and Android. People can upload photos or videos to our service and share them with their followers or with a selected group of frien
+- Invalid cover image: ${e}
+- Invalid Custom Music file mime type
+- Invalid file for transcription
+- Invalid Logo Image file mime type
+- Invalid music file
+- Invalid Overlay Image file mime type
+- Invalid Presentation File Mime Type
+- Invalid Source Image file mime type
+- Invalid Static Background Image file mime type
+- Invalid upload status. Expected: ${e||"unknown"}, got: ${t||"unknown"}
+- Invalid video bitrate value. Value must be in range 200...6000.
+- Invite people to link their social media accounts to your live event. Reach more people and make your event a success.
+- It's free for all. Upload and save your tracks in the Music tab.
+- It's possible to upload only StreamElements overlays.
+- Join thousands of tech startups, marketing agencies, and media companies.
+- Keep up to 50 uploaded videos 
+- Keep your playlist under %time hour
+- Keep your playlist under %time hours
+- Kinesis Video
+- Kinesis Video Archived Media
+- Kinesis Video Media
+- Kinesis Video Signaling
+- Layout Preview Audio Media Stream Play Error
+- Layout Preview Video Media Stream Play Error
+- Learn how easy it is to stream a live video series.
+- Let V0 generate inline images inside the widget (mock product shots, illustrations).
+- Library
+- Limit reached. Remove one of the pictures to to upload a new one.
+- LinkedIn cover uploaded successfully
+- LinkedIn Live video must be scheduled for at least 1 hour to 7 days from now. ⏎ Please edit the start time
+- LinkedIn thumbnail change check
+- Live clipping
+- Live Clipping
+- Live Clipping + Autoposting
+- Live clipping is not available
+- Live playlist sliding: 
+- Live playlist, switching playlist, load frag with next SN: 
+- Live playlist, switching playlist, load frag with same CC: 
+- Live playlist, switching playlist, load frag with same PDT: 
+- Loading subtitle playlist for id 
+- Local Recording Upload Page Opened
+- Local video
+- Local Video
+- Local Video Loop Clicked
+- Local Video Pause Clicked
+- Local Video Play Clicked
+- Local video playback received error event: ${o?.message}, code ${o?.code}
+- Local video requires a capable device to play. <br> See our <link>support article<link> for details.
+- Local Video Seek Clicked
+- Local video/audio recordings
+- Logo uploaded
+- Logo Uploaded
+- Loop video
+- Loop video up to 10 times
+- Main source corner radius (% of item height, 0–100). For: THUMBNAILS, PICTURE_IN_PICTURE, Showtime
+- Make sure your browser extensions do not block video connection or try again with one of the following browsers:
+- Manual clips conversion modal type button clicked without a recording. Falling back to clips page URL.
+- Max file size: {{fileSize}}.
+- Max video size: 1 hour/2GB
+- Max video size: 2 hours/5GB
+- Max video size: 30 min/0.5GB
+- Max video size: 4 hours/10GB
+- Maximum video file size: 1 hour/2GB.
+- Maximum video file size: 2 hours/5GB.
+- Maximum video file size: 4 hours/10GB.
+- Media
+- Media added
+- Media Device Change Request Allowed
+- Media Device Change Request Received
+- Media Device Change Request Rejected
+- Media element src was set while attaching MediaSource (
+- Media placeholder
+- Media Placeholder
+- Media seeked to 
+- Media setup failed
+- Media source can't be added on countdown scene
+- Media type is missing for file part
+- Media-keys created for "
+- Media-keys set for "
+- Mediapipe
+- MediaRecorder bitrate configuration
+- MediaStore Data
+- Move your file from 
+- Moved from social avatar to image avatar due to missing social avatar image
+- MSE detaching and video ended, reset startPosition
+- Mute or unmute a participant source. Only works on media stream sources.
+- Name the video
+- Natural-language description of the image (subject, mood, style, lighting). Be specific.
+- Natural-language description of the video (subject, motion, mood, style, lighting). Be specific about motion.
+- New Feature: Playlists
+- New stream key copied to clipboard
+- News & Media
+- Next presentation slide
+- Next slide
+- Next video
+- No chunks to upload
+- No chunks to upload, performing cleanup only
+- No clips
+- No custom music track file dropped
+- No custom music track file selected
+- No fragments in live playlist
+- No longer active video track unexpectedly ended ${e.label} - doing nothing
+- No matches on slow regex match for level playlist!
+- No recording files found on this device.
+- No support for MediaSource
+- No thumbnail changes for destination ${wbe[e.platform]||""}
+- No upload parts found for completion
+- No uploaded presentations yet
+- No video feed
+- No video track to capture
+- Non-file stream objects are not supported with SigV4
+- Non-transparent videos are temporarily not supported. Please try another video.
+- Not a media scene
+- Not enough fragments to start playback (have: 
+- Not own playlist event: User does not match event user
+- One source is spotlighted; other sources positioned beneath as a row of thumbnails; used to represent THUMBNAILS, Showtime & TBPN in portrait orientation. Main (spotlighted) source position: 0.
+- only allow replacing a thumbnail, not removing it.
+- Oops, that seems to be not an image! To make it work for the overlay, it should be an image file like PNG, JPG, GIF or SVG.
+- Oops! Something went wrong while uploading the avatar. Please, try again.
+- Optional clip length in seconds. Defaults to the model default (4-8s).
+- Optional display filename for the user's library. Falls back to the URL pathname if omitted.
+- Optional reference URLs (images or pages) for visual inspiration. Pass URLs of existing assets when matching an existing look.
+- Optional style hint, e.g. photorealistic, cinematic, illustration.
+- or media server which supports RTMP, i.e. Wowza, Vimeo.
+- Overlay image
+- Overlay uploaded
+- Overlay Uploaded
+- Part ${e||"unknown"} already exists for this upload
+- Part already completed, skipping upload
+- Part upload completed successfully
+- Pasted From Clipboard
+- Pausing uploading
+- Pcap Playback
+- PDF file parts with URLs
+- Pending presentations detected
+- Photorealistic background
+- Photorealistic background generated
+- Play a video directly from your computer.
+- Play videos from the Video Storage.
+- Playback ended
+- Playback settings
+- Playback stalling at @
+- Playlist Duration Exceeded Limit
+- Playlist Duration Limit Experiment Upgrade Modal Shown
+- Playlist is too long. <buttonLink>Upgrade</buttonLink> or shorten it.
+- Playlist Preview Button Clicked
+- Playlist Schedule Event Button Clicked
+- Playlist Start Stream Event Button Clicked
+- Playlist Tutorial Contact Support Button Clicked
+- Playlist Tutorial Modal Opened
+- Playlist Watch Tutorial Button Clicked
+- Playlists
+- Playlists exceeds your $duration length limit. To schedule it, make it shorter or upgrade your plan.
+- Plays video only and automatically switches to the next scene when it ends
+- Plays video only and automatically switches to the next scene when it ends.
+- Please add image
+- Please connect more video input devices
+- Please specify the video description. It can contain up to 5000 characters.
+- Please specify the video start time. It must be in the future and close enough to the current date.
+- Please specify the video title. It must be between 1 and 100 characters long.
+- Please wait for the host to join the room, and you'll be able to add your slides shortly.
+- Please wait while videos are processed
+- Position mode: "ReservedSpace" (chat stays in a fixed area that shifts the video layout) or "Freemove" (chat can be placed anywhere over the video)
+- Presentation
+- Presentation already exists
+- Presentation Delete Clicked
+- Presentation Dropdown Clicked
+- Presentation File Started Processing
+- Presentation File Upload Clicked
+- Presentation hidden
+- Presentation Import From Google Drive Clicked
+- Presentation Import Google Started Processing
+- Presentation In Live
+- Presentation Next Slide Clicked
+- Presentation Previous Slide Clicked
+- Presentation Select Clicked
+- Presentation Stop Clicked
+- Presentations
+- Preview Video Settings Button Clicked
+- Previous presentation slide
+- Previous slide
+- Previous video
+- Processing thumbnail for destination ${wbe[e.platform]||""}
+- Processing upload batch
+- Produce better video quality at the cost of increased CPU usage.
+- QR code + image
+- Reached max ${r} events size queued for upload: ${l/a.iH}MiB
+- Received unsupported audio or video. Please try again, or contact support for help
+- Record 6 hour videos 
+- Record and download the video files 
+- Recording AI Clips Button Clicked
+- Recording mode: "AudioVideo" (audio and video), "AudioOnly" (audio only), or "VideoOnly" (video only)
+- Recording or upload not found error during upload
+- Recording or upload not found, cleaning up chunks
+- Recording upload created successfully
+- Recording upload finalized and take deleted
+- Recording upload not found
+- Recording upload not found or does not belong to this recording
+- Recording upload part not found
+- Reference id of an image the user pasted into the chat (format `@image:<id>`, or the bare `<id>`). You cannot see the image — pass the reference to condition the first frame on it.
+- Reference id of an image the user pasted into the chat (format `@image:<id>`, or the bare `<id>`). You cannot see the image — pass the reference to use it as a visual reference for composition, subjec
+- Reference id of an image the user pasted into the chat (format `@image:<id>`, or the bare `<id>`). You cannot see the image — pass the reference to use it as a visual reference for the subject, compos
+- Referral link copied to clipboard
+- Remote logo/image URL to analyze
+- Remove demo file used in events error
+- Remove file not found error
+- Remove file used in events error
+- Remove file used in streams error
+- Remove image
+- Remove thumbnail
+- Removing HLS video on hide click: No HLS video found - might be in-progress HLS video
+- Removing produced media stream without producers
+- Rename file exceed limit
+- Rename file internal error
+- Rename file missing error
+- Rename file not found error
+- Rename file unexpected error
+- Requesting encrypted media "
+- Requesting media device selection ${this.label}
+- Requesting video track: No video track on unblind
+- Restarting unexpectedly ended video track ${e.label}
+- Restream.io Upload & Stream Subscription
+- Restream.io: create professional videos and chat with viewers in real-time.
+- Restricting playback to HDCP-LEVEL of "
+- Resuming uploading
+- RTMP URL copied to clipboard.
+- Save your streams as video files and their audio-only versions for repurposing and podcasting
+- Save your video files
+- Scene Placeholder Add Media Button Clicked
+- Schedule a Live Video
+- Schedule uploaded videos as live streams
+- Scheduled live videos
+- See and share the world in motion. Watch and share the world of videos. See and share the world through videos. Watch and share the Internet's best videos.
+- Select next slide
+- Select previous slide
+- Select slide
+- Selected file
+- Set the audio gain level (volume) of a participant source. Only works on media stream sources that support audio gain (webcam, screen share, video).
+- Set the logo position for a specific scene. Works for Default, Media and Countdown scenes.
+- Set video device
+- Setting default video device
+- Setting media-keys for "
+- Setting up upload pipeline
+- Shape of aside thumbnails. Values: Vertical, Rectangle, Square, Circle. For: THUMBNAILS, PICTURE_IN_PICTURE
+- Share a video file from your computer.
+- Share an image from your computer.
+- Share clips on TikTok, YouTube Shorts, and Reels
+- Should Allow Guest Control All Presentations Toggle Clicked
+- Show default Restream graphics like overlays, videos, and backgrounds.
+- Show graphics and captions on top of video clips
+- Show non-video participants
+- Show Overlay Over Video Clip Toggle Clicked
+- Show slides, PDFs, or other documents.
+- Show/hide participant names (name + title image tag in bottom right corner of source) for a specific scene. Does not work on Countdown scenes.
+- Show/hide screen share participant names (name + title image tag in bottom right corner of source) for a specific scene. Does not work on Countdown scenes.
+- Skipping upload
+- Slack is a messaging app for teams. It brings all your team's communication and files in one place, where they're instantly searchable and available wherever you go.
+- Slider
+- Smashcast is a service where you can watch live broadcasts of video games in high quality with near-to-no delay. Watch, chat, and interact with people passionate about gaming.
+- Source hidden. To show, change <settingsLinkButton>non-video settings</settingsLinkButton>
+- Source Image File Started Processing
+- Source Media Device Clicked
+- Source Video Settings Button Clicked
+- Split audio/video downloads
+- Split audio/video recordings
+- Split video tracks
+- Start of audio media stream skipped in playlist mode
+- Start of video media stream skipped in playlist mode
+- Start of webcam media stream skipped
+- Started camera audio media stream ${i.label}
+- Started camera media stream ${r.label} / ${n?.label??"None"}
+- Started camera video media stream ${i.label}
+- Started video pipeline
+- Starting upload process
+- Starting video track
+- Steam is a digital distribution platform for purchasing and playing video games. Steam offers digital rights management, matchmaking servers, video streaming, and social networking services.
+- Stinger Upload Error
+- Stinger Uploaded
+- Stitch videos together in a series with playlists.
+- Stopping current video input track with reason ${e}
+- Stopping local video source with reason ${e}
+- Stopping media stream tracks
+- Stopping video playback
+- Store 10 files
+- Store 25 videos
+- Store 5 files
+- Store 50 files
+- Store 50 videos
+- Store up to 10 files.
+- Store up to 25 files.
+- Store up to 50 files.
+- Stored default video device
+- Stream key copied to clipboard
+- Stream pre-recorded videos
+- Stream title copied to clipboard
+- Stream up to 2 hours of any pre-recorded video live.
+- Stream up to 4 hours of any pre-recorded video live.
+- Studio Live Clipping Clips Ready Clicked
+- Studio Live Clipping Toast Clicked
+- Studio Live Clipping Toggle Clicked
+- Studio Playlists
+- Subtitle playlist not aligned with playback
+- Switch scene when video ends
+- Switch to Studio 2.0 to add images & GIFs
+- Switching on alternate audio, use video.buffered to schedule main fragment loading
+- Switching on main audio, use media.buffered to schedule main fragment loading
+- Switching video input: Unexpectedly ended non-restartable video track ${e.label}
+- Syncing consumers with consumed media streams
+- Synter Media AI
+- Take not found after upload cleanup
+- Task is not initialized with image mode. 'runningMode' must be set to 'IMAGE'.
+- Task is not initialized with video mode. 'runningMode' must be set to 'VIDEO'.
+- That file is too large. The size limit for video backgrounds is ${e}MB.
+- That file is too large. The size limit for video clips is {{fileSize}}.
+- That file type can’t be attached. Use PNG, JPEG, GIF, or WebP.
+- That image couldn’t be attached.
+- That image is too large to attach (max 5 MB).
+- The "file-data" type for tool result content is deprecated. Use the "file" type with mediaType and { type: 'data', data } instead.
+- The "file-id" type for tool result content is deprecated. Use the "file" type with mediaType and { type: 'reference', reference } instead.
+- The "file-reference" type for tool result content is deprecated. Use the "file" type with mediaType and { type: 'reference', reference } instead.
+- The "file-url" tool result content part with URL "${e.url}" is missing a "mediaType". ${n} ${r}
+- The "file-url" type for tool result content is deprecated. Use the "file" type with mediaType and { type: 'url', url } instead.
+- The "image-data" type for tool result content is deprecated. Use the "file" type with mediaType and { type: 'data', data } instead.
+- The "image-file-id" type for tool result content is deprecated. Use the "file" type with mediaType and { type: 'reference', reference } instead.
+- The "image-file-reference" type for tool result content is deprecated. Use the "file" type with mediaType and { type: 'reference', reference } instead.
+- The "image-url" type for tool result content is deprecated. Use the "file" type with mediaType 'image' (or a specific image/* subtype) and { type: 'url', url } instead.
+- The "image" content part type is deprecated. Use a "file" part with mediaType: 'image' (or a more specific image/* subtype) instead.
+- The background will appear behind your video.
+- The best way to stream live video to 30+ platforms simultaneously
+- The best way to stream live video to 30+ platforms simultaneously for free
+- The Content-MD5 you specified is invalid for multi-part uploads.
+- The host muted your local video
+- The host unmuted your local video
+- The imported file may not have export access.
+- The presentation source has been added and is waiting for the host to enable it.
+- The provided image content is invalid.
+- The request does not include the image or video content.
+- The type of scene to create: "Default" for live camera, "Media" for media/video, "Countdown" for countdown timer
+- The URL of the image to add
+- The URL of the image to upload as a background
+- The URL of the image to upload as a logo
+- The URL of the image to upload as an overlay
+- These plans are for personal streaming only. Businesses should use our <a href="#company" aria-controls="company" role="tab" data-toggle="tab" role="presentation">company plans</a>.
+- This file is already imported and is not changed.
+- This file is already uploaded.
+- This image type is not supported.
+- This Japanese video sharing and streaming platform is great for a variety of live content, including gaming, music, entertainment, political content, and more.
+- This operation is only supported on Media scenes, not on Countdown scenes
+- Thumbnail
+- Thumbnail didn’t upload
+- Thumbnails
+- TikTok is a mobile-first, short-form video sharing app where users create lip-syncing and comedic content to share with their followers.
+- To download separate audio and video tracks, upgrade your plan to Professional. %sUpgrade Now%s
+- To remove the watermark from all event posts, update thumbnails individually per channel or in the stream details.
+- To upload background, please upgrade your plan
+- To use auto-switch, add a video from storage or set up a countdown scene
+- Toggle auto switch for a scene. When enabled, the scene will automatically switch to the next scene when its content finishes. Works on any Countdown scene, or on Media scenes that have video attached
+- Toggle live clipping
+- Toggling camera video…
+- Too many presentations
+- Too Many Presentations On Server
+- Tried to upload unsupported avatar image format
+- Turn videos into live streams. 
+- Turn your uploaded video files 
+- Turn your uploaded video files into live streams.
+- Turn your uploaded video files into live streams. 
+- Uh oh, unable to delete presentation
+- Uh oh, unable to import presentation from Google Drive
+- Uh oh, unable to select presentation
+- Uh oh, unable to upload presentation
+- Unable to capture video: request frame is not supported
+- Unable to infer media type from URL. Defaulting to 'application/octet-stream'.
+- Unable to remove your live video on Facebook..
+- Unable to upload the video
+- Unable to upload video: unsupported format
+- Unable to upload video: video exceeds maximum duration
+- Unauthorized user in playlist mode
+- Unexpected media device event ${o} reason ${s}
+- Unexpected media device event kind ${e}
+- Unexpected media device event type ${o}
+- Unknown media type on converting to create JSON ${t}
+- Unknown video PTS for cc 
+- Unplugged device video track ended ${e.label} - doing nothing
+- Unsupported audio file format. Please try using popular formats like MP3, WAV, or FLAC.
+- Unsupported Avatar Upload
+- Unsupported file type for background. Only image files are supported.
+- Unsupported file type for overlay. Only image files are supported.
+- Unsupported image format
+- Unsupported image format. Please try uploading a JPEG or PNG file.
+- Unsupported reasoning-file data type: ${t.type}
+- Updated camera video input track to ${e?.label??"none"}
+- Updated video resolution
+- Updating live clipping for event
+- Upgrade to access clips.
+- Upgrade to schedule this video
+- Upgrade to stream longer playlist
+- Upgrade to stream this video
+- Upgrade to unlock <strong>automatic stream recordings</strong> and <strong>Record Only mode in Studio</strong> — perfect for podcasts and repurposing content via our AI-powered clips.
+- Upgrade to upload larger videos
+- Upgrade to upload longer videos
+- Upgrade to upload more videos
+- Upgrade your plan to upload image or video backgrounds.
+- Upgrade your plan to upload overlay.
+- Upgrade your plan to upload video clips.
+- Upload
+- Upload & Stream
+- Upload & Stream ${Xk(e)}
+- Upload & Stream ${Xk(He)}, ${UIe}
+- Upload & Stream Basic
+- Upload & Stream Plus
+- Upload & Stream Premium
+- Upload a logo from a URL. Fetches the image and uploads it as a custom logo. By default, image logos are preprocessed to fit inside a 64x64 PNG with 16px rounded corners and transparent padding/corner
+- Upload a profile picture
+- Upload a static background image from a URL. Fetches the image and uploads it as a custom background.
+- Upload an overlay image from a URL. Fetches the image and uploads it as a custom overlay.
+- Upload and play videos: MP4, MOV, GIF, TS, or WebM
+- Upload and play your music on the stream
+- Upload and Stream Checkout Started
+- Upload and Stream Subscribed Client
+- Upload and Stream Subscription Attempt
+- Upload and Stream Subscription Error
+- Upload and stream your own custom music in the Studio 2.0
+- Upload background
+- Upload batch failed
+- Upload by public link descript not ready error
+- Upload by public link file corrupt error
+- Upload by public link internal error
+- Upload by public link original url missing error
+- Upload by public link unsupported source error
+- Upload cannot accept parts due to current status: ${e||"unknown"}
+- Upload cannot be aborted due to current status: ${e||"unknown"}
+- Upload cannot be completed due to current status: ${e||"unknown"}
+- Upload complete
+- Upload Custom Music Files Selected
+- Upload failed.
+- Upload files (pdf, key, pptx, docx)
+- Upload files (pdf, key, pptx, docx) or import slides from Google Drive.
+- Upload Image
+- Upload incomplete
+- Upload inputs validated
+- Upload logo
+- Upload Music
+- Upload overlay
+- Upload page loaded
+- Upload part does not belong to this upload
+- Upload pipeline setup complete
+- Upload process completed
+- Upload to AWS completed, marking part as complete
+- Upload Video
+- Upload you own branded assets,
+- Upload your recordings
+- Uploaded
+- Uploaded image exceeds 5 Mb size limit
+- Uploaded presentation not present in the list. Fetching again...
+- Uploaded videos are trimmed to 1 min.
+- Uploading
+- Uploading background…
+- Uploading blob to AWS
+- Uploading files...
+- Uploading files... $progress%
+- Uploading is already paused
+- Uploading is not paused
+- Uploading LinkedIn-specific cover for destination ${wbe[e.platform]||""}
+- Uploading logo…
+- Uploading overlay…
+- Uploading timed out. Please try again.
+- Uploading your local recordings.
+- Uploading your recordings... Please don't close this tab.
+- Uploads
+- Use edited videos with no mistakes and added polish.
+- Use overlays to add images and videos on top of your streams.
+- User Media Request Error
+- User media streams are not supported
+- Using channel endpoint for uploading cover for destination ${wbe[e.platform]||""}
+- Using legacy endpoint for uploading cover for destination ${wbe[e.platform]||""}
+- Video
+- Video '%fileName' has been deleted
+- Video '%fileName' has been deleted and removed from %scenesCount scene
+- Video '%fileName' has been deleted and removed from %scenesCount scenes
+- Video & Audio
+- Video & Audio • $resolution
+- Video background playback failed. Please try again or contact support.
+- Video bitrate
+- Video Bitrate (Kbps)
+- Video broadcast wasnt found
+- Video clip playback failed. Please try again or contact support.
+- Video clips
+- Video codec
+- Video device
+- Video file
+- Video File
+- Video has been deleted and removed from %scenesCount scene
+- Video has been deleted and removed from %scenesCount scenes
+- Video has been deleted.
+- Video has unsupported format.
+- Video hidden
+- Video input
+- Video Input Device Changed: ${e}
+- Video is not on air: pause
+- Video is on air: resume
+- Video limit error
+- Video link
+- Video looping
+- Video Looping
+- Video looping was enabled, so auto-switch scene is off
+- Video Playback Settings Shown
+- Video position
+- Video Producers Changed
+- Video resolution
+- Video Resolution Setting Changed
+- Video settings
+- Video Storage
+- Video Storage File Selected
+- Video Storage File Upload Button Clicked
+- Video Storage File Uploaded
+- Video Storage Multi Files Selected
+- Video Storage Public Upload Button Clicked
+- Video Storage Public Upload Submit Button Clicked
+- Video Storage Video Pause Clicked
+- Video Storage Video Play Clicked
+- Video Storage Video Seek Clicked
+- Video Timeline
+- Video Upload Queued
+- Video: First PTS/DTS adjusted: 
+- VideoFilePollingFinished: file transitioned to failed status
+- VideoFileUploadingProvider: refresh upload credentials...
+- VideoFileUploadingProvider: refresh upload credentials...failed
+- VideoFileUploadingProvider: refresh upload credentials...success
+- Virtual Background Image Selected
+- Virtual Background Image Uploaded
+- Wait until an image scan is complete and findings can be accessed
+- Waiting for video PTS in continuity counter 
+- We can't recognize your link. Please make sure it's a working video link.
+- WebGLRenderer: Attempt to load unsupported compressed texture format in .uploadTexture()
+- WebGLRenderer: Image in DataTexture is too big (
+- WebGLRenderer: Texture marked for update but image is incomplete
+- WebGLRenderer: Texture marked for update but no image data found.
+- Website video player
+- When a <bold>video</bold> or <bold>countdown</bold> ends, the scene switches to the next one.
+- Whether live clipping should be enabled
+- Whether to blind (hide video) or unblind (show video) the camera
+- Whether to preprocess image logos into a 64x64 rounded PNG before upload. Set to false to upload the original file.
+- X is the place to see what's happening in the world—from breaking news to major live events. You can easily create live videos to share what's happening live.
+- You are not enabled to stream live video on YouTube. Details at https://www.youtube.com/features.
+- You are trying to schedule a file longer than ${maxDuration}
+- You can add a maximum of %videos video to the playlist
+- You can add a maximum of %videos videos to the playlist
+- You can attach up to 6 images at a time.
+- You can't add new videos during a live stream
+- You can't add new videos during a live stream.
+- You can't add new videos in Preview mode
+- You can't add new videos into the finished event.
+- You can't change videos during a live stream.
+- You can't change videos in a finished event.
+- You can't change videos in Preview mode.
+- You cannot upload animated backgrounds longer than 5 minutes
+- You cannot upload stingers longer than 60 minutes
+- You do not have permissions to create Facebook live video.
+- You reached DailyMotion's upload limit, please try again later.
+- You'll get full video and audio, separate feeds of all sources and participants, up to ${o} hr/stream. Need more? 
+- You've exceeded the maximum number of backgrounds. You can upload maximum ${e.data.maxBackgrounds} video backgrounds.
+- You've exceeded the maximum number of presentations.
+- You've exceeded the maximum number of video clips
+- You've reached daily limit for live stream thumbnails on YouTube. Please try again in 24 hours.
+- You’ve reached the maximum of $count video
+- You’ve reached the maximum of $count videos
+- You`ll find all recordings in your <linkButton>Video Storage</linkButton>.
+- YouNow is a live broadcasting service where users stream their own live video content or interact with the video streams of other users in real time. The service is available on its website, Android, 
+- Your ${pBe(t)} video exceeds ${mBe(e)} size limit. Upgrade or upload a smaller video file.
+- Your browser cannot play this video
+- Your browser does not support the video.
+- Your camera and audio are recorded locally. Please stay after the stream until uploads finish.
+- Your Clips add-on subscription has started
+- Your Clips free trial has started
+- Your mic is muted during video clip
+- Your mic is muted until the video ends
+- Your overlays, logos, videos & backgrounds in Studio
+- Your overlays, logos, videos & backgrounds in Studio 
+- Your overlays, logos, videos,
+- Your overlays, logos, videos, and backgrounds in Studio, 
+- Your recordings have been uploaded.
+- Your trimmed clip is longer than %s.
+- Your video exceeds ${WWe(t)} length limit. Upgrade or upload a shorter video.
+- Your video is blocked due to copyrighted content.
+- Your video is muted due to copyrighted content.
+
+### Recording & clips (402)
+
+-   1. Call `present_audio_options({ tracks })` and pass EVERY track from the `generate_music` response. The chat renders an in-line picker so the user can audition each take and choose.
+-  No downloads or accounts needed.
+-  was dropped during download.
+- };return void on(n,t.clipsAddonChecked,t.clipsAddonQuantity,t.uploadAndStreamAddonChecked,t.uploadAndStreamAddonProductKey,r)}if(PO(s)||(e=>4===e)(s)){const n={quantity:Number(e.plan),interval:e.billY
+- 🤩 Upgrade to stream all of your pre-recorded videos!
+- 1 new clip ready
+- 10-hour recordings
+- 20-hour recordings
+- 250 Clips + Live Clipping
+- 30 days recording storage
+- 30-day recording storage
+- 30+ platforms. 1 channel per platform ⏎ 1 Custom/Extra destination ⏎ Recording - 6 hrs/stream, stored for 15 days ⏎ Streaming to Facebook public pages/groups ⏎ 10 on-screen participants in Studio
+- 6-hour recordings
+- Add video clips
+- All recorded tracks will be uploaded and accessible only to the Host. Works on desktop, Google Chrome. 
+- All your streams are auto-recorded to the cloud.
+- All your streams are auto-recorded to the cloud. Up to $hours hr/stream.
+- Analytics & chat export
+- Analytics export
+- Are you sure you want to start a new recording? The video you just created won’t be saved.
+- Are you sure you want to stop recording?
+- Audio Recording Popover Upgrade Clicked
+- Automatically crop your streams to highlight key moments
+- Automatically generate and post short-form clips during your livestream. Your stream is processed in real-time and posted while you're still on air.
+- Automatically record live event
+- Automatically records live event into a video viewable later
+- Bad recordingId specified
+- Can't enable record mode. Please try again later.
+- Can't pause recording. Please try again later.
+- Can't play selected video clip. Please try again or contact support.
+- Can't restart recording. Please try again later.
+- Can't resume participant's local recording. Please, try again
+- Can't resume recording. Please try again later.
+- Can't start PCAP recording playback. Please try again later.
+- Can't stop participant's local recording. Please, try again
+- Can't stop PCAP recording playback. Please try again later.
+- Cannot complete recording: take is already in ${this.state.status} state
+- Cannot convert string fileId to provider reference without a provider ID. Use a Record<string, string> fileId or switch to the file-reference type.
+- Cannot reset recordings for finished event
+- Cannot reset recordings: no polling event ID
+- Capture flawless audio and video, no matter your connection. Record all participants on the local device — perfect for podcasts and polished edits.
+- Change Local Recording Resolution Clicked
+- Clearing active take ${this.activeTake.id} after recorder stopped
+- Clips
+- Clips add-on subscription updated
+- Clips are not ready for this stream yet.
+- Clips Conversion Modal Button Clicked
+- Clips Conversion Modal Shown
+- ClipsBackendAPIClient is not provided
+- Cloud recording
+- Cloud recordings
+- Cloud Recordings
+- Cloud recordings + Transcription
+- Cloud recordings require a paid subscription
+- Completed active take ${e} before starting new recording
+- Copied To Clipboard
+- Copy to clipboard
+- Created new take ${t.id} for recording and set as active with start reason ${e}
+- Creating recording upload
+- Destroyed local recording with reason ${e} ${this.fullId}
+- Disable Cloud Recording Clicked
+- Disable Local Recording Clicked
+- Display captions, messages, logos, and overlays while video clip is playing
+- Download
+- Download an audio file from a URL and add it to the user's custom music library. Blocks until the track reaches status `Ready` or returns a timeout error after ~90s.
+- Download coverUrl from template error
+- Download coverUrl from template error for LinkedIn destination
+- Download for Mac
+- Download for Windows
+- Download Rec.
+- Download recording options
+- Download recordings
+- Download Recordings
+- Downloaded
+- Downloading
+- Downloading mp4 video recording
+- Edit before recording starts
+- Edit recording name
+- Edit Recording Name Clicked
+- Embed link is copied to the clipboard.
+- Enable 4K local recording
+- Enable Cloud Recording Clicked
+- Enable Local Recording Clicked
+- Enable or disable cloud recording. Only available for users with an active subscription (check cloudRecordingAvailable in state).
+- Enable or disable live clipping for the current event. Only available when the feature is enabled (check liveClippingAvailable in state).
+- Enable or disable local recording for all participants. Only available for users with a paid plan that includes local recordings (check localRecordingAvailable in state).
+- End Recording
+- Ending recording...
+- Enter a recording name to continue.
+- Errored on stopping local recording shot with reason ${e} ${this.logId}
+- ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: 
+- Export is paid feature
+- Exported
+- Exports
+- Failed to add stinger: number of video clips exceeded
+- Failed to add video clip: video file exceeds maximum supported file size.
+- Failed to add video clip. No permission to use paid features
+- Failed to add video clips: limit exceeded
+- Failed to arm local recording for ${this.makeSourceName(e)}: Supported preferred mime type not found
+- Failed to change local recording resolution
+- Failed to complete recording upload due to server error
+- Failed to complete upload part: recordedBytes missing for take ${e.id}
+- Failed to copy requestId to clipboard
+- Failed to create local recording shot: No tracks in the stream
+- Failed to create recording upload
+- Failed to download custom music from URL
+- Failed to download custom music URL
+- Failed to enable local recording
+- Failed to fetch AI clips usage limit
+- Failed to fetch clips conversion eligibility data
+- Failed to fetch clips settings for automatic conversion modal type
+- Failed to fetch download url: no suid
+- Failed to fetch recording metadata
+- Failed to get video clips
+- Failed to handle local recording shot stop on stop event
+- Failed to hydrate recorded bytes: uploadedBytes missing for upload ${e.uploadId}
+- Failed to paste from clipboard on paste event
+- Failed to process uploading of local recording part: No etag
+- Failed to pull local recordings status
+- Failed to refetch mp4 video recording while trying do download it. Fallback to the default download option
+- Failed to refetch recording for vertical video download
+- Failed to register local recording
+- Failed to remove video clip: is default
+- Failed to remove video clip: not found
+- Failed to reset recordings
+- Failed to save event recording name before going live
+- Failed to save event recording name on form submit
+- Failed to start local recording in reaction for ${this.makeSourceName(t)}
+- Failed to start new shot for local recording ${this.fullId}: Recording is destroyed
+- Failed to stop local recording in reaction for ${this.makeSourceName(e)}
+- Failed to toggle live clipping
+- Failed to toggle local recording
+- Failed to update event recording name on form submit
+- Failed to update event recording name: retrying
+- Failed to update live clipping for event, continuing with other operations
+- Failed to update local recording settings
+- Failed to upload the video clip
+- Failed to upload video clip
+- Failed to upload video clips: no active brand
+- Fetched Recordings
+- Fetching downloadUrl from google drive file metadata
+- Free plan has a 15-minute total recording limit.
+- Full business name and/or address on record
+- Game key copied to clipboard
+- Generate clips
+- Generating clips
+- Get AI Clips Button Clicked
+- Get all custom browser sources. Browser sources are web pages rendered as overlay iframes on the stream.
+- Get clips
+- Get Clips
+- Get clips while you're still live to share in the moment.
+- Get high-quality video and audio tracks, no matter your internet connection. Record all participants on the local device — perfect for podcasts and polished edits. 
+- Hide markers
+- Highlight
+- Highlighting chat messages in edit mode is coming soon.
+- HTTPS URL of the audio file to download. Must be reachable from the browser (CORS-friendly).
+- Hydrated recorded bytes for take
+- Illustrated warm-toned recording studio with 4 green armchairs in a semicircle, a standing microphone, acoustic panels, speaker, and bookshelf.
+- Initialized local recording shot ${this.logId}
+- LinkedIn template cover download result
+- Live clipping
+- Live Clipping
+- Live Clipping + Autoposting
+- Live clipping is not available
+- Local recording
+- Local recording disabled
+- Local recording enabled
+- Local Recording Ended
+- Local recording may slightly lower your stream quality. 
+- Local Recording Menu Clicked
+- Local Recording Participant Resumed
+- Local Recording Participant Stopped
+- Local recording registered successfully
+- Local recording resolution set
+- Local recording shot received error event ${this.logId}
+- Local recording shot received error event with unknown reason ${this.logId}
+- Local Recording Started
+- Local Recording Upgrade Clicked
+- Local Recording Upload Page Opened
+- Local recordings
+- Local Recordings
+- Local recordings are isolated individual tracks of each participant, ideal for post-production.
+- Local Recordings Capabilities
+- Local recordings require a paid subscription
+- Local video/audio recordings
+- Manual clips conversion modal type button clicked without a recording. Falling back to clips page URL.
+- Marker
+- Marker Color
+- Max $cloudRecordingTimeHrs hours will be recorded.
+- Name this recording take
+- New stream key copied to clipboard
+- No clips
+- No eventId available for download modal
+- No recording
+- No recording files found on this device.
+- Open Download Recording Modal Button Clicked
+- Optional clip length in seconds. Defaults to the model default (4-8s).
+- Optional style hint, e.g. flat illustration, sticker, 3D render.
+- or previous recordings into streams. 
+- Participants need powerful devices to avoid performance issues. Only UHD cameras or screens will be recorded in 4K.
+- Pasted From Clipboard
+- Pause recording
+- Pause/Resume recording
+- Pausing rendering: WebGL context was lost
+- Please update system permissions to allow screen recording for the browser.
+- Pre-recorded streaming
+- Pre-recorded streaming - 1hr
+- Pre-recorded streaming - 2hr
+- Pre-recorded streaming - 30mins
+- Pre-recorded streaming - 4hr
+- Pre-recorded streaming — 1hr
+- Pre-recorded streaming — 2hr
+- Pre-recorded streaming — 30min
+- Pre-signed URL expired at ${i.expiresAt} before download started
+- Processing live stream recording name update
+- Processing live stream recording status update
+- Processing record mode update
+- Record
+- Record 4K sources in full resolution
+- Record 6 hour videos 
+- Record all your streams
+- Record an unlimited amount of 6-hour sessions.
+- Record and download the video files 
+- Record each participant locally
+- Record in 4K (2160p)
+- Record mode switch onboarding
+- Record only
+- Record Only
+- Record Only Button Clicked
+- Record only mode
+- Record participants in up to 4K
+- Record streams up to 10 hrs
+- Record streams up to 20 hrs
+- Record streams up to 20 hrs 
+- Record streams up to 6 hrs
+- Record up to 10 hours. Reuse live streams 
+- Record up to 15 min for free
+- Record up to 20 hours. Reuse live streams 
+- Record up to 6 hours. Reuse live streams 
+- Record your streams
+- Recording
+- Recording - 20hrs/stream, stored for 30 days 
+- Recording AI Clips Button Clicked
+- Recording All Tracks Download Clicked
+- Recording archive 
+- Recording Button Clicked
+- Recording coming soon…
+- Recording details
+- Recording Download Clicked
+- Recording is a paid feature
+- Recording is a paid feature. <bold>Upgrade for unlimited capture</bold> — ideal for podcasts and content reuse.
+- Recording is taking longer than expected. Please check back later.
+- Recording issue
+- Recording Menu Clicked
+- Recording mode: "AudioVideo" (audio and video), "AudioOnly" (audio only), or "VideoOnly" (video only)
+- Recording Name Saved
+- Recording not available: not downloading recording
+- Recording not found
+- Recording not found or does not belong to this client
+- Recording off
+- Recording or upload not found error during upload
+- Recording or upload not found, cleaning up chunks
+- Recording Paid Feature Modal Closed
+- Recording Paid Feature Modal Shown
+- Recording Pause Clicked
+- Recording Popup Shown
+- Recording resolution: "auto" (automatic) or "4k" (Ultra HD)
+- Recording Restart Clicked
+- Recording Resume Clicked
+- Recording size ${e||"unknown"} exceeds maximum allowed size ${t||"unknown"}
+- Recording Trial Ended Modal Closed
+- Recording Trial Ended Modal Shown
+- Recording Trial Warning Modal Closed
+- Recording Trial Warning Modal Shown
+- Recording Trial Warning Start Recording Button Clicked
+- Recording Trigger Clicked
+- Recording Trigger Popover Upgrade Clicked
+- Recording upload created successfully
+- Recording upload finalized and take deleted
+- Recording upload not found
+- Recording upload not found or does not belong to this recording
+- Recording upload part not found
+- Recording will be available to anyone with the current<br></br>webinar link and in the Slack post.
+- Recording will be available to anyone<br></br>with the current webinar link.
+- Recordings
+- Recordings not found for event
+- Recordings not found for session
+- Recordings Trial Live Stream End Triggered
+- RecordingsBackendAPIClient is not provided
+- Records
+- Referral link copied to clipboard
+- Registering local recording
+- Removing local recording shot ${this.logId}
+- Restart recording
+- Restart Recording Modal Confirm Clicked
+- Restart Recording Modal Dismissed
+- Restart Recording Modal Shown
+- Resume local recording for $name
+- Resume recording
+- RM capability: off — mocks still render
+- RTMP URL copied to clipboard.
+- S3 download failed: ${s.status} ${s.statusText}
+- Save stream recording
+- Share clips on TikTok, YouTube Shorts, and Reels
+- Share the recording with anyone who missed it
+- Show graphics and captions on top of video clips
+- Show markers
+- Show Overlay Over Video Clip Toggle Clicked
+- Something went wrong while setting local storage record
+- Soon you’ll be able to export stream session data into CSV and PDF.
+- Split Audio Recording Popover Upgrade Closed
+- Split Audio Recording Popover Upgrade Shown
+- Split audio recordings
+- Split audio recordings 
+- Split audio track recording
+- Split audio track recording, 
+- Split audio/video downloads
+- Split audio/video recordings
+- Start or end recording
+- Start Recording
+- Started local recording shot ${this.logId}
+- Started shot for local recording ${this.fullId}
+- Starting local recordings
+- Starting recursive polling for recording counts
+- Stop live streaming to record
+- Stop local recording for $name
+- Stop recording
+- Stop Recording
+- Stop Recording Confirmation Modal Confirmed
+- Stop Recording Confirmation Modal Dismissed
+- Stop Recording Confirmation Modal Shown
+- Stopped shot for local recording with reason ${e} ${this.fullId}
+- Stopping local recording shot with reason ${e} ${this.logId}
+- Stopping local recording shot with reason ${e} and error ${this.logId}
+- Stopping local recordings with reason ${e}
+- Stopping recursive polling for recording counts
+- Stream and record in Full HD
+- Stream key copied to clipboard
+- Stream pre-recorded videos
+- Stream title copied to clipboard
+- Stream up to 2 hours of any pre-recorded video live.
+- Stream up to 4 hours of any pre-recorded video live.
+- Studio Live Clipping Clips Ready Clicked
+- Studio Live Clipping Toast Clicked
+- Studio Live Clipping Toggle Clicked
+- Successfully reset recordings for event
+- That file is too large. The size limit for video clips is {{fileSize}}.
+- The imported file may not have export access.
+- The transpiler did not properly export the "transpile" method. $gwtExport: 
+- There's nothing to share. Make sure the browser has a permission to record the screen.
+- THREE.WebGLRenderer.readRenderTargetPixels: renderTarget is not THREE.WebGLRenderTarget.
+- THREE.WebGLRenderer.readRenderTargetPixelsAsync: renderTarget is not in RGBA or implementation defined format.
+- THREE.WebGLRenderer.readRenderTargetPixelsAsync: renderTarget is not in UnsignedByteType or implementation defined type.
+- To download separate audio and video tracks, upgrade your plan to Professional. %sUpgrade Now%s
+- To record, please end your stream first.
+- To unlock automatic recording, please upgrade your plan.
+- To unlock local recordings, upgrade your plan.
+- Toggle cloud recording
+- Toggle live clipping
+- Toggle local recordings
+- Trimming recording failed
+- Turn recording into a live stream
+- Unable to update event recording name; no event found
+- Unauthorized access to recording resources
+- UniformsUtils: Textures of render targets cannot be cloned via cloneUniforms() or mergeUniforms().
+- Unlimited cloud recordings
+- Update Local Recording Mode Clicked
+- Update local recording settings: recording mode (what to record) and/or resolution
+- Updated local recording disabled clients
+- Updating live clipping for event
+- Upgrade to access clips.
+- Upgrade to record all streams
+- Upgrade to save recordings locally
+- Upgrade to stream the recording
+- Upgrade to unlock <strong>automatic stream recordings</strong> and <strong>Record Only mode in Studio</strong> — perfect for podcasts and repurposing content via our AI-powered clips.
+- Upgrade to unlock Record Only mode
+- Upgrade your plan to upload video clips.
+- Upload your recordings
+- Uploading your local recordings.
+- Uploading your recordings... Please don't close this tab.
+- Video clip playback failed. Please try again or contact support.
+- Video clips
+- Want to keep recording? Recording is a paid feature. Upgrade to remove limits and unlock automatic stream recordings as well.
+- WebGLRenderer.readRenderTargetPixels: renderTarget is not in RGBA or implementation defined format.
+- WebGLRenderer.readRenderTargetPixels: renderTarget is not in UnsignedByteType or implementation defined type.
+- WebGLRenderer.readRenderTargetPixels: renderTarget is not THREE.WebGLRenderTarget.
+- WebGLRenderer.render: camera is not an instance of THREE.Camera.
+- Webinar Replay Download Clicked
+- Whether cloud recording should be enabled
+- Whether live clipping should be enabled
+- Whether local recording should be enabled for all participants
+- Whether the user may tick more than one option for this question. When true (the default) the question renders as checkboxes with a "Select all that apply" hint; only set this to false to opt into sin
+- You cannot use a canvas that is already bound to a different type of rendering context.
+- You've exceeded the maximum number of video clips
+- You`ll find all recordings in your <linkButton>Video Storage</linkButton>.
+- Your camera and audio are recorded locally. Please stay after the stream until uploads finish.
+- Your Clips add-on subscription has started
+- Your Clips free trial has started
+- Your mic is muted during video clip
+- Your recording is being prepared
+- Your recordings have been uploaded.
+- Your trimmed clip is longer than %s.
+
+### Audio (507)
+
+-   • Topic-named request ("song about X", "outro for our launch") → ask: lyrics MENTIONING that topic (`instrumental: false`), OR instrumental music matching the vibe (`instrumental: true`).
+-   • Use-case unclear ("generate music for my stream") → ask: intro / countdown / background / transition / outro / multi-track soundtrack.
+-   1. Call `present_audio_options({ tracks })` and pass EVERY track from the `generate_music` response. The chat renders an in-line picker so the user can audition each take and choose.
+- [mp4-remuxer]: Unable to get silent frame for given audio codec; duplicating last frame instead.
+- Add Music
+- Add your favorite music to personalize your streams.<br></br>Your music list will be saved in the active folder.<br></br>Supported formats: MP3, AAC, FLAC, WAV, M4A, WMA.
+- Added audio producer
+- Added volume meter worklet module
+- Adding custom music track file
+- Adding custom music tracks batch
+- Adjusting countdown volume…
+- Adjusting volume…
+- AI and Custom music
+- AI sent an invalid audio picker — retrying automatically.
+- All recorded tracks will be uploaded and accessible only to the Host. Works on desktop, Google Chrome. 
+- All sources are muted. Press %s to unmute
+- All sources are unmuted. Press %s to mute
+- Allow mic/cam access
+- Allow Mic/Webcam
+- Allow Mic/Webcam Clicked
+- Alt audio track ahead of main track, seek to start of alt audio track
+- Alternate track found, use 
+- Android: force audio codec to 
+- Applied camera video track constraint
+- Applied screen sharing video track constraint
+- Applying camera video track constraint
+- Applying screen sharing video track constraint
+- Attempting to start camera audio and video separately: Failed to start camera audio and video attempt
+- Attempting to use attachAudioListener without support for output audio. Is build dep ":gl_graph_runner_audio_out" missing?
+- Attempting to use configureAudio without support for input audio. Is build dep ":gl_graph_runner_audio" missing?
+- Audio
+- Audio background not found
+- Audio bitrate
+- Audio Bitrate (Kbps)
+- Audio codec
+- Audio device
+- Audio frame @ 
+- Audio frequency
+- Audio Gain
+- Audio gain level (0 = silent, 1 = default, up to 1.5 for boost)
+- Audio input
+- Audio Input Device Changed: ${e}
+- Audio Input Selected
+- Audio on, camera hidden
+- Audio only
+- Audio only — camera is blocked. %sHow to fix%s
+- Audio only — no camera found.
+- Audio only enabled. <changeAudioOnlyButton>Show camera</changeAudioOnlyButton>
+- Audio options to present, typically the two tracks from `generate_music`. Minimum two — if the upstream returns only one track, persist it directly via `upload_custom_music` instead of calling this to
+- Audio output
+- Audio Output Selected
+- Audio Recording Popover Upgrade Clicked
+- Audio timeline
+- Audio track details are defined on fragment load progress
+- Audio track is defined on fragment load progress
+- Audio tracks were reset while fragment load was in progress. Fragment 
+- Audio tracks were reset while loading level 
+- Audio-only is OFF - everyone can see and hear you
+- Audio-only is OFF for {participantName} - everyone can see and hear them
+- Audio-only is ON - everyone can hear you
+- Audio-only is ON for {participantName} - everyone can hear them
+- Audio-only is ON for everyone. You can turn it off in <openSourcesButton>Sources</openSourcesButton>
+- Audio-only mode enabled
+- Audio-only mode is only available on webcam sources
+- Audio-only mode updated
+- Auto gain control
+- Background audio loading timeout: Did not receive playingAudioBackground from RM
+- Background Music Exclusive Track Upgrade Icon Clicked
+- Background music has been stopped due to inactivity
+- Background Music Pause Clicked
+- Background Music Refresh Clicked
+- Background Music Resume Clicked
+- Background Music Selected
+- Background Music Stop Clicked
+- Blind or unblind a participant webcam source. When blinded, the camera video track is disabled and a placeholder/avatar is shown instead. Only works on the host own webcam sources.
+- Blinding video input: Failed to restart unexpectedly ended video track ${e.label}
+- Both AAC/HE-AAC audio found in levels; declaring level codec as HE-AAC
+- Buffer full error also media.currentTime is not buffered, flush audio buffer
+- Calm grey water surface with soft ripples and muted tones.
+- Can't access camera and microphone with select settings. Please try changing settings or select another device.
+- Can't access microphone with select settings. Please try changing settings or select another device.
+- Can't access no longer available camera and microphone. Please reconnect them or select another device.
+- Can't access no longer available microphone. Please reconnect it or select another device.
+- Cannot get screen sharing processed audio track
+- Cannot pause audio: no playing audio
+- Cannot pause custom music track: no playing track
+- Cannot restart audio: no playing audio
+- Cannot resume audio: no playing audio
+- Cannot resume custom music track: no playing track
+- Cannot seek custom music track: no playing track
+- Cannot stop audio: no playing audio
+- Cannot stop custom music track: no playing track
+- Cannot update custom music track loop: no playing track
+- Capture flawless audio and video, no matter your connection. Record all participants on the local device — perfect for podcasts and polished edits.
+- Check your camera and mic
+- Chew.TV is a live streaming community for music lovers and DJs. The platform is great for discovering and contributing to music in various genres, including deep house, tech house, hip hop, EDM, and m
+- Co-host muted themselves
+- Consumed Track Muted
+- Could not add custom music track. Please try again or contact support.
+- Could not delete custom music track. Please try again or contact support.
+- Could not play local video audio
+- Could not rename custom music track. Please try again or contact support.
+- Could not reorder custom music tracks. Please try again or contact support.
+- Countdown Custom Music Selected
+- Countdown Custom Music Unselected
+- Countdown music
+- Countdown music loaded
+- Countdown music set
+- Countdown music track not found
+- Countdown volume
+- Countdown volume adjusted
+- Create a widget with a TV static noise effect.
+- Creators may receive copyright strikes if their streams include unlicensed audio.
+- Custom Music
+- Custom music [soon...]
+- Custom Music Copyright Warning Modal Clicked
+- Custom Music Copyright Warning Modal Shown
+- Custom Music File Delete Clicked
+- Custom Music File Delete Confirmed
+- Custom music file format is not supported
+- Custom Music File Rename Clicked
+- Custom Music File Rename Confirmed
+- Custom Music Files Started Processing
+- Custom Music Files Uploaded
+- Custom Music Functionality Promo Modal Clicked
+- Custom Music Functionality Promo Modal Shown
+- Custom Music Loop Clicked
+- Custom Music Menu Shown
+- Custom music processing failed on the server
+- Custom Music Seek Clicked
+- Custom music track not found
+- Custom Music Upload Button Clicked
+- Custom music upload took too long to become ready
+- Delete a custom music track by id.
+- Delete track from list?
+- Deleting custom music track
+- Destroying room media stream without tracks
+- Direct MP3 URL of the track.
+- Disable track loop
+- Disabling audio pull loop ${e}
+- Disabling Extra Camera audio input: Unexpectedly ended non-restartable audio track ${e.label}
+- Disabling Extra Camera video input: Unexpectedly ended non-restartable video track ${e.label}
+- Display title for the track.
+- Done deleting custom music track
+- Done renaming custom music track
+- Done reordering custom music track
+- Done uploading custom music file
+- Done uploading custom music files
+- Download an audio file from a URL and add it to the user's custom music library. Blocks until the track reaches status `Ready` or returns a timeout error after ~90s.
+- Draggable #${p+1} music track
+- Dragging #${p+1} music track
+- Echo cancellation
+- Echo cancellation and noise suppression must be disabled to use stereo audio input in Chrome.
+- Echo cancellation and noise suppression must be disabled to use stereo audio input.
+- Enable or disable audio-only mode on a participant camera source. When enabled, video is hidden and only audio is transmitted. Only works on main webcam sources.
+- Enable track loop
+- Enables auto adjustment of the microphone gain to maintain steady overall volume level.
+- Enabling audio pull loop ${e}
+- Enter Studio Without Mic
+- Error happened on playing GuestJoinedAudio sound
+- Error happened on playing HostJoined sound
+- Error happened on playing SourceAdded sound
+- Exclusive soundscape available to you and all the users on the Standard plan and above
+- Extra camera audio settings
+- Failed camera audio start attempt
+- Failed init camera placeholder service: no initial video track
+- Failed to add custom music track
+- Failed to add custom music tracks batch
+- Failed to add producer for track ${r.sourceKind} ${t.kind} ${t.constructor.name} ${t.label}
+- Failed to add producer: producer for that track already exists
+- Failed to add volume meter worklet module
+- Failed to call generate-music endpoint
+- Failed to change the gain: no connection
+- Failed to change the gain: not initialized gain
+- Failed to change the gain: not initialized isMuted
+- Failed to change the gain: not initialized volume
+- Failed to create client: cannot produce audio or video supported by the server
+- Failed to create custom music file upload
+- Failed to create local recording shot: No tracks in the stream
+- Failed to create video pipeline: no video track
+- Failed to create video track thumbnail: Blob creation failed
+- Failed to create video track thumbnail: Expected video track, received ${e.kind}
+- Failed to create video track thumbnail: Failed to create canvas
+- Failed to create video track thumbnail: Timed out
+- Failed to create video track thumbnail: Video element errored with ${l.error}
+- Failed to delete custom music
+- Failed to delete custom music track
+- Failed to download custom music from URL
+- Failed to download custom music URL
+- Failed to fetch audio backgrounds
+- Failed to generate music
+- Failed to get audioGain ${this.internalSource?.kind??"undefined"} source
+- Failed to get camera audio track
+- Failed to get camera audio track when starting audio and video: received ${n.readyState} track
+- Failed to get camera audio track when starting audio: received ${i.readyState} track
+- Failed to get camera video track
+- Failed to get camera video track when starting audio and video: received ${r.readyState} track
+- Failed to get camera video track when starting video: received ${i.readyState} track
+- Failed to get countdown music
+- Failed to get local video processed audio track
+- Failed to get muted ${this.internalSource?.kind??"undefined"} source
+- Failed to get processed audio track
+- Failed to get processed camera audio track: received ${n.readyState} track
+- Failed to get processed local video audio track: received ${r.readyState} track
+- Failed to get video stream track
+- Failed to get volume ${this.internalSource?.kind??"undefined"} source
+- Failed to handle custom music loop click
+- Failed to handle track control click
+- Failed to init custom music store
+- Failed to play audio background
+- Failed to play audio on fade in
+- Failed to play layout audio media stream
+- Failed to play webinar call-in request sound
+- Failed to play webinar invite to studio sound
+- Failed to refresh AI spend credits after music generation
+- Failed to rename custom music track
+- Failed to reorder custom music track
+- Failed to replace producer track ${i} ${s} ${r}
+- Failed to replace producer track to ${e?.label??"none"}
+- Failed to set audio input device: device with such id not found
+- Failed to set audio output device
+- Failed to set audio output device: device with such id not found
+- Failed to set countdown music
+- Failed to set countdown music volume
+- Failed to set music volume
+- Failed to set sinkId on audio device chang
+- Failed to start audio on audio input settings change
+- Failed to start audio on unmute
+- Failed to start camera audio
+- Failed to update audio gain for ${this.stream.kind}: Source state not found
+- Failed to update audio only for ${this.stream.kind}: Source state not found
+- Failed to update countdown music
+- Failed to update countdown music volume
+- Failed to update countdown volume
+- Failed to update HLS video audio gain on button click: Not allowed
+- Failed to update HLS video audio gain on button click: State not found
+- Failed to update HLS video mute on button click: Not allowed
+- Failed to update HLS video mute on button click: State not found
+- Failed to update mute for ${this.stream.kind}: Source state not found
+- Failed to update permissions after starting audio
+- Failed to upload custom music
+- Failed to upload custom music file
+- Failed to upload custom music track
+- Failed to upload custom music track on drag-n-drop
+- For best results, use an external camera and mic with the latest version of 
+- For the host to see and hear you, allow mic and cam permissions.
+- Full audio
+- Generate a short music track for your stream — instrumental or with lyrics.
+- Generate music
+- Generating music…
+- Generation takes 30 s – 3 min. The audio URLs returned are valid for ~15 days on Suno's CDN, so the picked track must be handed to `upload_custom_music` to get a permanent track id.
+- Get all available background music tracks. Exclusive tracks require a paid plan (check hasBackgroundMusic in state).
+- Get available countdown music tracks that can be assigned to a countdown scene.
+- Get countdown music
+- Get every custom music track the user has uploaded for the current brand. Returns all tracks regardless of status (Uploading / Processing / Ready / Failed). The `errorMessage` field is populated when 
+- Get high-quality video and audio tracks
+- Get high-quality video and audio tracks, no matter your internet connection. Record all participants on the local device — perfect for podcasts and polished edits. 
+- Get music
+- Get separate audio tracks 
+- Get started by allowing Studio to use your camera and mic.
+- Get your music heard
+- Guest muted themselves
+- Hide camera, keep audio
+- High-resolution audio
+- Host changed your microphone to <bold>{deviceLabel}</bold>
+- Host wants to change your microphone to <bold>{deviceLabel}</bold>
+- HTTPS URL of the audio file to download. Must be reachable from the browser (CORS-friendly).
+- I own or have licensed all my uploaded audio
+- Illustrated cozy podcast studio with two green sofas, coffee table, 4 boom microphones, plants, and a city-view window at dusk.
+- Illustrated warm-toned recording studio with 4 green armchairs in a semicircle, a standing microphone, acoustic panels, speaker, and bookshelf.
+- Increases capture and output audio bitrate to 256kbps, suitable for streaming high-quality audio performance.
+- Init audio buffer, container:
+- Init audiovideo buffer, container:
+- Initial audio track should be selected when tracks are known
+- Initialize media stream track
+- Invalid audio bitrate value. Value must be in range 20...320.
+- Invalid audio track id 
+- Invalid Custom Music file mime type
+- Invalid id passed to audio-track controller
+- Invalid music file
+- Invalid subtitle track id 
+- Invite guests, mute/unmute yourself or share your screen while live.
+- It's free for all. Upload and save your tracks in the Music tab.
+- Join Screen Allow Mic/Webcam Clicked
+- KeyframeTrack: Invalid value size in track.
+- KeyframeTrack: Track is empty.
+- Layout Preview Audio Media Stream Play Error
+- Loading countdown music…
+- Loading music…
+- Local recordings are isolated individual tracks of each participant, ideal for post-production.
+- Local video/audio recordings
+- Loop track
+- Love the background music
+- Mic access not granted. <microphonePermissionsButton>How to fix it?</microphonePermissionsButton>
+- Microphone
+- Microphone %s
+- Microphone access is blocked
+- Microphone permission denied
+- Microphone Permission query API not supported
+- Microphone permission state change detected
+- Microsoft
+- Microsoft 
+- MPEG audio found, not supported in this browser
+- MPEG Audio sync word found !
+- Music
+- Music & Art
+- Music generated
+- Music generation backend returned an unexpected response
+- Music loaded
+- Music playing
+- Music service currently unavailable.
+- Music stopped
+- Music track menu
+- Music volume
+- Mute
+- Mute all sources
+- Mute microphone (currently unmuted)
+- Mute or unmute a participant source. Only works on media stream sources.
+- Mute source
+- Mute state updated
+- Muted
+- Muted by host
+- Muting audio input: Failed to restart unexpectedly ended audio track ${e.label}
+- Name your track
+- Nature Sounds
+- No background music is currently playing
+- No custom music track file dropped
+- No custom music track file selected
+- No longer active audio track unexpectedly ended ${e.label} - doing nothing
+- No longer active video track unexpectedly ended ${e.label} - doing nothing
+- No microphone found
+- No producer and no track: doing nothing
+- No track found for running audio group-ID: 
+- No video track to capture
+- Noise suppression
+- Noise suppression is not supported in Safari.
+- Not muted
+- Now switching to audio-track index 
+- Optional vocal-gender bias ('m' for male, 'f' for female). Ignored for instrumental tracks.
+- Own Microphone Mute Toggled
+- Pending custom music tracks detected
+- Pick a track
+- Play music
+- Playing audio with fade in
+- Playing music…
+- Please, accept webcam / mic permissions.
+- Produced Track Muted
+- Producer and track exits: replacing
+- Producer exists and no track: removing producer
+- PropertyBinding: can not parse propertyName from trackName: 
+- PropertyBinding: Cannot parse trackName: 
+- PropertyBinding: No target node found for track: 
+- PropertyBinding: Trying to update property for track: 
+- Received custom music list
+- Received error event on fade in audio load
+- Received unsupported audio or video. Please try again, or contact support for help
+- Recording All Tracks Download Clicked
+- Recording mode: "AudioVideo" (audio and video), "AudioOnly" (audio only), or "VideoOnly" (video only)
+- Reduce background noises during the stream. We recommend keeping it enabled unless you have an isolated environment for capturing audio.
+- Reduce the echo when talking without headphones.
+- Rename track
+- Renaming custom music track
+- Reordering custom music track
+- Replacing producer track to ${e?.label??"none"}
+- Requested guest to change microphone to <bold>{deviceLabel}</bold>
+- Requested host to change microphone to <bold>{deviceLabel}</bold>
+- Requesting audio track: No audio track on unmute
+- Requesting video track: No video track on unblind
+- Restarting unexpectedly ended audio track ${e.label}
+- Restarting unexpectedly ended video track ${e.label}
+- Save your streams as video files and their audio-only versions for repurposing and podcasting
+- Seeking audio pull ${e}
+- Selected audio backgrounds
+- Selected audio output device not found. Make sure it's connected and try again.
+- Selected audio output device resulted in an unexpected error.
+- Set ${this.isPrimaryCamera?"primary":"extra"} audio input device
+- Set audio gain level
+- Set background music volume and/or mute state. Volume is 0-100 (before internal normalization). Set isMuted to true to mute without changing the volume level.
+- Set default output audio device
+- Set or remove background music for a countdown scene. Pass musicId to set a track, or null to remove music.
+- Set output audio device
+- Set the audio gain level (volume) of a participant source. Only works on media stream sources that support audio gain (webcam, screen share, video).
+- Set the volume of countdown scene music. Volume is 0 to 1, where 0 is muted and 1 is full volume.
+- Setting audio-only mode…
+- Setting countdown music…
+- Setting default input audio device
+- Skip questions when context makes the answer obvious (editing the Outro scene → outro placement; explicit "instrumental ambient" → no song-vs-music question).
+- Skipping audio start: no audio constraints provided
+- Solo puts a participant as the sole active speaker
+- Source Audio Gain Changed
+- Source Audio Only Button Clicked
+- Source Mute Button Clicked
+- Source volume
+- Split Audio Recording Popover Upgrade Closed
+- Split Audio Recording Popover Upgrade Shown
+- Split audio recordings
+- Split audio recordings 
+- Split audio track recording
+- Split audio track recording, 
+- Split audio tracks
+- Split audio/video downloads
+- Split audio/video recordings
+- Split video tracks
+- Stable identifier for this track.
+- Start of audio media stream skipped in playlist mode
+- Started camera audio media stream ${i.label}
+- Starting video track
+- Stereo audio input
+- Stop music
+- Stop the currently playing background music
+- Stopping current audio input track with reason ${e}
+- Stopping current video input track with reason ${e}
+- Stopping media stream tracks
+- Stopping music…
+- Store default output audio device
+- Stored default audio input device
+- Streaming the camera and microphone is not supported in your browser.
+- Streaming the microphone is not supported on your device.
+- Studio needs a microphone to join on air. Connect one, then retry.
+- Studio needs access to your camera and microphone.
+- Studio needs your microphone to join on air. Allow access in your browser settings, then retry. Learn more in our %sHelp Center%s.
+- Subtitle track details are defined on idle subtitle stream controller tick
+- Swapping audio codec
+- Swapping manifest audio codec "
+- Switch to Studio 2.0 and stream custom music
+- Switching audio input: Unexpectedly ended non-restartable audio track ${e.label}
+- Switching audio track : flushing all audio
+- Switching on alternate audio, use video.buffered to schedule main fragment loading
+- Switching on main audio, use media.buffered to schedule main fragment loading
+- Switching to main audio track, cancel main fragment load
+- Switching to subtitle track 
+- Switching video input: Unexpectedly ended non-restartable video track ${e.label}
+- The host muted $audioInputName
+- The host muted your local video
+- The host muted your mic
+- The host muted your mic.
+- The host muted your screen share
+- The host unmuted $audioInputName
+- The host unmuted your mic
+- The ID of the audio background to play
+- The id of the custom music track to delete
+- The ID of the music track to set, or null to remove music
+- This is China's fastest-growing streaming website with interactive comment display functionality. Known for its superior viewer experience, the website covers gaming, sports, music, and a wide range o
+- This Japanese video sharing and streaming platform is great for a variety of live content, including gaming, music, entertainment, political content, and more.
+- This popular streaming platform from Microsoft is geared toward enterprises and influencers. Popular users have included NASA, Sony, Intuit, TechCrunch, Barack Obama, and Hillary Clinton.
+- This track requires a paid subscription
+- THREE.KeyframeTrack: no keyframes in track named 
+- THREE.KeyframeTrack: track name is undefined
+- To create a live broadcast, make sure your camera and microphone are turned on and Restream Studio is allowed to use them. ⏎ You can always turn these off later.
+- To download separate audio and video tracks, upgrade your plan to Professional. %sUpgrade Now%s
+- Track 
+- Track on layout status changed
+- Tracking Consent should be either "granted" or "not-granted"
+- Trying to update the gain
+- Unable to access camera and microphone
+- Unable to access the microphone
+- Unable to add custom music track without brand
+- Unable to add custom music tracks batch without brand
+- Unable to delete custom music track without brandId
+- Unable to rename custom music track without brandId
+- Unable to reorder custom music track, brand is not selected
+- Unmute microphone (currently muted)
+- Unplugged device audio track ended ${e.label} - doing nothing
+- Unplugged device video track ended ${e.label} - doing nothing
+- Unsupported audio file format. Please try using popular formats like MP3, WAV, or FLAC.
+- Updated camera audio input track to ${e?.label??"none"}
+- Updated camera video input track to ${e?.label??"none"}
+- Updating audio tracks, 
+- Updating mute state…
+- Updating source state audio gain ${this.state.type}
+- Updating source state audio gain ${this.state.type} with unmute
+- Updating source state audio only ${this.state.type}
+- Updating source state muted ${this.state.type}
+- Updating subtitle tracks, 
+- Upgrade to unlock exclusive tracks
+- Upload and play your music on the stream
+- Upload and stream your own custom music in the Studio 2.0
+- Upload Custom Music Files Selected
+- Upload Music
+- Use of multiple microphones at the same time not supported in this browser.
+- Video & Audio
+- Video & Audio • $resolution
+- Volume
+- Volume adjusted
+- Volume level (0-1.5)
+- Volume level (0-1)
+- Volumes
+- Whether to enable audio-only mode
+- Whether to generate instrumental tracks (no vocals). Default true — the right choice for livestream backgrounds.
+- Whether to mute the background music
+- Whether to mute the source
+- While the countdown music plays, this music is paused
+- World Music
+- You can not be heard. The host muted your mic.
+- You have blocked camera and microphone access.
+- You have blocked microphone access. Please update your browser settings to allow access.
+- You muted yourself
+- You'll get full video and audio, separate feeds of all sources and participants, up to ${o} hr/stream. Need more? 
+- Your camera and audio are recorded locally. Please stay after the stream until uploads finish.
+- Your mic is muted
+- Your mic is muted during the countdown
+- Your mic is muted during video clip
+- Your mic is muted until the video ends
+- Your mic is muted while you are backstage.
+- Your mic is muted. <disableSceneAutoSwitchButton>Disable auto-switch</disableSceneAutoSwitchButton> to enable it
+- Your mic is muted. Press %s to unmute.
+- Your video is muted due to copyrighted content.
+
+### Video effects (164)
+
+- '${e}' is not an animatable color. Use the equivalent color code instead.
+- Add a simple color or gradient fill behind your layout.
+- Added virtual background
+- Animated dark 3D scene with metallic structures, neon pink and white light beams, and chromatic aberration.
+- Animated dark purple-blue blurred light orbs slowly shifting on a black background.
+- Animated lush green foliage tunnel with sunlight filtering through leaves and floating particles.
+- Background Color
+- Background style. Use "Solid" for a single-color background, "Linear" for a clean gradient, or "GradientCloud" for a shader-based cloudy abstract gradient.
+- Beautify
+- Beautify detail preservation
+- Beautify edge softness
+- Beautify edge threshold
+- Beautify Filter Toggled
+- Beautify mask feather
+- Beautify mask threshold
+- Beautify smoothing radius
+- Beautify texture protection
+- Blur
+- Blur background
+- blur direction must be either latitudinal or longitudinal!
+- Border color
+- Brand your chat messages and captions by selecting a custom color.
+- Camera mirrored
+- Cannot lose context: blur canvas not created yet
+- Changing color…
+- Changing countdown color…
+- Color
+- Color changed
+- Color filter
+- Color palette
+- Color: Alpha component of 
+- Color: Invalid hex color 
+- Color: Unknown color 
+- Color: Unknown color model 
+- ColorManagement: .fromWorkingColorSpace() has been renamed to .workingToColorSpace().
+- ColorManagement: .toWorkingColorSpace() has been renamed to .colorSpaceToWorking().
+- Colors extracted
+- Complex values '${e}' and '${t}' too different to mix. Ensure all colors are of the same type, and that each contains the same quantity of number and color values. Falling back to instant transition.
+- Countdown Background Color Selected
+- Countdown color
+- Countdown color changed
+- Countdown Color Selected
+- Custom key color
+- Disabling grading: LUT filter failed to set up
+- Disabling smoothing: beautify filter failed to set up
+- Enable WebAssembly or try non-auto key color.
+- Extracting colors…
+- Failed get all virtual backgrounds metadata: getAll errored
+- Failed to add virtual background
+- Failed to analyze image colors
+- Failed to analyze image colors: image has no dimensions
+- Failed to analyze image colors: no canvas context
+- Failed to analyze image colors: no visible pixels found
+- Failed to apply beautify change
+- Failed to apply LUT filter change
+- Failed to create blurred background for avatar
+- Failed to create blurred background for avatar.
+- Failed to create blurred background: No 2D canvas context available
+- Failed to create blurred background: No WebGL2 context available, retrying...
+- Failed to create virtual background: retrying
+- Failed to delete virtual background
+- Failed to delete virtual background image blob: delete errored
+- Failed to delete virtual background metadata: delete errored
+- Failed to delete virtual background: retrying
+- Failed to delete virtual background: transaction errored
+- Failed to get all virtual backgrounds
+- Failed to get all virtual backgrounds entries: transaction errored
+- Failed to get key color from type: unsupported key color type
+- Failed to get key color label from type: unsupported key color type
+- Failed to get virtual background blob for metadata: get errored
+- Failed to init guest virtual backgrounds
+- Failed to load green screen background image
+- Failed to load LUT filter
+- Failed to load Mediapipe virtual background image
+- Failed to put virtual background
+- Failed to put virtual background blob: put errored
+- Failed to put virtual background metadata: put errored
+- Failed to put virtual background: transaction errored
+- Failed to read all virtual backgrounds: retrying
+- Failed to select virtual background
+- Failed to select virtual background: background with such id does not exist
+- Failed to switch virtual background effect
+- Failed to update countdown background color
+- Failed to upload virtual background
+- Failed to upload virtual background: unsupported file type
+- Failed to upload virtual background.
+- Filter
+- Filter results by relative time period. Cannot be used with search_after_date or search_before_date.
+- Filters
+- Generate a static 1080p background and upload it as a custom background. Supports solid colors, simple linear gradients, and a shader-based GradientCloud style.
+- Generate a static 1080p solid color background and upload it as a custom background.
+- Get a color palette from a remote image URL in the browser. The image host must allow CORS so pixels can be read from canvas. Returns success=false with an error when the image cannot be fetched or an
+- Get current theming state: theme type, primary color, and font
+- Got custom virtual backgrounds
+- Green Screen
+- Green Screen brightness
+- Green Screen contrast
+- Green Screen gamma
+- Green Screen similarity
+- Green Screen smoothness
+- Green Screen spill
+- Hex color (e.g. "#FFFFFF") or "Auto" for automatic detection based on background
+- Hex color, e.g. #FF5500
+- ImageUtils.sRGBToLinear(): Unsupported image type. No color space conversion applied.
+- Invalid background color. Provide valid hex colors.
+- Invalid color
+- Invalid event parameters detected - filtering out invalid parameters but continuing operation
+- Invalid generated background color: ${e}
+- Invalid generated background color: expected at least one color
+- Invalid hex color
+- Invalid keys detected - filtering out invalid keys but continuing connection
+- Invalid keys detected - filtering out invalid keys but continuing operation
+- Invalid response from configured generateRequest filter
+- Key color
+- List of ISO 639-1 language codes to filter results (max 10, lowercase). Examples: ['en', 'fr', 'de']
+- Lut Filter Selected
+- Marker Color
+- Maximum number of color candidates to return
+- Mirror camera
+- Mirror Camera Toggled
+- Mirrored
+- news-strip layout with a primary-color stripe. Good for professional or news-style content.
+- Optional hex colour to bias the palette, e.g. #FF0000.
+- Pick background color ${t}
+- Pick color
+- Pick color #000000
+- Pick color #00A651
+- Pick color #02AAED
+- Pick color #9B43EE
+- Pick color #E20000
+- Pick color #E66400
+- Pick color #FECF40
+- Pick color ${o}
+- Pick color with eye dropper
+- Primary color
+- Removed virtual background
+- Reset color to auto
+- Restream Chat lets users manage all communication on one screen, connect cross-platform audiences via message mirroring, integrate with Discord, and more.
+- rounded-corners variant of DEFAULT. Primary color is visible on the same branded elements.
+- Set color
+- Set countdown text color. Use "Auto" to auto-detect based on background.
+- Set the stream`s primary color for captions, qr codes, participant names, tickers
+- Single valid hex color for the solid background.
+- Soft blurred blue light orbs on a dark navy-black background, creating a smooth bokeh-like abstract effect.
+- Solid color background
+- solid filled background. Primary color is visible on captions, QR codes, ticker, and participant names.
+- Switch to the %sGoogle Chrome%s or try non-auto key color.
+- THREE.WebGLRenderer: OutputPass is not needed in setEffects(). Tone mapping and color space conversion are applied automatically.
+- ToneMapping( color ); }
+- TRANSPARENT background; primary color is NOT visible behind elements. Choose only when the user explicitly wants a minimalist overlay with no chrome.
+- Valid hex colors for the background. Solid uses the first color. Linear uses all colors as evenly distributed stops. GradientCloud uses the first four colors as two blended color pairs; if fewer than 
+- Virtual Background
+- Virtual Background Average FPS Updated
+- Virtual Background Blur Clicked
+- Virtual Background Disable Clicked
+- Virtual Background Image Selected
+- Virtual Background Image Uploaded
+- Virtual Background is not supported
+- Virtual Background Key Color Changed
+- Virtual Background requires a capable device to run. See our %ssupport article%s for details.
+- WebGLProgram: Unsupported color space: 
+- WebGLRenderer: Unable to use linear filtering with floating point textures. OES_texture_float_linear not supported on this device.
+- WebGLTextures: Unsupported texture color space:
+- When the user wants their brand color to be visible on screen, prefer DEFAULT, NEWS, or ROUNDED. Use Air only for explicit "minimal" / "no chrome" / "clean" requests.
+
+### Destinations & channels (584)
+
+-   - a single primary identifier ("which platform is your primary one?", "what is your role?").
+-  across all platforms.
+- (for example, multiple Facebook channels). 
+- })})})]})}),e instanceof FacebookAppIsNotAddedToGroupError&&(0,rt.jsx)(_Xe,{channelIdentifier:r??
+- ⚠️Ready to stream? Toggle on at least one channel and try again.
+- 1 channel per platform
+- 1 Custom RTMP destination
+- 1 Extra destination
+- 1 Extra destination ⏎ Streaming to Facebook groups and public pages ⏎ Toggling channels on/off while streaming
+- 10 Custom RTMP destinations
+- 10 RTMP Pull links in total
+- 15 channels at once
+- 15-channel streaming
+- 2 channels
+- 2-channel streaming
+- 20 channels at once
+- 20 Custom RTMP destinations
+- 20-channel streaming
+- 25+ channels at once
+- 3 channels at once
+- 3 Custom RTMP destinations
+- 3 RTMP Pull links in total
+- 30+ platforms. 1 channel per platform ⏎ 1 Custom/Extra destination ⏎ Recording - 6 hrs/stream, stored for 15 days ⏎ Streaming to Facebook public pages/groups ⏎ 10 on-screen participants in Studio
+- 30+ platforms. 1 channel per platform ⏎ No pre-roll ads ⏎ No limit of bitrate
+- 30+ streaming platforms 
+- 5 channels at once
+- 5 RTMP Pull links in total
+- 5-channel streaming
+- 8 channels at once
+- 8-channel streaming
+- A description is now required on this platform
+- A Facebook-side error happened during account connection. You can help us to resolve this issue by contacting our support team with a link to your Facebook profile.
+- A live video platform for gamers that breaks the wall between streamers and viewers with interactive controls. The platform focuses on small-to-medium-sized communities that care deeply about viewer e
+- Add a new channel
+- Add a new stream key and new link each time you start streaming.
+- Add an extra channel to stream 
+- Add Channel
+- Add channels
+- Add Channels
+- Add channels and start streaming.
+- Add Destinations
+- Add Facebook page or group. Add a custom destination
+- Add more channels
+- Add Restream app to Facebook group
+- Add Restream's link to the platform description
+- Add RTMP source
+- Add RTMP Source
+- Add Slack #channel
+- Add Slack channel
+- Add your first channel 
+- Add your first destination
+- Adding RTMP source to scene ${this.id}
+- AfreecaTV is a social media platform that anyone from anywhere can use to broadcast live. AfreecaTV has expanded into North America, Japan, Taiwan, and Thailand with plans to enter other regions aroun
+- After adding all your channels, be sure to update your titles before going live
+- After you've set up your destinations, and reviewed your streaming info, you can then go live using your webcam or streaming software.
+- All channels will be scheduled for
+- All channels will be scheduled for LinkedIn event time. To reschedule, go to
+- All selected channels in this setup will be updated.
+- Allows you to add a Custom RTMP or more than 1 channel of the same platform from our list of 30+ supported platforms.
+- Allows you to add extra channel of the services from the 30+ list or Custom RTMP for streaming to own server or any platform which is not supported by Restream yet.
+- Also remove permissions and business integration from Facebook
+- Amazon Kinesis Video Signaling Channels
+- Amazon Live is a streaming platform that allows to broadcast live videos to Amazon customers. Interact with viewers, create shopping experiences, and sell in real time. Works on web and mobile.
+- and reconnect your channel.
+- Any streamer can stream games and videos to Youtube, Twitch, Facebook, Mixer, Periscope and many other platforms at the same time.
+- Are you sure you want to buy the Extra destination with credits?
+- Are you sure you want to remove channel
+- At least one active destination has an issue
+- Attempt to go live with active channel with an error
+- Best 1280 x 720 px. Platforms like YouTube or Facebook 
+- Breakers.TV, from the makers of Vaughn Live, is an emerging live streaming platform for "box & case" breakers in the US.
+- Bring RTMP streams from Zoom, OBS, 
+- Buy Custom RTMP
+- Buy Extra destinations (%g / Month)
+- Can’t stream due to YouTube policy violation. Review at https://youtube.com/livestreaming/dashboard.
+- Can’t stream outside of scheduled LinkedIn time. <button>Edit</button>
+- Can't stream to connected event. Select a different LinkedIn event or change the option to
+- Cannot add channels to the event. Host does not have access to Pairs.
+- Cannot add channels to the event. Please ask host to enable Pairs.
+- Cannot add channels to the event. Please try again later.
+- Channel
+- Channel already added
+- Channel Connection Error Shown
+- Channel expires soon
+- Channel isn't added via API
+- Channel not found
+- Channel Orientation Switch Clicked
+- Channel URL
+- Channel wrong owner
+- Channels
+- Channels (%s)
+- Channels 🎛
+- Channels with external titles
+- Channels won't go live
+- Checking enabled channels for event
+- Chew.TV is a live streaming community for music lovers and DJs. The platform is great for discovering and contributing to music in various genres, including deep house, tech house, hip hop, EDM, and m
+- Choose different channels for each format
+- Connect <bold>YouTube</bold>, <bold>Facebook</bold>, <bold>Twitch</bold>, and 30 other channels to share this live stream with your audience.
+- Connect any <b>#channel</b> and go beyond Slack Huddle limits.
+- Connect the platform
+- Connect your channels
+- Connect your channels in the Dashboard, setup your encoder, and go live.
+- Connection expired. Remove channel from Dashboard and add it again.
+- Continue with Facebook
+- Could not delete channel %s. Please try again. If this error persists, please contact our support.
+- Cross-platform analytics
+- Cross-platform analytics 
+- Cross-platform chat
+- Currently available only for popular games on Twitch, Facebook, Mixer, Smashcast, GoodGame, and VK.
+- Custom and guest channels
+- Custom HLS channel
+- Custom RTMP
+- Custom SRT channel
+- Custom Standard Restream plan, including %d Facebooks and %d Doublings ⏎ Small Scheduler plan
+- CyberGame is an emergent Russian platform dedicated to game streaming. 
+- Deleting cover for destination ${wbe[e.platform]||""}
+- Destination
+- Destination ${wbe[e.platform]||""} does not exist, creating new destination instead of editing
+- Destination ${wbe[e.platform]||""} is in DRAFTED status, using editDestinationTemplate endpoint
+- Destination ${wbe[e.platform]||""} is in DRAFTED status, using uploadDestinationTemplateCover endpoint
+- Destination Exist Error
+- Destination has scheduledAssetId explicitly set to null, disconnecting LinkedIn event
+- Destination internal server error
+- Destination is connected to external event, not deleting cover
+- Destination is in DRAFTED status, using deleteDestinationTemplateCover endpoint
+- Destination validation error
+- Destinations
+- Destinations Clicked
+- Disabling destination ${wbe[e.platform]||""}
+- Discord account addition failed: no text channels available
+- Discord channel connection failed: necessary permissions were not granted
+- Dlive has shut down. Remove channel
+- Double your views with their channels.
+- Doubling allows you to get one extra stream channel within the same platform.  ⏎ %s ⏎ Two different %s or %s channels at once, etc.
+- Download coverUrl from template error for LinkedIn destination
+- Dual Output Not Supported Screen Manage Channels Clicked
+- Due to recent updates, the option to edit channel settings is no longer supported. Please delete your channel and re-add it to make setting adjustments.
+- Edit channel
+- Edit channel settings—%s
+- Edit channels
+- Edit titles on the end platform
+- Editing basic data for destination ${wbe[e.platform]||""}
+- Editing basic data for LinkedIn destination ${wbe[e.platform]||""}
+- Enabled channels:
+- Enables a secured playable RTMP link of your stream feed which can be used as a live source for the broadcasts.
+- Enabling destination ${wbe[e.platform]||""}
+- Enabling new destination ${wbe[e.platform]||""}
+- Error during destinations processing for event ${e.id}
+- Error editing destination ${wbe[e.platform]||""} basic data, continuing with other operations
+- Error editing LinkedIn destination ${wbe[e.platform]||""}, continuing with toggle operation
+- Error processing cover for destination ${wbe[e.platform]||""}
+- Error processing default destination ${wbe[e.platform]||""}
+- Error processing LinkedIn cover for destination ${wbe[e.platform]||""}, continuing with other operations
+- Error processing LinkedIn destination ${wbe[e.platform]||""}
+- Error processing status change for destination ${wbe[e.platform]||""}
+- Error processing status change for LinkedIn destination ${wbe[e.platform]||""}
+- Error processing thumbnail for destination ${wbe[e.platform]||""}, continuing with toggle operation
+- Error toggling destination ${wbe[e.platform]||""}
+- Event Destination Client Created
+- Event Destination Client Updated
+- Event Destination Create Client Error
+- Event Destination Update Client Attempt
+- Event Destination Update Client Error
+- Event posts on YouTube, Facebook, and LinkedIn will show this thumbnail before your stream starts.
+- Every streamer can stream games and videos on YouTube, Twitch, Periscope, Facebook, Mixer, Smashcast, and 30+ platforms at the same time.
+- Extra destination
+- Extra destination (ex Doubling)
+- Extra destinations
+- Facebook
+- Facebook account
+- Facebook account connected successfully
+- Facebook account disconnected successfully
+- Facebook Action Needed. Please login to <span class="js-warning-link warning-api_link">https://facebook.com</span> and follow the instructions given.
+- Facebook app in not authorized in the group
+- Facebook app isn't added to the group
+- Facebook channel expired
+- Facebook event description can't be empty. Please provide a description.
+- Facebook failed security checkpoint
+- Facebook groups and public pages support
+- Facebook groups require the Restream application to be added to that group.
+- Facebook invalid OAuth access token
+- Facebook Live
+- Facebook may be temporarily unavailable, please try again later.
+- Facebook need admin
+- Facebook no longer supports posting directly to personal timelines via external applications, but you can still post to Facebook Pages by connecting them below.
+- Facebook page deleted
+- Facebook pages
+- Facebook pages and groups
+- Facebook pages/groups
+- Facebook Pages/Groups
+- Facebook permissions not accepted
+- Facebook personal profile
+- Facebook platform error
+- Facebook user unconfirmed
+- Facebook, Twitch, X, and many others. 
+- Failed to add RTMP source to scene
+- Failed to connect RTMP source
+- Failed to connect RTMP source.
+- Failed to get event stream key: Event id not found
+- Failed to handle draft event destinations click
+- Failed to hide the RTMP source on the edited scene
+- Failed to kick guest: No connection
+- Failed to process destination ${wbe[t.platform]||""}, continuing with others
+- Failed to process destinations (failed: ${u.length}, total: ${s.length})
+- Failed to read event stream key: retrying
+- Failed to refresh RTMP Source Pull key
+- Failed to refresh stream key. Please try again, or contact support for help.
+- Failed to refresh the Slack channel. Please reload the studio.
+- Failed to remove RTMP source from scene
+- Failed to toggle RTMP source on the edited scene
+- Failed to update active channels: no room id
+- Failed to validate destination ${wbe[t.platform]||""} payload
+- FC2 Live is popular and fast-growing streaming platform where you can stream your own content or connect with one-to-one chat.
+- For example: Two different %s or %s channels, Custom RTMP for streaming to your own server, Vimeo,  Wowza, Akamai, or any unsupported platform.
+- Found destinations to enable
+- from your channels list to continue streaming with Restream.io.
+- Generate title for this channel
+- Get a new stream key
+- Get a New Stream Key
+- Get insights on your live stream performance across multiple platforms – on a single screen.
+- Go live instantly through Live Studio, or set up your encoder using RTMP Settings
+- Go live on your channels
+- Go Live With Channel Errors Modal Dismissed
+- Go Live With Channel Errors Modal Go Live Anyway Clicked
+- Go Live With Channel Errors Modal Resolve Issues Clicked
+- Go Live With Channel Errors Modal Shown
+- Go live without channels
+- Go Live Without Channels Modal Confirm Clicked
+- Go Live Without Channels Modal Reject Clicked
+- Go Live Without Channels Modal Shown
+- GoodGame is a popular and fast-growing game streaming platform in Eastern Europe with +4 million monthly visitors.
+- GPU does not fully support 4-channel float32 or float16 formats
+- Grab your new stream key here
+- Guest can add channels
+- Guest Destinations Summary Pairs Button Clicked
+- Guests can add channels to this stream
+- Guests can re-broadcast on their channels
+- Head over to %syour Mixer Dashboard%s. ⏎ Follow steps and request new Stream key. ⏎ In 24 hours, new stream key will be available. ⏎ Finish verification and start streaming.
+- Head over to Facebook OS settings to update the password.
+- Hello from YouTube!
+- Helps to stream reliably and eliminate poor quality and frame drops, caused by streaming to distant platforms outside your region.
+- How can I stream to two or more Facebook pages?
+- I need more channels
+- If you proceed, the stream will end on all channels.
+- If your event is private on LinkedIn, set the switch to - private
+- In order to continue streaming, change Facebook settings or upgrade your account.
+- Incorrect RTMP settings.
+- iNSTAGIB is an emerging game streaming platform in the US and Europe built by the same team that runs Vaughn Live, Breakers.tv, and Vapers.tv.
+- Instagram Unset Channel Identifier
+- Invalid channel URL
+- Invalid Instagram RTMP link entered 
+- Invalid Kick RTMP link entered
+- Invalid RTMP URL or stream key
+- Invalid stream key
+- Invalid Telegram RTMP link entered
+- Invalid TikTok RTMP link entered
+- Invalid URI scheme. Scheme must be one of http, https, or rtmp
+- Invite others to stream your event on their channels
+- It seems this account no longer exists on OK.ru. Remove your channel from the Dashboard and add it again.
+- It seems this channel no longer exists. Remove your channel from the Dashboard and add it again.
+- Kick
+- Kick channel can be connected via API
+- Kick invalid channel identifier
+- Kick is one the most rewarding gaming livestreaming platforms. Sign-up for the beta and join the growing streaming community
+- Kick unset channel identifier
+- LinkedIn — the social network for the working world with close to 600 million users globally. LinkedIn Live focus on streaming things like Q&As, events, conferences, earnings calls, awards ceremonies,
+- LinkedIn cover processing state
+- LinkedIn cover uploaded successfully
+- LinkedIn destination ${wbe[e.platform]||""} is in DRAFTED status, using editDestinationTemplate endpoint
+- LinkedIn destination already has the same scheduled asset ID, skipping edit
+- LinkedIn destination is connected to external event, not removing cover
+- LinkedIn destination payload prepared
+- LinkedIn Live video must be scheduled for at least 1 hour to 7 days from now. ⏎ Please edit the start time
+- Linkedin streaming not enabled
+- LinkedIn streaming requirements
+- LinkedIn template cover applied
+- LinkedIn template cover check
+- LinkedIn template cover download result
+- LinkedIn thumbnail change check
+- Live streaming is not enabled on this channel.
+- Looks like you changed your Facebook password. Please log in to your
+- Manage channels
+- Multiply streams with different quality settings to stream to various end platforms.
+- Multistream to 30+ Platforms Simultaneously – Restream
+- Multistream to 30+ platforms.
+- Multistream to 4 channels
+- Multistreaming, Facebook pages/groups unlocked, 
+- Need a new stream key?
+- New <bold>RTMP source</bold> added. <actionButton>Add to the scene</actionButton>
+- New stream key copied to clipboard
+- Nimo TV is a global game live streaming platform that provides live streaming of PUBG, PUBG Mobile, Fortnite, and other hottest PC and mobile games online.
+- No basic data changes for destination ${wbe[e.platform]||""}
+- No change to cover for destination ${wbe[e.platform]||""}
+- No change to destination ${wbe[e.platform]||""} enabled status
+- No cover changes for LinkedIn destination ${wbe[e.platform]||""}
+- No destinations to enable, skipping canEnableChannels check
+- No status changes for destination ${wbe[e.platform]||""}
+- No status changes for LinkedIn destination ${wbe[e.platform]||""}
+- No thumbnail changes for destination ${wbe[e.platform]||""}
+- No, add channels
+- Nonolive is a global live broadcast platform that brings together many high-quality contracted anchors, amateur beauty artists, and gamers to share their passion.
+- Number of guest destinations exceeded
+- One channel cannot go live
+- Oops! YouTube live streaming isn't enabled.
+- Or add a custom destination to stream 
+- or media server which supports RTMP, i.e. Wowza, Vimeo.
+- Our customers stick with us because they know — Restream delivers their streams to all destinations. Find out what our customers are saying!
+- our LinkedIn Event should be scheduled for one hour from now or the next 7 days.
+- Paired channels
+- Paired channels + Custom RTMP
+- Pairs are OFF. Your host disabled pairing channels for this stream.
+- Periscope channel error
+- Permissions removal failed, go to %sBusiness integrations settings on Facebook%s to remove it manually
+- Person $number in $channel
+- Picarto channel has an empty access or refresh token
+- Picarto is the world's first live streaming platform especially for broadcasting creative work. It allows artists to live stream their art curation process. Most artwork shown on the website now is vi
+- Picarto user revoked access to the channel
+- Platform
+- Platforms
+- Please add a title for your Kick stream.
+- Please add a title for your Twitch stream.
+- Please enter channel URL.
+- Please grant all permissions to your YouTube account.
+- Processing cover for LinkedIn destination ${wbe[e.platform]||""}
+- Processing cover URL from template for destination ${wbe[e.platform]||""}
+- Processing cover URL from template for LinkedIn destination ${wbe[e.platform]||""}
+- Processing destination ${wbe[e.platform]||""}
+- Processing destinations (count: ${s.length})
+- Processing new cover for destination ${wbe[e.platform]||""}
+- Processing status change for destination ${wbe[e.platform]||""}
+- Processing thumbnail for destination ${wbe[e.platform]||""}
+- Proxy helps to eliminate issues, such as poor quality and frame drops, caused by streaming to distant platforms outside of your region.
+- Pull via RTMP
+- Re-broadcast on your channels
+- Real-time channels management without encoder restart.
+- Real-time platform and channel toggling 
+- Received RTMP Source Pull failed status: ${e.reason}
+- Reconnect channel error
+- Refresh RTMP key
+- Regenerate this channel's details with AI
+- Remove channel
+- Remove Channel
+- Remove channel—%s
+- Remove destination
+- Removing LinkedIn cover for destination ${wbe[e.platform]||""}
+- Removing RTMP source from scene ${this.id}
+- Requesting user to log in on draft event destinations click
+- Reset stream key
+- Restream allows you to stream live to 30+ social platforms at once.
+- Restream Chat – Cross-Platform Chat & Communication
+- Restream Chat lets users manage all communication on one screen, connect cross-platform audiences via message mirroring, integrate with Discord, and more.
+- Restream helps you grow an audience of the streamers and share broadcasts through different platforms. Forgot your password? Recover your Restream account here.
+- Restream is the best way to live stream to YouTube, Twitch, Facebook, and 30+ streaming sites at once. Expand your audience with multistreaming — get started today.
+- Restream is the best way to stream to YouTube, Twitch, Facebook, and 30+ other streaming services at once. Get started for free!
+- Restream is the best way to stream to YouTube, Twitch, Facebook, and 30+ other streaming services at once. Log in to your Restream account!
+- Restream Monitor is a tool that allows you to keep an eye on streams as well as incoming and outgoing data for all of connected platforms.
+- Restricted access to Facebook streaming. Only personal profiles allowed
+- RTMP as a source
+- RTMP pull links
+- RTMP Pull links
+- RTMP Settings
+- RTMP source
+- RTMP Source
+- RTMP source is restarting because of the new incoming stream
+- RTMP Source Pull Status Updated
+- RTMP Source RTMP URL Copied
+- RTMP Source Stream Key Copied
+- RTMP Source Upgrade Clicked
+- RTMP URL
+- RTMP URL copied to clipboard.
+- Rumble invalid channel identifier
+- Rumble unset channel identifier
+- Scheduling draft event: processing destinations first
+- Scroll to ${i} more ${1===i?"channel":"channels"}
+- Select destination to go live
+- Selected channels: 
+- Set up your social channels and their stream titles.
+- Share clips on TikTok, YouTube Shorts, and Reels
+- Share on Facebook
+- Share on TikTok, YouTube Shorts, and Reels
+- Show more channels
+- Showing only channels
+- Skipping cover processing for unsupported destination ${wbe[e.platform]||""}
+- Slack channel access revoked
+- Some platforms might downgrade stream quality to HD
+- Some platforms might not support streaming at 60 fps
+- Something went wrong during Twitch account connection. Please try again manually or contact our support.
+- Something went wrong during YouTube account connection. Please try again manually or contact our support.
+- SRT ingest, Custom SRT channel
+- Stack more promo codes to get additional Facebook channels and Doublings
+- Start adding channels to your Restream account. Visit our %sHelp Center%s for detailed setup tutorials.
+- Statuses are not supported for this platform
+- Steam is a digital distribution platform for purchasing and playing video games. Steam offers digital rights management, matchmaking servers, video streaming, and social networking services.
+- Stop streaming to edit channel settings
+- Stream backup (RTMP, SRT)
+- Stream key
+- Stream key copied to clipboard
+- Stream key is %sunique for each event%s. Copy it before going live.
+- Stream key is unique for each event
+- Stream live to Facebook, YouTube, X, LinkedIn, and others — at the same time.
+- Stream on guests’ channels
+- Stream on guests’ channels 
+- Stream simultaneously to YouTube, 
+- Stream simultaniously to Youtube, Facebook, 
+- Stream to 15 channels
+- Stream to 2 channels
+- Stream to 30 channels
+- Stream to 8 channels
+- Stream to guest channels
+- Stream to multiple platforms at once, 
+- StreamCraft is a popular and fast-growing streaming platform.
+- Streaming back to personal page needs additional permission. Please, connect your account again. ⏎ %sConnect LinkedIn%s
+- Streaming disabled. Facebook group or public page is selected.
+- Streaming settings (RTMP)
+- Streaming to organization needs additional permission. Please, connect your account again. ⏎ %sConnect LinkedIn%s
+- Studio Destinations Clicked
+- Success! You can now add an Extra destination.
+- Success! You can now add multiple channels on the same platform.
+- Tele2 Esport is a Russian platform from one of the biggest cellular providers with free internet traffic for viewing high quality streams.
+- The best way to stream live video to 30+ platforms simultaneously
+- The best way to stream live video to 30+ platforms simultaneously for free
+- The best way to stream to 30+ platforms simultaneously for free.
+- The channel will be removed as a destination of scheduled streams.
+- The Dailymotion channel with empty access or refresh tokens.
+- The Facebook event name is not valid. Please try another name.
+- The stream will automatically go live on all <bold>enabled</bold> channels. <linkButton>Learn more</linkButton>
+- There are issues that prevent some enabled channels from receiving your stream.
+- This channel is not in good standing. Streaming may be unavailable.
+- This channel is on hold. Go to your 
+- This channel was added manually. Reconnect it with the API.
+- This Facebook Page has been deleted.
+- This feature delivers your stream to 2 different channels on the same platform.
+- This is a popular game streaming platform in Japan with 1 million+ monthly visitors.
+- This Japanese video sharing and streaming platform is great for a variety of live content, including gaming, music, entertainment, political content, and more.
+- This LinkedIn event is scheduled for %s.
+- This local and growing streaming platform is a community for—you guessed it—vapers. The platform allows multiple broadcasters to live stream simultaneously.
+- This popular streaming platform from Microsoft is geared toward enterprises and influencers. Popular users have included NASA, Sony, Intuit, TechCrunch, Barack Obama, and Hillary Clinton.
+- This RTMP URL doesn't look right. It should start with rtmp://
+- This URL doesn't look right. The stream URL is a direct link to your stream on the end platform. Please get the correct URL from the end platform.
+- This will immediately invalidate your current stream key. Are you sure you want to generate a new one?
+- TikTok channel can be connected via API
+- TikTok hasn't approved your account.
+- TikTok is a mobile-first, short-form video sharing app where users create lip-syncing and comedic content to share with their followers.
+- TikTok refresh token expired
+- TikTok unset channel identifier
+- TikTok user has no live permissions
+- TikTok user is already live
+- TikTok user is banned
+- to a personal Facebook profile.
+- To connect a pre-created LinkedIn event, stop streaming.
+- To connect your channel properly for streaming with Restream, please grant access to your Dailymotion account.
+- To connect your channel properly for streaming with Restream, please grant access to your DLive account.
+- To connect your channel properly for streaming with Restream, please grant access to your Facebook account.
+- To connect your channel properly for streaming with Restream, please grant access to your GoodGame account.
+- To connect your channel properly for streaming with Restream, please grant access to your LinkedIn account.
+- To connect your channel properly for streaming with Restream, please grant access to your Mixer account. In case you didn't already, make sure to apply for %schannel Review%s on Mixer before you're al
+- To connect your channel properly for streaming with Restream, please grant access to your OK.ru account.
+- To connect your channel properly for streaming with Restream, please grant access to your Picarto account.
+- To connect your channel properly for streaming with Restream, please grant access to your Smashcast account.
+- To connect your channel properly for streaming with Restream, please grant access to your Trovo account.
+- To connect your channel properly for streaming with Restream, please grant access to your Twitch account.
+- To connect your channel properly for streaming with Restream, please grant access to your VK account.
+- To connect your channel properly for streaming with Restream, please grant access to your YouTube account.
+- To continue streaming, remove Extra destinations from your Dashboard or upgrade your account.
+- To continue streaming, remove the extra destinations from your Dashboard or upgrade your account.
+- to different channels.
+- To remove the watermark from all event posts, update thumbnails individually per channel or in the stream details.
+- To switch to RTMP, you'll first have to stop streaming
+- Toggle channels on the fly with a paid plan.
+- Toggle channels on the fly with one of our paid plans.
+- Trovo has shut down. Remove channel
+- Trovo is an interactive live streaming platform, you can check out the hottest games live, share your own gaming experiences, and join an amazing community.
+- Turning off channel due to limit error
+- Twitch
+- Twitch 2FA required
+- Twitch channel has an empty access or refresh token
+- Twitch directory cards truncate around 60 characters — front-load the key words. Write a punchy, action- or keyword-led title that says what makes this stream worth watching; emoji are optional.
+- Twitch limit:
+- Twitch no stream key error
+- Twitch requires that two-factor authentication be enabled in order to stream. <a href="https://help.twitch.tv/s/article/two-factor-authentication-with-authy ">Click here to learn how!</a>
+- Twitch Two Factor Authentication Not Enabled
+- Twitch, X and many others. 
+- Unable to remove your live video on Facebook..
+- Unable to stop the Facebook event.
+- Unfortunately, LinkedIn doesn't allow streaming to multiple LinkedIn destinations at once.
+- Unique titles and descriptions per channel
+- Unlock Custom RTMP 
+- Unlock custom RTMP.
+- Unlock FB pages, groups, and custom RTMP streaming
+- Unlock Pages and Groups on Facebook.
+- Unsupported channel count: 
+- Unsupported channel error
+- Updating LinkedIn scheduled asset ID after reschedule
+- Updating YouTube broadcast ID after reschedule
+- Upgrade to unlock more channels
+- Upgrade to unlock RTMP source
+- Uploading LinkedIn-specific cover for destination ${wbe[e.platform]||""}
+- use Restream Chat (even if you only stream to one platform). No Restream Chat — no payment.
+- Using channel endpoint for deleting cover for destination ${wbe[e.platform]||""}
+- Using channel endpoint for editing destination ${wbe[e.platform]||""}
+- Using channel endpoint for editing LinkedIn destination ${wbe[e.platform]||""}
+- Using channel endpoint for uploading cover for destination ${wbe[e.platform]||""}
+- Using destination processing
+- Using legacy endpoint for creating new destination ${wbe[e.platform]||""}
+- Using legacy endpoint for deleting cover for destination ${wbe[e.platform]||""}
+- Using legacy endpoint for disabling destination ${wbe[e.platform]||""}
+- Using legacy endpoint for editing destination ${wbe[e.platform]||""}
+- Using legacy endpoint for editing LinkedIn destination ${wbe[e.platform]||""}
+- Using legacy endpoint for enabling destination ${wbe[e.platform]||""}
+- Using legacy endpoint for uploading cover for destination ${wbe[e.platform]||""}
+- Visit our Help Center to learn more about channel management
+- Visit YouTube & Retry
+- We don't have permission to stream to your account. Please remove and reconnect your Facebook channel.
+- Welcome to the multistreaming platform operated by Restream, Inc. Learn about the terms and conditions on which we supply all our services.
+- What is Custom RTMP?
+- which supports RTMP, i.e. Wowza, Vimeo.
+- You are not enabled to stream live video on YouTube. Details at https://www.youtube.com/features.
+- You are trying to add a channel that exceeds the number of available Extra Destinations with your current plan.  ⏎  ⏎ Please upgrade your subscription
+- You are trying to insert a channel URL into the RTMP URL field. Please enter a valid RTMP URL.
+- You are using all your available Extra destinations. If you need more, please upgrade your subscription.
+- You can't add another LinkedIn channel!
+- You can't add more than one Dailymotion channel.
+- You can't add more than one DLive channel.
+- You can't add more than one Facebook channel!
+- You can't add more than one GoodGame channel!
+- You can't add more than one LinkedIn channel.
+- You can't add more than one Mixer channel.
+- You can't add more than one OK.ru channel.
+- You can't add more than one Periscope channel.
+- You can't add more than one Picarto channel.
+- You can't add more than one Smashcast channel.
+- You can't add more than one Trovo channel.
+- You can't add more than one Twitch channel.
+- You can't add more than one VK channel.
+- You can't add more than one YouTube channel.
+- You can't edit YouTube stream settings during a livestream.
+- You can't go live on Facebook yet.
+- You can't go live on Facebook yet. Please chat with our Support.
+- You can't stream to this channel yet. Please chat with our Support.
+- You cannot connect to YouTube because there is no channel associated with your account. Great time to
+- You do not have permissions to create Facebook live video.
+- You do not have permissions to go live to this Facebook group.
+- You don't have any <b>channels</b> enabled.
+- You don’t have any channels that are supported for titles update.
+- You don't have live streaming enabled on your Smashcast account.<br> ⏎ Please visit the channel and activate it.
+- You don't have live streaming enabled on your YouTube account. Please click the link and activate it.
+- You don’t meet the requirements to host a LinkedIn Event.
+- You have no permissions to manage posts in this Facebook group.
+- You have reached the limit of Extra destinations.
+- You have reached the limit of paid extra destinations.
+- You need to enable Live Streaming on YouTube. Here's how:
+- You need to log in at the Facebook website.
+- You should enter your stream key in this field, not the RTMP URL.
+- You will need to purchase one Extra destination per Facebook Page you wish to stream to. 
+- You’ve just added your first channel. What do you want to do next?
+- You've reached daily limit for live stream thumbnails on YouTube. Please try again in 24 hours.
+- You’ve reached the maximum of %s RTMP source
+- You've reached your daily limit for creating live streams on YouTube. You can try again in 24 hours.
+- Your account is not confirmed, please confirm your account with Facebook and try again.
+- Your channel is successfully connected.
+- Your channel suspended. Contact Mixer support to resolve this issue.
+- Your channels
+- Your content goes against Facebook Community Standards.
+- Your current plan doesn't support streaming a mix of portrait and landscape channels.
+- Your Facebook connection is expired. Please connect your account again.
+- Your GoodGame profile doesn't have a channel to connect to Restream. Please go to %sthis page%s to create a new channel, after that try connecting again.
+- Your Kick stream title is empty, please add a title and try again.
+- Your LinkedIn Live approval is under review.
+- Your new stream key 👉
+- Your new title for YouTube Events will be applied only on upcoming streams.
+- Your Twitch status contains banned words, please check your title and try again.
+- Your Twitch stream title is empty, please add a title and try again.
+- Your YouTube account is suspended.
+- Youtube account is permanently closed
+- Youtube account is suspended
+- Youtube channel no longer exists
+- Youtube channel not in good standing
+- YouTube Gaming
+- YouTube live permission blocked
+- YouTube Stream Now
+- Youtube streaming not enabled
+- Youtube streaming on hold
+- YouTube, Twitch, personal Facebook, and many others. 
+- Zhanqi.tv is one of the biggest streaming platforms focused on gaming.
+
+### Settings (350)
+
+-   • Lyrics confirmed → optionally ask `vocalGender` (skip if user does not care).
+-  Check CORS configuration to expose ETag header.
+-  giving viewers more options.
+- !=typeof t)return e.util.copy(t);t.match(/^http/)||(t=((r&&void 0!==r.sslEnabled?r.sslEnabled:e.config.sslEnabled)?
+- ');if(void 0!==t.liveMaxLatencyDuration&&(void 0===t.liveSyncDuration||t.liveMaxLatencyDuration<=t.liveSyncDuration))throw new Error('Illegal hls.js config: 
+- " configuration. Expect "legacy"  or "regional". Got "
+- " is invalid for option "size"
+- " key-system access with config: 
+- "debug" config property is deprecated. Use "logLevel" instead of it
+- "wsUrl" config property is deprecated. Use "proxyUrl" instead of it
+- () requires it. Please check your configurations.
+- 0 = best quality · 10 = cheapest. OpenRouter auto-routes; Vercel via AI Creator Backend selects an Anthropic model.
+- 30+ platforms. 1 channel per platform ⏎ No pre-roll ads ⏎ No limit of bitrate
+- 720p, HD resolution
+- Account Settings
+- Add Source Option Clicked
+- AI settings
+- AI Widget Quick Template Option Clicked
+- All settings
+- An endpoint must be provided when configuring `s3BucketEndpoint` to true.
+- And last but not least, we encourage you to checkout our new feature %sVideo from Storage%s to play videos in high quality at high speed.
+- Application ID is not configured, no RUM data will be collected.
+- Assign a ticker to a specific scene. Pass null to remove ticker from the scene. Optionally set scroll speed.
+- Attempting to use configureAudio without support for input audio. Is build dep ":gl_graph_runner_audio" missing?
+- Attendee options
+- Audio bitrate
+- Audio Bitrate (Kbps)
+- Audio options to present, typically the two tracks from `generate_music`. Minimum two — if the upstream returns only one track, persist it directly via `upload_custom_music` instead of calling this to
+- AWS Config
+- AWS.IotData requires an explicit `endpoint' configuration option.
+- Bitrate
+- Bitrate (Kbps)
+- Can't access camera and microphone with select settings. Please try changing settings or select another device.
+- Can't access camera with select settings. Please try changing settings or select another device.
+- Can't access microphone with select settings. Please try changing settings or select another device.
+- Can't stream to connected event. Select a different LinkedIn event or change the option to
+- Can't update setting. Please try again or contact support.
+- Cannot determine type of '${name}' axis. Please provide 'axis' or 'position' option.
+- Cannot run qualityRTC test in non-browser environment
+- Cannot send SSE keys over HTTP. Set 'sslEnabled'to 'true' in your configuration
+- Change Local Recording Resolution Clicked
+- Change quality
+- Change quality to {resolution}p
+- Chat overlay options
+- Chat Overlay Options Changed
+- Chat settings
+- Check your encoder settings
+- Client Token is not configured, we will not send any data.
+- Computed resolution that is not available for current profile
+- Config
+- Config Service
+- config.rtcApiKey or config.rtcToken need to be provided.
+- config.rtcRoomId or config.rtcPeerId is empty.
+- Configuration
+- Configurations
+- Configure
+- Configured
+- Configured region and access point region not in same partition
+- Configured region conflicts with access point region
+- Configured requestMediaKeySystemAccess is not a function 
+- Cost ↔ quality tradeoff
+- Could not find API configuration 
+- Create a new scene with optional assets attached
+- Create multiple scenes at once with optional assets attached. Scenes are created sequentially in the order provided.
+- Download recording options
+- Due to recent updates, the option to edit channel settings is no longer supported. Please delete your channel and re-add it to make setting adjustments.
+- Edit channel settings—%s
+- Edit Settings
+- Email is already in use, but not confirmed. Log in with password and confirm email in account settings to use social logins.
+- Email notifications settings
+- Email settings
+- Embed player settings not found error
+- Embed Settings Button Clicked
+- Enable auto settings
+- Enable transcoding to automatically optimize settings without changing the quality of your incoming stream.
+- Enables this client to use an ARN's region when constructing an endpoint instead of the client's configured region.
+- Enter a product description (optional)
+- Error fetching the remote configuration.
+- Exceeded the maximum %maxFPS FPS for %resolution.
+- Exceeded the maximum %maxRes resolution.
+- Excerpt configuration for controlling result length.
+- Expected frag.decryptdata to be defined after setting format 
+- Extra camera audio settings
+- Extra Camera Settings
+- Failed to add camera: video device and resolution must be selected
+- Failed to change local recording resolution
+- Failed to change stream quality to Full HD on upgrade
+- Failed to fetch clips settings for automatic conversion modal type
+- Failed to read event settings: retrying
+- Failed to read settings: retrying
+- Failed to refetch mp4 video recording while trying do download it. Fallback to the default download option
+- Failed to reset contain layout options
+- Failed to reset cover layout options
+- Failed to reset half screen layout options
+- Failed to reset half screen layout options for target ${e}
+- Failed to reset layout options
+- Failed to reset pip layout options
+- Failed to reset pip layout options for target ${e}
+- Failed to reset showtime layout options
+- Failed to reset showtime layout options for target ${e}
+- Failed to reset spotlight layout options
+- Failed to reset tbpn layout options
+- Failed to reset thumbnails layout options
+- Failed to reset thumbnails layout options for target ${e}
+- Failed to select scene assignment option
+- Failed to start audio on audio input settings change
+- Failed to start video on video input settings change
+- Failed to update brand with event settings on init as brandId is not equal
+- Failed to update call-ins setting
+- Failed to update chat overlay options
+- Failed to update chat overlay options: No active scene
+- Failed to update contain layout options
+- Failed to update contain layout options: No active scene id
+- Failed to update contain layout temp options
+- Failed to update cover layout options
+- Failed to update cover layout options: No active scene id
+- Failed to update cover layout temp options
+- Failed to update event settings
+- Failed to update event settings: retrying
+- Failed to update event user settings: Attempted to update event settings in regular mode
+- Failed to update event user settings: Current settings missing
+- Failed to update half screen layout options
+- Failed to update half screen layout options: No active scene id
+- Failed to update half screen layout temp options
+- Failed to update Intercom settings: instance not found
+- Failed to update layout options
+- Failed to update local recording settings
+- Failed to update pip layout options
+- Failed to update pip layout options: No active scene id
+- Failed to update pip layout temp options
+- Failed to update settings
+- Failed to update settings: retrying
+- Failed to update showtime layout options
+- Failed to update showtime layout options: No active scene id
+- Failed to update showtime layout temp options
+- Failed to update spotlight layout options
+- Failed to update spotlight layout options: No active scene id
+- Failed to update spotlight layout temp options
+- Failed to update tbpn layout options
+- Failed to update TBPN layout options: No active scene id
+- Failed to update tbpn layout temp options
+- Failed to update thumbnails layout options
+- Failed to update thumbnails layout options: No active scene id
+- Failed to update video resolution: no available resolution with such id
+- Failed to update webinar call-ins setting
+- Free-text answer the user typed into the "Other..." input. Only present when "${Vi}" appears in \`optionIds\`.
+- Full HD 1080p quality
+- Full HD, 1080p quality
+- Gateway request timed out: ${e} ⏎  ⏎     This is a client-side timeout. To resolve this, increase your timeout configuration: https://vercel.com/docs/ai-gateway/capabilities/video-generation#extending
+- Get all available streaming profiles (resolution/framerate options) and the currently selected one
+- Get high-quality video and audio tracks
+- Get high-quality video and audio tracks, no matter your internet connection. Record all participants on the local device — perfect for podcasts and polished edits. 
+- Get the chat overlay state for a specific scene, including whether it is enabled and its options. Note: in portrait orientation, chat overlay uses default settings and customization options have no ef
+- Go live instantly through Live Studio, or set up your encoder using RTMP Settings
+- Group settings
+- Head over to Facebook OS settings to update the password.
+- Helps to stream reliably and eliminate poor quality and frame drops, caused by streaming to distant platforms outside your region.
+- High-resolution audio
+- Human-readable option label displayed to the user.
+- Ignoring resolver passed as options for scale: ${e}
+- Ignoring setting source on air: Scene not found
+- Illegal hls.js config: "liveMaxLatencyDuration" must be greater than "liveSyncDuration"
+- Illegal hls.js config: "liveMaxLatencyDurationCount" must be greater than "liveSyncDurationCount"
+- Illegal hls.js config: don't mix up liveSyncDurationCount/liveMaxLatencyDurationCount and liveSyncDuration/liveMaxLatencyDuration
+- In OBS Settings, set the stream
+- In order to continue streaming, change Facebook settings or upgrade your account.
+- Incorrect RTMP settings.
+- Increases capture and output audio bitrate to 256kbps, suitable for streaming high-quality audio performance.
+- Invalid audio bitrate value. Value must be in range 20...320.
+- Invalid configuration of http service
+- Invalid discriminator value. Expected ${r.joinValues(e.options)}
+- Invalid enum value. Expected ${r.joinValues(e.options)}, received '${e.received}'
+- Invalid FPS value. Value must be in range 15...30.
+- Invalid Google configuration
+- Invalid region in config
+- Invalid response from configured generateRequest filter
+- Invalid scale configuration for scale: ${e}
+- Invalid video bitrate value. Value must be in range 200...6000.
+- Layout Options Changed
+- Layout options reset
+- Layout Options Reset Button Clicked
+- Layout options updated
+- Lease duration ${this.config.duration}ms exceeds maximum ${this.config.maxDuration}ms
+- Lease duration ${this.config.duration}ms is less than minimum ${this.config.minDuration}ms
+- Live stream quality
+- Live Stream Quality Changed On Upgrade
+- Live Stream Quality Selected
+- Local recording may slightly lower your stream quality. 
+- Local recording resolution set
+- Logo Align Option Clicked
+- Max available resolution based on Live stream quality settings
+- MediaRecorder bitrate configuration
+- Missing configuration
+- Missing configuration parameter rtcPeerId to connect
+- Missing configuration parameter rtcRoomId to connect
+- Missing configuration parameters rtcPeerId and rtcRoomId to connect
+- Missing credentials in config, if using AWS_CONFIG_FILE, set AWS_SDK_LOAD_CONFIG=1
+- Missing key-system license configuration options 
+- Missing region in config
+- Monitor stream quality
+- More options
+- More settings
+- Multiple configuration errors: ⏎ 
+- Multiply streams with different quality settings to stream to various end platforms.
+- Need a custom option?
+- No bitrate limit
+- No bitrate limit 
+- No limitations on quality or time
+- No OpenGL canvas configured.
+- No pagination configuration for 
+- No Server Certificate in config.drmSystems["
+- Nonolive is a global live broadcast platform that brings together many high-quality contracted anchors, amateur beauty artists, and gamers to share their passion.
+- Normalized [x, y] position (0 to 1). Sets where the top-left corner of the chat overlay is placed. Setting this automatically switches position mode to Freemove.
+- Not on layout or transparent: setting optimal spatial layer
+- Only valid options for round() are: 
+- Oops, unable to update settings. Please try again, or contact support for help.
+- Option
+- Optional clip length in seconds. Defaults to the model default (4-8s).
+- Optional comma-separated style tags.
+- Optional comma-separated styles to AVOID in the output (e.g. "heavy metal, screamo, vocals"). Up to 500 chars.
+- Optional content category to focus results.
+- Optional display filename for the user's library. Falls back to the URL pathname if omitted.
+- Optional display name for the browser source
+- Optional hex colour to bias the palette, e.g. #FF0000.
+- Optional layout type for the scene. If not provided, a sensible default is used based on scene type. ${h.HV}
+- Optional length in seconds.
+- Optional name for the scene
+- Optional override for the primary button label. Defaults to "Finish setup". Use sparingly - only when a different verb fits the moment better (e.g. "Open Studio", "Go live"). Keep it under ~40 chars s
+- Optional reference URLs (images or pages) for visual inspiration. Pass URLs of existing assets when matching an existing look.
+- Optional search queries to supplement the objective. Maximum 200 characters per query.
+- Optional style hint, e.g. flat illustration, sticker, 3D render.
+- Optional style hint, e.g. photorealistic, cinematic, illustration.
+- Optional vocal-gender bias ('m' for male, 'f' for female). Ignored for instrumental tracks.
+- Options
+- Or select from the options below:
+- Outgoing Stream Mode Switch Option Clicked
+- Overlay Chat All Settings Clicked
+- Overlay settings
+- Permissions removal failed, go to %sBusiness integrations settings on Facebook%s to remove it manually
+- Playback settings
+- Please grant access in browser settings.
+- Preferences
+- Preview Element Settings Clicked
+- Preview Video Settings Button Clicked
+- Produce better video quality at the cost of increased CPU usage.
+- Proxy helps to eliminate issues, such as poor quality and frame drops, caused by streaming to distant platforms outside of your region.
+- Purchase transcoding to automatically optimize the perfect settings without changing the quality of your incoming stream.
+- Quality
+- Quality selection disabled while live
+- Record 4K sources in full resolution
+- Recording resolution: "auto" (automatic) or "4k" (Ultra HD)
+- Reset a scene's layout options to their default values. The scene must already have the specified layout type set.
+- Reset layout options
+- Resetting layout options…
+- Resolution
+- RTMP Settings
+- Save Settings
+- Saved event settings
+- Saved settings
+- Search method. Use auto for the default balance of speed and quality.
+- Secondary text (optional)
+- Select an option
+- Selectable choices for this question. Provide between 2 and 8 distinct, atomic options - any more and the user is reading a menu instead of making a decision. The UI labels options A, B, … H.
+- Service needs to be configured when tracing is enabled
+- Set the outgoing streaming profile (resolution and framerate). Use get_streaming_profiles first to see available options.
+- Setting
+- Setting audio-only mode…
+- Setting countdown music…
+- Setting countdown…
+- Setting default input audio device
+- Setting default video device
+- Setting media-keys for "
+- Setting optimal max spatial layer
+- Setting scene background…
+- Setting scene caption…
+- Setting scene logo…
+- Setting scene overlay…
+- Setting scene QR code…
+- Setting scene ticker…
+- Setting ticker speed…
+- Setting up debounced processing for event ${e} with ${pDe}ms delay
+- Setting up upload pipeline
+- Setting up your studio…
+- Settings
+- Settings Accordion Section Closed
+- Settings Accordion Section Opened
+- Settings have been successfully saved
+- Settings have been successfully updated.
+- Settings Modal Closed
+- Settings Modal Shown
+- Settings Modal Tab Changed
+- Setup stream settings 📽
+- Sharing multiple screens may affect your machine performance and stream quality.
+- Show advanced options
+- Show tuning options
+- Simply cancel the next payment in the subscription settings. Your current subscription will last until the end of the paid period.
+- Small QR Code Align Option Clicked
+- Smashcast is a service where you can watch live broadcasts of video games in high quality with near-to-no delay. Watch, chat, and interact with people passionate about gaming.
+- Some platforms might downgrade stream quality to HD
+- Some platforms might not support streaming at 60 fps
+- Something went wrong while setting local storage record
+- Something wrong with Google configuration. Please contact support
+- Source hidden. To show, change <settingsLinkButton>non-video settings</settingsLinkButton>
+- Source Video Settings Button Clicked
+- Stable identifier for this option. Must be unique within the same question. Returned in the answer payload via `optionIds`.
+- Stop streaming to edit channel settings
+- Stream settings
+- Streaming settings (RTMP)
+- Studio needs your microphone to join on air. Allow access in your browser settings, then retry. Learn more in our %sHelp Center%s.
+- System messages are not allowed in the prompt or messages fields. Use the instructions option instead.
+- Tele2 Esport is a Russian platform from one of the biggest cellular providers with free internet traffic for viewing high quality streams.
+- Telemetry Configuration
+- the best quality possible.
+- This browser doesn't support dynamic quality change
+- This feature requires a GPU. Make sure to also enable hardware acceleration in your browser settings. See our %ssupport article%s for more help.
+- Title (optional)
+- Tried to use the 'fill' option without the 'Filler' plugin enabled. Please import and register the 'Filler' plugin and make sure it is not disabled in the options
+- Twitch directory cards truncate around 60 characters — front-load the key words. Write a punchy, action- or keyword-led title that says what makes this stream worth watching; emoji are optional.
+- Unauthenticated. Configure AI_GATEWAY_API_KEY or use a provider module. Learn more: ${t}
+- Unlock the highest quality
+- Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it.
+- Unsupported prop change: options.
+- Update layout options
+- Update local recording settings: recording mode (what to record) and/or resolution
+- Updated Intercom settings
+- Updated video resolution
+- Updating layout options…
+- Upgrade to unlock this resolution
+- Upgrade your plan to support this option or choose a different stream quality in your settings.
+- Video & Audio • $resolution
+- Video bitrate
+- Video Bitrate (Kbps)
+- Video Playback Settings Shown
+- Video resolution
+- Video Resolution Setting Changed
+- Video settings
+- Virtual Background Average FPS Updated
+- Want Full HD quality?
+- Whether the user may tick more than one option for this question. When true (the default) the question renders as checkboxes with a "Select all that apply" hint; only set this to false to opt into sin
+- You can change a plan anytime in your subscription settings. We always prorate charges depending on the cost of your new plan.
+- You can switch back to <bold>Old Experience<bold> in the Settings.
+- You can't edit YouTube stream settings during a livestream.
+- You can’t go live with the selected stream quality
+- You have blocked camera access. Please update your browser settings to allow access.
+- You have blocked camera access. Please update your browser settings to allow access. Learn more in our %sHelp Center%s.
+- You have blocked camera access. To go live, please update your browser settings to allow access. ⏎ Learn more how to setup camera properly in our %sHelp Center%s.
+- You have blocked microphone access. Please update your browser settings to allow access.
+- You have no permissions to use "made for kids" option
+- You may need to configure it to allow WebRTC to send local IP address or disable the extension altogether.
+- Your email preferences have been saved
+
+### Errors & permissions (1983)
+
+-  ⏎ You may want to use multi-regional ARN. The feature is not supported in current SDK. You should consider switching to V3(https://github.com/aws/aws-sdk-js-v3).
+-  and try again.
+-  extension not supported.
+-  for the full message or use the non-minified dev environment for full errors. 
+-  in this browser and try again.
+-  SourceBuffer error
+-  Web Worker, fallback to inline`),this.hls.trigger(yX.ERROR,{type:wX.OTHER_ERROR,details:bX.INTERNAL_EXCEPTION,fatal:!1,event:
+- ,{errorMessage:s??i?.message,clientId:o,allowed:n,state:a,responseType:r,authSource:l,...c?{hasCodeChallenge:!0}:{}},e instanceof Error?e:new Error(String(e))),new AuthorizeError(s??
+- ');if(void 0!==t.liveMaxLatencyDuration&&(void 0===t.liveSyncDuration||t.liveMaxLatencyDuration<=t.liveSyncDuration))throw new Error('Illegal hls.js config: 
+- '${e.blockedURI}' blocked by '${e.effectiveDirective}' directive
+- '${e}' functionality not supported.
+- " certificate request XHR failed (
+- "allowMissing" argument must be a boolean
+- );if(t.toUpperCase()in goog.html.SafeHtml.NOT_ALLOWED_TAG_NAMES_)throw Error(goog.html.SafeHtml.ENABLE_ERROR_MESSAGES?
+- [mp4-remuxer]: Unable to get silent frame for given audio codec; duplicating last frame instead.
+- [passthrough-remuxer.ts]: Failed to generate initSegment.
+- }}catch(e){throw t.error(`generateEventMetadata: ${e instanceof Error?e.message:String(e)}`,{error:e}),e}};return{generateEventMeta:async({topic:e,context:t})=>{Ba();const r=await n(((e,t)=>[`Rewrite 
+- > does not allow content.
+- ⚠️Ready to stream? Toggle on at least one channel and try again.
+- ${o} error #${e}; visit ${n} for the full message.
+- ${r} The feature "${e.feature}" is not supported.
+- A connection issue in our streaming service stopped your stream. Please try again, or contact support.
+- A Facebook-side error happened during account connection. You can help us to resolve this issue by contacting our support team with a link to your Facebook profile.
+- Account Switch Error Client
+- addEvent error. SDK is not initialized. Use 'init' function first.
+- Adding click handler: failed to resume from ${t} state
+- Adding image without initial dimensions: Failed to read image dimensions
+- Adding payment method for organization error
+- AI chat tool failed
+- Allow
+- Allow audience
+- Allow backgrounds
+- Allow camera
+- Allow camera access to join
+- Allow guests to re-broadcast
+- Allow mic/cam access
+- Allow Mic/Webcam
+- Allow Mic/Webcam Clicked
+- Allowed to skip auth: has token
+- Allowed Tracing Urls parameters should be a string, RegExp, function, or an object. Ignoring parameter
+- Allowed Tracing URLs should be an array
+- Allows you to add a Custom RTMP or more than 1 channel of the same platform from our list of 30+ supported platforms.
+- Allows you to add extra channel of the services from the 30+ list or Custom RTMP for streaming to own server or any platform which is not supported by Restream yet.
+- Also remove permissions and business integration from Facebook
+- Amazon Live is a streaming platform that allows to broadcast live videos to Amazon customers. Interact with viewers, create shopping experiences, and sell in real time. Works on web and mobile.
+- An error has occurred.
+- An error has occurred. Please try again later.
+- An error occurred on %s during the account connection. Try again in a few minutes or contact our support if the issue persists.
+- An error occurred on %s during the account connection. Try again in about 30 minutes or contact our support if the issue persists.
+- An error occurred while adding payment method, please try again later.
+- An error occurred, please try again later.
+- An error occurred.
+- An error was thrown.
+- An internal error happened while handling event 
+- An unexpected error caused camera effects to shut down. Please, try again.
+- An unexpected error happened during local video playback. Please, try again.
+- An unknown error occurred! Please check your internet connection and try again. If this error persists, please contact support.
+- An unknown error occurred.
+- Are you sure you want to promote <b>$name</b> to co-host of this Studio stream, limited to 3 hours? This cannot be undone.
+- Are you sure you want to promote guest to co-host of this Studio stream, limited to 3 hours? This cannot be undone.
+- Assertion failed
+- Attempt to get event right before starting stream failed
+- Attempt to go live with active channel with an error
+- Attempt to send a DataChannel message larger than max allowed length will fail
+- Attempt to start playlist preview failed
+- Attempt to stop playlist preview failed
+- Attempting to start camera audio and video separately: Failed to start camera audio and video attempt
+- Attribute "style" not supported.
+- Audio only — camera is blocked. %sHow to fix%s
+- Authentication failed
+- BigInt not supported
+- Blinding video input: Failed to restart unexpectedly ended video track ${e.label}
+- Blocked
+- Brand not found error
+- Bucket names cannot contain forward slashes. Bucket: 
+- Buffer full error also media.currentTime is not buffered, flush audio buffer
+- BufferGeometry: .computeTangents() failed. Missing required attributes (index, position, normal or uv)
+- Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types
+- Camera permission denied
+- Camera Permission query API not supported
+- Camera permission state change detected
+- Camera streaming is not supported in your browser.
+- Can't add media placeholder. Please try again later.
+- Can't add placeholder. Please try again later.
+- Can't apply selected background. Please try again or contact support.
+- Can't change widget layer. Please try again later.
+- Can't disable scene auto-switch. Please try again later.
+- Can't enable live stream mode. Please try again later.
+- Can't enable record mode. Please try again later.
+- Can't import video files. Please try again or contact support.
+- Can't loop video. Please try again, or contact support for help
+- Can't maximize browser source. Please try again or contact support
+- Can't pause recording. Please try again later.
+- Can't pause video from storage playback. Please try again, or contact support for help
+- Can't play selected video background. Please try again or contact support.
+- Can't play selected video clip. Please try again or contact support.
+- Can't play video from storage. Please try again, or contact support for help
+- Can't promote <b>$name</b> to co-host. Please try again later.
+- Can't promote guest to co-host. Please try again later.
+- Can't remove placeholder. Please try again later.
+- Can't remove video from storage. Please try again, or contact support for help
+- Can't replace with placeholder. Please try again, or contact support for help
+- Can't reset browser source size. Please try again or contact support
+- Can't restart recording. Please try again later.
+- Can't resume participant's local recording. Please, try again
+- Can't resume recording. Please try again later.
+- Can't resume video from storage playback. Please try again, or contact support for help
+- Can't seek video from storage. Please try again, or contact support for help
+- Can't select browser source. Please try again or contact support
+- Can't select device. Please try again later.
+- Can't share the screen. Unexpected error has happened.
+- Can't start PCAP recording playback. Please try again later.
+- Can't start playlist preview. Please try again later.
+- Can't stop participant's local recording. Please, try again
+- Can't stop PCAP recording playback. Please try again later.
+- Can't stop playlist preview. Please try again later.
+- Can't update browser source visibility. Please try again or contact support
+- Can't update setting. Please try again or contact support.
+- Can't update ticker speed. Please try again later.
+- Can't upload {{filename}} Please try again or contact support.
+- Can't upload video due to an unexpected error. Please, try again.
+- Can't upload video file. Please try again or contact support.
+- Can't upload video. The Descript project is not ready yet. Please wait a couple of minutes and try again.'
+- Can't use "invalid_type_error" or "required_error" in conjunction with custom error map.
+- Cannot 
+- Cannot add channels to the event. Host does not have access to Pairs.
+- Cannot add channels to the event. Please ask host to enable Pairs.
+- Cannot add channels to the event. Please try again later.
+- Cannot add inner stream: outer stream is closed
+- Cannot add the same private member more than once
+- Cannot base64 decode number 
+- Cannot base64 encode number 
+- Cannot call a class as a function
+- Cannot change GL context once initialized
+- Cannot change the URL of an AI-generated widget. Only its name can be edited; use generate_widget to change its content.
+- Cannot coerce to b64 string: 
+- Cannot coerce to Uint8Array: 
+- Cannot complete recording: take is already in ${this.state.status} state
+- Cannot compute cosine similarity between embeddings of different sizes (${t.length} vs. ${o.length}).
+- Cannot compute cosine similarity between quantized and float embeddings.
+- Cannot compute cosine similarity on embedding with 0 norm.
+- Cannot connect DataChannels if DataChannels are not enabled by the server
+- Cannot connect DataChannels, iceServers not present in ServerInitialization message
+- Cannot construct path-style endpoint with access point
+- Cannot convert string fileId to provider reference without a provider ID. Use a Record<string, string> fileId or switch to the file-reference type.
+- Cannot convert undefined or null to object
+- Cannot create pairs child event: Join token not found
+- Cannot create pairs child event: No public event available
+- Cannot create pairs child event: Pairs child event already exists
+- Cannot decrypt samples of type Uint8Array
+- Cannot determine length of 
+- Cannot determine type of '${name}' axis. Please provide 'axis' or 'position' option.
+- Cannot drain DataProducer buffered messages because the native buffer exceeded the high-watermark
+- Cannot edit connected event.
+- Cannot edit widget: source does not exist
+- Cannot edit widget: source was not generated by the widget tool
+- Cannot fetch Amplitude variants: client is not connected
+- Cannot find a dataset at index 
+- Cannot find module '@emotion/is-prop-valid'
+- Cannot find shape reference: 
+- Cannot get data from the server—please check your internet connection. If this error persists, contact support.
+- Cannot get pairs child event: No event show id available
+- Cannot get screen sharing processed audio track
+- Cannot handle DataChannels yet
+- Cannot hash more than 2^53 - 1 bits
+- Cannot include a '
+- Cannot initialize the same private elements twice on an object
+- cannot instantiate an interface (no constructor defined).
+- Cannot join
+- Cannot join the room
+- Cannot load profile name '
+- Cannot load XML parser
+- Cannot log out. Please try again
+- Cannot lose context: blur canvas not created yet
+- Cannot override "
+- Cannot parse empty document.
+- Cannot pause audio: no playing audio
+- Cannot pause custom music track: no playing track
+- Cannot provide both keypoint and scribble.
+- Cannot read more than 32 bits at a time
+- Cannot report an error. Please provide rtcApiKey, rtcRoomId and rtcPeerId 
+- Cannot report exposure for "${t}": Amplitude client is not connected
+- Cannot reset recordings for finished event
+- Cannot reset recordings: no polling event ID
+- Cannot restart audio: no playing audio
+- Cannot resume audio: no playing audio
+- Cannot resume custom music track: no playing track
+- Cannot run qualityRTC test in non-browser environment
+- Cannot seek custom music track: no playing track
+- Cannot send ClosedClient message to SFU through DataChannels because the DataProducer is not connected
+- Cannot send data, DataProducer is not open [readyState:${null===(n=this.dataProducer)||void 0===n?void 0:n.readyState}]
+- Cannot send requests to root API with `s3BucketEndpoint` set.
+- Cannot send SSE keys over HTTP. Set 'sslEnabled'to 'true' in your configuration
+- Cannot set both baseOptions.modelAssetPath and baseOptions.modelAssetBuffer
+- Cannot stop audio: no playing audio
+- Cannot stop custom music track: no playing track
+- Cannot update custom music track loop: no playing track
+- Cannot update media devices: client with ID ${e.value.clientId} not found
+- CanvasCameraPlaceholderDrawer creation error: Unable to get 2d context
+- Capture from video element is not supported
+- Captured Surface Control Permission query API not supported
+- Captured Surface Control permission state change detected
+- Capturing groups are not allowed at ${i}
+- Catched error while restarting
+- Channel Connection Error Shown
+- Click "Allow" in the browser popup
+- Client Failed To Join Full Room
+- Closing connection: DataChannel sending buffer exceeded max allowed length when sending a critical message
+- Closing connection: Failed to send buffered critical message over DataChannel
+- Closing connection: Failed to send critical message over DataChannel
+- Closing connection: Failed to send critical message over WebSocket
+- Cloudflare Turnstile error: ${e}
+- connect error. SDK is not initialized. Use 'init' function first.
+- ContentLength is not supported in pre-signed URLs.
+- Continue with google account was deleted error
+- Continue with google email not verified error
+- Continue with google invalid id token error
+- Continue with google login via default error
+- Continue with google unsuccessful registration attempt error
+- Continuing to use current active brand: Failed to set brand from room state
+- Conversion error: string contains codepoint outside of byte range
+- Could not {{toolName}}. Please try again.
+- Could not add custom music track. Please try again or contact support.
+- Could not add image. Please try again or contact support.
+- Could not add images. Please remove some scenes and try again.
+- Could not change assignment mode. Please try again later.
+- Could not delete channel %s. Please try again. If this error persists, please contact our support.
+- Could not delete custom music track. Please try again or contact support.
+- Could not generate the widget. Please try again.
+- Could not rename custom music track. Please try again or contact support.
+- Could not reorder custom music tracks. Please try again or contact support.
+- Could not save the note. Please try again or contact support.
+- Could not use {{toolName}}. Please try again.
+- Couldn't generate right now. Please try again.
+- Couldn't load the chat. Check your connection and try again.
+- Couldn't update webinar details. <button>Try again</button>
+- Coupon Denied
+- CRC32 integrity check failed
+- Create file original name is missing error
+- Create file s3 not found error
+- Create file upload not found error
+- Custom music file format is not supported
+- Custom music processing failed on the server
+- Daily AI limit reached — try again tomorrow.
+- Daily AI limit reached. Try again after the daily reset.
+- Daily AI limit reached. Try again in {{time}}.
+- Daily limit on card update attempts was reached, try again tomorrow
+- Daily limit reached. Try again in {{time}}.
+- Daily limit reached. Try again later.
+- DataChannel sending buffer exceeded max allowed length (${this.dataProducerSendingBufferedMessagesLength} bytes)
+- DataChannel sending buffer exceeded max allowed length when sending a non-critical message
+- DataConsumer emitted error: ${e}
+- DataProducer emitted error: ${d.message}
+- Decoder hit an error
+- Delete a custom background by ID. Default backgrounds cannot be deleted.
+- Delete a custom logo by ID. Default logos cannot be deleted.
+- Delete a custom overlay by ID. Default overlays cannot be deleted.
+- Demo Showtime Scene Adding Failed
+- Deprecated. If included, the only allowed value is RequestBasedUsage.
+- Deprecated. No longer allowed.
+- DepthTexture: 16 bit depth attachment is not supported with stencil. Using 24-bit attachment.
+- Destination Exist Error
+- Destination internal server error
+- Destination validation error
+- Destroyed with error
+- Destroying video pipeline with error
+- Device change detection not supported
+- Device verification failed. Please try logging in again.
+- Device verification is not available. Please try again later.
+- Direct widget generation failed unexpectedly
+- Disabling grading: LUT filter failed to set up
+- Disabling smoothing: beautify filter failed to set up
+- Discarded a message whose size was bigger than the maximum allowed size ${c}KB. ${r.xG} ${r.Xs}/#technical-limitations
+- disconnect error. SDK is not initialized. Use 'init' function first.
+- Discord account addition failed
+- Discord account addition failed: no text channels available
+- Discord channel connection failed: necessary permissions were not granted
+- Display media is not supported
+- Display Media Request Error
+- Display media streams are not supported
+- Doubling allows you to get one extra stream channel within the same platform.  ⏎ %s ⏎ Two different %s or %s channels at once, etc.
+- Download an audio file from a URL and add it to the user's custom music library. Blocks until the track reaches status `Ready` or returns a timeout error after ~90s.
+- Download coverUrl from template error
+- Download coverUrl from template error for LinkedIn destination
+- Dual Output Not Supported Screen Manage Channels Clicked
+- Dual Output Not Supported Screen Shown
+- Dual Output Not Supported Screen Upgrade Clicked
+- Dual Output Trial Apply Failed
+- Dualstack is not supported with outposts access point ARN
+- Ecommerce Featured Product Save Error Client
+- Ecommerce Manual Product Connect Error Client
+- Ecommerce Store Products Fetch Error Client
+- Ecommerce Store Reconnect Error Client
+- Ecommerce Store Remove Error Client
+- Edit event error
+- Embed player settings not found error
+- Encountered multiple errors: 
+- Error
+- Error Code: %s
+- Error creating WebGL context with your selected attributes.
+- Error creating WebGL context.
+- Error during destinations processing for event ${e.id}
+- Error during program linking: ${o}
+- Error editing destination ${wbe[e.platform]||""} basic data, continuing with other operations
+- Error editing LinkedIn destination ${wbe[e.platform]||""}, continuing with toggle operation
+- Error fetching MFA token: 
+- Error fetching the remote configuration.
+- Error generating key-session request: 
+- Error handling cover for event, continuing with other operations
+- Error happened on playing GuestJoinedAudio sound
+- Error happened on playing HostJoined sound
+- Error happened on playing SourceAdded sound
+- Error in event listener for 
+- Error in worker:
+- Error Message: %s
+- Error occurred on image fetch: ${e.statusText}
+- Error processing cover for destination ${wbe[e.platform]||""}
+- Error processing default destination ${wbe[e.platform]||""}
+- Error processing event
+- Error processing event cover
+- Error processing existing event
+- Error processing LinkedIn cover for destination ${wbe[e.platform]||""}, continuing with other operations
+- Error processing LinkedIn destination ${wbe[e.platform]||""}
+- Error processing pending changes for event ${r}:
+- Error processing status change for destination ${wbe[e.platform]||""}
+- Error processing status change for LinkedIn destination ${wbe[e.platform]||""}
+- Error processing thumbnail for destination ${wbe[e.platform]||""}, continuing with toggle operation
+- Error repairing tool call: ${(0,i.u1)(e)}
+- Error reported to customer
+- Error toggling destination ${wbe[e.platform]||""}
+- Error while initializing DemuxerWorker, fallback to inline
+- Error. Get hardware info: 
+- Error. getHardwareInfo. loadBenchmarks
+- Errored on stopping local recording shot with reason ${e} ${this.logId}
+- Errors
+- Event cover upload cover error
+- Event Create Client Error
+- Event Destination Create Client Error
+- Event Destination Update Client Error
+- Event parent event finished error
+- Event processing failed for event ${a}:
+- Event processing failed for event ${r}:
+- Event source edit error
+- Event source edit network error
+- Event update loops count unexpected error
+- Execute multiple tool calls sequentially in a single turn. Use this to batch independent operations (e.g., creating several scenes, adding captions to each). Each call runs in order; a failure in one 
+- Extra Camera Allow Camera Clicked
+- Extra Camera Allow Camera Permission Modal Step Opened
+- Extra Camera Denied Camera Permission Modal Step Opened
+- Extra Camera Denied Camera Retry Clicked
+- Facebook failed security checkpoint
+- Facebook may be temporarily unavailable, please try again later.
+- Facebook permissions not accepted
+- Facebook platform error
+- Failed
+- Failed after ${f} attempts with non-retryable error: '${d}'
+- Failed after ${f} attempts. Last error: ${d}
+- Failed camera audio start attempt
+- Failed camera video start attempt
+- Failed connect to the room
+- Failed dependency
+- Failed get all virtual backgrounds metadata: getAll errored
+- Failed handling received message through DataChannels
+- Failed handling received message through WebSocket
+- Failed HLS video playback: failed to load manifest
+- Failed HLS video playback: unexpected error
+- Failed init camera placeholder service: no initial video track
+- Failed to abort live stream start
+- Failed to abort live stream start. No connection or active client
+- Failed to accept all call-in requests
+- Failed to accept call-in request
+- Failed to accept call-in requests
+- Failed to accept webinar live call-in request
+- Failed to accept webinar studio invite
+- Failed to acquire devices
+- Failed to acquire screen wake lock on connection
+- Failed to activate discount
+- Failed to activate scene from scene menu
+- Failed to activate this scene. Try again.
+- Failed to adapt edited-scene layout identifier: ${t}
+- Failed to add animated background
+- Failed to add animated background: no permission to use paid features
+- Failed to add animated background: Too many backgrounds (on the server)
+- Failed to add animated background: video file exceeds maximum supported file size
+- Failed to add avatar
+- Failed to add avatar: retrying
+- Failed to add background
+- Failed to add background: limit exceeded
+- Failed to add browser source
+- Failed to add browser source to scene
+- Failed to add browser source: no active brand
+- Failed to add browser source. Please try again or contact support
+- Failed to add camera
+- Failed to add camera on undo click
+- Failed to add camera placeholder
+- Failed to add camera placeholder on button click
+- Failed to add camera placeholder: scene not found
+- Failed to add camera placeholder: Wrong scene type
+- Failed to add camera: exceeded maximum number of cameras
+- Failed to add camera: video device and resolution must be selected
+- Failed to add caption: no active brand
+- Failed to add caption.
+- Failed to add caption. Secondary text is too long
+- Failed to add caption. Text is too long
+- Failed to add custom music track
+- Failed to add custom music tracks batch
+- Failed to add image: no image id received
+- Failed to add image: no response received
+- Failed to add image: Response await timed out
+- Failed to add logo
+- Failed to add logo. No permission to use paid features
+- Failed to add logo. Wrong file type
+- Failed to add logos images: no active brand
+- Failed to add media placeholder
+- Failed to add media placeholder on button click
+- Failed to add media placeholder: scene not found
+- Failed to add media placeholder: Wrong scene type
+- Failed to add overlay
+- Failed to add overlay images: no active brand
+- Failed to add overlay: no permission
+- Failed to add overlay: no permission to use paid features
+- Failed to add overlay: wrong file type
+- Failed to add playlist scenes batch: No videos
+- Failed to add presentation
+- Failed to add presentation while waiting for the host
+- Failed to add producer
+- Failed to add producer for track ${r.sourceKind} ${t.kind} ${t.constructor.name} ${t.label}
+- Failed to add producer: No connection or active client
+- Failed to add producer: producer for that track already exists
+- Failed to add Qr code: Link is too long
+- Failed to add QR code: No active brand
+- Failed to add Qr code: Title is too long
+- Failed to add QR code. Please try again or contact support
+- Failed to add RTMP source to scene
+- Failed to add scene
+- Failed to add scene browser source
+- Failed to add screen share
+- Failed to add screen share to the edited scene
+- Failed to add Showtime demo scene
+- Failed to add source image
+- Failed to add source image by url ${e}
+- Failed to add source image by url on new scene ${e}
+- Failed to add source image files on click
+- Failed to add source image files on click: No files selected
+- Failed to add source image files on drop
+- Failed to add source image files on drop: No files selected
+- Failed to add source images batch
+- Failed to add static background
+- Failed to add stinger
+- Failed to add stinger: number of video clips exceeded
+- Failed to add ticker: no active brand
+- Failed to add ticker.
+- Failed to add ticker. Text is too long
+- Failed to add upload part due to server error
+- Failed to add video clip: video file exceeds maximum supported file size.
+- Failed to add video clip. No permission to use paid features
+- Failed to add video clips: limit exceeded
+- Failed to add virtual background
+- Failed to add volume meter worklet module
+- Failed to analyze image colors
+- Failed to analyze image colors: image has no dimensions
+- Failed to analyze image colors: no canvas context
+- Failed to analyze image colors: no visible pixels found
+- Failed to apply animated background from chat
+- Failed to apply beautify change
+- Failed to apply dual output custom trial
+- Failed to apply logo from chat
+- Failed to apply LUT filter change
+- Failed to apply static background from chat
+- Failed to apply trial. Please try again later or contact support.
+- Failed to arm local recording for ${this.makeSourceName(e)}: Supported preferred mime type not found
+- Failed to assign scene camera
+- Failed to assign scene source
+- Failed to await an in-progress deep-linked webinar join
+- Failed to await webinar preview readiness
+- Failed to await webinar state for deep-linked call-in
+- Failed to bind attribute: "${s}" not found in program
+- Failed to bind texture: "${String(t)}" is not a sampler
+- Failed to boot Intercom: instance not found
+- Failed to browse file: not found file
+- Failed to call generate-music endpoint
+- Failed to cancel call-in request
+- Failed to cancel invite. Please try again.
+- Failed to cancel stream start
+- Failed to cancel subscription
+- Failed to cancel webinar attendee invite
+- Failed to cancel webinar live call-in
+- Failed to cancel webinar start
+- Failed to cancel webinar viewer invite to studio
+- Failed to capture a frame for skin segmentation
+- Failed to capture gif URL for static preview
+- Failed to capture room media preview for ${this.kind}
+- Failed to change assignment mode to ${e} on onToggleSceneAssignmentModeClick
+- Failed to change browser source layer
+- Failed to change hls video loop state
+- Failed to change local recording resolution
+- Failed to change loop on user click: HLS Video not found
+- Failed to change stream quality to Full HD on upgrade
+- Failed to change the gain: no connection
+- Failed to change the gain: not initialized gain
+- Failed to change the gain: not initialized isMuted
+- Failed to change the gain: not initialized volume
+- Failed to change video status, please try again later.
+- Failed to change zoom level
+- Failed to check for overlapping events on go live attempt
+- Failed to check refresh token expiration
+- Failed to claim expired leases
+- Failed to claim expired takes
+- Failed to complete recording upload due to server error
+- Failed to complete upload part due to server error
+- Failed to complete upload part: recordedBytes missing for take ${e.id}
+- Failed to compute video storage file status: unknown status ${e}
+- Failed to connect
+- Failed to connect DataChannels: ${t}
+- Failed to connect RTMP source
+- Failed to connect RTMP source.
+- Failed to connect to streaming statuses
+- Failed to connect to the specified SFU: Timed out
+- Failed to connect to viewers
+- Failed to connect virtual events chat
+- Failed to connect virtual events chat on init
+- Failed to connect virtual events chat on initV2
+- Failed to connect WebRTC ${e} transport to SFU in 15 seconds
+- Failed to connect WebRTC ${t} transport to SFU, ICE connection state remains 'new' when ICE gathering state is 'complete'
+- Failed to connect with balancer: Timed out
+- Failed to connect: wrong client secret - resetting
+- Failed to connected: already connected
+- Failed to connected: already connecting
+- Failed to construct 'URLPattern': ${e.message}
+- Failed to construct URL for "${e.name}"
+- Failed to construct URL: ${String(n)} ${(0,r.s)({url:e,base:t})}
+- Failed to consume
+- Failed to convert client media device kind: Unsupported kind: ${e}
+- Failed to convert MediaDeviceInfo to ClientMediaDevice: Unsupported device kind ${e}
+- Failed to copy requestId to clipboard
+- Failed to create ${t} shader: context lost
+- Failed to create ${t} shader: failed to compile shader
+- Failed to create ${t} shader: no shader
+- Failed to create 2D context for camera placeholder image
+- Failed to create 2D context for camera placeholder text
+- Failed to create blurred background for avatar
+- Failed to create blurred background for avatar.
+- Failed to create blurred background: No 2D canvas context available
+- Failed to create blurred background: No WebGL2 context available, retrying...
+- Failed to create brand: retrying
+- Failed to create brands
+- Failed to create browser source
+- Failed to create browser source: retrying
+- Failed to create buffer
+- Failed to create buffer: received null
+- Failed to create CameraPlaceholderServiceV2
+- Failed to create canvas context
+- Failed to create chart: can't acquire context from the given item
+- Failed to create client: cannot produce audio or video supported by the server
+- Failed to create Client: connection was aborted
+- Failed to create client: received abort signal
+- Failed to create Client: received error event
+- Failed to create client: unknown error
+- Failed to create custom music file upload
+- Failed to create draft event
+- Failed to create frame buffer: received null
+- Failed to create framebuffe.
+- Failed to create generic caption: retrying
+- Failed to create image thumbnail: Blob creation failed
+- Failed to create image thumbnail: Failed to create canvas
+- Failed to create image thumbnail: Timed out
+- Failed to create local recording shot: No tracks in the stream
+- Failed to create logo: retrying
+- Failed to create LUT texture: received null
+- Failed to create media placeholder layout source
+- Failed to create media-keys for "
+- Failed to create overlay: retrying
+- Failed to create pairs child event
+- Failed to create playlist draft event
+- Failed to create program: failed to link program
+- Failed to create program: lost context
+- Failed to create program: received null
+- Failed to create recording upload
+- Failed to create scene
+- Failed to create session: ${n.status}
+- Failed to create source state model: Unknown state type ${t}
+- Failed to create static background: retrying
+- Failed to create texture
+- Failed to create texture: received null
+- Failed to create ticker: retrying
+- Failed to create transcoded stinger: retrying
+- Failed to create vertex array
+- Failed to create vertex array: received null
+- Failed to create video pipeline: no video track
+- Failed to create Video Storage file: file size exceeded
+- Failed to create Video Storage file: files limit exceeded
+- Failed to create Video Storage file: original name is missing
+- Failed to create Video Storage file: S3 not found
+- Failed to create Video Storage file: upload not found
+- Failed to create video track thumbnail: Blob creation failed
+- Failed to create video track thumbnail: Expected video track, received ${e.kind}
+- Failed to create video track thumbnail: Failed to create canvas
+- Failed to create video track thumbnail: Timed out
+- Failed to create video track thumbnail: Video element errored with ${l.error}
+- Failed to create virtual background: retrying
+- Failed to create WebGL context: WebGL2 is not supported
+- Failed to create WebGL program
+- Failed to create WebGL shader
+- Failed to decline webinar studio invite
+- Failed to decode \`${e.name}\` input
+- Failed to decode consumer app data
+- Failed to decode image
+- Failed to decode response
+- Failed to decode room producer app data
+- Failed to decode SFU token parameters
+- Failed to decode streaming status event
+- Failed to delete animated backgrounds: retrying
+- Failed to delete annotation: ${n.status}
+- Failed to delete avatar
+- Failed to delete avatar: retrying
+- Failed to delete background
+- Failed to delete brand
+- Failed to delete brand: retrying
+- Failed to delete browser source
+- Failed to delete browser source: retrying
+- Failed to delete caption
+- Failed to delete caption.
+- Failed to delete caption. Refetch after error failed
+- Failed to delete caption. Refetching captions.
+- Failed to delete custom music
+- Failed to delete custom music track
+- Failed to delete generic caption: retrying
+- Failed to delete logo
+- Failed to delete logo: retrying
+- Failed to delete overlay
+- Failed to delete overlay: retrying
+- Failed to delete presentation
+- Failed to delete QR code.
+- Failed to delete scene
+- Failed to delete scene on button click
+- Failed to delete scene on hotkey press
+- Failed to delete static background: retrying
+- Failed to delete take by id
+- Failed to delete ticker
+- Failed to delete ticker: retrying
+- Failed to delete ticker.
+- Failed to delete transcoded stinger: retrying
+- Failed to delete virtual background
+- Failed to delete virtual background image blob: delete errored
+- Failed to delete virtual background metadata: delete errored
+- Failed to delete virtual background: retrying
+- Failed to delete virtual background: transaction errored
+- Failed to destroy brand while removing: brand does not exist
+- Failed to detect if loaded in iframe
+- Failed to disable pairs: Timed out
+- Failed to disable scene auto-switch on ${e} disable click
+- Failed to disable simulcasting: not found encodings for the producer
+- Failed to disconnect on initial webinar-mode-off snapshot
+- Failed to disconnect on webinar mode off
+- Failed to disconnect preview on webinar end
+- Failed to disconnect while connecting: not implemented
+- Failed to disconnect while connecting. Not implemented
+- Failed to dispose effect
+- Failed to dispose effects after context loss
+- Failed to dispose video analyzer
+- Failed to download custom music from URL
+- Failed to download custom music URL
+- Failed to duplicate scene on button click
+- Failed to duplicate scene on hotkey press
+- Failed to edit ${this.internalSource?.kind??"undefined"} source properties on click: Not allowed
+- Failed to edit caption
+- Failed to edit caption.
+- Failed to edit caption. Reset previous caption data.
+- Failed to edit caption. Secondary text is too long
+- Failed to edit caption. Text is too long
+- Failed to edit QR code: Link is too long
+- Failed to edit QR code: Title is too long
+- Failed to edit QR code. Reset previous QR code data
+- Failed to edit ticker
+- Failed to edit ticker.
+- Failed to edit ticker. Reset previous ticker data.
+- Failed to edit ticker. Text is too long
+- Failed to enable local recording
+- Failed to enable pairs: Timed out
+- Failed to end live stream
+- Failed to execute '
+- Failed to exit fullscreen: not supported
+- Failed to fetch ${r}: ${t.status}
+- Failed to fetch AI clips usage limit
+- Failed to fetch AI spend credits
+- Failed to fetch AI spend credits on init
+- Failed to fetch AI spend credits on visibility change
+- Failed to fetch Amplitude experiment variants
+- Failed to fetch audio backgrounds
+- Failed to fetch clips conversion eligibility data
+- Failed to fetch clips settings for automatic conversion modal type
+- Failed to fetch counts
+- Failed to fetch custom fonts list
+- Failed to fetch download url: no suid
+- Failed to fetch file from URL
+- Failed to fetch file from URL: ${e}
+- Failed to fetch file metadata
+- Failed to fetch guest id token
+- Failed to fetch guest presentations
+- Failed to fetch image: HTTP ${i.status}
+- Failed to fetch image: request timed out
+- Failed to fetch image: the remote host may not allow browser access (CORS)
+- Failed to fetch live chat history from the room
+- Failed to fetch LUT: HTTP ${t.status}
+- Failed to fetch model: ${l.modelAssetPath} (${t.status})
+- Failed to fetch notes
+- Failed to fetch organization pricing
+- Failed to fetch presentations
+- Failed to fetch recording metadata
+- Failed to fetch room participants
+- Failed to fetch social avatar: retrying
+- Failed to fetch social avatar: Timed out
+- Failed to fetch the chat response.
+- Failed to fetch user
+- Failed to find demuxer by probing frag, treating as mp4 passthrough
+- Failed to find parameters: no matching parameters, used fallback
+- Failed to focus layout source ${this.id}: No state model found
+- Failed to force scene switch: Not authorized
+- Failed to generate animated background
+- Failed to generate animated background: empty response body
+- Failed to generate AWS credentials due to server error
+- Failed to generate background
+- Failed to generate background image from shader
+- Failed to generate music
+- Failed to generate overlay
+- Failed to generate photorealistic background
+- Failed to generate photorealistic background: empty response body
+- Failed to generate transparent overlay
+- Failed to generate transparent overlay: empty response body
+- Failed to generate upload URL due to server error
+- Failed to generate widget
+- Failed to get all logos v2. Feature is not enabled
+- Failed to get all virtual backgrounds
+- Failed to get all virtual backgrounds entries: transaction errored
+- Failed to get audioGain ${this.internalSource?.kind??"undefined"} source
+- Failed to get background blob: canvas returned null
+- Failed to get backgrounds
+- Failed to get camera audio track
+- Failed to get camera audio track when starting audio and video: received ${n.readyState} track
+- Failed to get camera audio track when starting audio: received ${i.readyState} track
+- Failed to get camera video track
+- Failed to get camera video track when starting audio and video: received ${r.readyState} track
+- Failed to get camera video track when starting video: received ${i.readyState} track
+- Failed to get canvas context
+- Failed to get chunks by takeId
+- Failed to get countdown music
+- Failed to get database counts
+- Failed to get display media
+- Failed to get display media. Detected invalid state, most likely it is not supported
+- Failed to get encodings parameters: profile id not found
+- Failed to get event invite token
+- Failed to get event on legacy event updated
+- Failed to get event on show event change from ${t} to ${e}
+- Failed to get event on show event updated
+- Failed to get event stream key: Event id not found
+- Failed to get GL uniform location: received null
+- Failed to get invite URL join token: No event id
+- Failed to get key color from type: unsupported key color type
+- Failed to get key color label from type: unsupported key color type
+- Failed to get local video processed audio track
+- Failed to get muted ${this.internalSource?.kind??"undefined"} source
+- Failed to get organization member
+- Failed to get participant name on init
+- Failed to get participant title on init
+- Failed to get processed audio track
+- Failed to get processed camera audio track: received ${n.readyState} track
+- Failed to get processed local video audio track: received ${r.readyState} track
+- Failed to get response
+- Failed to get room info: bad request
+- Failed to get room info: connection aborted
+- Failed to get room info: event finished
+- Failed to get room info: room no longer available
+- Failed to get room info: room not available yet
+- Failed to get room info: room not available, retrying
+- Failed to get session: ${n.status}
+- Failed to get source kind: Unknown source type ${t}
+- Failed to get static backgrounds v2. Feature is not enabled
+- Failed to get streaming statuses token
+- Failed to get take by id
+- Failed to get upload URL
+- Failed to get user media stream
+- Failed to get user on requested pairs sign up
+- Failed to get value: falling back to null
+- Failed to get video clips
+- Failed to get video storage demo file
+- Failed to get video storage demo file: demo file not found
+- Failed to get video storage files
+- Failed to get Video Storage upload credentials
+- Failed to get Video Storage upload credentials: files limit exceeded
+- Failed to get video stream track
+- Failed to get videos on document visibility change
+- Failed to get videos on video storage shown
+- Failed to get virtual background blob for metadata: get errored
+- Failed to get volume ${this.internalSource?.kind??"undefined"} source
+- Failed to go live
+- Failed to go live: can not go live with the current status
+- Failed to go offline
+- Failed to handle custom music loop click
+- Failed to handle draft event destinations click
+- Failed to handle experience switch expiration
+- Failed to handle join: Init status await timed out
+- Failed to handle joining
+- Failed to handle local recording shot stop on stop event
+- Failed to handle track control click
+- Failed to hide ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to hide root loader
+- Failed to hide source. Please try again.
+- Failed to hide the ${e.kind} on the edited scene
+- Failed to hide the HLS video on the edited scene
+- Failed to hide the RTMP source on the edited scene
+- Failed to hide the source on the edited scene
+- Failed to hydrate recorded bytes: uploadedBytes missing for upload ${e.uploadId}
+- Failed to identify user: No Amplitude instance
+- Failed to import file from google drive
+- Failed to import presentation: token does not exist
+- Failed to import presentation. Please try again or contact support
+- Failed to init as default show
+- Failed to init avatars store
+- Failed to init custom fonts store
+- Failed to init custom music store
+- Failed to init Guest store
+- Failed to init Guest store for login
+- Failed to init Guest store for upload
+- Failed to init guest virtual backgrounds
+- Failed to init Host store
+- Failed to init overlay store: no active brand
+- Failed to init OverlayMode store
+- Failed to init participant name store
+- Failed to init scenes notes store
+- Failed to init user geo data store
+- Failed to initialize custom fonts store
+- Failed to invalidate event query cache
+- Failed to invite webinar attendee to studio
+- Failed to invite webinar viewer to studio
+- Failed to join
+- Failed to join on Enter Studio button click
+- Failed to join: token not found
+- Failed to join. Can not join with the current status
+- Failed to kick guest: No connection
+- Failed to leave
+- Failed to leave the live call
+- Failed to leave webinar live call-in
+- Failed to load
+- Failed to load camera placeholder avatar
+- Failed to load camera placeholder default avatar
+- Failed to load camera placeholder font
+- Failed to load custom font family
+- Failed to load green screen background image
+- Failed to load image
+- Failed to load LUT filter
+- Failed to load Mediapipe virtual background image
+- Failed to load route: feature flag value rejected
+- Failed to load route: not found
+- Failed to load route: not supported
+- Failed to load Stripe.js
+- Failed to log out user on join screen
+- Failed to logout user: retrying
+- Failed to loop HLS playback: player not found
+- Failed to loop HLS video: Room Manager commands not allowed
+- Failed to make outgoing stream profile from id ${e}: no match
+- Failed to make outgoing stream profile from id ${e}: no meta
+- Failed to mark event as edited
+- Failed to mark event as edited: Timed out
+- Failed to maximize browser source
+- Failed to measure longest line width. No context in dummy canvas
+- Failed to measure text width for text truncation: no context in dummy canvas
+- Failed to measure text. No context in dummy canvas
+- Failed to obtain access to key-system "
+- Failed to obtain WebGL context from the provided canvas. `getContext()` should only be invoked with `webgl` or `webgl2`.
+- Failed to onChangeAudioGain ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to onMuteChange ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to onPlaceholderAddSourceClick ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to onPlaceholderImageClick ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to onPlaceholderPresentationClick ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to onPlaceholderScreenSharingClick ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to onPlaceholderVideoFileClick ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to open ${this.label} WS connection: aborted
+- Failed to open ${this.label} WS connection: already closed
+- Failed to open ${this.label} WS connection: already connecting
+- Failed to open ${this.label} WS connection: already has connection
+- Failed to open ${this.label} WS connection: received an error event
+- Failed to open HLS video: not supported
+- Failed to open local video file
+- Failed to open Restream indexedDb
+- Failed to open Restream indexedDb: not supported
+- Failed to open Restream indexedDb: onerror fired
+- Failed to open the webinar attendees upgrade modal
+- Failed to open the webinars upgrade modal
+- Failed to parse cube LUT: 1D LUTs are not supported
+- Failed to parse cube LUT: expected ${o}³ rows, got ${s}
+- Failed to parse cube LUT: expected three numbers, got "${t}"
+- Failed to parse cube LUT: invalid LUT_3D_SIZE "${o[0]??""}"
+- Failed to parse cube LUT: missing LUT_3D_SIZE
+- Failed to parse cube LUT: more than ${s}³ table rows
+- Failed to parse cube LUT: only the default 0–1 domain is supported, got "${i}"
+- Failed to parse cube LUT: table data before LUT_3D_SIZE
+- Failed to parse error response
+- Failed to parse IMSC1: 
+- Failed to parse response from google drive
+- Failed to parse sinf "encrypted" event message initData
+- Failed to parse string as int ${e}: resulted in ${typeof t}
+- Failed to parse video SSE event
+- Failed to parse VTT cue: 
+- Failed to paste from clipboard on paste event
+- Failed to paste on scene menu click
+- Failed to pause HLS playback: player not found
+- Failed to pause hls video
+- Failed to pause HLS video on host click: HLS video not found
+- Failed to pause HLS video: Room Manager commands not allowed
+- Failed to play animated background: Connection await timed out
+- Failed to play audio background
+- Failed to play audio on fade in
+- Failed to play HLS video
+- Failed to play layout audio media stream
+- Failed to play layout video media stream
+- Failed to play video from video storage
+- Failed to play video storage file: id not found
+- Failed to play webinar call-in request sound
+- Failed to play webinar invite to studio sound
+- Failed to post optimistic webinar message to embed
+- Failed to preload scene media for editing
+- Failed to preload social avatar
+- Failed to prepare event properties
+- Failed to prepare event traits
+- Failed to prepare live call-in preview
+- Failed to preprocess logo: image has no dimensions
+- Failed to preprocess logo: no canvas context
+- Failed to process {{filename}}…
+- Failed to process attached images
+- Failed to process destination ${wbe[t.platform]||""}, continuing with others
+- Failed to process destinations (failed: ${u.length}, total: ${s.length})
+- Failed to process error response
+- Failed to process event ${t}: ${e.message}
+- Failed to process successful response
+- Failed to process uploading of local recording part: No etag
+- Failed to promote guest ${e} to host on onPromoteToHostClick
+- Failed to provide HLS video player
+- Failed to pull local recordings status
+- Failed to put off air local video: Source state not found
+- Failed to put virtual background
+- Failed to put virtual background blob: put errored
+- Failed to put virtual background metadata: put errored
+- Failed to put virtual background: transaction errored
+- Failed to read all avatars: retrying
+- Failed to read all backgrounds: retrying
+- Failed to read all browser source overlays: retrying
+- Failed to read all generic captions: retrying
+- Failed to read all logos: retrying
+- Failed to read all overlays: retrying
+- Failed to read all tickers: retrying
+- Failed to read all transcoded stingers: retrying
+- Failed to read all virtual backgrounds: retrying
+- Failed to read application public info: retrying
+- Failed to read attached image
+- Failed to read Blob on WebKit (WebKitBlobResource error 1)
+- Failed to read brands
+- Failed to read caption. It seems to be non-text one
+- Failed to read data.
+- Failed to read event invite token: retrying
+- Failed to read event settings: retrying
+- Failed to read event stream key: retrying
+- Failed to read event: retrying
+- Failed to read file, please try again.
+- Failed to read geo data: falling back to default
+- Failed to read geo data: retrying
+- Failed to read region: falling back to default
+- Failed to read region: Region is unknown
+- Failed to read region: retrying
+- Failed to read settings: retrying
+- Failed to read source image by url: Failed to detect image type ${e}
+- Failed to read source image by url: Failed to fetch image blob ${e}
+- Failed to read ticker. It seems to be non-text one
+- Failed to read user intercom token: retrying
+- Failed to read user onboarding flags: retrying
+- Failed to read varint, encoding is invalid.
+- Failed to receive target
+- Failed to reconnect WebRTC ${t} transport to SFU after 3 consecutive ICE restarts (using ${this.useDataChannels?"DataChannels":"WebSocket"})
+- Failed to recover the WebGL context
+- Failed to refetch browser sources after remove error
+- Failed to refetch mp4 video recording while trying do download it. Fallback to the default download option
+- Failed to refetch QR codes after delete failure
+- Failed to refetch recording for vertical video download
+- Failed to refresh AI spend credits after animated background generation
+- Failed to refresh AI spend credits after chat turn
+- Failed to refresh AI spend credits after music generation
+- Failed to refresh AI spend credits after photorealistic background generation
+- Failed to refresh AI spend credits after widget generation
+- Failed to refresh event invite token: retrying
+- Failed to refresh event on event change
+- Failed to refresh event on live stream start error ${e.name}
+- Failed to refresh invite URL join token: No event id
+- Failed to refresh pairs child event
+- Failed to refresh permissions
+- Failed to refresh RTMP Source Pull key
+- Failed to refresh stream key. Please try again, or contact support for help.
+- Failed to refresh the Slack channel. Please reload the studio.
+- Failed to refresh token: Notifying requestees in wait list...
+- Failed to refresh token: Received bad status ${e.status} ${e.statusText}
+- Failed to refresh token: refreshXsrfToken cookie not found
+- Failed to refresh webinar registration link
+- Failed to refresh webinar viewer link
+- Failed to refresh webinar viewer link: No event id
+- Failed to register local recording
+- Failed to reject call-in request
+- Failed to rejoin webinar on room closure
+- Failed to reload user on visibility change
+- Failed to reload user on window focus
+- Failed to remove
+- Failed to remove animated background from chat
+- Failed to remove attendee
+- Failed to remove browser source from scene
+- Failed to remove browser source from scene before deleting widget
+- Failed to remove camera on hide click
+- Failed to remove camera placeholder
+- Failed to remove camera placeholder: scene not found
+- Failed to remove camera placeholder: Wrong scene type
+- Failed to remove chunks batch
+- Failed to remove demo Video Storage file
+- Failed to remove demo Video Storage file: used in event
+- Failed to remove hls video
+- Failed to remove HLS video state
+- Failed to remove image: no response received
+- Failed to remove image: Response await timed out
+- Failed to remove logo from chat
+- Failed to remove RTMP source from scene
+- Failed to remove scene browser source
+- Failed to remove static background from chat
+- Failed to remove video clip: is default
+- Failed to remove video clip: not found
+- Failed to remove Video Storage file
+- Failed to remove Video Storage file: file not found
+- Failed to remove Video Storage file: used in event
+- Failed to remove webinar attendee
+- Failed to remove: animated background is default
+- Failed to remove: animated background not found
+- Failed to rename custom music track
+- Failed to reorder custom music track
+- Failed to reorder scenes
+- Failed to reorder sources on the edited scene
+- Failed to reorder sources. Please try again.
+- Failed to replace ${this.internalSource?.kind??"undefined"} source on click: Not allowed
+- Failed to replace producer track ${i} ${s} ${r}
+- Failed to replace producer track to ${e?.label??"none"}
+- Failed to replace screen sharing from per-share popover
+- Failed to replace with placeholder on user click
+- Failed to report event ${e}: No Amplitude instance
+- Failed to request
+- Failed to request ${d}: Failed to decode response
+- Failed to request ${d}: Request timed out
+- Failed to request ${d}: Retrying
+- Failed to request ${e}: User id not specified in dev environment
+- Failed to request ${i}
+- Failed to request ${i}: More than 5 token refresh attempts made
+- Failed to request ${i}: Received bad status ${a} ${l}
+- Failed to request ${l}: Failed to decode response
+- Failed to request ${l}: Missing access token
+- Failed to request ${l}: Missing xsrf access token
+- Failed to request ${l}: Received 401 Unauthorized
+- Failed to request ${l}: Received bad status ${f} ${w}
+- Failed to request ${l}: Request timed out
+- Failed to request ${l}: Retrying
+- Failed to request ${n}
+- Failed to request ${n}: Fetch aborted
+- Failed to request ${n}: Received bad status ${c} ${d}
+- Failed to request ${o}
+- Failed to request ${o}: Fetch aborted
+- Failed to request ${o}: Fetch errored
+- Failed to request ${o}: Received bad status ${a} ${d}
+- Failed to request ${o}: Received bad status ${r} ${d}
+- Failed to request ${r}: Fetch aborted
+- Failed to request ${r}: Fetch errored
+- Failed to request ${s}
+- Failed to request ${s}: More than 5 token refresh attempts made
+- Failed to request chat history
+- Failed to request deep-linked webinar live call-in
+- Failed to request fullscreen: not supported
+- Failed to request ICE restart for ${t} transport via HTTP (using ${this.useDataChannels?"DataChannels":"WebSocket"})
+- Failed to request webinar live call-in
+- Failed to reschedule event, continuing with other operations
+- Failed to reset AI spend credits
+- Failed to reset browser source size
+- Failed to reset contain layout options
+- Failed to reset cover layout options
+- Failed to reset half screen layout options
+- Failed to reset half screen layout options for target ${e}
+- Failed to reset layout options
+- Failed to reset pip layout options
+- Failed to reset pip layout options for target ${e}
+- Failed to reset recordings
+- Failed to reset showtime layout options
+- Failed to reset showtime layout options for target ${e}
+- Failed to reset spotlight layout options
+- Failed to reset tbpn layout options
+- Failed to reset thumbnails layout options
+- Failed to reset thumbnails layout options for target ${e}
+- Failed to reset Turnstile widget ${j}
+- Failed to reset Turnstile widget ${R}
+- Failed to reset video analyzer
+- Failed to reset zoom level
+- Failed to resolve skin categories: model labels are [${i.join(", ")}]
+- Failed to restart countdown
+- Failed to restore active brand: active brand not found
+- Failed to resume HLS playback: player not found
+- Failed to resume hls video
+- Failed to resume HLS video on host click: HLS video not found
+- Failed to resume HLS video: Room Manager commands not allowed
+- Failed to resume monitoring on init
+- Failed to resume on click
+- Failed to retrieve CalculatorGraphConfig
+- Failed to retry editing webinar
+- Failed to retry task ${t}: Aborted
+- Failed to retry task ${t}: Timed out
+- Failed to retry task: Aborted
+- Failed to retry task: Timed out
+- Failed to reveal event: Timed out
+- Failed to reveal hidden event
+- Failed to revert widget URL from chat
+- Failed to run camera video pipeline
+- Failed to run skin segmentation
+- Failed to save event recording name before going live
+- Failed to save event recording name on form submit
+- Failed to save participant name
+- Failed to save participant title
+- Failed to save scene note
+- Failed to scale preview
+- Failed to scale preview: resize observer not supported
+- Failed to seek HLS playback: player not found
+- Failed to seek hls video
+- Failed to seek HLS video on host click: HLS video not found
+- Failed to seek HLS video: Room Manager commands not allowed
+- Failed to select background: no permission to use paid features and selected id is not default
+- Failed to select global font
+- Failed to select global font. Unable to find font by id
+- Failed to select overlay: no permission to use paid features and selected id is not default
+- Failed to select QR Code. Id does not exist
+- Failed to select scene
+- Failed to select scene assignment option
+- Failed to select source media device
+- Failed to select virtual background
+- Failed to select virtual background: background with such id does not exist
+- Failed to select widget from chat
+- Failed to select: background with such id does not exist
+- Failed to select: logo with such id does not exist
+- Failed to select: not found presentation in store
+- Failed to select: overlay with such id does not exist
+- Failed to select. Caption with such id does not exist
+- Failed to select. Ticker with such id does not exist
+- Failed to send ${this.label} WS connection queued message
+- Failed to send broadcast message ${t.type}: No connection
+- Failed to send buffered critical message over DataChannel (message length: ${n.byteLength} bytes): ${e}
+- Failed to send buffered non-critical message over DataChannel
+- Failed to send call-in request
+- Failed to send client message ${o.type}: No connection
+- Failed to send invite. Please try again.
+- Failed to send media devices
+- Failed to send message over DataChannel (message length: ${e.byteLength} bytes): ${n}
+- Failed to send message over WebSocket: ${n}
+- Failed to send message: No connection
+- Failed to send message. Please try again or contact support.
+- Failed to send non-critical message over DataChannel
+- Failed to send non-critical message over WebSocket
+- Failed to send private chat message
+- Failed to send private chat message: No connection
+- Failed to send raw message for ${this.label} WS connection: Socket is not connected
+- Failed to send Room Manager message ${d.type}: Received error response
+- Failed to send Room Manager message ${d.type}: Received unknown response
+- Failed to send Room Manager message ${d.type}: Response timed out
+- Failed to send Room Manager message ${t.type}: No connection
+- Failed to send Room Manager message ${t.type}: Send errored
+- Failed to send viewer chat message
+- Failed to set animated background: no background found
+- Failed to set audio input device: device with such id not found
+- Failed to set audio output device
+- Failed to set audio output device: device with such id not found
+- Failed to set background on brand change
+- Failed to set background: no background found
+- Failed to set brand: brand with such id not found
+- Failed to set browser source by id: not found
+- Failed to set browser source: no permission to use paid features and a browser source is already visible on the scene
+- Failed to set caption: no caption found
+- Failed to set countdown music
+- Failed to set countdown music volume
+- Failed to set default graphics: no active brand
+- Failed to set focus behavior
+- Failed to set layout type
+- Failed to set logo: no logo found
+- Failed to set music volume
+- Failed to set on air ${this.stream.kind}: Source state not found
+- Failed to set outgoing stream profile: no profile found
+- Failed to set overlay: no overlay found
+- Failed to set Qr Code: Not found
+- Failed to set sink id
+- Failed to set sinkId on audio device chang
+- Failed to set sinkId on starting video
+- Failed to set solo ${this.stream.kind}: Source state not found
+- Failed to set source on air
+- Failed to set spotlighted for ${this.stream.kind}: Source state not found
+- Failed to set state: unsupported room connection state
+- Failed to set streaming profile
+- Failed to set streaming profile: profile with such id not found
+- Failed to set ticker speed
+- Failed to set ticker: no ticker found
+- Failed to set uniform: "${String(t)}" is a sampler, use bindTexture
+- Failed to set uniform: unknown name "${String(t)}"
+- Failed to set uniform: unsupported value shape
+- Failed to set up effect
+- Failed to set user onboarding flag
+- Failed to set video input device: device with such id not found
+- Failed to show Intercom message: instance not found
+- Failed to show logo
+- Failed to show logo: mp4 video logos cannot be played
+- Failed to show overlay
+- Failed to show overlay: mp4 video overlays cannot be played
+- Failed to start audio on audio input settings change
+- Failed to start audio on unmute
+- Failed to start camera after promotion
+- Failed to start camera audio
+- Failed to start camera video
+- Failed to start camera video pipeline
+- Failed to start effects-only pipeline: no effect is ready
+- Failed to start live stream
+- Failed to start live stream: No connection or active client
+- Failed to start live stream: stream is not stopped
+- Failed to start local recording in reaction for ${this.makeSourceName(t)}
+- Failed to start new shot for local recording ${this.fullId}: Recording is destroyed
+- Failed to start playlist preview
+- Failed to start playlist preview: can not start playlist preview with the current status
+- Failed to start playlist preview: stream or preview is not stopped
+- Failed to start playlist preview. No connection or active client
+- Failed to start polling statuses on get videos
+- Failed to start polling statuses on upload video file
+- Failed to start polling statuses on upload video file by public link
+- Failed to start polling video uploads statuses
+- Failed to start screen share source
+- Failed to start screen share source in a new scene: stateKey await timed out
+- Failed to start screen share: exceeded maximum number of screen shares
+- Failed to start screen sharing on player controls button click
+- Failed to start screen sharing on preview button click
+- Failed to start video on unmute
+- Failed to start video on video input settings change
+- Failed to start video playback: ${o?.message}, code ${o?.code}
+- Failed to stop all screen share streams
+- Failed to stop hls video
+- Failed to stop HLS video: Room Manager commands not allowed
+- Failed to stop local recording in reaction for ${this.makeSourceName(e)}
+- Failed to stop playlist preview
+- Failed to stop playlist preview. No connection or active client
+- Failed to stop screen share media stream
+- Failed to stop stream. No connection or active client
+- Failed to store chunk batch
+- Failed to store chunks batch
+- Failed to store final chunk batch
+- Failed to stringify data, ignoring
+- Failed to submit deep-linked call-in request
+- Failed to submit viewer chat message
+- Failed to swap scene sources
+- Failed to switch virtual background effect
+- Failed to sync annotation: ${o.status}
+- Failed to sync note
+- Failed to sync QR code order after delete
+- Failed to sync state: missing initial brand
+- Failed to sync state: missing initial state snapshot
+- Failed to toggle auto switch
+- Failed to toggle live clipping
+- Failed to toggle local recording
+- Failed to toggle on air for ${this.stream.kind}: Source state not found
+- Failed to toggle participant names visibility
+- Failed to toggle participant source
+- Failed to toggle presentation on the edited scene
+- Failed to toggle RTMP source on the edited scene
+- Failed to toggle screen share on the edited scene
+- Failed to toggle show QR Code scans alert toggle
+- Failed to toggle source on the edited scene
+- Failed to toggle webinar live call-ins
+- Failed to transform stored message data
+- Failed to unassign presentation from the edited scene
+- Failed to unassign scene camera
+- Failed to unassign scene source
+- Failed to undo caption hide
+- Failed to undo logo hide
+- Failed to undo on hotkey press
+- Failed to undo product hide
+- Failed to undo QR code hide
+- Failed to undo ticker hide
+- Failed to update active channels: no room id
+- Failed to update annotation: ${o.status}
+- Failed to update audio gain for ${this.stream.kind}: Source state not found
+- Failed to update audio only for ${this.stream.kind}: Source state not found
+- Failed to update brand
+- Failed to update brand background on change
+- Failed to update brand on brand id updated
+- Failed to update brand partial
+- Failed to update brand partial: retrying
+- Failed to update brand with event settings on init as brandId is not equal
+- Failed to update brand: retrying
+- Failed to update browser source
+- Failed to update browser source on scene
+- Failed to update browser source visibility
+- Failed to update browser source: retrying
+- Failed to update browser source. Please try again or contact support
+- Failed to update call-ins setting
+- Failed to update chat overlay options
+- Failed to update chat overlay options: No active scene
+- Failed to update chunks status batch
+- Failed to update commerce state on brand change
+- Failed to update contain layout main source radius
+- Failed to update contain layout options
+- Failed to update contain layout options: No active scene id
+- Failed to update contain layout shape
+- Failed to update contain layout temp options
+- Failed to update countdown auto switch property
+- Failed to update countdown background color
+- Failed to update countdown background opacity
+- Failed to update countdown duration
+- Failed to update countdown freemove position
+- Failed to update countdown music
+- Failed to update countdown music volume
+- Failed to update countdown scale
+- Failed to update countdown size
+- Failed to update countdown volume
+- Failed to update cover layout options
+- Failed to update cover layout options: No active scene id
+- Failed to update cover layout sources radius
+- Failed to update cover layout temp options
+- Failed to update event details
+- Failed to update event recording name on form submit
+- Failed to update event recording name: retrying
+- Failed to update event settings
+- Failed to update event settings: retrying
+- Failed to update event user settings: Attempted to update event settings in regular mode
+- Failed to update event user settings: Current settings missing
+- Failed to update generic caption: retrying
+- Failed to update generic captions ids order: retrying
+- Failed to update global font
+- Failed to update half screen layout main source radius
+- Failed to update half screen layout options
+- Failed to update half screen layout options: No active scene id
+- Failed to update half screen layout previews position
+- Failed to update half screen layout temp options
+- Failed to update hasPairs
+- Failed to update HLS video audio gain on button click: Not allowed
+- Failed to update HLS video audio gain on button click: State not found
+- Failed to update HLS video mute on button click: Not allowed
+- Failed to update HLS video mute on button click: State not found
+- Failed to update HLS video on air on button click: Not allowed
+- Failed to update HLS video on air on button click: State not found
+- Failed to update HLS video spotlighted on button click: Not allowed
+- Failed to update HLS video spotlighted on button click: State not found
+- Failed to update Intercom settings: instance not found
+- Failed to update invite URL join token: No event id
+- Failed to update layout options
+- Failed to update leases for owner
+- Failed to update live clipping for event, continuing with other operations
+- Failed to update local recording settings
+- Failed to update logo position
+- Failed to update loops count for event, continuing with other operations
+- Failed to update mute for ${this.stream.kind}: Source state not found
+- Failed to update outgoing stream orientation on brand change
+- Failed to update participant name
+- Failed to update permissions after starting audio
+- Failed to update permissions after starting video
+- Failed to update pinned message order
+- Failed to update pip layout main source fixed position
+- Failed to update pip layout main source radius
+- Failed to update pip layout main source scale
+- Failed to update pip layout options
+- Failed to update pip layout options: No active scene id
+- Failed to update pip layout previews position
+- Failed to update pip layout previews radius
+- Failed to update pip layout previews shape
+- Failed to update pip layout previews size
+- Failed to update pip layout single main source position
+- Failed to update pip layout single main source position mode
+- Failed to update pip layout temp options
+- Failed to update presentation on-air on button click: Not allowed
+- Failed to update presentation spotlighted on button click: Not allowed
+- Failed to update producer encodings: not a single encoding provided
+- Failed to update producer encodings: producer has no RTP sender
+- Failed to update producer encodings: sender encodings and new encodings have different length
+- Failed to update producer stats. Unknown id
+- Failed to update scene browser source
+- Failed to update scene logo position
+- Failed to update scene shouldShowParticipantNames
+- Failed to update scene shouldShowParticipantScreenShareNames
+- Failed to update settings
+- Failed to update settings: retrying
+- Failed to update showtime layout main source radius
+- Failed to update showtime layout options
+- Failed to update showtime layout options: No active scene id
+- Failed to update showtime layout previews radius
+- Failed to update showtime layout secondary alignment
+- Failed to update showtime layout secondary source radius
+- Failed to update showtime layout temp options
+- Failed to update source for event, continuing with other operations
+- Failed to update spotlight layout main source fixed position
+- Failed to update spotlight layout main source position mode
+- Failed to update spotlight layout main source radius
+- Failed to update spotlight layout main source scale
+- Failed to update spotlight layout options
+- Failed to update spotlight layout options: No active scene id
+- Failed to update spotlight layout single main source position
+- Failed to update spotlight layout temp options
+- Failed to update tbpn layout main source radius
+- Failed to update tbpn layout options
+- Failed to update TBPN layout options: No active scene id
+- Failed to update tbpn layout temp options
+- Failed to update thumbnails layout main source radius
+- Failed to update thumbnails layout options
+- Failed to update thumbnails layout options: No active scene id
+- Failed to update thumbnails layout previews position
+- Failed to update thumbnails layout previews radius
+- Failed to update thumbnails layout previews shape
+- Failed to update thumbnails layout previews size
+- Failed to update ticker: retrying
+- Failed to update tickers ids order: retrying
+- Failed to update user feature on ${e.type} message
+- Failed to update video analyzer
+- Failed to update video resolution: no available resolution with such id
+- Failed to update webinar call-ins setting
+- Failed to update webinar mode
+- Failed to update widget browser source
+- Failed to upgrade Restream indexedDb
+- Failed to upload
+- Failed to upload {{filename}}…
+- Failed to upload background
+- Failed to upload backgrounds: no active brand
+- Failed to upload caption
+- Failed to upload custom music
+- Failed to upload custom music file
+- Failed to upload custom music track
+- Failed to upload custom music track on drag-n-drop
+- Failed to upload file
+- Failed to upload logo
+- Failed to upload logo image
+- Failed to upload logo images
+- Failed to upload overlay
+- Failed to upload overlay image
+- Failed to upload overlay images
+- Failed to upload static background: no permission for using paid features
+- Failed to upload static background: unsupported file type
+- Failed to upload the avatar: unsupported format.
+- Failed to upload the background
+- Failed to upload the logo.
+- Failed to upload the overlay.
+- Failed to upload the video clip
+- Failed to upload ticker
+- Failed to upload video clip
+- Failed to upload video clips: no active brand
+- Failed to upload video storage file
+- Failed to upload video storage file by public link
+- Failed to upload Video Storage file by public link
+- Failed to upload Video Storage file by public link: backend internal error
+- Failed to upload Video Storage file by public link: Descript not ready
+- Failed to upload Video Storage file by public link: file corrupt
+- Failed to upload Video Storage file by public link: file size exceeded
+- Failed to upload Video Storage file by public link: files limit exceeded
+- Failed to upload Video Storage file by public link: original url is missing
+- Failed to upload Video Storage file by public link: unsupported source
+- Failed to upload Video Storage file: file size limit exceeded
+- Failed to upload Video Storage file: files limit exceeded
+- Failed to upload virtual background
+- Failed to upload virtual background: unsupported file type
+- Failed to upload virtual background.
+- Failed to use Container. No value found in the context
+- Failed to validate destination ${wbe[t.platform]||""} payload
+- Failed too save note
+- Failed with generic error
+- Failed with room connection error
+- Failed: different origins
+- Failed: no access token
+- Failover
+- Failsafe stream backup 
+- Failure
+- Failures
+- Fetch denied for {{title}}.
+- Fetch error response: status=
+- File format is not supported.
+- FileList is not supported in the current environment
+- Filter results by relative time period. Cannot be used with search_after_date or search_before_date.
+- FIPS region not allowed in ARN
+- Flags error response: status=
+- For the host to see and hear you, allow mic and cam permissions.
+- For your security, Studio blocked this link. Please open Studio from your Restream dashboard to continue.
+- Frag load error must match current frag to retry
+- Gateway request failed
+- Gateway request failed: ${e.message}
+- Get a color palette from a remote image URL in the browser. The image host must allow CORS so pixels can be read from canvas. Returns success=false with an error when the image cannot be fetched or an
+- Get all available logos (default and custom). Each logo has a status: "Ready" (can be selected), "Uploading"/"Processing" (still being processed, wait and retry), or "Failed" (upload failed). Only "Re
+- Get all available overlays (default and custom). Each overlay has a status: "Ready" (can be selected), "Uploading"/"Processing" (still being processed, wait and retry), or "Failed" (upload failed). On
+- Get backup file not found error
+- Get demo file not found error
+- Get every custom music track the user has uploaded for the current brand. Returns all tracks regardless of status (Uploading / Processing / Ready / Failed). The `errorMessage` field is populated when 
+- Get file not found error
+- Get started by allowing Studio to use your camera and mic.
+- Get stripe 3D Secure error
+- Get user feature groups error
+- Go Live With Channel Errors Modal Dismissed
+- Go Live With Channel Errors Modal Go Live Anyway Clicked
+- Go Live With Channel Errors Modal Resolve Issues Clicked
+- Go Live With Channel Errors Modal Shown
+- goog.provide cannot be used within a module.
+- goog.scope is not supported within a module.
+- Group field type not supported in readAny()
+- Group field type not supported in writeAny()
+- Guest Connection Attempt Error
+- Guest Join Error
+- Guest Join Screen Allow Webcam Clicked
+- Guest Join Screen Skip Allow Webcam Clicked
+- Heartbeat update failed
+- Host Connection Attempt Error
+- Host Connection Error
+- Host End Stream Error
+- Host Go Live Error
+- ICE restart failed for ${n} (using ${this.useDataChannels?"DataChannels":"WebSocket"})
+- Ignoring media device change offers: Denied by user
+- Import failed
+- Include only results last updated after this date. Format: 'MM/DD/YYYY' (e.g., '3/1/2025'). Cannot be used with search_recency_filter.
+- Include only results last updated before this date. Format: 'MM/DD/YYYY' (e.g., '3/15/2025'). Cannot be used with search_recency_filter.
+- Include only results published after this date. Format: 'MM/DD/YYYY' (e.g., '3/1/2025'). Cannot be used with search_recency_filter.
+- Include only results published before this date. Format: 'MM/DD/YYYY' (e.g., '3/15/2025'). Cannot be used with search_recency_filter.
+- Initialization Error
+- Initialization failed
+- Input validation error: 
+- Internal error occurred! Please try to reload the page. If this error persists, please contact support.
+- Internal server error
+- Internal Server Error
+- Internal server error occurred
+- Invalid email error
+- Invalid error response format: ${n}
+- InvalidService: Failed to load api for 
+- Invariant failed
+- It seems you have Studio already running in another tab or browser. Please, close it and try again.
+- Join Screen Allow Mic/Webcam Clicked
+- JSON parsing failed: Text: ${e}. ⏎ Error message: ${_(t)}
+- JSON response format is not supported.
+- Layout Preview Audio Media Stream Play Error
+- Layout Preview Video Media Stream Play Error
+- Lexical error:
+- License Request XHR failed (
+- Link failed to load
+- Link failed to refresh
+- Live streaming is not allowed.
+- Local recording shot received error event ${this.logId}
+- Local recording shot received error event with unknown reason ${this.logId}
+- Local video playback received error event: ${o?.message}, code ${o?.code}
+- LocalRecordingsUploader error
+- Login empty data error
+- Login Error
+- Login max login attempts exceeded error
+- Login opt is required error
+- Login verified device required error
+- Login wrong data error
+- Login wrong opt error
+- Login wrong opt recovery error
+- Logout request failed
+- Main store initialization finished with error
+- Main store preloading finished with error
+- Make sure you have active connection and it's not blocked by the firewall
+- Make sure your browser extensions do not block video connection or try again with one of the following browsers:
+- mapStream error. SDK is not initialized. Use 'init' function first.
+- mapTrack error. SDK is not initialized. Use 'init' function first.
+- Max login attempts exceeded error
+- Maximum login attempts exceeded. Please try again in 10 minutes.
+- Maximum login attempts exceeded. Try again in 10 minutes.
+- MCP connection allows agents to receive and act on annotations.
+- Media Device Change Request Allowed
+- Media setup failed
+- Message field type not supported in readAny()
+- Message field type not supported in writeAny()
+- Microphone access is blocked
+- Microphone permission denied
+- Microphone Permission query API not supported
+- Microphone permission state change detected
+- Minified Lexical error #${e}; visit ${n.toString()} for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+- Minified Lexical warning #${e}; visit ${n.toString()} for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+- Minified Redux error #
+- Monthly limit on card update attempts was reached, try again next month
+- MPEG audio found, not supported in this browser
+- Multiple configuration errors: ⏎ 
+- Muting audio input: Failed to restart unexpectedly ended audio track ${e.label}
+- Network error occurred
+- Network error, retry pending
+- Network error! Please check your internet connection.
+- Network error. Please check your internet connection.
+- Network Failure
+- New invite failed to be sent. Try again in a few minutes.
+- New URL for the browser source. Not allowed for AI-generated widgets.
+- No output generated. Check the stream for errors.
+- No permissions
+- No product found for your store. Please check your link and try again.
+- No stack, consider using an instance of Error
+- Noise suppression is not supported in Safari.
+- Non-file stream objects are not supported with SigV4
+- Non-transparent videos are temporarily not supported. Please try another video.
+- Not supported
+- Not supported in the current browser
+- Object error
+- Object.assign cannot be called with null or undefined
+- OffscreenCanvas not supported and GraphRunner constructor glCanvas parameter is undefined. Creating backup canvas.
+- Onboarding chat error surfaced to UI
+- One channel cannot go live
+- only allow replacing a thumbnail, not removing it.
+- Oops, unable to delete brand. Please try again, or contact support for help.
+- Oops, unable to save your brand edits. Please try again, or contact support for help.
+- Oops, unable to update settings. Please try again, or contact support for help.
+- Oops! Something went wrong while deleting the avatar. Please, try again.
+- Oops! Something went wrong while uploading the avatar. Please, try again.
+- Operation requires admin permissions
+- ou have reached the limit of password reset emails, please try again in 10 minutes.
+- Ouch! Our Live Shopping got a technical hiccup. Please try again later.
+- Page or group does not exist or cannot be loaded. Try removing and re-adding it.
+- parameter 1 is not of type 'string' and cannot convert to dictionary.
+- Parse error in document
+- Parser error in document
+- Part already completed or cannot accept part.
+- Password recovery empty data error
+- Password recovery invalid email error
+- Password recovery timed out error
+- Password recovery unsuccessful error
+- Pattern cannot start with "?" at ${i}
+- Payment Details Error Shown
+- Periscope channel error
+- Periscope deprecated error
+- Permission
+- Permission denied by user
+- Permissions
+- Permissions denied
+- Permissions query not supported
+- Permissions removal failed, go to %sBusiness integrations settings on Facebook%s to remove it manually
+- persistentEnd error. SDK is not initialized. Use 'init' function first.
+- persistentStart error. SDK is not initialized. Use 'init' function first.
+- Picarto is the world's first live streaming platform especially for broadcasting creative work. It allows artists to live stream their art curation process. Most artwork shown on the website now is vi
+- Please allow Restream to access your Discord server in order to add your account to Restream. ⏎ 
+- Please contact your bank and try again.
+- Please ensure you granted all necessary permission and try again.
+- Please grant all permissions to your YouTube account.
+- Please try again
+- Please try again shortly or contact support.
+- Please try again, or contact support for help.
+- Please try again. If this error persists, contact support.
+- Please try again. If this error persists, please contact support.
+- Please try to reload the page. If this error persists, please contact support.
+- Please update system permissions to allow screen recording for the browser.
+- Please, accept webcam / mic permissions.
+- Please, try again.
+- Prevented exception in Google Translator workaround: NotFoundError: Failed to execute 'insertBefore' on 'Node': The node to be inserted is not a child of reference node
+- Prevented exception in Google Translator workaround: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node
+- Preview initialization finished with error
+- Processing pending changes after error for event ${a}
+- Processing pending changes after error for event ${r}
+- PropertyBinding: Cannot parse trackName: 
+- Re-authentication failed
+- React error
+- Received error event on fade in audio load
+- Received RTMP Source Pull failed status: ${e.reason}
+- Received unsupported audio or video. Please try again, or contact support for help
+- Reconnect channel error
+- Recording or upload not found error during upload
+- Recording size ${e||"unknown"} exceeds maximum allowed size ${t||"unknown"}
+- Recoverable connection error: reconnecting
+- Redirecting to pathname on login with Google error
+- Redirecting to root on login with Google error: Redirect pathname not found
+- Reference id of an image the user pasted into the chat (format `@image:<id>`, or the bare `<id>`). You cannot see the image — pass the reference to condition the first frame on it.
+- Reference id of an image the user pasted into the chat (format `@image:<id>`, or the bare `<id>`). You cannot see the image — pass the reference to use it as a visual reference for composition, subjec
+- Reference id of an image the user pasted into the chat (format `@image:<id>`, or the bare `<id>`). You cannot see the image — pass the reference to use it as a visual reference for the subject, compos
+- Refetching QR codes: Failed to delete QR code
+- Registration email is already in use error
+- Registration empty data error
+- Registration internal error
+- Registration invalid captcha error
+- Registration invalid email error
+- Remove all permissions
+- Remove demo file used in events error
+- Remove file not found error
+- Remove file used in events error
+- Remove file used in streams error
+- Rename file internal error
+- Rename file missing error
+- Rename file not found error
+- Rename file unexpected error
+- Report a problem
+- Request failed
+- Request failed with error status: ${a}: ${d}
+- Request failed: non-ok status
+- Required is OTP error
+- Reschedule event error
+- Response decode failed
+- Restream allows you to stream live to 30+ social platforms at once.
+- Restream Analytics is a new way to visualize your multistreaming metrics, allowing you to efficiently analyze where your audience is growing and the best time to engage with them.
+- Restream Monitor is a tool that allows you to keep an eye on streams as well as incoming and outgoing data for all of connected platforms.
+- Restricted access to Facebook streaming. Only personal profiles allowed
+- Retrying failed to connect ${this.label} WS
+- Retrying failed to connect attempt
+- Retrying ICE restart for ${n} transport in 1 seconds: ICE restart failed (using ${this.useDataChannels?"DataChannels":"WebSocket"})
+- Retrying: failed to read until refresh expiration
+- Room is full. Cannot let in more participants.
+- Routing to cannot join page
+- Routing to unexpected error page
+- RTCPeerConnection prefixes override failed
+- S3 download failed: ${s.status} ${s.statusText}
+- Scene ${n+1}: Failed to create
+- Scene cannot be removed: at least one scene must remain
+- Scene Note Max Symbols Reached Error
+- Scheduled action threw falsy error
+- Screen sharing is not allowed.
+- Screen sharing is not supported on your device.
+- Selected audio output device not found. Make sure it's connected and try again.
+- Selected audio output device resulted in an unexpected error.
+- Sensitive operation failed.
+- Servers overloaded. Please try again, or contact support for help
+- Set `allowMultiple: false` ONLY for genuinely exclusive choices where exactly one answer is true at any given moment. Examples:
+- Shadow AI dispatch failed (non-fatal)
+- Should Allow Guest Control All Presentations Toggle Clicked
+- Signup Error
+- Some stream details for <eventTitle>title</eventTitle> failed to be updated. <button>Try again</button>
+- Something gone wrong. Please try again, or contact support for help
+- Something went wrong connecting your card. If this error persists, please contact support.
+- Something went wrong during %s account connection. Please try again manually or contact our support.
+- Something went wrong during Smashcast account connection. Please try again manually or contact our support.
+- Something went wrong during the streaming connection.  ⏎ Please try again or contact support.
+- Something went wrong during Twitch account connection. Please try again manually or contact our support.
+- Something went wrong during YouTube account connection. Please try again manually or contact our support.
+- Something went wrong while adding extra camera. Please try again
+- Something went wrong while canceling the subscription. If this error persists, please contact support.
+- Something went wrong while canceling the subscription.<br> ⏎ If this error persists, please <a class="link" onclick="Intercom('showNewMessage', 'Cancel Subscribe: ')">contact support</a>.
+- Something went wrong while editing your subscription.<br> ⏎ If this error persists, please <a class="link" onclick="Intercom('showNewMessage', 'Error Edit Plan: ')">contact support</a>.
+- Something went wrong while removing your card. If this error persists, please contact support.
+- Something went wrong while updating the subscription. If this error persists, please contact support.
+- Something went wrong with the payment. If this error persists, please %scontact support%s.
+- Something went wrong with the payment. If this error persists, please contact support.
+- Something went wrong.  ⏎ Please try again or contact support.
+- Something went wrong. Please try again later.
+- Something went wrong. Please try again or contact support.
+- Something went wrong. Please try again, or contact support.
+- Something went wrong. Please try again.
+- Statistics cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. If you do not allow these cookies, we will not know when you have visi
+- Statuses are not supported for this platform
+- Stinger Upload Error
+- Stopped reconnecting to viewers: decode error
+- Stopping local recording shot with reason ${e} and error ${this.logId}
+- Streaming back to personal page needs additional permission. Please, connect your account again. ⏎ %sConnect LinkedIn%s
+- Streaming is not allowed on your Patreon.
+- Streaming the camera and microphone is not supported in your browser.
+- Streaming the microphone is not supported on your device.
+- Streaming to organization needs additional permission. Please, connect your account again. ⏎ %sConnect LinkedIn%s
+- String value allows only 
+- Stripe token creation error
+- Studio needs your microphone to join on air. Allow access in your browser settings, then retry. Learn more in our %sHelp Center%s.
+- Subscription 3DSecure Error
+- Subscription Error
+- Successfully recovered from WebGL2 context creating error after ${this.retryCount} retries.
+- System messages are not allowed in the prompt or messages fields. Use the instructions option instead.
+- Texture: Unable to serialize Texture.
+- The card cannot be used to make this payment. Please contact your bank and try again. 
+- The card cannot be used to make this payment. Please, contact your bank and try again.
+- The card, or account the card is connected to, is invalid. Please contact your bank and try again. 
+- The current status of the live broadcast does not allow it to be deleted.
+- The Dailymotion user is not allowed to create lives
+- The Gateway Provider model function cannot be called with the new keyword.
+- The last payment failed. Payment will be retried within %d days.
+- The payment amount is invalid or exceeds the amount that is allowed. Please contact your bank and try again.
+- The payment cannot be authorized. Please try again. 
+- The payment could not be processed by the card issuer for an unknown reason. Please try again. If the error persists, contact your bank for further details.
+- The payment is not permitted. Please contact your bank and try again.
+- The payment not authorized. Please try again. If it still cannot be processed, contact your bank for more information.
+- The schema does not contain the path: ${t}. (failed at: ${a} which is a type: "${e.type}")
+- The schema does not contain the path: ${t}. (failed at: ${i} which is a type: "${e.type}")
+- There's nothing to share. Make sure the browser has a permission to record the screen.
+- This account has been locked. Please try again in 10 minutes.
+- This card has been declined too many times.  ⏎ You can try to charge this card again after 24 hours. ⏎ If this error persists, please contact support.
+- This field is deprecated. The returned authorization token can be used to access any Amazon ECR registry that the IAM principal has access to, specifying a registry ID doesn't change the permissions s
+- This image type is not supported.
+- This is your recovery code. It can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes
+- This link is outdated and cannot be used to reset a password more than once. Please request another reset password link <a class="alert-link" href="/password-recovery">here</a>.
+- This link is outdated and cannot be used to reset a password more than once. Please request another reset password link <a href="/forgot_password">here</a>.
+- This local and growing streaming platform is a community for—you guessed it—vapers. The platform allows multiple broadcasters to live stream simultaneously.
+- This property is deprecated, please refer to ErrorMetrics for both RMSE and WAPE
+- This URL is not allowed.
+- This webinar has reached its maximum number of viewers. Please try again later.
+- THREE.WebGLAttributes: The size of the buffer attribute's array buffer does not match the original size. Resizing buffer attributes is not supported.
+- THREE.WebGLProgram: Shader Error 
+- THREE.WebGLRenderer: WebGL 1 is not supported since r163.
+- TikTok user has no live permissions
+- Title changes are not supported for 
+- Title update for active hosting failed
+- To connect your channel properly for streaming with Restream, please grant access to your Mixer account. In case you didn't already, make sure to apply for %schannel Review%s on Mixer before you're al
+- To create a live broadcast, make sure your camera and microphone are turned on and Restream Studio is allowed to use them. ⏎ You can always turn these off later.
+- Tool approval signature verification failed for approval "${e}" (tool call "${t}"): ${n}
+- Tool call execution denied.
+- Tool execution failed
+- Transcoding error
+- Transcription failed
+- Trimming recording failed
+- Try again
+- Try Again
+- Try restarting your browser. If you continue to run into this error, please %scontact support%s.
+- Turning off channel due to limit error
+- Twitch no stream key error
+- Two-factor authentication error! Invalid six-digit code, please try again.
+- Two-factor authentication: invalid recovery code, please try again
+- Two-factor authentication: invalid recovery code, please try again.
+- Type is not supported: ${o}
+- Type is not supported: ${t}
+- Type validation failed
+- Uh oh, unable to add brand. Please try again, or contact support for help.
+- Uh oh, unable to delete presentation
+- Uh oh, unable to import presentation from Google Drive
+- Uh oh, unable to select presentation
+- Uh oh, unable to upload presentation
+- Uh-oh. Something went wrong — unable to reset password.
+- Uh-oh. Something went wrong—unable to reset password.
+- Unable to access camera and microphone
+- Unable to access the camera
+- Unable to access the microphone
+- Unable to add
+- Unable to add custom music track without brand
+- Unable to add custom music tracks batch without brand
+- Unable to apply sprintf link to a string with more than two tokens
+- Unable to capture video: request frame is not supported
+- Unable to change caption order: failed to find index in complete list
+- Unable to change caption order: no item with specific indexes
+- Unable to change order: no item with specific index
+- Unable to change QR code order: No item with specific indexes
+- Unable to change QR codes order: failed to find index in complete list
+- Unable to change ticker order: no item with specific indexes
+- Unable to change tickers order: failed to find index in complete list
+- Unable to clone ${e}
+- Unable to connect
+- Unable to connect to the room
+- Unable to connect: already in connected state
+- Unable to connect: already in connecting state
+- Unable to create a POST object policy without a bucket, region, and credentials
+- Unable to create Stripe customer
+- Unable to delete chosen item. Please try again later.
+- Unable to delete custom music track without brandId
+- Unable to deserialize payload
+- Unable to determine texture byte length for ${n} format.
+- Unable to edit caption: does not exist
+- Unable to edit plan
+- Unable to edit QR Code: Not found
+- Unable to edit ticker: does not exist
+- Unable to execute undo command ${e.type}: Not allowed for Countdown scene
+- Unable to find AppCallbacks in <ErrorBoundary/>
+- Unable to find format for key-system "
+- Unable to find selected avatar
+- Unable to get latest event: No Join token provided
+- Unable to get Stripe customer
+- Unable to infer media type from URL. Defaulting to 'application/octet-stream'.
+- Unable to initialize
+- Unable to initialize virtual events: not all required parameters provided.
+- Unable to obtain required WebGL resource: ${o}
+- Unable to open IndexedDb: Version ${e} blocked by ${t}
+- Unable to refresh pairs event invite token in non-pairs or non-event mode
+- Unable to remove caption: does not exist
+- Unable to remove QR code: does not exist
+- Unable to remove your live video on Facebook..
+- Unable to rename custom music track without brandId
+- Unable to renew Stripe customer subscription.
+- Unable to renew subscription.
+- Unable to reorder custom music track, brand is not selected
+- Unable to retrieve response: ${e}
+- Unable to select next scene: no current item with specific index
+- Unable to select previous scene: no current item with specific index
+- Unable to show logo
+- Unable to show overlay
+- Unable to stop the Facebook event.
+- Unable to subscribe!
+- Unable to update event recording name; no event found
+- Unable to upload the video
+- Unable to upload video: unsupported format
+- Unable to upload video: video exceeds maximum duration
+- Unable to use Performance API on this environment
+- Unexpected error during widget generation
+- Unexpected worklet processor error
+- Unfortunately, LinkedIn doesn't allow streaming to multiple LinkedIn destinations at once.
+- UniformsUtils: Textures of render targets cannot be cloned via cloneUniforms() or mergeUniforms().
+- Unknown error
+- Unknown error! Please contact support.
+- Unknown error. Please contact our support.
+- Unknown Gateway error
+- Unschedule event error
+- Unspecified error
+- Unsupported channel error
+- Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it.
+- Up to 11 symbols allowed in a ZIP code.
+- Upload and Stream Subscription Error
+- Upload batch failed
+- Upload by public link descript not ready error
+- Upload by public link file corrupt error
+- Upload by public link internal error
+- Upload by public link original url missing error
+- Upload by public link unsupported source error
+- Upload cannot accept parts due to current status: ${e||"unknown"}
+- Upload cannot be aborted due to current status: ${e||"unknown"}
+- Upload cannot be completed due to current status: ${e||"unknown"}
+- Upload failed.
+- Uploading timed out. Please try again.
+- Use of multiple microphones at the same time not supported in this browser.
+- User Media Request Error
+- User media streams are not supported
+- Validation failed but no issues detected.
+- Value does not allow [{;}], got: %s.
+- Verification failed. Please try again.
+- Video background playback failed. Please try again or contact support.
+- Video clip playback failed. Please try again or contact support.
+- Video limit error
+- VideoFilePollingFinished: file transitioned to failed status
+- VideoFileUploadingProvider: refresh upload credentials...failed
+- Virtual Background is not supported
+- Waiting for permission
+- Waiting for permissions
+- We couldn't start your stream. Our servers are overloaded right now. Please try again in 5 minutes.
+- We couldn't start your stream. Please try again in 30 seconds, or contact support.
+- We couldn't start your stream. Stop one of your streams, then try again.
+- We couldn't start your stream. Upgrade your plan or turn off unsupported features, then try again.
+- We don't have permission to stream to your account. Please remove and reconnect your Facebook channel.
+- We were unable to update/create your product. Please try again later
+- We've received an invalid reCaptcha response. Please try again to confirm you're not a robot.
+- WebCrypto and softwareDecrypt: failed to decrypt data
+- WebGLRenderer: Unable to use linear filtering with floating point textures. OES_texture_float_linear not supported on this device.
+- WebGLRenderer: Unable to use normalized textures without EXT_texture_norm16 extension
+- WebGLRenderer: Unable to use reversed depth buffer due to missing EXT_clip_control extension. Fallback to default depth buffer.
+- WebGLShadowMap: VSM shadow maps are not supported for PointLights. Use PCF or BasicShadowMap instead.
+- Webinar Live Call Allow Webcam Clicked
+- Webinar Live Call Retry Permissions Clicked
+- WebSocket connection error
+- WebXRManager: Cannot change framebuffer scale while presenting.
+- WebXRManager: Cannot change reference space type while presenting.
+- Weekly limit on card update attempts was reached, try again next week
+- Widget regenerated but updating the browser source failed
+- Widget SSE error: ${i.data.error??i.data.message??"unknown"}
+- Widget SSE request failed: status ${e.status}
+- X account connection failed
+- X сhannel not found error
+- Xplatform user is not allowed to stream
+- You are over an area that cannot be dropped on
+- You cannot \`concat()\` schema's of different types: ${this.type} and ${e.type}
+- You cannot apply more than 2 additional AppSumo promo codes to one account
+- You cannot apply more than 2 additional Dealify promo codes to one account
+- You cannot change load parameters after calling loadStripe
+- You cannot connect to YouTube because there is no channel associated with your account. Great time to
+- You cannot upload animated backgrounds longer than 5 minutes
+- You cannot upload stingers longer than 60 minutes
+- You cannot use a canvas that is already bound to a different type of rendering context.
+- You do not have permission to impersonate this page. If this is a Business Page, Two Factor Authentication is required.
+- You do not have permission to stream to DailyMotion.Please contact DailyMotion for more information.
+- You do not have permissions to create Facebook live video.
+- You do not have permissions to go live to this Facebook group.
+- You have blocked camera access. Please update your browser settings to allow access.
+- You have blocked camera access. Please update your browser settings to allow access. Learn more in our %sHelp Center%s.
+- You have blocked camera access. To go live, please update your browser settings to allow access. ⏎ Learn more how to setup camera properly in our %sHelp Center%s.
+- You have blocked camera and microphone access.
+- You have blocked microphone access. Please update your browser settings to allow access.
+- You have no permissions for live streaming
+- You have no permissions to manage posts in this Facebook group.
+- You have no permissions to modify this broadcast
+- You have no permissions to stream to this broadcast
+- You have no permissions to use "made for kids" option
+- You have reached the limit of password reset emails, please try again in 10 minutes.
+- You may need to configure it to allow WebRTC to send local IP address or disable the extension altogether.
+- You reached DailyMotion's upload limit, please try again later.
+- You were allowed to join the live stream
+- You've exceeded the allowable number of PIN code attempts.
+- You've reached daily limit for live stream thumbnails on YouTube. Please try again in 24 hours.
+- You've reached your daily limit for creating live streams on YouTube. You can try again in 24 hours.
+- Your account is locked. Try again in 10 minutes.
+- Your account is not confirmed, please confirm your account with Facebook and try again.
+- Your browser cannot play this video
+- Your browser has blocked your screen. Click the screen icon in your address bar to allow access. ⏎ 
+- Your browser is not supported
+- Your card does not support this type of purchase. Please contact your bank and try again.
+- Your IP address is banned. If you believe this is an error, contact our support team.
+- Your Kick stream title is empty, please add a title and try again.
+- Your plan doesn't allow 
+- Your stream didn't go live. Please try again, or contact support.
+- Your stream didn`t meet the requirement of  %s minimum CCV and offer value was reduced proportionally. ⏎ You can try again, and if you meet the requirements the value will be recalculated automaticall
+- Your Twitch status contains banned words, please check your title and try again.
+- Your Twitch stream title is empty, please add a title and try again.
+- Your video is blocked due to copyrighted content.
+- YouTube live permission blocked
+- Yup.reach cannot implicitly index into a tuple type. the path part "${a}" must contain an index to the tuple element, e.g. "${a}[0]"
+- Yup.reach cannot implicitly index into a tuple type. the path part "${i}" must contain an index to the tuple element, e.g. "${i}[0]"
+- Yup.reach cannot resolve an array item at index: ${s}, in the path: ${t}. because there is no value at that index. 
+
+### Plans & billing (360)
+
+-  free trial applied.
+-  No need to upgrade your bandwidth.
+-  on the free plan.
+- , as a separate subscription.
+- ;return s===TO.CREATE_SUBSCRIPTION?D?`Start ${D}-day Free Trial`:`Subscribe ${e}`:s===TO.UPGRADE_SUBSCRIPTION&&q?.trial?
+- };return void on(n,t.clipsAddonChecked,t.clipsAddonQuantity,t.uploadAndStreamAddonChecked,t.uploadAndStreamAddonProductKey,r)}if(PO(s)||(e=>4===e)(s)){const n={quantity:Number(e.plan),interval:e.billY
+- %d-day free trial. Cancel anytime, for any reason.
+- <b>This information will appear on all your receipts.</b><br>For your security, do not include any confidential or financial information (like credit card numbers).
+- 🤩 Upgrade to make the most of Upload and Stream!
+- 🤩 Upgrade to stream all of your pre-recorded videos!
+- ${fBe} This video is over the duration limit of your plan.
+- ${fBe} This video is over the size limit of your plan.
+- ${fBe} You've reached the limit of video uploads on your plan.
+- ${fBe}This video is over the video upload limit of your plan.
+- 2 months free
+- 2 Months Free
+- 30% OFF Annual Plans
+- 30% OFF business plan
+- 50% OFF all plans - annual and monthly!
+- Add credit card
+- Add Credit Card
+- AfreecaTV is a social media platform that anyone from anywhere can use to broadcast live. AfreecaTV has expanded into North America, Japan, Taiwan, and Thailand with plans to enter other regions aroun
+- after the trial. Upgrade anytime to keep using Dual Output.
+- After your add-on trial ends, you will be charged $
+- AI credits
+- All prices are in USD • Recurring billing • Cancel at any time
+- Already subscribed to this plan
+- AppSumo Lifetime Plan
+- AppSumo Lifetime Plan (%d codes)
+- Are you sure you want to buy the Doubling feature with credits?
+- Are you sure you want to buy the Extra destination with credits?
+- Are you sure you want to buy this Pro feature with credits?
+- Audio Recording Popover Upgrade Clicked
+- AWS Elemental MediaStore Data Plane
+- AWS IoT Data Plane
+- Back to billing
+- Background Music Exclusive Track Upgrade Icon Clicked
+- Billing
+- BillingBackendAPIClient is not provided
+- Billingconductor
+- Black Friday Special ― 30% OFF Annual Plans
+- Browser sources require a paid subscription
+- Buy Premium Features
+- Buy Pro
+- BY CLICKING SUBSCRIBE, YOU AGREE THAT
+- By clicking this button, you agree to our <a href="/privacy-policy" >Privacy Policy</a> & <a href="/appsumo/terms-of-use">Terms and conditions of the AppSumo Lifetime plan</a>.
+- Can't select browser source. That feature not available in your plan.
+- Cancel my subscription
+- Cancel subscription
+- Cancel Subscription
+- Centralized billing
+- Choose the plan that is right for you
+- Choose the plan that's right for you
+- Clips add-on subscription updated
+- Cloud recordings require a paid subscription
+- Company plans
+- Confirm spending credits
+- Congrats! Your 7-day trial applied. Enjoy Dual Streaming!
+- Congratulations on a successful activation of your AppSumo Lifetime Plan
+- Congratulations on a successful activation of your Dealify Annual Plan
+- Congratulations! Your subscription is successfully reactivated.
+- Create a new browser source from a URL. Only available for users with a paid plan (check browserSourcesAvailable in state).
+- Credit card number
+- Credit or debit card
+- Credits
+- Credits applied:
+- Custom backgrounds require a paid subscription
+- Custom Graphics Popover Upgrade Clicked
+- Custom Graphics Popover Upgrade Closed
+- Custom Graphics Popover Upgrade Shown
+- Custom logos require a paid subscription
+- Custom overlays require a paid subscription
+- Custom Standard Restream plan, including %d Facebooks and %d Doublings ⏎ Small Scheduler plan
+- Custom Stinger Upgrade Popover Clicked
+- Custom Stinger Upgrade Popover Closed
+- Custom Stinger Upgrade Popover Shown
+- Daily AI credits limit reached
+- Daily credits: loading…
+- Dark background with a large glowing blue-purple arc rising from the bottom, like a planet horizon.
+- Dealify Annual Plan
+- Dealify Annual Plan (%d codes)
+- Dual Output Not Supported Screen Upgrade Clicked
+- Dual Output Trial Apply Clicked
+- Dual Output Trial Apply Failed
+- Dual Output Trial Apply Succeeded
+- Dual Output Trial Modal Closed
+- Dual Output Trial Modal Shown
+- Dual Output Trial Skip Clicked
+- Dual Output Upgrade Clicked
+- Edit credit card
+- Edit subscription
+- Edit Subscription
+- Enable or disable cloud recording. Only available for users with an active subscription (check cloudRecordingAvailable in state).
+- Enable or disable local recording for all participants. Only available for users with a paid plan that includes local recordings (check localRecordingAvailable in state).
+- End Stream Trigger Upgrade Button Clicked
+- Enjoy free access to AI tools during beta
+- Everything in Premium 
+- Exclusive soundscape available to you and all the users on the Standard plan and above
+- Failed to apply dual output custom trial
+- Failed to apply trial. Please try again later or contact support.
+- Failed to cancel subscription
+- Failed to change stream quality to Full HD on upgrade
+- Failed to fetch AI spend credits
+- Failed to fetch AI spend credits on init
+- Failed to fetch AI spend credits on visibility change
+- Failed to open the webinar attendees upgrade modal
+- Failed to open the webinars upgrade modal
+- Failed to refresh AI spend credits after animated background generation
+- Failed to refresh AI spend credits after chat turn
+- Failed to refresh AI spend credits after music generation
+- Failed to refresh AI spend credits after photorealistic background generation
+- Failed to refresh AI spend credits after widget generation
+- Failed to reset AI spend credits
+- Failed to update countdown freemove position
+- Failed to upgrade Restream indexedDb
+- Forever Free
+- Free
+- FREE MOVE
+- Free plan has a 15-minute total recording limit.
+- Free plan is limited to streaming 
+- Free position
+- Free position picker
+- Free trial
+- Free-move [x, y] position for SPOTLIGHT (when positionMode=Freemove)
+- Free-text answer the user typed into the "Other..." input. Only present when "${Vi}" appears in \`optionIds\`.
+- Freemove
+- Freemove previews
+- Friends upgraded
+- Full HD Popover Upgrade Clicked
+- Get $2 as credits for a verified user who streamed more than 3 hours and 20% from each first purchase on every paid function of your referral!
+- Get a %s%% discount on a monthly subscription!
+- Get a %s%% discount on a yearly subscription!
+- Get a game for free and earn $%s
+- Get all available background music tracks. Exclusive tracks require a paid plan (check hasBackgroundMusic in state).
+- Get Pro Button Clicked
+- Get updates on special upgrade offers, limited-time events, and secret discounts.
+- Go pro
+- GO PRO
+- Go to Billing
+- How can I cancel my subscription?
+- How can I switch between the plans?
+- Illustrated cozy podcast studio with two green sofas, coffee table, 4 boom microphones, plants, and a city-view window at dusk.
+- In order to continue streaming, change Facebook settings or upgrade your account.
+- Individual plans
+- Instagram is a free photo and video sharing app available on iPhone and Android. People can upload photos or videos to our service and share them with their followers or with a selected group of frien
+- Invalid planned start time. Please update the time of the event.
+- Invite Guest Popover Instant Pairs Toggle Upgrade Clicked
+- Invite Guest Popover Toggle Instant Pairs Toggle Upgrade Clicked
+- Invite Guest Popover Upgrade Clicked
+- Invite Guest Popover Upgrade Closed
+- Invite Guest Popover Upgrade Shown
+- IoT Data Plane
+- It's free for all. Upload and save your tracks in the Music tab.
+- It's free for all. Your graphics will be saved.
+- Left on current plan
+- Live Stream Quality Changed On Upgrade
+- Local Recording Upgrade Clicked
+- Local recordings require a paid subscription
+- Main free position
+- Main source [x, y] position for PICTURE_IN_PICTURE (when mainPositionMode=Freemove)
+- Main source position mode for PICTURE_IN_PICTURE. Values: Freemove, Fixed
+- Major League Gaming (MLG) is a global leader in eSports. MLG.tv is the #1 online broadcast network for professional-level, competitive gaming. Their MLG Pro Circuit is the longest-running eSports leag
+- Manual trial application
+- Missing required data: subscription plan type, quantity or interval.
+- No active subscription found
+- No need to upgrade your bandwidth or device capacity, 
+- No need to upgrade your bandwidth.
+- Normalized [x, y] position (0 to 1). Sets where the top-left corner of the chat overlay is placed. Setting this automatically switches position mode to Freemove.
+- Note: We always prorate charges depending on the cost of your new plan.
+- Paid with Credits
+- Personalize your live streams by removing the Restream branding starting from Standard plan.
+- Plan
+- Plan limit reached
+- Plans & Pricing
+- Playlist Duration Limit Experiment Upgrade Modal Shown
+- Playlist is too long. <buttonLink>Upgrade</buttonLink> or shorten it.
+- Playlists exceeds your $duration length limit. To schedule it, make it shorter or upgrade your plan.
+- Position mode for SPOTLIGHT. Values: Freemove (x,y coords), Fixed (pre-defined grid)
+- Position mode: "ReservedSpace" (chat stays in a fixed area that shifts the video layout) or "Freemove" (chat can be placed anywhere over the video)
+- Premium
+- Premium (Legacy)
+- Premium features, plus
+- Premium support 
+- Pro
+- Pro Tip:
+- Receive important transactional and billing related emails.
+- Record up to 15 min for free
+- Recording is a paid feature. <bold>Upgrade for unlimited capture</bold> — ideal for podcasts and content reuse.
+- Recording Trial Ended Modal Closed
+- Recording Trial Ended Modal Shown
+- Recording Trial Warning Modal Closed
+- Recording Trial Warning Modal Shown
+- Recording Trial Warning Start Recording Button Clicked
+- Recording Trigger Popover Upgrade Clicked
+- Recordings Trial Live Stream End Triggered
+- Remove credit card
+- Renew subscription
+- Renew Subscription
+- Restream is the #1 multistreaming solution. Start multistreaming for free today or upgrade your plan to access more powerful features.
+- Restream is the best way to stream to YouTube, Twitch, Facebook, and 30+ other streaming services at once. Get started for free!
+- Restream.io Upload & Stream Subscription
+- RTMP Source Upgrade Clicked
+- Select a plan to grow and engage your audience.
+- Select Plan
+- Select your plan
+- Set countdown x,y position (freemove)
+- Simply cancel the next payment in the subscription settings. Your current subscription will last until the end of the paid period.
+- Skipping Intercom event subscription: instance not found
+- Something went wrong while canceling the subscription. If this error persists, please contact support.
+- Something went wrong while canceling the subscription.<br> ⏎ If this error persists, please <a class="link" onclick="Intercom('showNewMessage', 'Cancel Subscribe: ')">contact support</a>.
+- Something went wrong while editing your subscription.<br> ⏎ If this error persists, please <a class="link" onclick="Intercom('showNewMessage', 'Error Edit Plan: ')">contact support</a>.
+- Something went wrong while updating the subscription. If this error persists, please contact support.
+- Sources Deck Max Participants Upgrade Clicked
+- Split Audio Recording Popover Upgrade Closed
+- Split Audio Recording Popover Upgrade Shown
+- Stack more promo codes to get more years of Restream Standard plan.
+- Start %d-day Free Trial
+- Start Free Trial
+- Start trial
+- Streaming disabled. Your webinar subscription has expired. <upgradeButton>Upgrade</upgradeButton> to start your webinar.
+- Subscribe
+- Subscribe $
+- Subscribe Now
+- Subscribe to a periodic newsletter with valuable tips on all things streaming.
+- Subscribed 3D Secure Check Displayed Client
+- Subscribed 3D Secure Success Client
+- Subscribed Client
+- Subscribers
+- Subscribing to streaming statuses
+- Subscribing to viewers
+- Subscription
+- Subscription 3DSecure Error
+- Subscription Attempt
+- Subscription Changed 3D Secure Check Displayed Client
+- Subscription Changed 3D Secure Success Client
+- Subscription Changed Client
+- Subscription Error
+- Subscription for this organization has been cancelled. Contact your admin to unlock your access
+- Subscription Reactivated 3D Secure Check Displayed Client
+- Subscription Reactivated 3D Secure Success Client
+- Subscription Reactivated Client
+- Subscriptions
+- Success! Your account has been upgraded to Pro
+- Tele2 Esport is a Russian platform from one of the biggest cellular providers with free internet traffic for viewing high quality streams.
+- The best way to stream live video to 30+ platforms simultaneously for free
+- The best way to stream to 30+ platforms simultaneously for free.
+- The trial can be used only once
+- These plans are for personal streaming only. Businesses should use our <a href="#company" aria-controls="company" role="tab" data-toggle="tab" role="presentation">company plans</a>.
+- This account can't be deleted while you have active subscriptions.
+- This track requires a paid subscription
+- To continue streaming, remove Extra destinations from your Dashboard or upgrade your account.
+- To continue streaming, remove the extra destinations from your Dashboard or upgrade your account.
+- To download separate audio and video tracks, upgrade your plan to Professional. %sUpgrade Now%s
+- To replace or remove the watermark, please upgrade your plan to Professional.
+- To unlock automatic recording, please upgrade your plan.
+- To unlock local recordings, upgrade your plan.
+- To upload background, please upgrade your plan
+- Toggle channels on the fly with a paid plan.
+- Toggle channels on the fly with one of our paid plans.
+- Trial
+- Try Dual Output Free for 7 Days
+- TRY FREE
+- Turn free move position mode
+- Unable to edit plan
+- Unable to renew Stripe customer subscription.
+- Unable to renew subscription.
+- Unable to subscribe!
+- Unknown subscription plan type
+- Unknown subscription plan type.
+- Upgrade
+- Upgrade $
+- Upgrade $%s/mo
+- Upgrade for more
+- Upgrade now
+- Upgrade Now
+- Upgrade now to keep access to all the features you're using.
+- Upgrade plan
+- Upgrade to access clips.
+- Upgrade to customize graphics
+- Upgrade to enjoy advanced features
+- Upgrade to grow and engage your audience
+- Upgrade to invite more people
+- Upgrade to invite webinar attendees
+- Upgrade to PRO
+- Upgrade to record all streams
+- Upgrade to remove it
+- Upgrade to Safari v15 or switch to the recommended %sdesktop Google Chrome%s for the best experience.
+- Upgrade to save recordings locally
+- Upgrade to schedule this video
+- Upgrade to Standard
+- Upgrade to Standard plan for one month using promo code from Loots.
+- Upgrade to Standard plan using promo code from Humble Bundle.
+- Upgrade to stream Dual orientations
+- Upgrade to stream in Full HD
+- Upgrade to stream longer playlist
+- Upgrade to stream the recording
+- Upgrade to stream this video
+- Upgrade to unlock <strong>automatic stream recordings</strong> and <strong>Record Only mode in Studio</strong> — perfect for podcasts and repurposing content via our AI-powered clips.
+- Upgrade to unlock 1080p
+- Upgrade to unlock exclusive tracks
+- Upgrade to unlock more channels
+- Upgrade to unlock Record Only mode
+- Upgrade to unlock RTMP source
+- Upgrade to unlock this resolution
+- Upgrade to unlock.
+- Upgrade to upload larger videos
+- Upgrade to upload longer videos
+- Upgrade to upload more videos
+- Upgrade your annual plan
+- Upgrade your current plan
+- Upgrade your lifetime plan
+- Upgrade your plan
+- Upgrade your plan to replace watermark.
+- Upgrade your plan to support this option or choose a different stream quality in your settings.
+- Upgrade your plan to upload image or video backgrounds.
+- Upgrade your plan to upload overlay.
+- Upgrade your plan to upload video clips.
+- Upgraded
+- Upload & Stream Premium
+- Upload and Stream Subscribed Client
+- Upload and Stream Subscription Attempt
+- Upload and Stream Subscription Error
+- User does not have a subscription to renew
+- User is not subscribed to this plan type
+- Want more people on your stream? Unlock %upgradeParticipantsCount screen participants with one of our paid plans. %sUpgrade now%s
+- Want to keep recording? Recording is a paid feature. Upgrade to remove limits and unlock automatic stream recordings as well.
+- We accept all of the following credit cards via Stripe
+- We are formalizing our plans to enter AWS SDK for JavaScript (v2) into maintenance mode in 2023. ⏎ 
+- We couldn't start your stream. Upgrade your plan or turn off unsupported features, then try again.
+- Webinar Audience Join Modal Upgrade Clicked
+- Webinar Expired Banner Upgrade Clicked
+- Yes, we offer a 17% discount if you choose an annual subscription.
+- You are trying to add a channel that exceeds the number of available Extra Destinations with your current plan.  ⏎  ⏎ Please upgrade your subscription
+- You are using all your available Extra destinations. If you need more, please upgrade your subscription.
+- You can change a plan anytime in your subscription settings. We always prorate charges depending on the cost of your new plan.
+- You can manage your subscriptions
+- You can't delete your account while you have active scheduler subscriptions.
+- You can't delete your account while you have active subscriptions.
+- You can't remove your card while some of your subscriptions are still active. You can cancel them at
+- You don't have enough credits.
+- You have chosen to downgrade your plan to <strong>%s</strong>. It will be changed on %s.
+- You should either upgrade your
+- You subscription downgrades in {{count}} day
+- You subscription downgrades in {{count}} days
+- You're already subscribed to this feature.
+- You're purchasing an add-on that will be billed separately from your current subscription. It will renew on 
+- Your ${pBe(t)} video exceeds ${mBe(e)} size limit. Upgrade or upload a smaller video file.
+- Your Clips add-on subscription has started
+- Your Clips free trial has started
+- Your current plan doesn't support streaming a mix of portrait and landscape channels.
+- Your discount is applied. The discount is valid for the first payment only. You can cancel your subscription at any time to avoid future charges. You also agree to our
+- Your plan
+- Your plan doesn't allow 
+- Your subscription downgrades in less than 24 hours
+- Your subscription expires in {{count}} day
+- Your subscription expires in {{count}} days
+- Your subscription expires in less than 24 hours
+- Your subscription has been successfully renewed.
+- Your subscription will be changed immediately. Credit for unused features will be added to your account.
+- Your video exceeds ${WWe(t)} length limit. Upgrade or upload a shorter video.
+
+### Schedule & events (364)
+
+-  Web Worker, fallback to inline`),this.hls.trigger(yX.ERROR,{type:wX.OTHER_ERROR,details:bX.INTERNAL_EXCEPTION,fatal:!1,event:
+- " event
+- " event: init data type: "
+- " message event for session "
+- <DraggableCore>: Unmounted during event!
+- Add to calendar
+- After you end, a new webinar link will be created for your next event.
+- All channels will be scheduled for
+- All channels will be scheduled for LinkedIn event time. To reschedule, go to
+- All prices are in USD • Recurring billing • Cancel at any time
+- Amazon CloudWatch Events
+- Amazon Personalize Events
+- An internal error happened while handling event 
+- Another event scheduled
+- Attempt to get event right before starting stream failed
+- Automatically record live event
+- Automatically records live event into a video viewable later
+- Bad eventId specified
+- Build your playlist and schedule it to go live
+- Calendar
+- Can't create new take with undefined EventId ${this.logId}
+- Can't dismiss view events using beforeSend!
+- Can't edit live event
+- Can’t stream outside of scheduled LinkedIn time. <button>Edit</button>
+- Can’t stream to a cancelled event.
+- Can't stream to connected event. Select a different LinkedIn event or change the option to
+- Can’t stream to event. To create a new one, toggle off and edit.
+- Can't stream to selected event.
+- Cannot add channels to the event. Host does not have access to Pairs.
+- Cannot add channels to the event. Please ask host to enable Pairs.
+- Cannot add channels to the event. Please try again later.
+- Cannot create pairs child event: Join token not found
+- Cannot create pairs child event: No public event available
+- Cannot create pairs child event: Pairs child event already exists
+- Cannot edit connected event.
+- Cannot get pairs child event: No event show id available
+- Cannot reset recordings for finished event
+- Cannot reset recordings: no polling event ID
+- Checking enabled channels for event
+- Clearing existing debounce timer for event ${e}
+- Clearing pairs child event with reason ${e}
+- Client removed event
+- CloudWatch Events
+- Couldn't start this event
+- Create a new event post
+- Create an event page on social pages to gather the audience before the stream. 
+- Create Event
+- Create new event post
+- Create playlist event
+- Created draft event
+- Created pairs child event
+- Created playlist draft event
+- Creating draft event on page load
+- Creating new state for event ${e}
+- Creating pairs child event
+- Creating playlist draft event on page load
+- Custom Standard Restream plan, including %d Facebooks and %d Doublings ⏎ Small Scheduler plan
+- DataProducer "bufferedamountlow" event
+- Date
+- Date and time
+- Date must be ${e.exact?"exactly equal to ":e.inclusive?"greater than or equal to ":"greater than "}${new Date(Number(e.minimum))}
+- Date must be ${e.exact?"exactly":e.inclusive?"smaller than or equal to":"smaller than"} ${new Date(Number(e.maximum))}
+- Date object, ISO-8601 string, or a UNIX timestamp
+- DATERANGE tag attribute: "
+- Datetime
+- Deleting cover for event
+- Destination has scheduledAssetId explicitly set to null, disconnecting LinkedIn event
+- Destination is connected to external event, not deleting cover
+- Draft Event Go Live Button Clicked
+- Edit event error
+- Editing existing event - basic data changed
+- Enable or disable live clipping for the current event. Only available when the feature is enabled (check liveClippingAvailable in state).
+- Error during destinations processing for event ${e.id}
+- Error handling cover for event, continuing with other operations
+- Error in event listener for 
+- Error processing event
+- Error processing event cover
+- Error processing existing event
+- Error processing pending changes for event ${r}:
+- Event
+- Event ${e} is already processing, queueing changes for later processing
+- Event Calendar
+- Event Client Created
+- Event cover upload cover error
+- Event Create Client Attempt
+- Event Create Client Error
+- Event Destination Client Created
+- Event Destination Client Updated
+- Event Destination Create Client Error
+- Event Destination Update Client Attempt
+- Event Destination Update Client Error
+- Event details loaded
+- Event details updated
+- Event Edited
+- Event finished
+- Event fired ${e.type} ${e.reason} ${e.deviceKind}
+- Event has ended
+- Event invite token pairs disabled
+- Event is starting
+- Event looping
+- Event not found
+- Event not found by join token
+- Event not found by show id
+- Event parent event finished error
+- Event posts on YouTube, Facebook, and LinkedIn will show this thumbnail before your stream starts.
+- Event processing failed for event ${a}:
+- Event processing failed for event ${r}:
+- Event processor not initialized
+- Event processor not initialized. Call initializeEventProcessorDebouncer() first.
+- Event schedule has not changed, skipping reschedule
+- Event Scheduled Client
+- Event source edit error
+- Event source edit network error
+- Event update loops count unexpected error
+- EventDataStore is no longer required by CancelQueryRequest
+- EventDataStore is no longer required by DescribeQueryRequest
+- EventDataStore is no longer required by GetQueryResultsRequest
+- Events
+- EventsBackendAPIClient is not provided
+- Executing processing for event ${a}
+- Executing processing for event ${r}
+- Expiration date
+- Facebook event description can't be empty. Please provide a description.
+- Failed to check for overlapping events on go live attempt
+- Failed to connect virtual events chat
+- Failed to connect virtual events chat on init
+- Failed to connect virtual events chat on initV2
+- Failed to create Client: received error event
+- Failed to create draft event
+- Failed to create pairs child event
+- Failed to create playlist draft event
+- Failed to decode streaming status event
+- Failed to get event invite token
+- Failed to get event on legacy event updated
+- Failed to get event on show event change from ${t} to ${e}
+- Failed to get event on show event updated
+- Failed to get event stream key: Event id not found
+- Failed to get invite URL join token: No event id
+- Failed to get room info: event finished
+- Failed to handle draft event destinations click
+- Failed to handle local recording shot stop on stop event
+- Failed to invalidate event query cache
+- Failed to mark event as edited
+- Failed to mark event as edited: Timed out
+- Failed to open ${this.label} WS connection: received an error event
+- Failed to parse sinf "encrypted" event message initData
+- Failed to parse video SSE event
+- Failed to paste from clipboard on paste event
+- Failed to prepare event properties
+- Failed to prepare event traits
+- Failed to process event ${t}: ${e.message}
+- Failed to read event invite token: retrying
+- Failed to read event settings: retrying
+- Failed to read event stream key: retrying
+- Failed to read event: retrying
+- Failed to refresh event invite token: retrying
+- Failed to refresh event on event change
+- Failed to refresh event on live stream start error ${e.name}
+- Failed to refresh invite URL join token: No event id
+- Failed to refresh pairs child event
+- Failed to refresh webinar viewer link: No event id
+- Failed to remove demo Video Storage file: used in event
+- Failed to remove Video Storage file: used in event
+- Failed to report event ${e}: No Amplitude instance
+- Failed to reschedule event, continuing with other operations
+- Failed to reveal event: Timed out
+- Failed to reveal hidden event
+- Failed to save event recording name before going live
+- Failed to save event recording name on form submit
+- Failed to update brand with event settings on init as brandId is not equal
+- Failed to update event details
+- Failed to update event recording name on form submit
+- Failed to update event recording name: retrying
+- Failed to update event settings
+- Failed to update event settings: retrying
+- Failed to update event user settings: Attempted to update event settings in regular mode
+- Failed to update event user settings: Current settings missing
+- Failed to update invite URL join token: No event id
+- Failed to update live clipping for event, continuing with other operations
+- Failed to update loops count for event, continuing with other operations
+- Failed to update source for event, continuing with other operations
+- from the event thumbnail.
+- Get current event details including title, description, and status
+- Get event
+- Get updates on special upgrade offers, limited-time events, and secret discounts.
+- Go Live With Events Overlap Modal Confirm Clicked
+- Go Live With Events Overlap Modal Reject Clicked
+- Go Live With Events Overlap Modal Shown
+- Got child event on init
+- Got event invite token
+- Got new show event on change from ${t} to ${e}
+- If your event is private on LinkedIn, set the switch to - private
+- Ignoring invalid DATERANGE tag: "
+- Ignoring invalid Playlist Delta Update DATERANGE tag: "
+- Import to Event
+- Include only results last updated after this date. Format: 'MM/DD/YYYY' (e.g., '3/1/2025'). Cannot be used with search_recency_filter.
+- Include only results last updated before this date. Format: 'MM/DD/YYYY' (e.g., '3/15/2025'). Cannot be used with search_recency_filter.
+- Include only results published after this date. Format: 'MM/DD/YYYY' (e.g., '3/1/2025'). Cannot be used with search_recency_filter.
+- Include only results published before this date. Format: 'MM/DD/YYYY' (e.g., '3/15/2025'). Cannot be used with search_recency_filter.
+- Invalid date
+- Invalid event parameters detected - filtering out invalid parameters but continuing operation
+- Invalid planned start time. Please update the time of the event.
+- Invite others to stream your event on their channels
+- Invite people to link their social media accounts to your live event. Reach more people and make your event a success.
+- LinkedIn — the social network for the working world with close to 600 million users globally. LinkedIn Live focus on streaming things like Q&As, events, conferences, earnings calls, awards ceremonies,
+- LinkedIn destination already has the same scheduled asset ID, skipping edit
+- LinkedIn destination is connected to external event, not removing cover
+- LinkedIn Live video must be scheduled for at least 1 hour to 7 days from now. ⏎ Please edit the start time
+- Live with Restream, ${(0,c.A)(new Date,"LLLL dd")}
+- Loaded default show event
+- Loading default show event
+- Loading event details…
+- Loading route as a guest: Not own event
+- Loading route as a overlay: Not own event
+- Loading route as a webinar viewer: Not own event
+- Local recording shot received error event ${this.logId}
+- Local recording shot received error event with unknown reason ${this.logId}
+- Local video playback received error event: ${o?.message}, code ${o?.code}
+- Make sure you have an up to date link
+- My first event
+- My First Event
+- New event description
+- New event title
+- No basic data changes for event
+- No change to event cover
+- No event found
+- No eventId available for download modal
+- Not own event
+- Not own event: Tried to load paired event
+- Not own playlist event: User does not match event user
+- On-air with Restream, ${(0,c.A)(new Date,"MMMM d")}
+- Only include results published after this date. Use an ISO 8601 calendar date formatted YYYY-MM-DD (e.g. 2025-01-01); do not include a time.
+- Only return links published after this ISO 8601 date.
+- Only return links published before this ISO 8601 date.
+- or disconnect the event.
+- our LinkedIn Event should be scheduled for one hour from now or the next 7 days.
+- Pairs are disabled for the parent event
+- Payment date
+- Personalize Events
+- Playlist Schedule Event Button Clicked
+- Playlist Start Stream Event Button Clicked
+- Playlists exceeds your $duration length limit. To schedule it, make it shorter or upgrade your plan.
+- Please name your Live Event.
+- Please specify the video start time. It must be in the future and close enough to the current date.
+- Processing event
+- Processing event flow
+- Processing legacy event update
+- Processing new cover for event
+- Processing pending changes after error for event ${a}
+- Processing pending changes after error for event ${r}
+- Processing pending changes for event ${a}
+- Processing pending changes for event ${r}
+- Processing show event change from ${t} to ${o}
+- Processing show event update
+- Processing show guest event change
+- Provided message too short to accommodate event stream message overhead
+- Reached max ${r} events size queued for upload: ${l/a.iH}MiB
+- Received consumerAdded event
+- Received consumerRemoved event
+- Received error event on fade in audio load
+- Recordings not found for event
+- Rejected event go live attempt: ${e}
+- Reloading page: Logged in guest is event owner
+- Remove demo file used in events error
+- Remove file used in events error
+- Removed consumer event, removing
+- Reported event ${e}
+- Requesting user to log in on draft event destinations click
+- Reschedule event error
+- Rescheduling event
+- Restream Events
+- Routing to event finished page
+- Saved event settings
+- Schedule
+- Schedule a Live Video
+- Schedule event
+- Schedule uploaded videos as live streams
+- Schedule Your Event
+- Scheduled action threw falsy error
+- Scheduled for $date
+- Scheduled live videos
+- Scheduled start time
+- Scheduled time should be within 1 hour and 7 days from now.
+- Scheduler
+- Scheduling
+- Scheduling draft event: processing destinations first
+- Scheduling events helps you alert your audience in advance by promoting your stream before going live!
+- Scheduling timer
+- Setting up debounced processing for event ${e} with ${pDe}ms delay
+- Share directly or paste into <b>Lu.ma</b>, <b>Cal.com</b>, or any <b>calendar invite</b>.
+- Show event flow modal function not set
+- Skip Event Setup
+- Skipping child event get on init
+- Skipping Intercom event subscription: instance not found
+- Skipping loading of default show event: Not a Stream Now
+- Skipping loading of default show event: Virtual event does not have access to that feature
+- Some stream details for <eventTitle>title</eventTitle> failed to be updated. <button>Try again</button>
+- SSE stream ended without a complete event
+- SSE stream ended without a data event
+- Starting on June 17, 2019, this parameter will be ignored and the value will be assumed to be true. The response from this operation will always interleave events from multiple log streams within a lo
+- Starting with v2.0.0-beta.1 date-fns doesn't accept strings as date arguments. Please use `parseISO` to parse strings. See: https://git.io/fjule
+- Stream key is %sunique for each event%s. Copy it before going live.
+- Stream key is unique for each event
+- Studio Check Event Button Clicked
+- Studio Events
+- Successfully processed event ${a}
+- Successfully processed event ${r}
+- Successfully reset recordings for event
+- Switching on alternate audio, use video.buffered to schedule main fragment loading
+- Switching on main audio, use media.buffered to schedule main fragment loading
+- The channel will be removed as a destination of scheduled streams.
+- The event description exceeds the maximum length
+- The event should be scheduled no sooner than 1 hour and up to 7 days from now.
+- The event title exceeds the maximum length
+- The Facebook event name is not valid. Please try another name.
+- The streaming started earlier than scheduled time
+- This event has ended
+- This event is no longer available
+- This event is not available right now
+- This is some very special event that might happen soon
+- This is your recovery code. It can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes
+- This LinkedIn event is scheduled for %s.
+- Time to create a new event!
+- To connect a pre-created LinkedIn event, stop streaming.
+- To remove the watermark from all event posts, update thumbnails individually per channel or in the stream details.
+- Tried to Initialize invite URL for a finished or bad event
+- Unable to get latest event: No Join token provided
+- Unable to initialize virtual events: not all required parameters provided.
+- Unable to refresh pairs event invite token in non-pairs or non-event mode
+- Unable to stop the Facebook event.
+- Unable to update event recording name; no event found
+- Unexpected media device event ${o} reason ${s}
+- Unexpected media device event kind ${e}
+- Unexpected media device event type ${o}
+- Unschedule event error
+- Update event details
+- Update the event title and/or description
+- Updating event details…
+- Updating LinkedIn scheduled asset ID after reschedule
+- Updating live clipping for event
+- Updating loops count for event
+- Updating source for event
+- Upgrade to schedule this video
+- View event
+- Virtual Events Chat Connection Closed
+- Virtual Events Chat Connection Opened
+- Waiting for the event to start
+- Webinar Add To Calendar Clicked
+- Welcome to the event
+- Wrong event join token
+- X is the place to see what's happening in the world—from breaking news to major live events. You can easily create live videos to share what's happening live.
+- You are ready to rock your event
+- You are trying to schedule a file longer than ${maxDuration}
+- You can go live 15 min early & up to 2 hours after scheduled time.
+- You can only edit this connected event
+- You can't add new scenes into the finished event.
+- You can't add new videos into the finished event.
+- You can't change timer in a finished event
+- You can't change videos in a finished event.
+- You can't delete your account while you have active scheduler subscriptions.
+- You don’t meet the requirements to host a LinkedIn Event.
+- You have another event at this time.
+- Your event is streaming now. Please edit directly on
+- Your new title for YouTube Events will be applied only on upcoming streams.
+
+### Uncategorised (4924)
+
+-  ⏎  ⏎ Material Name: 
+-  ⏎  ⏎ Program Info Log: 
+-  ⏎       Current BW estimate: 
+-  ⏎       Movement cancelled. ⏎       
+-  ⏎       The item 
+-  ⏎       You have dropped the item. ⏎       
+-  ⏎       You have moved the item from position 
+-  ⏎     The item has been dropped while not over a drop area. ⏎     
+-  ⏎     To pick up a draggable item, press the space bar. ⏎     While dragging, use the arrow keys to move the item. ⏎     Press space again to drop the item in its new position, or press escape to can
+-  ⏎     You have moved the item from position 
+-  ⏎   You have lifted an item in position 
+-  ⏎ Material Type: 
+-   • Be Right Back / intermissions — "lo-fi study beats, non-distracting", "ambient pads, slow swell".
+-   • Outro / Thanks-for-watching — "warm acoustic closer, fade-friendly", "calm piano outro, sentimental".
+-  - do not set this, set it on the child.
+-  (cast from the value \`${Ju(n,!0)}\`).
+-  + ⏎ ((__t = ("+r+")) == null ? 
+-  API to satisfy version constraint `
+-  but it wasn't found.
+-  Coast
+-  Detected on the page: ${e} compatible editor(s) with version ${n}
+-  does not exist!
+-  exists, but the property is not available.
+-  Focus
+-  from your content.
+-  giving viewers a clear and crisp picture.
+-  Headless
+-  is no longer over a droppable area.
+-  is not a mutable property.
+-  It must be ${t}. Received ${o}
+-  Kb/s ⏎       Estimated load time for current fragment: 
+-  Mbps
+-  Mini
+-  reaches max retry, redispatch as fatal ...
+-  Reality
+-  Renaming a store may come in handy if you connect several stores with similar names.
+-  requires transpilation but no transpiler was found.
+-  returned an invalid MD5 response. 
+-  Set contains 
+-  should be a non-empty string.
+-  should not be enumerable in Object.prototype.
+-  switching to “Monthly”.
+-  to parse all TS packets.
+-  Touch
+-  will be ignored.
+- ,this.zero=!!e.zero,this.width=void 0===e.width?void 0:+e.width,this.comma=!!e.comma,this.precision=void 0===e.precision?void 0:+e.precision,this.trim=!!e.trim,this.type=void 0===e.type?
+- :e instanceof Map?
+- :e instanceof Set?
+- . The current chunk will not be buffered.
+- . This chunk will not be buffered.
+- ' at port `
+- ' can be reused.
+- ' character in a manually specified `to.
+- ' found in 
+- ' in 
+- ' must be destroyed before the canvas with ID '
+- ' of type 
+- ' provided in customizeRequests
+- ' region.
+- ' should have been type '
+- ', was '
+- '. Backtracking to sync byte @
+- '. This service may not be available in the `
+- ');const n=h1(e),r=[
+- ');throw t.name=
+- 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+- 'last' eeee 'at' p
+- 'today at' p
+- 'tomorrow at' p
+- 'yesterday at' p
+- " - compliance issue
+- " (no initData)
+- " attribute, got "
+- " could not find an element.
+- " does not exist! Falling back to "
+- " does not match for tags with ID: "
+- " does not match regex pattern /
+- " for 
+- " for "
+- " for keyID 
+- " for keyStatuses keyId: 
+- " given.
+- " group-id
+- " has been loaded incorrectly.
+- " is invalid for argument "value"
+- " is not a registered 
+- " keyId: 
+- " method: 
+- " obtained
+- " on tag "
+- " or lower
+- " requires goog.html.SafeUrl, goog.string.Const, or string, value "
+- " requires goog.string.Const value, "
+- " with value "
+- ", expecting "
+- ");if("%"===n&&"%"!==t)throw new l("invalid intrinsic syntax, expected opening 
+- ");if(arguments.length>3&&"boolean"!=typeof arguments[3]&&null!==arguments[3])throw new i("
+- "+t.port+"'. This service may not be available in the 
+- "buffer" argument must be a Buffer instance
+- "length" is outside of buffer bounds
+- "list" argument must be an Array of Buffers
+- "offset" is outside of buffer bounds
+- "proxyUrl" is used
+- "size" argument must be of type number
+- "use strict"; return (
+- "use strict";let x = 1; function f() { return typeof x; };f() == "number";
+- "value" argument is out of bounds
+- (default) omits modelId — BE picks. Cost stays $0.05 flat across models (exact cost calculation coming soon).
+- ) does not match the calculated CRC32 checksum.
+- )):c}if(!e.url||this.loadedEndOfParts(i,n))return Promise.resolve(null)}}this.log(`Loading fragment ${e.sn} cc: ${e.cc} ${o?
+- [legend-state] observable is not a primitive.
+- [passthrough-remuxer.ts]: initSegment does not contain moov or trak boxes.
+- ];if(this.currentLevelIndex=e,this.currentLevel=o,n===e&&o.details&&r&&i===s)return;this.log(`Switching to level ${e}${s?
+- ];this.log(`Loading level index ${t}${void 0!==(null==e?void 0:e.msn)?
+- ].  Please separate it out to the `to.
+- ]).forEach((e=>{const t=wZ(e);if(t){const e=t.subarray(8,24);e.some((e=>0!==e))||(CX.log(`[eme] Patching keyId in 'enc${i?
+- } from level ${n}${i?
+- @@toPrimitive must return a primitive value.
+- ` field. Alternatively you may provide the full path as a string in <Link to="..."> and the router will parse it for you.
+- © $year Restream, Inc. All Rights Reserved.
+- +e);var t;return new Ate({fill:t[1],align:t[2],sign:t[3],symbol:t[4],zero:t[5],width:t[6],comma:t[7],precision:t[8]&&t[8].slice(1),trim:t[9],type:t[10]})}function Ate(e){this.fill=void 0===e.fill?
+- +e);var t;return new Jf({fill:t[1],align:t[2],sign:t[3],symbol:t[4],zero:t[5],width:t[6],comma:t[7],precision:t[8]&&t[8].slice(1),trim:t[9],type:t[10]})}function Jf(e){this.fill=void 0===e.fill?
+- +e);var t;return new rj({fill:t[1],align:t[2],sign:t[3],symbol:t[4],zero:t[5],width:t[6],comma:t[7],precision:t[8]&&t[8].slice(1),trim:t[9],type:t[10]})}function rj(e){this.fill=void 0===e.fill?
+- <DraggableCore> not mounted on DragStart!
+- ===t.key&&!n){const n=document.activeElement,r=t.shiftKey;if(t.target===e&&r)return void d.current?.focus();const o=y({tabbingDirection:r?
+- ==typeof e.constructor.empty?e.constructor.empty():e==Set||e instanceof Set?new Set:e==Map||e instanceof Map?new Map:(0,i.A)(e)?[]:(0,s.A)(e)?
+- ==typeof o[o.length-1]&&!o[o.length-1].trim();)o.pop();if(null===t.wrapper)return o;const a=t.wrapper||(n?
+- ${e} is already initialized.
+- ${o.toString()} Parent: ${s.tagName}, new child: {tag: ${t.tagName} key: ${r}}, old child: {tag: ${e.tagName}, key: ${n}}.
+- ${r} The feature "${e.feature}" is used in a compatibility mode.
+- $10 sign-up bonus!
+- 0 Bytes
+- 0 min
+- 0.00 USD
+- 0px 0px
+- 0px 1px 8px rgba(0, 0, 0, 0.28)
+- 1 argument required, but only 
+- 1 day
+- 1 hour
+- 1 hr each
+- 1 min
+- 1 minute
+- 1 month
+- 1 second
+- 1 week
+- 1 widget
+- 1 year
+- 1,000 website viewers
+- 1. Make sure a Product link is correct
+- 10 GB.
+- 10 min
+- 10 minutes
+- 10 sec
+- 10 seconds
+- 10,000 website viewers
+- 1080p @ 30fps
+- 120 min max length
+- 15 min
+- 15 minutes
+- 1hr up to 2GB
+- 1px solid #000
+- 1px solid #f00
+- 1st quarter
+- 2 hr each
+- 2 hr up to 5GB
+- 2 included team seats
+- 2 min
+- 2 minutes
+- 2 team seats
+- 2. Fill Primary text and Price fields
+- 20px 17px
+- 24/7 dedicated support
+- 2D context not available
+- 2GB each
+- 2hrs each
+- 2nd quarter
+- 2px solid #fff
+- 3 links
+- 3 min
+- 3 minutes
+- 3 pull links
+- 3 team seats
+- 30 min each
+- 30 min max length
+- 30 sec
+- 30 seconds
+- 30% OFF applied
+- 300 es
+- 30mins each
+- 3d secure is required.
+- 3rd quarter
+- 4 hours per week
+- 4 hr each
+- 4 hr up to 10GB
+- 4th quarter
+- 5 GB.
+- 5 links
+- 5 pull links
+- 50% OFF – <hiddenOnTablet>only this </hiddenOnTablet>Black Friday!
+- 50% OFF – <hiddenOnTablet>only this </hiddenOnTablet>Cyber Monday!
+- 500MB each
+- 5GB each
+- 6-digit code
+- 6-digit code from 2FA app
+- 6-digit code from 2FA app 
+- 60 min max length
+- 60mins each
+- 6px 10px
+- 7-day money back guarantee
+- 7-day money-back guarantee
+- 750MB of storage
+- 8-Bit Compact
+- 8px 20px
+- A `position` was applied to this <Draggable>, without drag handlers. This will make this component effectively undraggable. Please attach `onDrag` or `onStop` handlers so you can adjust the `position`
+- A <Select.Item /> must have a value prop that is not an empty string. This is because the Select value can be set to an empty string to clear the selection and show the placeholder.
+- A base URL must be provided for a relative constructor string.
+- A key pair ID and private key are required
+- A password should be at least 8 characters long.
+- A title contains invalid characters '<' or '>'
+- A transaction with an identical amount and card information was submitted very recently.
+- A/B harness
+- Aac
+- Aborted pending boxed request ${this.name}
+- Aborted pending boxed request ${this.name}: Timed out
+- Aborted: User logged out
+- Aborting
+- About
+- About Us – What is Restream?
+- Abstract blue-to-cyan gradient with smooth flowing wave-like hills, resembling a neon-lit digital landscape.
+- Accelerate
+- Accelerators
+- Accept
+- Accept all
+- Accepted
+- Accepted payment types
+- Access
+- Access for key-system "
+- Access Point ARN should have one resource accesspoint/{accesspointName}
+- Access point resource in ARN is not DNS compatible. Got 
+- Access to the Restream Studio
+- Access token has expired, been revoked, or is invalid.
+- Accordion
+- Account
+- Account balance
+- Account deletion
+- Account manager
+- Account not found
+- Account Switch Attempt Client
+- Account Switch Client
+- Accounts
+- Accuracy
+- Acer
+- Acl
+- Acoustic
+- Action
+- Actions
+- Activate your unique promo code
+- Active
+- Activities
+- Activity
+- Add
+- Add a Restream link to social alerts
+- Add all
+- Add All Button
+- Add Another Store
+- Add both
+- Add Information
+- Add More
+- Add name
+- Add Placeholder
+- Add products
+- Add Restream link
+- Added
+- Added consumer
+- Added stinger
+- Adding
+- Adding consumer
+- Address
+- Addresses
+- ADTS sync word found !
+- AdvancedEventSelectors is no longer returned by ListEventDataStores
+- Affiliate links
+- Affinity
+- Afghanistan
+- After
+- Agency
+- Agents
+- Aggregator
+- Aggregators
+- Agora 1 by Odyssey
+- AI Assistant
+- AI gateway
+- AI Generated
+- AI SDK Warning System: To turn off warning logging, set the AI_SDK_LOG_WARNINGS global to false.
+- AI SDK Warning${null!=t&&null!=n?
+- AI sent an invalid questionnaire — retrying automatically.
+- AI Spend
+- AI Spend (dev)
+- AI widget
+- AI Widget Assistant Opened
+- AI Widget Edit Clicked
+- AI Widget Generation Completed
+- Air
+- Akamai
+- Alarms
+- Albania
+- Alert
+- Algeria
+- Algorithm
+- Alias
+- Aliases
+- Alice Johnson
+- Aliexpress
+- Align left
+- Align right
+- Alignment
+- All
+- All members
+- All off
+- All on
+- All prices are in USD. 7-day money-back guarantee
+- All widgets
+- Alphabet
+- Already connecting: ignoring
+- Already have a Restream account? <logInButton>Log in</logInButton>
+- Already have an account?
+- Already have an account? <a href="/login" id="linkLogin"  class="link">Log in</a>
+- Also please make sure you:
+- Alt
+- Always
+- Amazon
+- Amazon API Gateway
+- Amazon Athena
+- Amazon CloudFront
+- Amazon CloudHSM
+- Amazon CloudWatch
+- Amazon CloudWatch Logs
+- Amazon Cognito Identity
+- Amazon Cognito Identity Provider
+- Amazon Cognito Sync
+- Amazon Comprehend
+- Amazon Connect
+- Amazon Connect Service
+- Amazon DynamoDB
+- Amazon EC2
+- Amazon EC2 Container Registry
+- Amazon EC2 Container Service
+- Amazon ECR
+- Amazon ECS
+- Amazon Elastic Compute Cloud
+- Amazon Elastic Transcoder
+- Amazon ElastiCache
+- Amazon EMR
+- Amazon Forecast Query Service
+- Amazon Forecast Service
+- Amazon GameLift
+- Amazon Inspector
+- Amazon Kinesis
+- Amazon Kinesis Firehose
+- Amazon Lex Model Building Service
+- Amazon Lex Runtime Service
+- Amazon Lex Runtime V2
+- Amazon Location Service
+- Amazon Machine Learning
+- Amazon Mechanical Turk
+- Amazon Mobile Analytics
+- Amazon MTurk
+- Amazon Personalize
+- Amazon Personalize Runtime
+- Amazon Polly
+- Amazon RDS
+- Amazon Redshift
+- Amazon Rekognition
+- Amazon Relational Database Service
+- Amazon Route 53
+- Amazon Route 53 Domains
+- Amazon S3
+- Amazon SES
+- Amazon Simple Email Service
+- Amazon Simple Notification Service
+- Amazon Simple Queue Service
+- Amazon Simple Storage Service
+- Amazon Simple Systems Manager (SSM)
+- Amazon SNS
+- Amazon SQS
+- Amazon SSM
+- Amazon Translate
+- Amazon WorkDocs
+- Ambient
+- Amount
+- Amp
+- Amplify
+- Amplitude Experiment Assigned
+- Analytics
+- AnalyticsBackendAPIClient is not provided
+- Analyzing
+- And
+- and other software into Studio.
+- Andorra
+- Android
+- Android 
+- Android, iOS, and Blackberry—<a href="https://support.google.com/accounts/answer/1066447" target="_blank">Google Authenticator</a>
+- Angola
+- Anguilla
+- Animated bright glowing nebula clouds with orange-gold sparks and light rays against a dark sky.
+- Animated close-up of dark reflective crystal facets with subtle light refractions and slow rotation.
+- Animated snow-capped mountain peak under a black starry sky with twinkling stars.
+- Anno Domini
+- Annotation
+- Annotations
+- Annual
+- Annually
+- Annually 
+- Anomalies
+- Anonymous
+- Answer
+- Antarctica
+- Antigua and Barbuda
+- Any encoder
+- Api
+- API Gateway
+- Appflow
+- Apple
+- Application
+- Application Auto Scaling
+- Application loaded
+- Application not found
+- Applications
+- Applied promo code 
+- Apply
+- Applying changes…
+- Applying theme…
+- Apps
+- Apr
+- April
+- Arch
+- Architecture
+- Architectures
+- Archives
+- Are there any discounts?
+- Are you still here?
+- Are you sure you want to cancel?
+- Are you sure you want to delete this card?
+- Are you sure you want to leave %s
+- Are you sure you want to leave?
+- Are you sure you want to proceed?
+- Are you sure you want to remove %s?
+- Area selection
+- Argentina
+- Args
+- Argument is not a %s (or a non-Element, non-Location mock); got: %s
+- Argument is not a Location (or a non-Element mock); got: %s
+- Argument must be a Buffer
+- Arguments
+- Armenia
+- Arn
+- ARN accountID does not match regex "[0-9]{12}"
+- ARN endpoint is not compatible with FIPS region
+- ARN region is empty
+- ARN resource should begin with 'accesspoint/'
+- ARN resource should begin with 'outpost/'
+- Array
+- Array must contain ${e.exact?"exactly":e.inclusive?"at least":"more than"} ${e.minimum} element(s)
+- Array must contain ${e.exact?"exactly":e.inclusive?"at most":"less than"} ${e.maximum} element(s)
+- Arrow
+- Artwork
+- Aruba
+- Ascending
+- Ascension Island
+- Asia Pacific
+- Aside
+- Aside radius, %
+- Ask Studio AI…
+- Assets
+- Assigning
+- Assignment
+- Assignments
+- Association
+- Associations
+- Athena
+- Atmosphere
+- Attachment
+- Attachments
+- Attempt loading level index 
+- Attempt to access memory outside buffer bounds
+- Attempt to allocate Buffer larger than maximum size: 0x
+- Attempt to write outside buffer bounds
+- Attempted to add chunk before initialization
+- Attempted to update an already finished hash.
+- Attempting
+- Attempting connection with balancer
+- Attempts
+- Attendees
+- Attendees will appear here
+- Attribute
+- Attribute "
+- Attributes
+- Audience
+- Aug
+- August
+- Australia
+- Austria
+- Auth
+- Auth required
+- Authentication
+- Author
+- Auto
+- Auto Scaling
+- Auto Switch Onboarding Popover Shown
+- Auto Switch Promo Popover Shown
+- Auto-switch updated
+- Autodetect
+- Automatic
+- Automatically clear annotations after copying
+- Automation
+- Availability
+- Available
+- Avatar
+- Avatar Deleted
+- Avatar Selected
+- Average
+- Average viewers
+- Avg
+- Avoid anxiety about your internet cutting halfway through.
+- Awaited foreground on main store initialization
+- Awaited foreground on preview initialization
+- Awaiting another restore: WebGL context was lost again during the rebuild
+- AWS Certificate Manager
+- AWS CloudFormation
+- AWS CloudHSM V2
+- AWS CloudTrail
+- AWS CodeBuild
+- AWS CodeCommit
+- AWS CodeDeploy
+- AWS CodePipeline
+- AWS Comprehend Medical
+- AWS Cost and Usage Report Service
+- AWS Cost Explorer
+- AWS Cost Explorer Service
+- AWS Direct Connect
+- AWS Elastic Beanstalk
+- AWS Identity and Access Management
+- AWS IoT
+- AWS IoT Analytics
+- AWS Key Management Service
+- AWS Lambda
+- AWS Marketplace Catalog
+- AWS Marketplace Catalog Service
+- AWS Marketplace Commerce Analytics
+- AWS OpsWorks
+- AWS Price List Service
+- AWS Pricing
+- AWS Resource Groups
+- AWS Secrets Manager
+- AWS Security Token Service
+- AWS Service Catalog
+- AWS Storage Gateway
+- AWS STS
+- AWS WAF
+- AWS X-Ray
+- AWS3 AWSAccessKeyId=
+- AWS3-HTTPS AWSAccessKeyId=
+- Azerbaijan
+- Back
+- Back To Lobby Button Clicked
+- Back to Old Experience
+- Back to Restream
+- Back to the restream app
+- Back to top
+- Backend unavailable, retry pending
+- Backfilling
+- Backspace
+- Backup
+- Backups
+- Backward
+- Bad request
+- Bad showId specified
+- Bahamas
+- Bahrain
+- Bangladesh
+- Barbados
+- Barnes & Noble
+- Base
+- Base UI
+- Baseline
+- Basic features, plus
+- Batch
+- Batch execute
+- Beard
+- Bearer 
+- Been watching for 2 hours now
+- Before Christ
+- Belgium
+- Belize
+- Benin
+- Bermuda
+- Best value
+- Beta
+- Bhutan
+- BigInt must be ${e.exact?"exactly":e.inclusive?"less than or equal to":"less than"} ${e.maximum}
+- Bilibili
+- Billed as one payment $%s
+- Billed as one payment of
+- Billed as one payment of $
+- Binary
+- Black Friday 
+- Blackhole
+- Blinded
+- Blink
+- BlinnPhongMaterial material; ⏎ material.diffuseColor = diffuseColor.rgb; ⏎ material.specularColor = specular; ⏎ material.specularShininess = shininess; ⏎ material.specularStrength = specularStrength;
+- Blob
+- Block
+- Block page interactions
+- Blocks
+- Blog
+- Blog digest
+- Blue
+- Bob Smith
+- Body
+- Bolivia
+- Boolean
+- Booted Intercom
+- Booting
+- Border, px
+- Bosnia & Herzegovina
+- Botswana
+- Bottom
+- Bottom Center
+- Bottom Left
+- Bottom offset, px
+- Bottom Right
+- Bounces
+- Bounds selector "
+- Bouvet Island
+- Braket
+- Branch
+- Brazil
+- Breadcrumb
+- Brightness
+- Brila
+- Bring forward
+- Bring to front
+- British Indian Ocean Territory
+- British Virgin Islands
+- Browser
+- Browser does not support typed arrays
+- Brunei
+- Bucket
+- Buckets
+- Budgets
+- Buffer
+- Buffer size
+- Buffer size (Kbps)
+- Buffer size must be a multiple of 16-bits
+- Buffer size must be a multiple of 32-bits
+- Buffer size must be a multiple of 64-bits
+- Buffer.write(string, encoding, offset[, length]) is no longer supported
+- Buffered 
+- BufferGeometry: Buffer size too small for points data. Use .dispose() and create a new geometry.
+- BufferGeometry.computeBoundingBox(): Computed min/max have NaN values. The "position" attribute is likely to have NaN values.
+- BufferGeometry.computeBoundingBox(): GLBufferAttribute requires a manual bounding box.
+- BufferGeometry.computeBoundingSphere(): Computed radius is NaN. The "position" attribute is likely to have NaN values.
+- BufferGeometry.computeBoundingSphere(): GLBufferAttribute requires a manual bounding sphere.
+- BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed.
+- Buffering
+- Build
+- Builder
+- Builds
+- Bulgaria
+- Burkina Faso
+- Burundi
+- Business
+- Business features, plus
+- Button
+- Buy
+- Buy (%g / Month)
+- Buy Doubling
+- Buy hours
+- Buy Hours
+- Buy transcoding hours
+- Buy Transcoding Hours
+- By clicking this button, you agree to our <a href="/privacy-policy" >Privacy Policy</a> & <a href="/terms-of-service">Terms & Conditions</a>.
+- By signing up, you agree to the <a href="/terms-of-service">Terms and Conditions</a> and <a href="/privacy-policy" >Privacy Policy</a>.
+- By signing up, you agree to the <a href="%s" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+- By signing up, you agree to the <a>Terms of Service</a>.<br></br> You also agree to receive emails from Restream.
+- Bytes
+- calc cubic-bezier fit-content hsl hsla linear-gradient matrix minmax repeat rgb rgba (rotate|scale|translate)(X|Y|Z|3d)?
+- Calculations
+- Call In
+- Call-ins from audience
+- Calling canEnableChannels API
+- Calog CC
+- Cambodia
+- Cameroon
+- Campaigns
+- Can not resolve #include <
+- Canada
+- Cancel
+- Cancel any time before <time class='jsUpgradeCancelAt'>November 20, 2019</time>
+- Cancel delete
+- Cancel downgrade
+- Cancel link refresh
+- Cancel rename
+- Cancel Request
+- Canceled
+- Cancelled
+- Cancelled fetching {{title}}.
+- Cancelling
+- Canvas is already in use. Chart with ID '
+- Capabilities
+- Capacity
+- Cape Verde
+- CaptureController is not available
+- Captured Surface Control is not available
+- Card
+- Card Change Attempt
+- Card information
+- Cardinality
+- Caret
+- Caribbean Netherlands
+- Carol Williams
+- Carousel
+- Cascade
+- Catalog
+- Categories
+- Category
+- Cause
+- Causes
+- Cavetube
+- Cayman Islands
+- CDN Tune-in age: 
+- CDN Tune-in goal increased from: 
+- Celebrities
+- Celebrity
+- Center
+- Center Left
+- Center Right
+- Central African Republic
+- Certificate
+- Certificates
+- Chad
+- Chain
+- Change
+- Change account email
+- Change Avatar Clicked
+- Change consumer preferred layers
+- Change email
+- Change Email
+- Change Information
+- Change previews position to Bottom Center
+- Change previews position to Bottom Left
+- Change previews position to Bottom Right
+- Change previews position to Center Left
+- Change previews position to Center Right
+- Change previews position to Left Bottom
+- Change previews position to Left Center
+- Change previews position to Left Top
+- Change previews position to Right Bottom
+- Change previews position to Right Center
+- Change previews position to Right Top
+- Change previews position to Top Center
+- Change previews position to Top Left
+- Change previews position to Top Right
+- Change previews size
+- Changes
+- Changes applied
+- Changing font…
+- Characters
+- Charge to your card
+- Charge to your card **** 
+- Charset
+- Checkbox
+- Checkout
+- Checksum
+- Chert
+- ChevronRight_svg__lucide ChevronRight_svg__lucide-chevron-right-icon ChevronRight_svg__lucide-chevron-right
+- Children
+- Chile
+- Chill
+- Chill Hop
+- Chime
+- China
+- Choose other countries to Connect with Amazon
+- Choose Portrait Mode<br> for the best viewer's experience
+- Choose your reason for removing your account.
+- Christmas
+- Chrom
+- Chrome
+- Chromium
+- Chromium Flow
+- Chromium OS
+- Chunk
+- Chunks
+- Cidr
+- Cidrs
+- Cinema
+- Cinematic
+- Cineon
+- Ciphers
+- Circle
+- Circle main
+- City
+- Claim
+- Claimed expired leases
+- Claimed expired takes
+- Class extends value 
+- Classes
+- Classic
+- Classic film
+- Classical
+- Classification
+- Cleaning up wait list
+- Clear
+- Clear all
+- Clear All
+- Clear on copy/send
+- Cleared
+- Clearing
+- Click to display it for your viewers
+- Client
+- Client closed during DataChannels setup
+- Client removed
+- ClientRecordingsBackendAPIClient is not provided
+- Close
+- Close Button
+- Close menu
+- Close popover
+- Close replay
+- Close tab
+- Close tip
+- Closed
+- Closing connection: Giving up ICE restart for ${t} transport after ${r} consecutive attempts (using ${this.useDataChannels?"DataChannels":"WebSocket"})
+- Closing WebSocket connection: DataChannels are fully connected
+- Cloud
+- Cloud rec.
+- CloudHSM V2
+- CloudWatch Logs
+- Cluster
+- Clusters
+- Coc Coc
+- Code
+- Codec
+- Cognito Identity
+- Cognito Identity Provider
+- Cognito Sync
+- Collapse panel
+- Collapsible
+- Collection
+- Collection interval mismatch - connection state reset
+- Collections
+- Colombia
+- Column
+- Columns
+- Comic
+- Command
+- Commands
+- Commerce
+- Comoros
+- Compact
+- Company
+- Comparator
+- Compare at Price
+- Comparison
+- Complaints
+- Complete
+- Completed
+- Compliance
+- Component
+- Components
+- Composer
+- Composer 2.5
+- Composition
+- Comprehend
+- Compress
+- Compression
+- Compute
+- Concerned about my data
+- Concurrency
+- Condition
+- Conditions
+- Confidence
+- Confirm
+- Confirm delete
+- Confirm link refresh
+- Confirm password
+- Confirm rename
+- Confirm your email
+- Congo - Brazzaville
+- Congo - Kinshasa
+- Congratulations
+- Connect
+- Connect account
+- Connect an account
+- Connect New
+- Connect Slack
+- Connect store
+- Connect Store
+- Connect via Model Context Protocol to let AI agents like Claude Code receive annotations in real-time.
+- Connect with Amazon
+- Connect with your audience
+- Connect your products
+- Connect your X account here.
+- Connected
+- Connected %s
+- Connected to the server provided by the balancer
+- Connected to viewers
+- Connecting
+- Connecting DataChannels
+- Connecting to viewers
+- Connecting with the SFU URL override
+- Connection aborted
+- Connection destroyed with non-OK reason \`${i}\`
+- Connection destroyed with non-OK reason \`${o}\`
+- Connections
+- Connectivity
+- Consent
+- Constraints
+- Constructed
+- Consumer
+- Consumers
+- Cont
+- Contact
+- Contact sales
+- Contact Sales
+- Contact Support
+- Contact Us
+- Contact your Admin to get access to at least one workspace in this organization to enter.
+- Contacts
+- Contain
+- Container
+- Content
+- Contents
+- Context
+- Continue
+- Continue from your computer
+- Continue with 
+- Contrast
+- Contributor
+- Contributors
+- Control
+- Controls
+- Controls extracted page content and freshness.
+- Controls how much detail is included in the copied output
+- controls.set() should only be called after a component has mounted. Consider calling within a useEffect hook.
+- Cook Islands
+- Cookies
+- Cookies used
+- Cooldown
+- Coords
+- Copied
+- Copy
+- Copy feedback
+- Copy it now
+- Copy key
+- Copy link
+- Copy Link
+- Copy link for mobile
+- Copy Registration Link
+- Copy requestId
+- Copy the page link.
+- Copy this URL to the browser plugin of your encoding software or open it in a browser.
+- Cores
+- Corporate
+- Cors
+- Cosmic Insights
+- Cost
+- Cost and Usage Report Service
+- Cost Explorer
+- Costa Rica
+- Cote D'Ivoire
+- Could not {{toolName}}
+- Could not close session: 
+- Could not compile WebGL shader: ${t}
+- Could not construct new URL for Rendition Report: 
+- Could not construct new URL with HLS Delivery Directives: 
+- Could not find 
+- Could not find Elements context; You need to wrap the part of your app that 
+- Could not generate manifest CMCD data.
+- Could not generate segment CMCD data.
+- Could not load credentials from 
+- Could not load credentials from any providers
+- Could not load token from 
+- Could not load token from any providers
+- Could not parse fragment 
+- Could not read keyId of undefined decryptdata
+- Could not remove session: 
+- Could not renew expired session. Missing pssh initData.
+- Could not restore this version of the widget.
+- Could not set display name when is not connected
+- Could not set display title when is not connected
+- Could not use {{toolName}}
+- Count
+- Country
+- Country or region
+- Counts
+- Coupon Entered
+- Cover
+- Coverage
+- Create
+- Create a widget that displays the current weather in New York.
+- Create an account now to get access
+- Create an account now to get lifetime access
+- Create an animated police "DO NOT CROSS" stripe widget.
+- Create from scratch
+- Create Link
+- Create new
+- Create product
+- Create Product
+- Create with AI
+- Create your account
+- Create Your Account | Restream
+- Create Сampaign
+- Created
+- Created a second account
+- Created CaptureController
+- CreatedTimestamp is no longer returned by ListEventDataStores
+- Creating DataConsumer and DataProducer
+- Creating key-system session "
+- Creator
+- Credentials
+- Creepster
+- Croatia
+- Crop
+- Crop your profile picture
+- Crown shiny
+- Crown white
+- Csv
+- Ctrl
+- Cubic
+- Cubic bezier arrays must contain four numerical values.
+- Currency
+- Current
+- Custom
+- Custom endpoint is not compatible with access point ARN
+- Custom endpoint is supplied; endpointDiscoveryEnabled must not be true.
+- Custom HLS
+- Custom links
+- Custom n. of team seats
+- Custom number of team seats
+- Custom padding
+- Custom SRT
+- Custom Time
+- Custom WHIP
+- Custom widget
+- Customer data measures
+- Customers
+- Customization
+- Customization Coming Soon
+- Customization is not available in Maximize mode.
+- Customize
+- Customize your product
+- Customized storage
+- Cut
+- Cutoff
+- Cyan
+- Cycle detected
+- Cyclic dependency
+- Cyprus
+- Czechia
+- Dailymotion
+- Dashboard
+- Dashboard – Restream
+- Data
+- Data URLs are not valid inline data. Pass them as { type: "url", url } instead.
+- Database
+- DataChannels ready
+- DataChannels were not ready on time
+- DataConsumer closed
+- Datadog Browser SDK:
+- Datadog RUM
+- Datapoints
+- DataProducer and DataConsumer created
+- DataProducer closed
+- DataProducer is not open but ${null===(r=this.dataProducer)||void 0===r?void 0:r.readyState}
+- DataProducer not found
+- Dataset
+- Datasets
+- Dave Brown
+- Day
+- Days
+- Days to end
+- Deadline
+- Debouncer initialized with ${t}ms debounce time
+- Debug
+- Dec
+- December
+- Decline
+- Decrease minutes
+- Decrease seconds
+- Decreased zoom level
+- Decrypt
+- Dedicated administration <br>website 
+- Dedicated infrastructure
+- Default
+- Defaults
+- Definition
+- Degraded
+- Delay
+- Delayed
+- Delete
+- Delete account
+- Delete Account
+- Delete avatar
+- Delete Backspace
+- Deleted
+- Deleting
+- Delimiter
+- Dell
+- Demo
+- Denmark
+- Deno
+- Deny
+- Deploy
+- Deployed
+- Deployment
+- Deployments
+- Deprecated
+- Deprecated. Always returns RequestBasedUsage.
+- Deprecated. Unused.
+- DepthTexture format must be either THREE.DepthFormat or THREE.DepthStencilFormat
+- Deregistering
+- Derived constructors may only return object or undefined
+- Describe a widget and AI will design it for you.
+- Deserializer
+- Deserializing extension whose generated code does not support binary format
+- Design
+- Designing widget…
+- Destroyed
+- Destroying
+- Destroying with reason ${e} ${s.VS[e]}
+- Detail
+- Detailed
+- Details
+- Detected a cycle between flags 
+- Detected display surface
+- Detective
+- Developers
+- Dialog
+- Didn't get an email?
+- Digest
+- Digit
+- Dimension
+- Dimensions
+- Direct Connect
+- Direction
+- Directionality
+- Disable this if you want to turn it manually.
+- Disable Two-factor Authentication
+- Disabled
+- Disabled — production builds minify component names, making detection unreliable. Use in development mode.
+- Disabled magnet main radius
+- Disables this client's usage of Multi-Region Access Points.
+- Disabling Switch To Old Experience Skipped
+- Disconnect
+- Disconnect 
+- Disconnect Account
+- Disconnect your X account
+- Disconnected
+- Disconnected %s
+- Disconnected from viewers
+- Disconnecting
+- Disconnecting preview: webinar ended
+- Disconnecting viewer: webinar mode is off
+- Discord account connected successfully
+- Discord account disconnected successfully
+- Discount
+- Discovery
+- Disks
+- Dismiss
+- Dismissed
+- Display name
+- Distance
+- Distribution
+- Distributions
+- Distributor
+- Djibouti
+- Do you really want to close?
+- Do you really want to remove
+- Do you use any ad blocking extensions?
+- Do you want to remove the Restream link?
+- Do your part to support the people of Ukraine #StandWithUkraine
+- Document
+- Documents
+- Dolphin
+- Domain
+- Domains
+- Dominica
+- Dominican Republic
+- Don't have an account?
+- Don't have your phone?
+- Donate
+- Done
+- Doubling not enabled
+- Douyu
+- Downgrade
+- Downtempo
+- Drag
+- Drag to change value
+- Drag to move
+- Drag to set position
+- Draggable
+- Draggable item 
+- Draggable: getDerivedStateFromProps %j
+- Draggable: onDrag: %j
+- Draggable: onDragStart: %j
+- Draggable: onDragStop: %j
+- Draggable's offsetParent must be a DOM Node.
+- DraggableCore: handleDrag: %j
+- DraggableCore: handleDragStart: %j
+- DraggableCore: handleDragStop: %j
+- DraggableCore: Removing handlers
+- Dragging was cancelled. Draggable item 
+- Dragon Touch
+- Drawer
+- Drive
+- Drizz
+- Droppable
+- Drs
+- Dual
+- Dual Output feature overview
+- Dual Output in Studio
+- Dual Preview Pane Toggled
+- Due now
+- Duplicate
+- Duplicate name '${f}'.
+- Duration
+- Duration parsed from mp4 should be greater than zero
+- Earn
+- Earned
+- Ebay
+- Ebs
+- Ecommerce
+- Ecommerce Featured Product Save Attempt Client
+- Ecommerce Import Featured List Button Clicked Client
+- Ecommerce Initialized Client
+- Ecommerce Manual Product Connect Attempt Client
+- Ecommerce Manual Product Connected Client
+- Ecommerce Remove Confirm Modal Showed Client
+- Ecommerce Store Products Fetch Attempt Client
+- Ecommerce Store Products Fetch Success Client
+- Ecommerce Store Remove Attempt Client
+- Ecommerce Store Removed Client
+- Ecuador
+- Edge
+- Edge softness
+- Edge threshold
+- Edges
+- Edit
+- Edit avatar
+- Edit Avatar
+- Edit name
+- Edit name & title
+- Edit on
+- Edit Theme
+- Edit Theme Button Clicked
+- Edit title
+- Edit Title Clicked
+- Edit Title Saved
+- Edit with AI
+- Edit your feedback...
+- Editing
+- Edition
+- Education
+- EEEE, MMMM do, y
+- Egress
+- Egypt
+- Either baseOptions.modelAssetPath or baseOptions.modelAssetBuffer must be set
+- El Salvador
+- Elastic Beanstalk
+- Elastic Load Balancing
+- Elastic Load Balancing v2
+- Elastic Transcoder
+- Element
+- ElevenAgents by ElevenLabs
+- Email
+- Email is already in use
+- Email is required
+- Email not confirmed
+- Email required
+- Emotions
+- Empty context
+- Empty email
+- Empty password
+- Empty reason
+- Empty refresh token
+- Empty response body
+- Enable
+- Enable "Super Hearts"
+- Enable audience targeting
+- Enable two-factor authentication
+- Enable Two-factor Authentication
+- Enable widget thinking mode
+- Enable zoom and scroll
+- Enabled
+- Enabled Captured Surface Control
+- Enables this client to use S3 Transfer Acceleration endpoints.
+- Encoder
+- Encoding
+- Encrypt
+- Encrypted
+- Encryption
+- End
+- End Now
+- End Webinar
+- End Webinar Confirmation Modal Confirmed
+- End Webinar Confirmation Modal Dismissed
+- End Webinar Confirmation Modal Shown
+- End webinar?
+- Ended
+- Endpoint
+- Endpoint Discovery is disabled but 
+- Endpoint not found
+- Endpoints
+- Engage your audience simultaneously 
+- Engine
+- English
+- Enter
+- Enter a product title
+- Enter a store domain
+- Enter a valid email address
+- Enter a valid url
+- Enter an Amazon store link
+- Enter code
+- Enter fullscreen
+- Enter min 3 characters
+- Enter studio
+- Enter Studio
+- Enter the game
+- Enter your 6-digit code.
+- Enter your code
+- Enter your display name
+- Enter your name
+- Enter your product or store link:
+- Enter your title
+- Entered Fullscreen
+- Entering Studio
+- Enterprise
+- Entities
+- Entity
+- Entries
+- Entry
+- Env
+- Environment
+- Environments
+- Envizen
+- Epic
+- Epoch
+- Equals
+- Equatorial Guinea
+- Eritrea
+- Erotic
+- Err
+- Esc
+- Escape
+- Essential
+- Estimated
+- Estimated tokens per second based on roughly 4 characters per token.
+- Estonia
+- Eswatini
+- Ethiopia
+- Etsy
+- Euler: .setFromRotationMatrix() encountered an unknown order: 
+- Evaluation
+- Evaluations
+- Everyone can see and hear you.
+- Everything in Personal
+- Everything in Professional 
+- Everything in Standard 
+- Eviction
+- Evidently
+- Exceeded $time-hour limit!
+- Exception in webworker, fallback to inline
+- Exceptions
+- Exclude results from these domains.
+- Exclude results from these domains. Use plain domain names only — e.g. example.com or sub.example.gov, or a bare extension like .edu. Do not include a scheme, path, or port (e.g. not https://example.c
+- Excluded Activity Urls should be an array
+- Exclusive tests must provide a unique `name` identifying the test
+- Execution mode is not set to "execute"
+- Exists
+- Exit
+- Exit fullscreen
+- Exit studio
+- Exited Fullscreen
+- Expand
+- Expand panel
+- Expected
+- Expected 
+- Expected 'function.name' to be a string.
+- Expected 'function' type.
+- Expected 'id' to be a string.
+- Expected %s to be a finite number but it is not.
+- Expected ${e.expected}, received ${e.received}
+- Expected a function
+- Expected a non-empty array
+- Expected a numeric unit for "${o}" uniform
+- Expected an array with at least one element
+- Expected an object, got \`${t}\` (${typeof t})
+- Expected array but got %s: %s.
+- Expected boolean but got %s: %s.
+- Expected document.body not to be null. Stripe.js requires a <body> element.
+- Expected Element but got %s: %s.
+- Expected enabled to be a boolean or a callback that returns a boolean
+- Expected function but got %s: %s.
+- Expected instanceof %s but got %s.
+- Expected number but got %s: %s.
+- Expected object but got %s: %s.
+- Expected RectF values to be in [0,1].
+- Expected RectF with left < right and top < bottom.
+- Expected rotation to be a multiple of 90°.
+- Expected SSE response, got 
+- Expected string but got %s: %s.
+- Expected to exist: %s.
+- Expected uri parameter to have length >= 1, but found "
+- Experiment API key is empty
+- Expiration
+- Expired
+- Expires
+- Expiry
+- Explainabilities
+- Explanation
+- Explanations
+- Explore more features
+- Explore Studio
+- Expression
+- External Payment Button Clicked
+- External Payment Button Shown
+- Extra details—add any additional information for your receipts.
+- Extra information
+- Eyeglasses
+- Face
+- Faces
+- Faded memories
+- Fairphone
+- Falkland Islands
+- Fallback
+- Family
+- Faroe Islands
+- Fathom 3.0
+- Fault
+- Fax
+- Feature
+- Featured list
+- Features
+- Featurizations
+- Feb
+- February
+- Feedback
+- Feedback for this group of elements...
+- Fetch
+- Fetch policy for controlling content freshness.
+- Fetched
+- Fetched custom fonts list
+- Fetched preliminary content from {{title}}
+- Fetched user
+- Fetching
+- Fetching serverCertificate for "
+- Field
+- Fields
+- Fiji
+- Fill in all fields
+- Final Touch
+- Finalizing
+- Finalizing your studio…
+- Find more information about Transcoding in our
+- Fingerprint
+- Finish
+- Finish editing
+- Finish setup
+- Finished
+- Finished setup
+- Finland
+- Finspace
+- Finspacedata
+- Fire Phone $1
+- Fire-and-forget duplicate request to the other gateway for cost comparison. Response discarded.
+- Firefox
+- Firehose
+- First argument to _arity must be a non-negative integer no greater than ten
+- First argument to String.prototype.
+- First time here, hi everyone!
+- Fis
+- Fit next row
+- Fixed
+- Fixed position
+- Flag
+- Flags
+- Fleets
+- Folder
+- Folder name must not exceed %s characters long.
+- Folder name should be at least 1 character long.
+- Folders
+- Follow
+- Follow important news on features and products. We may also occasionally ask for feedback.
+- Font
+- Font changed
+- Font ID from list_fonts
+- Font not found
+- Font resource not found
+- Font Selected
+- Fonts loaded
+- For companies
+- For Companies
+- For Creators
+- For everyone
+- For internal testing
+- For more information, check the migration guide at https://a.co/7PzMCcy
+- For more information, contact your bank.
+- for repurposing and podcasting.
+- For small business
+- For the best performance as a 
+- Forbidden
+- Force
+- Force-disabling pairs: Pairs not available in current Studio mode
+- Forces this client to use path-style addressing for buckets.
+- Forecast
+- Forecasts
+- Foreground
+- Forensic
+- Forgot password?
+- Form
+- Formality
+- Format
+- Format string contains an unescaped latin alphabet character `
+- Fortnite Blue
+- Fortnite Boxed
+- Fortnite Compact
+- Forward
+- Forward Console Logs
+- Forward Reports
+- Found 
+- Found irregular gaps in sample duration. Using PTS instead of DTS to determine MP4 sample duration.
+- Found online
+- Found parameters
+- Found queued chunks
+- Found string value of 
+- Found unknown node. Make sure to provided all involved nodes. Unknown node: 
+- Fpgas
+- FRAG_LOADING parts
+- Fragment
+- Fragment 
+- Fragment does not have a 
+- Fragment should have a positive duration
+- Fragments
+- Fragments must have at least one ElementaryStreamType set. type: 
+- Frame drops
+- Framer
+- Frameworks
+- France
+- French Guiana
+- French Polynesia
+- French Southern Territories
+- Frequency
+- Frequently Asked Questions
+- Fri
+- Friday
+- Friends signed up
+- From
+- Full
+- Full HD (1080p) in Studio 
+- Full HD (1080p) in Studio, 
+- Full High Definition
+- Fullscreen
+- Function
+- function\`, got \`${typeof e}\`.
+- Functions
+- Future Pop
+- Gabon
+- Gambia
+- Game
+- Game key
+- Gaming
+- Gaming Creator
+- Gamma
+- Gap
+- Gap controls padding
+- Gap, px
+- Gateways
+- Gecko
+- Gender
+- General
+- Generate new key
+- Generate viral shorts
+- Generate widget
+- Generated with AI
+- Generating
+- Generating key-session request for "
+- Generating link...
+- Generating questions
+- Generator is already executing.
+- Generic
+- Geometry
+- Georgia
+- Germany
+- Get
+- GET ai-creator-auth-headers
+- Get fast, priority support
+- Get more information
+- Get more power from Restream.
+- Get offer
+- Get our OBS plugin (
+- Get theme
+- Getting
+- Ghana
+- Gibraltar
+- Gid
+- Glacier
+- Global
+- Glue
+- Go back
+- Go Back
+- Go beyond Slack huddle. Run townhalls and company updates with Restream. <connectSlackButton>Connect Slack</connectSlackButton>
+- Go to Dashboard
+- Go to next month
+- Go to previous month
+- Go to Restream
+- Goodbye, world!
+- goog.module may only be called once per module.
+- Google
+- Google 
+- Google Authenticator.
+- Google Button Clicked
+- Google Chrome
+- Google Drive
+- Google Merchant
+- Google OAuth components must be used within GoogleOAuthProvider
+- Google SwiftShader
+- Got
+- Got "
+- Got a promo code?
+- GOT A PROMO CODE?
+- Got it
+- Got It
+- Got it!
+- Got more questions? Visit our %sHelp Сenter%s or %scontact us%s.
+- Got user geo data ${t??"unknown"}
+- Got user on main store preloading
+- Gpus
+- Graceful
+- Gradient angle in degrees. 0 is left-to-right, 90 is top-to-bottom, 45 is diagonal. Ignored by Solid. For GradientCloud, this rotates the generated cloud pattern.
+- Grafana
+- Grant
+- Grantee
+- Grantor
+- Grants
+- Granularities
+- Granularity
+- Graphik
+- Great job!
+- Greece
+- Green
+- Greengrass
+- Greenland
+- Grenada
+- Group
+- Group: %s
+- Groups
+- Guadeloupe
+- Guam
+- Guatemala
+- Guernsey
+- Guidance
+- Guinea
+- Guyana
+- Haiti
+- Halloween
+- Handler
+- Has left
+- has no shadow.
+- Hash
+- Hash algorithm 
+- Having issues?
+- Haystack
+- HDCP level output restricted
+- Header
+- Header 
+- Headers
+- Health
+- Heartbeat already running
+- Heartbeat cycle completed
+- Height
+- Height as a fraction of the container (e.g. 1 for full height)
+- Height scale
+- Hello Dealify-er!
+- Hello Sumo-ling!
+- Hello, world!
+- Help
+- Help Center
+- Here's the Product Hunt link:
+- Here's what currently appears on your receipts:
+- Hevc
+- Hibernate
+- Hidden
+- Hide
+- Hide entries up to now (FE-only, BE keeps them)
+- Hide landscape preview
+- Hide portrait preview
+- Hide Secret Code
+- Hide Until Restart
+- Hide Widget
+- Hides the toolbar until you open a new tab
+- High
+- High (not recommended)
+- High Definition
+- Hip hop
+- Hiphop
+- History
+- Hls instance
+- HMAC algorithm 
+- Hmm! Something is preventing this page from loading.
+- Hmm. Something's missing.
+- Hold on, pairing
+- Holidays
+- Home
+- Honduras
+- Honeycode
+- Hong Kong SAR China
+- Hooks
+- Horizontal
+- Horizontal position as a fraction (-1 to 1)
+- Hot
+- Hotkey Pressed
+- Hour
+- Hours
+- Hours available
+- Hours available:
+- How else can we improve Restream?
+- HOW IT WORKS:
+- How was your experience?
+- Hsm
+- Hsms
+- Html
+- Http
+- Huawei
+- Hungary
+- Huya
+- Hypervisor
+- I need a break. I'll be back!
+- I understand. Turn it on anyway.
+- I'll go with ${e.name}
+- I’m not sure
+- Iceland
+- Icmp
+- Icy drama
+- ID of the question this answer corresponds to.
+- Idb blocking, currentVersion: 
+- Identified user
+- Identifier
+- Identifiers
+- Identities
+- Identity
+- Idle
+- Ids
+- If `dragConstraints` is set as a React ref, that ref must be passed to another component's `ref` prop.
+- If you cancel, previous charges will not be refunded. But, you may continue to use the service until the end of the term you paid for.
+- If you need help or have questions, our <a class="item item-link" href="%s" target="_blank">Help Center</a> has you covered. ⏎ 
+- Impact
+- Import All
+- Imported
+- Importing
+- Importing test-only code into non-debug environment
+- Imports
+- In queue
+- In Studio
+- Inactivity Modal Dismissed
+- Inactivity Modal Shown
+- Include
+- Include deferred tool definitions requested by the user via slash commands. Internal routing helper; do not call unless a user explicitly names a tool.
+- Includes
+- Incoming
+- Incompatible
+- Inconsistent type in JSPB repeated field array. Got 
+- Increase minutes
+- Increase seconds
+- Increased zoom level
+- Index
+- Index out of range
+- India
+- Indie Rock
+- Indigo
+- Individual ingest servers 
+- Indonesia
+- Inferred
+- Infinity
+- Info
+- Ingest
+- Init
+- Initialized
+- Initialized preview
+- Initialized with ${e.state} state and ${e.sampleRate} Hz sample rate
+- Initializing
+- Initializing LocalRecordingsUploader
+- Initializing main store
+- Initializing preview
+- Initials
+- Initiated
+- Initiating
+- Initiator
+- Initiators
+- InitPTS for cc: 
+- Injecting Google Translator React workaround
+- Inline
+- Insight
+- Insights by Omnia
+- Insignia
+- Inspector
+- Instagib
+- Instagram
+- Instance
+- Instances
+- InstanceStatus is deprecated, use TargetStatus instead.
+- InstanceSummary is deprecated, use DeploymentTarget instead.
+- Instant
+- Int
+- Int64 buffers must be exactly 8 bytes
+- Integer
+- Interlaced
+- Internal
+- Interpolated
+- Intersection results could not be merged
+- Interval
+- Invalid
+- invalid ${o} pattern '${this.#Se[o]}'.
+- Invalid aes key size=
+- Invalid argument for parameter ${e}: ${n}
+- Invalid attempt to destructure non-iterable instance. ⏎ In order to be iterable, non-array objects must have a [Symbol.iterator]() method.
+- Invalid attempt to iterate non-iterable instance. ⏎ In order to be iterable, non-array objects must have a [Symbol.iterator]() method.
+- Invalid attribute name "
+- invalid baseURL '${t.baseURL}'.
+- Invalid byte length!
+- Invalid callback type '
+- Invalid captcha
+- Invalid character '${e[i]}' at ${i}.
+- Invalid code point
+- Invalid component type.
+- Invalid count value
+- Invalid coupon
+- Invalid data content. Expected a base64 string, Uint8Array, ArrayBuffer, or Buffer, but got ${typeof e}.
+- Invalid data URL format in content ${e.toString()}
+- Invalid easing type '${e}'
+- Invalid email
+- Invalid email address
+- Invalid email or password
+- Invalid endpoint: 
+- Invalid field type in readAny()
+- Invalid field type in writeAny()
+- Invalid font style specified: "
+- Invalid function arguments
+- Invalid function return type
+- Invalid header parameters
+- Invalid height value. Value must be in range 128...1280.
+- Invalid interval or quantity
+- Invalid IV: 
+- Invalid JSON response
+- Invalid key URI: "
+- Invalid level index 
+- Invalid literal value, expected ${JSON.stringify(e.expected,r.jsonStringifyReplacer)}
+- Invalid mock client id: ${e}
+- Invalid module definition
+- Invalid module identifier
+- Invalid module name "
+- Invalid path parameters
+- Invalid port '${e}'.
+- Invalid price
+- Invalid price or quantity
+- Invalid profile value. Must be one of: baseline, main, high.
+- Invalid prop 
+- Invalid prop \`altText\` supplied to \`${h2}\`. Expected non-empty \`string\`.
+- Invalid prop \`altText\` supplied to \`${Qk}\`. Expected non-empty \`string\`.
+- Invalid prop \`altText\` supplied to \`${tR}\`. Expected non-empty \`string\`.
+- Invalid prop \`label\` supplied to \`${Ck}\`. Expected non-empty \`string\`.
+- Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.
+- Invalid protocol '${e}'.
+- Invalid quantity
+- Invalid query parameters
+- Invalid request
+- Invalid request body parameters
+- Invalid response data: ${JSON.stringify(e)}.
+- Invalid response from Gateway
+- Invalid service `protocol' 
+- Invalid session persistence '${String(e.sessionPersistence)}'
+- Invalid state
+- Invalid string. Length must be a multiple of 4
+- Invalid time value
+- Invalid timing name: ${e}, sanitized to: ${t}
+- Invalid type in JSPB array
+- Invalid URL
+- Invalid URL.
+- Invalid UUID
+- Invalid value of type 
+- Invalid width value. Value must be in range 128...1920.
+- Invalid wire encoding for field.
+- Invalid wire type for skipDelimitedField
+- Invalid wire type for skipFixed32Field
+- Invalid wire type for skipFixed64Field
+- Invalid wire type for skipVarintField
+- Invalid wire type: %s (at position %s)
+- Invalidation
+- Invariant Violation
+- Inverted
+- Invoke
+- Iops
+- Iot
+- Ipam
+- Ipams
+- Ips
+- Iraq
+- Ireland
+- Is your content created for kids?
+- Isle of Man
+- Israel
+- Issuer
+- It looks like you're trying to use a different 
+- It seems like you are trying to add a whole store.
+- It seems your account was changed. Some things may not work well. <reloadButton>Refresh the page</reloadButton>
+- Italic
+- Italy
+- Item
+- Items
+- Items Dragged Over Page
+- Ivschat
+- Jamaica
+- Jan
+- Jan ⏎ Feb ⏎ Mar ⏎ Apr ⏎ May ⏎ Jun ⏎ Jul ⏎ Aug ⏎ Sep ⏎ Oct ⏎ Nov ⏎ Dec
+- January
+- Japan
+- Jar
+- Jazz
+- Jersey
+- Job
+- Jobs
+- Joombla
+- Jordan
+- JS AES decrypt
+- JSON response format schema is only supported with structuredOutputs
+- Jul
+- July
+- Jun
+- June
+- Just followed! Keep it up 👍
+- Kafka
+- Kazakhstan
+- Kbps
+- Keep
+- Kendra
+- Kenya
+- Kepler Post GA Tasks : https://sim.amazon.com/issues/ATHENA-39828
+- Kernel
+- Key
+- Key removed
+- Key string length must be multiple of 2
+- Key supplied with unsupported METHOD: "
+- Keyframe interval
+- Keyframe interval:
+- KeyframeTrack: Out of order keys.
+- KeyframeTrack: Time is not a valid number.
+- KeyframeTrack: Value is not a valid number.
+- Keys
+- Keyspaces
+- Keywords
+- Kinesis
+- Kiribati
+- Konqueror
+- Kosovo
+- Kuwait
+- Kyrgyzstan
+- Label
+- Labeled
+- Labels
+- Lambda
+- LambertMaterial material; ⏎ material.diffuseColor = diffuseColor.rgb; ⏎ material.specularStrength = specularStrength;
+- Lanczos
+- Landmarks
+- Landscape
+- Landscape + Portrait
+- Landscape only
+- Landscape orientation
+- Language
+- Languages
+- Laos
+- Large
+- Last connection closed. watchRTCConnectionId: 
+- Latency
+- Latest
+- Latvia
+- Launching
+- Launching Preview
+- Layer order (higher = on top)
+- Layers
+- Learn more
+- Learn more how to setup in our %s  Help Center %s
+- Learn more how to setup in our %s Help Center %s
+- Learn more how to setup OBS, SLOBS, XSplit or your favorite encoder.
+- Learn more in our %sHelp Center%s.
+- Leave
+- Leave campaign
+- Lebanon
+- Left
+- Left alignment
+- Left Bottom
+- Left Center
+- Left Top
+- Legacy
+- Legs
+- Length
+- Lenovo
+- Lesotho
+- Let us know what types of emails you want to receive below.
+- Letterbox
+- Level
+- Level 
+- Level details are defined when init segment is loaded
+- Levels object was unset while buffering fragment 
+- Levels were reset while fragment load was in progress. Fragment 
+- Levels were reset while loading level 
+- Lex Model Building Service
+- Lex Runtime Service
+- Lex Runtime V2
+- Lexicon
+- Lexicons
+- Liberia
+- Libya
+- License received 
+- Licenses
+- Liechtenstein
+- Lifecycle
+- Lightsail
+- Limit
+- Limit results to these domains. Use plain domain names only — e.g. example.com or sub.example.gov, or a bare extension like .edu. Do not include a scheme, path, or port (e.g. not https://example.com/p
+- Limits
+- Line
+- Linear
+- Link
+- Link copied!
+- Link read
+- Link refreshing...
+- links are available.
+- Linux
+- List all available fonts
+- List fonts
+- List of domains to include or exclude from search results (max 20). To include: ['nature.com', 'science.org']. To exclude: ['-example.com', '-spam.net']
+- Listener
+- Listeners
+- Lithuania
+- LLLL y
+- Loaded core services on main store preloading
+- Loaded fragment 
+- Loaded In Iframe
+- Loaded main store services
+- Loaded other services on main store preloading
+- Loaded services on main store preloading
+- Loading
+- Loading a store. Please wait
+- Loading chunk 
+- Loading CSS chunk
+- Loading CSS chunk 
+- Loading fonts…
+- Loading fragment 
+- Loading key for 
+- Loading part sn: 
+- Loading theme…
+- Local
+- Local rec.
+- Local+Cloud rec.
+- Locale
+- LocalRecordingsUploader initialized successfully
+- LocalRecordingsUploader is already initialized
+- LocalRecordingsUploader must be initialized before adding chunks
+- Location
+- Locations
+- Lofi
+- Log in
+- Log In
+- Log In – Restream
+- Log In | Restream
+- Log out
+- Logging
+- Logging out and redirecting to login page: refresh token expires soon
+- Logging out user
+- Login
+- Login Attempt
+- Login loaded
+- Login status or access token has expired, been revoked, or is invalid.
+- Login with google loaded
+- Logins
+- Logs sent before RUM is injected by the synthetics worker
+- LoL Boxed
+- LoL Compact
+- Looked for tools
+- Looking for the best experience?
+- Looking for tools…
+- Looks like this connection url is not valid.
+- Loop
+- Loots
+- Lounge
+- Love
+- Low
+- Low (slow network)
+- Lut
+- Luxembourg
+- Lyricly
+- M.17.883C.17.604.397.379.676.379h10.578c.279 0 .504.225.504.504v11.406a.504.504 0 0 1-.504.504H.675a.504.504 0 0 1-.504-.504z
+- M.5 0h20v20H.5z
+- M.528.53a.666.666 0 0 1 .943 0l4 4c.26.26.26.682 0 .942l-4 4a.667.667 0 1 1-.943-.943l3.529-3.528L.528 1.472a.667.667 0 0 1 0-.943z
+- M.834.833h3.333l2.234 11.158a1.667 1.667 0 0 0 1.666 1.342h8.1a1.667 1.667 0 0 0 1.667-1.342L19.167 5H5.417m2.917 12.5a.833.833 0 1 1-1.667 0 .833.833 0 0 1 1.667 0zm9.167 0a.833.833 0 1 1-1.667 0 .83
+- M0 .53h20v20H0z
+- M0 .84C0 .142.643-.25 1.084.18l4.278 4.158c.345.337.345.989 0 1.326L1.084 9.821C.644 10.251 0 9.858 0 9.16z
+- M0 0.784635L4.2484e-05 -9L33.9998 -8.99993L33.9999 0.964796C28.4553 0.964829 24.3254 6.00137 20.4162 9.3133C18.5494 10.8949 15.8123 10.8932 13.9474 9.3094C9.91951 5.88855 5.71574 0.784635 0 0.784635Z
+- M0 0h16v16H0z
+- M0 0h18v18H0z
+- M0 0h20v20H0z
+- M0 0h24v24H0z
+- M0 0H2V2H0V0Z
+- M0 0h2v2H0V0ZM0 4h2v2H0V4ZM0 8h2v2H0V8ZM0 12h2v2H0v-2ZM4 0h2v2H4V0ZM4 4h2v2H4V4ZM4 8h2v2H4V8ZM4 12h2v2H4v-2Z
+- M0 0h2v2H0zM0 4h2v2H0zM0 8h2v2H0zM0 12h2v2H0zM4 0h2v2H4zM4 4h2v2H4zM4 8h2v2H4zM4 12h2v2H4z
+- M0 0h48v48H0z
+- M0 1.528C0 .705.668.038 1.49.038h14.948a.459.459 0 0 1 0 .917h-.875c-.737 0-1.334.597-1.334 1.334v7.424c0 .737.597 1.334 1.334 1.334h.875a.459.459 0 0 1 0 .917H1.491A1.49 1.49 0 0 1 0 10.474z
+- M0 12H2V14H0V12Z
+- M0 2h16v12H0z
+- M0 3a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3z
+- M0 4H2V6H0V4Z
+- M0 6s3.111-6 8-6 8 6 8 6-3.111 6-8 6-8-6-8-6m11 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0
+- M0 6s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6zm13 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0zM9 8a2 2 0 1 1 .001-4.001A2 2 0 0 1 9 8z
+- M0 8H2V10H0V8Z
+- M0 8V0l3 3 3-3 3 3 3-3v8z
+- M1 10.7C1 11.4 1.6 12 2.3 12H7.7C8.4 12 9 11.4 9 10.7V2.7H1V10.7ZM9.7 0.7H7.3L6.7 0H3.3L2.7 0.7H0.3V2H9.7V0.7Z
+- M1 1L7 7L13 1
+- M1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1m5 3a1 1 0 1 0 1 1h2a3 3 0 1 1-3-3zm4-2h3v2h-3zm2 4h-2v2h2z
+- M1 3a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2zM14 3a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2zM1 16a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-
+- M1.667 5 2.5 16.668h15l.834-11.666-5 5L10 3.334l-3.333 6.667z
+- M1.875 1.875L8.125 8.125
+- M1.943 6.481v2.592M4.86 3.89v7.776m2.916-9.72V13.61m2.916-9.72v7.776m2.916-5.184v2.592
+- M1.99984 14.6673C2.46007 14.6673 2.83317 14.2942 2.83317 13.834C2.83317 13.3737 2.46007 13.0007 1.99984 13.0007C1.5396 13.0007 1.1665 13.3737 1.1665 13.834C1.1665 14.2942 1.5396 14.6673 1.99984 14.667
+- M1.99984 3.00065C2.46007 3.00065 2.83317 2.62755 2.83317 2.16732C2.83317 1.70708 2.46007 1.33398 1.99984 1.33398C1.5396 1.33398 1.1665 1.70708 1.1665 2.16732C1.1665 2.62755 1.5396 3.00065 1.99984 3.00
+- M1.99984 8.83398C2.46007 8.83398 2.83317 8.46089 2.83317 8.00065C2.83317 7.54041 2.46007 7.16732 1.99984 7.16732C1.5396 7.16732 1.1665 7.54041 1.1665 8.00065C1.1665 8.46089 1.5396 8.83398 1.99984 8.83
+- M10 10.834a.833.833 0 1 0 0-1.667.833.833 0 0 0 0 1.667M10 5a.833.833 0 1 0 0-1.667A.833.833 0 0 0 10 5M10 16.667A.833.833 0 1 0 10 15a.833.833 0 0 0 0 1.667
+- M10 11.325a.833.833 0 1 0 0-1.667.833.833 0 0 0 0 1.667M15.833 11.325a.833.833 0 1 0 0-1.667.833.833 0 0 0 0 1.667M4.167 11.325a.833.833 0 1 0 0-1.667.833.833 0 0 0 0 1.667
+- M10 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5
+- M10 13.5L6 16.5L6 10.5L10 13.5Z
+- M10 14.9429V16.0414
+- M10 15h.008M5.833 1.667h8.334c.92 0 1.666.746 1.666 1.667v13.333c0 .92-.746 1.667-1.667 1.667H5.833c-.92 0-1.667-.747-1.667-1.667V3.334c0-.92.747-1.667 1.667-1.667
+- M10 16.401a.8.8 0 0 1 0 1.601l-4.2-.001a.8.8 0 0 1 0-1.6zm6-14.2A2.8 2.8 0 0 1 18.8 5v.5a.8.8 0 1 1-1.6 0V5A1.2 1.2 0 0 0 16 3.8H4A1.2 1.2 0 0 0 2.8 5v7A1.2 1.2 0 0 0 4 13.2h6a.8.8 0 1 1 0 1.6H4A2.8 2
+- M10 1h16v16H10z
+- M10 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4z
+- M10 3 4.5 8.5 2 6
+- M10 3.75V6l3-3-3-3v2.25H7.58a1.75 1.75 0 0 0-1.52.882L2.638 9.124a.25.25 0 0 1-.217.126H0v1.5h2.42a1.75 1.75 0 0 0 1.52-.882l3.423-5.992a.25.25 0 0 1 .217-.126z
+- M10 3.9585V5.05698
+- M10 4.167V10
+- M10 4.167v11.666M4.167 10h11.666
+- M10 4.167v11.666M4.167 10h11.667
+- M10 5.001v5l3.333 1.667m2.559-7.56a8.333 8.333 0 1 1-5.893-2.44
+- M10 5v5l3.333 1.666m5-1.666a8.333 8.333 0 1 1-16.667 0 8.333 8.333 0 0 1 16.667 0
+- M10 5v5l3.333 1.667m5-1.667a8.333 8.333 0 1 1-16.666 0 8.333 8.333 0 0 1 16.666 0
+- M10 6 8 8m0 0-2 2m2-2L6 6m2 2 2 2m-7.333 3.333A1.333 1.333 0 0 1 1.333 12V4a1.333 1.333 0 0 1 1.334-1.333h10.666A1.333 1.333 0 0 1 14.667 4v8a1.333 1.333 0 0 1-1.334 1.333z
+- M10 6.266V3.333a2 2 0 0 0-3.792-.89M8 12.667v2m0-2A4.667 4.667 0 0 1 3.333 8V6.666m4.667 6A4.667 4.667 0 0 0 12.666 8V6.666m-7.333 8h5.333M1.333 1.333l13.333 13.333M8 10a2 2 0 0 1-2-2V6l3.415 3.413A2 
+- M10 6.667V10m0 3.334h.008M18.333 10a8.333 8.333 0 1 1-16.667 0 8.333 8.333 0 0 1 16.667 0
+- M10.0003 4.16602V15.8327M4.16699 9.99935H15.8337
+- M10.001 4.997v5l3.334 1.667m2.559-7.56A8.334 8.334 0 1 1 10 1.665
+- M10.004 12.504a2.5 2.5 0 1 0 0-5.002 2.5 2.5 0 0 0 0 5.002
+- M10.1269 7.43967C10.5358 7.702 10.5358 8.29961 10.1269 8.56194L7.52824 10.229C7.08454 10.5136 6.50161 10.195 6.50161 9.66784L6.50161 6.33377C6.50161 5.80662 7.08454 5.488 7.52824 5.77264L10.1269 7.439
+- M10.2 9H7.65V6.3h2.55a1.35 1.35 0 1 1 0 2.7m0-4.5H5.85v9h1.8v-2.7h2.55a3.15 3.15 0 0 0 0-6.3
+- M10.437 19.508s.78-2.907 5.585-2.907c.52 0 2.005-1.45 2.032-1.87s-3.072 1.29-6.344-.248c-3.533-1.663-6.213.248-6.213.248S6.515 17.25 9.5 17.25c-.313 2.763 1.148 5.984 4.683 7.673.08.038.153.08.235.115
+- M10.5 6.667V10m0 3.333h.008M9.075 2.383 2.016 14.167a1.666 1.666 0 0 0 1.425 2.5h14.117a1.667 1.667 0 0 0 1.425-2.5L11.925 2.383a1.667 1.667 0 0 0-2.85 0
+- M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z
+- M10.667 8a2.667 2.667 0 1 1-5.333 0 2.667 2.667 0 0 1 5.333 0
+- M11 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5
+- M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z
+- M11 7.25a.75.75 0 0 0-1.5 0
+- M11 8a3 3 0 1 1-3-3
+- M11.042 14.182v-1.334a2.667 2.667 0 0 0-2.667-2.666H3.708a2.667 2.667 0 0 0-2.666 2.666v1.334m12.666-8.667v4m2-2h-4m-3-2.667a2.667 2.667 0 1 1-5.333 0 2.667 2.667 0 0 1 5.333 0
+- M11.096.39 3.936 7.3l-1.9-2.03c-.35-.33-.9-.35-1.3-.07-.39.29-.5.8-.26 1.21l2.25 3.66c.22.34.6.55 1.03.55.41 0 .8-.21 1.02-.55.36-.47 7.23-8.66 7.23-8.66.9-.92-.19-1.73-.91-1.03v.01z
+- M11.154 10.861h5.048m0 0c0 .729.565 1.32 1.262 1.32s1.262-.591 1.262-1.32-.565-1.32-1.262-1.32-1.262.591-1.262 1.32m-2.524 3.519h5.048m-5.048 0c0 .728-.565 1.32-1.262 1.32s-1.262-.592-1.262-1.32.565-1
+- M11.167 4.5H19.5v8.333m-11.667-5h8.334v8.334m-11.667-5V19.5h8.333v-8.333z
+- M11.333 7V4.667c0-.367-.3-.667-.666-.667h-8C2.3 4 2 4.3 2 4.667v6.666c0 .367.3.667.667.667h8c.366 0 .666-.3.666-.667V9L14 11.667V4.333zm-2 1.667h-2v2H6v-2H4V7.333h2v-2h1.333v2h2z
+- M11.5 12L5.5 12
+- M11.507 22.02 3.361 8.046l-.118.204 8.086 13.869z
+- M11.75 3.75a3 3 0 0 1 3 3v2.5a3 3 0 0 1-3 3h-7.5a3 3 0 0 1-3-3v-2.5a3 3 0 0 1 3-3H8
+- M12 0a12 12 0 1012 12A12.013 12.013 0 0012 0zm.25 5a1.5 1.5 0 11-1.5 1.5 1.5 1.5 0 011.5-1.5zm2.25 13.5h-4a1 1 0 010-2h.75a.25.25 0 00.25-.25v-4.5a.25.25 0 00-.25-.25h-.75a1 1 0 010-2h1a2 2 0 012 2v4.
+- M12 0a12 12 0 1012 12A12.014 12.014 0 0012 0zm6.927 8.2l-6.845 9.289a1.011 1.011 0 01-1.43.188l-4.888-3.908a1 1 0 111.25-1.562l4.076 3.261 6.227-8.451a1 1 0 111.61 1.183z
+- M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5
+- M12 14.8261C13.5608 14.8261 14.8261 13.5608 14.8261 12C14.8261 10.4392 13.5608 9.17392 12 9.17392C10.4392 9.17392 9.17391 10.4392 9.17391 12C9.17391 13.5608 10.4392 14.8261 12 14.8261Z
+- M12 15.748v-1.5a3 3 0 0 0-3-3H3.75a3 3 0 0 0-3 3v1.5M15 5.998v4.5m2.25-2.25h-4.5m-3.375-3a3 3 0 1 1-6 0 3 3 0 0 1 6 0
+- M12 16.5a1.5 1.5 0 0 0-1.5-1.5h-7A1.5 1.5 0 0 0 2 16.5v3A1.5 1.5 0 0 0 3.5 21h7a1.5 1.5 0 0 0 1.5-1.5z
+- M12 16a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 2 16v-3a1.5 1.5 0 0 1 1.5-1.5h7A1.5 1.5 0 0 1 12 13zM12 23a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 2 23v-3a1.5 1.5 0 0 1 1.5-1.5h7A1.5 1.5 0 0 1 12 20z
+- M12 16v-4
+- M12 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2
+- M12 19.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 2 19.5v-3A1.5 1.5 0 0 1 3.5 15h7a1.5 1.5 0 0 1 1.5 1.5z
+- M12 20C7.58172 20 4 16.4182 4 12C4 7.58172 7.58172 4 12 4C16.4182 4 20 7.58172 20 12C20 16.4182 16.4182 20 12 20Z
+- M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12
+- M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10
+- M12 6.667 9.333 4M1.667 14.333l2.256-.25c.276-.031.413-.046.542-.088a1.4 1.4 0 0 0 .324-.155c.113-.075.21-.173.407-.37L14 4.668A1.886 1.886 0 1 0 11.333 2L2.53 10.804c-.196.196-.294.294-.369.407q-.1.1
+- M12 6V2H8
+- M12 6v6l4 2
+- M12 8.5A1.5 1.5 0 0 1 13.5 7h37A1.5 1.5 0 0 1 52 8.5v19a1.5 1.5 0 0 1-1.5 1.5h-37a1.5 1.5 0 0 1-1.5-1.5z
+- M12 8h.01
+- M12 8V12
+- M12.011 10.62q.177.114.35.232a7.8 7.8 0 0 1-.047-4.13c-1.736.79-3.086 2.04-4.067 3.143.08-.002 2.532-.046 3.764.755
+- M12.037 5.72v14m-7-7h14
+- M12.084 15V4.656c0-.715 0-1.072.15-1.287a.83.83 0 0 1 .561-.347c.26-.038.58.122 1.218.441l3.07 1.535m-5 10a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0M5.418 8.333v-5m-2.5 2.5h5
+- M12.15 1.582h.666a2 2 0 0 1 2 2v.667m0 8v.667a2 2 0 0 1-2 2h-.666m-8 0h-.667a2 2 0 0 1-2-2v-.667m0-8v-.667a2 2 0 0 1 2-2h.667m0 10.23c1.038-1.1 2.448-1.777 4-1.777s2.962.677 4 1.778m-2-5.556a2 2 0 1 1
+- M12.25 6.482V3.667a1.667 1.667 0 0 0-3.27-.455z
+- M12.5 3h5m0 0v5m0-5-5.833 5.833M7.5 18h-5m0 0v-5m0 5 5.833-5.833
+- M12.5 8.5v9.143M17.072 13.071H7.929
+- M12.5 8.667v4A1.334 1.334 0 0 1 11.167 14H3.833A1.334 1.334 0 0 1 2.5 12.667V5.333A1.333 1.333 0 0 1 3.833 4h4M10.5 2h4m0 0v4m0-4L7.167 9.333
+- M12.5003 2.5H17.5003M17.5003 2.5V7.5M17.5003 2.5L11.667 8.33333
+- M12.667 6.667V8A4.667 4.667 0 0 1 8 12.667m-4.667-6V8A4.667 4.667 0 0 0 8 12.667m0 0v2m-2.667 0h5.334M8 10a2 2 0 0 1-2-2V3.333a2 2 0 1 1 4 0V8a2 2 0 0 1-2 2
+- M12.709 14.083h-1.395L11.023 8.5H13zM11 16.037q0-.48.257-.726.257-.245.749-.245.474 0 .731.251.263.252.263.72 0 .452-.263.714-.263.258-.731.258-.48 0-.743-.252Q11 16.5 11 16.037
+- M13 7L7 1L1 7
+- M13 9a1 1 0 1 1-2 0
+- M13.054 99.167h6.823v6.823h-6.823zm0 9.387h6.823v6.823h-6.823zm0 9.456h6.823v6.823h-6.823z
+- M13.333 1.667V5M6.667 1.667V5M2.5 8.333h15m-13.333-5h11.666c.92 0 1.667.746 1.667 1.667v11.666c0 .921-.746 1.667-1.667 1.667H4.167c-.92 0-1.667-.746-1.667-1.666V5c0-.92.746-1.667 1.667-1.667
+- M13.333 1.667V5M6.667 1.667V5M2.5 8.333h15m-13.333-5h11.666c.92 0 1.667.747 1.667 1.667v11.667c0 .92-.746 1.666-1.667 1.666H4.167c-.92 0-1.667-.746-1.667-1.666V5c0-.92.746-1.667 1.667-1.667
+- M13.333 13.333s-1.25-1.666-3.333-1.666-3.333 1.666-3.333 1.666M7.5 7.5h.008m4.992 0h.008m5.825 2.5a8.333 8.333 0 1 1-16.666 0 8.333 8.333 0 0 1 16.666 0
+- M13.333 14v-1.333A2.667 2.667 0 0 0 10.667 10H5.333a2.667 2.667 0 0 0-2.666 2.667V14m8-9.333a2.667 2.667 0 1 1-5.334 0 2.667 2.667 0 0 1 5.334 0
+- M13.333 17.5v-1.667A3.333 3.333 0 0 0 10 12.5H4.167a3.333 3.333 0 0 0-3.334 3.333V17.5M16.667 6.667v5m2.5-2.5h-5m-3.75-3.334a3.333 3.333 0 1 1-6.667 0 3.333 3.333 0 0 1 6.667 0
+- M13.333 4 6 11.333 2.667 8
+- M13.3333 4L5.99996 11.3333L2.66663 8
+- M13.334 4 6 11.333 2.667 8
+- M13.455 1.667H2.545c-.666 0-1.212.57-1.212 1.266v7.6c0 .697.546 1.267 1.213 1.267h4.242l-1.212 1.9v.633h4.848V13.7l-1.212-1.9h4.243c.666 0 1.212-.57 1.212-1.267v-7.6c0-.696-.546-1.266-1.212-1.266m0 7.
+- M13.4932 13.4932L14.2731 14.2731
+- M13.4932 6.50649L14.2731 5.72656
+- M13.5 2.5h5m0 0v5m0-5-5.834 5.833M8.5 17.5h-5m0 0v-5m0 5 5.833-5.833
+- M13.667 13.667h.001m1.666 1.666h0M13.668 17h.001m1.666 1.667h0m1.667-5h0m0 3.333h0m1.666-1.667h.001m0 3.334h0M5.334 5.333h5v5h-5zm8.333 0h5v5h-5zm-8.333 8.334h5v5h-5z
+- M13.833 13.333 10.5 10m0 0-3.333 3.333M10.5 10v7.5m6.992-2.175A4.167 4.167 0 0 0 15.5 7.5h-1.05A6.667 6.667 0 1 0 3 13.583
+- M14 10v.8c0 1.12 0 1.68-.218 2.108a2 2 0 0 1-.874.874C12.48 14 11.92 14 10.8 14H5.2c-1.12 0-1.68 0-2.108-.218a2 2 0 0 1-.874-.874C2 12.48 2 11.92 2 10.8V10m9.333-4.667L8 2m0 0L4.667 5.333M8 2v8
+- M14 13h2v3a1 1 0 1 1-2 0z
+- M14 14v8M14 14h5.32C20.8 14 22 15.12 22 16.5S20.8 19 19.32 19H14M2 2v8M7 7l3 3M2 2h5.32C8.8 2 10 3.12 10 4.5S8.8 7 7.32 7H2
+- M14 21a2 2 0 1 1 4 0v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z
+- M14 6.497c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2m0 12c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2m-2-8c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2
+- M14 65h4
+- M14 7.333V2H8.667l2.193 2.193-6.667 6.667L2 8.667V14h5.333L5.14 11.807l6.667-6.667z
+- M14 71h4
+- M14.001 3.656 1.75.533A1 1 0 0 0 .562 1.845L4.793 13.44c.322.882 1.572.874 1.883-.012l1.819-5.18a1 1 0 0 1 .56-.593l5.082-2.107c.888-.368.796-1.655-.136-1.893Z
+- M14.071.485c.891 0 1.337 1.077.707 1.707l-6.07 6.071a1 1 0 0 1-1.415 0l-6.071-6.07c-.63-.63-.184-1.708.707-1.708z
+- M14.1 27.2l7.1 7.2 16.7-16.8
+- M14.243 16.929a1.79 1.79 0 0 1 1.785 1.785 1.79 1.79 0 0 1-1.785 1.786 1.79 1.79 0 0 1-1.786-1.786v-1.785zm4.472-4.472a1.79 1.79 0 0 1 1.785 1.786 1.79 1.79 0 0 1-1.785 1.785h-4.472a1.79 1.79 0 0 1-1.
+- M14.343 6H6a4 4 0 0 0-4 4v20a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4V16a4 4 0 0 0-4-4H23.657a4 4 0 0 1-2.829-1.172l-3.656-3.656A4 4 0 0 0 14.343 6
+- M14.403 4.83 7.07 12.163 3.736 8.83
+- M14.5 7.25a.75.75 0 0 0-1.5 0
+- M14.667 5.954c0-.404 0-.606-.08-.7a.33.33 0 0 0-.28-.115c-.122.01-.265.153-.55.438L11.332 8l2.423 2.423c.286.286.429.428.551.438a.33.33 0 0 0 .28-.116c.08-.093.08-.295.08-.7v-4.09z
+- M14.722 10.35v.8c0 1.12 0 1.68-.218 2.108a2 2 0 0 1-.874.874c-.428.218-.988.218-2.108.218h-5.6c-1.12 0-1.68 0-2.108-.218a2 2 0 0 1-.874-.874c-.218-.428-.218-.988-.218-2.108v-.8m9.334-4.667L8.722 2.35m
+- M14.9432 10H16.0417
+- M15 10L11 14.25L9.25 12.25
+- M15 11v2
+- M15 15h.01M21 15h.01
+- M15 5 5 15M5 5l10 10
+- M15 5h4M15 9h2
+- M15 68v8a1 1 0 1 0 2 0V60a1 1 0 1 0-2 0z
+- M15 74v2a1 1 0 1 0 2 0V60a1 1 0 1 0-2 0z
+- M15 9.16666C16.3807 9.16666 17.5 8.04737 17.5 6.66666C17.5 5.28594 16.3807 4.16666 15 4.16666C13.6193 4.16666 12.5 5.28595 12.5 6.66666C12.5 8.04737 13.6193 9.16666 15 9.16666Z
+- M15 97h12v.4c0 .56 0 .84-.109 1.054a1 1 0 0 1-.437.437C26.24 99 25.96 99 25.4 99h-8.8c-.56 0-.84 0-1.054-.109a1 1 0 0 1-.437-.437C15 98.24 15 97.96 15 97.4z
+- M15.137 5.529c.26.26.26.682 0 .942L13.61 8l1.528 1.529a.667.667 0 1 1-.942.942l-1.529-1.528-1.529 1.528a.667.667 0 1 1-.942-.942L11.723 8l-1.528-1.529a.667.667 0 0 1 .942-.942l1.529 1.528 1.529-1.528c
+- M15.333 2.667v4m0 0h-4m4 0L12.24 3.76A6 6 0 0 0 2.34 6M.667 13.333v-4m0 0h4m-4 0L3.76 12.24a6 6 0 0 0 9.9-2.24
+- M15.335 2.667v4m0 0h-4m4 0L12.24 3.76A6 6 0 0 0 2.341 6M.668 13.334v-4m0 0h4m-4 0 3.093 2.906a6 6 0 0 0 9.9-2.24
+- M15.544 3.514c0-.823.668-1.49 1.491-1.49H23a1.49 1.49 0 0 1 1.491 1.49v4.97a1.49 1.49 0 0 1-1.491 1.491h-5.964a1.49 1.49 0 0 1-1.49-1.49z
+- M15.59 5.59a.833.833 0 0 0-1.179-1.18l-4.41 4.411-4.411-4.41A.833.833 0 1 0 4.41 5.589L8.821 10l-4.41 4.412a.833.833 0 1 0 1.179 1.178L10 11.18l4.411 4.41a.833.833 0 0 0 1.179-1.178L11.179 10z
+- M15.8324 10.8334C16.2926 10.8334 16.6657 10.4603 16.6657 10C16.6657 9.53978 16.2926 9.16669 15.8324 9.16669C15.3721 9.16669 14.999 9.53978 14.999 10C14.999 10.4603 15.3721 10.8334 15.8324 10.8334Z
+- M15.833 8.333V10A5.833 5.833 0 0 1 10 15.833m-5.833-7.5V10A5.833 5.833 0 0 0 10 15.833m0 0v2.5m-3.333 0h6.666M10 12.5A2.5 2.5 0 0 1 7.5 10V4.167a2.5 2.5 0 1 1 5 0V10a2.5 2.5 0 0 1-2.5 2.5
+- M15.853 2.917v4m0 0h-4m4 0L12.76 4.01a6 6 0 0 0-9.9 2.24m-1.673 7.333v-4m0 0h4m-4 0L4.28 12.49a6 6 0 0 0 9.9-2.24
+- M15.892 1.608a8.333 8.333 0 0 1 0 11.784M12.95 4.55a4.166 4.166 0 0 1 0 5.892M9.167 1.667 5 5H1.667v5H5l4.167 3.333z
+- M16 16 36 36 M36 16 16 36 ⏎           
+- M16 18L16 6
+- M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2
+- M16 2v2M7 22v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M8 2v2
+- M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16
+- M16 9a5 5 0 0 1 0 6
+- M16.243 7.757a6 6 0 0 1 0 8.485m-8.486 0a6 6 0 0 1 0-8.485M4.93 19.071c-3.905-3.905-3.905-10.237 0-14.142m14.142 0c3.905 3.905 3.905 10.237 0 14.142M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0
+- M16.25 16.25L7.75 7.75
+- M16.5 11.5v3.333a1.666 1.666 0 0 1-1.667 1.667H3.167A1.667 1.667 0 0 1 1.5 14.833V11.5m11.667-5.833L9 1.5m0 0L4.833 5.667M9 1.5v10
+- M16.5 11.5v3.333c0 .442-.176.866-.488 1.179s-.736.488-1.179.488H3.167c-.442 0-.866-.176-1.179-.488s-.488-.736-.488-1.179V11.5m11.667-5.833L9 1.5m0 0L4.833 5.667M9 1.5v10
+- M16.5 8.5h-5.714A2.286 2.286 0 0 0 8.5 10.786V16.5
+- M16.667 17.5v-1.667a3.333 3.333 0 0 0-3.334-3.333H6.667a3.333 3.333 0 0 0-3.334 3.333V17.5m10-11.667a3.333 3.333 0 1 1-6.666 0 3.333 3.333 0 0 1 6.666 0
+- M16.671 15.469 17.203 12h-3.328V9.749c0-.949.465-1.874 1.956-1.874h1.513V4.922s-1.374-.234-2.686-.234c-2.742 0-4.533 1.66-4.533 4.668V12H7.078v3.469h3.047v8.385a12.085 12.085 0 0 0 3.75 0V15.47h2.796z
+- M16.999 20.499a1.5 1.5 0 0 1 1.5-1.5h25a1.5 1.5 0 0 1 1.5 1.5v12a1.5 1.5 0 0 1-1.5 1.5h-25a1.5 1.5 0 0 1-1.5-1.5z
+- M17 17h.01M21 17h.01M25 17h.01M16 92h.01M22 92h.01
+- M17.072 9.071H7.929M12.5 10.214v5.715
+- M17.1668 5L8.00016 14.1667L3.8335 10
+- M17.25 14.25H17.75C18.5784 14.25 19.25 13.5784 19.25 12.75V6.25C19.25 5.42157 18.5784 4.75 17.75 4.75H11.25C10.4216 4.75 9.75 5.42157 9.75 6.25V6.75
+- M17.256 4.41a.833.833 0 0 1 0 1.18l-9.167 9.166a.833.833 0 0 1-1.178 0l-4.167-4.167a.833.833 0 0 1 1.179-1.178L7.5 12.988l8.577-8.577a.833.833 0 0 1 1.179 0
+- M17.5 12.5v3.333a1.666 1.666 0 0 1-1.667 1.667H4.167A1.667 1.667 0 0 1 2.5 15.833V12.5m3.333-4.167L10 12.5m0 0 4.167-4.167M10 12.5v-10
+- M17.5 6.66666L17.51 6.66666
+- M17.75 10.701C18.75 11.2783 18.75 12.7217 17.75 13.299L8.75 18.4952C7.75 19.0725 6.5 18.3509 6.5 17.1962L6.5 6.80384C6.5 5.64914 7.75 4.92746 8.75 5.50481L17.75 10.701Z
+- M17.969 6.699V2.417c0-.875-.829-1.584-1.851-1.584H3.16c-1.023 0-1.851.71-1.851 1.584V13.5c0 .874.828 1.583 1.85 1.583h2.733M1.31 5.146h16.659M5.893 15.083V5.146m0 9.937h2.652
+- M170.342 9.309v7.867h1.248V9.309zm-.226-2.467c0 .451.376.828.827.828a.835.835 0 0 0 .828-.828.835.835 0 0 0-.828-.827.835.835 0 0 0-.827.827
+- M18 17C18 16.4477 18.4477 16 19 16H23C23.5523 16 24 16.4477 24 17V35C24 35.5523 23.5523 36 23 36H19C18.4477 36 18 35.5523 18 35V17Z
+- M18 5h1v1h-1zM5 5h1v1H5zM5 18h1v1H5zM15 15h1v1h-1zM21 15h1v1h-1zM15 21h1v1h-1zM21 21h1v1h-1zM18 18h1v1h-1z
+- M18 6 6 18
+- M18 6L6 18
+- M18 9a9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 1 9-9 9 9 0 0 1 9 9
+- M18.333 14.167h3.334m-4.5 14.166h5.666a3 3 0 0 0 3-3V14.667a3 3 0 0 0-3-3h-5.666a3 3 0 0 0-3 3v10.666a3 3 0 0 0 3 3
+- M18.334 9.233V10a8.334 8.334 0 1 1-4.942-7.617m4.942.95L10 11.675l-2.5-2.5
+- M18.335 7.44c0-.505 0-.757-.1-.874a.42.42 0 0 0-.35-.145c-.153.012-.332.19-.688.548l-3.029 3.028 3.029 3.029c.357.357.535.536.688.547a.42.42 0 0 0 .35-.144c.1-.117.1-.37.1-.874z
+- M18.397 24.546A6.545 6.545 0 0 0 24.941 18a6.545 6.545 0 1 0-6.544 6.546
+- M18.397 26.182A8.18 8.18 0 0 0 26.577 18a8.181 8.181 0 1 0-16.36 0 8.18 8.18 0 0 0 8.18 8.182
+- M18.397 26.182a8.18 8.18 0 0 1-7.078-4.091L3.263 8.27l-.061.098 8.11 13.928a8.168 8.168 0 0 0 14.155 0v-.205h-.012a8.18 8.18 0 0 1-7.058 4.09
+- M18.397 35.795c9.9 0 17.941-7.996 17.997-17.897V18c0 9.941-8.057 18-17.997 18S.4 27.941.4 18v-.102c.056 9.9 8.097 17.898 17.997 17.897
+- M18.397.205c9.9 0 17.941 7.996 17.997 17.897V18c0-9.941-8.057-18-17.997-18S.4 8.059.4 18v.102C.456 8.202 8.497.204 18.397.205
+- M18.5 6.75L5.5 6.75
+- M18.6 0C8.66 0 .6 8.059.6 18s8.059 18 18 18 18-8.059 18-18-8.059-18-18-18
+- M18.601 9.818H18.5a8.18 8.18 0 0 1 7.864 8.176 8.18 8.18 0 0 1-7.864 8.176h.102a8.18 8.18 0 0 0 8.18-8.182 8.18 8.18 0 0 0-8.18-8.182z
+- M18.729 18.66a.129.129 0 1 0-.258 0 .129.129 0 0 0 .258 0
+- M18.858 18.655a.258.258 0 1 0-.516 0 .258.258 0 0 0 .516 0
+- M18.923 4.91a.833.833 0 0 1 0 1.18L17.012 8l1.91 1.91a.833.833 0 0 1-1.178 1.18l-1.91-1.911-1.911 1.91a.833.833 0 0 1-1.179-1.178L14.654 8l-1.91-1.91a.833.833 0 1 1 1.179-1.18l1.91 1.911 1.911-1.91a.8
+- M18.987 18.65a.387.387 0 1 0-.774 0 .387.387 0 0 0 .774 0
+- M19 12H5
+- M19 2a1 1 0 1 0-2 0zm-2 8a1 1 0 1 0 2 0zm0-8v8h2V2z
+- M19 3.5A1.5 1.5 0 0 0 17.5 2h-7A1.5 1.5 0 0 0 9 3.5v3A1.5 1.5 0 0 0 10.5 8h7A1.5 1.5 0 0 0 19 6.5z
+- M19 32.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 9 32.5v-3a1.5 1.5 0 0 1 1.5-1.5h7a1.5 1.5 0 0 1 1.5 1.5z
+- M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6
+- M19 8v6M22 11h-6
+- M19 9h-4V3H9v6H5l7 7zM5 18v2h14v-2z
+- M19.116 18.645a.516.516 0 1 0-1.032 0 .516.516 0 0 0 1.032 0
+- M19.167 1.863v5m0 0h-5m5 0L15.301 3.23a7.5 7.5 0 0 0-12.375 2.8M.834 15.197v-5m0 0h5m-5 0 3.867 3.633a7.5 7.5 0 0 0 12.375-2.8
+- M19.245 18.64a.644.644 0 1 0-1.29 0 .644.644 0 0 0 1.29 0
+- M19.364 18.364a9 9 0 0 0 0-12.728
+- M19.374 18.634a.773.773 0 1 0-1.547 0 .773.773 0 0 0 1.546 0
+- M19.4 10c-.7-3.4-3.8-6-7.4-6-2.9 0-5.4 1.6-6.6 4-3.1.4-5.4 2.9-5.4 6 0 3.3 2.7 6 6 6h13c2.8 0 5-2.2 5-5 0-2.6-2-4.8-4.6-5
+- M19.502 18.629a.902.902 0 1 0-1.804 0 .902.902 0 0 0 1.804 0
+- M19.631 18.624a1.031 1.031 0 1 0-2.062 0 1.031 1.031 0 0 0 2.062 0
+- M19.76 18.618a1.16 1.16 0 1 0-2.32 0 1.16 1.16 0 0 0 2.32 0
+- M19.89 18.613a1.29 1.29 0 1 0-2.579 0 1.29 1.29 0 0 0 2.578 0
+- M2 12C2 14.663 3.04094 17.0829 4.73812 18.875L2.72681 21.1705C2.44361 21.4937 2.67314 22 3.10288 22H12
+- M2 12h2
+- M2 2h20v20H2z
+- M2 3.5L6 0.5V6.5L2 3.5Z
+- M2 6h12
+- M2 8L6 12L14 3
+- M2.1 1.5h33v33h-33z
+- M2.1 18c0 9.113 7.387 16.5 16.5 16.5S35.1 27.113 35.1 18 27.713 1.5 18.6 1.5 2.1 8.887 2.1 18
+- M2.25 6.75v4.5h3L9 15V3L5.25 6.75zM12.375 9A3.38 3.38 0 0 0 10.5 5.978v6.037A3.36 3.36 0 0 0 12.375 9M10.5 2.422v1.545A5.25 5.25 0 0 1 14.25 9a5.25 5.25 0 0 1-3.75 5.033v1.545A6.75 6.75 0 0 0 15.75 9a
+- M2.49023 13.33L2.50023 13.33
+- M2.5 0v5M0 2.5h5
+- M2.5 14.373v3.125h3.125l9.217-9.216-3.125-3.125zm14.758-8.508a.83.83 0 0 0 0-1.175l-1.95-1.95a.83.83 0 0 0-1.175 0l-1.525 1.525 3.125 3.125z
+- M2.5 5h1.667m0 0H17.5M4.167 5v11.667a1.667 1.667 0 0 0 1.666 1.666h8.334a1.667 1.667 0 0 0 1.666-1.666V5zm2.5 0V3.333a1.667 1.667 0 0 1 1.666-1.666h3.334a1.667 1.667 0 0 1 1.666 1.666V5
+- M2.5 6.66666L11.5 6.66666
+- M2.5 8.333v3.334M6.25 5v10M10 2.5v15M13.75 5v10m3.75-6.667v3.334
+- M2.667 12.333A1.333 1.333 0 0 1 1.333 11V3.667a1.333 1.333 0 0 1 1.334-1.334h10.666a1.333 1.333 0 0 1 1.334 1.334V11a1.333 1.333 0 0 1-1.334 1.333zm2.666 2h5.334
+- M2.667 2.667c-.737 0-1.334.597-1.334 1.333v8c0 .736.597 1.333 1.334 1.333H10c.736 0 1.333-.597 1.333-1.333V8.888a1 1 0 0 0 .331.743l3.003 2.702V3.667l-3.003 2.702a1 1 0 0 0-.33.743V4c0-.736-.598-1.333
+- M2.667 2c0-.369.298-.667.667-.667H6c.369 0 .667.298.667.667v12a.667.667 0 0 1-.667.666H3.334A.667.667 0 0 1 2.667 14zM9.334 2c0-.369.298-.667.666-.667h2.667c.368 0 .667.298.667.667v12a.667.667 0 0 1-.
+- M2.667 4.667h6.667a4 4 0 1 1 0 8H2.667m0-8L5.334 2M2.667 4.667l2.667 2.666
+- M20 11v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V15h4v-4z
+- M20 12h2
+- M20 16a2 2 0 0 1-2 2H8.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 4 20.286V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z
+- M20 17v7.033a2.67 2.67 0 0 0-1.333-.366 2.666 2.666 0 1 0 0 5.333 2.666 2.666 0 0 0 2.666-2.667v-6.666H24V17z
+- M20 6 9 17l-5-5
+- M20 6L9 17L4 12
+- M20 9h-9a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2
+- M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13
+- M20.018 18.608a1.418 1.418 0 1 0-2.836 0 1.418 1.418 0 0 0 2.836 0
+- M20.147 18.603a1.547 1.547 0 1 0-3.094 0 1.547 1.547 0 0 0 3.094 0
+- M20.276 18.598a1.676 1.676 0 1 0-3.352 0 1.676 1.676 0 0 0 3.352 0
+- M20.4 9.6H18a2.4 2.4 0 0 0-2.4 2.4v7.2a2.4 2.4 0 0 0 2.4 2.4h2.4a2.4 2.4 0 0 0 2.4-2.4V12a2.4 2.4 0 0 0-2.4-2.4
+- M20.405 18.593a1.805 1.805 0 1 0-3.61 0 1.805 1.805 0 0 0 3.61 0
+- M20.534 18.587a1.934 1.934 0 1 0-3.867 0 1.934 1.934 0 0 0 3.867 0
+- M20.663 18.582a2.062 2.062 0 1 0-4.125 0 2.062 2.062 0 0 0 4.125 0
+- M20.792 18.577a2.191 2.191 0 1 0-4.383 0 2.191 2.191 0 0 0 4.383 0
+- M20.92 18.572a2.32 2.32 0 1 0-4.64 0 2.32 2.32 0 0 0 4.64 0
+- M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16
+- M21 12a9 9 0 1 1-6.219-8.56
+- M21 3v5h-5
+- M21.05 18.566a2.45 2.45 0 1 0-4.9 0 2.45 2.45 0 0 0 4.9 0
+- M21.165 3.333v5m0 0h-5m5 0L17.3 4.7A7.5 7.5 0 0 0 4.924 7.5m-2.092 9.167v-5m0 0h5m-5 0L6.699 15.3a7.5 7.5 0 0 0 12.375-2.8
+- M21.178 18.561a2.578 2.578 0 1 0-5.156 0 2.578 2.578 0 0 0 5.156 0
+- M21.307 18.556a2.707 2.707 0 1 0-5.414 0 2.707 2.707 0 0 0 5.414 0
+- M21.436 18.55a2.836 2.836 0 1 0-5.672 0 2.836 2.836 0 0 0 5.672 0
+- M21.5 6.5A1.5 1.5 0 0 0 23 8h7a1.5 1.5 0 0 0 1.5-1.5v-3A1.5 1.5 0 0 0 30 2h-7a1.5 1.5 0 0 0-1.5 1.5zM32.5 6.5A1.5 1.5 0 0 0 34 8h7a1.5 1.5 0 0 0 1.5-1.5v-3A1.5 1.5 0 0 0 41 2h-7a1.5 1.5 0 0 0-1.5 1.5z
+- M21.565 18.546a2.965 2.965 0 1 0-5.93 0 2.965 2.965 0 0 0 5.93 0
+- M21.694 18.54a3.094 3.094 0 1 0-6.188 0 3.094 3.094 0 0 0 6.188 0
+- M21.823 18.535a3.223 3.223 0 1 0-6.446 0 3.223 3.223 0 0 0 6.446 0
+- M21.952 18.53a3.352 3.352 0 1 0-6.703 0 3.352 3.352 0 0 0 6.703 0
+- M22 2h-8M2 21.999V14h1l3 7 3-7h1v7.999
+- M22 30.052V30m10 .052V30m10 .052V30
+- M22.011 98.667h7.823v7.823h-7.823z
+- M22.08 18.525a3.48 3.48 0 1 0-6.96 0 3.48 3.48 0 0 0 6.96 0
+- M22.21 18.52a3.61 3.61 0 1 0-7.22 0 3.61 3.61 0 0 0 7.22 0
+- M22.338 18.515a3.738 3.738 0 1 0-7.476 0 3.738 3.738 0 0 0 7.476 0
+- M22.467 18.51a3.867 3.867 0 1 0-7.734 0 3.867 3.867 0 0 0 7.734 0
+- M22.511 108.554h6.823v6.823h-6.823zm0 9.456h6.823v6.823h-6.823z
+- M22.596 18.504a3.996 3.996 0 1 0-7.992 0 3.996 3.996 0 0 0 7.992 0
+- M22.666 14.667 16 8l-6.667 6.667M22.666 24 16 17.333 9.333 24
+- M22.725 18.499a4.125 4.125 0 1 0-8.25 0 4.125 4.125 0 0 0 8.25 0
+- M22.854 18.494a4.254 4.254 0 1 0-8.508 0 4.254 4.254 0 0 0 8.508 0
+- M22.983 18.489a4.383 4.383 0 1 0-8.766 0 4.383 4.383 0 0 0 8.766 0
+- M221.167 100.667h22.667v22.667h-22.667z
+- M23.112 18.483a4.512 4.512 0 1 0-9.024 0 4.512 4.512 0 0 0 9.024 0
+- M23.24 18.478a4.64 4.64 0 1 0-9.28 0 4.64 4.64 0 0 0 9.28 0
+- M23.37 18.473a4.77 4.77 0 1 0-9.54 0 4.77 4.77 0 0 0 9.54 0
+- M23.499 18.468a4.898 4.898 0 1 0-9.797 0 4.898 4.898 0 0 0 9.797 0
+- M23.627 18.463a5.027 5.027 0 1 0-10.054 0 5.027 5.027 0 0 0 10.054 0
+- M23.756 18.457a5.156 5.156 0 1 0-10.312 0 5.156 5.156 0 0 0 10.312 0
+- M23.885 18.452a5.285 5.285 0 1 0-10.57 0 5.285 5.285 0 0 0 10.57 0
+- M238.398 102.792h3.124l-6.826 7.801 8.03 10.616h-6.287l-4.924-6.439-5.635 6.439h-3.126l7.3-8.345-7.702-10.072h6.446l4.452 5.885zm-1.097 16.547h1.731l-11.174-14.775H226z
+- M24 0C10.745 0 0 10.745 0 24s10.745 24 24 24 24-10.745 24-24S37.255 0 24 0m-8 20a8 8 0 1 1 16 0 8 8 0 0 1-16 0m21.31 16.12A17.95 17.95 0 0 1 24 42a17.95 17.95 0 0 1-13.309-5.881A7.2 7.2 0 0 1 17.201 3
+- M24 24.0521V24M40 24.0521V24
+- M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z
+- M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z
+- M24.014 18.447a5.414 5.414 0 1 0-10.828 0 5.414 5.414 0 0 0 10.828 0
+- M24.143 18.442a5.543 5.543 0 1 0-11.086 0 5.543 5.543 0 0 0 11.086 0
+- M24.17 1.42a.504.504 0 0 0-.503-.504H13.088a.504.504 0 0 0-.503.504v11.406c0 .278.225.504.503.504h10.58a.504.504 0 0 0 .503-.504z
+- M24.272 18.437a5.672 5.672 0 1 0-11.344 0 5.672 5.672 0 0 0 11.344 0
+- M24.4 18.431a5.8 5.8 0 1 0-11.6 0 5.8 5.8 0 0 0 11.6 0
+- M24.49 1.528a1.49 1.49 0 0 0-1.491-1.49H8.05a.459.459 0 1 0 0 .917h.876c.736 0 1.334.597 1.334 1.334v7.424c0 .737-.598 1.334-1.334 1.334H8.05a.459.459 0 1 0 0 .917H23a1.49 1.49 0 0 0 1.49-1.49z
+- M24.53 18.426a5.93 5.93 0 1 0-11.86 0 5.93 5.93 0 0 0 11.86 0
+- M24.659 18.421a6.059 6.059 0 1 0-12.118 0 6.059 6.059 0 0 0 12.118 0
+- M24.788 18.416a6.187 6.187 0 1 0-12.375 0 6.187 6.187 0 0 0 12.375 0
+- M24.917 18.41a6.316 6.316 0 1 0-12.633 0 6.316 6.316 0 0 0 12.632 0
+- M25 3.5A1.5 1.5 0 0 0 23.5 2h-7A1.5 1.5 0 0 0 15 3.5v3A1.5 1.5 0 0 0 16.5 8h7A1.5 1.5 0 0 0 25 6.5z
+- M25 32.5a1.5 1.5 0 0 1-1.5 1.5h-7a1.5 1.5 0 0 1-1.5-1.5v-3a1.5 1.5 0 0 1 1.5-1.5h7a1.5 1.5 0 0 1 1.5 1.5z
+- M25.045 18.405a6.445 6.445 0 1 0-12.89 0 6.445 6.445 0 0 0 12.89 0
+- M25.174 18.4a6.574 6.574 0 1 0-13.148 0 6.574 6.574 0 0 0 13.148 0
+- M25.303 18.395a6.703 6.703 0 1 0-13.406 0 6.703 6.703 0 0 0 13.406 0
+- M25.432 18.39a6.832 6.832 0 1 0-13.664 0 6.832 6.832 0 0 0 13.664 0
+- M25.555 22.363a8.16 8.16 0 0 0 .716-6.556 8.1 8.1 0 0 1-.792 6.284l-7.947 13.91h.237l7.786-13.63z
+- M25.561 18.385a6.96 6.96 0 1 0-13.922 0 6.96 6.96 0 0 0 13.922 0
+- M25.69 18.38a7.09 7.09 0 1 0-14.18 0 7.09 7.09 0 0 0 14.18 0
+- M25.819 18.374a7.219 7.219 0 1 0-14.438 0 7.219 7.219 0 0 0 14.438 0
+- M25.948 18.369a7.348 7.348 0 1 0-14.696 0 7.348 7.348 0 0 0 14.696 0
+- M26.077 18.364a7.477 7.477 0 1 0-14.954 0 7.477 7.477 0 0 0 14.954 0
+- M26.206 18.359a7.605 7.605 0 1 0-15.211 0 7.605 7.605 0 0 0 15.21 0
+- M26.335 18.354a7.734 7.734 0 1 0-15.47 0 7.734 7.734 0 0 0 15.47 0
+- M26.463 18.348a7.863 7.863 0 1 0-15.726 0 7.863 7.863 0 0 0 15.726 0
+- M26.592 18.343a7.992 7.992 0 1 0-15.984 0 7.992 7.992 0 0 0 15.984 0
+- M26.721 18.338a8.121 8.121 0 1 0-16.242 0 8.121 8.121 0 0 0 16.242 0
+- M26.85 18.333a8.25 8.25 0 1 0-16.5 0 8.25 8.25 0 0 0 16.5 0
+- M26.979 18.327a8.379 8.379 0 1 0-16.758 0 8.379 8.379 0 0 0 16.758 0
+- M27.108 18.322a8.508 8.508 0 1 0-17.016 0 8.508 8.508 0 0 0 17.016 0
+- M27.237 18.317a8.637 8.637 0 1 0-17.274 0 8.637 8.637 0 0 0 17.274 0
+- M27.366 18.312a8.766 8.766 0 1 0-17.531 0 8.766 8.766 0 0 0 17.53 0
+- M27.495 18.307a8.894 8.894 0 1 0-17.79 0 8.894 8.894 0 0 0 17.79 0
+- M27.624 18.302a9.023 9.023 0 1 0-18.047 0 9.023 9.023 0 0 0 18.047 0
+- M27.752 18.296a9.152 9.152 0 1 0-18.304 0 9.152 9.152 0 0 0 18.304 0
+- M27.881 18.291a9.281 9.281 0 1 0-18.562 0 9.281 9.281 0 1 0 18.562 0
+- M28 17C28 16.4477 28.4477 16 29 16H33C33.5523 16 34 16.4477 34 17V35C34 35.5523 33.5523 36 33 36H29C28.4477 36 28 35.5523 28 35V17Z
+- M28.01 18.286a9.41 9.41 0 1 0-18.82 0 9.41 9.41 0 0 0 18.82 0
+- M28.14 18.28a9.54 9.54 0 1 0-19.079 0 9.54 9.54 0 0 0 19.078 0
+- M28.268 18.275c0-5.34-4.328-9.668-9.668-9.668a9.67 9.67 0 0 0-9.668 9.668c0 5.34 4.329 9.668 9.668 9.668 5.34 0 9.668-4.328 9.668-9.668
+- M28.397 18.27c0-5.41-4.386-9.797-9.797-9.797-5.41 0-9.797 4.387-9.797 9.797s4.386 9.797 9.797 9.797c5.41 0 9.797-4.386 9.797-9.797
+- M28.526 18.265c0-5.482-4.444-9.926-9.926-9.926s-9.926 4.444-9.926 9.926 4.444 9.926 9.926 9.926 9.926-4.444 9.926-9.926
+- M28.655 18.26c0-5.553-4.502-10.055-10.055-10.055S8.545 12.707 8.545 18.26 13.047 28.315 18.6 28.315s10.055-4.502 10.055-10.055
+- M28.784 18.255c0-5.625-4.56-10.184-10.184-10.184S8.416 12.631 8.416 18.255s4.56 10.183 10.184 10.183 10.184-4.56 10.184-10.183
+- M28.913 18.25c0-5.696-4.617-10.313-10.313-10.313-5.695 0-10.312 4.617-10.312 10.313 0 5.695 4.617 10.312 10.312 10.312s10.313-4.617 10.313-10.312
+- M29.042 18.244c0-5.767-4.675-10.441-10.442-10.441S8.16 12.477 8.16 18.244 12.834 28.686 18.6 28.686s10.441-4.675 10.441-10.442
+- M29.17 18.239c0-5.838-4.732-10.57-10.57-10.57S8.03 12.4 8.03 18.239s4.732 10.57 10.57 10.57 10.57-4.732 10.57-10.57
+- M29.3 18.234c0-5.91-4.79-10.7-10.7-10.7s-10.7 4.79-10.7 10.7 4.791 10.7 10.7 10.7c5.91 0 10.7-4.791 10.7-10.7
+- M29.428 18.229C29.428 12.249 24.58 7.4 18.6 7.4S7.772 12.249 7.772 18.229 12.62 29.057 18.6 29.057s10.828-4.848 10.828-10.828
+- M29.557 18.223c0-6.051-4.905-10.957-10.957-10.957-6.051 0-10.957 4.906-10.957 10.957S12.55 29.18 18.6 29.18s10.957-4.905 10.957-10.957
+- M29.686 18.218c0-6.122-4.963-11.086-11.086-11.086S7.514 12.096 7.514 18.218c0 6.123 4.963 11.086 11.086 11.086s11.086-4.963 11.086-11.086
+- M29.815 18.213c0-6.194-5.021-11.215-11.215-11.215S7.385 12.02 7.385 18.213 12.406 29.428 18.6 29.428s11.215-5.021 11.215-11.215
+- M29.944 18.208c0-6.265-5.079-11.344-11.344-11.344S7.256 11.943 7.256 18.208s5.08 11.344 11.344 11.344c6.265 0 11.344-5.079 11.344-11.344
+- M3 10h18
+- M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8
+- M3 12L9 18L21 4.5
+- M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6m13 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0m-4 2a2 2 0 1 1 .001-4.001A2 2 0 0 1 12 14
+- M3 2v6m4-6v6
+- M3 4.5A1.5 1.5 0 0 1 4.5 3h55A1.5 1.5 0 0 1 61 4.5v19a1.5 1.5 0 0 1-1.5 1.5H52a3 3 0 0 0-3 3v3.5a1.5 1.5 0 0 1-1.5 1.5h-43A1.5 1.5 0 0 1 3 31.5z
+- M3 4.5A1.5 1.5 0 0 1 4.5 3h55A1.5 1.5 0 0 1 61 4.5v27a1.5 1.5 0 0 1-1.5 1.5h-55A1.5 1.5 0 0 1 3 31.5z
+- M3 6h18
+- M3 7.833v3.334M6.75 4.5v10M10.5 2v15m3.75-12.5v10M18 7.833v3.334M1 1l18.276 17.058
+- M3 7l3 3 4-6 4 6 3-3v8H3V7z
+- M3.141 15.75V9.917m0-3.334V.75m6.377 15v-7.5m0-3.333V.75m6.377 15v-4.167m0-3.333V.75M.75 9.917h4.783m1.594-5h4.782m1.595 6.666h4.782
+- M3.167 117.51h7.823v7.823H3.167z
+- M3.263 8.266V22.09h8.05l7.084-12.273H34.43A17.997 17.997 0 0 0 3.263 8.266
+- M3.333 7.5h13.334m-13.334 5h13.334m-8.334-10-1.666 15m6.666-15-1.666 15
+- M3.5 3.5 20 20
+- M3.544 12.959A2.67 2.67 0 0 1 6 11.333h4c1.103 0 2.05.67 2.456 1.626m-1.79-6.626a2.667 2.667 0 1 1-5.333 0 2.667 2.667 0 0 1 5.334 0zm4 1.667A6.667 6.667 0 1 1 1.334 8a6.667 6.667 0 0 1 13.334 0z
+- M3.666 12a8.333 8.333 0 0 0 8.333 8.333 2.5 2.5 0 0 0 2.5-2.5v-.416c0-.387 0-.58.022-.743a2.5 2.5 0 0 1 2.152-2.153c.163-.021.356-.021.743-.021h.417a2.5 2.5 0 0 0 2.5-2.5 8.333 8.333 0 0 0-16.667 0
+- M3.667 99.167h6.823v6.823H3.667zm0 9.387h6.823v6.823H3.667z
+- M3.78 15.5a1.5 1.5 0 0 1 1.5-1.5h27a1.5 1.5 0 0 1 1.5 1.5v14a1.5 1.5 0 0 1-1.5 1.5h-27a1.5 1.5 0 0 1-1.5-1.5z
+- M3.893 16.917H5.56m0 0h2.5m-2.5 0 5-13.334M7.227 12.75h6.666M10.56 3.583l5 13.334m-5-13.334H7.227m8.333 13.334h1.667m-1.667 0h-2.5
+- M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.2
+- M3.9375 7L6.125 9.1875L10.5 4.8125
+- M3.95834 10H5.05683
+- M30.073 18.203c0-6.337-5.137-11.473-11.473-11.473S7.127 11.866 7.127 18.203c0 6.336 5.137 11.472 11.473 11.472s11.473-5.136 11.473-11.472
+- M30.202 18.198c0-6.408-5.195-11.602-11.602-11.602S7 11.79 7 18.198c0 6.407 5.194 11.601 11.601 11.601s11.602-5.194 11.602-11.601
+- M30.33 18.192c0-6.478-5.251-11.73-11.73-11.73S6.87 11.714 6.87 18.192s5.251 11.73 11.73 11.73 11.73-5.251 11.73-11.73
+- M30.46 18.187c0-6.55-5.31-11.86-11.86-11.86s-11.86 5.31-11.86 11.86 5.31 11.86 11.86 11.86 11.86-5.31 11.86-11.86
+- M30.588 18.182c0-6.621-5.367-11.988-11.988-11.988S6.612 11.56 6.612 18.182 11.979 30.17 18.6 30.17s11.988-5.367 11.988-11.988
+- M30.717 18.177c0-6.692-5.425-12.117-12.117-12.117S6.483 11.485 6.483 18.177 11.908 30.294 18.6 30.294s12.117-5.425 12.117-12.117
+- M30.846 18.171c0-6.763-5.483-12.246-12.246-12.246S6.354 11.408 6.354 18.171 11.837 30.417 18.6 30.417s12.246-5.482 12.246-12.246
+- M30.975 18.166c0-6.834-5.54-12.375-12.375-12.375-6.834 0-12.375 5.54-12.375 12.375s5.54 12.375 12.375 12.375 12.375-5.54 12.375-12.375
+- M31 3.5A1.5 1.5 0 0 0 29.5 2h-7A1.5 1.5 0 0 0 21 3.5v3A1.5 1.5 0 0 0 22.5 8h7A1.5 1.5 0 0 0 31 6.5z
+- M31 32.5a1.5 1.5 0 0 1-1.5 1.5h-7a1.5 1.5 0 0 1-1.5-1.5v-3a1.5 1.5 0 0 1 1.5-1.5h7a1.5 1.5 0 0 1 1.5 1.5z
+- M31.104 18.161c0-6.906-5.598-12.504-12.504-12.504S6.096 11.255 6.096 18.161 11.694 30.665 18.6 30.665s12.504-5.598 12.504-12.504
+- M31.233 18.156c0-6.977-5.656-12.633-12.633-12.633S5.967 11.18 5.967 18.156 11.623 30.789 18.6 30.789s12.633-5.656 12.633-12.633
+- M31.362 18.15c0-7.047-5.714-12.761-12.762-12.761S5.838 11.102 5.838 18.15c0 7.048 5.714 12.761 12.762 12.761S31.362 25.2 31.362 18.151
+- M31.49 18.146c0-7.12-5.77-12.891-12.89-12.891S5.71 11.026 5.71 18.145s5.77 12.891 12.89 12.891 12.89-5.771 12.89-12.89
+- M31.5 16c0-8.284-6.716-15-15-15s-15 6.716-15 15 6.716 15 15 15 15-6.716 15-15m1 0c0-8.837-7.163-16-16-16S.5 7.163.5 16s7.163 16 16 16 16-7.163 16-16
+- M31.62 18.14c0-7.19-5.83-13.02-13.02-13.02S5.58 10.95 5.58 18.14s5.83 13.02 13.02 13.02 13.02-5.83 13.02-13.02
+- M31.749 18.135c0-7.261-5.887-13.148-13.149-13.148S5.452 10.874 5.452 18.135 11.338 31.284 18.6 31.284s13.148-5.887 13.148-13.149
+- M31.877 18.13c0-7.333-5.944-13.277-13.277-13.277S5.323 10.797 5.323 18.13 11.267 31.407 18.6 31.407s13.277-5.944 13.277-13.277
+- M32.006 18.125c0-7.404-6.002-13.406-13.406-13.406S5.194 10.72 5.194 18.125 11.196 31.53 18.6 31.53s13.406-6.002 13.406-13.406
+- M32.135 18.12c0-7.476-6.06-13.536-13.535-13.536S5.065 10.644 5.065 18.12c0 7.475 6.06 13.535 13.535 13.535s13.535-6.06 13.535-13.535
+- M32.264 18.114c0-7.546-6.117-13.664-13.664-13.664S4.936 10.568 4.936 18.114c0 7.547 6.118 13.664 13.664 13.664 7.547 0 13.664-6.117 13.664-13.664
+- M32.28 33a1.5 1.5 0 0 1 1.5 1.5v25a1.5 1.5 0 0 1-1.5 1.5h-27a1.5 1.5 0 0 1-1.5-1.5v-25a1.5 1.5 0 0 1 1.5-1.5zM32.28 3a1.5 1.5 0 0 1 1.5 1.5v25a1.5 1.5 0 0 1-1.5 1.5h-27a1.5 1.5 0 0 1-1.5-1.5v-25A1.5 1
+- M32.365 52.012A2 2 0 0 0 34.072 55h33.855a2 2 0 0 0 1.707-2.988L52.707 23.753a2 2 0 0 0-3.415 0z
+- M32.393 18.11c0-7.618-6.175-13.794-13.793-13.794S4.807 10.492 4.807 18.11c0 7.618 6.175 13.793 13.793 13.793s13.793-6.175 13.793-13.793
+- M32.522 18.104c0-7.689-6.233-13.922-13.922-13.922S4.678 10.415 4.678 18.104 10.911 32.026 18.6 32.026s13.922-6.233 13.922-13.922
+- M32.65 18.099c0-7.76-6.29-14.05-14.05-14.05s-14.05 6.29-14.05 14.05 6.29 14.05 14.05 14.05 14.05-6.29 14.05-14.05
+- M32.78 18.094c0-7.832-6.349-14.18-14.18-14.18S4.42 10.262 4.42 18.094c0 7.83 6.349 14.18 14.18 14.18s14.18-6.35 14.18-14.18
+- M32.909 18.088c0-7.902-6.406-14.308-14.309-14.308S4.291 10.186 4.291 18.088s6.407 14.309 14.31 14.309c7.902 0 14.308-6.406 14.308-14.309
+- M33 90.5h1m-3 1h2m-9-1h1m0 1h2m-3-2h1m8 0h1m-7 3h4m37-2h1m8-1h1m-10 0h1m0 2h2m6-1h1m-3 1h2m-6 1h4m-18 0h2m-4 0h2m-10 0h8m-10 0h2m-4 0h2
+- M33 91.5h1m-3-1h2m-9 1h1m0-1h2m-3 2h1m8 0h1m-7-3h4m37 2h1m8 0h1m-10-1h1m0-1h2m6 1h1m-3-1h2m-6-1h4m-18 3h2m-4 1h2m-10 1h8m-10-1h2m-4-1h2
+- M33.038 18.083c0-7.973-6.464-14.437-14.438-14.437S4.163 10.11 4.163 18.083c0 7.974 6.464 14.438 14.437 14.438 7.974 0 14.438-6.464 14.438-14.438
+- M33.167 18.078c0-8.045-6.522-14.567-14.567-14.567S4.034 10.033 4.034 18.078 10.555 32.644 18.6 32.644s14.566-6.521 14.566-14.566
+- M33.295 18.073c0-8.116-6.579-14.696-14.695-14.696S3.905 9.957 3.905 18.073s6.58 14.695 14.695 14.695 14.695-6.58 14.695-14.695
+- M33.424 18.068c0-8.188-6.637-14.825-14.824-14.825S3.776 9.88 3.776 18.068 10.413 32.892 18.6 32.892s14.824-6.637 14.824-14.824
+- M33.553 18.063c0-8.259-6.694-14.954-14.953-14.954-8.258 0-14.953 6.695-14.953 14.954 0 8.258 6.695 14.953 14.953 14.953s14.953-6.695 14.953-14.953
+- M33.682 18.057c0-8.33-6.752-15.082-15.082-15.082S3.518 9.728 3.518 18.057 10.271 33.14 18.6 33.14s15.082-6.752 15.082-15.082
+- M33.811 18.052c0-8.4-6.81-15.21-15.21-15.21-8.402 0-15.212 6.81-15.212 15.21s6.81 15.21 15.211 15.21 15.211-6.81 15.211-15.21
+- M33.94 18.047c0-8.472-6.868-15.34-15.34-15.34S3.26 9.575 3.26 18.047s6.868 15.34 15.34 15.34 15.34-6.868 15.34-15.34
+- M34 12 24 2v10z
+- M34.069 18.042c0-8.544-6.926-15.47-15.469-15.47S3.131 9.499 3.131 18.043c0 8.543 6.926 15.468 15.47 15.468 8.542 0 15.468-6.925 15.468-15.468
+- M34.198 18.036c0-8.614-6.984-15.597-15.598-15.597S3.002 9.422 3.002 18.036 9.986 33.634 18.6 33.634s15.598-6.983 15.598-15.598
+- M34.327 18.031c0-8.685-7.041-15.726-15.727-15.726S2.874 9.345 2.874 18.03 9.914 33.758 18.6 33.758s15.727-7.041 15.727-15.727
+- M34.456 18.026c0-8.757-7.1-15.855-15.856-15.855S2.745 9.269 2.745 18.026 9.843 33.882 18.6 33.882s15.856-7.1 15.856-15.856
+- M34.585 18.02c0-8.827-7.157-15.984-15.985-15.984S2.616 9.193 2.616 18.021 9.772 34.005 18.6 34.005s15.984-7.156 15.984-15.984
+- M34.713 18.016c0-8.9-7.214-16.114-16.113-16.114S2.487 9.116 2.487 18.016c0 8.899 7.214 16.113 16.113 16.113 8.9 0 16.113-7.214 16.113-16.113
+- M34.842 18.01c0-8.97-7.272-16.242-16.242-16.242S2.358 9.04 2.358 18.011 9.63 34.253 18.6 34.253 34.842 26.98 34.842 18.01
+- M34.971 18.005c0-9.041-7.33-16.371-16.37-16.371-9.042 0-16.372 7.33-16.372 16.371 0 9.042 7.33 16.371 16.371 16.371 9.042 0 16.371-7.33 16.371-16.37
+- M35.1 18c0-9.113-7.387-16.5-16.5-16.5S2.1 8.887 2.1 18s7.387 16.5 16.5 16.5S35.1 27.113 35.1 18
+- M36.5 16c20 0 40 44 60 44m0 4h-60m0 48c20 0 40-44 60-44m116-52c-20 0-40 44-60 44m0 4h60m0 48c-20 0-40-44-60-44
+- M37 29.5a1.5 1.5 0 0 0-1.5-1.5h-7a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5h7a1.5 1.5 0 0 0 1.5-1.5z
+- M37 3.5A1.5 1.5 0 0 0 35.5 2h-7A1.5 1.5 0 0 0 27 3.5v3A1.5 1.5 0 0 0 28.5 8h7A1.5 1.5 0 0 0 37 6.5z
+- M37 32.5a1.5 1.5 0 0 1-1.5 1.5h-7a1.5 1.5 0 0 1-1.5-1.5v-3a1.5 1.5 0 0 1 1.5-1.5h7a1.5 1.5 0 0 1 1.5 1.5z
+- M37 6.5A1.5 1.5 0 0 1 35.5 8h-7A1.5 1.5 0 0 1 27 6.5v-3A1.5 1.5 0 0 1 28.5 2h7A1.5 1.5 0 0 1 37 3.5z
+- M4 0h56a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4
+- M4 0H6V2H4V0Z
+- M4 12H6V14H4V12Z
+- M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2
+- M4 17h4V3H4zm8-14v14h4V3z
+- M4 3.005a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zM14 3.005a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1z
+- M4 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zM14 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1z
+- M4 4H6V6H4V4Z
+- M4 4l8 8M12 4l-8 8
+- M4 6L8 10L12 6
+- M4 8a4 4 0 0 1 4-4h112a4 4 0 0 1 4 4v32a4 4 0 0 1-4 4h-18a4 4 0 0 0-4 4v16a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z
+- M4 8a4 4 0 0 1 4-4h112a4 4 0 0 1 4 4v56a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z
+- M4 8H6V10H4V8Z
+- M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11
+- M4.16634 10.8333C4.62658 10.8333 4.99967 10.4602 4.99967 10C4.99967 9.53977 4.62658 9.16667 4.16634 9.16667C3.7061 9.16667 3.33301 9.53977 3.33301 10C3.33301 10.4602 3.7061 10.8333 4.16634 10.8333Z
+- M4.167 10h11.666m0 0L10 4.167M15.833 10 10 15.833
+- M4.43 16.199a3.33 3.33 0 0 1 3.07-2.032h5c1.38 0 2.563.837 3.07 2.032m-2.237-8.282a3.333 3.333 0 1 1-6.666 0 3.333 3.333 0 0 1 6.666 0m5 2.083a8.333 8.333 0 1 1-16.666 0 8.333 8.333 0 0 1 16.666 0
+- M4.5 12.75l6 6 9-13.5
+- M4.5 3A1.5 1.5 0 0 0 3 4.5v55A1.5 1.5 0 0 0 4.5 61h11a1.5 1.5 0 0 0 1.5-1.5V54a3 3 0 0 1 3-3h11.5a1.5 1.5 0 0 0 1.5-1.5v-45A1.5 1.5 0 0 0 31.5 3z
+- M4.5 5.5v2m-1-1h2
+- M4.75 11.25C4.75 10.4216 5.42157 9.75 6.25 9.75H12.75C13.5784 9.75 14.25 10.4216 14.25 11.25V17.75C14.25 18.5784 13.5784 19.25 12.75 19.25H6.25C5.42157 19.25 4.75 18.5784 4.75 17.75V11.25Z
+- M4.982 12V0h2.036v12zM0 7.018V4.982h12v2.036z
+- M42 44.497a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-30l12-12h22a2 2 0 0 1 2 2z
+- M42.5 29.5A1.5 1.5 0 0 0 41 28h-7a1.5 1.5 0 0 0-1.5 1.5v3A1.5 1.5 0 0 0 34 34h7a1.5 1.5 0 0 0 1.5-1.5zM31.5 29.5A1.5 1.5 0 0 0 30 28h-7a1.5 1.5 0 0 0-1.5 1.5v3A1.5 1.5 0 0 0 23 34h7a1.5 1.5 0 0 0 1.5-
+- M44.334 8.73v10.46h1.66V8.73zM44.034 5.45c0 .6.5 1.1 1.1 1.1s1.1-.5 1.1-1.1-.5-1.1-1.1-1.1-1.1.5-1.1 1.1
+- M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z
+- M47.58 22.72 30.64 51a4 4 0 0 0 3.42 6h33.88a4 4 0 0 0 3.42-6L54.42 22.72a4 4 0 0 0-6.84 0Z
+- M48.412 14.05c0 3.06 2.14 5.32 5.12 5.32s5.16-2.18 5.16-5.34v-.16c0-3.14-2.18-5.32-5.14-5.32s-5.14 2.2-5.14 5.34zm8.56 0c0 2.36-1.32 3.94-3.42 3.94-2.12 0-3.42-1.56-3.42-3.94v-.16c0-2.4 1.32-3.96 3.42
+- M5 1.5V4M11 1.5V4
+- M5 12h14
+- M5 15.8333C6.38071 15.8333 7.5 14.714 7.5 13.3333C7.5 11.9526 6.38071 10.8333 5 10.8333C3.61929 10.8333 2.5 11.9526 2.5 13.3333C2.5 14.714 3.61929 15.8333 5 15.8333Z
+- M5 15.833a3.333 3.333 0 0 1-.832-6.562l-.001-.104A5.833 5.833 0 0 1 15.8 8.535a3.752 3.752 0 0 1-1.216 7.298z
+- M5 15.833a3.333 3.333 0 0 1-.833-6.562v-.105a5.833 5.833 0 0 1 11.632-.631 3.752 3.752 0 0 1-1.216 7.298z
+- M5 15.833c0 .917.75 1.667 1.667 1.667h6.666c.917 0 1.667-.75 1.667-1.667v-10H5zM6.667 7.5h6.666v8.333H6.667zm6.25-4.167-.834-.833H7.917l-.834.833H4.167V5h11.666V3.333z
+- M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1
+- M5 19L19 5
+- M5 66v12.6c0 2.24 0 3.36.436 4.216a4 4 0 0 0 1.748 1.748C8.04 85 9.16 85 11.4 85h55.2c2.24 0 3.36 0 4.216-.436a4 4 0 0 0 1.748-1.748C73 81.96 73 80.84 73 78.6V66
+- M5.333 14h5.334M8 11.333V14M2.667 2h10.666c.737 0 1.334.597 1.334 1.333V10c0 .736-.597 1.333-1.334 1.333H2.667A1.333 1.333 0 0 1 1.333 10V3.333C1.333 2.597 1.93 2 2.667 2
+- M5.5 10.25L9 7.25L5.75 4
+- M5.7269 14.2731L6.50682 13.4932
+- M5.7269 5.72656L6.50682 6.50649
+- M5.8 17.2H14
+- M51 15c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28m-2.944 4.566a6 6 0 0 0-2.186 2.117L28.908 50a6 6 0 0 0 5.13 9h33.924a6 6 0 0 0 5.13-9L56.13 21.683a6 6 0 0 0-8.074-2.11
+- M51 15c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28m0 16c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11
+- M51 33v8
+- M51 40v2
+- M51 42h.01
+- M51 49h.01
+- M51 67a23.93 23.93 0 0 1-16.973-7.031M51 19c6.629 0 12.63 2.688 16.974 7.033
+- M52 16a1.5 1.5 0 0 0 1.5 1.5h7A1.5 1.5 0 0 0 62 16v-3a1.5 1.5 0 0 0-1.5-1.5h-7A1.5 1.5 0 0 0 52 13zM52 23a1.5 1.5 0 0 0 1.5 1.5h7A1.5 1.5 0 0 0 62 23v-3a1.5 1.5 0 0 0-1.5-1.5h-7A1.5 1.5 0 0 0 52 20z
+- M52 19.5a1.5 1.5 0 0 0 1.5 1.5h7a1.5 1.5 0 0 0 1.5-1.5v-3a1.5 1.5 0 0 0-1.5-1.5h-7a1.5 1.5 0 0 0-1.5 1.5z
+- M55 5h25.2c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C93 11.08 93 13.32 93 17.8V81a4 4 0 0 1-4 4v7.6c0 2.24 0 3.36-.436 4.216a4 4 0 0 1-1.748 1.748C85.96 99 84.84 99 82.6 99H55
+- M58.667 32c0 14.727-11.939 26.666-26.666 26.666H8.275c-1.146 0-1.758-1.35-1.003-2.212l5.364-6.121A26.58 26.58 0 0 1 5.334 32c0-14.728 11.94-26.667 26.667-26.667S58.667 17.273 58.667 32
+- M59 70H36M89 85H69
+- M6 12L10 16L18 7
+- M6 17a6 6 0 1 1 12 0 6 6 0 0 1-12 0
+- M6 21a2 2 0 1 1 4 0v1a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1z
+- M6 3v14l11-7z
+- M6 4v2m0 2h.005m-.86-6.57L.91 8.5a1 1 0 0 0 .855 1.5h8.47a1 1 0 0 0 .855-1.5L6.855 1.43a1 1 0 0 0-1.71 0
+- M6 6a4 4 0 0 1 4-4h14l10 10v22a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z
+- M6 6L18 18
+- M6 7h2M16 7h2M16 12h2M16 17h2M6 12h2M6 17h2
+- M6 8V6m0-2h.005M11 6A5 5 0 1 1 1 6a5 5 0 0 1 10 0
+- M6 9L12 15L18 9
+- M6.167 11A5.833 5.833 0 0 1 12 5.165m3.75 2.083L12 11m8.334 0a8.333 8.333 0 1 1-16.667 0 8.333 8.333 0 0 1 16.667 0m-7.5 0a.833.833 0 1 1-1.667 0 .833.833 0 0 1 1.667 0
+- M6.5 9h1.667m0 0H21.5M8.167 9v11.667a1.667 1.667 0 0 0 1.666 1.667h8.334a1.667 1.667 0 0 0 1.666-1.667V9zm2.5 0V7.334a1.667 1.667 0 0 1 1.666-1.667h3.334a1.667 1.667 0 0 1 1.666 1.667V9
+- M6.667 17.5h6.666M10 14.167V17.5m-6.667-15h13.334c.92 0 1.666.746 1.666 1.667V12.5c0 .92-.746 1.667-1.666 1.667H3.332c-.92 0-1.667-.746-1.667-1.667V4.167c0-.92.747-1.667 1.667-1.667Z
+- M6.667 8.667a3.333 3.333 0 0 0 5.026.36l2-2A3.333 3.333 0 0 0 8.98 2.314l-1.147 1.14m1.5 3.88a3.333 3.333 0 0 0-5.026-.36l-2 2a3.333 3.333 0 0 0 4.713 4.713l1.14-1.14
+- M6.833 14.5v-1.333a1.333 1.333 0 0 1 1.334-1.333h4a1.334 1.334 0 0 1 1.333 1.333V14.5m-1.334-7.333a2 2 0 1 1-4 0 2 2 0 0 1 4 0
+- M6.837 12.501h8.333m1.663 5H5.167c-.92 0-1.667-.746-1.667-1.666V4.168c0-.92.746-1.667 1.667-1.667h11.666c.92 0 1.667.746 1.667 1.667v11.667c0 .92-.746 1.666-1.667 1.666m-1.663-3.334v-3.333H6.837v3.334
+- M60 0H4a4 4 0 0 0-4 4v28a4 4 0 0 0 4 4h56a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4
+- M62 16.5a1.5 1.5 0 0 0-1.5-1.5h-7a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5h7a1.5 1.5 0 0 0 1.5-1.5z
+- M7 1.167v11.666M1.167 7h11.666
+- M7 14H5v5h5v-2H7zM14 17h3v-3h2v5h-5zM14 7V5h5v5h-2V7zM7 10H5V5h5v2H7z
+- M7 23V9C7 7.89543 7.89543 7 9 7H12.7574C13.2878 7 13.7965 7.21071 14.1716 7.58579L14.4142 7.82843C15.1644 8.57857 16.1818 9 17.2426 9H23C24.1046 9 25 9.89543 25 11V23C25 24.1046 24.1046 25 23 25H9C7.8
+- M7.001 1v20m10-20v20m-15-10h20m-20-5h5m-5 10h5m10 0h5m-5-10h5M4.181 1h15.64a2.18 2.18 0 0 1 2.18 2.18v15.64a2.18 2.18 0 0 1-2.18 2.18H4.181a2.18 2.18 0 0 1-2.18-2.18V3.18A2.18 2.18 0 0 1 4.181 1
+- M7.11 3.934 4.77 6.275a.71.71 0 0 1-1.007 0L1.422 3.934
+- M7.334 19h10m-5-8V5m0 0-3 3m3-3 3 3m-10-7h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-14a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3
+- M7.39 8.778 4.61 6l2.78-2.777
+- M7.5 12.5L12 8L7.5 3.5
+- M7.5 15V4.167l10-1.667v10.833M7.5 15a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m10-1.667a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0
+- M7.5 15V4.167l10-1.667v3.333M7.5 15a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0
+- M7.5 15V4.167l10-1.667v4.167M7.5 15a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m6.667-2.5v5m3.333-5v5
+- M7.5 17.5H2.5M2.5 17.5V12.5M2.5 17.5L8.33333 11.6667
+- M7.6 11.332A1 1 0 0 0 8.4 9.5zM4.8 9.12a1 1 0 0 0 .398 1.96zM6 11c.57 0 1.111.119 1.6.332L8.4 9.5A6 6 0 0 0 6 9zm-.801.08q.388-.079.801-.08V9q-.615 0-1.199.12z
+- M7.71 8.23l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75L1 11.98l3.75-3.75L1 4.48 2.48 3l3.75 3.75L9.98 3l1.48 1.48-3.75 3.75z
+- M7.75 16.25L16.25 7.75
+- M7.833 12.833a.833.833 0 1 0 0-1.666.833.833 0 0 0 0 1.666m7.5-3.333a.833.833 0 1 0 0-1.667.833.833 0 0 0 0 1.667m-5-.833a.833.833 0 1 0 0-1.667.833.833 0 0 0 0 1.667
+- M7.875 0h-1.75v6.125H0v1.75h6.125V14h1.75V7.875H14v-1.75H7.875z
+- M7.925 23.504h11.206
+- M7.993 15.002V4.169l10-1.667v10.833m-10 1.667a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m10-1.667a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0
+- M7.999 8.668a.667.667 0 1 0 0-1.333.667.667 0 0 0 0 1.333M7.999 4.001a.667.667 0 1 0 0-1.333.667.667 0 0 0 0 1.333M7.999 13.335a.667.667 0 1 0 0-1.334.667.667 0 0 0 0 1.334
+- M75 97h12v.4c0 .56 0 .84-.109 1.054a1 1 0 0 1-.437.437C86.24 99 85.96 99 85.4 99h-8.8c-.56 0-.84 0-1.054-.109a1 1 0 0 1-.437-.437C75 98.24 75 97.96 75 97.4z
+- M8 10.667V8.001m0-2.667h.007m6.66 2.667A6.667 6.667 0 1 1 1.333 8a6.667 6.667 0 0 1 13.334 0
+- M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4
+- M8 13.333h6m-12 0h1.116c.326 0 .49 0 .643-.037q.205-.049.385-.16c.135-.082.25-.197.48-.428L13 4.333a1.414 1.414 0 1 0-2-2l-8.375 8.375c-.23.231-.346.346-.429.48q-.11.181-.16.386C2 11.728 2 11.891 2 12
+- M8 14.665A6.667 6.667 0 1 0 8 1.332a6.667 6.667 0 0 0 0 13.333
+- M8 14.667A6.667 6.667 0 1 0 8 1.333a6.667 6.667 0 0 0 0 13.334
+- M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Z
+- M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58
+- M8 16H3v5
+- M8 19h2v-5H5v2h3zM19 16h-3v3h-2v-5h5zM19 8v2h-5V5h2v3zM8 5h2v5H5V8h3z
+- M8 23h8M12 15v8M23 15H1V1h22z
+- M8 2v4M16 2v4
+- M8 3.333v9.334M3.333 8h9.333
+- M8 3.333v9.334M3.334 8h9.333
+- M8 3.334v9.333M3.334 8.001h9.333
+- M8 3.5c-3.5 0-6.5 3-7 4.5.5 1.5 3.5 4.5 7 4.5s6.5-3 7-4.5c-.5-1.5-3.5-4.5-7-4.5
+- M8 3v10M3 8h10
+- M8 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1
+- M8 4v4l2.667 1.334m2.047-6.048A6.667 6.667 0 1 1 8 1.333
+- M8 5.333V8m0 2.666h.006M6.86 1.906l-5.647 9.427a1.334 1.334 0 0 0 1.14 2h11.293a1.332 1.332 0 0 0 1.14-2L9.14 1.906a1.333 1.333 0 0 0-2.28 0
+- M8 6L8 18
+- M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2
+- M8 7.66v2.667m.576-7.003 6.177 10.67a.667.667 0 0 1-.577 1H1.822a.667.667 0 0 1-.577-1l6.177-10.67a.667.667 0 0 1 1.154 0
+- M8.125 1.875L1.875 8.125
+- M8.24 8.19C8.38 7.78 8.66 7.44 9.03 7.23C9.4 7.01 9.84 6.93 10.26 7C10.68 7.07 11.06 7.29 11.34 7.62C11.61 7.95 11.76 8.36 11.76 8.79152C11.76 10 10 10.6 10 10.6V10.83
+- M8.333 10.834a4.166 4.166 0 0 0 6.284.45l2.5-2.5a4.167 4.167 0 0 0-5.892-5.892L9.792 4.317m1.875 4.85a4.167 4.167 0 0 0-6.284-.45l-2.5 2.5a4.167 4.167 0 0 0 5.892 5.891l1.425-1.424
+- M8.5 13.3333L17.5 13.3333
+- M8.5 3.333v9.334M3.833 8h9.334
+- M8.5 3.5L4 8L8.5 12.5
+- M8.5 48.5h16A7.5 7.5 0 0 1 32 56v16a7.5 7.5 0 0 1-7.5 7.5h-16A7.5 7.5 0 0 1 1 72V56a7.5 7.5 0 0 1 7.5-7.5Z
+- M8.5 6v2.667m0 2.666h.007m6.48.667L9.653 2.667a1.333 1.333 0 0 0-2.32 0L2 12a1.333 1.333 0 0 0 1.167 2h10.666a1.333 1.333 0 0 0 1.154-2
+- M8.667 8.667h6.666M8.667 12H12m7.5 2.5a1.666 1.666 0 0 1-1.667 1.667h-10L4.5 19.5V6.167A1.667 1.667 0 0 1 6.167 4.5h11.666A1.666 1.666 0 0 1 19.5 6.167z
+- M8.667 8a.667.667 0 1 1-1.333 0 .667.667 0 0 1 1.333 0
+- M8.667 8a1.333 1.333 0 1 1 2.666 0 1.333 1.333 0 0 1-2.666 0
+- M8.945 3.514a1.49 1.49 0 0 0-1.49-1.49H1.49A1.49 1.49 0 0 0 0 3.513v4.97c0 .824.667 1.491 1.49 1.491h5.964a1.49 1.49 0 0 0 1.491-1.49z
+- M81 15a6 6 0 1 1 12 0 6 6 0 0 1-12 0Z
+- M87 15h.01
+- M87 15v33.5
+- M9 0H7v7H0v2h7v7h2V9h7V7H9z
+- M9 11v2
+- M9 13C9.79952 13.6224 10.8498 14 12 14C13.1502 14 14.2005 13.6224 15 13
+- M9 13H23C24.1046 13 25 13.8954 25 15V23C25 24.1046 24.1046 25 23 25H9C7.89543 25 7 24.1046 7 23V15C7 13.8954 7.89543 13 9 13Z
+- M9 14 4 9l5-5
+- M9 14v-4H7v4H5a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2z
+- M9 18V5l12-2v4M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0
+- M9 3H7v4H3v2h4v4h2V9h4V7H9z
+- M9 3v18M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2
+- M9 9.01953V9M15 9.01953V9
+- M9.25 17.25L5.5 17.25
+- M9.334 8a1.333 1.333 0 1 1-2.667 0 1.333 1.333 0 0 1 2.667 0
+- M9.5 17V6.167l10-1.667v10.833M9.5 17a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m10-1.667a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0
+- M9.5 17V6.167l10-1.667v3.333M9.5 17a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0
+- M9.5.5h6v6M9 3.5H2.5v10h10V7M15.5.5l-8 8
+- M9.757 12.457a1.79 1.79 0 0 1 1.786 1.786v4.47A1.79 1.79 0 0 1 9.757 20.5a1.79 1.79 0 0 1-1.785-1.786v-4.47a1.79 1.79 0 0 1 1.785-1.787m-2.686 1.786a1.79 1.79 0 0 1-1.785 1.785A1.79 1.79 0 0 1 3.5 14.
+- M9.758 7.972a1.79 1.79 0 0 1 1.785 1.786 1.79 1.79 0 0 1-1.785 1.785H5.286A1.79 1.79 0 0 1 3.5 9.758a1.79 1.79 0 0 1 1.786-1.786zM9.757 3.5a1.79 1.79 0 0 1 1.786 1.786v1.785H9.757a1.79 1.79 0 0 1-1.78
+- M9.99935 10.8334C10.4596 10.8334 10.8327 10.4603 10.8327 10C10.8327 9.53978 10.4596 9.16669 9.99935 9.16669C9.53911 9.16669 9.16602 9.53978 9.16602 10C9.16602 10.4603 9.53911 10.8334 9.99935 10.8334Z
+- M9.99999 12.7082C11.4958 12.7082 12.7083 11.4956 12.7083 9.99984C12.7083 8.50407 11.4958 7.2915 9.99999 7.2915C8.50422 7.2915 7.29166 8.50407 7.29166 9.99984C7.29166 11.4956 8.50422 12.7082 9.99999 12
+- M97 61v20c0 5.6 0 8.4-1.09 10.54a10 10 0 0 1-4.37 4.37C89.4 97 86.6 97 81 97H21c-5.6 0-8.4 0-10.54-1.09a10 10 0 0 1-4.37-4.37C5 89.4 5 86.6 5 81V61
+- Mac
+- Mac OS
+- Macao SAR China
+- Machine Learning
+- Macie
+- Macintosh
+- Madagascar
+- Magenta
+- Magento
+- Magic magnet main radius
+- Magic radius padding
+- Magic radius padding (adds padding and gap if radius > 0)
+- Main
+- Main fixed position
+- Main padding, %
+- Main position mode
+- Main radius, %
+- Main scale, %
+- Main shape
+- Main store initialization finished
+- Main store preloading finished
+- Main-to-aside size ratio. For: HALF_SCREEN
+- Maintainer
+- Major League Gaming
+- Make sure it's properly connected and available to the browser.
+- Make sure it's properly connected and not used by another application.
+- Make sure it's properly connected. Still doesn't work? Please, contact our support.
+- Make sure you have a valid link
+- Malawi
+- Malaysia
+- Maldives
+- Mali
+- Malta
+- Manage MCP & Webhooks
+- Manifest
+- Manual
+- Manufacturer
+- Map
+- mapStream method is deprecated. Please use mapTrack instead.
+- Mar
+- Marathon
+- March
+- Market
+- Marketing
+- Marketplace
+- Marketplace Catalog
+- Marketplace Commerce Analytics
+- Martinique
+- Mask feather
+- Mask threshold
+- Masked Element
+- Matcher
+- Material
+- Material: '${t}' is not a property of THREE.${this.type}.
+- Material: parameter '${t}' has value of undefined.
+- Mauritania
+- Mauritius
+- Max
+- Max buffer size
+- Max columns
+- Max CSS variable fallback depth detected in property "${e}". This may indicate a circular fallback dependency.
+- Maximize
+- Maximum
+- Maximum age in seconds for cached content. Set to 0 to always fetch fresh content.
+- Maximum characters per result.
+- Maximum link length is %s characters
+- Maximum name length is %s characters
+- Maximum number of results to return (1-100, default: 10).
+- Maximum number of results to return (1-20). Defaults to 10 if not specified.
+- Maximum number of search results to return (1-20, default: 10)
+- Maximum number of tokens to extract per search result page (256-2048, default: 2048)
+- Maximum text length is %s characters
+- Maximum title length is %s characters
+- Maximum total characters across all results.
+- Maximum total tokens across all search results (default: 25000, max: 1000000)
+- Maximum URL length is %s characters
+- May
+- Mayotte
+- MCP Connected
+- MCP Connecting...
+- MCP Connection
+- MDAT length must not be zero
+- Medium
+- Medium (recommended)
+- Meet Edit Mode
+- Meizu
+- Members
+- Memory
+- Mentions
+- Menu
+- Mesh
+- Meta
+- Metadata
+- Method
+- Metric
+- Metrics
+- Mexico
+- Mgn
+- Min
+- Minecraft Boxed
+- Minecraft Compact
+- Mini animate() doesn't support "type" as a string.
+- Minimal House
+- Minimize
+- Minimum
+- Minutes
+- Missing
+- Missing apiKey to enable trace before connection establishment
+- Missing arguments
+- Missing attribute name '${t}={index}' on measured element.
+- Missing credentials
+- Missing decryption data on fragment in onKeyLoading
+- Missing parameter name at ${r}
+- Missing pattern at ${r}
+- Missing required key '
+- Missing token
+- Missing URL entry
+- Mixcloud
+- Mixed
+- Mixer
+- Mixer limit:
+- MMM d
+- MMM d h:mm:ss a
+- MMM d・h:mm a 
+- MMM d, EEEE・h:mm a
+- MMM d, y
+- MMM dd, yyyy • hh:mm:ss a
+- MMMM do, y
+- Mobcrush
+- Mobile
+- Mobile Analytics
+- Mobile and desktop formats at the same time
+- Mobile Safari
+- Mode
+- Mode preset: "one-shot" for comprehensive results with longer excerpts (default), "agentic" for concise, token-efficient results for multi-step workflows.
+- Mode Switch Clicked
+- Model
+- Model not found
+- Model tried to call unavailable tool '${e}'. ${void 0===t?"No tools are available.":
+- Module
+- Module 
+- Module with namespace "
+- ModuleFactory not set.
+- Moldova
+- Mon
+- Monaco
+- Monday
+- Mongolia
+- Monitor
+- Monitor 📈
+- Monitored
+- Monitoring
+- Monitors
+- Monocle 3.5 for macOS
+- Montenegro
+- Month
+- Monthly
+- Montserrat
+- More
+- More details:
+- Morocco
+- Motion
+- Motorola
+- Move layer down
+- Move layer up
+- Moz
+- Mozambique
+- Mpeg
+- MPEG-TS PMT found at 
+- MPEG2-TS detected but first sync word found @ offset 
+- MultiRegionEnabled is no longer returned by ListEventDataStores
+- Multistreaming
+- Multistreaming 
+- Municipality
+- Must be a Buffer
+- Must be lower case
+- Must include `key` or `index` for nested validations
+- Must provide either a keypoint or a scribble.
+- Mustache
+- Mutable
+- Mux
+- Myanmar (Burma)
+- Name
+- Name labels
+- Name labels updated
+- Name your folder
+- Names
+- Nameserver
+- Nameservers
+- Namespace
+- Namespace must be array-like (16 iterable integer values, 0-255)
+- Namibia
+- Natural-language web search query. This is required.
+- Nature
+- Nauru
+- Naver TV
+- Nearest
+- Nebula
+- Necessary
+- Need a new link?
+- Need more than %count viewers?
+- Need more?
+- Negated
+- Negative
+- Neighborhood
+- Nepal
+- Neptune
+- Netherlands
+- Netscape
+- Network connection: %s/10
+- Neutral
+- New
+- New attendee
+- New Caledonia
+- New email
+- New Experience Clicked
+- New folder
+- New link created
+- New password
+- new RTCPeerConnection called.
+- New selected font family do not match with expected one
+- New to Restream?
+- New VirtualEvent
+- New widget
+- New Year
+- New York weather widget
+- New Zealand
+- News
+- Next
+- Next charge
+- Next payment $%s on %s.
+- Next question
+- Next time, try to:
+- Next: Customize
+- Next: Select products
+- NextMarker || Contents[-1].Key
+- Nicaragua
+- Nice
+- Nice gameplay! 🎮
+- Niconico
+- Niger
+- Nigeria
+- Nimble
+- Nimo TV
+- Niue
+- No access to ETag property on response.
+- No active ${e} connection: No suitable candidate pair
+- No active take to handle data chunk
+- No Activity
+- No AI spend to show.
+- No attendees are here yet.
+- No auto-charges
+- No category found
+- No country found
+- No credentials to load
+- No data
+- No data schema found for data part ${r}
+- No dataset found at index 
+- No existing client found, added new one
+- No matches for "@$query"
+- No matching parameters: using fallback
+- No mutationFn found
+- No object generated: could not parse the response.
+- No object generated: response did not match schema.
+- No object generated.
+- No output generated.
+- No payment method
+- No pre-roll ads
+- No products found
+- No products found in the given store
+- No providers
+- No QueryClient set, use QueryClientProvider to set one
+- No reason
+- No remaining chunks for take, deleting take
+- No response from the worker in time
+- No response received
+- No results for 
+- No services defined on 
+- No storage available for session. We will not send any data.
+- No tiers found
+- No token to load
+- No tool invocation found for approval ID "${e}".
+- No tool invocation found for tool call ID "${e}".
+- No tool schema found for tool part ${n}
+- No tools available
+- No tools found
+- No tools match "/$query"
+- No valid elements provided.
+- No wasm multistream support detected: ensure dependency inclusion of :gl_graph_runner_internal_multi_input target
+- No, go back
+- No, thanks
+- Nokia
+- None
+- None of the above
+- Nonolive
+- Normal
+- North Macedonia
+- Norway
+- Not
+- Not available
+- Not Available
+- Not found
+- Not seeing it?
+- Not sure?
+- Nothing to update: provide a new name and/or URL
+- Notification
+- Notifications
+- Notifications Alt+T
+- Notify
+- Nov
+- November
+- NOW PLAYING
+- NT 10.0
+- NT 3.11
+- NT 4.0
+- NT 5.0
+- NT 5.1
+- NT 5.2
+- NT 6.0
+- NT 6.1
+- NT 6.2
+- NT 6.3
+- NT 6.4
+- Nudging 'currentTime' from 
+- Null
+- Nullable
+- Number
+- Number must be ${e.exact?"exactly equal to ":e.inclusive?"greater than or equal to ":"greater than "}${e.minimum}
+- Number must be ${e.exact?"exactly":e.inclusive?"less than or equal to":"less than"} ${e.maximum}
+- Number must be a multiple of ${e.multipleOf}
+- Number must be finite
+- Number(min 0)
+- Nvidia
+- Object
+- Object is not iterable.
+- Object3D.add: object can't be added as a child of itself.
+- Object3D.add: object not an instance of THREE.Object3D.
+- Objects
+- Oct
+- October
+- Odnoklassniki, OK.ru, is a social network service for classmates and old friends. It is popular in the Russian Federation and former Soviet Republics.
+- Off
+- Offset
+- Offset (sec)
+- Oh! We have not expected it will take this long. Finishing soon
+- Ok, got it
+- Old Experience Clicked
+- Old password
+- Oman
+- Omics
+- On request
+- Once you delete your account, there is no going back. Please be certain.
+- Online
+- Only return results from these domains.
+- Oops! That page doesn’t exist.
+- Opacity
+- Open in Browser
+- Open in new tab
+- Open in Safari
+- Open link in new tab
+- Open references
+- Open Safari.
+- Open the widgets tab
+- Open this page on your laptop or desktop computer.
+- Open tools
+- OpenGL ES
+- Opening oauth
+- Opera
+- Operation
+- Operations
+- Operator
+- Opus
+- Orange
+- Order
+- Organization forbidden. Please contact your admin.
+- Organization: %s
+- OrganizationEnabled is no longer returned by ListEventDataStores
+- Organizations
+- OrganizationsBackendAPIClient is not provided
+- Origin
+- Origins
+- Otf
+- Other
+- Other answer
+- Others
+- Our Customers – Restream
+- Out of range index
+- Out-of-order effect
+- Outgoing
+- Outlet
+- Outpost resource in ARN is not DNS compatible. Got 
+- Outposts
+- Outposts ARN should have two resources outpost/{outpostId}/accesspoint/{accesspointName}
+- Output
+- Output aspect ratio. Defaults to 1:1 which suits most stickers / icons.
+- Output Detail
+- Outputs
+- outside your region.
+- Overlap scale, %
+- Override
+- Override default prefix
+- Override on
+- Overrides
+- Overview
+- Overwatch Boxed
+- Overwatch Compact
+- Overwrite
+- Owner
+- Owners
+- Packages
+- Pad
+- Padding
+- Padding bottom, px
+- Padding left, px
+- Padding right, px
+- Padding top, px
+- Page
+- Pages
+- Paid members
+- Paid Tiers
+- Paired
+- Pairs
+- Pakistan
+- Palestinian Territories
+- Panama
+- Panorama
+- Papr Graph
+- Papua New Guinea
+- Paraguay
+- Parameter
+- Parameter 
+- Parameter 'url' must be a string, not 
+- parameter 1 is not of type 'string'.
+- Parameters
+- Parent has no access to pairs
+- Parents
+- Parquet
+- Parser
+- Part
+- Part ${e||"unknown"} has already been completed
+- Partitions
+- Parts
+- Passphrase
+- Password
+- Password details have been sent to %s. Please check your inbox and spam folders.
+- Password is required
+- Password is to short.
+- Password is too short
+- Password recovery
+- Password Recovery – Restream
+- Password required
+- Password was successfully changed. You will be redirected to the login page in 5 seconds
+- Passwords
+- Passwords do not match
+- Passwords does not match.
+- Passwords should be at least 6 characters long.
+- Paste
+- Paste in your Producthunt link
+- Paste the link in your address bar.
+- Patch
+- Patches
+- Path
+- Paths
+- Patreon
+- Pattern
+- Pause
+- Pause animations
+- Paused
+- Paused consumer
+- Pausing
+- Pay
+- Pay Annually
+- Pay Monthly
+- Payer
+- Payload
+- Payment
+- Payment details
+- Payment Details
+- Payment information
+- Payment Information
+- Payment method
+- Payment period
+- Payment required
+- PaymentIntent not found
+- Payments
+- PCAP Player
+- PCI compliance for Logs is only available for Datadog organizations in the US1 site. Default intake will be used.
+- Pending
+- People
+- People assignment mode
+- Percentage
+- Performance Warning
+- Performing refresh token request...
+- Performing sensitive operation.
+- Period
+- Periscope
+- Periscope by Twitter
+- Periscope limit:
+- Permanent
+- Permanently delete?
+- Persistent
+- Person
+- Personal
+- Personal profile
+- Personalize
+- Personalize Runtime
+- Persons
+- Peru
+- Picarto
+- Picarto can not decrypt refresh token
+- Picarto user access token is expired
+- Pick flow — ALWAYS run this after `generate_music` resolves, NEVER auto-pick:
+- Pick this
+- Picked up draggable item 
+- Pitcairn Islands
+- Pitch
+- Place
+- Placeholder
+- Placeholders
+- Placement
+- Plaintext
+- Play
+- Player Controls
+- Players
+- Playhead still not moving while enough data buffered @
+- Playing
+- Please check again later.
+- Please check back later for your melodic fix.
+- Please check back later to see if someone opts out.
+- Please check your email and confirm.
+- Please check your email for confirmation of account removal.
+- Please check your inbox to confirm your email address. Didn't get an email? Click "Resend."
+- Please don't close this page. This will only take a few minutes.
+- Please enter a valid US ZIP code (e.g., 12345 or 12345-6789)
+- Please enter email address.
+- Please enter the name
+- Please enter title
+- Please enter your 6-digit code or a recovery code.
+- Please enter your email and password
+- Please enter your postal code.
+- Please enter your product or store link
+- Please fill all the fields.
+- Please fill in all the fields.
+- Please let us know what wasn't working, so we can improve our service.
+- Please limit your title to ${e} characters
+- Please pay for the next month or remove
+- Please select at least one tier
+- Please select your country.
+- Please select your store locale
+- Please select your store locale:
+- Please use the generic tagging API ListTagsForResource
+- Please use the generic tagging API model ListTagsForResourceRequest and ListTagsForResourceResponse
+- Please use the generic tagging API model TagResourceRequest
+- Please use the generic tagging API model UntagResourceRequest
+- Please use the generic tagging API TagResource
+- Please use the generic tagging API UntagResource
+- Please verify your email
+- Please wait a moment
+- Please, enter your username
+- Plurai
+- Podcast & Talk Show
+- Point
+- Pointer
+- Poland
+- Police DO NOT CROSS animated stripe
+- Policies
+- Policy
+- Polly
+- Pollyreach
+- Polygon
+- Popover
+- Popper
+- Port
+- Portal
+- Portrait
+- Portrait Customization Coming Soon
+- Portrait Mode Modal Clicked
+- Portrait Mode Modal Closed
+- Portrait Mode Modal Shown
+- Portrait orientation
+- Portugal
+- Pose
+- Position
+- Position as [x, y] relative coordinates (0–1, where [0,0] is top-left)
+- Position mode
+- Position picker
+- Positive
+- Post Checkout Survey Shown
+- Post Checkout Survey Submitted
+- Post to
+- Pre Roll Selected
+- Precedence
+- Precision
+- Precision Menu
+- Predicate
+- Predicates
+- Predict
+- Prediction
+- Predictions
+- Predictors
+- Prefix
+- Preinitialized
+- Preload
+- Preloaded for main store initialization
+- Preloaded on preview initialization
+- Preloading main store
+- Premier
+- Preparing questions…
+- Preparing to fetch webpage…
+- Preparing to use {{toolName}}…
+- Presence
+- Present
+- Preset
+- Presets
+- Presigning does not support expiry time greater than a week with SigV4 signing.
+- Presigning only supports S3 or SigV4 signing.
+- Press %s
+- Press Kit – Restream
+- Presto
+- Preview
+- Preview changes
+- Preview Element Edit Clicked
+- Preview Element Hide Clicked
+- Preview Element Replace Clicked
+- Preview Element Show Clicked
+- Preview initialization finished
+- Preview Play Again Clicked
+- Preview scale pad
+- Previews
+- Previous question
+- Price
+- Price Unavailable
+- Prices
+- Pricing
+- Pricing Contact Us Clicked
+- Primary
+- Primary text
+- Principal
+- Principals
+- Priority
+- Priority support
+- Priority Support
+- Privacy Policy
+- Privacy Policy – Restream
+- Privileged
+- Process
+- Processes
+- Processing
+- Processors
+- Produce
+- Produced
+- Product
+- Product changes
+- Product hidden
+- Product link
+- Product List Viewed
+- Product title
+- Product updates
+- Producthunt link
+- Products
+- Profanity
+- Professional
+- Professional features, plus
+- Professional features, plus:
+- Profile
+- Profile picture
+- Profiler
+- Progress
+- Progressing
+- Projection
+- Promise
+- Promise returned from resolveSync
+- Promise was rejected with a falsy value
+- Promo code
+- Promo code is already in use. Please enter another promo code.
+- Promo code is not valid. Please enter another promo code.
+- Promo codes applications are limited to one per account
+- Promotions
+- Propagation
+- Properties
+- Property
+- PropertyBinding: Can not bind to bones as node does not have a skeleton.
+- PropertyBinding: Can not bind to material as node does not have a material.
+- PropertyBinding: Can not bind to material.map as node.material does not have a map.
+- PropertyBinding: Can not bind to material.materials as node.material does not have a materials array.
+- PropertyBinding: Can not bind to morphTargetInfluences because node does not have a geometry.
+- PropertyBinding: Can not bind to morphTargetInfluences because node does not have a geometry.morphAttributes.
+- PropertyBinding: Can not bind to objectName of node undefined.
+- PropertyBinding: Trying to bind to objectIndex of objectName, but is undefined.
+- Protection
+- Protection from internet disconnects
+- Protocol
+- Protocols
+- Proton
+- Provided
+- Provided theme "
+- Provided value "
+- Provider
+- Providers
+- Providing
+- Provisioned
+- Proxy
+- Proxy (BETA)
+- PTS rollover detected
+- PUBG Boxed
+- PUBG Compact
+- Public
+- Public page: %s
+- Publish
+- Puerto Rico
+- Pull links (custom amount)
+- Purchase
+- Put
+- Qatar
+- Qualification
+- Qualifications
+- Qualifier
+- Quantile
+- Quantity
+- Quaternion: .setFromEuler() encountered an unknown order: 
+- Queries
+- Query
+- Question
+- Questions
+- Questions prepared
+- Questions time!
+- Queue
+- Queues
+- Quiet
+- Radio
+- Radius
+- Radius, %
+- RAds enabled
+- Rain
+- Ramdisk
+- Range
+- Rate Bad
+- Rate Good
+- Rate limit exceeded
+- Rate limited — slow down
+- Rating is invalid
+- Ratio
+- Ratio, %
+- RawString and String revision type are deprecated, use AppSpecContent type instead.
+- Rbin
+- Re-fetching user: Received ${e.type}
+- Reached max number of ${e}s by minute: ${t}
+- React Components
+- Reacting
+- Readers
+- Reading your link…
+- Reading your product link…
+- Ready
+- Realm
+- Realme
+- Reason
+- Reasoning
+- Reasons
+- Rebooting
+- Rebuilding effects: WebGL context was restored
+- Rec
+- Recall
+- Recaptcha is not initialized
+- Received
+- Received chunk
+- Received falsy value for country
+- Received IceRestart for an unknown transport
+- Received new consumer
+- Received reason code ${e}
+- Received the server from the balancer
+- Received unsupported target result
+- Recipe
+- Recipient
+- Recipients
+- Recommendations
+- Recommended
+- Recommended size: 1920x1080px.
+- Recommended size: 512x512px.
+- Recommended: 2
+- Recover Your Password | Restream
+- Rectangle
+- Recurrence
+- Recursion detected: 
+- Recursive
+- Red
+- Redirect
+- Redirecting to login page
+- Redirecting to login page: Unauthorized
+- Redirecting to pathname on login with Google success
+- Redirecting to root on login with Google success: Redirect pathname not found
+- Redirecting user to log out page
+- Redshift
+- Reduce max buffer length to 
+- Refer a Friend
+- Refer a friend 💰
+- References
+- Referral discount
+- Referral program
+- Referral Program – Restream
+- ReferralsBackendAPIClient is not provided
+- Reflect these in the prompt, not just the user's surface words.
+- Refresh
+- Refresh link
+- Refresh token request already send by other requestee: Adding self to wait list.
+- Refresh token requested
+- Refreshed
+- Refreshing
+- RefreshTokenService: redirect user to login
+- Refunds
+- Regex
+- Region
+- Regions
+- Registered
+- Registering
+- Regular
+- Reinhard
+- Reject
+- Rejects
+- Rekognition
+- Relationships
+- Release
+- Relevance
+- Religion
+- Reloading user: Visibility changed
+- Reloading user: Window focused
+- Remaining chunks exist for take
+- Remove
+- Remove any references to Restream 
+- Remove attendee
+- Remove avatar
+- Remove Card
+- Remove code
+- REMOVE CODE
+- Remove from list?
+- Remove licenses and keys and close session 
+- Remove some placeholders — limit reached
+- Remove, keep placeholder
+- Removed
+- Removed all client consumer
+- Removed consumer
+- Removed stinger
+- Removing
+- Removing all client consumers
+- Removing consumer
+- Rename
+- Renew
+- Renew now to keep access to paid features.
+- Repeat count too high, must be less than 20
+- Replace
+- Replacement
+- Replays
+- Replicas
+- Replications
+- Repository
+- Request
+- Request aborted
+- Request aborted by user
+- Request body must be less than 1 MB
+- Request changes
+- Request generated for key-session "
+- Request timed out
+- Request timeout after 
+- Requested
+- Requesting
+- Requesting AddCameraPlaceholder
+- Requesting AddMediaPlaceholder
+- Requesting PauseLiveStreamRecording
+- Requesting RemoveCameraPlaceholder
+- Requesting RemoveMediaPlaceholder
+- Requesting RestartLiveStreamRecording
+- Requesting ResumeLiveStreamRecording
+- Requesting UpdateRecordingName
+- Requesting UpdateRecordMode
+- Required
+- Required field
+- Required identification header is missing
+- Requirements
+- Requires
+- Reseller
+- Resend
+- Resend confirmation email
+- Reservations
+- Reset
+- Reset changes
+- Reset daily AI-spend limit (BE returns 403 if your account is not staff)
+- Reset daily limit
+- Reset link
+- Reset loading state
+- Reset password
+- Reset Password Clicked
+- Reset prompt
+- Reset size
+- Reset to defaults
+- Reset tool prompts
+- Reset tools
+- Reset zoom level
+- Reset zoom to 100%
+- Resharding
+- Resiliencehub
+- Resize
+- Resize canvas
+- Resolve Issues
+- Resource
+- Resource Groups
+- Resource is not in the state 
+- Resources
+- Response
+- Response body has unexpected format
+- response must be an object that contains a choice value.
+- Response object does not have "read" method
+- Responses
+- Restart
+- Restarted
+- Restarted %s
+- Restarting
+- Restarts
+- Restore
+- Restored
+- Restream
+- Restream Analytics
+- Restream Home
+- Restream Monitor
+- Restream needs access to your
+- Restream Studio
+- Restream supports 2FA by using one-time passwords generated with the <a target="_blank" href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm">TOTP algorithm.</a><br>You can use a
+- Restream user
+- Restream values the privacy of the users who visit and use the Restream Service. Learn how we collect, use and disclose information from and about you.
+- Restream Webinar
+- Restream, Inc.
+- Restrictions
+- Result
+- Results
+- Resume
+- Resume animations
+- Resumed
+- Resumed on click
+- Resuming
+- Resuming suspended connection
+- Retention
+- RetentionPeriod is no longer returned by ListEventDataStores
+- Retry
+- Retry Button Clicked
+- Retry charge
+- Retryable
+- RetryDate reached, switch back to IDLE state
+- Retrying
+- Retrying license request, 
+- Return
+- Return to the original version
+- Reunion
+- Revert
+- Review
+- Reviewer
+- Revision
+- Reward
+- Right
+- Right alignment
+- Right Bottom
+- Right Center
+- Right Sidebar
+- Right Sidebar Button Clicked
+- Right Top
+- RM capability: on
+- Roboto, Open Sans, Segoe UI, sans-serif
+- Role
+- Roles
+- Roll
+- Romania
+- Root
+- Rotate
+- Rotor
+- Round
+- Rounded
+- Route
+- Route 53
+- Route 53 Domains
+- Routes
+- Routing to webinar unavailable page
+- Rows
+- RTCPeerConnection override complete [
+- RTCPeerConnection prefixes override complete
+- Rule
+- Rules
+- Rumble
+- Run
+- Runbooks
+- Running fetch timeout found: cancelling it
+- Runtime
+- Rwanda
+- S3 aborted request
+- Saa
+- Sac
+- Sad
+- Sadly, Studio does not work well with Safari v13.
+- Sadly, this browser does not support Restream Studio
+- Sae
+- Safari
+- Safari doesn't support this feature
+- Safe
+- Safety buffer must be non-negative
+- Sag
+- Sah
+- Sai
+- Saj
+- Sak
+- Sal
+- Sales Tax: 
+- Salt
+- Sam
+- Samoa
+- Sampling
+- Samsung
+- San
+- San Marino
+- São Tomé &amp; Príncipe
+- Sap
+- Saq
+- Sar
+- Sat
+- Saturday
+- Sau
+- Saudi Arabia
+- Sav
+- Save
+- Save password
+- Save to cloud
+- Saving
+- Saving products...
+- Savings
+- Sax
+- Saz
+- Sba
+- Sbd
+- Sbe
+- Sbg
+- Sbh
+- Sbl
+- Sbo
+- Sbp
+- Sbq
+- Sbr
+- Sbs
+- Sbv
+- Sbw
+- Sbx
+- Sca
+- Scale
+- Scale factor, where 1 is the default size
+- Scale, %
+- Scaled
+- scales.${this.id}.ticks.stepSize: ${n} would result generating up to ${t} ticks. Limiting to 1000.
+- Scaling
+- Scb
+- Sce
+- Sch
+- Schema
+- Schemas
+- Scheme
+- Sci
+- Sck
+- Scm
+- Scn
+- Scope
+- Scopes
+- Score
+- Scp
+- Scroll back to top
+- Scroll text across bottom
+- Scs
+- Scv
+- Scw
+- Scy
+- Scz
+- Sdf
+- Sdg
+- Sdh
+- Sdj
+- SDK connection has been rejected - Rating can't be sent. Please check your SDK parameters.
+- SDK connection has been rejected. Rating can't be sent. Please check your SDK parameters.
+- SDK is loaded more than once. This is unsupported and might have unexpected behavior.
+- SDK is not initialized. Use 'init' function first.
+- Sdu
+- Sdw
+- Search
+- Search is available only for public stores.
+- Search products by their name, category or SKU
+- Search query (string) or multiple queries (array of up to 5 strings). Multi-query searches return combined results from all queries.
+- Searched for:
+- Seb
+- Sec
+- Secondary
+- Secondary radius, %
+- Secondary shape
+- Secondary text
+- Seconds
+- Secret
+- Secrets Manager
+- Secure
+- Security review
+- Sed
+- Seek
+- Seems like there are no more seats left
+- Segment
+- Segmentation produced no skin masks
+- Segmenter is not created
+- Segments
+- Sei
+- Sek
+- Sel
+- Select
+- Select a game key
+- Select a service
+- Select all that apply
+- Select All Tiers
+- Select Another Group
+- Select category
+- Select group
+- Select products
+- Select quantity
+- Select region
+- Select tiers
+- Select widgets
+- Select your country
+- Selecting key-system from fragment (sn: 
+- Selecting key-system from session-keys 
+- Selector
+- Send
+- Send annotation data to any URL endpoint when annotations change. Useful for custom integrations.
+- Send Annotations
+- Send backward
+- Send Feedback
+- Send Request
+- Send to back
+- Sender
+- Sending
+- Sending ClientInitialization to SFU
+- Sending data...
+- Sending license request to URL: 
+- Sending request
+- Senegal
+- Sensitive operation finished.
+- Sent
+- Sent chunk for take ${this.activeTake.id} with state ${this.activeTake.state.status}
+- Sentiment
+- Sep
+- September
+- Ser
+- Serbia
+- Serial
+- Serializer
+- Server
+- Server closed connection unexpectedly
+- Servers overloaded
+- Service
+- Service Catalog
+- Service is busy
+- Service must be constructed with `new' operator
+- Service to Restream.io.
+- Services
+- Session
+- Session Replay
+- Sessions
+- Set
+- Set access token
+- Set font
+- Set new max spatial layer
+- Set new password
+- Set position to $position
+- Set stored profile id
+- Set theme
+- Set Up Manually
+- Sets can contain string, number, or binary values
+- Setup
+- Setup guide
+- Setup re-fetch timeout
+- Severe
+- Severity
+- Sex
+- Seychelles
+- Sez
+- Sfa
+- Sfb
+- Sff
+- Sfi
+- Sfm
+- Sfq
+- Sfu
+- Sfw
+- Sfz
+- Sga
+- Sgc
+- Sgd
+- Sge
+- Sgj
+- Sgo
+- Sgp
+- Sgs
+- Sgw
+- Sgy
+- Sha
+- Shadow comparison threw unexpectedly
+- Shadow secondary gateway
+- Shape
+- Shards
+- Sharp
+- Sharpness
+- Shb
+- Shc
+- Shd
+- Shg
+- Shh
+- Shield
+- Shift
+- Shift + Enter for new line
+- Shk
+- Shl
+- Shm
+- Shn
+- Shopify
+- Shortcuts
+- Shortname
+- Show
+- Show everywhere
+- Show landscape preview
+- Show me all features
+- Show more
+- Show portrait preview
+- Show recovery code
+- Show Secret Code
+- Show title
+- Show what’s on your desktop, window, or tab in real time.
+- Shown
+- Showtime
+- Shp
+- Shq
+- Shu
+- Shuffle
+- Shutdown
+- Shutting down...
+- Shx
+- Shy
+- Sia
+- Sid
+- Side alignment. Values: Left, Right. For: HALF_SCREEN, Showtime
+- Sidebar
+- Sidebar Deep Link Opened
+- Sidecar medium not found
+- Sidecar: could not `read` from an `assigned` medium. `read` could be used only with `useMedium`.
+- Sidecar: please provide `sideCar` property to import the right car
+- Siemens
+- Sierra Leone
+- Sign
+- Sign in
+- Sign In Clicked
+- Sign In Requested
+- Sign Out Clicked
+- Sign up
+- Sign Up
+- Sign Up – Restream
+- Sign Up Clicked
+- Sign Up Now
+- Sign Up Requested
+- Signal aborted during DataChannels setup
+- Signature
+- Signed
+- Signed In
+- Signed In Client
+- Signed Up
+- Signed Up Client
+- Signer
+- Signup
+- Signup Attempt
+- Sih
+- Sij
+- Silenced
+- Sim
+- Similarity
+- Simple dark purple-to-navy smooth gradient with a subtle lighter purple glow in the top-left corner.
+- Sinc
+- Singapore
+- Single
+- Single HTML entity.
+- Single offset
+- Single padding
+- Single preview scale
+- Single scale, %
+- Single sign-on (SSO)
+- Sint Maarten
+- Sip
+- Site should be a valid Datadog site. ${o.xG} ${o.fH}/getting_started/site/.
+- Siw
+- Six
+- Six-digit code
+- Six-digit code or recovery code
+- Size
+- size passed to alloc must be a number.
+- Size, %
+- Sja
+- Sjf
+- Sjj
+- Sjk
+- Sjp
+- Sjq
+- Sjv
+- Sjx
+- Sjz
+- Ska
+- Skc
+- Skd
+- Skin mask analysis unavailable
+- Skin segmentation unavailable: no worker support
+- Skip
+- Skip question
+- Skipped
+- Skk
+- Skp
+- Skq
+- Skr
+- Sku
+- Skx
+- Slack
+- Slack town hall
+- Sle
+- Slj
+- Slk
+- Slot
+- Slots
+- Slovakia
+- Slovenia
+- Slow Init Detected
+- Slow Loading Detected
+- Slow Preloading Detected
+- Slow request detected
+- Slow request detected ${l}
+- Slp
+- Slq
+- Slw
+- Small
+- Smashcast
+- Smc
+- Smi
+- Smile
+- Smn
+- Smoothing radius
+- Smoothness
+- Smp
+- Smq
+- Smu
+- Sna
+- Snap
+- Snapshot
+- Snapshots
+- Snd
+- Sne
+- Sng
+- Sni
+- Snn
+- Snowball
+- Snq
+- Snz
+- Soc
+- Social alerts
+- Sockets
+- Sod
+- Soe
+- Sof
+- Software
+- Sog
+- Soj
+- Solaris
+- Solid
+- Somalia
+- Someone purchased the product
+- Something else
+- Something is blocking the connection
+- Something went wrong
+- Something went wrong while loading shop details!
+- Something went wrong while updating shop details!
+- Something went wrong with SSO login. Please contact support.
+- Something went wrong.
+- Something went wrong. Please contact support
+- Something went wrong. We're on it.
+- Son
+- Sony
+- Sor
+- Sorry, nothing yet.
+- Sorry, something went wrong, please try another store
+- Sorry, your code is incorrect.
+- Sorry! You clicked on an expired offer, ⏎ but here is a %d%% off to cover your needs
+- Sorry! You clicked on an expired offer, but you can still get %s with our promo code—%s
+- Sort
+- Sortable
+- South Africa
+- South Georgia and the South Sandwich Islands
+- South Korea
+- South Sudan
+- Space
+- Space for multiple · Enter to confirm · Esc to cancel
+- Spain
+- Spanish
+- Speed
+- Speed test
+- Sph
+- Spill
+- Spl
+- Spooky
+- Spring duration must be 10 seconds or less
+- Spw
+- Sqc
+- Sqk
+- Sql
+- Sqr
+- Sqs
+- Sqt
+- Square
+- Squash
+- Sqv
+- Sqy
+- Srd
+- Sre
+- Sri
+- Sri Lanka
+- Srn
+- SRT and HLS (coming soon)
+- SRT ingest
+- Srv
+- Srx
+- Srz
+- Ssd
+- SSE response body is empty
+- SSE response has no body
+- Ssi
+- Ssn
+- St. Barthélemy
+- St. Helena
+- St. Kitts & Nevis
+- St. Lucia
+- St. Martin
+- St. Pierre & Miquelon
+- St. Vincent & Grenadines
+- Stable identifier for this question. Must be unique within a single ask_questions call. Returned as `questionId` in the answer payload so the model can correlate answers back to the questions it asked
+- Staging
+- Stand Out with Stylish Fonts
+- Standard
+- Standard Definition
+- Standard features, plus
+- Standard features, plus:
+- Starchild 1 by Odyssey
+- Stat
+- State
+- State 
+- State change
+- State changed to ${e.state}
+- State model not found
+- Statement
+- Statements
+- States
+- Static text on preview
+- Statistic
+- Statistics
+- Stats
+- Status
+- Status is no longer returned by ListEventDataStores
+- Statuses
+- Stddev
+- Steam
+- Step
+- Steps
+- Still confused? Check out our Help Center.
+- Storage
+- Storage for ${Xk(e)}
+- Storage Gateway
+- Store name
+- Storing chunk batch
+- Storing final chunk batch
+- Str
+- Strategy
+- Street
+- String
+- String must contain ${e.exact?"exactly":e.inclusive?"at least":"over"} ${e.minimum} character(s)
+- String must contain ${e.exact?"exactly":e.inclusive?"at most":"under"} ${e.maximum} character(s)
+- String or number value expected, got 
+- String value requires balanced quotes, got: 
+- String value requires balanced square brackets and one identifier per pair of brackets, got: 
+- Stringified UUID is invalid
+- Stripe.js not available
+- Studio
+- Studio 
+- Studio finalized
+- Studio in Full HD, 1080p
+- Studio Webinars
+- StudioOnboarding Guide Tooltip Closed
+- StudioOnboarding Guide Tooltip Shown
+- Studios
+- Style
+- Sub
+- Subdivision
+- Subject
+- Submit
+- Submit link
+- Subnet
+- Subnets
+- Substack
+- Succeeded
+- Success
+- Success! Your Stripe token is <span class="token"></span>
+- Successes
+- Successful
+- Suffix
+- Suggestions
+- Sum
+- Summaries
+- Summary
+- Summer sale - 
+- Sun
+- Sunday
+- Sunglasses
+- Suo
+- Super expression must either be null or a function
+- Support
+- Support for SRT and HLS
+- Supported
+- Supported Codecs Gathered
+- Supported formats:
+- Suriname
+- Surname
+- Suspend
+- Suspended
+- Suspended due to inactivity
+- Suspending
+- Suspense
+- Svalbard & Jan Mayen
+- Sweden
+- Swiss
+- Switch
+- Switch account on 
+- Switch mode
+- Switch Now
+- Switch to 720p
+- Switch to a modern browser for the best experience!
+- Switch to dark mode
+- Switch to light mode
+- Switch To Old Experience Disabled
+- Switch to Portrait
+- Switch to Safari
+- Switched to DataChannels
+- Switching to redundant URL-id 
+- Switzerland
+- Sxl
+- Sxy
+- Syb
+- Syd
+- Syf
+- Symbian
+- Symbol
+- Symbol.asyncIterator is not defined.
+- Symbol.iterator is not defined.
+- Symbols left
+- Synchronized with snapshot
+- Synchronous parse encountered promise.
+- Synthetics
+- System
+- System alerts
+- System prompt
+- System prompt here…
+- Syw
+- Szd
+- Tab
+- Table
+- Tag
+- Tagging
+- Tags
+- Tags must be specified as an array; 
+- Taiwan
+- Tajikistan
+- Take has remaining chunks
+- Take not yet completed
+- Takes
+- Tanzania
+- Tapes
+- Target
+- Targeted: %s
+- Targets
+- Tasks
+- Teal & orange
+- Team
+- Team access control
+- Team onboarding
+- Team size
+- Team workspaces
+- Team: 2 total seats
+- Team: 3 total seats
+- Telegram
+- Telemetry
+- Telemetry Usage
+- Tell us a bit...
+- Template
+- Tenancy
+- Term
+- Terminated
+- Terminating
+- TerminationProtectionEnabled is no longer returned by ListEventDataStores
+- Terms
+- Terms and Conditions.
+- Terms of Service
+- Terms of Use – Restream
+- Test
+- Text
+- Textract
+- Texture
+- Texture protection
+- Texture.setValues(): parameter '${t}' has value of undefined.
+- Texture.setValues(): property '${t}' does not exist.
+- Thailand
+- Thank you for the feedback!
+- Thank you for trying Restream. No further action is required.
+- Thank you! You can close this page now.
+- The 'this' value for String.prototype.
+- The "${e}" argument must be of type number. Received type ${typeof t}
+- The "buf1", "buf2" arguments must be one of type Buffer or Uint8Array
+- The "original" argument must be of type Function
+- The "string" argument must be of type string. Received type number
+- The "string" argument must be one of type string, Buffer, or ArrayBuffer. Received type 
+- The "style" attribute requires goog.html.SafeStyle or map of style properties, 
+- The "target" argument must be one of type Buffer or Uint8Array. Received type 
+- The "util.promisify.custom" argument must be of type Function
+- The "value" argument must not be of type number. Received type number
+- The API connection has expired.
+- The arguments to pass to the tool
+- The card does not support the specified currency.
+- The card has been declined for an unknown reason. Please contact your bank for more information.
+- The card has expired. Please try another card.
+- The card has insufficient funds to complete the purchase.
+- The card number is incorrect.
+- The card, or account the card is connected to, is invalid. Please contact your bank for more information. 
+- The code you entered is not valid.
+- The code you entered is not valid. 
+- The CVC number is incorrect.
+- The Dailymotion user is disabled on the Dailymotion side.
+- The Dailymotion user revoked Restream access
+- The data provided has been ${t} as it is over the limit of ${e} characters:
+- The expiration is invalid.
+- The expiration must be a number, received 
+- The expiration year is invalid.
+- The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type 
+- The following text will be added to your tweet: 'Powered by Restream https://restream.io/'
+- The full list of restrictions you may run into is in the "Downgrading" article in our Help Сenter.
+- The graph has more than one ${B}.
+- The last argument must be of type Function
+- The link looks odd. Please make sure it’s valid.
+- The list of tool calls to execute sequentially
+- The loading context changed while buffering fragment 
+- The MP4 demuxer does not support SAMPLE-AES decryption
+- The name of the tool to call
+- The object already contains the key "
+- The passwords don't match.
+- The payment has been declined because the card is reported lost. Please contact your bank for more information.
+- The price difference of
+- The property ${o} of ${n} is required; context will not be sent to the intake.
+- The question text shown to the user.
+- The response body is empty.
+- The term 'Etsy' is a trademark of Etsy, Inc. 
+- The text entered exceeds the maximum length
+- The URL of the web page to embed
+- The value "
+- The value of "${e}" is out of range.
+- The value of ${t.path||"field"} could not be cast to a value that satisfies the schema type: "${n.type}".  ⏎  ⏎ attempted value: ${i}  ⏎ 
+- The value of ${t.path||"field"} could not be cast to a value that satisfies the schema type: "${r.type}".  ⏎  ⏎ attempted value: ${o}  ⏎ 
+- The webinar is no longer available.
+- The webpage could not be fetched.
+- The ZIP/postal code is incorrect.
+- Theme
+- Theme applied
+- Theme loaded
+- Theme type
+- Theme Type Selected
+- Themes
+- There are no available campaigns right now.
+- There were 
+- These 
+- Thinnest AI
+- This application uses the Etsy API but is not endorsed or certified by Etsy, Inc.
+- This browser doesn't seem to support blob URLs
+- This browser doesn't seem to support creating Blobs
+- This browser lacks typed array (Uint8Array) support which is required by `buffer` v5.x. Use `buffer` v4.x if you require old browser support.
+- This email has already been confirmed.
+- This email is already a member.
+- This email is already in use.
+- This email is already in use. Need to <a href="/login" class="link loginTrigger" style="text-decoration: underline;">log in</a>?
+- This email is already in use. Need to <a href="%s" class="link loginTrigger" style="text-decoration: underline;">log in</a>?
+- This email is already in use. Please login
+- This enum has been deprecated. Instead, use the KeySpec enum.
+- This field has been deprecated. Instead, use the KeySpec field.
+- This field is deprecated, use Group instead.
+- This field is deprecated, use GroupIdentifiers instead.
+- This field is deprecated, use Resources instead.
+- This is a secure SSL encrypted payment
+- This is a secure SSL encrypted payment.
+- This is amazing content
+- This is taking longer than usual
+- This link can't be opened
+- This link has expired, please log in to change your card.
+- This link is broken. Try another one.
+- This link is invalid. Please contact support.
+- This model does not support aspect ratio. Use `size` instead.
+- This operation is deprecated, use BatchGetDeploymentTargets instead.
+- This operation is deprecated, use ContinueDeployment with DeploymentWaitType instead.
+- This operation is deprecated, use DetectEntitiesV2 instead.
+- This operation is deprecated, use GetDeploymentTarget instead.
+- This operation is deprecated, use ListDeploymentTargets instead.
+- This parameter has been deprecated. Instead, use the KeySpec parameter.
+- This promo code has expired.
+- This promo code is invalid or has expired.
+- This property is deprecated. To view the target networks associated with a Client VPN endpoint, call DescribeClientVpnTargetNetworks and inspect the clientVpnTargetNetworks response element.
+- This task doesn't support region-of-interest.
+- This username already exists.
+- This website uses cookies to ensure you get the best experience on our website.
+- THREE.BufferAttribute: array should be a Typed Array.
+- THREE.CubeCamera.updateCoordinateSystem(): Invalid coordinate system: 
+- THREE.Frustum.setFromProjectionMatrix(): Invalid coordinate system: 
+- THREE.Matrix4.makeOrthographic(): Invalid coordinate system: 
+- THREE.Matrix4.makePerspective(): Invalid coordinate system: 
+- THREE.WebGLAttributes: Unsupported buffer data format: 
+- THREE.WebGLRenderer: setEffects() requires outputBufferType set to HalfFloatType or FloatType.
+- THREE.WebGLRenderer.readRenderTargetPixelsAsync: requested read bounds are out of range.
+- Threshold
+- Threshold has been deprecated in favor of ThresholdExpression
+- Throttling
+- Throughput
+- Thu
+- Thumbprint
+- Thursday
+- Tier
+- Tiering
+- Tierings
+- Time
+- Time from arguments becoming available until the tool reached a final state.
+- Time limit reached
+- Time to end
+- Timeline
+- Timeout
+- Timeout tick
+- Timestamp
+- Timestamps
+- Timezone
+- Timing
+- Tiny
+- Title
+- Titles
+- Titles and games
+- Tld
+- Tnb
+- To do list
+- To paste, use %s
+- To reduce your team to 
+- Toast
+- Toast Hidden
+- Toast Shown
+- Toastify
+- Toastify--animate-icon Toastify__zoom-enter
+- Toggle all
+- Toggle menu
+- Toggle navigation
+- Togglik
+- Togo
+- Tokelau
+- Token
+- Token refreshed. Notifying requestees in wait list...
+- Tonga
+- Too expensive
+- Too many values for a single embedding call. The ${e.provider} model "${e.modelId}" can only embed up to ${e.maxEmbeddingsPerCall} values per call, but ${e.values.length} values were provided.
+- Tool call "${e}" not found for approval request "${t}".
+- Tool call ${n.toolCallId} not found.
+- Tool not found
+- Tool prompts
+- Tools
+- Tooltip
+- ToonMaterial material; ⏎ material.diffuseColor = diffuseColor.rgb;
+- Top
+- Top Center
+- Top Left
+- Top Right
+- Topic
+- Topics
+- Total
+- Touch up appearance
+- Touch up intensity
+- Trace
+- Traces
+- Trail
+- Trails
+- Trainer
+- Traits
+- Transcoding
+- Transcoding disabled
+- Transcoding enabled
+- Transfer
+- Transferability
+- Transferable
+- Transformations
+- Transition
+- Transitions
+- Translate
+- Transport
+- Treat your recovery code with the same level of attention as you would your password!
+- Trident
+- Tried to set display name in wrong connection state
+- Tried to set display title in wrong connection state
+- Trigger
+- Trigger BUFFER_RESET
+- Triggers
+- Trinidad & Tobago
+- Tristan da Cunha
+- Trovo
+- Trovo invalid refresh token
+- Trovo refresh token expired
+- Truncated
+- Try a demo link.
+- Try another card
+- Try Edit Mode
+- Try New Experience
+- Try New Studio
+- Try Restream now
+- Try Studio 2.0
+- Try this:
+- Trying to access beyond buffer length
+- Trying to fetch metadata from google apis
+- Trying to nudge playhead over buffer-hole
+- Ttf
+- Ttl
+- Tue
+- Tuesday
+- Tunisia
+- Turkey
+- Turkmenistan
+- Turks & Caicos Islands
+- Turn fixed position mode
+- Turn names off
+- Turn names on
+- Turn off
+- Turn on
+- Turnstile
+- Turnstile has not been loaded
+- Turnstile has not been loaded or container not found
+- Turnstile is not initialized
+- Tuvalu
+- TV static effect
+- Twitter
+- Two-factor authentication has been disabled.
+- Two-factor authentication has been enabled.
+- Two-factor authentication: please enter the six-digit code from the application.
+- Two-factor code
+- Two-factor code required
+- Two-letter ISO 3166-1 alpha-2 country code for regional search results (e.g., 'US', 'GB', 'FR')
+- Two-letter ISO country code such as 'US'.
+- Type
+- Type not convertible to Uint8Array.
+- Type your text here
+- Typeahead menu
+- Uganda
+- UI Loaded
+- Uid
+- Ukraine
+- Ultra High Definition
+- Unassigning
+- Unauthorized
+- Unbalanced pattern at ${r}
+- Unblinded
+- Unbranded is a paid feature
+- Uncaught
+- Uncaught "ResizeObserver loop completed with undelivered notifications."
+- Uncaught "ResizeObserver loop limit exceeded"
+- Undefined
+- Undeploy
+- Undetermined
+- Undo
+- Undo copy, paste, duplicate, delete
+- UndoOperationModel constructed
+- Uneven number of arguments
+- Unexpected
+- Unexpected ${r} at ${o}, expected ${e}
+- Unexpected data
+- Unexpected HTTP status ${i.status}
+- Unexpected key '
+- Unexpected rating
+- Unexpected undefined
+- Unexpectedly terminated IndexedDb
+- Unhandled
+- Unhandled type 
+- Unified gap (uses main gap)
+- Unified radius (uses main gap)
+- Uninitialized
+- Unit
+- United Arab Emirates
+- United Kingdom
+- United States
+- Universal
+- Unknown
+- Unknown base64 encoding at char: 
+- Unknown CC
+- Unknown chunk type: ${i}
+- Unknown chunk type: ${u}
+- Unknown depthTexture format
+- Unknown encoding: 
+- Unknown node. There is an unknown node in the supplied edges.
+- Unknown operation 
+- Unknown signing version 
+- Unknown texture type ${e}.
+- Unlimited communication with your audience
+- Unlimited workspaces
+- Unlock workspaces
+- Unmatched end-group tag
+- Unmirrored
+- Unmute
+- Unmuted
+- Unrecognized header type tag
+- Unrecognized shape type: 
+- Unresolved support ticket
+- Unsilenced
+- Unsubscribe
+- Unsubscribing from viewers
+- Unsuccessful
+- Unsupported body payload 
+- Unsupported context:
+- Unsupported model version ${e.version} for provider "${e.provider}" and model "${e.modelId}". AI SDK 5 only supports models that implement specification version "v2".
+- Unsupported tool type: ${e}
+- Untag
+- Up to $hours h
+- Up to $minutes min
+- Update
+- Update All
+- Update card details
+- Update Password
+- Update payment method
+- Update Payment Method
+- Update title
+- Update Titles
+- Updated
+- Updated state
+- UpdatedTimestamp is no longer returned by ListEventDataStores
+- Updates
+- Updating
+- Updating auto-switch…
+- Updating key-session "
+- Updating name labels…
+- Updating server about processing status
+- Uri
+- Uris
+- Url
+- URL must be TrustedResourceUrl because "rel" contains "stylesheet"
+- URLPatternsFromString is decode-only
+- Urls
+- Uruguay
+- Use 'openaiCompatible' instead.
+- Use `d` instead of `D` (in `
+- Use `dd` instead of `DD` (in `
+- Use `yy` instead of `YY` (in `
+- Use `yyyy` instead of `YYYY` (in `
+- Use a recovery code
+- Use a wide range of fonts in Studio 2.0
+- Use additionalMetricsToRetainV2.
+- Use authentication
+- Use cases — pass a terse, evocative `prompt`, not full sentences:
+- Use ListTagsForResource.
+- USE PREVIOUS CARD **** 
+- Use SingleMetricAnomalyDetector.
+- Use SingleMetricAnomalyDetector.Dimensions property.
+- Use SingleMetricAnomalyDetector.MetricName property.
+- Use SingleMetricAnomalyDetector.Namespace property.
+- Use SingleMetricAnomalyDetector.Stat property.
+- Use TagResource.
+- Use the <bold>Customization</bold> menu to display names again.
+- Use this names-only list to build exact or family regex tool-search patterns for deferred tools. Do not mention this list or say you are checking tools, schemas, or signatures.
+- Use UntagResource.
+- Use your Product Hunt link
+- Used
+- Used email
+- useDayPicker must be used within a DayPickerProvider.
+- User
+- User card not found
+- User exceeded Local Storage quota
+- User id
+- User is not a Stripe customer!
+- User Suspended Due To Inactivity
+- User unexpectedly changed to ${e}
+- User unexpectedly changed to original user
+- Username
+- Usernames can only contain letters, numbers, and underscores.
+- Usernames should be at least 2 characters long.
+- Users
+- Using DataChannels
+- Using v2 specification compatibility mode. Some features may not be available.
+- Utilization
+- Uzbekistan
+- V0 chain-of-thought mode — slower but often better for complex widgets.
+- Valentines
+- Valid
+- Validation
+- Validation test of type: "${_.type}" returned a Promise during a synchronous validate. This test will finish after the validate call has returned
+- Validation test of type: "${b.type}" returned a Promise during a synchronous validate. This test will finish after the validate call has returned
+- Value
+- Value is not a number
+- Value must be a finite number
+- Values
+- Vanuatu
+- Variables
+- VAT ID
+- Vatican City
+- Vcpu
+- Vendor
+- Venezuela
+- Verbose
+- Vercel (Anthropic)
+- Verification code is empty
+- Verify
+- Verify your email. Check your inbox. We've sent a verification to your email.
+- Verizon
+- Version
+- Versions
+- Vertical
+- Vertical (Get OBS plugin:
+- Vertical position as a fraction (-1 to 1)
+- Via OBS plugin
+- Vibrant abstract mountain peak in orange-red-yellow gradient against a purple sky.
+- Vietnam
+- Viewer is no longer available
+- Viewer limit reached
+- Viewer mode changed, syncing to featureStore
+- Viewers connection Closed
+- Viewers connection Opened
+- Viewers token received
+- Viewers WebSocket has not connected within 10s
+- Visibility
+- Visit $link
+- Visit Smashcast
+- Vivo
+- Vlan
+- Vocabi
+- Vocabulary
+- Voice
+- Voices
+- Void tag <
+- Voker
+- VP9 encoding
+- Vpc
+- Vpcs
+- Wait until a deployment has completed successfully.
+- Wait until a distribution is deployed.
+- Wait until a lifecycle policy preview request is complete and results can be accessed
+- Wait until an invalidation has completed.
+- Wait until change set status is CREATE_COMPLETE.
+- Wait until ElastiCache cluster is available.
+- Wait until ElastiCache cluster is deleted.
+- Wait until ElastiCache replication group is available.
+- Wait until ElastiCache replication group is deleted.
+- Wait until OpsWorks instance is online.
+- Wait until OpsWorks instance is registered.
+- Wait until OpsWorks instance is terminated.
+- Wait until the ProjectVersion is running.
+- Wait until the ProjectVersion training completes.
+- Wait until type registration is COMPLETE.
+- Waits for the function's LastUpdateStatus to be Successful. This waiter uses GetFunction API. This should be used after function updates.
+- Waits for the function's LastUpdateStatus to be Successful. This waiter uses GetFunctionConfiguration API. This should be used after function updates.
+- Waits for the function's State to be Active. This waiter uses GetFunction API. This should be used after new function creation.
+- Waits for the function's State to be Active. This waiter uses GetFunctionConfiguration API. This should be used after new function creation.
+- Waits for the published version's State to be Active. This waiter uses GetFunctionConfiguration API. This should be used after new version is published.
+- Wallis & Futuna
+- Want names back?
+- Want to add a different 
+- Warm cinema
+- Warning
+- WARNING: Multiple instances of Three.js being imported.
+- Warning: react-fast-compare does not handle circular references.
+- Warnings
+- Watch Replay
+- Watch Tutorial
+- we handle multistreaming for you.
+- We recommend the following apps.
+- We're always adding new features based on customer feedback.
+- We're sorry, our servers are at full capacity.
+- We’re still working on mobile
+- Web
+- Web fetch
+- Web player, 1,000 viewers
+- Web player, 10,000 viewers
+- Web player, custom viewers
+- Web player, Unlimited viewers
+- Web player, up to 1,000 concurrent viewers
+- WebCrypto AES decrypt
+- WebGL context lost
+- WebGL context restored
+- WebGL context was not restored in time
+- WebGLInfo: Unknown draw mode:
+- WebGLProgram: Program Info Log:
+- WebGLRenderer: A WebGL context could not be created. Reason: 
+- WebGLRenderer: Attempt to load unsupported compressed texture format in .setTextureCube()
+- WebGLRenderer: Attempt to use non-existing WebGL internal format '
+- WebGLRenderer: Context Lost.
+- WebGLRenderer: Context Restored.
+- WebGLRenderer: Maximum number of simultaneously usable uniforms groups reached.
+- WebGLRenderer: Shader chunk "%s" has been deprecated. Use "%s" instead.
+- WebGLRenderer: Texture has been resized from (
+- WebGLRenderer: Texture samplers can not be part of an uniforms group.
+- WebGLRenderer: Unsupported uniform value type.
+- WebGLRenderTarget: Attached DepthTexture is initialized to the incorrect size.
+- WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+- WebGLState: Invalid blending: 
+- WebGLState: MultiplyBlending requires material.premultipliedAlpha = true
+- WebGLState: SubtractiveBlending requires material.premultipliedAlpha = true
+- WebGLTextures: sRGB encoded textures have to use RGBAFormat and UnsignedByteType.
+- WebGLTextures: Trying to use 
+- Webhook URL
+- Webhooks
+- Webinar
+- Webinar Attendee Removed
+- Webinar Attendees Call-In Notification Clicked
+- Webinar details updated
+- Webinar Leave Button Clicked
+- Webinar link
+- Webinar Link Refresh Clicked
+- Webinar Replay Closed
+- Webinar Watch Replay Clicked
+- WebinarAudienceJoinModal_connectSlackButton__oMZ5i WebinarAudienceJoinModal_button__GAGUf
+- WebinarAudienceJoinModal_copyLinkButton__WABmh WebinarAudienceJoinModal_button__GAGUf
+- WebinarAudienceJoinModal_slackCard__09qor WebinarAudienceJoinModal_card__XatLt
+- Webkit
+- WebRTC ${t} transport ICE remains 'new' when ICE gathering state is 'complete'
+- Website player
+- Website Scraper
+- WebsiteBackendAPIClient is not provided
+- WebSocket closed, switched to DataChannels
+- WebSocket connection closed during setup
+- WebSocket connection established
+- WeChat(Win) Desktop
+- Wed
+- Wednesday
+- Week n. 
+- Weight
+- Welcome back
+- Welcome to Restream!
+- Welcome to Studio 2.0 🎉
+- Well done!
+- Western Sahara
+- What game is this?
+- What happened?
+- What happens if I downgrade?
+- What is Doubling?
+- What should change in this area?
+- What should change?
+- What would you like to say?
+- When intent is ambiguous, call `ask_questions` BEFORE this tool:
+- Whether auto switch should be enabled
+- Widget (BETA)
+- Widget added
+- Widget generated but no preview URL was returned
+- Widget preview
+- Widget ready
+- Widget SSE aborted: idle timeout
+- Widget V0 model
+- WidgetFavicon_botIcon__XwOGg WidgetFavicon_favicon__pVJ+-
+- WidgetFavicon_placeholder__QSwx0 WidgetFavicon_favicon__pVJ+-
+- Widgets
+- Width
+- Width as a fraction of the container (e.g. 0.3333 for ~33%)
+- Width scale
+- will be added to your account balance.
+- will be applied to your Stripe balance and used on the next charge.
+- Will be canceled on
+- will be used before charging your card.
+- Windows
+- Wisdom
+- Wix
+- Woff
+- Worm
+- Wowza
+- Write a concise title (the cap is tight).
+- Write a punchy, action- or keyword-led title and front-load the key words.
+- Write a punchy, action- or keyword-led title; front-load the key words.
+- Write a short, punchy headline.
+- Write a short, punchy headline. Use at most one hashtag — more reads as spam on X.
+- Wrong account balance!
+- Wrong data
+- Wrong OTP
+- Wrong password
+- Wrong token
+- Wrong two-factor code
+- Wrong Two-factor code
+- Wrong verification code
+- WS connection ${this.label} closed
+- X account connected successfully
+- X account disconnected successfully
+- X has deactivated Periscope.
+- Xiaomi
+- Xmas
+- XOR array lengths must match
+- Xperia Tablet
+- Yandex
+- Yaw
+- Yearly
+- Years
+- Yellow
+- Yemen
+- Yes
+- Yes, I want to cancel
+- You
+- You are almost done
+- You are already connected
+- You are done
+- You are not authorized
+- You are trying to animate ${t} from "${a}" to "${o}". ${a} is not an animatable value - to enable this animation set ${a} to a value animatable to ${o} via the \`style\` property.
+- You are trying to animate ${t} from "${o}" to "${i}". "${a?i:o}" is not an animatable value.
+- You can now enable transcoding.
+- You exceeded requests limit
+- You might find some inspiration for using Restream in our
+- You must create a new task to reset the canvas.
+- You must set a password before removing your last login method
+- You seem to be creating MPImage instances without invoking .close(). This leaks resources.
+- You seem to be creating MPMask instances without invoking .close(). This leaks resources.
+- You will be disconnected shortly due to inactivity. Move your mouse or press any key to stay connected.
+- You won't be billed today ⏎ 
+- You'll lose access to the following extra features:
+- You're disconnected
+- You're in the show!
+- You're trying to perform an animation on null. Ensure that selectors are correctly finding elements and refs are correctly hydrated.
+- You’ve reached the 15-min limit
+- Your account balance of
+- Your account has been removed. In 10 seconds, you'll be taken to the main page.
+- Your card
+- Your card was declined. Your request was in test mode, but used a non-test (active) card.
+- Your code expired. Applied
+- Your email was successfully changed. Please check your email to confirm.
+- Your Google email is not verified.
+- Your name
+- Your Name
+- Your password was successfully changed.
+- Your past campaigns will be shown here.
+- Your payment is protected by SSL encryption.
+- Your payment was successfully processed.
+- Your products have been updated
+- Your purchase includes enrollment in our automatic renewal service.
+- Your username was successfully changed.
+- Zambia
+- Zebra
+- Zeki
+- Zimbabwe
+- Zip
+- Zip Code Returned Zero Tax
+- Zoom controls
+- Zoom in
+- Zoom out

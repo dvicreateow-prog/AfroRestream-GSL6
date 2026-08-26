@@ -1,0 +1,141 @@
+{
+  "title": "Restream Studio Sanitized Public Client Capture",
+  "captured_date": "2026-08-24",
+  "observed_states": 2,
+  "artifact_nature": "Public browser-delivered production client artifacts and exposed CSS-map style sources; not the private repository, server source, or authenticated data",
+  "live_reconciliation": {
+    "observed_resources": 161,
+    "selected_public_functional_static": 39,
+    "exact_url_matches_in_package": 39,
+    "unmatched_selected_urls": 0,
+    "inline_svg_instances": 12,
+    "unique_inline_svg_hashes": 11,
+    "inline_svg_hash_matches_in_package": 11
+  },
+  "directories": {
+    "inside_studio_verified": {
+      "files": 405,
+      "bytes": 103104234,
+      "javascript": 37,
+      "css": 23,
+      "validated_referenced_static": 176,
+      "unique_inline_svg": 117,
+      "runtime_javascript_mappings_present": 32,
+      "runtime_css_mappings_present": 21
+    },
+    "prejoin_observed": {
+      "files": 32,
+      "bytes": 5054379,
+      "selected_public_static_inventory": 39,
+      "unique_inline_svg": 11,
+      "excluded_private_dynamic_media": 1,
+      "excluded_browser_instrumentation": 1
+    },
+    "deep_static": {
+      "files": 809,
+      "bytes": 46103206,
+      "exact_seed_urls": 22,
+      "retrieved_or_already_present": 21,
+      "unavailable_http_403": 1
+    },
+    "third_party_functional": {
+      "files": 2206,
+      "bytes": 85021598,
+      "google_fonts": {
+        "subtree_files": 622,
+        "subtree_bytes": 24786561,
+        "font_binaries": 620,
+        "font_binary_bytes": 24491932
+      },
+      "stripe": {
+        "subtree_files": 1239,
+        "subtree_bytes": 19410204,
+        "finite_levels": 5,
+        "functional_manifest_rows": 1263,
+        "unique_urls": 1241,
+        "unique_local_payloads": 1229,
+        "recursive_nested_references": 989,
+        "remaining_unmanifested_exact_gaps": 0,
+        "unavailable_http_403": 12,
+        "excluded_sentry_telemetry_chunks": 4,
+        "payload_types": {
+          "svg": 871,
+          "png": 76,
+          "javascript": 234,
+          "css": 22,
+          "json": 17,
+          "pdf": 2,
+          "woff2": 7
+        }
+      },
+      "intercom": {
+        "subtree_files": 345,
+        "subtree_bytes": 40824833,
+        "level_1_files": 85,
+        "css_level_2_fonts": 35,
+        "loader_branch_files": 5,
+        "enumerated_frame_chunks": 146,
+        "functional_chunks_sri_sha384_verified": 142,
+        "nested_public_path_references_present": 41,
+        "concatenated_fonts_present": 4,
+        "worklets_with_no_deeper_dependencies": 2,
+        "unavailable_license_sidecars_http_404": 13,
+        "unavailable_relative_svg_spa_fallback": 1,
+        "excluded_sentry_telemetry_chunks": 4,
+        "remaining_unmanifested_exact_gaps": 0
+      }
+    }
+  },
+  "source_maps": {
+    "exact_public_urls_attempted": 57,
+    "valid_css_source_map_v3": 23,
+    "valid_map_bytes": 3923297,
+    "javascript_map_spa_fallback": 34,
+    "source_entries": 756,
+    "entries_with_sources_content": 756,
+    "extracted_files": 756,
+    "extracted_bytes": 3240247,
+    "unique_source_identifiers": 636,
+    "unique_content_hashes": 610,
+    "scss_entries": 725,
+    "css_entries": 10,
+    "empty_no_source_placeholders": 21,
+    "windows_paths_shortened_with_original_identifier_preserved": 199,
+    "production_asset_urls_manifested_and_present": 84,
+    "unresolved_nested_relative_map": 1,
+    "private_compile_time_sass_target_not_embedded": 1,
+    "references_to_private_compile_time_target": 2
+  },
+  "boundaries": {
+    "unavailable_exact_public_dependencies": 27,
+    "restream_bundle_literal_spa_fallbacks": 16,
+    "javascript_map_spa_fallbacks": 34,
+    "explicitly_excluded_sentry_telemetry_chunks": 8,
+    "remaining_unmanifested_deterministic_public_static_gaps": 0
+  },
+  "verification": {
+    "result": "pass",
+    "files_checked_excluding_report_and_checksum": 3457,
+    "hash_size_manifests": 24,
+    "manifest_rows": 3382,
+    "manifested_file_rows_verified": 3303,
+    "supported_file_signatures_checked": 3377,
+    "supported_file_signatures_passed": 3377,
+    "svg_files": 1080,
+    "svg_script_nodes": 0,
+    "svg_event_handlers": 0,
+    "svg_external_hrefs": 0,
+    "maximum_full_path_characters": 240,
+    "targeted_privacy_findings": 0,
+    "expected_final_files_including_report_and_checksum": 3459
+  },
+  "privacy": {
+    "room_or_session_identifier_in_package": false,
+    "connected_account_email_in_package": false,
+    "local_machine_identity_or_temp_path_in_package": false,
+    "excluded_dynamic_media_identifier_in_package": false,
+    "jwt_shaped_values_in_package": false,
+    "cookies_or_browser_storage_collected": false,
+    "authenticated_api_payloads_collected": false
+  }
+}

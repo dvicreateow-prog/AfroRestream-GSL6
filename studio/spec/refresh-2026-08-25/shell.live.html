@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex, follow" />
+
+    <title>Studio – Restream</title>
+    <meta
+      name="description"
+      content="Follow this link to join my live stream as a participant. The stream will open right in your browser, and we are all set."
+    />
+
+    <link rel="canonical" href="https://restream.io/" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Twitter Card data-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@restreamio" />
+    <meta name="twitter:creator" content="@restreamio" />
+    <meta
+      name="twitter:title"
+      content="Studio – Restream"
+    />
+    <meta
+      name="twitter:description"
+      content="Follow this link to join my live stream as a participant. The stream will open right in your browser, and we are all set."
+    />
+    <meta
+      name="twitter:image:src"
+      content="https://studio.restream.io/img/guest-social-image.png?1234"
+    />
+
+    <!--Open Graph data-->
+    <meta
+      property="og:title"
+      content="Studio – Restream"
+    />
+    <meta
+      property="og:description"
+      content="Follow this link to join my live stream as a participant. The stream will open right in your browser, and we are all set."
+    />
+    <meta
+      property="og:image"
+      content="https://studio.restream.io/img/guest-social-image.png?1234"
+    />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="https://restream.io" />
+    <meta property="og:site_name" content="Restream" />
+    <meta property="og:email" content="team@restream.io" />
+
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/favicon.ico"
+    />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#1a1a1a" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <script>
+      window.analyticsAmplitudeSessionId = Date.now()
+
+      !(function () {
+        var i = 'analytics',
+          analytics = (window[i] = window[i] || [])
+        if (!analytics.initialize)
+          if (analytics.invoked)
+            window.console &&
+              console.error &&
+              console.error('Segment snippet included twice.')
+          else {
+            analytics.invoked = !0
+            analytics.methods = [
+              'trackSubmit',
+              'trackClick',
+              'trackLink',
+              'trackForm',
+              'pageview',
+              'identify',
+              'reset',
+              'group',
+              'track',
+              'ready',
+              'alias',
+              'debug',
+              'page',
+              'screen',
+              'once',
+              'off',
+              'on',
+              'addSourceMiddleware',
+              'addIntegrationMiddleware',
+              'setAnonymousId',
+              'addDestinationMiddleware',
+              'register',
+            ]
+            analytics.factory = function (e) {
+              return function () {
+                if (window[i].initialized)
+                  return window[i][e].apply(window[i], arguments)
+                var n = Array.prototype.slice.call(arguments)
+                if (
+                  [
+                    'track',
+                    'screen',
+                    'alias',
+                    'group',
+                    'page',
+                    'identify',
+                  ].indexOf(e) > -1
+                ) {
+                  var c = document.querySelector("link[rel='canonical']")
+                  n.push({
+                    __t: 'bpc',
+                    c: (c && c.getAttribute('href')) || void 0,
+                    p: location.pathname,
+                    u: location.href,
+                    s: location.search,
+                    t: document.title,
+                    r: document.referrer,
+                  })
+                }
+                n.unshift(e)
+                analytics.push(n)
+                return analytics
+              }
+            }
+            for (var n = 0; n < analytics.methods.length; n++) {
+              var key = analytics.methods[n]
+              analytics[key] = analytics.factory(key)
+            }
+            analytics.load = function (key, n) {
+              var t = document.createElement('script')
+              t.type = 'text/javascript'
+              t.async = !0
+              t.setAttribute('data-global-segment-analytics-key', i)
+              t.src = 'https://evs.cdp.restream.io/bgR2R8cwnEzn69s63TNTmY/hNoNGLcHeAvVUQH3crgg94.min.js'
+              var r = document.getElementsByTagName('script')[0]
+              r.parentNode.insertBefore(t, r)
+              analytics._loadOptions = n
+            }
+            analytics._writeKey = key
+
+            var segmentCdn = 'https://evs.cdp.restream.io'
+            if (segmentCdn) {
+              analytics._cdn = segmentCdn
+            }
+            analytics.SNIPPET_VERSION = '5.2.0'
+            analytics.load(key)
+            analytics.page(
+              {
+                path: location.pathname,
+                referrer: document.referrer,
+                search: location.search,
+                title: document.title,
+                url: location.href,
+              },
+              {
+                integrations: {
+                  Amplitude: {
+                    session_id: window.analyticsAmplitudeSessionId,
+                  },
+                },
+              },
+            )
+          }
+      })()
+    </script>
+
+    <script>
+      var APP_ID = 'wvwee5xi'
+      var isWebinarPreview = /^\/webinar\/preview\/[^/]+\/?$/.test(
+        location.pathname,
+      )
+
+      // Make sure it's the same feature flag check as in the `FeatureStore.appId`!
+      var isVirtualEventsApp = new URL(location.href).searchParams.get('appId')
+
+      // Do not load Intercom for experiences that do not provide support access
+      if (!isVirtualEventsApp && !isWebinarPreview) {
+        window.intercomSettings = {
+          app_id: APP_ID,
+          // This is a custom launcher selector for the guest page new look
+          // Currently it is added generally to intercom settings, however it is enabled only for new guest page
+          custom_launcher_selector: '#custom-intercom-launcher',
+        }
+        ;(function () {
+          var w = window
+          var ic = w.Intercom
+          if (typeof ic === 'function') {
+            ic('reattach_activator')
+            ic('update', w.intercomSettings)
+          } else {
+            var d = document
+            var i = function () {
+              i.c(arguments)
+            }
+            i.q = []
+            i.c = function (args) {
+              i.q.push(args)
+            }
+            w.Intercom = i
+            var l = function () {
+              var s = d.createElement('script')
+              s.type = 'text/javascript'
+              s.async = true
+              s.src = 'https://widget.intercom.io/widget/' + APP_ID
+              var x = d.getElementsByTagName('script')[0]
+              x.parentNode.insertBefore(s, x)
+            }
+            if (document.readyState === 'complete') {
+              l()
+            } else if (w.attachEvent) {
+              w.attachEvent('onload', l)
+            } else {
+              w.addEventListener('load', l, false)
+            }
+          }
+        })()
+      }
+    </script>
+
+    <!-- Load Canny.io -->
+    <script>
+      // Make sure it's the same feature flag check as in the `FeatureStore.appId`!
+      var isVirtualEventsApp = new URL(location.href).searchParams.get('appId')
+
+      if (!isVirtualEventsApp) {
+        !(function (w, d, i, s) {
+          function l() {
+            if (!d.getElementById(i)) {
+              var f = d.getElementsByTagName(s)[0],
+                e = d.createElement(s)
+              ;(e.type = 'text/javascript'),
+                (e.async = !0),
+                (e.src = 'https://canny.io/sdk.js'),
+                f.parentNode.insertBefore(e, f)
+            }
+          }
+          if ('function' != typeof w.Canny) {
+            var c = function () {
+              c.q.push(arguments)
+            }
+            ;(c.q = []),
+              (w.Canny = c),
+              'complete' === d.readyState
+                ? l()
+                : w.attachEvent
+                  ? w.attachEvent('onload', l)
+                  : w.addEventListener('load', l, !1)
+          }
+        })(window, document, 'canny-jssdk', 'script')
+      }
+    </script>
+
+    <!-- Load React Scan -->
+    <script>
+      !(function (w, d) {
+        var shouldEnableReactScan = new URL(location.href).searchParams.has(
+          'react-scan',
+        )
+
+        if (!shouldEnableReactScan) return
+
+        var script = d.createElement('script')
+
+        script.type = 'text/javascript'
+        script.async = true
+        script.src = 'https://unpkg.com/react-scan/dist/auto.global.js'
+
+        var firstScript = d.getElementsByTagName('script')[0]
+
+        firstScript.parentNode.insertBefore(script, firstScript)
+      })(window, document)
+    </script>
+
+    <style>
+      :root {
+        --card-height: 60px;
+        --card-width: 60px;
+      }
+
+      @property --rotate {
+        syntax: '<angle>';
+        initial-value: 132deg;
+        inherits: false;
+      }
+
+      .loadingScreenBackground {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /*
+          When loading screen is shown, we want to show background
+          right under it, so we need to set z-index to 20000
+        */
+        z-index: 20000;
+        /* Changing this one? Don't forget to change `background` theme token */
+        background-color: #1a1a1a;
+      }
+
+      .loadingScreenBackground.positionBottom::after {
+        opacity: 1 !important;
+        transition: opacity 300ms linear;
+      }
+
+      .loadingScreenBackground.positionBottom {
+        /*
+          When loading screen is hidden, we want to show background
+          underneath content for pages
+        */
+        z-index: -1;
+      }
+
+      .loadingScreen {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex: 1 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 20000;
+        opacity: 1;
+        transition: opacity 200ms ease;
+
+        line-height: 1.4;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .loadingScreen.hidden {
+        pointer-events: none;
+        opacity: 0;
+      }
+
+      .card-text {
+        position: relative;
+        z-index: 10;
+        transform: scale(0.8);
+        top: 4px;
+      }
+
+      .restream-text-wrapper {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .restream-text {
+        /* This is a `color-white-thick` theme token */
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        font-family:
+          system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+          'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      }
+
+      .restream-text-dots::after {
+        content: '';
+        position: absolute;
+        animation: Dots 2s cubic-bezier(0, 0.39, 1, 0.68) infinite;
+      }
+
+      .card {
+        color: #fff;
+        background: #000000;
+        width: var(--card-width);
+        height: var(--card-height);
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        padding: 12px 16px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        font-family: arial, sans-serif;
+        font-size: 34px;
+        font-weight: bold;
+        margin: 0 auto;
+      }
+
+      .card::before {
+        content: '';
+        width: calc(var(--card-width) + 8px);
+        height: calc(var(--card-height) + 8px);
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+        top: -4px;
+        left: -4px;
+      }
+
+      .card {
+        transition: all 1s;
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      .card:before {
+        background-image: linear-gradient(
+          var(--rotate),
+          #444444,
+          #2a2a2a 43%,
+          #444444
+        );
+        animation: spin 1.5s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          --rotate: 0deg;
+        }
+        100% {
+          --rotate: 360deg;
+        }
+      }
+
+      @keyframes Dots {
+        0% {
+          content: '';
+        }
+
+        33% {
+          content: '.';
+        }
+
+        66% {
+          content: '..';
+        }
+
+        100% {
+          content: '...';
+        }
+      }
+    </style>
+  <script defer src="/runtime.9f1fa8797094a416.js"></script><script defer src="/restreamvideoeditor.d22611927fb1ae5c.js"></script><script defer src="/hlsjs.3e5d0a83ecd57757.js"></script><script defer src="/restream.887ca3d5bcd09a3a.js"></script><script defer src="/externals.b634d3e8690cf1f3.js"></script><script defer src="/Index.9e0811e35f72c739.js"></script><link href="/assets/styles/restream.85b89da606457891.css" rel="stylesheet"><link href="/assets/styles/externals.3524860ca3dc5abb.css" rel="stylesheet"><link href="/assets/styles/Index.0a0f0df00de93ef5.css" rel="stylesheet"></head>
+  <body>
+    <noscript>Please, enable JavaScript to run this app.</noscript>
+    <div class="loadingScreenBackground" id="root-loader-bg"></div>
+
+    <div class="loadingScreen" id="root-loader">
+      <div class="restream card">
+        <div class="card-text">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            fill="none"
+            viewBox="0 0 60 60"
+          >
+            <path
+              fill="#fff"
+              d="M18.75 45h8.56V34.259h2.013L35.407 45h9.063l-7.175-12.42c3.147-1.216 5.413-3.608 5.413-7.888v-.168c0-6.335-4.364-9.524-12.21-9.524H18.75v30zm8.56-16.322v-7.216h2.81c2.77 0 4.28.965 4.28 3.398v.168c0 2.434-1.426 3.65-4.321 3.65h-2.77z"
+            />
+          </svg>
+        </div>
+      </div>
+      <p class="restream-text-wrapper">
+        <span class="restream-text">Setting the stage for you</span>
+        <span class="restream-text restream-text-dots"></span>
+      </p>
+    </div>
+
+    <main id="root"></main>
+
+    <script>
+      var url = new URL(location.href)
+      var isPlaylist =
+        url.searchParams.has('playlist') ||
+        url.pathname.startsWith('/playlist') ||
+        url.pathname.startsWith('/start-playlist')
+
+      // Webinar pages (viewer and preview) should show only the loader,
+      // without any text
+      var isWebinar = /^\/webinar\/(preview\/)?[^/]+\/?$/.test(url.pathname)
+
+      if (isWebinar) {
+        const loadingScreenTextWrapper = document.querySelector(
+          '.restream-text-wrapper',
+        )
+        if (loadingScreenTextWrapper) {
+          loadingScreenTextWrapper.style.display = 'none'
+        }
+      }
+
+      if (isPlaylist) {
+        const loadingScreenText = document.querySelector('.restream-text')
+        animateTextRecursively(loadingScreenText, [
+          'Setting the stage for your playlist',
+          'Getting the videos ready',
+          'Putting everything together',
+        ])
+      }
+
+      function animateTextRecursively(element, texts) {
+        if (!element || !texts || texts.length === 0) {
+          return
+        }
+
+        const text = texts.shift()
+
+        if (text && element) {
+          element.innerText = text
+
+          if (texts.length > 0) {
+            setTimeout(() => {
+              animateTextRecursively(element, texts)
+            }, 2000)
+          }
+        }
+      }
+    </script>
+
+    <!-- begin Convert Experiences code-->
+    <!-- Disabled due to issues with XmlHttpRequest -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="https://cdn-3.convertexperiments.com/js/10034870-10034041.js"></script> -->
+    <!-- end Convert Experiences code -->
+
+    <script src="/locale/en-US.js"></script>
+    <script
+      async
+      type="text/javascript"
+      src="https://apis.google.com/js/api.js"
+    ></script>
+  </body>
+</html>

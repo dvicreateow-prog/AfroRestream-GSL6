@@ -1,0 +1,368 @@
+/*
+ * Design tokens.
+ *
+ * Sources, in order of authority:
+ *   1. studio/spec/SPEC-design-tokens.md  - reconstructed from the 23 production CSS
+ *      bundles + recovered SCSS. Authoritative for semantic, state, motion, z-index
+ *      and layout metrics.
+ *   2. studio/spec/SPEC-stage-geometry.md - the 22 captured windows. Authoritative for
+ *      the dark studio chrome surface ramp.
+ *
+ * Deliberate divergences from Restream:
+ *   - Graphik is self-hosted from the capture. It is commercially licensed by
+ *     Commercial Type; swap --f-ui to Inter before any public distribution.
+ *   - Their four parallel token systems (Theme module / ui-kit .twp / shadcn / legacy
+ *     colors.scss) are collapsed into this single set. See SPEC-design-tokens.md §7 for
+ *     the 10 conflicts and 2 upstream bugs that made keeping all four untenable.
+ */
+
+:root {
+  /* ================================================================
+     Primitives - gray
+     ================================================================ */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray-25: #fafbfc;
+  --color-gray-50: #f5f6f8;
+  --color-gray-100: #edf0f3;
+  --color-gray-150: #ebecf1;
+  --color-gray-200: #d7dce3;
+  --color-gray-300: #aeb5bd;
+  --color-gray-400: #97a0af;
+  --color-gray-500: #6b778c;
+  --color-gray-550: #56647d;
+  --color-gray-600: #42526e;
+  --color-gray-700: #2b3d5c;
+  --color-gray-800: #172b4d;
+  --color-gray-850: #0f2447;
+  --color-gray-900: #091e42;
+  --color-gray-950: #021331;
+
+  /* ================================================================
+     Primitives - blue
+     ================================================================ */
+  --color-blue-25: #f5f8ff;
+  --color-blue-50: #eff4ff;
+  --color-blue-100: #d1e0ff;
+  --color-blue-200: #b2ccff;
+  --color-blue-300: #84adff;
+  --color-blue-400: #377aff;
+  --color-blue-500: #2970ff;
+  --color-blue-600: #155eef;
+  --color-blue-650: #0a56ed;
+  --color-blue-700: #004eeb;
+  --color-blue-800: #0040c1;
+  --color-blue-900: #00359e;
+
+  /* ================================================================
+     Primitives - state ramps (Untitled-UI)
+     ================================================================ */
+  --color-red-50: #fef3f2;
+  --color-red-300: #fda29b;
+  --color-red-400: #f97066;
+  --color-red-500: #f04438;
+  --color-red-600: #d92d20;
+  --color-red-700: #b42318;
+  --color-yellow-50: #fffaeb;
+  --color-yellow-300: #fec84b;
+  --color-yellow-400: #fdb022;
+  --color-yellow-500: #f79009;
+  --color-yellow-600: #dc6803;
+  --color-green-50: #ecfdf3;
+  --color-green-300: #6ce9a6;
+  --color-green-400: #32d583;
+  --color-green-500: #12b76a;
+  --color-green-600: #039855;
+  --color-orange-dark-400: #ff692e;
+  --color-orange-dark-500: #ff4405;
+  --color-orange-dark-600: #e62e05;
+
+  /* Decorative 400s - participant / scene accents */
+  --color-violet-400: #a48afb;
+  --color-moss-400: #86cb3c;
+  --color-green-light-400: #85e13a;
+  --color-teal-400: #2ed3b7;
+  --color-cyan-400: #22ccee;
+  --color-blue-light-400: #36bffa;
+  --color-indigo-400: #8098f9;
+  --color-purple-400: #9b8afb;
+  --color-fuchsia-400: #e478fa;
+  --color-pink-400: #f670c7;
+  --color-rose-400: #fd6f8e;
+  --color-orange-400: #f38744;
+  --color-yellow-dark-400: #fac515;
+
+  /* ================================================================
+     Studio dark chrome
+     Surface ramp from the captured windows; corroborated by the
+     shipped --theme-dark-* set (background #1a1a1a, preview #0c0c0c).
+     ================================================================ */
+  --c-void: #0c0c0c;      /* stage / preview backdrop (--preview-background) */
+  --c-bg: #0f0f10;        /* app background */
+  --c-rail: #111113;      /* scene rail, tool rail */
+  --c-header: #141416;    /* header, right panel, nameplates */
+  --c-panel: #1c1c1f;     /* cards, canvas frame */
+  --c-surface: #242428;   /* raised surface, inactive control */
+  --c-elevated: #2d2d32;  /* buttons, inputs, pills */
+  --c-line: #34343a;      /* borders, dividers */
+  --c-line-soft: #242428;
+
+  --c-text: #f6f6f7;
+  --c-text-dim: #a3a3ad;
+  --c-text-mute: #73737d;
+  --c-text-on-accent: #fff;
+  --c-text-accent-soft: #dde7ff;
+
+  /* Dark-theme scrims, verbatim from --theme-dark-* */
+  --scrim-white-thin: rgba(255, 255, 255, 0.08);
+  --scrim-white-normal: rgba(255, 255, 255, 0.12);
+  --scrim-white-thick: rgba(255, 255, 255, 0.2);
+  --scrim-black-thin: rgba(0, 0, 0, 0.16);
+  --scrim-black-normal: rgba(0, 0, 0, 0.32);
+  --scrim-black-thick: rgba(0, 0, 0, 0.56);
+
+  /* ================================================================
+     Semantic - brand, focus, state
+     ================================================================ */
+  --brand-primary: #2864f0;          /* studio chrome accent (captured) */
+  --brand-primary-hover: #3b73f5;
+  --brand-primary-pressed: #1f52cc;
+  --brand-primary-ui: var(--color-blue-500);  /* #2970ff, ui-kit surfaces */
+
+  --focus-outline-color: #015ecc;
+  --focus-outline: #015ecc auto 1px;
+  --ring-width: 2px;
+  --ring-offset-width: 2px;
+
+  --state-success: var(--color-green-500);
+  --state-warning: var(--color-yellow-500);
+  --state-error: var(--color-red-600);
+  --state-info: #5bfdff;
+  --state-live: var(--color-orange-dark-500);
+  --state-on-air: #fb4408;
+  --state-active-source: #85e13a;
+
+  /* Studio chrome status colours (captured windows) */
+  --c-blue: var(--brand-primary);
+  --c-purple: #7c5cfc;
+  --c-green: #24c875;
+  --c-red: #ef4b55;
+  --c-cyan: #43c7e8;
+  --c-yellow: #f4c84a;
+
+  /* Participant halo rotation */
+  --c-p1: #2864f0;
+  --c-p2: #7c5cfc;
+  --c-p3: #24c875;
+  --c-p4: #43c7e8;
+  --c-p5: #f4c84a;
+  --c-p6: #ef4b55;
+
+  /* ================================================================
+     Typography - the real captured Studio faces (see styles/fonts.css).
+     Graphik 400/400i/500/600/700 are self-hosted from the capture.
+     ================================================================ */
+  --f-ui: 'Graphik', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --f-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --f-emoji: 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* px scale actually used in the shipped CSS: 14 (733x), 12 (283x), 16, 13 */
+  --t-xs: 10px;
+  --t-sm: 11px;
+  --t-base: 12px;
+  --t-md: 13px;
+  --t-lg: 14px;
+  --t-xl: 15px;
+  --t-2xl: 16px;
+  --t-3xl: 20px;
+  --t-display: 28px;
+  --lh-base: 20px;
+
+  /* ================================================================
+     Spacing - 4px grid. sm and xl are absent upstream; added here.
+     ================================================================ */
+  --sp-xxs: 2px;
+  --sp-xs: 8px;
+  --sp-sm: 12px;
+  --sp-md: 16px;
+  --sp-lg: 32px;
+  --sp-xl: 48px;
+
+  /* ================================================================
+     Radius - 8px dominates (560 literal uses upstream)
+     ================================================================ */
+  --r-xs: 2px;
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 8px;
+  --r-xl: 12px;
+  --r-2xl: 16px;
+  --r-3xl: 20px;
+  --r-pill: 999px;
+
+  /* ================================================================
+     Elevation
+     ================================================================ */
+  --sh-xs: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  --sh-sm: 0 1px 3px rgba(16, 24, 40, 0.1), 0 1px 2px rgba(16, 24, 40, 0.06);
+  --sh-lg: 0 12px 16px -4px rgba(16, 24, 40, 0.08), 0 4px 6px -2px rgba(16, 24, 40, 0.03);
+  --sh-xl: 0 20px 24px -4px rgba(16, 24, 40, 0.08), 0 8px 8px -4px rgba(16, 24, 40, 0.03);
+  --sh-panel: inset 0 0 0 0.5px rgba(255, 255, 255, 0.08),
+    0 0 0 1px rgba(0, 0, 0, 0.35), 0 16px 48px 8px rgba(0, 0, 0, 0.5);
+  --sh-modal: 0 24px 64px rgba(0, 0, 0, 0.6);
+  --sh-pop: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --sh-live: 0 1px 4px 0 rgba(242, 60, 0, 0.25);
+  --sh-active-source: inset 0 0 6px 0 rgba(133, 225, 57, 0.5);
+
+  /* ================================================================
+     Motion
+     ================================================================ */
+  --e-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --e-in: cubic-bezier(0.375, 0.015, 0.545, 0.455);
+  --e-out: cubic-bezier(0.45, 1.005, 0, 1.005);
+  --e-stack: cubic-bezier(0.32, 0.72, 0, 1);
+  --d-fast: 150ms;
+  --d-base: 200ms;
+  --d-slow: 300ms;
+  --d-spinner: 1.2s;
+
+  /* ================================================================
+     Layout - values from the shipped CSS, not the reconstruction
+     ================================================================ */
+  --h-header: 58px;
+  --w-scene-rail: 168px;            /* --scenes-sidebar-width */
+  --w-scene-sources-rail: 161px;    /* --scenes-sources-sidebar-width */
+  --w-scene-rail-lg: 212px;         /* --scenes-large-sources-sidebar-width */
+  --w-right-panel: 400px;           /* --sidebar-width */
+  --w-right-panel-sm: 360px;        /* --concept-sidebar-width */
+  --w-private-chat: 328px;
+  --w-tool-rail: 44px;
+  --h-tab-header: 48px;
+  --sz-player-button: 44px;
+  --h-timeline-slice: 40px;
+  --mb-sidepanel: 72px;
+  --sz-scrollbar: 4px;
+  --c-scrollbar-thumb: #253858;
+
+  /* ================================================================
+     z-index ladder
+     ================================================================ */
+  --z-toast: 1000;
+  --z-select-dropdown: 1010;
+  --z-popper: 1020;
+  --z-popover: 1030;
+  --z-onboarding: 10200;
+  --z-dialog-mask: 11000;
+  --z-dialog-wrap: 11001;
+  --z-dialog-popover: 11002;
+  --z-dialog-toast: 11004;
+  --z-preview-overlay: 100000;
+  --z-preview-draggable-border: 109000;
+  --z-preview-video-controls: 110000;
+  --z-preview-overlay-controls: 120000;
+
+  color-scheme: dark;
+}
+
+/*
+ * Breakpoints (reference - @restream/styles/scss/media.scss, all max-width):
+ *   xs 576 | sm 768 | md 992 | lg 1200 | xl 1400
+ * Real desktop gate: (min-width: 1080px) and (min-height: 660px)
+ */
+
+/* ------------------------------------------------------------------ */
+/* reset                                                               */
+/* ------------------------------------------------------------------ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--f-ui);
+  font-size: var(--t-base);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+
+svg {
+  display: block;
+  flex: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* scrollbars                                                          */
+/* ------------------------------------------------------------------ */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--c-line) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: var(--sz-scrollbar);
+  height: var(--sz-scrollbar);
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--c-line);
+  border-radius: var(--r-pill);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #45454d;
+}

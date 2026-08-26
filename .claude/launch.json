@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "studio-web",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--workspace", "web", "run", "dev"],
+      "cwd": "studio",
+      "port": 5173
+    }
+  ]
+}

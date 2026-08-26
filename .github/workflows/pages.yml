@@ -1,0 +1,68 @@
+name: Deploy Studio UI to GitHub Pages
+
+# Publishes the front end only. The Express server (ffmpeg fan-out, WebSocket
+# signalling, the tools API) cannot run on Pages - host it separately and point
+# VITE_API_BASE at it.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it mid-publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: studio/package-lock.json
+
+      - name: Install
+        working-directory: studio
+        run: npm ci
+
+      - name: Type-check
+        working-directory: studio
+        run: npm --workspace web run typecheck
+
+      - name: Build
+        working-directory: studio
+        env:
+          # Bare repo name; vite.config builds the /<repo>/ base from it.
+          VITE_REPO_BASE: ${{ github.event.repository.name }}
+          VITE_API_BASE: ${{ vars.VITE_API_BASE }}
+        run: npm --workspace web run build
+
+      - name: SPA fallback
+        # Pages has no rewrite rules, so a deep link 404s. Serving index.html as
+        # 404.html lets the client router take over.
+        working-directory: studio/web
+        run: cp dist/index.html dist/404.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: studio/web/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
