@@ -35,6 +35,12 @@ jobs:
         working-directory: studio
         run: npm ci
 
+      - name: Scan for credentials
+        # A live third-party key once reached a public commit. This fails the build
+        # rather than letting one through again.
+        working-directory: studio
+        run: node scripts/scan-secrets.mjs
+
       - name: Type-check
         working-directory: studio
         run: npm --workspace web run typecheck
