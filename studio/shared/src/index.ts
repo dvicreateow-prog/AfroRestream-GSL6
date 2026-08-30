@@ -150,3 +150,7 @@ export type SceneKind =
 
 export const CANVAS_W = 1920
 export const CANVAS_H = 1080
+
+/* Restream's real scene/layout vocabulary, transcribed from the spec corpus.
+ * See scene-layout-model.ts for the [O]/[I] marks and per-symbol sources. */
+export * from './scene-layout-model'
