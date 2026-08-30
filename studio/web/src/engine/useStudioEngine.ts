@@ -72,10 +72,14 @@ export function useStudioEngine() {
   /* ---- draw the store's overlays ----
    * The compositor only knows how to paint a subset of overlay kinds; the rest
    * (background, chat, countdown) are composed elsewhere, so they are filtered out
-   * rather than silently mis-drawn. */
+   * rather than silently mis-drawn.
+   *
+   * Overlays are also scene-scoped, so switching scenes changes the graphics the
+   * same way it changes the sources. An overlay with no sceneId shows everywhere. */
   useEffect(() => {
     engine.setOverlays(
       overlays
+        .filter((o) => !o.sceneId || o.sceneId === scene.id)
         .filter((o): o is typeof o & { kind: DrawableKind } => DRAWABLE.has(o.kind))
         .map((o) => ({
           id: o.id,
@@ -90,7 +94,15 @@ export function useStudioEngine() {
           color: o.color,
         })),
     )
-  }, [overlays])
+  }, [overlays, scene.id])
+
+  /* ---- a countdown scene actually counts down ----
+   * CountdownRenderer and its compositor painter were both complete; nothing ever
+   * called them, so the seeded "Starting soon" scene rendered as an empty stage. */
+  useEffect(() => {
+    if (scene.kind === 'countdown') engine.startCountdown()
+    else engine.hideCountdown()
+  }, [scene.kind, scene.id])
 
   /* ---- newly started captures join the scene that is live right now ---- */
   const knownRef = useRef<Set<string>>(new Set())

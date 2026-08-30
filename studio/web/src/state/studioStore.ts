@@ -95,6 +95,12 @@ export interface Overlay {
   subtext?: string
   color?: string
   url?: string
+  /**
+   * Scene this overlay belongs to. Undefined means "every scene", which keeps
+   * anything created before scene-scoping existed visible. Without this a lower
+   * third added on one scene stayed burned into all the others.
+   */
+  sceneId?: string
 }
 
 /* ------------------------------------------------------------------ */
@@ -418,7 +424,9 @@ export const useStudio = create<StudioState>((set, get) => {
 
     addOverlay: (o) => {
       const id = uid('ov')
-      set((s) => ({ overlays: [...s.overlays, { ...o, id }] }))
+      /* Bind to the scene being edited, the same way bindCapture does for sources,
+       * unless the caller has named a scene itself. */
+      set((s) => ({ overlays: [...s.overlays, { sceneId: s.activeSceneId, ...o, id }] }))
       return id
     },
 
