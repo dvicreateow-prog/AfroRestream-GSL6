@@ -8,6 +8,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { engine, type CaptureHandle } from './mediaEngine'
 import { useActiveScene, useStudio } from '../state/studioStore'
+import { useSettings } from '../state/settingsStore'
 
 /* Overlay kinds the compositor can paint today. */
 type DrawableKind = 'lowerThird' | 'ticker' | 'logo' | 'caption' | 'qr' | 'banner'
@@ -217,13 +218,24 @@ export function useStudioEngine() {
     [],
   )
 
+  /* Both far ends of these already work - goLive forwards them to the server, which
+   * hands them to the broadcaster - so hardcoding the profile here was the only reason
+   * the quality setting and the recording toggle had no effect. */
+  const streamProfile = useSettings((s) => s.stream.profile)
+  const recordEveryBroadcast = useSettings((s) => s.stream.recordEveryBroadcast)
+  const recording = useStudio((s) => s.recording)
+
   const toggleLive = useCallback(
     () =>
       guard(async () => {
         if (engine.live) engine.stopLive()
-        else await engine.goLive({ profile: '1080p30' })
+        else
+          await engine.goLive({
+            profile: streamProfile,
+            record: recording || recordEveryBroadcast,
+          })
       }),
-    [guard],
+    [guard, streamProfile, recording, recordEveryBroadcast],
   )
 
   return {
