@@ -17,7 +17,7 @@ const LAYOUTS: { id: LayoutId; icon: IconName; label: string }[] = [
 
 export function Stage() {
   const scene = useActiveScene()
-  const { setLayout, openModal, micOn, camOn, screenOn } = useStudio()
+  const { setLayout, openModal, micOn, camOn, screenOn, editMode, setEditMode } = useStudio()
   const {
     canvasHostRef, captures, levels, error, busy, clearError,
     toggleCamera, toggleScreen, toggleMic,
@@ -71,6 +71,17 @@ export function Stage() {
           </button>
         ))}
         <span className="layouts__spacer" />
+        {/* Edit mode is what reveals OverlayEditor below. Nothing set it before, so
+         * direct manipulation of graphics on the stage was unreachable. */}
+        <button
+          className={`layouts__btn ${editMode ? 'layouts__btn--active' : ''}`}
+          onClick={() => setEditMode(!editMode)}
+          title={editMode ? 'Done editing graphics' : 'Edit graphics on the stage'}
+          aria-label="Edit graphics on the stage"
+          aria-pressed={editMode}
+        >
+          <Icon name="pencil" size={16} />
+        </button>
         <button
           className="layouts__btn"
           onClick={() => openModal('customizeLayout')}

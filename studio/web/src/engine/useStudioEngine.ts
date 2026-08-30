@@ -186,18 +186,21 @@ export function useStudioEngine() {
     [guard, setScreen],
   )
 
+  /* Mute rather than release the device once it is open: tearing the microphone
+   * down meant unmuting re-prompted and re-opened it, dropping programme audio. */
   const toggleMic = useCallback(
     () =>
       guard(async () => {
         if (engine.micActive) {
-          engine.stopMic()
-          setMic(false)
+          engine.setMicMuted(micOn)
+          setMic(!micOn)
         } else {
           await engine.startMic()
+          engine.setMicMuted(false)
           setMic(true)
         }
       }),
-    [guard, setMic],
+    [guard, setMic, micOn],
   )
 
   /** Put a local video or image file on stage. */

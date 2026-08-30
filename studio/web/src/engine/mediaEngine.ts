@@ -337,6 +337,17 @@ class MediaEngine {
     this.mixer?.removeSource('mic')
   }
 
+  /**
+   * Mute without releasing the device.
+   *
+   * stopMic() tears the microphone down entirely, so unmuting had to re-acquire it -
+   * a fresh permission round-trip, a new device open, and a gap in the programme
+   * audio. The mixer already models mute properly, so use it.
+   */
+  setMicMuted(muted: boolean) {
+    this.mixer?.setMuted('mic', muted)
+  }
+
   get micActive() {
     return this.micStream !== null
   }
