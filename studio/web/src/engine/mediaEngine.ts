@@ -451,14 +451,18 @@ class MediaEngine {
       throw new Error('Nothing is on stage yet — add a source before going live.')
     }
 
-    /* The ingest socket starts a broadcast, so the server requires a session.
-     * Browsers cannot set headers on a WebSocket handshake, hence the query param. */
+    /* The ingest socket starts a broadcast, so the server resolves a session from the
+     * query param - browsers cannot set headers on a WebSocket handshake.
+     *
+     * No token is not an error. In single-user mode (the shipped default) the server
+     * answers a token-less upgrade with the local operator, and nothing ever writes a
+     * token to storage, so demanding one here made Go Live impossible out of the box.
+     * Send the token when there is one and let the server decide. */
     const token = getToken()
-    if (!token) {
-      throw new Error('Sign in before going live.')
-    }
     const socket = new WebSocket(
-      `${wsUrl('/ws/ingest')}?access_token=${encodeURIComponent(token)}`,
+      token
+        ? `${wsUrl('/ws/ingest')}?access_token=${encodeURIComponent(token)}`
+        : wsUrl('/ws/ingest'),
     )
     socket.binaryType = 'arraybuffer'
     this.socket = socket
